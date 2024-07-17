@@ -3,6 +3,9 @@
 Link for project:
 https://dfdxalex.github.io/englishWithsJS/index.html
 
+## Структура проекта
+
+```plaintext
 /project-root
 ├── /src
 │   ├── /controllers
@@ -24,6 +27,7 @@ https://dfdxalex.github.io/englishWithsJS/index.html
 ├── index.html
 ├── package.json
 └── README.md
+
 
 
 ### Описание файлов и папок
