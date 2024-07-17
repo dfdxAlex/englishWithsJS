@@ -1,7 +1,7 @@
 # englishWithsJS
 
-Link for project:
-https://dfdxalex.github.io/englishWithsJS/index.html
+<a href="https://dfdxalex.github.io/englishWithsJS/index.html" target="_blank">Link for project:</a>
+
 
 ## Структура проекта
 
