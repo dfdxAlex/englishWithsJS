@@ -11,10 +11,10 @@ class LanguageSelectorView
         const ru = lang=='ru' ? 'selected' : '';
 
         let ret =   `<select id="languageSelect">`;
-        ret+=         `<option ${en} value="en">EN</option>`;
-        ret+=         `<option ${pl} value="pl">PL</option>`;
-        ret+=         `<option ${ua} value="ua">УК</option>`;
-        ret+=         `<option ${ru} value="ru">РУ</option>`;
+        ret+=         `<option ${en} id="selectEn"  value="en">EN</option>`;
+        ret+=         `<option ${pl} id="selectPl"  value="pl">PL</option>`;
+        ret+=         `<option ${ua} id="selectUa"  value="ua">УК</option>`;
+        ret+=         `<option ${ru} id="selectRu"  value="ru">РУ</option>`;
         ret+=       `</select>`;
         return ret;
     }
