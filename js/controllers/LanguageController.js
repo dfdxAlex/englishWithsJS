@@ -1,6 +1,13 @@
 // Класс запускает функцию появления кнопок и обрабатывает их
 // нажатие, записывает выбор пользователя в локал сторадж
 
+// так-же в классе реализован переводчик. Для работы следует
+// создать объект и запустить метод.
+// const translate = new LanguageController();
+// console.log(translate.translate('Привет Мир'))
+// метод сам проверяет какой язык выбрал пользователь
+// в качестве аргумента передается русский аналог фразы
+
 class LanguageController
 {
     translate(str) {
@@ -20,7 +27,7 @@ class LanguageController
             break;
             case 'ru': lang = 0;
         }
-        
+
         BDTranslate.forEach((el)=>{
 
             // Если нашли совпадение по русскому языку
@@ -59,7 +66,7 @@ class LanguageController
             // запомнить выбор языка
             localStorage.setItem('EnglishWithJs_lang',selectedValue);
 
-            console.log(this.translate('Привет Мир'));
+            // console.log(this.translate('Привет Мир'));
         });
     }
 }
