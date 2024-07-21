@@ -5,5 +5,5 @@ const handleError = () => {
         tic = +localStorage.getItem('level1_Error');
         localStorage.setItem('level1_Error',tic+1);
     }
-    
+    handleLevel1();
 }
