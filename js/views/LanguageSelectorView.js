@@ -4,7 +4,6 @@ class LanguageSelectorView
 {
     init(lang)
     {
-
         const en = lang=='en' ? 'selected' : '';
         const pl = lang=='pl' ? 'selected' : '';
         const ua = lang=='ua' ? 'selected' : '';

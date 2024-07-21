@@ -2,8 +2,8 @@
 // Описывается событие загрузки документа
 window.addEventListener('load', () => {
     // Запуск контроллера языковых настроек
-    LanguageController = new LanguageController();
-    LanguageController.init();
+    let languageController = new LanguageController();
+    languageController.init();
 
     // homeController.init();
 });
