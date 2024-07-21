@@ -3,6 +3,34 @@
 
 class LanguageController
 {
+    translate(str) {
+        let returnTranslate = '';
+
+        // получить данные о выбранном языке
+        let lang = localStorage.getItem('EnglishWithJs_lang') || 'en';
+
+        // преобразовать имя языка в готовый индекс для массива 
+        // переводов
+        switch(lang) {
+            case 'en': lang = 3;
+            break;
+            case 'pl': lang = 2;
+            break;
+            case 'ua': lang = 1;
+            break;
+            case 'ru': lang = 0;
+        }
+        
+        BDTranslate.forEach((el)=>{
+
+            // Если нашли совпадение по русскому языку
+            // то вернуть соответствующее значение выбранного языка
+            if (el[0] == str)
+                returnTranslate = (el[lang]);
+        });
+        return returnTranslate;
+    }
+
     init() 
     {
         // Поставить кнопки выбора языка
@@ -11,6 +39,7 @@ class LanguageController
         // --выбрать место на странице, куда поместить меню
         const rez = document.getElementById("button_lang_selected");
 
+        // получить инфу об выбранном языке
         const lang = localStorage.getItem('EnglishWithJs_lang') || 'en';
 
         // --поместить меню, в метод передается значение 
@@ -20,12 +49,17 @@ class LanguageController
         // Добавление события изменения выбора языка
         // выбрать меню по id
         const langEn = document.getElementById("languageSelect");
+
         // Добавить событие изменения выбора
         langEn.addEventListener('change', (event) => {
+
             // получить данные о выбранном языке из формы
             const selectedValue = event.target.value;
+
             // запомнить выбор языка
             localStorage.setItem('EnglishWithJs_lang',selectedValue);
+
+            console.log(this.translate('Привет Мир'));
         });
     }
 }
