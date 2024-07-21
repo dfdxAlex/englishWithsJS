@@ -7,3 +7,38 @@ select {
     padding: 10px;
     font-size: 16px;
 }
+
+.exercise {
+    height: 30px;
+    background-color: rgb(147, 80, 235);
+    color:white;
+    margin: 5px;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.statisticOk, .statisticError, .statisticRez, .statisticReset {
+    margin: 5px;
+    font-size: 25px;
+    line-height: 30px;
+    color:white;
+}
+
+.statisticOk {
+    background-color: green;
+}
+
+.statisticError {
+    background-color: red;
+}
+
+.statisticRez {
+    background-color: #777777;
+}
+
+.statisticReset {
+    line-height: 30px;
+    font-size: 25px;
+    padding: 0px;
+    margin: 0px;
+}

@@ -7,6 +7,7 @@ class Statistic
         ok = parseInt(ok,10);
         error = parseInt(error,10);
         let rez = ok/(ok+error)*100;
+        if (isNaN(rez)) rez = 0;
 
         document.getElementById('statisticOk').innerHTML = ok;
         document.getElementById('statisticError').innerHTML = error;
