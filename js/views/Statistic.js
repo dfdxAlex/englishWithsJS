@@ -4,7 +4,7 @@ class Statistic
 {
     init(ok, error)
     {
-        let rez = 100-error/ok*100;
+        let rez = ok/(ok+error)*100;
 
         document.getElementById('statisticOk').innerHTML = ok;
         document.getElementById('statisticError').innerHTML = error;
