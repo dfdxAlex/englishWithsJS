@@ -1,7 +1,7 @@
 const BDTranslate = [];
 
 BDTranslate.push(
-    ['Привет Мир', 
-     'Привіт світ', 
-     'Witaj świecie',
-     'Hello World']);
+    ['Сброс', 
+     'Скидання', 
+     'Resetowanie',
+     'Reset']);

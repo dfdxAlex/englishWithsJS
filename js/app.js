@@ -4,6 +4,6 @@ window.addEventListener('load', () => {
     // Запуск контроллера языковых настроек
     let languageController = new LanguageController();
     languageController.init();
-
-    // homeController.init();
+    let menuController = new MenuController();
+    menuController.init();
 });
