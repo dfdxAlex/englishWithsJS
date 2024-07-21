@@ -28,6 +28,12 @@ const handleLevel1 = () =>
 
     const option4 = document.getElementById('option4');
     option4.addEventListener('click', handleError);
+
+    // поставить вопрос
+    const ex = new Exercise();
+    const translate = new LanguageController();
+    // console.log(translate.translate('Привет Мир'))
+    ex.init(translate.translate('Выбрать правильный вариант сокращенной формы глагола to Be'));
 }
 
 
