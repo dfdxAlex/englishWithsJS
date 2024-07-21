@@ -8,7 +8,7 @@ class Statistic
 
         document.getElementById('statisticOk').innerHTML = ok;
         document.getElementById('statisticError').innerHTML = error;
-        document.getElementById('statisticRez').innerHTML = rez;
+        document.getElementById('statisticRez').innerHTML = Math.floor(rez)+'%';
         const translate = new LanguageController();
         
         document.getElementById('statisticReset').innerHTML = `<button class="btn" id="button_reset" type="button">${translate.translate('Сброс')}</button>`;
