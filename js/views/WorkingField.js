@@ -8,7 +8,11 @@ class WorkingField
          this.option1,
          this.option2, 
          this.option3, 
-         this.option4] = arrayBD;
+         this.option4,
+         this.translateRu,
+         this.translateUa,
+         this.translatePl,
+        ] = arrayBD;
     }
 
     init()
@@ -29,11 +33,22 @@ class WorkingField
         buttonOption[2] = `<div class='row'><div class='col-12 btn'><button class="btn btn-secondary" type='button' id='option3'> ${this.option3} </button></div></div>`;
         buttonOption[3] = `<div class='row'><div class='col-12 btn'><button class="btn btn-secondary" type='button' id='option4'> ${this.option4} </button></div></div>`;
         
-        const buttonQuestion = `<br><div class='row'><div class='col-12 btn'><button class="btn btn-info" type='button' id='question'> ${this.question} </button></div></div><br><br><br>`;
+        const buttonQuestion = `<br><div class='row'><div class='col-12 btn'><button class="btn btn-info" type='button' id='question'> ${this.question} </button></div></div><br>`;
+
+        let translateFromArray = '';
+        if (localStorage.getItem('EnglishWithJs_lang') === 'ru') {
+            translateFromArray = this.translateRu;
+        } else if (localStorage.getItem('EnglishWithJs_lang') === 'ua') {
+            translateFromArray = this.translateUa;
+        } else {
+            translateFromArray = this.translatePl;
+        }
+
+        const translate = `<div class='row'><div class='col-12 btn'><button class="btn btn-info" type='button' id='translate'> ${translateFromArray} </button></div></div><br><br><br>`;
     
         buttonOption = shuffleArray(buttonOption);
 
-        return buttonQuestion+buttonOption[0]+buttonOption[1]+buttonOption[2]+buttonOption[3];
+        return buttonQuestion+translate+buttonOption[0]+buttonOption[1]+buttonOption[2]+buttonOption[3];
     }
 
 

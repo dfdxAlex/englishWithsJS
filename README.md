@@ -63,14 +63,3 @@
   - **homeView.test.js**: Тесты для `homeView`.
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta http-equiv="refresh" content="0; URL='public/index.html'">
-    <title>Redirecting...</title>
-</head>
-<body>
-    <p>If you are not redirected automatically, follow this <a href="public/index.html">link to the home page</a>.</p>
-</body>
-</html>
-
