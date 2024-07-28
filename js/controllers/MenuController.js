@@ -17,6 +17,8 @@ class MenuController
         const unit4 = document.getElementById('level4');
         const unit5 = document.getElementById('level5');
 
+        // если клик по первой кнопке
         unit1.addEventListener('click', handleLevel1);
+        unit2.addEventListener('click', handleLevel2);
     }
 }

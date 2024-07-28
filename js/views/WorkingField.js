@@ -18,6 +18,11 @@ class WorkingField
             statistic.init(localStorage.getItem('level1_Ok'),localStorage.getItem('level1_Error'));
         }
 
+        if (localStorage.getItem('level') === '2') {
+            const statistic = new Statistic();
+            statistic.init(localStorage.getItem('level2_Ok'),localStorage.getItem('level2_Error'));
+        }
+
         let buttonOption = [];
         buttonOption[0] = `<div class='row'><div class='col-12 btn'><button class="btn btn-secondary" type='button' id='option1'> ${this.option1} </button></div></div>`;
         buttonOption[1] = `<div class='row'><div class='col-12 btn'><button class="btn btn-secondary" type='button' id='option2'> ${this.option2} </button></div></div>`;

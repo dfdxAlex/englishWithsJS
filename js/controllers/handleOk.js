@@ -12,7 +12,13 @@ const handleOk = () => {
     if (localStorage.getItem('level') === '1') {
         tic = +localStorage.getItem('level1_Ok');
         localStorage.setItem('level1_Ok',tic+1);
+        handleLevel1();
     }
     
-    handleLevel1();
+    if (localStorage.getItem('level') === '2') {
+        tic = +localStorage.getItem('level2_Ok');
+        localStorage.setItem('level2_Ok',tic+1);
+        handleLevel2();
+    }
+    
 }

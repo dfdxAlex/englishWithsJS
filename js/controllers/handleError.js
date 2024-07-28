@@ -12,6 +12,12 @@ const handleError = () => {
     if (localStorage.getItem('level') === '1') {
         tic = +localStorage.getItem('level1_Error');
         localStorage.setItem('level1_Error',tic+1);
+        handleLevel1();
     }
-    handleLevel1();
+    if (localStorage.getItem('level') === '2') {
+        tic = +localStorage.getItem('level2_Error');
+        localStorage.setItem('level2_Error',tic+1);
+        handleLevel2();
+    }
+    
 }
