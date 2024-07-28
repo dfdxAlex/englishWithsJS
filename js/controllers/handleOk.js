@@ -20,5 +20,11 @@ const handleOk = () => {
         localStorage.setItem('level2_Ok',tic+1);
         handleLevelX(new LevelDataModel(2));
     }
+
+    if (localStorage.getItem('level') === '3') {
+        tic = +localStorage.getItem('level3_Ok');
+        localStorage.setItem('level3_Ok',tic+1);
+        handleLevelX(new LevelDataModel(3));
+    }
     
 }

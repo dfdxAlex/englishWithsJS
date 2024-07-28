@@ -29,5 +29,10 @@ class LevelDataModel
             this.ex.init(this.translate.translate('Выбрать правильный вариант сокращенной формы глагола to Be'));
             return toBeSentences;
         }
+        
+        if (this.getLevel() == 3) {
+            this.ex.init(this.translate.translate('Выбрать правильный вариант ответа'));
+            return questionsWithAnswers;
+        }
     }
 }

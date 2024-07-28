@@ -19,5 +19,11 @@ const handleError = () => {
         localStorage.setItem('level2_Error',tic+1);
         handleLevelX(new LevelDataModel(2));
     }
+
+    if (localStorage.getItem('level') === '3') {
+        tic = +localStorage.getItem('level3_Error');
+        localStorage.setItem('level3_Error',tic+1);
+        handleLevelX(new LevelDataModel(3));
+    }
     
 }

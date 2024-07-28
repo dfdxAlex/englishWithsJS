@@ -20,5 +20,6 @@ class MenuController
         // если клик по первой кнопке
         unit1.addEventListener('click', () => {handleLevelX(new LevelDataModel(1))});
         unit2.addEventListener('click', () => {handleLevelX(new LevelDataModel(2))});
+        unit3.addEventListener('click', () => {handleLevelX(new LevelDataModel(3))});
     }
 }

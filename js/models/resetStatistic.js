@@ -12,4 +12,10 @@ const resetStatistic = () => {
         handleLevelX(new LevelDataModel(2));
     }
 
+    if (localStorage.getItem('level') == '3') {
+        localStorage.setItem('level3_Error',0);
+        localStorage.setItem('level3_Ok',0);
+        handleLevelX(new LevelDataModel(3));
+    }
+
 }

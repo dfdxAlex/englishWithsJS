@@ -1,6 +1,11 @@
 const BDTranslate = [];
 
 BDTranslate.push(
+    ['Выбрать правильный вариант ответа', 
+     'Вибрати правильний варіант відповіді', 
+     'Wybierz poprawną odpowiedź',
+     'Choose the correct answer']);
+BDTranslate.push(
     ['Сброс', 
      'Скидання', 
      'Resetowanie',
