@@ -20,20 +20,9 @@ const handleLevel2 = () =>
         document.getElementById('working_field')
                 .innerHTML = workingField.init();
     
-        // Выбрать все кнопки и накинуть события правильного и 
-        // неправильного клика. Первый вариант всегда правильный
-        // остальные три не правильные.
-        const option1 = document.getElementById('option1');
-        option1.addEventListener('click', handleOk);
-    
-        const option2 = document.getElementById('option2');
-        option2.addEventListener('click', handleError);
-    
-        const option3 = document.getElementById('option3');
-        option3.addEventListener('click', handleError);
-    
-        const option4 = document.getElementById('option4');
-        option4.addEventListener('click', handleError);
+        // Объект накидывает на кнопки обработчики 
+        // соответствующих событий, ответ правильный или нет
+        new EventController();
     
         // поставить вопрос
         const ex = new Exercise();

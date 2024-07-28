@@ -50,6 +50,4 @@ class WorkingField
 
         return buttonQuestion+translate+buttonOption[0]+buttonOption[1]+buttonOption[2]+buttonOption[3];
     }
-
-
 }
