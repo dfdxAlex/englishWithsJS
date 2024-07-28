@@ -18,7 +18,7 @@ class MenuController
         const unit5 = document.getElementById('level5');
 
         // если клик по первой кнопке
-        unit1.addEventListener('click', () => {handleLevelX(toBeForms, 1)});
-        unit2.addEventListener('click', () => {handleLevelX(toBeSentences, 2)});
+        unit1.addEventListener('click', () => {handleLevelX(new LevelDataModel(1))});
+        unit2.addEventListener('click', () => {handleLevelX(new LevelDataModel(2))});
     }
 }

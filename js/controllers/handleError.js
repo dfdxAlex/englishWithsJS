@@ -12,12 +12,12 @@ const handleError = () => {
     if (localStorage.getItem('level') === '1') {
         tic = +localStorage.getItem('level1_Error');
         localStorage.setItem('level1_Error',tic+1);
-        handleLevelX(toBeForms, 1);
+        handleLevelX(new LevelDataModel(1));
     }
     if (localStorage.getItem('level') === '2') {
         tic = +localStorage.getItem('level2_Error');
         localStorage.setItem('level2_Error',tic+1);
-        handleLevelX(toBeSentences, 2);
+        handleLevelX(new LevelDataModel(2));
     }
     
 }

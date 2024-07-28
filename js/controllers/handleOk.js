@@ -12,13 +12,13 @@ const handleOk = () => {
     if (localStorage.getItem('level') === '1') {
         tic = +localStorage.getItem('level1_Ok');
         localStorage.setItem('level1_Ok',tic+1);
-        handleLevelX(toBeForms, 1);
+        handleLevelX(new LevelDataModel(1));
     }
     
     if (localStorage.getItem('level') === '2') {
         tic = +localStorage.getItem('level2_Ok');
         localStorage.setItem('level2_Ok',tic+1);
-        handleLevelX(toBeSentences, 2);
+        handleLevelX(new LevelDataModel(2));
     }
     
 }

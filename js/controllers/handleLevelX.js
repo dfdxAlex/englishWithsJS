@@ -4,14 +4,14 @@
 // и на активные элементы накидываются обработчики событий.
 // данная функция так-же является обработчиком событий.
 
-const handleLevelX = (arrayDB, level = 1) =>
+const handleLevelX = (dataObj) =>
     {
         // Записать в хранилище что работаем на уровне 2
-        localStorage.setItem('level',level);
+        localStorage.setItem('level',dataObj.getLevel());
     
         // выбрать случайную позицию из массива toBeForms
         // данный массив хранит в себе вопроссы и ответы.
-        let mas = arrayDB[getRandomInt(0, arrayDB.length-1)];
+        let mas = dataObj.getArrayDB()[getRandomInt(0, dataObj.getArrayDB().length-1)];
     
         // создать рабочее поле с вопроссом и вариантами ответа
         const workingField = new WorkingField(mas);
