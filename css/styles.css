@@ -42,3 +42,18 @@ select {
     padding: 0px;
     margin: 0px;
 }
+
+        /* Дополнительные стили для адаптивности текста */
+        .text-wrap {
+            font-size: 4vw; /* Адаптивный размер текста */
+        }
+        @media (orientation: portrait) {
+            .text-wrap {
+                font-size: 5vw; /* Увеличение текста в вертикальной ориентации */
+            }
+        }
+        @media (orientation: landscape) {
+            .text-wrap {
+                font-size: 3vw; /* Уменьшение текста в горизонтальной ориентации */
+            }
+        }
