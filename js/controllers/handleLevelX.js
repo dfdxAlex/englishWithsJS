@@ -24,10 +24,6 @@ const handleLevelX = (dataObj) =>
         // соответствующих событий, ответ правильный или нет
         new EventController();
     
-        // поставить вопрос
-        const ex = new Exercise();
-        const translate = new LanguageController();
-        ex.init(translate.translate('Выбрать правильный вариант сокращенной формы глагола to Be'));
     }
     
     
