@@ -1,17 +1,17 @@
-// функция обрабатывает нажатие на кнопку меню Unit1
+// функция обрабатывает нажатие на кнопку правого меню 
 // При нажатии на кнопку первого урока рисуется поле 
 // первого урока, запоминается состояние первого урока,
 // и на активные элементы накидываются обработчики событий.
 // данная функция так-же является обработчиком событий.
 
-const handleLevel2 = () =>
+const handleLevelX = (arrayDB, level = 1) =>
     {
         // Записать в хранилище что работаем на уровне 2
-        localStorage.setItem('level','2');
+        localStorage.setItem('level',level);
     
         // выбрать случайную позицию из массива toBeForms
         // данный массив хранит в себе вопроссы и ответы.
-        let mas = toBeSentences[getRandomInt(0, toBeSentences.length-1)];
+        let mas = arrayDB[getRandomInt(0, arrayDB.length-1)];
     
         // создать рабочее поле с вопроссом и вариантами ответа
         const workingField = new WorkingField(mas);
