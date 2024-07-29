@@ -10,15 +10,15 @@ class EventController {
     }
     initEventHandlers() {
         const option1 = document.getElementById('option1');
-        option1.addEventListener('click', handleOk);
+        option1.addEventListener('click', () => {handleOkErr('Ok')});
 
         const option2 = document.getElementById('option2');
-        option2.addEventListener('click', handleError);
+        option2.addEventListener('click', () => {handleOkErr('Error')});
 
         const option3 = document.getElementById('option3');
-        option3.addEventListener('click', handleError);
+        option3.addEventListener('click', () => {handleOkErr('Error')});
 
         const option4 = document.getElementById('option4');
-        option4.addEventListener('click', handleError);
+        option4.addEventListener('click', () => {handleOkErr('Error')});
     }
 }

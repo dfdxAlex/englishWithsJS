@@ -6,25 +6,11 @@
 // Функция handleLevelX(); перезапускает рабочее поле 
 // для обновления информации
 
-const handleOk = () => {
+function handleOkErr(str) {
     let tic = 0;
+    const levexW = 'level'+localStorage.getItem('level')+'_'+str;
+    tic = +localStorage.getItem(levexW);
+    localStorage.setItem(levexW,tic+1);
 
-    if (localStorage.getItem('level') === '1') {
-        tic = +localStorage.getItem('level1_Ok');
-        localStorage.setItem('level1_Ok',tic+1);
-        handleLevelX(new LevelDataModel(1));
-    }
-    
-    if (localStorage.getItem('level') === '2') {
-        tic = +localStorage.getItem('level2_Ok');
-        localStorage.setItem('level2_Ok',tic+1);
-        handleLevelX(new LevelDataModel(2));
-    }
-
-    if (localStorage.getItem('level') === '3') {
-        tic = +localStorage.getItem('level3_Ok');
-        localStorage.setItem('level3_Ok',tic+1);
-        handleLevelX(new LevelDataModel(3));
-    }
-    
+    handleLevelX(new LevelDataModel(+localStorage.getItem('level')));
 }
