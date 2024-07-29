@@ -1,5 +1,19 @@
 const BDTranslate = [];
-
+BDTranslate.push(
+    ['To Be, ответь на вопрос', 
+     'To Be, дай відповідь на запитання', 
+     'Być, odpowiedz na pytanie',
+     'To Be, answer the question']);
+BDTranslate.push(
+    ['To Be, вопрос/ответ', 
+     'To Be, питання/відповідь', 
+     'Być, pytanie/odpowiedź',
+     'To Be, Q&A']);
+BDTranslate.push(
+    ['To Be, краткая форма', 
+     'To Be, коротка форма', 
+     'Być, krótka forma',
+     'To Be, short form']);
 BDTranslate.push(
     ['Выбрать правильный вариант ответа', 
      'Вибрати правильний варіант відповіді', 
