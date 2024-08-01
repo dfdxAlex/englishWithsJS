@@ -5,8 +5,8 @@ class MenuRight
     constructor()
     {
         this.unit = new LanguageController();
-        
     }
+    
     menu()
     {
         this.unit1 = this.unit.translate('To Be, краткая форма');

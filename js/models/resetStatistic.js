@@ -1,21 +1,18 @@
+// Функция сбрасывает статистику по тому тесту, в котором 
+// находитсяя пользователь.
+// статистика и информация хранятся в локальном хранилище
+// Две переменные resetOk и resetError создаются с использованием
+// их постоянных чатей level, _Ok, _Error и уровня, который 
+// хранится отдельно в хранилище.
+// Соединив всё это получаются две переменные, которые используются
+// как индекс, который нужно обнулить.
 const resetStatistic = () => {
 
-    if (localStorage.getItem('level') == '1') {
-        localStorage.setItem('level1_Error',0);
-        localStorage.setItem('level1_Ok',0);
-        handleLevelX(new LevelDataModel(1));
-    }
-
-    if (localStorage.getItem('level') == '2') {
-        localStorage.setItem('level2_Error',0);
-        localStorage.setItem('level2_Ok',0);
-        handleLevelX(new LevelDataModel(2));
-    }
-
-    if (localStorage.getItem('level') == '3') {
-        localStorage.setItem('level3_Error',0);
-        localStorage.setItem('level3_Ok',0);
-        handleLevelX(new LevelDataModel(3));
-    }
+    const level = localStorage.getItem('level');
+    const resetOk = 'level'+level+'_Ok';
+    const resetError = 'level'+level+'_Error';
+    localStorage.setItem(resetError,0);
+    localStorage.setItem(resetOk,0); 
+    handleLevelX(new LevelDataModel(+level));
 
 }
