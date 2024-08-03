@@ -10,7 +10,7 @@ class MenuController
     init() 
     {
         // создать объект правого меню
-        const menu = new MenuRight();
+        const menu = new MenuRight(this.levelDataModel.getArrayNameButton());
         // найти точку для публикации правого меню
         const point = document.getElementById('menu');
         // поместить меню на выбранное место.
