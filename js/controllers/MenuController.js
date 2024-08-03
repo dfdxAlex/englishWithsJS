@@ -2,6 +2,11 @@
 
 class MenuController
 {
+    constructor ()
+    {
+        this.levelDataModel = new LevelDataModel();
+    }
+
     init() 
     {
         // создать объект правого меню
@@ -11,15 +16,11 @@ class MenuController
         // поместить меню на выбранное место.
         point.innerHTML = menu.menu();
 
-        const unit1 = document.getElementById('level1');
-        const unit2 = document.getElementById('level2');
-        const unit3 = document.getElementById('level3');
-        const unit4 = document.getElementById('level4');
-        const unit5 = document.getElementById('level5');
+        let unit = [];
+        for (let i=1; i<=this.levelDataModel.getTic(); i++) {
+            unit[i] = document.getElementById('level'+i);
+            unit[i].addEventListener('click', () => {handleLevelX(new LevelDataModel(i))});
+        }
 
-        // если клик по первой кнопке
-        unit1.addEventListener('click', () => {handleLevelX(new LevelDataModel(1))});
-        unit2.addEventListener('click', () => {handleLevelX(new LevelDataModel(2))});
-        unit3.addEventListener('click', () => {handleLevelX(new LevelDataModel(3))});
     }
 }

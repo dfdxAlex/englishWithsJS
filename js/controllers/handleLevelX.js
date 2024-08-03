@@ -6,7 +6,7 @@
 
 const handleLevelX = (dataObj) =>
     {
-        // Записать в хранилище что работаем на уровне 2
+        // Записать в хранилище что работаем на неком уровне
         localStorage.setItem('level',dataObj.getLevel());
     
         // выбрать случайную позицию из массива toBeForms
@@ -23,7 +23,7 @@ const handleLevelX = (dataObj) =>
         // Объект накидывает на кнопки обработчики 
         // соответствующих событий, ответ правильный или нет
         new EventController();
-    
+        return dataObj;
     }
     
     

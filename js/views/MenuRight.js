@@ -14,7 +14,7 @@ class MenuRight
         this.unit3 = this.unit.translate('To Be, ответь на вопрос');
         return `<button class="btn" type="button" id="level1">${this.unit1}</button><br>`+
                `<button class="btn" type="button" id="level2">${this.unit2}</button><br>`+
-               `<button class="btn" type="button" id="level3">${this.unit2}</button><br>`+
+               `<button class="btn" type="button" id="level3">${this.unit3}</button><br>`+
                '<button class="btn" type="button" id="level4">Unit 4</button><br>'+
                '<button class="btn" type="button" id="level5">Unit 5</button><br>';
     }
