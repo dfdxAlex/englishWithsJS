@@ -1,5 +1,15 @@
 const BDTranslate = [];
 BDTranslate.push(
+    ['Where/Who...', 
+     'Where/Who...', 
+     'Where/Who...',
+     'Where/Who...']);
+BDTranslate.push(
+    ['Вставить правильное слово', 
+     'Вставити правильне слово', 
+     'Wstaw właściwe słowo',
+     'Insert the correct word']);
+BDTranslate.push(
     ['To Be, ответь на вопрос', 
      'To Be, дай відповідь на запитання', 
      'Być, odpowiedz na pytanie',

@@ -50,9 +50,6 @@ class LanguageController
         // --выбрать место на странице, куда поместить меню
         const rez = document.getElementById("button_lang_selected");
 
-        // получить инфу об выбранном языке
-        // const lang = localStorage.getItem('EnglishWithJs_lang') || 'en';
-
         // --поместить меню, в метод передается значение 
         // --по умолчанию положения меню выбора языка
         rez.innerHTML = langSelector.init(this.langStr);
