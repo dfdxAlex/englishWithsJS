@@ -12,10 +12,9 @@ class MenuController
         // создать объект правого меню
         const menu = new MenuRight(this.levelDataModel.getArrayNameButton());
         // найти точку для публикации правого меню
-        // const point = document.getElementById('menu');
+        // само место парковки задаётся внутри класса MenuRight
         const point = menu.getSeedForMenu();
         // поместить меню на выбранное место.
-        // point.innerHTML = menu.menu();
         point.innerHTML = menu.menuDropdown();
 
         let unit = [];
