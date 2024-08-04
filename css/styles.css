@@ -22,6 +22,8 @@ select {
     font-size: 25px;
     line-height: 30px;
     color:white;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 .statisticOk {
@@ -57,11 +59,20 @@ select {
     }
 }
 
-.clicked_element, .error_form, .numberEl {
+.clicked_element, .error_form, .numberEl, .question_old {
     border: 2px solid black;
     border-radius: 20px;
 }
 
 .numberEl {
     background-color: beige;
+}
+.class_fieldset {
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.fieldset-legend {
+    color: black;
 }

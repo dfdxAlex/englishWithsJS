@@ -30,17 +30,30 @@ function handleOkErr(str, event) {
     // Поместить информацию о том правильный ответ или нет
     const errorOrOk = document.getElementById('error_form');
     errorOrOk.innerHTML = str;
-    
+
+    // Запомнить содержимое вопросса, для того, чтобы его 
+    // продублировать в поле предыдущего вопросса и ответа
+    const oldElementText = document.getElementById('question');
+    const clickedElementOld = document.getElementById('question_old');
+    clickedElementOld.innerText = oldElementText.innerText;
+
+    // Поле со старым или текущим вопроссом
+    const fieldsetLegend = document.getElementById('fieldset-legend');
+    fieldsetLegend.innerHTML = 'Текущий вопрос/ответ';
     // Изменить вопрос только если есть правильный ответ на предыдущий
     if (str === 'Ok') {
         errorOrOk.style.backgroundColor = "green";
         clickedEl.style.backgroundColor = "green";
+        clickedElementOld.style.backgroundColor = "green";
         errorOrOk.style.color = "white";
         clickedEl.style.color = "white";
+        clickedElementOld.style.color = "white";
+        fieldsetLegend.innerHTML = 'Предыдущий вопрос/ответ';
         handleLevelX(new LevelDataModel(+localStorage.getItem('level')));
     }
     else {
         errorOrOk.style.backgroundColor = "red";
         clickedEl.style.backgroundColor = "red";
+        clickedElementOld.style.backgroundColor = "red";
     }
 }
