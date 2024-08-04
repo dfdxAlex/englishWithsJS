@@ -14,7 +14,8 @@ class MenuController
         // найти точку для публикации правого меню
         const point = document.getElementById('menu');
         // поместить меню на выбранное место.
-        point.innerHTML = menu.menu();
+        // point.innerHTML = menu.menu();
+        point.innerHTML = menu.menuDropdown();
 
         let unit = [];
         for (let i=1; i<=this.levelDataModel.getTic(); i++) {

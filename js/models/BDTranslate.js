@@ -1,5 +1,10 @@
 const BDTranslate = [];
 BDTranslate.push(
+    ['Выбрать тест.', 
+     'Вибрати тест.', 
+     'Wybierz test.',
+     'Select a test.']);
+BDTranslate.push(
     ['Where/Who...', 
      'Where/Who...', 
      'Where/Who...',
