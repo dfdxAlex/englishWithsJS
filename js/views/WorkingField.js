@@ -13,10 +13,15 @@ class WorkingField
          this.translateUa,
          this.translatePl,
         ] = arrayBD;
+        // получить номер вопросса
+        this.numberOfElement = +localStorage.getItem('randomEl');
     }
 
     init()
     {
+        // Показать номер вопросса
+        document.getElementById('numberEl').innerHTML ='№' + this.numberOfElement;
+
         const levelForStaticticOk = 'level'+localStorage.getItem('level')+'_Ok';
         const levelForStaticticError = 'level'+localStorage.getItem('level')+'_Error';
         const statistic = new Statistic();

@@ -8,7 +8,7 @@
 // если использовать как функцию, то handleOkErr(Ok|Error)
 // если как обработчик событий, то () => {handleOkErr(Ok|Error)}
 
-function handleOkErr(str) {
+function handleOkErr(str, event) {
     let tic = 0;
     // Переменные, в которых хранится инфа об верных и не верных 
     // ответак создается так:
@@ -22,5 +22,25 @@ function handleOkErr(str) {
     tic = +localStorage.getItem(levexW);
     localStorage.setItem(levexW,tic+1);
 
-    handleLevelX(new LevelDataModel(+localStorage.getItem('level')));
+    // Получить текстовое содержимое елемента
+    // на который кликнули и поместить его в поле 
+    // с id=clicked_element
+    const clickedEl = document.getElementById('clicked_element');
+    clickedEl.innerHTML = event.target.innerText;
+    // Поместить информацию о том правильный ответ или нет
+    const errorOrOk = document.getElementById('error_form');
+    errorOrOk.innerHTML = str;
+    
+    // Изменить вопрос только если есть правильный ответ на предыдущий
+    if (str === 'Ok') {
+        errorOrOk.style.backgroundColor = "green";
+        clickedEl.style.backgroundColor = "green";
+        errorOrOk.style.color = "white";
+        clickedEl.style.color = "white";
+        handleLevelX(new LevelDataModel(+localStorage.getItem('level')));
+    }
+    else {
+        errorOrOk.style.backgroundColor = "red";
+        clickedEl.style.backgroundColor = "red";
+    }
 }

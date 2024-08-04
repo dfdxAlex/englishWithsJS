@@ -56,3 +56,12 @@ select {
         font-size: 3vw; /* Уменьшение текста в горизонтальной ориентации */
     }
 }
+
+.clicked_element, .error_form, .numberEl {
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.numberEl {
+    background-color: beige;
+}

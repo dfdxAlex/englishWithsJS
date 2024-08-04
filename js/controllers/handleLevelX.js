@@ -11,7 +11,9 @@ const handleLevelX = (dataObj) =>
     
         // выбрать случайную позицию из массива toBeForms
         // данный массив хранит в себе вопроссы и ответы.
-        let mas = dataObj.getArrayDB()[getRandomInt(0, dataObj.getArrayDB().length-1)];
+        const randomEl = getRandomInt(0, dataObj.getArrayDB().length-1);
+        localStorage.setItem('randomEl', randomEl);
+        let mas = dataObj.getArrayDB()[randomEl];
     
         // создать рабочее поле с вопроссом и вариантами ответа
         const workingField = new WorkingField(mas);
