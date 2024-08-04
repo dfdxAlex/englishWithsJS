@@ -7,6 +7,9 @@ class MenuRight
         this.unit = new LanguageController();
         this.nameButtons = nameButtons;
         this.nameMenu = this.unit.translate('Выбрать тест.');
+        // Это свойство содержит место, куда нужно припарковать 
+        // меню. Вводится id того елемента, который примет меню.
+        this.seedMenu = 'burger';
     }
     
     menu()
@@ -32,9 +35,15 @@ class MenuRight
         }).join('');
 
         rez+='</ul>';
+        rez+='</div></div>';
 
         console.log(rez);
         return rez;
+    }
+
+    getSeedForMenu()
+    {
+        return document.getElementById(this.seedMenu);
     }
 }
 
