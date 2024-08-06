@@ -10,12 +10,22 @@ select {
 }
 
 .exercise {
-    height: 30px;
-    background-color: rgb(147, 80, 235);
-    color: white;
+    /* height: 30px; */
+    /* background-color: rgb(147, 80, 235); */
+    /* color: white; */
     margin: 5px;
     font-size: 25px;
     line-height: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.exercise legend {
+    border: 1px solid black;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+    font-size: 15px;
+    line-height: 20px;
 }
 
 /* Стили для блоков статистики */
