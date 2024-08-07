@@ -26,7 +26,7 @@ class LevelDataModel
     {
         this.level = level+0;
         this.ex = new Exercise();
-        this.translate = new LanguageController();
+        this.translate = FactoryRegistr.getObject("LanguageController");
         // Число уроков, изменяется в ручную при добавлении урока
         this.tic = 4;
         this.propertyArrayNameButton = [];

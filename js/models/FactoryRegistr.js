@@ -1,24 +1,22 @@
 // класс должен в конце принять на себя функцию создания объектов
-// используется паттерн Singleton Registry
+// используется паттерн factory Registry
+// объе
 
 class FactoryRegistr
 {
-    constructor()
+    static factoryArray = {};
+
+    static addObject(nameClass, linkObject)
     {
-        this.factoryArray = {};
+        FactoryRegistr.factoryArray[nameClass] = linkObject;
     }
 
-    addObject(nameClass, linkObject)
-    {
-        this.factoryArray[nameClass] = linkObject;
-    }
-
-    getObject(nameClass, property = false)
+    static getObject(nameClass, property = false)
     {
         // если имя запрашиваемого класса уже есть в массиве-объекте
         // то вернуть его из массива.
-        if (nameClass in this.factoryArray) {
-            return this.factoryArray[nameClass];
+        if (nameClass in FactoryRegistr.factoryArray) {
+            return FactoryRegistr.factoryArray[nameClass];
         };
   
         // Если объекта нет, то создать, зарегистрировать и вернуть
@@ -27,7 +25,7 @@ class FactoryRegistr
             obj = new LanguageController();
         }
 
-        this.addObject(nameClass, obj);
+        FactoryRegistr.addObject(nameClass, obj);
         return obj;
         
     }

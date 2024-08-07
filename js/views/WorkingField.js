@@ -28,7 +28,7 @@ class WorkingField
         statistic.init(localStorage.getItem(levelForStaticticOk),localStorage.getItem(levelForStaticticError));
 
         // Настроить переводчик
-        const transL = factoryR.getObject("LanguageController");
+        const transL = FactoryRegistr.getObject("LanguageController");
         let fieldsetStart = `<fieldset class="fieldSetWorkField"><legend> ${transL.translate('Вопрос с вариантами ответа')} </legend>`;
         
         // вставить перевод в "Задание для теста"

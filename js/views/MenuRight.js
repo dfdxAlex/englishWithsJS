@@ -4,9 +4,8 @@ class MenuRight
 {
     constructor(nameButtons)
     {
-        this.unit = new LanguageController();
         this.nameButtons = nameButtons;
-        this.nameMenu = this.unit.translate('Выбрать тест.');
+        this.nameMenu = FactoryRegistr.getObject("LanguageController").translate('Выбрать тест.');
         // Это свойство содержит место, куда нужно припарковать 
         // меню. Вводится id того елемента, который примет меню.
         // используется как внутрри класса, так и за его пределами.
