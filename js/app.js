@@ -7,3 +7,7 @@ window.addEventListener('load', () => {
     let menuController = new MenuController();
     menuController.init();
 });
+
+// создается объект фабрики-регистратора,
+// будет доступен во всём проекте
+const factoryR = new FactoryRegistr();

@@ -28,7 +28,12 @@ class WorkingField
         statistic.init(localStorage.getItem(levelForStaticticOk),localStorage.getItem(levelForStaticticError));
 
         // Настроить переводчик
-        let fieldsetStart = '<fieldset class="fieldSetWorkField"><legend>Вопрос с вариантами ответа</legend>';
+        const transL = factoryR.getObject("LanguageController");
+        let fieldsetStart = `<fieldset class="fieldSetWorkField"><legend> ${transL.translate('Вопрос с вариантами ответа')} </legend>`;
+        
+        // вставить перевод в "Задание для теста"
+        const lesonForTest = document.getElementById('exercise-legend');
+        lesonForTest.innerHTML = transL.translate('Задание для теста');
         
         let buttonOption = [];
         buttonOption[0] = `<div class='row'><div class='col-12 btn'><button class="btn btn-secondary" type='button' id='option1'> ${this.option1} </button></div></div>`;

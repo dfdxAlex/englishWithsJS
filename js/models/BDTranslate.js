@@ -1,4 +1,15 @@
 const BDTranslate = [];
+
+BDTranslate.push(
+    ['Задание для теста', 
+     'Завдання для тесту', 
+     'Zadanie testowe',
+     'Task for the test']);
+BDTranslate.push(
+    ['Вопрос с вариантами ответа', 
+     'Питання з варіантами відповіді', 
+     'Pytanie wielokrotnego wyboru',
+     'Multiple choice question']);
 BDTranslate.push(
     ['Выбрать тест.', 
      'Вибрати тест.', 

@@ -38,7 +38,6 @@ class MenuRight
         rez+='</ul>';
         rez+='</div></div>';
 
-        console.log(rez);
         return rez;
     }
 
