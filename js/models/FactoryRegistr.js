@@ -21,10 +21,16 @@ class FactoryRegistr
   
         // Если объекта нет, то создать, зарегистрировать и вернуть
         let obj;
-        if (nameClass == 'LanguageController') {
-            obj = new LanguageController();
-        }
+        switch (nameClass) {
+            case 'LanguageController':
+                obj = new LanguageController();
+                break;
 
+            default:
+                // обработка случая, если класс не найден
+                obj = new ErrorLog(nameClass, property);
+                break;
+        }
         FactoryRegistr.addObject(nameClass, obj);
         return obj;
         
