@@ -24,7 +24,7 @@ class WorkingField
 
         const levelForStaticticOk = 'level'+localStorage.getItem('level')+'_Ok';
         const levelForStaticticError = 'level'+localStorage.getItem('level')+'_Error';
-        const statistic = new Statistic();
+        const statistic = FactoryRegistr.getObject('Statistic');
         statistic.init(localStorage.getItem(levelForStaticticOk),localStorage.getItem(levelForStaticticError));
 
         // Настроить переводчик

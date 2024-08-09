@@ -25,6 +25,9 @@ class FactoryRegistr
             case 'LanguageController':
                 obj = new LanguageController();
                 break;
+            case 'Statistic':
+                obj = new Statistic();
+                break;
 
             default:
                 // обработка случая, если класс не найден
