@@ -2,23 +2,20 @@
 
 class WorkingField
 {
-    constructor(arrayBD)
+    init(arrayBD)
     {
-        [this.question, 
-         this.option1,
-         this.option2, 
-         this.option3, 
-         this.option4,
-         this.translateRu,
-         this.translateUa,
-         this.translatePl,
-        ] = arrayBD;
-        // получить номер вопросса
-        this.numberOfElement = +localStorage.getItem('randomEl');
-    }
+      [this.question, 
+        this.option1,
+        this.option2, 
+        this.option3, 
+        this.option4,
+        this.translateRu,
+        this.translateUa,
+        this.translatePl,
+       ] = arrayBD;
+       // получить номер вопросса
+       this.numberOfElement = +localStorage.getItem('randomEl');
 
-    init()
-    {
         // Показать номер вопросса
         document.getElementById('numberEl').innerHTML ='№' + this.numberOfElement;
 

@@ -1,6 +1,7 @@
 // класс должен в конце принять на себя функцию создания объектов
 // используется паттерн factory Registry
-// объе
+// Запускается фабрика:
+// FactoryRegistr.getObject('name class')
 
 class FactoryRegistr
 {
@@ -27,6 +28,15 @@ class FactoryRegistr
                 break;
             case 'Statistic':
                 obj = new Statistic();
+                break;
+            case 'MenuController':
+                obj = new MenuController();
+                break;
+            case 'WorkingField':
+                obj = new WorkingField();
+                break;
+            case 'EventController':
+                obj = new EventController();
                 break;
 
             default:

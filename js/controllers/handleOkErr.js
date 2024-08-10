@@ -48,7 +48,7 @@ function handleOkErr(str, event) {
         errorOrOk.style.color = "white";
         clickedEl.style.color = "white";
         clickedElementOld.style.color = "white";
-        fieldsetLegend.innerHTML = 'Предыдущий вопрос/ответ';
+        fieldsetLegend.innerHTML = FactoryRegistr.getObject('LanguageController').translate('Предыдущий вопрос/ответ');
         handleLevelX(new LevelDataModel(+localStorage.getItem('level')));
     }
     else {

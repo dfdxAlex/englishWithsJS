@@ -4,8 +4,7 @@ window.addEventListener('load', () => {
     // Запуск контроллера языковых настроек
     FactoryRegistr.getObject("LanguageController").init();
     
-    let menuController = new MenuController();
-    menuController.init();
+    FactoryRegistr.getObject('MenuController').init();
 });
 
 

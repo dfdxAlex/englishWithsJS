@@ -16,15 +16,13 @@ const handleLevelX = (dataObj) =>
         let mas = dataObj.getArrayDB()[randomEl];
     
         // создать рабочее поле с вопроссом и вариантами ответа
-        const workingField = new WorkingField(mas);
-    
         // поместить форму в соответствующий div
         document.getElementById('working_field')
-                .innerHTML = workingField.init();
+                .innerHTML = FactoryRegistr.getObject('WorkingField').init(mas);
     
         // Объект накидывает на кнопки обработчики 
         // соответствующих событий, ответ правильный или нет
-        new EventController();
+        FactoryRegistr.getObject('EventController').init();
         return dataObj;
     }
     

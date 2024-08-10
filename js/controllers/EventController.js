@@ -4,11 +4,7 @@
 
 // объект достаточно просто создать в нужном месте
 class EventController {
-    constructor ()
-    {
-        this.initEventHandlers();
-    }
-    initEventHandlers() {
+    init() {
         const option1 = document.getElementById('option1');
         option1.addEventListener('click', (event) => {handleOkErr('Ok',event)});
 

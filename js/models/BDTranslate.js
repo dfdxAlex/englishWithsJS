@@ -1,6 +1,11 @@
 const BDTranslate = [];
 
 BDTranslate.push(
+    ['Предыдущий вопрос/ответ', 
+     'Попереднє запитання/відповідь', 
+     'Poprzednie pytanie/odpowiedź',
+     'Previous question/answer']);
+BDTranslate.push(
     ['Задание для теста', 
      'Завдання для тесту', 
      'Zadanie testowe',
