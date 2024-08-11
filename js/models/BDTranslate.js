@@ -1,6 +1,11 @@
 const BDTranslate = [];
 
 BDTranslate.push(
+    ['Настоящее продолженное', 
+     'Присутній безперервний', 
+     'Teraźniejszość ciągła',
+     'Present continuous']);
+BDTranslate.push(
     ['Предыдущий вопрос/ответ', 
      'Попереднє запитання/відповідь', 
      'Poprzednie pytanie/odpowiedź',

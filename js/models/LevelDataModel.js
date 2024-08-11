@@ -28,7 +28,7 @@ class LevelDataModel
         this.ex = new Exercise();
         this.translate = FactoryRegistr.getObject("LanguageController");
         // Число уроков, изменяется в ручную при добавлении урока
-        this.tic = 4;
+        this.tic = 5;
         this.propertyArrayNameButton = [];
         this.arrayNameButton();
     }
@@ -41,6 +41,7 @@ class LevelDataModel
         this.propertyArrayNameButton.push(this.translate.translate('To Be, вопрос/ответ'));
         this.propertyArrayNameButton.push(this.translate.translate('To Be, ответь на вопрос'));
         this.propertyArrayNameButton.push(this.translate.translate('Where/Who...'));
+        this.propertyArrayNameButton.push(this.translate.translate('Настоящее продолженное'));
     }
 
     getArrayDB()
@@ -61,6 +62,11 @@ class LevelDataModel
         if (this.level == 4) {
             this.ex.init(this.translate.translate('Вставить правильное слово'));
             return whereThat;
+        }
+
+        if (this.level == 5) {
+            this.ex.init(this.translate.translate('Вставить правильное слово'));
+            return presentContinuous;
         }
 
         return false;
