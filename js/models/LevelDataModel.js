@@ -28,7 +28,7 @@ class LevelDataModel
         this.ex = new Exercise();
         this.translate = FactoryRegistr.getObject("LanguageController");
         // Число уроков, изменяется в ручную при добавлении урока
-        this.tic = 5;
+        this.tic = 11;
         this.propertyArrayNameButton = [];
         this.arrayNameButton();
     }
@@ -37,6 +37,12 @@ class LevelDataModel
     // на кнопке правого меню
     arrayNameButton()
     {
+        this.propertyArrayNameButton.push('100 слов еда');
+        this.propertyArrayNameButton.push('100 слов спорт');
+        this.propertyArrayNameButton.push('100 слов путешествия');
+        this.propertyArrayNameButton.push('100 слов');
+        this.propertyArrayNameButton.push('300 слов');
+        this.propertyArrayNameButton.push(this.translate.translate('500 слов'));
         this.propertyArrayNameButton.push(this.translate.translate('To Be, краткая форма'));
         this.propertyArrayNameButton.push(this.translate.translate('To Be, вопрос/ответ'));
         this.propertyArrayNameButton.push(this.translate.translate('To Be, ответь на вопрос'));
@@ -47,24 +53,48 @@ class LevelDataModel
     getArrayDB()
     {
         if (this.level == 1) {
+            this.ex.init(this.translate.translate('Выбрать правильный перевод'));
+            return commonFood100;
+        }
+        if (this.level == 2) {
+            this.ex.init(this.translate.translate('Выбрать правильный перевод'));
+            return commonSport100;
+        }
+        if (this.level == 3) {
+            this.ex.init(this.translate.translate('Выбрать правильный перевод'));
+            return commonWalk100;
+        }
+        if (this.level == 4) {
+            this.ex.init(this.translate.translate('Выбрать правильный перевод'));
+            return commonWords100;
+        }
+        if (this.level == 5) {
+            this.ex.init(this.translate.translate('Выбрать правильный перевод'));
+            return commonWords300;
+        }
+        if (this.level == 6) {
+            this.ex.init(this.translate.translate('Выбрать правильный перевод'));
+            return commonWords500;
+        }
+        if (this.level == 7) {
             this.ex.init(this.translate.translate('Выбрать правильный вариант сокращенной формы глагола to Be'));
             return toBeForms;
         }
-        if (this.level == 2) {
+        if (this.level == 8) {
             this.ex.init(this.translate.translate('Выбрать правильный вариант сокращенной формы глагола to Be'));
             return toBeSentences;
         }
-        if (this.level == 3) {
+        if (this.level == 9) {
             this.ex.init(this.translate.translate('Выбрать правильный вариант ответа'));
             return questionsWithAnswers;
         }
 
-        if (this.level == 4) {
+        if (this.level == 10) {
             this.ex.init(this.translate.translate('Вставить правильное слово'));
             return whereThat;
         }
 
-        if (this.level == 5) {
+        if (this.level == 11) {
             this.ex.init(this.translate.translate('Вставить правильное слово'));
             return presentContinuous;
         }
