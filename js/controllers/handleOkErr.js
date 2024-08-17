@@ -27,6 +27,11 @@ function handleOkErr(str, event) {
     // с id=clicked_element
     const clickedEl = document.getElementById('clicked_element');
     clickedEl.innerHTML = event.target.innerText;
+
+    // Здесь просто прячется нажатая кнопка. Это нужно для того, 
+    // чтобы не дублировать неправильные ответы.
+    event.target.style.display = 'none';
+
     // Поместить информацию о том правильный ответ или нет
     const errorOrOk = document.getElementById('error_form');
     errorOrOk.innerHTML = str;
