@@ -16,5 +16,10 @@ class EventController {
 
         const option4 = document.getElementById('option4');
         option4.addEventListener('click', (event) => {handleOkErr('Error',event)});
+         
+        // Добавить обработчик события по кнопке с переводом.
+        // Перевод должен появиться только после клика на кнопку
+        const translateButton = document.getElementById('translate');
+        translateButton.addEventListener('click',(event)=>{handleTranslateQuestion(event, FactoryRegistr.getObject('WorkingField'))});
     }
 }
