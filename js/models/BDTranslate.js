@@ -1,5 +1,10 @@
 const BDTranslate = [];
 BDTranslate.push(
+    ['Сообщить об ошибке', 
+     'Повідомити про помилку', 
+     'Zgłoś błąd',
+     'Report a bug']);
+BDTranslate.push(
     ['Перевести вопрос', 
      'Перекласти питання', 
      'Przetłumacz pytanie',

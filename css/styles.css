@@ -82,9 +82,15 @@ select {
 }
 
 /* Стили для элементов с классами */
-.clicked_element, .error_form, .numberEl, .question_old {
+.clicked_element, .error_form, 
+.numberEl, .question_old, 
+.search_error {
     border: 2px solid black;
     border-radius: 20px;
+}
+
+.search_error {
+    background-color: chocolate;
 }
 
 .numberEl {
