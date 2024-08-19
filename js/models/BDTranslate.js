@@ -6,14 +6,39 @@ BDTranslate.push(
      'Translate question']);
 BDTranslate.push(
     ['Выбрать правильный перевод', 
-     'Выбрать правильный перевод', 
-     'Выбрать правильный перевод',
-     'Выбрать правильный перевод']);
+     'Вибрати правильний переклад', 
+     'Wybierz właściwe tłumaczenie',
+     'Choose the correct translation']);
+BDTranslate.push(
+        ['100 слов о еде', 
+         '100 слів про їжу', 
+         '100 słów o jedzeniu',
+         '100 words about food']);
+BDTranslate.push(
+        ['100 слов о путешествии', 
+         '100 слів про спорт', 
+         '100 słów o sporcie',
+         '100 words about sports']);
+BDTranslate.push(
+        ['100 слов о путешествии', 
+         '100 слів про подорож', 
+         '100 słów o podróżach',
+         '100 words about travel']);
+BDTranslate.push(
+        ['100 слов', 
+         '100 слів', 
+         '100 słów',
+         '100 words']);
+BDTranslate.push(
+        ['300 слов', 
+         '300 слів', 
+         '300 słów',
+         '300 words']);
 BDTranslate.push(
     ['500 слов', 
-     '500 слов', 
-     '500 слов',
-     '500 слов']);
+     '500 слів', 
+     '500 słów',
+     '500 words']);
 BDTranslate.push(
     ['Настоящее продолженное', 
      'Присутній безперервний', 

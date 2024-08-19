@@ -31,17 +31,18 @@ class LevelDataModel
         this.tic = 11;
         this.propertyArrayNameButton = [];
         this.arrayNameButton();
+        this.lang = localStorage.getItem('EnglishWithJs_lang');
     }
 
     // Здесь заполняется вариант надписи название теста
     // на кнопке правого меню
     arrayNameButton()
     {
-        this.propertyArrayNameButton.push('100 слов еда');
-        this.propertyArrayNameButton.push('100 слов спорт');
-        this.propertyArrayNameButton.push('100 слов путешествия');
-        this.propertyArrayNameButton.push('100 слов');
-        this.propertyArrayNameButton.push('300 слов');
+        this.propertyArrayNameButton.push(this.translate.translate('100 слов о еде'));
+        this.propertyArrayNameButton.push(this.translate.translate('100 слов про спорт'));
+        this.propertyArrayNameButton.push(this.translate.translate('100 слов о путешествии'));
+        this.propertyArrayNameButton.push(this.translate.translate('100 слов'));
+        this.propertyArrayNameButton.push(this.translate.translate('300 слов'));
         this.propertyArrayNameButton.push(this.translate.translate('500 слов'));
         this.propertyArrayNameButton.push(this.translate.translate('To Be, краткая форма'));
         this.propertyArrayNameButton.push(this.translate.translate('To Be, вопрос/ответ'));
@@ -52,27 +53,35 @@ class LevelDataModel
 
     getArrayDB()
     {
-        if (this.level == 1) {
+        if (this.level == 1 && this.lang == "ru") {
             this.ex.init(this.translate.translate('Выбрать правильный перевод'));
             return commonFood100;
         }
-        if (this.level == 2) {
+        if (this.level == 1 && this.lang == "ua") {
+            this.ex.init(this.translate.translate('Выбрать правильный перевод'));
+            return commonFood100ua;
+        }
+        if (this.level == 1 && this.lang == "pl") {
+            this.ex.init(this.translate.translate('Выбрать правильный перевод'));
+            return commonFood100pl;
+        }
+        if (this.level == 2 && this.lang == "ru") {
             this.ex.init(this.translate.translate('Выбрать правильный перевод'));
             return commonSport100;
         }
-        if (this.level == 3) {
+        if (this.level == 3 && this.lang == "ru") {
             this.ex.init(this.translate.translate('Выбрать правильный перевод'));
             return commonWalk100;
         }
-        if (this.level == 4) {
+        if (this.level == 4 && this.lang == "ru") {
             this.ex.init(this.translate.translate('Выбрать правильный перевод'));
             return commonWords100;
         }
-        if (this.level == 5) {
+        if (this.level == 5 && this.lang == "ru") {
             this.ex.init(this.translate.translate('Выбрать правильный перевод'));
             return commonWords300;
         }
-        if (this.level == 6) {
+        if (this.level == 6 && this.lang == "ru") {
             this.ex.init(this.translate.translate('Выбрать правильный перевод'));
             return commonWords500;
         }

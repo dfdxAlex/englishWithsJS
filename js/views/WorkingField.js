@@ -43,15 +43,6 @@ class WorkingField
 
         // Начальный текст для кнопки перевода вопросса
         let translateFromArray = transL.translate('Перевести вопрос');
-        // здесь подготавливается перевод для вопросса
-        // if (localStorage.getItem('EnglishWithJs_lang') === 'ru') {
-        //     translateFromArray = this.translateRu;
-        // } else if (localStorage.getItem('EnglishWithJs_lang') === 'ua') {
-        //     translateFromArray = this.translateUa;
-        // } else {
-        //     translateFromArray = this.translatePl;
-        // }
-
 
         const translate = `<div class='row'><div class='col-12 btn'><button class="btn btn-info" type='button' id='translate'> ${translateFromArray} </button></div></div><br><br><br>`;
     
