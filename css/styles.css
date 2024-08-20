@@ -97,8 +97,12 @@ select {
     background-color: rgb(142, 17, 8);
 }
 
-.search_error:link {
+.search_error:active {
     background-color: gray;
+}
+
+.search_error:focus {
+    background-color: yellow;
 }
 
 .numberEl {
