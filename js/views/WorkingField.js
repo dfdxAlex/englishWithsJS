@@ -14,7 +14,7 @@ class WorkingField
         this.translatePl,
        ] = arrayBD;
        // получить номер вопросса
-       this.numberOfElement = +localStorage.getItem('randomEl');
+       this.numberOfElement = 0+localStorage.getItem('randomEl');
 
         // Показать номер вопросса
         document.getElementById('numberEl').innerHTML ='№' + this.numberOfElement;

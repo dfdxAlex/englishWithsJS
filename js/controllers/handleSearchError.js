@@ -18,7 +18,7 @@ function handleSearchError() {
         const xhr = new XMLHttpRequest();
 
         // инициализация нового запросса, тип Post и адресс обработчика
-        xhr.open('POST', 'http://amatordd.webd.pro/amatorDed/DFDX/test.php', true); // Укажите URL вашего скрипта на сервере
+        xhr.open('POST', 'https://amator.ded.amatordd.webd.pro/amatorDed/DFDX/test.php', true); // Укажите URL вашего скрипта на сервере
 
         // установить заголовок Content-Type и тип его кодировки
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
