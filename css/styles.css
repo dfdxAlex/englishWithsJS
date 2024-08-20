@@ -93,6 +93,10 @@ select {
     background-color: chocolate;
 }
 
+.search_error:hover {
+    background-color: rgb(142, 17, 8);
+}
+
 .numberEl {
     background-color: beige;
 }

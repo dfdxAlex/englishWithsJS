@@ -4,6 +4,7 @@ class WorkingField
 {
     init(arrayBD)
     {
+      if (arrayBD.length == 8)
       [this.question, 
         this.option1,
         this.option2, 
