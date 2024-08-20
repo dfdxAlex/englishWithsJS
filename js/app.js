@@ -5,6 +5,9 @@ window.addEventListener('load', () => {
     FactoryRegistr.getObject("LanguageController").init();
     
     FactoryRegistr.getObject('MenuController').init();
+
+    // событие на кнопку "Сообщить об ошибке"
+    handleSearchError();
 });
 
 

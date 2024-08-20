@@ -33,9 +33,9 @@ function handleOkErr(str, event) {
     if (str == "Error")
         event.target.style.display = 'none';
 
-
     // Настроить событие на кнопку Сообщить об ошибке
-    handleClickError(event);
+    // Функция подготавливает информацию о том, с каким словом работаем
+    handleClickError();
 
     // Поместить информацию о том правильный ответ или нет
     const errorOrOk = document.getElementById('error_form');
