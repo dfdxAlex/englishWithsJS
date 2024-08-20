@@ -16,6 +16,7 @@ function handleSearchError() {
 
         // Создаём объект XMLHttpRequest для создания и отправки запросса
         const xhr = new XMLHttpRequest();
+        xhr.timeout = 160000; // 5000 миллисекунд = 5 секунд
 
         // инициализация нового запросса, тип Post и адресс обработчика
         xhr.open('POST', 'https://amator.ded.amatordd.webd.pro/amatorDed/DFDX/test.php', true); // Укажите URL вашего скрипта на сервере
