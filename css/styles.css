@@ -97,6 +97,10 @@ select {
     background-color: rgb(142, 17, 8);
 }
 
+.search_error:link {
+    background-color: gray;
+}
+
 .numberEl {
     background-color: beige;
 }
