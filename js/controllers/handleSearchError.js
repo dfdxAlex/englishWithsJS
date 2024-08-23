@@ -19,7 +19,7 @@ function handleSearchError() {
         xhr.timeout = 160000; // 5000 миллисекунд = 5 секунд
 
         // инициализация нового запросса, тип Post и адресс обработчика
-        xhr.open('POST', 'https://amator.ded.amatordd.webd.pro/amatorDed/DFDX/test.php', true); // Укажите URL вашего скрипта на сервере
+        xhr.open('POST', 'https://amatordd.webd.pro/amatorDed/DFDX/test.php', true); // Укажите URL вашего скрипта на сервере
 
         // установить заголовок Content-Type и тип его кодировки
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
