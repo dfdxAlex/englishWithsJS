@@ -11,7 +11,6 @@ const presentContinuous = [
         ["I am ... for the bus.", "waiting", "waitting", "waits", "waited", "Я жду автобус.", "Я чекаю на автобус.", "Czekam na autobus."],
         ["She is ... a cake.", "baking", "bake", "bakes", "baked", "Она печёт торт.", "Вона пече торт.", "Ona piecze ciasto."],
         ["He is ... the car.", "driving", "drive", "drives", "drived", "Он ведёт машину.", "Він водить машину.", "On prowadzi samochód."],
-
         ["They are ... the room.", "cleaning", "clean", "cleans", "cleaned", "Они убирают комнату.", "Вони прибирають кімнату.", "Oni sprzątają pokój."],
         ["I am ... breakfast.", "eating", "eat", "eats", "ate", "Я завтракаю.", "Я снідаю.", "Jem śniadanie."],
         ["She is ... to the store.", "going", "go", "goes", "gone", "Она идёт в магазин.", "Вона йде в магазин.", "Ona idzie do sklepu."],
@@ -84,8 +83,6 @@ const presentContinuous = [
         ["I am ... a cake.", "baking", "bake", "bakes", "baked", "Я пеку торт.", "Я печу торт.", "Piekę ciasto."],
         ["She is ... the house.", "decorating", "decorate", "decorates", "decorated", "Она украшает дом.", "Вона прикрашає будинок.", "Dekoruje dom."],
         ["He is ... the grass.", "cutting", "cut", "cuting", "cutted", "Он косит траву.", "Він косить траву.", "Kosi trawę."],
-
-
         ["They are ... on a new book.", "working", "work", "works", "worked", "Они работают над новой книгой.", "Вони працюють над новою книгою.", "Pracują nad nową książką."],
         ["We are ... the report.", "typing", "type", "types", "typed", "Мы печатаем отчёт.", "Ми друкуємо звіт.", "Piszą raport."],
         ["I am ... for my friend.", "waiting", "wait", "waits", "waited", "Я жду своего друга.", "Я чекаю на свого друга.", "Czekam na swojego przyjaciela."],

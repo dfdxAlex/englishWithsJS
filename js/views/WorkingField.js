@@ -4,7 +4,7 @@ class WorkingField
 {
     init(arrayBD)
     {
-      if (arrayBD.length == 8)
+      if (arrayBD.length !== NaN && arrayBD.length == 8)
       [this.question, 
         this.option1,
         this.option2, 
@@ -45,6 +45,7 @@ class WorkingField
         // Начальный текст для кнопки перевода вопросса
         let translateFromArray = transL.translate('Перевести вопрос');
 
+        // Кнопка "Перевести вопрос"
         const translate = `<div class='row'><div class='col-12 btn'><button class="btn btn-info" type='button' id='translate'> ${translateFromArray} </button></div></div><br><br><br>`;
     
         buttonOption = shuffleArray(buttonOption);

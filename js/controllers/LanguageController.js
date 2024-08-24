@@ -21,13 +21,11 @@ class LanguageController
         let returnTranslate = '';
 
         // получить данные о выбранном языке
-        // let lang = localStorage.getItem('EnglishWithJs_lang') || 'en';
         let lang=3;
+
         // преобразовать имя языка в готовый индекс для массива 
         // переводов
         switch(this.langStr) {
-            // case 'en': lang = 3;
-            // break;
             case 'pl': lang = 2;
             break;
             case 'ua': lang = 1;

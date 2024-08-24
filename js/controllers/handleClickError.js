@@ -12,5 +12,4 @@ function handleClickError()
         const question = document.getElementById('question');
         dataForButtonError += '#'+question.innerText;
         button.setAttribute('name', dataForButtonError);
-        // console.log(dataForButtonError);
 }

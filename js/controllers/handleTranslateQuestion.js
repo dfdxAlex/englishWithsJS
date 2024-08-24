@@ -6,6 +6,10 @@
 
 function handleTranslateQuestion(event, thisButton)
 {
+        // Изменяет число запрошенных подсказок непосредственно на 
+        // странице
+        countHints();
+        
         let translateFromArray = '';
         // здесь подготавливается перевод для вопросса
         if (localStorage.getItem('EnglishWithJs_lang') === 'ru') {
