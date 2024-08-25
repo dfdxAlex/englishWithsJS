@@ -21,29 +21,39 @@ class FactoryRegistr
         };
   
         // Если объекта нет, то создать, зарегистрировать и вернуть
-        let obj;
-        switch (nameClass) {
-            case 'LanguageController':
-                obj = new LanguageController();
-                break;
-            case 'Statistic':
-                obj = new Statistic();
-                break;
-            case 'MenuController':
-                obj = new MenuController();
-                break;
-            case 'WorkingField':
-                obj = new WorkingField();
-                break;
-            case 'EventController':
-                obj = new EventController();
-                break;
-
-            default:
-                // обработка случая, если класс не найден
-                obj = new ErrorLog(nameClass, property);
-                break;
+        // Получить имя класса, из которого нужно вернуть объект
+        const className = eval(nameClass);
+        let obj = '';
+                
+        if (!property) {
+            obj = new className();
+        } else {
+            obj = new className(...property);
         }
+
+        // switch (nameClass) {
+        //     case 'LanguageController':
+        //         obj = new LanguageController();
+        //         break;
+        //     case 'Statistic':
+        //         obj = new Statistic();
+        //         break;
+        //     case 'MenuController':
+        //         obj = new MenuController();
+        //         break;
+        //     case 'WorkingField':
+        //         obj = new WorkingField();
+        //         break;
+        //     case 'EventController':
+        //         obj = new EventController();
+        //         break;
+
+        //     default:
+        //         // обработка случая, если класс не найден
+        //         obj = new ErrorLog(nameClass, property);
+        // }
+
+
         FactoryRegistr.addObject(nameClass, obj);
         return obj;
         
