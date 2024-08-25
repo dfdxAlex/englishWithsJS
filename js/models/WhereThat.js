@@ -75,5 +75,11 @@ whereThat = [
     ["... are your shoes?", "where", "what", "who", "how", "Где твои туфли?", "Де твої туфлі?", "Gdzie są twoje buty?"],
     ["... is this called?", "what", "where", "who", "how", "Как это называется?", "Як це називається?", "Jak to się nazywa?"],
     ["... is the bus?", "where", "what", "who", "how", "Где автобус?", "Де автобус?", "Gdzie jest autobus?"],
-    ["... do you like to travel?", "where", "what", "who", "how", "Где тебе нравится путешествовать?", "Де тобі подобається подорожувати?", "Gdzie lubisz podróżować?"]
+    ["... do you like to travel?", "where", "what", "who", "how", "Где тебе нравится путешествовать?", "Де тобі подобається подорожувати?", "Gdzie lubisz podróżować?"],
+    function (id) {
+        let str1 = whereThat[id][0];
+        let str2 = whereThat[id][1];
+        str1 = str1.replace('...', str2);
+        return str1;
+    }
 ]
