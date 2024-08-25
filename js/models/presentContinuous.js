@@ -296,5 +296,13 @@ const presentContinuous = [
         ["They are ... the car.", "cleaning", "clean", "cleans", "cleaned", "Они моют машину.", "Вони миють машину.", "Myją samochód."],
         ["We are ... to the park.", "going", "go", "goes", "gone", "Мы идём в парк.", "Ми йдемо до парку.", "Idziemy do parku."],
         ["I am ... my shoes.", "polishing", "polish", "polishes", "polished", "Я чищу ботинки.", "Я чищу черевики.", "Czyszczę buty."],
-        ["She is ... the cake.", "decorating", "decorate", "decorates", "decorated", "Она украшает торт.","Вона прикрашає торт.","Ona dekoruje tort."]
+        ["She is ... the cake.", "decorating", "decorate", "decorates", "decorated", "Она украшает торт.","Вона прикрашає торт.","Ona dekoruje tort."],
+        function (id) {
+            let str1 = presentContinuous[id][0];
+            let str2 = presentContinuous[id][1];
+            str1 = str1.replace('...', str2);
+            return str1;
+        }
 ];
+
+

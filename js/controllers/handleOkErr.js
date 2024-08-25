@@ -22,11 +22,23 @@ function handleOkErr(str, event) {
     tic = +localStorage.getItem(levexW);
     localStorage.setItem(levexW,tic+1);
 
-    // Получить текстовое содержимое елемента
-    // на который кликнули и поместить его в поле 
-    // с id=clicked_element
+    // Выбрать элемент, который покажет выбранный неправильный вариант
+    // или весь правильный вопрос
     const clickedEl = document.getElementById('clicked_element');
-    clickedEl.innerHTML = event.target.innerText;
+    // если был ответ ошибочный, то поместить выбранный вариант
+    // в поле clicked_element
+    let rezult  = event.target.innerText;
+    if (str === 'Ok') {
+        // Если ответ правильный, то в поле clicked_element вывести
+        // результат работы последней функции в массиве, если там 
+        // есть функция, иначе вывести элемент, на который нажали
+        const nameArray = localStorage.getItem('nameArrayDb');
+        const workingArray = eval(nameArray);
+        const indexArray = localStorage.getItem('randomEl');
+        if (typeof workingArray[workingArray.length-1] === "function")
+            rezult = workingArray[workingArray.length-1](indexArray);
+    }
+    clickedEl.innerHTML = rezult;
 
     // Здесь просто прячется нажатая кнопка. Это нужно для того, 
     // чтобы не дублировать неправильные ответы.
