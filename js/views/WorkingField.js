@@ -20,8 +20,8 @@ class WorkingField
         // Показать номер вопросса
         document.getElementById('numberEl').innerHTML ='№' + this.numberOfElement;
 
-        const levelForStaticticOk = 'level'+localStorage.getItem('level')+'_Ok';
-        const levelForStaticticError = 'level'+localStorage.getItem('level')+'_Error';
+        const levelForStaticticOk = 'level'+localStorage.getItem('level')+'_Ok' || 0;
+        const levelForStaticticError = 'level'+localStorage.getItem('level')+'_Error' || 0;
         const statistic = FactoryRegistr.getObject('Statistic');
         statistic.init(localStorage.getItem(levelForStaticticOk),localStorage.getItem(levelForStaticticError));
 
@@ -58,9 +58,5 @@ class WorkingField
                          buttonOption[2]+
                            buttonOption[3]+
                              fieldsetFinish;
-
-
     }
-
-
 }
