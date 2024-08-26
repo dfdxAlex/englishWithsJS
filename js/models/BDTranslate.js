@@ -1,5 +1,15 @@
 const BDTranslate = [];
 BDTranslate.push(
+    ['Настоящее продолженное - вопрос', 
+     'Справжнє продовжене – питання', 
+     'Czas teraźniejszy ciągły – pytanie',
+     'Choose the right question']);
+BDTranslate.push(
+    ['Выбрать правильный вопрос', 
+     'Вибрати правильне питання', 
+     'Wybierz właściwe pytanie',
+     'Choose the right question']);
+BDTranslate.push(
     ['Сообщить об ошибке', 
      'Повідомити про помилку', 
      'Zgłoś błąd',
