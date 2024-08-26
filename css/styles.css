@@ -4,6 +4,15 @@ body {
     padding: 20px;
 }
 
+.menu-language {
+    position: fixed; /* Вытягивает блок из потока документа */
+    top: 0; /* Привязывает блок к верхнему краю */
+    left: 0; /* Привязывает блок к левому краю */
+    background-color: #f8f9fa; /* Цвет фона блока */
+    border: 1px solid #ccc; /* Рамка вокруг блока */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень блока */
+}
+
 select {
     padding: 10px;
     font-size: 16px;
