@@ -1,5 +1,10 @@
 const BDTranslate = [];
 BDTranslate.push(
+    ['Настоящее простое', 
+     'Справжнє просте', 
+     'Prezent prosty',
+     'Present simple']);
+BDTranslate.push(
     ['Настоящее продолженное - вопрос', 
      'Справжнє продовжене – питання', 
      'Czas teraźniejszy ciągły – pytanie',
