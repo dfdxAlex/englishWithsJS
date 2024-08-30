@@ -20,8 +20,11 @@ class WorkingField
         // Показать номер вопросса
         document.getElementById('numberEl').innerHTML ='№' + this.numberOfElement;
 
-        const levelForStaticticOk = 'level'+localStorage.getItem('level')+'_Ok' || 0;
-        const levelForStaticticError = 'level'+localStorage.getItem('level')+'_Error' || 0;
+        let levelForStaticticOk = 'level'+localStorage.getItem('level')+'_Ok';
+        let levelForStaticticError = 'level'+localStorage.getItem('level')+'_Error';
+        //if (levelForStaticticOk === NaN) levelForStaticticOk = 0;
+        //if (levelForStaticticError === NaN) levelForStaticticError = 0;
+
         const statistic = FactoryRegistr.getObject('Statistic');
         statistic.init(localStorage.getItem(levelForStaticticOk),localStorage.getItem(levelForStaticticError));
 
