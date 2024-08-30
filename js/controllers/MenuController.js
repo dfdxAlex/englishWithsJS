@@ -15,7 +15,7 @@ class MenuController
         // само место парковки задаётся внутри класса MenuRight
         const point = menu.getSeedForMenu();
         // поместить меню на выбранное место.
-        point.innerHTML = menu.menuDropdown();
+        point.innerHTML = menu.menuDropdown2();
 
         let unit = [];
         for (let i=1; i<=this.levelDataModel.getTic(); i++) {
