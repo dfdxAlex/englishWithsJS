@@ -1235,9 +1235,9 @@ const presentSimple = [
           "exercise not",
           "isn't exercising",
           "didn't exercise",
-          "Она не занимается спортом перед работой.",
-          "Вона не займається спортом перед роботою.",
-          "Nie ćwiczy przed pracą każdego dnia."
+          "Она не занимается спортом каждый день перед работой.",
+          "Вона не займається спортом кожного дня перед роботою.",
+          "Ona nie ćwiczy codziennie przed pracą."
         ],
         [
           "They ... a movie on Fridays.",

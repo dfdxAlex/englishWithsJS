@@ -1,5 +1,15 @@
 const BDTranslate = [];
 BDTranslate.push(
+    ['Выберите правильно составленное предложение.', 
+     'Виберіть правильно складену пропозицію.', 
+     'Wybierz właściwe zdanie.',
+     'Choose the correctly constructed sentence.']);
+BDTranslate.push(
+    ['Настоящее простое + периодичность', 
+     'Справжнє просте + періодичність', 
+     'Czas teraźniejszy prosty + okresowość',
+     'Present Simple + Periodicity']);
+BDTranslate.push(
     ['Настоящее простое', 
      'Справжнє просте', 
      'Prezent prosty',

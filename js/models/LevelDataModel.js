@@ -28,7 +28,7 @@ class LevelDataModel
         this.ex = new Exercise();
         this.translate = FactoryRegistr.getObject("LanguageController");
         // Число уроков, изменяется в ручную при добавлении урока
-        this.tic = 13;
+        this.tic = 14;
         this.propertyArrayNameButton = [];
         this.arrayNameButton();
         this.lang = localStorage.getItem('EnglishWithJs_lang');
@@ -51,6 +51,7 @@ class LevelDataModel
         this.propertyArrayNameButton.push(this.translate.translate('Настоящее продолженное'));
         this.propertyArrayNameButton.push(this.translate.translate('Настоящее продолженное - вопрос'));
         this.propertyArrayNameButton.push(this.translate.translate('Настоящее простое'));
+        this.propertyArrayNameButton.push(this.translate.translate('Настоящее простое + периодичность'));
     }
 
     getArrayDB()
@@ -133,6 +134,12 @@ class LevelDataModel
             this.ex.init(this.translate.translate('Вставить правильное слово'));
             localStorage.setItem('nameArrayDb','presentSimple');
             return presentSimple;
+        }
+
+        if (this.level == 14) {
+            this.ex.init(this.translate.translate('Выберите правильно составленное предложение.'));
+            localStorage.setItem('nameArrayDb','presentSimpleNever');
+            return presentSimpleNever;
         }
 
         return false;
