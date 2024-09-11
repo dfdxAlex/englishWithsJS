@@ -9,9 +9,10 @@ const handleLevelX = (dataObj) =>
         // Записать в хранилище что работаем на неком уровне
         localStorage.setItem('level',dataObj.getLevel());
     
-        // выбрать случайную позицию из массива toBeForms
+        // выбрать случайную позицию из массива вопроссов
         // данный массив хранит в себе вопроссы и ответы.
         const randomEl = getRandomInt(0, dataObj.getArrayDB().length-1);
+        //Записать в сторадж выбранный индекс
         localStorage.setItem('randomEl', randomEl);
         let mas = dataObj.getArrayDB()[randomEl];
     

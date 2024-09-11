@@ -24,6 +24,7 @@ class LevelDataModel
 {
     constructor(level = 1)
     {
+        this.rez = false;
         this.level = level+0;
         this.ex = new Exercise();
         this.translate = FactoryRegistr.getObject("LanguageController");
@@ -53,96 +54,117 @@ class LevelDataModel
         this.propertyArrayNameButton.push(this.translate.translate('Настоящее простое'));
         this.propertyArrayNameButton.push(this.translate.translate('Настоящее простое + периодичность'));
     }
-
+    
+    selectLevel(exercise, nameArray, level, lang = true)
+    {
+        if (level == this.level && (lang === true || lang === this.lang)) {
+            this.ex.init(this.translate.translate(exercise));
+            localStorage.setItem('nameArrayDb',nameArray);
+            this.rez = eval(nameArray);
+        }
+    }
     getArrayDB()
     {
-        if (this.level == 1 && this.lang == "ru") {
-            this.ex.init(this.translate.translate('Выбрать правильный перевод'));
-            localStorage.setItem('nameArrayDb','commonFood100');
-            return commonFood100;
-        }
-        if (this.level == 1 && this.lang == "ua") {
-            this.ex.init(this.translate.translate('Выбрать правильный перевод'));
-            localStorage.setItem('nameArrayDb','commonFood100ua');
-            return commonFood100ua;
-        }
-        if (this.level == 1 && this.lang == "pl") {
-            this.ex.init(this.translate.translate('Выбрать правильный перевод'));
-            localStorage.setItem('nameArrayDb','commonFood100pl');
-            return commonFood100pl;
-        }
-        if (this.level == 2 && this.lang == "ru") {
-            this.ex.init(this.translate.translate('Выбрать правильный перевод'));
-            localStorage.setItem('nameArrayDb','commonSport100');
-            return commonSport100;
-        }
-        if (this.level == 3 && this.lang == "ru") {
-            this.ex.init(this.translate.translate('Выбрать правильный перевод'));
-            localStorage.setItem('nameArrayDb','commonWalk100');
-            return commonWalk100;
-        }
-        if (this.level == 4 && this.lang == "ru") {
-            this.ex.init(this.translate.translate('Выбрать правильный перевод'));
-            localStorage.setItem('nameArrayDb','commonWords100');
-            return commonWords100;
-        }
-        if (this.level == 5 && this.lang == "ru") {
-            this.ex.init(this.translate.translate('Выбрать правильный перевод'));
-            localStorage.setItem('nameArrayDb','commonWords300');
-            return commonWords300;
-        }
-        if (this.level == 6 && this.lang == "ru") {
-            this.ex.init(this.translate.translate('Выбрать правильный перевод'));
-            localStorage.setItem('nameArrayDb','commonWords500');
-            return commonWords500;
-        }
-        if (this.level == 7) {
-            this.ex.init(this.translate.translate('Выбрать правильный вариант сокращенной формы глагола to Be'));
-            localStorage.setItem('nameArrayDb','toBeForms');
-            return toBeForms;
-        }
-        if (this.level == 8) {
-            this.ex.init(this.translate.translate('Выбрать правильный вариант сокращенной формы глагола to Be'));
-            localStorage.setItem('nameArrayDb','toBeSentences');
-            return toBeSentences;
-        }
-        if (this.level == 9) {
-            this.ex.init(this.translate.translate('Выбрать правильный вариант ответа'));
-            localStorage.setItem('nameArrayDb','questionsWithAnswers');
-            return questionsWithAnswers;
-        }
+        this.selectLevel('Выбрать правильный перевод','commonFood100',1,'ru');
+        this.selectLevel('Выбрать правильный перевод','commonFood100ua',1,'ua');
+        this.selectLevel('Выбрать правильный перевод','commonFood100pl',1,'pl');
+        this.selectLevel('Выбрать правильный перевод','commonSport100',2,'ru');
+        this.selectLevel('Выбрать правильный перевод','commonWalk100',3,'ru');
+        this.selectLevel('Выбрать правильный перевод','commonWords100',4,'ru');
+        this.selectLevel('Выбрать правильный перевод','commonWords300',5,'ru');
+        this.selectLevel('Выбрать правильный перевод','commonWords500',6,'ru');
+        this.selectLevel('Выбрать правильный вариант сокращенной формы глагола to Be','toBeForms',7);
+        this.selectLevel('Выбрать правильный вариант сокращенной формы глагола to Be','toBeSentences',8);
+        this.selectLevel('Выбрать правильный вариант ответа','questionsWithAnswers',9);
+        this.selectLevel('Вставить правильное слово','whereThat',10);
+        this.selectLevel('Вставить правильное слово','presentContinuous',11);
+        this.selectLevel('Выбрать правильный вопрос','presetnContiniusQuestion',12);
+        this.selectLevel('Вставить правильное слово','presentSimple',13);
+        this.selectLevel('Выберите правильно составленное предложение.','presentSimpleNever',14);
 
-        if (this.level == 10) {
-            this.ex.init(this.translate.translate('Вставить правильное слово'));
-            localStorage.setItem('nameArrayDb','whereThat');
-            return whereThat;
-        }
 
-        if (this.level == 11) {
-            this.ex.init(this.translate.translate('Вставить правильное слово'));
-            localStorage.setItem('nameArrayDb','presentContinuous');
-            return presentContinuous;
-        }
+        // if (this.level == 1 && this.lang == "ru") {
+        //     this.ex.init(this.translate.translate('Выбрать правильный перевод'));
+        //     localStorage.setItem('nameArrayDb','commonFood100');
+        //     return commonFood100;
+        // }
+        // if (this.level == 1 && this.lang == "ua") {
+        //     this.ex.init(this.translate.translate('Выбрать правильный перевод'));
+        //     localStorage.setItem('nameArrayDb','commonFood100ua');
+        //     return commonFood100ua;
+        // }
+        // if (this.level == 1 && this.lang == "pl") {
+        //     this.ex.init(this.translate.translate('Выбрать правильный перевод'));
+        //     localStorage.setItem('nameArrayDb','commonFood100pl');
+        //     return commonFood100pl;
+        // }
 
-        if (this.level == 12) {
-            this.ex.init(this.translate.translate('Выбрать правильный вопрос'));
-            localStorage.setItem('nameArrayDb','presetnContiniusQuestion');
-            return presetnContiniusQuestion;
-        }
-
-        if (this.level == 13) {
-            this.ex.init(this.translate.translate('Вставить правильное слово'));
-            localStorage.setItem('nameArrayDb','presentSimple');
-            return presentSimple;
-        }
-
-        if (this.level == 14) {
-            this.ex.init(this.translate.translate('Выберите правильно составленное предложение.'));
-            localStorage.setItem('nameArrayDb','presentSimpleNever');
-            return presentSimpleNever;
-        }
-
-        return false;
+        // if (this.level == 2 && this.lang == "ru") {
+        //     this.ex.init(this.translate.translate('Выбрать правильный перевод'));
+        //     localStorage.setItem('nameArrayDb','commonSport100');
+        //     return commonSport100;
+        // }
+        // if (this.level == 3 && this.lang == "ru") {
+        //     this.ex.init(this.translate.translate('Выбрать правильный перевод'));
+        //     localStorage.setItem('nameArrayDb','commonWalk100');
+        //     return commonWalk100;
+        // }
+        // if (this.level == 4 && this.lang == "ru") {
+        //     this.ex.init(this.translate.translate('Выбрать правильный перевод'));
+        //     localStorage.setItem('nameArrayDb','commonWords100');
+        //     return commonWords100;
+        // }
+        // if (this.level == 5 && this.lang == "ru") {
+        //     this.ex.init(this.translate.translate('Выбрать правильный перевод'));
+        //     localStorage.setItem('nameArrayDb','commonWords300');
+        //     return commonWords300;
+        // }
+        // if (this.level == 6 && this.lang == "ru") {
+        //     this.ex.init(this.translate.translate('Выбрать правильный перевод'));
+        //     localStorage.setItem('nameArrayDb','commonWords500');
+        //     return commonWords500;
+        // }
+        // if (this.level == 7) {
+        //     this.ex.init(this.translate.translate('Выбрать правильный вариант сокращенной формы глагола to Be'));
+        //     localStorage.setItem('nameArrayDb','toBeForms');
+        //     return toBeForms;
+        // }
+        // if (this.level == 8) {
+        //     this.ex.init(this.translate.translate('Выбрать правильный вариант сокращенной формы глагола to Be'));
+        //     localStorage.setItem('nameArrayDb','toBeSentences');
+        //     return toBeSentences;
+        // }
+        // if (this.level == 9) {
+        //     this.ex.init(this.translate.translate('Выбрать правильный вариант ответа'));
+        //     localStorage.setItem('nameArrayDb','questionsWithAnswers');
+        //     return questionsWithAnswers;
+        // }
+        // if (this.level == 10) {
+        //     this.ex.init(this.translate.translate('Вставить правильное слово'));
+        //     localStorage.setItem('nameArrayDb','whereThat');
+        //     return whereThat;
+        // }
+        // if (this.level == 11) {
+        //     this.ex.init(this.translate.translate('Вставить правильное слово'));
+        //     localStorage.setItem('nameArrayDb','presentContinuous');
+        //     return presentContinuous;
+        // }
+        // if (this.level == 12) {
+        //     this.ex.init(this.translate.translate('Выбрать правильный вопрос'));
+        //     localStorage.setItem('nameArrayDb','presetnContiniusQuestion');
+        //     return presetnContiniusQuestion;
+        // }
+        // if (this.level == 13) {
+        //     this.ex.init(this.translate.translate('Вставить правильное слово'));
+        //     localStorage.setItem('nameArrayDb','presentSimple');
+        //     return presentSimple;
+        // }
+        // if (this.level == 14) {
+        //     this.ex.init(this.translate.translate('Выберите правильно составленное предложение.'));
+        //     localStorage.setItem('nameArrayDb','presentSimpleNever');
+        //     return presentSimpleNever;
+        // }
+        return this.rez;
     }
 
     getArrayNameButton()
@@ -160,8 +182,8 @@ class LevelDataModel
         return this.tic;
     }
 
-    setLevel(level) 
-    {
-        this.level = level;
-    }
+    // setLevel(level) 
+    // {
+    //     this.level = level;
+    // }
 }
