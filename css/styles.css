@@ -88,7 +88,7 @@ select, .menu-setting, .button-select-test {
 /* Стили для элементов с классами */
 .clicked_element, .error_form, 
 .numberEl, .question_old, 
-.search_error, .count-hints {
+.search_error, .count-hints, .history {
     border: 2px solid black;
     border-radius: 20px;
 }
@@ -98,19 +98,19 @@ select, .menu-setting, .button-select-test {
     background-color: blueviolet;
 }
 
-.search_error {
+.search_error, .history {
     background-color: chocolate;
 }
 
-.search_error:hover {
+.search_error:hover, .history {
     background-color: rgb(142, 17, 8);
 }
 
-.search_error:active {
+.search_error:active, .history {
     background-color: gray;
 }
 
-.search_error:focus {
+.search_error:focus, .history {
     background-color: yellow;
 }
 

@@ -1,5 +1,10 @@
 const BDTranslate = [];
 BDTranslate.push(
+    ['100 слов про спорт', 
+     '100 слів про спорт', 
+     '100 słów o sporcie',
+     '100 words about sports']);
+BDTranslate.push(
     ['Выберите правильно составленное предложение.', 
      'Виберіть правильно складену пропозицію.', 
      'Wybierz właściwe zdanie.',
