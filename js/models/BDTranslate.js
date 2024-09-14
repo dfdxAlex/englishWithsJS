@@ -1,5 +1,9 @@
 const BDTranslate = [];
-
+BDTranslate.push(
+    ['300 глаголов', 
+     '300 дієслів (тільки російською)', 
+     '300 czasowników (tylko po rosyjsku)',
+     '300 verbs (only in Russian)']);
 BDTranslate.push(
     ['50 глаголов', 
      '50 дієслів (тільки російською)', 

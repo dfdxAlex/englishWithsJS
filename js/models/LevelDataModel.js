@@ -29,7 +29,7 @@ class LevelDataModel
         this.ex = new Exercise();
         this.translate = FactoryRegistr.getObject("LanguageController");
         // Число уроков, изменяется в ручную при добавлении урока
-        this.tic = 15;
+        this.tic = 16;
         this.propertyArrayNameButton = [];
         this.arrayNameButton();
         this.lang = localStorage.getItem('EnglishWithJs_lang');
@@ -46,6 +46,7 @@ class LevelDataModel
         this.propertyArrayNameButton.push(this.translate.translate('300 слов'));
         this.propertyArrayNameButton.push(this.translate.translate('500 слов'));
         this.propertyArrayNameButton.push(this.translate.translate('50 глаголов'));
+        this.propertyArrayNameButton.push(this.translate.translate('300 глаголов'));
         this.propertyArrayNameButton.push(this.translate.translate('To Be, краткая форма'));
         this.propertyArrayNameButton.push(this.translate.translate('To Be, вопрос/ответ'));
         this.propertyArrayNameButton.push(this.translate.translate('To Be, ответь на вопрос'));
@@ -75,14 +76,15 @@ class LevelDataModel
         this.selectLevel('Выбрать правильный перевод','commonWords300',5,'ru');
         this.selectLevel('Выбрать правильный перевод','commonWords500',6,'ru');
         this.selectLevel('Выбрать правильный перевод','verbs50',7,'ru');
-        this.selectLevel('Выбрать правильный вариант сокращенной формы глагола to Be','toBeForms',8);
-        this.selectLevel('Выбрать правильный вариант сокращенной формы глагола to Be','toBeSentences',9);
-        this.selectLevel('Выбрать правильный вариант ответа','questionsWithAnswers',10);
-        this.selectLevel('Вставить правильное слово','whereThat',11);
-        this.selectLevel('Вставить правильное слово','presentContinuous',12);
-        this.selectLevel('Выбрать правильный вопрос','presetnContiniusQuestion',13);
-        this.selectLevel('Вставить правильное слово','presentSimple',14);
-        this.selectLevel('Выберите правильно составленное предложение.','presentSimpleNever',15);
+        this.selectLevel('Выбрать правильный перевод','verbs300',8,'ru');
+        this.selectLevel('Выбрать правильный вариант сокращенной формы глагола to Be','toBeForms',9);
+        this.selectLevel('Выбрать правильный вариант сокращенной формы глагола to Be','toBeSentences',10);
+        this.selectLevel('Выбрать правильный вариант ответа','questionsWithAnswers',11);
+        this.selectLevel('Вставить правильное слово','whereThat',12);
+        this.selectLevel('Вставить правильное слово','presentContinuous',13);
+        this.selectLevel('Выбрать правильный вопрос','presetnContiniusQuestion',14);
+        this.selectLevel('Вставить правильное слово','presentSimple',15);
+        this.selectLevel('Выберите правильно составленное предложение.','presentSimpleNever',16);
 
         return this.rez;
     }
