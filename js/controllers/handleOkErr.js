@@ -22,12 +22,26 @@ function handleOkErr(str, event) {
     tic = +localStorage.getItem(levexW);
     localStorage.setItem(levexW,tic+1);
 
-    // Выбрать элемент, который покажет выбранный неправильный вариант
+    // Выбрать html тег, который покажет выбранный неправильный вариант
     // или весь правильный вопрос
     const clickedEl = document.getElementById('clicked_element');
     // если был ответ ошибочный, то поместить выбранный вариант
     // в поле clicked_element
     let rezult  = event.target.innerText;
+
+    // объект хранит информацию для логов
+    const Log = {
+        str,
+        level : localStorage.getItem('level'),
+        rezult : '',
+        index : '',
+        nameArray : '',
+        get question() {
+            const array =  eval(this.nameArray);
+            return array[parseInt(this.index)][0];
+        }
+    }
+
     if (str === 'Ok') {
         // Если ответ правильный, то в поле clicked_element вывести
         // результат работы последней функции в массиве, если там 
@@ -39,6 +53,13 @@ function handleOkErr(str, event) {
             rezult = workingArray[workingArray.length-1](indexArray);
     }
     clickedEl.innerHTML = rezult;
+
+    Log.rezult = rezult;
+    Log.index = localStorage.getItem('randomEl');
+    Log.nameArray = localStorage.getItem('nameArrayDb');
+
+    // добавить объект с логами в пулл логов
+    Logs.addLog = Log;
 
     // Здесь просто прячется нажатая кнопка. Это нужно для того, 
     // чтобы не дублировать неправильные ответы.

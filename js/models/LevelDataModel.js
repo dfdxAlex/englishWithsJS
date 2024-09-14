@@ -103,9 +103,4 @@ class LevelDataModel
     {
         return this.tic;
     }
-
-    // setLevel(level) 
-    // {
-    //     this.level = level;
-    // }
 }
