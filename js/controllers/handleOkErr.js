@@ -29,19 +29,6 @@ function handleOkErr(str, event) {
     // в поле clicked_element
     let rezult  = event.target.innerText;
 
-    // объект хранит информацию для логов
-    const Log = {
-        str,
-        level : localStorage.getItem('level'),
-        rezult : '',
-        index : '',
-        nameArray : '',
-        get question() {
-            const array =  eval(this.nameArray);
-            return array[parseInt(this.index)][0];
-        }
-    }
-
     if (str === 'Ok') {
         // Если ответ правильный, то в поле clicked_element вывести
         // результат работы последней функции в массиве, если там 
@@ -54,12 +41,8 @@ function handleOkErr(str, event) {
     }
     clickedEl.innerHTML = rezult;
 
-    Log.rezult = rezult;
-    Log.index = localStorage.getItem('randomEl');
-    Log.nameArray = localStorage.getItem('nameArrayDb');
-
     // добавить объект с логами в пулл логов
-    Logs.addLog = Log;
+    Logs.addLog = new Log(str, rezult);
 
     // Здесь просто прячется нажатая кнопка. Это нужно для того, 
     // чтобы не дублировать неправильные ответы.
