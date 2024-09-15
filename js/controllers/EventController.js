@@ -21,5 +21,10 @@ class EventController {
         // Перевод должен появиться только после клика на кнопку
         const translateButton = document.getElementById('translate');
         translateButton.addEventListener('click',(event)=>{handleTranslateQuestion(event, FactoryRegistr.getObject('WorkingField'))});
+
+        // обработчик события клика по кнопке логов
+        const buttonLog = document.getElementById('log');
+        buttonLog.addEventListener('click',()=>{handleLog()});
+
     }
 }

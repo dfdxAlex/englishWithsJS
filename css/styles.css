@@ -129,3 +129,15 @@ select, .menu-setting, .button-select-test {
 .fieldset-legend {
     color: black;
 }
+
+.log-accordion-header-error {
+    color:red;
+    font-weight: bold;
+}
+.log-accordion-header-ok {
+    color:green;
+    font-weight: bold;
+}
+.button_return_log {
+    font-size: 18px;
+}

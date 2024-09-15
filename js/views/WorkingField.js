@@ -4,7 +4,7 @@ class WorkingField
 {
     init(arrayBD)
     {
-      if (arrayBD.length !== undefined && arrayBD.length == 8)
+      if (arrayBD !== undefined && arrayBD.length == 8)
       [this.question, 
         this.option1,
         this.option2, 
