@@ -36,7 +36,7 @@ class LogField
             headerAccordiona += '>' + element.str + '</span>&nbsp;&numero;';
             headerAccordiona += element.index + '&nbsp;';
             headerAccordiona += element.question.slice(0,15);
-            headerAccordiona += '&nbsp;&nbsp;<span id="button_return_log" class="button_return_log">&#8617;</span>'
+            headerAccordiona += '&nbsp;&nbsp;<span id="button_return_log'+index+'" class="button_return_log">&#8617;</span>'
             
             // Делаем тело аккордиона
             let bodyAccordion = 'Status:';
