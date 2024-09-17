@@ -1,5 +1,10 @@
 const BDTranslate = [];
 BDTranslate.push(
+    ['Настоящее простое негативное', 
+     'Справжнє просте негативне', 
+     'Przedstaw prosty negatyw',
+     'Present simple negative']);
+BDTranslate.push(
     ['300 глаголов', 
      '300 дієслів (тільки російською)', 
      '300 czasowników (tylko po rosyjsku)',

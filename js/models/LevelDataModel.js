@@ -29,7 +29,7 @@ class LevelDataModel
         this.ex = new Exercise();
         this.translate = FactoryRegistr.getObject("LanguageController");
         // Число уроков, изменяется в ручную при добавлении урока
-        this.tic = 16;
+        this.tic = 17;
         this.propertyArrayNameButton = [];
         this.arrayNameButton();
         this.lang = localStorage.getItem('EnglishWithJs_lang');
@@ -55,6 +55,7 @@ class LevelDataModel
         this.propertyArrayNameButton.push(this.translate.translate('Настоящее продолженное - вопрос'));
         this.propertyArrayNameButton.push(this.translate.translate('Настоящее простое'));
         this.propertyArrayNameButton.push(this.translate.translate('Настоящее простое + периодичность'));
+        this.propertyArrayNameButton.push(this.translate.translate('Настоящее простое негативное'));
     }
     
     selectLevel(exercise, nameArray, level, lang = true)
@@ -85,6 +86,7 @@ class LevelDataModel
         this.selectLevel('Выбрать правильный вопрос','presetnContiniusQuestion',14);
         this.selectLevel('Вставить правильное слово','presentSimple',15);
         this.selectLevel('Выберите правильно составленное предложение.','presentSimpleNever',16);
+        this.selectLevel('Вставить правильное слово','presentSimpleNegative',17);
 
         return this.rez;
     }
