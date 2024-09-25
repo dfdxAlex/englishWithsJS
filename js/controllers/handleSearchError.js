@@ -8,34 +8,16 @@ function handleSearchError() {
 
     const buttonError = document.getElementById('search_error');
     
-    // Добавляем обработчик события click
-    buttonError.addEventListener('click', function () {
-        
+    // Клик по кнопке Сообщить об ошибке
+    buttonError.addEventListener('click', function() {
+        // поместить ссылку на сервер в объект httpAsk 
+        //(создается сразу под конструктором HttpClient)
+        httpAsk.link = 'https://amatordd.webd.pro/amatorDed/DFDX/test.php';
+        //Создать сам запрос к серверу
         const getAttrib = buttonError.getAttribute('name');
-        if (getAttrib === 'englishWithsJS') return false;
-
-        // Создаём объект XMLHttpRequest для создания и отправки запросса
-        const xhr = new XMLHttpRequest();
-        xhr.timeout = 160000; // 5000 миллисекунд = 5 секунд
-
-        // инициализация нового запросса, тип Post и адресс обработчика
-        xhr.open('POST', 'https://amatordd.webd.pro/amatorDed/DFDX/test.php', true); // Укажите URL вашего скрипта на сервере
-
-        // установить заголовок Content-Type и тип его кодировки
-        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-
-        // Отправляем данные на сервер - пара имя=данные
-        xhr.send('name=' + encodeURIComponent(getAttrib));
-
-        // проверка ответа, необходима на этапе разработки
-        xhr.onload = function () {
-            if (xhr.status >= 200 && xhr.status < 300) {
-                // Здесь мы видим результат работы echo
-                console.log('Ответ сервера:', xhr.responseText);
-            } else {
-                console.error('Ошибка:', xhr.status, xhr.statusText);
-            }
-        };
-
+        const dataRequest = 'name=' + encodeURIComponent(getAttrib);
+        //Запрос отправляется когда сеттеру fetchData придать значение
+        //Ответ будет в геттере fetchData
+        httpAsk.fetchData = dataRequest;
     });
 }

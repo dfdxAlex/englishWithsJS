@@ -9,7 +9,7 @@ window.addEventListener('load', () => {
     // событие на кнопку "Сообщить об ошибке"
     handleSearchError();
 
-
+    
 });
 
 
@@ -20,3 +20,4 @@ window.addEventListener('load', () => {
 // randomEl - индекс текущего вопросса из массива.
 // EnglishWithJs_lang - выбранный язык ru, en, pl, eu
 // 'intTranslate_'+level - число заказанных подсказок на каждом уровне
+// sk_a0c451bdcbb8b32e659dca5f6fd1b3d5ff33e432e4d57b34
