@@ -58,15 +58,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
         $apiKey = "sk_a0c451bdcbb8b32e659dca5f6fd1b3d5ff33e432e4d57b34";  // Ваш реальный API-ключ
         $voiceId = "pMsXgVXv3BLzUgSXRplE";  // Идентификатор голоса
         
-        //оригинальное имя для файла
-        $filePath = 'song_for_english/'+'generated_speech'+'.mp3';
+        $filePath = $_POST['sound'];
+        $filePath = str_replace(' ', '', $filePath);
+        $filePath = str_replace('\'', '', $filePath);
+        $filePath = str_replace('.', '', $filePath);
+        $filePath = strtolower($filePath);
+        $filePath = 'sound'.DIRECTORY_SEPARATOR.$filePath;
+        $filePath = substr($filePath, 0, 200);
+        $filePath .= '.mp3';
+        // проверить если файл существует, то вернуть его и выйти
+        if (file_exists($filePath)) {
+          $filePath = 'https://amatordd.webd.pro/amatorDed/DFDX/'.$filePath;
+          echo $filePath;
+          return false;
+        }
+        // echo $filePath;
+
+        $messageSong = str_replace('...', 'ааа', $_POST['sound']);
+        // echo $messageSong;
 
         //Инициализирует сессию cURL
         $curl = curl_init();
         
         //Подготовка данных
         $data = [
-          "text" => $_POST['sound'],
+          "text" => $messageSong,
           "voice_settings" => [
             "stability" => 0.1,
             "similarity_boost" => 0.3
@@ -110,8 +126,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
                 // Сохраняем аудиофайл
                 file_put_contents($filePath, $response);
         
+                $filePath = 'https://amatordd.webd.pro/amatorDed/DFDX/'.$filePath;
+                echo $filePath;
                 // Выводим сообщение об успешной генерации
-                echo "Audio file successfully saved: <a href='$filePath'>$filePath</a>";
+                //echo "Audio file successfully saved: <a href='$filePath'>$filePath</a>";
             }
         }
     }
