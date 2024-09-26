@@ -10,8 +10,7 @@
 
 function handleOkErr(str, event) {
     let tic = 0;
-    console.log(httpAsk.fetchData); // удалить
-    // console.log(httpAsk.fetchData); // удалить потом
+    //console.log(httpAsk.fetchData); // удалить потом
     // Переменные, в которых хранится инфа об верных и не верных 
     // ответак создается так:
     // слово "level", к нему добавляется уровень, на котором

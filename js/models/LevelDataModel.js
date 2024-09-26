@@ -77,6 +77,7 @@ class LevelDataModel
         this.selectLevel('Выбрать правильный перевод','commonWords300',5,'ru');
         this.selectLevel('Выбрать правильный перевод','commonWords500',6,'ru');
         this.selectLevel('Выбрать правильный перевод','verbs50',7,'ru');
+        this.selectLevel('Выбрать правильный перевод','verbs50pl',7,'pl');
         this.selectLevel('Выбрать правильный перевод','verbs300',8,'ru');
         this.selectLevel('Выбрать правильный вариант сокращенной формы глагола to Be','toBeForms',9);
         this.selectLevel('Выбрать правильный вариант сокращенной формы глагола to Be','toBeSentences',10);
