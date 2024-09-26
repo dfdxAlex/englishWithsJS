@@ -1,6 +1,6 @@
 const verbs50pl = [
   ["run", "biegać", "latać", "pływać", "skakać", "biegać", "", ""],
-  ["eat", "jeść", "spać", "czytać", "pracować", "jeść", "", ""],
+  ["eat", "jeść", "spać", "czytać", "pracować", "jeść", "jeść", ""],
   ["write", "pisać", "chodzić", "tańczyć", "grać", "pisać", "", ""],
   ["go", "iść", "skakać", "lecieć", "śpiewać", "iść", "", ""],
   ["see", "widzieć", "mówić", "czuć", "słyszeć", "widzieć", "", ""],
@@ -51,4 +51,13 @@ const verbs50pl = [
   ["clean", "czyścić", "brudzić", "rysować", "spać", "czyścić", "", ""],
   ["dirty", "brudzić", "czyścić", "grać", "biegać", "brudzić", "", ""],
   ];
+
+// этот код добавляет правильный перевод - это индекс 1 на место с 
+// индексом 5, оттуда движек использует это значение
+// это вместо того, чтобы заполнить это с помощью чата джипити
+// такой фокус с переводом на украинский и польский не получится,
+// нужен новый массив
+verbs50pl.forEach((el, index, array) => {
+  array[index][7] = el[1];
+});
   

@@ -6,19 +6,19 @@ BDTranslate.push(
      'Present simple negative']);
 BDTranslate.push(
     ['300 глаголов', 
-     '300 дієслів (тільки російською)', 
-     '300 czasowników (tylko po rosyjsku)',
-     '300 verbs (only in Russian)']);
+     '300 дієслів (RU)', 
+     '300 czasowników (RU)',
+     '300 verbs (RU)']);
 BDTranslate.push(
     ['50 глаголов', 
-     '50 дієслів (тільки російською)', 
-     '50 czasowników (tylko po rosyjsku)',
-     '50 verbs (only in Russian)']);
+     '50 дієслів (RU/PL)', 
+     '50 czasowników (RU/PL)',
+     '50 verbs (RU/PL)']);
 BDTranslate.push(
     ['100 слов про спорт', 
-     '100 слів про спорт (тільки російською)', 
-     '100 słów o sporcie (tylko po rosyjsku)',
-     '100 words about sports(only in Russian)']);
+     '100 слів про спорт (RU)', 
+     '100 słów o sporcie (RU)',
+     '100 words about sports(RU)']);
 BDTranslate.push(
     ['Выберите правильно составленное предложение.', 
      'Виберіть правильно складену пропозицію.', 
@@ -64,31 +64,26 @@ BDTranslate.push(
          '100 слів про їжу', 
          '100 słów o jedzeniu',
          '100 words about food']);
-// BDTranslate.push(
-//         ['100 слов о путешествии', 
-//          '100 слів про спорт', 
-//          '100 słów o sporcie (tylko po rosyjsku)',
-//          '100 words about sports (only in Russian)']);
 BDTranslate.push(
         ['100 слов о путешествии', 
-         '100 слів про подорож (тільки російською)', 
-         '100 słów o podróżach (tylko po rosyjsku)',
-         '100 words about travel (only in Russian)']);
+         '100 слів про подорож (RU)', 
+         '100 słów o podróżach (RU)',
+         '100 words about travel (RU)']);
 BDTranslate.push(
         ['100 слов', 
-         '100 слів (тільки російською)', 
-         '100 słów (tylko po rosyjsku)',
-         '100 words (only in Russian)']);
+         '100 слів (RU)', 
+         '100 słów (RU)',
+         '100 words (RU)']);
 BDTranslate.push(
         ['300 слов', 
-         '300 слів (тільки російською)', 
-         '300 słów (tylko po rosyjsku)',
-         '300 words (only in Russian)']);
+         '300 слів (RU)', 
+         '300 słów (RU)',
+         '300 words (RU)']);
 BDTranslate.push(
     ['500 слов', 
-     '500 слів (тільки російською)', 
-     '500 słów (tylko po rosyjsku)',
-     '500 words (only in Russian)']);
+     '500 слів (RU)', 
+     '500 słów (RU)',
+     '500 words (RU)']);
 BDTranslate.push(
     ['Настоящее продолженное', 
      'Присутній безперервний', 

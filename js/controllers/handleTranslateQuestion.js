@@ -14,11 +14,12 @@ function handleTranslateQuestion(event, thisButton)
         // здесь подготавливается перевод для вопросса
         if (localStorage.getItem('EnglishWithJs_lang') === 'ru') {
             translateFromArray = thisButton.translateRu;
-        } else if (localStorage.getItem('EnglishWithJs_lang') === 'ua') {
+        }
+        if (localStorage.getItem('EnglishWithJs_lang') === 'ua') {
             translateFromArray = thisButton.translateUa;
-        } else {
+        }
+        if (localStorage.getItem('EnglishWithJs_lang') === 'pl') {
             translateFromArray = thisButton.translatePl;
         }
-
         event.target.innerText = translateFromArray;
 }
