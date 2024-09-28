@@ -70,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
         if (file_exists($filePath)) {
           $filePath = 'https://amatordd.webd.pro/amatorDed/DFDX/'.$filePath;
           echo $filePath;
-          return false;
+          return $filePath;
         }
         // echo $filePath;
 
@@ -118,11 +118,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
         if ($err) {
             echo "cURL Error #: " . $err;
         } else {
-            // Проверяем HTTP статус
-            if ($httpStatus !== 200) {
-                echo "HTTP Error: " . $httpStatus . "<br>";
-                echo "Response: " . $response . "<br>";
-            } else {
                 // Сохраняем аудиофайл
                 file_put_contents($filePath, $response);
         
@@ -130,6 +125,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
                 echo $filePath;
                 // Выводим сообщение об успешной генерации
                 //echo "Audio file successfully saved: <a href='$filePath'>$filePath</a>";
-            }
         }
     }

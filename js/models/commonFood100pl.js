@@ -23,7 +23,7 @@ const commonFood100pl = [
     ['beef', 'wołowina', 'kurczak', 'wieprzowina', 'ryba', 'wołowina', 'wołowina', 'wołowina'],
     ['bread', 'chleb', 'bułka', 'ciasto', 'muffin', 'chleb', 'chleb', 'chleb'],
     ['butter', 'masło', 'margaryna', 'woda', 'mleko', 'masło', 'masło', 'masło'],
-    ['cheese', 'ser', 'ser', 'masło', 'jogurt', 'ser', 'ser', 'ser'],
+    ['cheese', 'ser', 'chałwa', 'masło', 'jogurt', 'ser', 'ser', 'ser'],
     ['chicken', 'kurczak', 'wołowina', 'wieprzowina', 'ryba', 'kurczak', 'kurczak', 'kurczak'],
     ['coffee', 'kawa', 'herbata', 'woda', 'sok', 'kawa', 'kawa', 'kawa'],
     ['dessert', 'deser', 'danie główne', 'zakuska', 'napój', 'deser', 'deser', 'deser'],
