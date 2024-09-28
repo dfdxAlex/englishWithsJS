@@ -15,19 +15,16 @@ buttonSound.addEventListener('click', ()=>{
     if (buttonQuestionOne.innerText.includes('...')) {
         buttonQuestion = buttonQuestionTwo;
     }
+    // Если не удалось выбрать источник текста то выйти
     if (buttonQuestion === null) return false;
 
     //Создать сам запрос к серверу
     const textRequest = buttonQuestion.innerText;
-    if (textRequest === '...') {
-        return false;
-    }
     const dataRequest = 'sound='+encodeURIComponent(textRequest);
 
     //Запрос отправляется когда сеттеру fetchData придать значение
     //Ответ будет в геттере fetchData
     httpAsk.fetchData = dataRequest;
-    //console.log(httpAsk.fetchData);
 
     const audio = new Audio(httpAsk.fetchData);
     // Обработчик события 'loadeddata', который срабатывает, когда метаданные о загруженном аудио готовы
