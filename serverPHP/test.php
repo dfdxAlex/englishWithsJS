@@ -83,9 +83,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
         //Подготовка данных
         $data = [
           "text" => $messageSong,
+          "language" => "en",
           "voice_settings" => [
             "stability" => 0.1,
-            "similarity_boost" => 0.3
+            "similarity_boost" => 0.3,
           ]
         ];
         
@@ -98,7 +99,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
         curl_setopt_array($curl, [
           CURLOPT_URL => "https://api.elevenlabs.io/v1/text-to-speech/{$voiceId}",
           CURLOPT_RETURNTRANSFER => true,
-          CURLOPT_POST => true,
+          CURLOPT_ENCODING => "",
+          CURLOPT_MAXREDIRS => 10,
+          CURLOPT_TIMEOUT => 30,
+          CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+          CURLOPT_CUSTOMREQUEST => "POST",
           CURLOPT_HTTPHEADER => [
             "Content-Type: application/json",
             "xi-api-key: $apiKey"

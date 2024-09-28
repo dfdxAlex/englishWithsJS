@@ -21,6 +21,15 @@ function HttpClient(link = '') {
             this._fetchData(); // Выполняем запрос при установке нового значения
         }
     });
+
+    Object.defineProperty(this, 'isLoading', {
+        get: function() {
+            return this._isLoading; // Возвращаем текущий ответ
+        },
+        set: function(param) {
+            this._isLoading = param; // меняем флаг
+        }
+    });
 }
 
 HttpClient.prototype._fetchData = function() {

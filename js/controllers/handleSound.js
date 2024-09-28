@@ -22,16 +22,45 @@ buttonSound.addEventListener('click', ()=>{
     const textRequest = buttonQuestion.innerText;
     const dataRequest = 'sound='+encodeURIComponent(textRequest);
 
-    //Запрос отправляется когда сеттеру fetchData придать значение
-    //Ответ будет в геттере fetchData
-    httpAsk.fetchData = dataRequest;
+    // создаю промис для асинхронной загрузки данных с сервера
+    const sound = new Promise((onSuccess, onFailure) => {
+        httpAsk.fetchData = dataRequest;
 
-    const audio = new Audio(httpAsk.fetchData);
-    // Обработчик события 'loadeddata', который срабатывает, когда метаданные о загруженном аудио готовы
-    audio.addEventListener('loadeddata', () => {
-        audio.play(); // Воспроизведение звука после загрузки
+    // каждые 100 милисекунд проверка признака работы запроса
+    // если запрос прекращается, то запускаем then
+    const checkLoading = setInterval(() => {
+        // Проверяем, когда загрузка завершится
+        if (!httpAsk.isLoading) {
+            clearInterval(checkLoading); // Останавливаем проверку
+            onSuccess(httpAsk.fetchData); // Возвращаем успешный результат
+        }
+    }, 100); // Проверяем каждую 100 миллисекунд
+
+    if (httpAsk.fetchData === null) {
+        onFailure(null);
+    }
+
     });
-    audio.load();
+
+    sound.then((onSuccess) => {
+        const audio = new Audio(onSuccess);
+        //console.log(onSuccess);
+        audio.addEventListener('loadeddata', () => {
+            audio.play(); // Воспроизведение звука после загрузки
+            });
+        audio.load();
+    });
+
+    sound.catch((error) => {
+        return error;
+    });
+
+    sound.finally(() => {
+        console.log('Запрос окончен');
+    }); 
+        
+    
+       
 });
 
 
