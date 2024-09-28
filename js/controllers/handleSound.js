@@ -4,7 +4,17 @@ const buttonSound = document.getElementById('sound');
 
 buttonSound.addEventListener('click', ()=>{
     //console.log('нажали на динамик');
-    const buttonQuestion = document.getElementById('question');
+
+    const buttonQuestionOne = document.getElementById('question_old');
+    const buttonQuestionTwo = document.getElementById('clicked_element');
+    
+    // по умолчанию источник текста 'question_old'
+    let buttonQuestion = buttonQuestionOne;
+    // если в 'question_old' есть троеточие, то предложение не полное
+    // значит источником текста будет ответ 'clicked_element'
+    if (buttonQuestionOne.innerText.includes('...')) {
+        buttonQuestion = buttonQuestionTwo;
+    }
     if (buttonQuestion === null) return false;
 
     //Создать сам запрос к серверу
