@@ -53,4 +53,4 @@ HttpClient.prototype._fetchData = function() {
 
 // Объявить объект сразу
 // Это нужно для доступа к данным ответа сервера в разное время
-const httpAsk = new HttpClient();
+const httpAsk = new HttpClient('https://amatordd.webd.pro/amatorDed/DFDX/test.php');

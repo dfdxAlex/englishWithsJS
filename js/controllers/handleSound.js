@@ -7,10 +7,6 @@ buttonSound.addEventListener('click', ()=>{
     const buttonQuestion = document.getElementById('question');
     if (buttonQuestion === null) return false;
 
-    // поместить ссылку на сервер в объект httpAsk 
-    //(создается сразу под конструктором HttpClient)
-    httpAsk.link = 'https://amatordd.webd.pro/amatorDed/DFDX/test.php';
-    
     //Создать сам запрос к серверу
     const textRequest = buttonQuestion.innerText;
     if (textRequest === '...') {

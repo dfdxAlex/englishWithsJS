@@ -10,9 +10,6 @@ function handleSearchError() {
     
     // Клик по кнопке Сообщить об ошибке
     buttonError.addEventListener('click', function() {
-        // поместить ссылку на сервер в объект httpAsk 
-        //(создается сразу под конструктором HttpClient)
-        httpAsk.link = 'https://amatordd.webd.pro/amatorDed/DFDX/test.php';
         //Создать сам запрос к серверу
         const getAttrib = buttonError.getAttribute('name');
         const dataRequest = 'name=' + encodeURIComponent(getAttrib);
