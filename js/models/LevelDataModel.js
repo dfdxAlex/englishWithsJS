@@ -72,6 +72,7 @@ class LevelDataModel
         this.selectLevel('Выбрать правильный перевод','commonFood100ua',1,'ua');
         this.selectLevel('Выбрать правильный перевод','commonFood100pl',1,'pl');
         this.selectLevel('Выбрать правильный перевод','commonSport100',2,'ru');
+        this.selectLevel('Выбрать правильный перевод','commonSport100pl',2,'pl');
         this.selectLevel('Выбрать правильный перевод','commonWalk100',3,'ru');
         this.selectLevel('Выбрать правильный перевод','commonWords100',4,'ru');
         this.selectLevel('Выбрать правильный перевод','commonWords300',5,'ru');
