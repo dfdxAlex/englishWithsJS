@@ -16,9 +16,9 @@ BDTranslate.push(
      '50 verbs (RU/PL)']);
 BDTranslate.push(
     ['100 слов про спорт', 
-     '100 слів про спорт (RU)', 
-     '100 słów o sporcie (RU)',
-     '100 words about sports(RU)']);
+     '100 слів про спорт (RU/PL)', 
+     '100 słów o sporcie (RU/PL)',
+     '100 words about sports(RU/PL)']);
 BDTranslate.push(
     ['Выберите правильно составленное предложение.', 
      'Виберіть правильно складену пропозицію.', 
