@@ -1,5 +1,15 @@
 const BDTranslate = [];
 BDTranslate.push(
+    ['Подобрать правильно вопрос или ответ', 
+     'Підібрати правильно питання чи відповідь', 
+     'Wybierz właściwe pytanie lub odpowiedź',
+     'Choose the right question or answer']);
+BDTranslate.push(
+    ['Настоящее простое вопросы', 
+     'Справжнє просте питання', 
+     'Przedstaw proste pytania',
+     'Present simple questions']);
+BDTranslate.push(
     ['Настоящее простое негативное', 
      'Справжнє просте негативне', 
      'Przedstaw prosty negatyw',

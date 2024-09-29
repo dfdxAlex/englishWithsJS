@@ -15,6 +15,9 @@ buttonSound.addEventListener('click', ()=>{
     if (buttonQuestionOne.innerText.includes('...')) {
         buttonQuestion = buttonQuestionTwo;
     }
+    if (buttonQuestionOne.innerText.includes('/')) {
+        buttonQuestion = buttonQuestionTwo;
+    }
     // Если не удалось выбрать источник текста то выйти
     if (buttonQuestion === null) return false;
 

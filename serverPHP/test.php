@@ -62,8 +62,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
         $filePath = $_POST['sound'];
         $filePath = str_replace(' ', '', $filePath);
         $filePath = str_replace('\'', '', $filePath);
+        $filePath = str_replace('\\', '', $filePath);
+        $filePath = str_replace('/', '', $filePath);
         $filePath = str_replace('.', '', $filePath);
         $filePath = str_replace('?', '', $filePath);
+        $filePath = str_replace(';', '', $filePath);
+        $filePath = str_replace(':', '', $filePath);
         $filePath = strtolower($filePath);
         $filePath = 'sound'.DIRECTORY_SEPARATOR.$filePath;
         $filePath = substr($filePath, 0, 200);
