@@ -56,12 +56,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
     if (isset($_POST['sound'])) {
         //echo 'Работаем с озвучкой';
         $apiKey = "sk_a0c451bdcbb8b32e659dca5f6fd1b3d5ff33e432e4d57b34";  // Ваш реальный API-ключ
-        $voiceId = "pMsXgVXv3BLzUgSXRplE";  // Идентификатор голоса
+        // $voiceId = "pMsXgVXv3BLzUgSXRplE";  // Идентификатор голоса
+        $voiceId = "pNInz6obpgDQGcFmaJgB";  // Идентификатор голоса
         
         $filePath = $_POST['sound'];
         $filePath = str_replace(' ', '', $filePath);
         $filePath = str_replace('\'', '', $filePath);
         $filePath = str_replace('.', '', $filePath);
+        $filePath = str_replace('?', '', $filePath);
         $filePath = strtolower($filePath);
         $filePath = 'sound'.DIRECTORY_SEPARATOR.$filePath;
         $filePath = substr($filePath, 0, 200);
@@ -72,10 +74,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
           echo $filePath;
           return $filePath;
         }
-        // echo $filePath;
 
+        // идея работала до переноса воспроизведения на целое
+        // предложение
         $messageSong = str_replace('...', 'ааа', $_POST['sound']);
-        // echo $messageSong;
 
         //Инициализирует сессию cURL
         $curl = curl_init();
@@ -84,6 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
         $data = [
           "text" => $messageSong,
           "language" => "en",
+          "model_id" => "eleven_monolingual_v1",
           "voice_settings" => [
             "stability" => 0.1,
             "similarity_boost" => 0.3,
@@ -128,7 +131,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
         
                 $filePath = 'https://amatordd.webd.pro/amatorDed/DFDX/'.$filePath;
                 echo $filePath;
-                // Выводим сообщение об успешной генерации
-                //echo "Audio file successfully saved: <a href='$filePath'>$filePath</a>";
         }
     }
