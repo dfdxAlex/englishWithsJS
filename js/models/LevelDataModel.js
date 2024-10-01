@@ -58,6 +58,15 @@ class LevelDataModel
         this.propertyArrayNameButton.push(this.translate.translate('Настоящее простое негативное'));
         this.propertyArrayNameButton.push(this.translate.translate('Настоящее простое вопросы'));
     }
+
+    // Это массив с набором цифр, каждая цифра - это пункт в меню.
+    // Каждая цифра в массиве - это расположение соответствующего 
+    // пункта. Первый элемент находится в меню 2, второй тоже и т.д.
+    static mapNameMenu(test)
+    {
+        const arrayForButton = [2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1];
+        return arrayForButton[test];
+    }
     
     selectLevel(exercise, nameArray, level, lang = true)
     {

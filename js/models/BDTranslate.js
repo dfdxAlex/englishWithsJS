@@ -1,5 +1,10 @@
 const BDTranslate = [];
 BDTranslate.push(
+    ['Учить слова', 
+     'Вчити слова', 
+     'Ucz się słów',
+     'Learn words']);
+BDTranslate.push(
     ['Подобрать правильно вопрос или ответ', 
      'Підібрати правильно питання чи відповідь', 
      'Wybierz właściwe pytanie lub odpowiedź',

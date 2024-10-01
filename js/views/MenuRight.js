@@ -10,6 +10,7 @@ class MenuRight
         // меню. Вводится id того елемента, который примет меню.
         // используется как внутрри класса, так и за его пределами.
         this.seedMenu = 'burger';
+        this.numberMenu = 1;
     }
     
     menuDropdown2()
@@ -24,6 +25,10 @@ class MenuRight
         rez+='<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">';
         
         rez+= this.nameButtons.map((element, index) => {
+            // статический метод mapNameMenu(index) содержит инфу
+            // о том, конкретный перебираемый пункт в каким меню 
+            // должен находиться
+            if (LevelDataModel.mapNameMenu(index) !== this.numberMenu) return;
             return `<li><a class="dropdown-item" id="level${index+1}">${element}</a></li>`;
         }).join('');
 
