@@ -39,24 +39,24 @@ class LevelDataModel
     // на кнопке правого меню
     arrayNameButton()
     {
-        this.propertyArrayNameButton.push(this.translate.translate('100 слов о еде'));
-        this.propertyArrayNameButton.push(this.translate.translate('100 слов про спорт'));
-        this.propertyArrayNameButton.push(this.translate.translate('100 слов о путешествии'));
-        this.propertyArrayNameButton.push(this.translate.translate('100 слов'));
-        this.propertyArrayNameButton.push(this.translate.translate('300 слов'));
-        this.propertyArrayNameButton.push(this.translate.translate('500 слов'));
-        this.propertyArrayNameButton.push(this.translate.translate('50 глаголов'));
-        this.propertyArrayNameButton.push(this.translate.translate('300 глаголов'));
-        this.propertyArrayNameButton.push(this.translate.translate('To Be, краткая форма'));
-        this.propertyArrayNameButton.push(this.translate.translate('To Be, вопрос/ответ'));
-        this.propertyArrayNameButton.push(this.translate.translate('To Be, ответь на вопрос'));
-        this.propertyArrayNameButton.push(this.translate.translate('Where/Who...'));
-        this.propertyArrayNameButton.push(this.translate.translate('Настоящее продолженное'));
-        this.propertyArrayNameButton.push(this.translate.translate('Настоящее продолженное - вопрос'));
-        this.propertyArrayNameButton.push(this.translate.translate('Настоящее простое'));
-        this.propertyArrayNameButton.push(this.translate.translate('Настоящее простое + периодичность'));
-        this.propertyArrayNameButton.push(this.translate.translate('Настоящее простое негативное'));
-        this.propertyArrayNameButton.push(this.translate.translate('Настоящее простое вопросы'));
+        this.propertyArrayNameButton.push(this.translate.translate('100 слов о еде'));        // пункт 2
+        this.propertyArrayNameButton.push(this.translate.translate('100 слов про спорт'));    // пункт 2
+        this.propertyArrayNameButton.push(this.translate.translate('100 слов о путешествии'));// пункт 2
+        this.propertyArrayNameButton.push(this.translate.translate('100 слов'));              // пункт 2
+        this.propertyArrayNameButton.push(this.translate.translate('300 слов'));              // пункт 2
+        this.propertyArrayNameButton.push(this.translate.translate('500 слов'));              // пункт 2
+        this.propertyArrayNameButton.push(this.translate.translate('50 глаголов'));           // пункт 2
+        this.propertyArrayNameButton.push(this.translate.translate('300 глаголов'));          // пункт 2
+        this.propertyArrayNameButton.push(this.translate.translate('To Be, краткая форма'));  // пункт 1
+        this.propertyArrayNameButton.push(this.translate.translate('To Be, вопрос/ответ'));   // пункт 1
+        this.propertyArrayNameButton.push(this.translate.translate('To Be, ответь на вопрос'));// пункт 1
+        this.propertyArrayNameButton.push(this.translate.translate('Where/Who...'));           // пункт 2
+        this.propertyArrayNameButton.push(this.translate.translate('Настоящее продолженное')); // пункт 1
+        this.propertyArrayNameButton.push(this.translate.translate('Настоящее продолженное - вопрос'));  // пункт 1
+        this.propertyArrayNameButton.push(this.translate.translate('Настоящее простое'));                // пункт 1
+        this.propertyArrayNameButton.push(this.translate.translate('Настоящее простое + периодичность'));// пункт 1
+        this.propertyArrayNameButton.push(this.translate.translate('Настоящее простое негативное'));     // пункт 1
+        this.propertyArrayNameButton.push(this.translate.translate('Настоящее простое вопросы'));        // пункт 1
     }
 
     // Это массив с набором цифр, каждая цифра - это пункт в меню.
@@ -64,7 +64,7 @@ class LevelDataModel
     // пункта. Первый элемент находится в меню 2, второй тоже и т.д.
     static mapNameMenu(test)
     {
-        const arrayForButton = [2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1];
+        const arrayForButton = [2,2,2,2,2,2,2,2,1,1,1,2,1,1,1,1,1,1];
         return arrayForButton[test];
     }
     
