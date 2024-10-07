@@ -15,6 +15,9 @@ buttonSound.addEventListener('click', ()=>{
     if (buttonQuestionOne.innerText.includes('...')) {
         buttonQuestion = buttonQuestionTwo;
     }
+    if (buttonQuestionOne.innerText.includes('___')) {
+        buttonQuestion = buttonQuestionTwo;
+    }
     if (buttonQuestionOne.innerText.includes('/')) {
         buttonQuestion = buttonQuestionTwo;
     }

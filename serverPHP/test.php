@@ -81,8 +81,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
 
         // идея работала до переноса воспроизведения на целое
         // предложение
-        $messageSong = str_replace('...', 'ааа', $_POST['sound']);
-
+        // $messageSong = str_replace('...', 'ааа', $_POST['sound']);
+        $messageSong = $_POST['sound'];
         //Инициализирует сессию cURL
         $curl = curl_init();
         

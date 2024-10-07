@@ -1,5 +1,10 @@
 const BDTranslate = [];
 BDTranslate.push(
+    ['Выбрать правильное время PS or PC', 
+     'Вибрати правильне час PS or PC', 
+     'Wybierz odpowiedni czas PS or PC',
+     'Choose the right time PS or PC']);
+BDTranslate.push(
     ['Учить слова', 
      'Вчити слова', 
      'Ucz się słów',

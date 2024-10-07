@@ -29,7 +29,7 @@ class LevelDataModel
         this.ex = new Exercise();
         this.translate = FactoryRegistr.getObject("LanguageController");
         // Число уроков, изменяется в ручную при добавлении урока
-        this.tic = 18;
+        this.tic = 19;
         this.propertyArrayNameButton = [];
         this.arrayNameButton();
         this.lang = localStorage.getItem('EnglishWithJs_lang');
@@ -57,6 +57,7 @@ class LevelDataModel
         this.propertyArrayNameButton.push(this.translate.translate('Настоящее простое + периодичность'));// пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('Настоящее простое негативное'));     // пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('Настоящее простое вопросы'));        // пункт 1
+        this.propertyArrayNameButton.push(this.translate.translate('Выбрать правильное время PS or PC'));// пункт 1
     }
 
     // Это массив с набором цифр, каждая цифра - это пункт в меню.
@@ -64,7 +65,7 @@ class LevelDataModel
     // пункта. Первый элемент находится в меню 2, второй тоже и т.д.
     static mapNameMenu(test)
     {
-        const arrayForButton = [2,2,2,2,2,2,2,2,1,1,1,2,1,1,1,1,1,1];
+        const arrayForButton = [2,2,2,2,2,2,2,2,1,1,1,2,1,1,1,1,1,1,1];
         return arrayForButton[test];
     }
     
@@ -100,6 +101,7 @@ class LevelDataModel
         this.selectLevel('Выберите правильно составленное предложение.','presentSimpleNever',16);
         this.selectLevel('Вставить правильное слово','presentSimpleNegative',17);
         this.selectLevel('Подобрать правильно вопрос или ответ','presentSimpleQuestions',18);
+        this.selectLevel('Выбрать правильное время PS or PC','presentSimpleOrContinius',19);
 
         return this.rez;
     }
