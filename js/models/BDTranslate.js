@@ -1,5 +1,15 @@
 const BDTranslate = [];
 BDTranslate.push(
+    ['Выбери верную форму глагола', 
+     'Вибери правильну форму дієслова', 
+     'Wybierz poprawną formę czasownika',
+     'Choose the correct form of the verb']);
+BDTranslate.push(
+    ['Вторая форма неправильных глаголов', 
+     'Друга форма неправильних дієслів', 
+     'Druga forma czasowników nieregularnych',
+     'The second form of irregular verbs']);
+BDTranslate.push(
     ['Выбрать правильное время PS or PC', 
      'Вибрати правильне час PS or PC', 
      'Wybierz odpowiedni czas PS or PC',
