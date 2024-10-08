@@ -643,7 +643,7 @@ const presentSimpleOrContinius = [
 ["She ___ (call) her mother.", "is calling", "calls", "called", "will call", "Она звонит своей маме.", "Вона дзвонить своїй мамі.", "Ona dzwoni do swojej matki."],
 ["You ___ (play) video games.", "are playing", "play", "played", "will play", "Ты играешь в видеоигры.", "Ти граєш у відеоігри.", "Grasz w gry wideo."],
 ["They ___ (paint) the house.", "are painting", "paint", "painted", "will paint", "Они красят дом.", "Вони фарбують будинок.", "Oni malują dom."],
-["I ___ (cut) the vegetables.", "am cutting", "cut", "cut", "will cut", "Я нарезаю овощи.", "Я ріжу овочі.", "Kroję warzywa."],
+["I ___ (cut) the vegetables.", "am cutting", "cutting", "cuts", "will cut", "Я нарезаю овощи.", "Я ріжу овочі.", "Kroję warzywa."],
 ["He ___ (run) to catch the bus.", "is running", "runs", "ran", "will run", "Он бежит, чтобы успеть на автобус.", "Він біжить, щоб встигнути на автобус.", "On biegnie, aby złapać autobus."],
 ["We ___ (drive) to the airport.", "are driving", "drive", "drove", "will drive", "Мы едем в аэропорт.", "Ми їдемо до аеропорту.", "Jedziemy na lotnisko."],
 ["She ___ (dance) in the rain.", "is dancing", "dances", "danced", "will dance", "Она танцует под дождем.", "Вона танцює під дощем.", "Ona tańczy w deszczu."],
