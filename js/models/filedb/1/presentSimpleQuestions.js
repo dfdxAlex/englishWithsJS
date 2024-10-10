@@ -715,12 +715,15 @@ const presentSimpleQuestions = [
             str1 = str1.replace('...', str2);
             return str1;
         }
-        if ((id>74 && id<=295) || (id>555 && id<=704)) {
-            return presentSimpleQuestions[id][1];
-        }
-        if (id>295 && id<=555) {
-            return presentSimpleQuestions[id][0];
-        }
+        // if ((id>74 && id<=295) || (id>555 && id<=704)) {
+        //     return presentSimpleQuestions[id][1];
+        // }
+        // if (id>295 && id<=555) {
+        //     return presentSimpleQuestions[id][1];
+        // }
+        if ((id>74 && id<=704)) {
+             return presentSimpleQuestions[id][1];
+         }
     }         
 ];
 

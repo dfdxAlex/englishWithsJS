@@ -1328,7 +1328,7 @@ const presentSimpleOrContinius = [
             return result.trim();
         }
         if (id>=178) {
-            let str1 = presentSimpleOrContinius[id][0];
+            let str1 = presentSimpleOrContinius[id][1];
             return str1;
         }
     }
