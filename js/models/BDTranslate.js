@@ -1,5 +1,10 @@
 const BDTranslate = [];
 BDTranslate.push(
+    ['Выбрать правильную пару.', 
+     'Вибрати правильну пару.', 
+     'Wybierz odpowiednią parę.',
+     'Choose the right pair.']);
+BDTranslate.push(
     ['Выбери верную форму глагола', 
      'Вибери правильну форму дієслова', 
      'Wybierz poprawną formę czasownika',
