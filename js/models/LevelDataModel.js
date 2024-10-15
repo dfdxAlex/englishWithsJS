@@ -29,7 +29,7 @@ class LevelDataModel
         this.ex = new Exercise();
         this.translate = FactoryRegistr.getObject("LanguageController");
         // Число уроков, изменяется в ручную при добавлении урока
-        this.tic = 21;
+        this.tic = 22;
         this.propertyArrayNameButton = [];
         this.arrayNameButton();
         this.lang = localStorage.getItem('EnglishWithJs_lang');
@@ -60,6 +60,7 @@ class LevelDataModel
         this.propertyArrayNameButton.push(this.translate.translate('Выбрать правильное время PS or PC'));// пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('Вторая форма неправильных глаголов'));// пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('I Have or I Have got'));// пункт 1
+        this.propertyArrayNameButton.push(this.translate.translate('A1 Beginer text'));// пункт 2
         
     }
 
@@ -68,7 +69,7 @@ class LevelDataModel
     // пункта. Первый элемент находится в меню 2, второй тоже и т.д.
     static mapNameMenu(test)
     {
-        const arrayForButton = [2,2,2,2,2,2,2,2,1,1,1,2,1,1,1,1,1,1,1,2,1];
+        const arrayForButton = [2,2,2,2,2,2,2,2,1,1,1,2,1,1,1,1,1,1,1,2,1,2];
         return arrayForButton[test];
     }
     
@@ -107,7 +108,7 @@ class LevelDataModel
         this.selectLevel('Выбрать правильное время PS or PC','presentSimpleOrContinius',19);
         this.selectLevel('Выбери верную форму глагола','irregularVerbsPastSimple',20);
         this.selectLevel('Выбрать правильную пару.','haveAndHaveGot',21);
-
+        this.selectLevel('Text A1 Beginer.','textA1Begginer',22);
         return this.rez;
     }
 
