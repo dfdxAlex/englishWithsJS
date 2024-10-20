@@ -31,13 +31,20 @@
     <section class="container d-flex flex-column align-items-center justify-content-center text-center p-3">
 
         <div class="row w-100 mb-3">
-            <div class="col text-wrap" >
+            <div class="col-8 text-wrap" >
+                    <fieldset class="exercise">
+                        <!--Добавить переводы-->
+                        <legend class="btn btn-light" id="exercise-legend">Задание для теста</legend>
+                        <div id="exercise" ></div>
+                    </fieldset>
+            </div>
+            <div class="col-4 text-wrap" >
                 <fieldset class="exercise">
                     <!--Добавить переводы-->
-                    <legend id="exercise-legend">Задание для теста</legend>
-                    <div id="exercise" ></div>
+                    <legend id="help-test-legend">Теория</legend>
+                    <div id="help-test" ></div>
                 </fieldset>
-            </div>
+        </div>
         </div>
     
         <div class="row w-100 mb-3">
@@ -162,6 +169,7 @@
     <script src="js/views/Exercise.js"></script>
     <script src="js/views/LogField.js"></script>
 
+    <script src="js/controllers/Thoury.js"></script>
     <script src="js/controllers/handleSearchError.js"></script>
     <script src="js/controllers/handleClickError.js"></script>
     <script src="js/controllers/handleTranslateQuestion.js"></script>

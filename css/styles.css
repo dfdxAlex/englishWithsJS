@@ -141,3 +141,6 @@ select, .menu-setting, .button-select-test {
 .button_return_log {
     font-size: 18px;
 }
+.modal-body {
+    text-align: left;
+}
