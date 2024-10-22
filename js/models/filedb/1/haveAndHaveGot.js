@@ -324,7 +324,7 @@ const haveAndHaveGot = [
         "He's got a laptop", 
         "He's laptop got a", 
         "He have got a laptop", 
-        "He has got laptop", 
+        "He'as got laptop", 
         "У него есть ноутбук", 
         "У нього є ноутбук", 
         "Ma laptop"
@@ -2344,7 +2344,7 @@ const haveAndHaveGot = [
         "Have you not got a job?", 
         "You have not got a job, have you?", 
         "Got you not a job?", 
-        "Have not you got a job?", 
+        "Have not you got for job?", 
         "У тебя нет работы", 
         "У тебе немає роботи", 
         "Nie masz pracy"                          
@@ -2654,7 +2654,7 @@ const haveAndHaveGot = [
         "Do you have a question?", 
         "Have you got a question, do you?", 
         "You have a question, don't you?", 
-        "Do you have a question?", 
+        "Do you have question?", 
         "У меня есть вопрос", 
         "У мене є питання", 
         "I have a question"
@@ -2664,7 +2664,7 @@ const haveAndHaveGot = [
         "Does she have a bicycle?", 
         "Has she got a bicycle, does she?", 
         "She has a bicycle, hasn't she?", 
-        "Does she have a bicycle?", 
+        "Does she has a bicycle?", 
         "У нее есть велосипед", 
         "В неї є велосипед", 
         "She has a bicycle"
@@ -2734,7 +2734,7 @@ const haveAndHaveGot = [
         "Do we have a project?", 
         "Have we got a project, do we?", 
         "We have a project, don't we?", 
-        "Do we have a project?", 
+        "Have we a project?", 
         "У нас есть проект", 
         "У нас є проект", 
         "Mamy projekt"
@@ -2744,7 +2744,7 @@ const haveAndHaveGot = [
         "Do you have a ticket?", 
         "Have you got a ticket, do you?", 
         "You have a ticket, don't you?", 
-        "Do you have a ticket?", 
+        "You have got a ticket?", 
         "У тебя есть билет", 
         "У тебе є квиток", 
         "Masz bilet"
@@ -2794,7 +2794,7 @@ const haveAndHaveGot = [
         "Don't you have time?", 
         "Haven't you got time, do you?", 
         "You don't have time, do you?", 
-        "Don't you have time?", 
+        "Don't you have a time?", 
         "У меня нет времени", 
         "В мене немає часу", 
         "Nie mam czasu"

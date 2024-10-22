@@ -32,6 +32,7 @@ static handleThoury(level)
 
     }
 
+    // Функция помещает информацию в заголовок раздела Теория
     static headerThoury()
     {
         if (this.level === 9 || this.level === 10) 
@@ -57,6 +58,7 @@ static handleThoury(level)
 
         return this.translate.translate('Просто учим слова');
     }
+    // Функция помещает информацию в тело раздела Теория
     static bodyThoury()
     {
       // if (this.level === 15) 
