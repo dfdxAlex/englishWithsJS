@@ -17,7 +17,7 @@ function HttpClient(link = '') {
             return this._response; // Возвращаем текущий ответ
         },
         set: function(newRequest) {
-            this.request = newRequest;
+            this.request = newRequest.replace(/'/g, '\\\'');
             this._fetchData(); // Выполняем запрос при установке нового значения
         }
     });
