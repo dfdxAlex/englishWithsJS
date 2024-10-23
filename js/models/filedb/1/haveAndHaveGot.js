@@ -2844,7 +2844,7 @@ const haveAndHaveGot = [
         "Don't you have an umbrella?", 
         "Haven't you got an umbrella, do you?", 
         "You don't have an umbrella, do you?", 
-        "Don't you have an umbrella?", 
+        "Dasn't you have an umbrella?", 
         "У тебя нет зонта", 
         "У тебе немає парасолі", 
         "Nie masz parasola"
