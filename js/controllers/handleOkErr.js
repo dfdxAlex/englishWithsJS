@@ -23,6 +23,12 @@ function handleOkErr(str, event) {
     tic = +localStorage.getItem(levexW);
     localStorage.setItem(levexW,tic+1);
 
+    // Достать из регистра объект переводчика
+    const translate = FactoryRegistr.getObject('LanguageController');
+
+    // Сброс состояния кнопки
+    resetBottonError();
+
     // Выбрать html тег, который покажет выбранный неправильный вариант
     // или весь правильный вопрос
     const clickedEl = document.getElementById('clicked_element');
@@ -75,7 +81,7 @@ function handleOkErr(str, event) {
         errorOrOk.style.color = "white";
         clickedEl.style.color = "white";
         clickedElementOld.style.color = "white";
-        fieldsetLegend.innerHTML = FactoryRegistr.getObject('LanguageController').translate('Предыдущий вопрос/ответ');
+        fieldsetLegend.innerHTML = translate.translate('Предыдущий вопрос/ответ');
         handleLevelX(new LevelDataModel(+localStorage.getItem('level')));
     }
     else {

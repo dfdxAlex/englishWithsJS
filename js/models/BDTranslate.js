@@ -5,6 +5,16 @@ BDTranslate.push(
      ``,
      ``]);
 BDTranslate.push(
+    [`Упс. Кто-то уже сообщил об этой ошибке.`, 
+     `Упс. Хтось уже повідомив про цю помилку.`, 
+     `Ups. Ktoś już zgłosił ten błąd.`,
+     `Oops. Someone already reported this bug.`]);
+BDTranslate.push(
+    [`Ошибка зафиксирована`, 
+     `Помилка зафіксована`, 
+     `Zapisano błąd`,
+     `Error recorded`]);
+BDTranslate.push(
     [`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
     <h2 style="color: #333;">Использование глаголов "have" и "have got"</h2>
     

@@ -11,6 +11,8 @@ function HttpClient(link = '') {
     this._response = null; // Внутренняя переменная для хранения ответа
     this._isLoading = false; // Флаг загрузки, чтобы отслеживать выполнение запроса
     this.request = '';
+    // Достать из регистра объект переводчика
+    this.translate = new LanguageController();
 
     Object.defineProperty(this, 'fetchData', {
         get: function() {
@@ -47,8 +49,15 @@ HttpClient.prototype._fetchData = function() {
         if (xhr.status >= 200 && xhr.status < 300) {
             this._response = xhr.responseText; // Сохраняем ответ сервера
             console.log('Ответ сервера:', this._response);
+            if (this._response === 'Данные успешно получены!  saveError:Слова нет в БД') {
+                document.getElementById('search_error').textContent = this.translate.translate('Ошибка зафиксирована');
+            }
+            if (this._response === 'Данные успешно получены!  saveError:Cлово есть в БД') {
+                document.getElementById('search_error').textContent = this.translate.translate('Упс. Кто-то уже сообщил об этой ошибке.');
+            }
         } else {
             console.error('Ошибка:', xhr.status, xhr.statusText);
+            document.getElementById('search_error').textContent = 'Ошибка отправки данных'+xhr.statusText;
         }
     };
 

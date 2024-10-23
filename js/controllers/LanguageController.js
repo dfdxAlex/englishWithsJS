@@ -35,12 +35,10 @@ class LanguageController
         // Если не нашли перевод то вернуть исходный текст
         returnTranslate = str;
         BDTranslate.forEach((el)=>{
-
             // Если нашли совпадение по русскому языку
             // то вернуть соответствующее значение выбранного языка
             if (el[0] == str)
                 returnTranslate = (el[lang]);
-
         });
         return returnTranslate;
     }

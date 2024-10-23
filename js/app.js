@@ -13,6 +13,8 @@ window.addEventListener('load', () => {
     // document.getElementById('help-test-legend').addEventListener('click',handleThoury);
     // document.getElementById('help-test').addEventListener('click',handleThoury);
     
+    // Достать из регистра объект переводчика
+    resetBottonError();
 });
 
 
