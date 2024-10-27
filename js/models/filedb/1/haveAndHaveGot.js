@@ -154,7 +154,7 @@ const haveAndHaveGot = [
         "They have got a car", 
         "They has got a car", 
         "They got have a car", 
-        "They have car a got", 
+        "They have a car got", 
         "У них есть машина", 
         "У них є машина", 
         "Mają samochód"
@@ -2604,7 +2604,7 @@ const haveAndHaveGot = [
         "Does she have a dog?", 
         "Has she got a dog, does she?", 
         "She has a dog, hasn't she?", 
-        "Does she have a dog?", 
+        "Does she has a dog?", 
         "У нее есть собака", 
         "В неї є собака", 
         "She has a dog"

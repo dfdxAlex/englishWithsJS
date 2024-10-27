@@ -6,6 +6,9 @@
 // const dataRequest = Тело запроса;
 // httpAsk.fetchData = dataRequest;
 
+// модификация от 27.10.2024. В ответе приходит объект с информацией
+// содержимое объекта настраивается в файле сервера в специальном объекте.
+
 function HttpClient(link = '') {
     this.link = link;
     this._response = null; // Внутренняя переменная для хранения ответа

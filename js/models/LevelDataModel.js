@@ -29,7 +29,7 @@ class LevelDataModel
         this.ex = new Exercise();
         this.translate = FactoryRegistr.getObject("LanguageController");
         // Число уроков, изменяется в ручную при добавлении урока
-        this.tic = 22;
+        this.tic = 23;
         this.propertyArrayNameButton = [];
         this.arrayNameButton();
         this.lang = localStorage.getItem('EnglishWithJs_lang');
@@ -61,6 +61,7 @@ class LevelDataModel
         this.propertyArrayNameButton.push(this.translate.translate('Вторая форма неправильных глаголов'));// пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('I Have or I Have got'));// пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('A1 Beginer text'));// пункт 2
+        this.propertyArrayNameButton.push(this.translate.translate('Was Or Were'));// пункт 1
         
     }
 
@@ -69,7 +70,7 @@ class LevelDataModel
     // пункта. Первый элемент находится в меню 2, второй тоже и т.д.
     static mapNameMenu(test)
     {
-        const arrayForButton = [2,2,2,2,2,2,2,2,1,1,1,2,1,1,1,1,1,1,1,2,1,2];
+        const arrayForButton = [2,2,2,2,2,2,2,2,1,1,1,2,1,1,1,1,1,1,1,2,1,2,1];
         return arrayForButton[test];
     }
     
@@ -110,6 +111,7 @@ class LevelDataModel
         this.selectLevel('Выбери верную форму глагола','irregularVerbsPastSimple',20);
         this.selectLevel('Выбрать правильную пару.','haveAndHaveGot',21);
         this.selectLevel('Text A1 Beginer.','textA1Begginer',22);
+        this.selectLevel('Выбрать правильную пару.','wasOrWere',23);
         return this.rez;
     }
 
