@@ -3,7 +3,6 @@
 const buttonSound = document.getElementById('sound');
 
 buttonSound.addEventListener('click', ()=>{
-    //console.log('нажали на динамик');
 
     const buttonQuestionOne = document.getElementById('question_old');
     const buttonQuestionTwo = document.getElementById('clicked_element');
@@ -50,7 +49,6 @@ buttonSound.addEventListener('click', ()=>{
 
     sound.then((onSuccess) => {
         const audio = new Audio(onSuccess);
-        //console.log(onSuccess);
         audio.addEventListener('loadeddata', () => {
             audio.play(); // Воспроизведение звука после загрузки
             });

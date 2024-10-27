@@ -12,14 +12,13 @@ function HttpClient(link = '') {
     this._isLoading = false; // Флаг загрузки, чтобы отслеживать выполнение запроса
     this.request = '';
     // Достать из регистра объект переводчика
-    this.translate = new LanguageController();
-
+    
     Object.defineProperty(this, 'fetchData', {
         get: function() {
             return this._response; // Возвращаем текущий ответ
         },
         set: function(newRequest) {
-            this.request = newRequest.replace(/'/g, '\'');
+            this.request = newRequest;//.replace(/'/g, '\'');
             this._fetchData(); // Выполняем запрос при установке нового значения
         }
     });
@@ -47,14 +46,20 @@ HttpClient.prototype._fetchData = function() {
     xhr.onload = () => {
         this._isLoading = false; // Сбрасываем флаг загрузки
         if (xhr.status >= 200 && xhr.status < 300) {
+            setTimeout(function() {
+                const translate = new LanguageController();
+                // console.log(JSON.parse(xhr.responseText));
+                responseObj = JSON.parse(xhr.responseText);
+                if (!responseObj.zapros) {
+                    document.getElementById('search_error').textContent = translate.translate('Ошибка зафиксирована');
+                }
+                if (responseObj.zapros) {
+                    document.getElementById('search_error').textContent = translate.translate('Упс. Кто-то уже сообщил об этой ошибке.');
+                }
+            }, 500);
+
             this._response = xhr.responseText; // Сохраняем ответ сервера
-            console.log('Ответ сервера:', this._response);
-            if (this._response === 'Данные успешно получены!  saveError:Слова нет в БД') {
-                document.getElementById('search_error').textContent = this.translate.translate('Ошибка зафиксирована');
-            }
-            if (this._response === 'Данные успешно получены!  saveError:Cлово есть в БД') {
-                document.getElementById('search_error').textContent = this.translate.translate('Упс. Кто-то уже сообщил об этой ошибке.');
-            }
+
         } else {
             console.error('Ошибка:', xhr.status, xhr.statusText);
             document.getElementById('search_error').textContent = 'Ошибка отправки данных'+xhr.statusText;
