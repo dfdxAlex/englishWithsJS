@@ -2304,12 +2304,25 @@ const wasOrWere = [
     if (wasOrWere[id][0].indexOf('...') !== -1) {
         let str = wasOrWere[id][0]
         const rez = str.replace('...',wasOrWere[id][1]);
-        console.log('нашли точки:' + rez);
         return rez;
     } else {
-        console.log('Не нашли точки:' + wasOrWere[id][1]);
         return wasOrWere[id][1];
     }
   }   
 ];
+
+// Заменить все was и were на was/were
+wasOrWere.forEach((el, index, array) => {
+  if (!Array.isArray(el)) return ;
+
+  if (el[0].indexOf('was//')) {
+    array[index][0] = el[0].replace('was', 'was/were');
+    return ;
+  }
+  if (el[0].indexOf('were//')) {
+    array[index][0] = el[0].replace('were', 'was/were');
+    return ;
+  }
+      
+});
   
