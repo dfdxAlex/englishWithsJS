@@ -5,6 +5,261 @@ BDTranslate.push(
      ``,
      ``]);
 BDTranslate.push(
+    [``, 
+     ``, 
+     ``,
+     ``]);
+BDTranslate.push(
+    [``, 
+     ``, 
+     ``,
+     ``]);
+BDTranslate.push(
+    [``, 
+     ``, 
+     ``,
+     ``]);
+BDTranslate.push(
+    [``, 
+     ``, 
+     ``,
+     ``]);
+BDTranslate.push(
+    [``, 
+     ``, 
+     ``,
+     ``]);
+BDTranslate.push(
+    [`<h1 style="text-align: center; color: #333; font-size: 2.5em; margin-bottom: 20px; border-bottom: 2px solid #4CAF50; padding-bottom: 10px;">Глаголы Was и Were</h1>`, 
+     `<h1 style="text-align: center; color: #333; font-size: 2.5em; margin-bottom: 20px; border-bottom: 2px solid #4CAF50; padding-bottom: 10px;">Глаголи Was і Were</h1>`, 
+     `<h1 style="text-align: center; color: #333; font-size: 2.5em; margin-bottom: 20px; border-bottom: 2px solid #4CAF50; padding-bottom: 10px;">Czasowniki Was i Were</h1>`,
+     `<h1 style="text-align: center; color: #333; font-size: 2.5em; margin-bottom: 20px; border-bottom: 2px solid #4CAF50; padding-bottom: 10px;">Verbs Was and Were</h1>`]);
+BDTranslate.push(
+    [`<div class="container" style="margin-top: 20px;">
+    <h1 style="text-align: center; color: #333;">Справка по глаголам "was" и "were"</h1>
+
+    <h2 style="color: #444; margin-top: 20px;">1. Правила использования</h2>
+    <p><strong>"Was"</strong> используется с местоимениями <strong>I, he, she, it</strong> (единичными подлежащими).</p>
+    <p style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+        Пример: <em>I was at home.</em> (Я был дома)
+    </p>
+    <p><strong>"Were"</strong> используется с местоимениями <strong>you, we, they</strong> (множественными подлежащими).</p>
+    <p style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+        Пример: <em>They were happy.</em> (Они были счастливы)
+    </p>
+
+    <h2 style="color: #444; margin-top: 20px;">2. Образование предложений</h2>
+    
+    <h3 style="color: #555; font-weight: bold;">Положительные утверждения (Statements)</h3>
+    <ul style="list-style-type: none; padding-left: 0;">
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            I was tired after work. (Я был уставшим после работы)
+        </li>
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            They were in the park yesterday. (Они были в парке вчера)
+        </li>
+    </ul>
+
+    <h3 style="color: #555; font-weight: bold;">Отрицательные утверждения (Negative Statements)</h3>
+    <ul style="list-style-type: none; padding-left: 0;">
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            I wasn’t tired after work. (Я не был уставшим после работы)
+        </li>
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            They weren’t in the park yesterday. (Они не были в парке вчера)
+        </li>
+    </ul>
+
+    <h3 style="color: #555; font-weight: bold;">Вопросительные предложения (Questions)</h3>
+    <ul style="list-style-type: none; padding-left: 0;">
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            Was she at school? (Она была в школе?)
+        </li>
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            Were you at the party last night? (Ты был на вечеринке вчера?)
+        </li>
+    </ul>
+
+    <h3 style="color: #555; font-weight: bold;">Отрицательные вопросительные предложения (Negative Questions)</h3>
+    <ul style="list-style-type: none; padding-left: 0;">
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            Wasn’t he at work yesterday? (Разве он не был на работе вчера?)
+        </li>
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            Weren’t they ready for the trip? (Разве они не были готовы к поездке?)
+        </li>
+    </ul>
+</div>
+`, 
+     `<div class="container" style="margin-top: 20px;">
+    <h1 style="text-align: center; color: #333;">Довідка по дієсловам "was" і "were"</h1>
+
+    <h2 style="color: #444; margin-top: 20px;">1. Правила використання</h2>
+    <p><strong>"Was"</strong> використовується з займенниками <strong>I, he, she, it</strong> (однина).</p>
+    <p style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+        Приклад: <em>I was at home.</em> (Я був вдома)
+    </p>
+    <p><strong>"Were"</strong> використовується з займенниками <strong>you, we, they</strong> (множина).</p>
+    <p style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+        Приклад: <em>They were happy.</em> (Вони були щасливі)
+    </p>
+
+    <h2 style="color: #444; margin-top: 20px;">2. Утворення речень</h2>
+    
+    <h3 style="color: #555; font-weight: bold;">Позитивні твердження (Statements)</h3>
+    <ul style="list-style-type: none; padding-left: 0;">
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            I was tired after work. (Я був втомленим після роботи)
+        </li>
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            They were in the park yesterday. (Вони були в парку вчора)
+        </li>
+    </ul>
+
+    <h3 style="color: #555; font-weight: bold;">Заперечні твердження (Negative Statements)</h3>
+    <ul style="list-style-type: none; padding-left: 0;">
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            I wasn’t tired after work. (Я не був втомленим після роботи)
+        </li>
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            They weren’t in the park yesterday. (Вони не були в парку вчора)
+        </li>
+    </ul>
+
+    <h3 style="color: #555; font-weight: bold;">Питальні речення (Questions)</h3>
+    <ul style="list-style-type: none; padding-left: 0;">
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            Was she at school? (Вона була в школі?)
+        </li>
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            Were you at the party last night? (Ти був на вечірці вчора?)
+        </li>
+    </ul>
+
+    <h3 style="color: #555; font-weight: bold;">Заперечні питальні речення (Negative Questions)</h3>
+    <ul style="list-style-type: none; padding-left: 0;">
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            Wasn’t he at work yesterday? (Хіба він не був на роботі вчора?)
+        </li>
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            Weren’t they ready for the trip? (Хіба вони не були готові до поїздки?)
+        </li>
+    </ul>
+</div>
+`, 
+     `<div class="container" style="margin-top: 20px;">
+    <h1 style="text-align: center; color: #333;">Informacje o czasownikach "was" i "were"</h1>
+
+    <h2 style="color: #444; margin-top: 20px;">1. Zasady użycia</h2>
+    <p><strong>"Was"</strong> używa się z zaimkami <strong>I, he, she, it</strong> (liczba pojedyncza).</p>
+    <p style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+        Przykład: <em>I was at home.</em> (Byłem w domu)
+    </p>
+    <p><strong>"Were"</strong> używa się z zaimkami <strong>you, we, they</strong> (liczba mnoga).</p>
+    <p style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+        Przykład: <em>They were happy.</em> (Oni byli szczęśliwi)
+    </p>
+
+    <h2 style="color: #444; margin-top: 20px;">2. Tworzenie zdań</h2>
+    
+    <h3 style="color: #555; font-weight: bold;">Pozytywne stwierdzenia (Statements)</h3>
+    <ul style="list-style-type: none; padding-left: 0;">
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            I was tired after work. (Byłem zmęczony po pracy)
+        </li>
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            They were in the park yesterday. (Oni byli w parku wczoraj)
+        </li>
+    </ul>
+
+    <h3 style="color: #555; font-weight: bold;">Przeczące stwierdzenia (Negative Statements)</h3>
+    <ul style="list-style-type: none; padding-left: 0;">
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            I wasn’t tired after work. (Nie byłem zmęczony po pracy)
+        </li>
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            They weren’t in the park yesterday. (Oni nie byli w parku wczoraj)
+        </li>
+    </ul>
+
+    <h3 style="color: #555; font-weight: bold;">Pytania (Questions)</h3>
+    <ul style="list-style-type: none; padding-left: 0;">
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            Was she at school? (Czy ona była w szkole?)
+        </li>
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            Were you at the party last night? (Czy byłeś na imprezie wczoraj?)
+        </li>
+    </ul>
+
+    <h3 style="color: #555; font-weight: bold;">Przeczące pytania (Negative Questions)</h3>
+    <ul style="list-style-type: none; padding-left: 0;">
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            Wasn’t he at work yesterday? (Czy on nie był w pracy wczoraj?)
+        </li>
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            Weren’t they ready for the trip? (Czy oni nie byli gotowi do podróży?)
+        </li>
+    </ul>
+</div>
+`,
+     `<div class="container" style="margin-top: 20px;">
+    <h1 style="text-align: center; color: #333;">Reference for the verbs "was" and "were"</h1>
+
+    <h2 style="color: #444; margin-top: 20px;">1. Rules of Usage</h2>
+    <p><strong>"Was"</strong> is used with the pronouns <strong>I, he, she, it</strong> (singular).</p>
+    <p style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+        Example: <em>I was at home.</em>
+    </p>
+    <p><strong>"Were"</strong> is used with the pronouns <strong>you, we, they</strong> (plural).</p>
+    <p style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+        Example: <em>They were happy.</em>
+    </p>
+
+    <h2 style="color: #444; margin-top: 20px;">2. Forming Sentences</h2>
+    
+    <h3 style="color: #555; font-weight: bold;">Positive Statements</h3>
+    <ul style="list-style-type: none; padding-left: 0;">
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            I was tired after work.
+        </li>
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            They were in the park yesterday.
+        </li>
+    </ul>
+
+    <h3 style="color: #555; font-weight: bold;">Negative Statements</h3>
+    <ul style="list-style-type: none; padding-left: 0;">
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            I wasn’t tired after work.
+        </li>
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            They weren’t in the park yesterday.
+        </li>
+    </ul>
+
+    <h3 style="color: #555; font-weight: bold;">Questions</h3>
+    <ul style="list-style-type: none; padding-left: 0;">
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            Was she at school?
+        </li>
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            Were you at the party last night?
+        </li>
+    </ul>
+
+    <h3 style="color: #555; font-weight: bold;">Negative Questions</h3>
+    <ul style="list-style-type: none; padding-left: 0;">
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            Wasn’t he at work yesterday?
+        </li>
+        <li style="background-color: #e9f7e1; padding: 10px; border-left: 3px solid #4CAF50;">
+            Weren’t they ready for the trip?
+        </li>
+    </ul>
+</div>
+`]);
+BDTranslate.push(
     [`Упс. Кто-то уже сообщил об этой ошибке.`, 
      `Упс. Хтось уже повідомив про цю помилку.`, 
      `Ups. Ktoś już zgłosił ten błąd.`,
