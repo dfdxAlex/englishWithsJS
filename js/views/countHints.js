@@ -18,8 +18,4 @@ function countHints()
     let intTranslate = +localStorage.getItem('intTranslate_'+level) | 0;
     intTranslate++;
     localStorage.setItem('intTranslate_'+level, intTranslate);
-
-    const linkTeg = document.getElementById('count-hints');
-    const nameLevel = 'intTranslate_'+localStorage.getItem('level');
-    linkTeg.innerText = localStorage.getItem(nameLevel);
 }

@@ -5,6 +5,21 @@ BDTranslate.push(
      ``,
      ``]);
 BDTranslate.push(
+    [``, 
+     ``, 
+     ``,
+     ``]);
+BDTranslate.push(
+    [``, 
+     ``, 
+     ``,
+     ``]);
+BDTranslate.push(
+    [``, 
+     ``, 
+     ``,
+     ``]);
+BDTranslate.push(
     [`Переводов:`, 
      `Перекладів:`, 
      `Tłumaczenia:`,

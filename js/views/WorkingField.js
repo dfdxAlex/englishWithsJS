@@ -15,12 +15,6 @@ class WorkingField
         this.translatePl,
        ] = arrayBD;
 
-       // получить номер вопросса
-       this.numberOfElement = parseInt(localStorage.getItem('randomEl'));
-       
-        // Показать номер вопросса
-        document.getElementById('numberEl').innerHTML ='№' + this.numberOfElement;
-
         let levelForStaticticOk = 'level'+localStorage.getItem('level')+'_Ok';
         let levelForStaticticError = 'level'+localStorage.getItem('level')+'_Error';
 

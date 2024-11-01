@@ -56,16 +56,11 @@ select{
 }
 
 /* Стили для элементов с классами */
-.clicked_element, .error_form, 
-.numberEl, .question_old, 
-.search_error, .count-hints, .history {
+.clicked_element,
+.question_old, 
+.search_error, .history {
     border: 2px solid black;
     border-radius: 20px;
-}
-
-.count-hints {
-    color: rgb(255, 255, 255);
-    background-color: blueviolet;
 }
 
 .search_error, .history {
@@ -82,10 +77,6 @@ select{
 
 .search_error:focus, .history {
     background-color: yellow;
-}
-
-.numberEl {
-    background-color: beige;
 }
 
 /* Стили для fieldset */
