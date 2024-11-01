@@ -12,10 +12,6 @@ window.addEventListener('load', () => {
     // событие на кнопку "Сообщить об ошибке"
     handleSearchError();
 
-    // Событие нажатия на кнопку теории
-    // document.getElementById('help-test-legend').addEventListener('click',handleThoury);
-    // document.getElementById('help-test').addEventListener('click',handleThoury);
-    
     // Достать из регистра объект переводчика
     resetBottonError();
 

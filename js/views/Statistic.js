@@ -17,6 +17,10 @@ class Statistic
        }
 
        const translate = FactoryRegistr.getObject("LanguageController");
+       
+       const level = notNull(localStorage.getItem('level'));
+       
+       const count = notNull(localStorage.getItem('intTranslate_'+level));
 
        // Проверка наличия одной из кнопок ответов, если она есть,
        // значит можно событие сброса ставить
@@ -26,5 +30,8 @@ class Statistic
        document.getElementById('level26').innerHTML = translate.translate('Успех:') + Math.floor(rez)+'%';
        document.getElementById('level27').innerHTML = translate.translate('Сброс');
        document.getElementById('level27').addEventListener('click', resetStatistic);
+       document.getElementById('level28').innerHTML = translate.translate('Переводов:')+count;
     }
 }
+
+

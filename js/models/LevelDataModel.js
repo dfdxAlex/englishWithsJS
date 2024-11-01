@@ -67,6 +67,7 @@ class LevelDataModel
         this.propertyArrayNameButton.push(this.translate.translate('Ошибок:'));// пункт 3
         this.propertyArrayNameButton.push(this.translate.translate('Успех:'));// пункт 3
         this.propertyArrayNameButton.push(this.translate.translate('Сброс'));// пункт 3
+        this.propertyArrayNameButton.push(this.translate.translate('Переводов:'));// пункт 3
         this.tic = this.propertyArrayNameButton.length;
     }
 
@@ -75,7 +76,7 @@ class LevelDataModel
     // пункта. Первый элемент находится в меню 2, второй тоже и т.д.
     static mapNameMenu(test)
     {
-        const arrayForButton = [2,2,2,2,2,2,2,2,1,1,1,2,1,1,1,1,1,1,1,2,1,2,1,3,3,3,3];
+        const arrayForButton = [2,2,2,2,2,2,2,2,1,1,1,2,1,1,1,1,1,1,1,2,1,2,1,3,3,3,3,3];
         return arrayForButton[test];
     }
     

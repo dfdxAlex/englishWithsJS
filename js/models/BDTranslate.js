@@ -5,10 +5,10 @@ BDTranslate.push(
      ``,
      ``]);
 BDTranslate.push(
-    [``, 
-     ``, 
-     ``,
-     ``]);
+    [`Переводов:`, 
+     `Перекладів:`, 
+     `Tłumaczenia:`,
+     `Translations:`]);
 BDTranslate.push(
     [`Успех:`, 
      `Успіх:`, 
