@@ -9,17 +9,20 @@ function nav()
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
+          <li class="nav-item" id="nav-item-burger">
             <div class="nav-link" id="burger"></div>
           </li>
           <li class="nav-item">
             <div class="nav-link" id="word"></div>
           </li>
           <li class="nav-item">
+            <div class="nav-link" id="help"></div>
+          </li>
+          <li class="nav-item">
             <div class="nav-link" id="statistic">Statistic</div>
           </li>
           <li class="nav-item">
-            <div class="nav-link" id="button-setting">Setting</div>
+            <div class="nav-link" id="setting">Setting</div>
           </li>
           <li class="nav-item">
             <div class="nav-link" id="button_lang_selected"></div>

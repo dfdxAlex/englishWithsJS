@@ -5,20 +5,20 @@ BDTranslate.push(
      ``,
      ``]);
 BDTranslate.push(
-    [``, 
-     ``, 
-     ``,
-     ``]);
+    [`Помощь`, 
+     `Допомога`, 
+     `Pomoc`,
+     `Help`]);
 BDTranslate.push(
-    [``, 
-     ``, 
-     ``,
-     ``]);
+    [`Теория:`, 
+     `Теорія:`, 
+     `Teoria:`,
+     `Theory:`]);
 BDTranslate.push(
-    [``, 
-     ``, 
-     ``,
-     ``]);
+    [`Задание теста:`, 
+     `Завдання тесту:`, 
+     `Zadanie testowe:`,
+     `Test task:`]);
 BDTranslate.push(
     [`Переводов:`, 
      `Перекладів:`, 

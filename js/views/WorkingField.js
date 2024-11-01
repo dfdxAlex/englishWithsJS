@@ -25,10 +25,6 @@ class WorkingField
         const transL = FactoryRegistr.getObject("LanguageController");
         let fieldsetStart = `<fieldset class="fieldSetWorkField"><legend> ${transL.translate('Вопрос с вариантами ответа')} </legend>`;
         
-        // вставить перевод в "Задание для теста"
-        const lesonForTest = document.getElementById('exercise-legend');
-        lesonForTest.innerHTML = transL.translate('Задание для теста');
-        
         let buttonOption = [];
         buttonOption[0] = `<div class='row'><div class='col-12 btn'><button class="btn btn-secondary" type='button' id='option1'> ${this.option1} </button></div></div>`;
         buttonOption[1] = `<div class='row'><div class='col-12 btn'><button class="btn btn-secondary" type='button' id='option2'> ${this.option2} </button></div></div>`;

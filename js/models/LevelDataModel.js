@@ -63,11 +63,13 @@ class LevelDataModel
         this.propertyArrayNameButton.push(this.translate.translate('I Have or I Have got'));// пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('A1 Beginer text'));// пункт 2
         this.propertyArrayNameButton.push(this.translate.translate('Was Or Were'));// пункт 1
-        this.propertyArrayNameButton.push(this.translate.translate('Пройдено заданий:'));// пункт 3
-        this.propertyArrayNameButton.push(this.translate.translate('Ошибок:'));// пункт 3
-        this.propertyArrayNameButton.push(this.translate.translate('Успех:'));// пункт 3
-        this.propertyArrayNameButton.push(this.translate.translate('Сброс'));// пункт 3
-        this.propertyArrayNameButton.push(this.translate.translate('Переводов:'));// пункт 3
+        this.propertyArrayNameButton.push(this.translate.translate('Пройдено заданий:'));// пункт 4
+        this.propertyArrayNameButton.push(this.translate.translate('Ошибок:'));// пункт 4
+        this.propertyArrayNameButton.push(this.translate.translate('Успех:'));// пункт 4
+        this.propertyArrayNameButton.push(this.translate.translate('Сброс'));// пункт 4
+        this.propertyArrayNameButton.push(this.translate.translate('Переводов:'));// пункт 4
+        this.propertyArrayNameButton.push(this.translate.translate('Задание теста:'));// пункт 3
+        this.propertyArrayNameButton.push(this.translate.translate('Теория:'));// пункт 3
         this.tic = this.propertyArrayNameButton.length;
     }
 
@@ -76,7 +78,7 @@ class LevelDataModel
     // пункта. Первый элемент находится в меню 2, второй тоже и т.д.
     static mapNameMenu(test)
     {
-        const arrayForButton = [2,2,2,2,2,2,2,2,1,1,1,2,1,1,1,1,1,1,1,2,1,2,1,3,3,3,3,3];
+        const arrayForButton = [2,2,2,2,2,2,2,2,1,1,1,2,1,1,1,1,1,1,1,2,1,2,1,4,4,4,4,4,3,3];
         return arrayForButton[test];
     }
     

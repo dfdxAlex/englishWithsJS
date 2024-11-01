@@ -7,29 +7,38 @@ static handleThoury(level)
     this.level = level;
     this.translate = FactoryRegistr.getObject("LanguageController");
 
-    const modslWindow = `
-    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-      Теория
-    </button>
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="staticBackdropLabel">${this.headerThoury()}</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-          </div>
-          <div class="modal-body">
-            ${this.bodyThoury()}
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">${this.translate.translate('Понятно')}</button>
-          </div>
-        </div>
+    // const modslWindow = `
+    // <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    //   Теория
+    // </button>
+    // <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    //   <div class="modal-dialog">
+    //     <div class="modal-content">
+    //       <div class="modal-header">
+    //         <h1 class="modal-title fs-5" id="staticBackdropLabel">${this.headerThoury()}</h1>
+    //         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+    //       </div>
+    //       <div class="modal-body">
+    //         ${this.bodyThoury()}
+    //       </div>
+    //       <div class="modal-footer">
+    //         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">${this.translate.translate('Понятно')}</button>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
+    //     `;    
+
+    this.strLocal = `
+    <div class="card shadow-lg rounded-3" style="width: 80vw;  position: relative;">
+     <button type="button" class="btn-close" aria-label="Close" style="position: absolute; top: 10px; right: 10px;"  onclick="document.getElementById('exercise').style.display='none'"></button>
+      <div class="card-body">
+        <h5 class="card-title">${this.headerThoury()}</h5>
+        <p class="card-text">${this.bodyThoury()}</p>
       </div>
     </div>
-        `;    
-    document.getElementById('help-test-legend').innerHTML = modslWindow;    
-
+    `;
+    document.getElementById('level30').addEventListener('click', ()=>{cardThoury(this)});
     }
 
     // Функция помещает информацию в заголовок раздела Теория
@@ -683,4 +692,10 @@ static handleThoury(level)
 
         return this.translate.translate('Просто учим слова');
     }
+}
+
+function cardThoury(thisS)
+{
+    document.getElementById('exercise').style.display='block';
+    document.getElementById('exercise').innerHTML = thisS.strLocal;
 }
