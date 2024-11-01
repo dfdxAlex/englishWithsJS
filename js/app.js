@@ -1,6 +1,9 @@
 // Основной файл приложения
 // Описывается событие загрузки документа
 window.addEventListener('load', () => {
+    //Поставить разметку навигационного меню
+    nav();
+
     // Запуск контроллера языковых настроек
     FactoryRegistr.getObject("LanguageController").init();
     
@@ -15,7 +18,10 @@ window.addEventListener('load', () => {
     
     // Достать из регистра объект переводчика
     resetBottonError();
+
+
 });
+
 
 
 
