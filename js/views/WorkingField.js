@@ -14,16 +14,15 @@ class WorkingField
         this.translateUa,
         this.translatePl,
        ] = arrayBD;
-       // получить номер вопросса
-       this.numberOfElement = 0+localStorage.getItem('randomEl');
 
+       // получить номер вопросса
+       this.numberOfElement = parseInt(localStorage.getItem('randomEl'));
+       
         // Показать номер вопросса
         document.getElementById('numberEl').innerHTML ='№' + this.numberOfElement;
 
         let levelForStaticticOk = 'level'+localStorage.getItem('level')+'_Ok';
         let levelForStaticticError = 'level'+localStorage.getItem('level')+'_Error';
-        //if (levelForStaticticOk === NaN) levelForStaticticOk = 0;
-        //if (levelForStaticticError === NaN) levelForStaticticError = 0;
 
         const statistic = FactoryRegistr.getObject('Statistic');
         statistic.init(localStorage.getItem(levelForStaticticOk),localStorage.getItem(levelForStaticticError));

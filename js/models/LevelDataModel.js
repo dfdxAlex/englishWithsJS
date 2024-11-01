@@ -28,15 +28,16 @@ class LevelDataModel
         this.level = level+0;
         this.ex = new Exercise();
         this.translate = FactoryRegistr.getObject("LanguageController");
-        // Число уроков, изменяется в ручную при добавлении урока
-        this.tic = 23;
-        this.propertyArrayNameButton = [];
-        this.arrayNameButton();
         this.lang = localStorage.getItem('EnglishWithJs_lang');
+        this.propertyArrayNameButton = [];
+        this.tic = 0;
+        // опережающий запуск формирования массива для меню верхнего
+        this.arrayNameButton()
+
     }
 
     // Здесь заполняется вариант надписи название теста
-    // на кнопке правого меню
+    // на кнопке навигационного меню
     arrayNameButton()
     {
         this.propertyArrayNameButton.push(this.translate.translate('100 слов о еде'));        // пункт 2
@@ -62,7 +63,11 @@ class LevelDataModel
         this.propertyArrayNameButton.push(this.translate.translate('I Have or I Have got'));// пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('A1 Beginer text'));// пункт 2
         this.propertyArrayNameButton.push(this.translate.translate('Was Or Were'));// пункт 1
-        
+        this.propertyArrayNameButton.push(this.translate.translate('Пройдено заданий:'));// пункт 3
+        this.propertyArrayNameButton.push(this.translate.translate('Ошибок:'));// пункт 3
+        this.propertyArrayNameButton.push(this.translate.translate('Успех:'));// пункт 3
+        this.propertyArrayNameButton.push(this.translate.translate('Сброс'));// пункт 3
+        this.tic = this.propertyArrayNameButton.length;
     }
 
     // Это массив с набором цифр, каждая цифра - это пункт в меню.
@@ -70,7 +75,7 @@ class LevelDataModel
     // пункта. Первый элемент находится в меню 2, второй тоже и т.д.
     static mapNameMenu(test)
     {
-        const arrayForButton = [2,2,2,2,2,2,2,2,1,1,1,2,1,1,1,1,1,1,1,2,1,2,1];
+        const arrayForButton = [2,2,2,2,2,2,2,2,1,1,1,2,1,1,1,1,1,1,1,2,1,2,1,3,3,3,3];
         return arrayForButton[test];
     }
     
@@ -85,6 +90,10 @@ class LevelDataModel
     }
     getArrayDB()
     {
+        // 1 параметр - Задание для теста
+        // 2 параметр - Массив с содержимым теста
+        // 3 параметр - позиция пункта меню в своей категории.
+        // 4 параметн - язык теста. Необходим если есть один тест для разных языков
         this.selectLevel('Выбрать правильный перевод','commonFood100',1,'ru');
         this.selectLevel('Выбрать правильный перевод','commonFood100ua',1,'ua');
         this.selectLevel('Выбрать правильный перевод','commonFood100pl',1,'pl');

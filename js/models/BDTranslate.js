@@ -10,25 +10,25 @@ BDTranslate.push(
      ``,
      ``]);
 BDTranslate.push(
-    [``, 
-     ``, 
-     ``,
-     ``]);
+    [`Успех:`, 
+     `Успіх:`, 
+     `Sukces:`,
+     `Success:`]);
 BDTranslate.push(
-    [``, 
-     ``, 
-     ``,
-     ``]);
+    [`Ошибок:`, 
+     `Помилок:`, 
+     `Błędy:`,
+     `Errors:`]);
 BDTranslate.push(
-    [``, 
-     ``, 
-     ``,
-     ``]);
+    [`Статистика`, 
+     `Статистика`, 
+     `Statystyka`,
+     `Statistics`]);
 BDTranslate.push(
-    [``, 
-     ``, 
-     ``,
-     ``]);
+    [`Пройдено заданий:`, 
+     `Пройдено завдань:`, 
+     `Wykonane zadania:`,
+     `Completed tasks:`]);
 BDTranslate.push(
     [`<h1 style="text-align: center; color: #333; font-size: 2.5em; margin-bottom: 20px; border-bottom: 2px solid #4CAF50; padding-bottom: 10px;">Глаголы Was и Were</h1>`, 
      `<h1 style="text-align: center; color: #333; font-size: 2.5em; margin-bottom: 20px; border-bottom: 2px solid #4CAF50; padding-bottom: 10px;">Глаголи Was і Were</h1>`, 

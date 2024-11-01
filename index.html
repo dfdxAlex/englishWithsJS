@@ -9,13 +9,19 @@
 </head>
 <body>
     <!--Select test // Выбор теста-->
-    <nav class="container-fluid">
+    <!-- <nav class="container-fluid">
         <div class="row text-info bg-dark">
+
             <div class="col-sm-12          col-md-2 col-xl-2 col-xxl-1">
                 <div class="select-test" id="burger"></div>
             </div>
+
             <div class="col-sm-12          col-md-2 col-xl-2 col-xxl-1">
                 <div class="select-test" id="word"></div>
+            </div>
+
+            <div class=" d-none d-sm-block col-md-2 col-xl-2 col-xxl-1 ">
+                <div class="menu-statistic" id="button-statistic">Statistic</div>
             </div>
             <div class=" d-none d-sm-block col-md-2 col-xl-2 col-xxl-1 ">
                 <div class="menu-setting" id="button-setting">Setting</div>
@@ -26,7 +32,36 @@
             <div class=" d-none d-sm-block col-md-5 col-xl-5 col-xxl-8"></div>
         </div>
     </nav>
-    
+-->
+
+       <!-- Navigation Menu -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <!--<a class="navbar-brand" href="#">Brand</a>-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <div class="nav-link" id="burger"></div>
+          </li>
+          <li class="nav-item">
+            <div class="nav-link" id="word"></div>
+          </li>
+          <li class="nav-item">
+            <div class="nav-link" id="statistic">Statistic</div>
+          </li>
+          <li class="nav-item">
+            <div class="nav-link" id="button-setting">Setting</div>
+          </li>
+          <li class="nav-item">
+            <div class="nav-link" id="button_lang_selected"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
     <section class="container d-flex flex-column align-items-center justify-content-center text-center p-3">
 
@@ -46,22 +81,7 @@
                 </fieldset>
         </div>
         </div>
-    
-        <div class="row w-100 mb-3">
-            <div class="col-3">
-                <div class="statisticOk" id="statisticOk">OK</div>
-            </div>
-            <div class="col-3">
-                <div class="statisticError" id="statisticError">Error</div>
-            </div>
-            <div class="col-3">
-                <div class="statisticRez" id="statisticRez">Rez</div>
-            </div>
-            <div class="col-3">
-                <button class="btn btn-warning statisticReset" id="statisticReset">Reset</button>
-            </div>
-        </div>
-    
+
         <div class="row w-100 mb-3">
             <div class="col-3">
                 <div class="numberEl" id="numberEl"></div>
@@ -167,6 +187,7 @@
     <script src="js/views/LanguageSelectorView.js"></script>
     <script src="js/views/MenuRight.js"></script>
     <script src="js/views/MenuLearnWord.js"></script>
+    <script src="js/views/MenuStatistic.js"></script>
     <script src="js/views/WorkingField.js"></script>
     <script src="js/views/Statistic.js"></script>
     <script src="js/views/Exercise.js"></script>
