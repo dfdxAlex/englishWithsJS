@@ -22,7 +22,7 @@ class WorkingField {
           const transL = FactoryRegistr.getObject("LanguageController");
 
           // Используем Card вместо fieldset
-          let cardStart = `<div class="card fieldSetWorkField" style="width: 80%; margin: auto; border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0 8px 16px rgba(0,0,0,0.2);"><div class="card-body">`;
+          let cardStart = `<div class="card fieldSetWorkField" style="width: 100%; margin: auto; border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0 8px 16px rgba(0,0,0,0.2);"><div class="card-body">`;
           let legend = `<h5 class="card-title" id="fieldset-legend">${transL.translate('Вопрос с вариантами ответа')}</h5>`;
 
           let buttonOption = [];
