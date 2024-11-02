@@ -1,5 +1,7 @@
 // обработчик события для нажатия на динамик
 
+function buttonSound()
+{
 const buttonSound = document.getElementById('sound');
 
 buttonSound.addEventListener('click', ()=>{
@@ -67,4 +69,4 @@ buttonSound.addEventListener('click', ()=>{
        
 });
 
-
+}

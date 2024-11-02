@@ -11,93 +11,21 @@
 
     <!-- Navigation Menu -->
     <div id="nav"></div>
-       
- 
 
     <section class="container d-flex flex-column align-items-center justify-content-center text-center p-3">
+      <div id="html-help"></div>
+      <div id="html_old_questions"></div>
 
-        <div class="row w-100 mb-3">
-            <div id="exercise" ></div>
-            <div id="help-test-legend"></div>
-        </div>
-
-   
-        <!--форма с предыдущим ответом-->
-        <!--<fieldset class="class_fieldset">
-            <legend class="fieldset-legend" id="fieldset-legend"></legend>
-            <div class="row w-100 mb-3">
-                <div class="col-12">
-                    Предыдущий вопрос-->
-                    <!--<div class="question_old" id="question_old"></div>
-                </div>
-            </div>
-            <div class="row w-100 mb-3">
-                <div class="col-12">
-                    Последний ответ-->
-                    <!--<div class="clicked_element" id="clicked_element"></div>
-                </div>
-            </div>
-            <div class="row w-100 mb-3">
-                <div class="col-8">
-                    Кнопка сообщить об ошибке-->
-                    <!--<button type="button" id="search_error" class="search_error" name="englishWithsJS">Сообщить об ошибке</button>
-                </div>
-                <div class="col-3">
-                    <button type="button" id="log" class="history" name="log">&#x1F4DC;</button>
-                </div>
-                <div class="col-1">
-                    <button type="button" id="sound" class="sound" name="sound">&#x1F50A;</button>
-                </div>
-            </div>
-        </fieldset>-->
-
-        <div class="card shadow-sm mb-3 mx-auto" style="width: 80vw;">
-            <div class="card-body">
-              <fieldset class="border-0">
-                <legend class="fs-4 text-primary mb-3" id="fieldset-legend">Ваш ответ</legend>
-                
-                <!-- Предыдущий вопрос -->
-                <div class="row mb-3">
-                  <div class="col-12">
-                    <div class="p-2 border rounded" id="question_old">Предыдущий вопрос здесь</div>
-                  </div>
-                </div>
-          
-                <!-- Последний ответ -->
-                <div class="row mb-3">
-                  <div class="col-12">
-                    <div class="p-2 border rounded" id="clicked_element">Последний ответ здесь</div>
-                  </div>
-                </div>
-          
-                <!-- Кнопки управления -->
-                <div class="row">
-                  <div class="col-8">
-                    <button type="button" id="search_error" class="btn btn-warning w-100">Сообщить об ошибке</button>
-                  </div>
-                  <div class="col-2">
-                    <button type="button" id="log" class="btn btn-light w-100" name="log">&#x1F4DC;</button>
-                  </div>
-                  <div class="col-2">
-                    <button type="button" id="sound" class="btn btn-light w-100" name="sound">&#x1F50A;</button>
-                  </div>
-                </div>
-              </fieldset>
-            </div>
-          </div>
-          
-
-    
-        <div class="row w-100">
-            <!--Работчее поле-->
-            <main>
-                <div class="col-12 mb-3">
-                    <div id="log_for_div"></div>
-                    <div id="working_field"></div>
-                </div>
-            </main>
-        </div>
-    </section>
+      <div class="row w-100">
+          <!--Работчее поле-->
+          <main>
+              <div class="col-12 mb-3">
+                  <div id="log_for_div"></div>
+                  <div id="working_field"></div>
+              </div>
+          </main>
+      </div>
+  </section>
 
 
 
@@ -154,6 +82,8 @@
     <script src="js/views/LogField.js"></script>
     <script src="js/views/MenuHelp.js"></script>
     <script src="js/views/nav.js"></script>
+    <script src="js/views/htmlHelp.js"></script>
+    <script src="js/views/htmlOldQuestions.js"></script>
 
 
     <script src="js/controllers/resetBottonError.js"></script>

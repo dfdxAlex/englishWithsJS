@@ -3,6 +3,9 @@
 window.addEventListener('load', () => {
     //Поставить разметку навигационного меню
     nav();
+    htmlHelp();
+    htmlOldQuestions();
+    buttonSound();
 
     // Запуск контроллера языковых настроек
     FactoryRegistr.getObject("LanguageController").init();
