@@ -2178,7 +2178,7 @@ const wasOrWere = [
   ["... able to attend the wedding?", "were", "was", "", "", "Ты смог прийти на свадьбу?", "Ти зміг прийти на весілля?", "Ty byłeś w stanie przyjść na wesele?"],
   ["... aware of the changes?", "was", "were", "", "", "Ты был в курсе изменений?", "Ти був у курсі змін?", "Ty byłeś świadomy zmian?"],
   ["... you happy to see your family?", "were", "was", "", "", "Ты был рад увидеть свою семью?", "Ти був радий бачити свою сім'ю?", "Ty byłeś szczęśliwy, widząc swoją rodzinę?"],
-  ["... involved in the project?", "were", "was", "", "", "Вы были вовлечены в проект?", "Ви були залучені до проекту?", "Byliście zaangażowani w projekt?"],
+  ["... he involved in the project?", "was", "were", "", "", "Он был вовлечен в проект?", "Он був залучен до проекту?", "Byliście zaangażowani w projekt?"],
   
   ["... on vacation last month?", "were", "was", "", "", "Ты был в отпуске в прошлом месяце?", "Ти був у відпустці минулого місяця?", "Ty byłeś na wakacjach w zeszłym miesiącu?"],
   ["... close to your siblings?", "were", "was", "", "", "Вы были близки со своими братьями и сестрами?", "Ви були близькі зі своїми братами і сестрами?", "Byliście blisko ze swoimi rodzeństwem?"],
@@ -2192,7 +2192,7 @@ const wasOrWere = [
   
   ["... at the festival last year?", "were", "was", "", "", "Ты был на фестивале в прошлом году?", "Ти був на фестивалі в минулому році?", "Ty byłeś na festiwalu w zeszłym roku?"],
   ["... surprised by the announcement?", "was", "were", "", "", "Ты был удивлён объявлением?", "Ти був здивований оголошенням?", "Ty byłeś zaskoczony ogłoszeniem?"],
-  ["... interested in learning new skills?", "were", "was", "", "", "Вы были заинтересованы в изучении новых навыков?", "Ви були зацікавлені в навчанні нових навичок?", "Byliście zainteresowani nauką nowych umiejętności?"],
+  ["... he interested in learning new skills?", "was", "were", "", "", "Вы были заинтересованы в изучении новых навыков?", "Ви були зацікавлені в навчанні нових навичок?", "Byliście zainteresowani nauką nowych umiejętności?"],
   ["... your goals last year?", "were", "was", "", "", "Это были твои цели в прошлом году?", "Це були твої цілі минулого року?", "To były twoje cele w zeszłym roku?"],
   ["... involved in any clubs?", "were", "was", "", "", "Ты был вовлечен в какие-либо клубы?", "Ти був залучений у якісь клуби?", "Byłeś zaangażowany w jakieś kluby?"],
   ["... on the team last season?", "were", "was", "", "", "Вы были в команде в прошлом сезоне?", "Ви були в команді в минулому сезоні?", "Byliście w drużynie w zeszłym sezonie?"],
@@ -2203,9 +2203,9 @@ const wasOrWere = [
  
   // проверено
   ["Why ... at the concert last week?", "was", "were", "", "", "Почему ты был на концерте на прошлой неделе?", "Чому ти був на концерті минулого тижня?", "Dlaczego byłeś na koncercie w zeszłym tygodniu?"],
-  ["Where ... in the office yesterday?", "were", "was", "", "", "Где вы были в офисе вчера?", "Де ви були в офісі вчора?", "Gdzie byliście w biurze wczoraj?"],
+  ["... you in the office yesterday?", "were", "was", "", "", "Вы были в офисе вчера?", "Ви були в офісі вчора?", "Byliście w biurze wczoraj?"],
   ["What ... happy about the outcome?", "was", "were", "", "", "Что тебя радовало в результате?", "Що тебе радувало в результаті?", "Co ciebie cieszyło w wyniku?"],
-  ["When ... excited about the trip?", "were", "was", "", "", "Когда вы были в восторге от поездки?", "Коли ви були в захваті від поїздки?", "Kiedy byliście w ekscytacji z powodu wyjazdu?"],
+  ["When ... you excited about the trip?", "were", "was", "", "", "Когда вы были в восторге от поездки?", "Коли ви були в захваті від поїздки?", "Kiedy byliście w ekscytacji z powodu wyjazdu?"],
   ["How ... ready for the challenge?", "was", "were", "", "", "Как ты был готов к испытанию?", "Як ти був готовий до випробування?", "Jak byłeś gotowy na wyzwanie?"],
   
   // проверено
@@ -2226,7 +2226,7 @@ const wasOrWere = [
   ["Who ... the guests able to attend the wedding?", "were", "was", "", "", "Кто смог прийти на свадьбу?", "Хто зміг прийти на весілля?", "Kto mógł przyjść na wesele?"],
   ["Why ... aware of the changes?", "was", "were", "", "", "Почему ты был в курсе изменений?", "Чому ти був у курсі змін?", "Dlaczego byłeś świadomy zmian?"],
   ["What ... happy to see your family?", "was", "were", "", "", "Что тебя радовало видеть свою семью?", "Що тебе радувало бачити свою сім'ю?", "Co ciebie cieszyło, widząc swoją rodzinę?"],
-  ["Where ... involved in the project?", "were", "was", "", "", "Где вы были вовлечены в проект?", "Де ви були залучені до проекту?", "Gdzie byliście zaangażowani w projekt?"],
+  ["Where ... you involved in the project?", "were", "was", "", "", "Где вы были вовлечены в проект?", "Де ви були залучені до проекту?", "Gdzie byliście zaangażowani w projekt?"],
   ["When ... on vacation last month?", "were", "was", "", "", "Когда ты был в отпуске в прошлом месяце?", "Коли ти був у відпустці минулого місяця?", "Kiedy byłeś na wakacjach w zeszłym miesiącu?"],
   
   // проверено
