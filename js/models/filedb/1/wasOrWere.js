@@ -2302,7 +2302,7 @@ const wasOrWere = [
     //в блок предыдущих ответов, для этого все индексы 0-74
     //конкатенируются нулевой и первый индекс.
     if (wasOrWere[id][0].indexOf('...') !== -1) {
-        let str = wasOrWere[id][0]
+        let str = wasOrWere[id][0];
         const rez = str.replace('...',wasOrWere[id][1]);
         return rez;
     } else {

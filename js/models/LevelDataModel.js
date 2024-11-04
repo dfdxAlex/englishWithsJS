@@ -70,6 +70,7 @@ class LevelDataModel
         this.propertyArrayNameButton.push(this.translate.translate('Переводов:'));// пункт 4
         this.propertyArrayNameButton.push(this.translate.translate('Задание теста:'));// пункт 3
         this.propertyArrayNameButton.push(this.translate.translate('Теория:'));// пункт 3
+        this.propertyArrayNameButton.push(this.translate.translate('Прошедшее простое'));// пункт 1
         this.tic = this.propertyArrayNameButton.length;
     }
 
@@ -78,7 +79,7 @@ class LevelDataModel
     // пункта. Первый элемент находится в меню 2, второй тоже и т.д.
     static mapNameMenu(test)
     {
-        const arrayForButton = [2,2,2,2,2,2,2,2,1,1,1,2,1,1,1,1,1,1,1,2,1,2,1,4,4,4,4,4,3,3];
+        const arrayForButton = [2,2,2,2,2,2,2,2,1,1,1,2,1,1,1,1,1,1,1,2,1,2,1,4,4,4,4,4,3,3,1];
         return arrayForButton[test];
     }
     
@@ -124,6 +125,7 @@ class LevelDataModel
         this.selectLevel('Выбрать правильную пару.','haveAndHaveGot',21);
         this.selectLevel('Text A1 Beginer.','textA1Begginer',22);
         this.selectLevel('Выбрать правильную пару.','wasOrWere',23);
+        this.selectLevel('Вставьте глагол вместо троеточия или подберите правильное предложение в простом прошедшем времени.','pastSimpleSentences',31);
         return this.rez;
     }
 
