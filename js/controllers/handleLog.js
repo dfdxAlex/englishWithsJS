@@ -8,9 +8,7 @@ function handleLog()
     const viewLogs = new LogField(Logs);
     logForDiv.innerHTML = viewLogs.getField();
 
-    let buttonReturnLog;
     Logs.logs.forEach((el, index) => {
-        buttonReturnLog = document.getElementById('button_return_log'+index);
-        buttonReturnLog.addEventListener('click',()=>{activatingLogs()});
+        document.getElementById('button_return_log'+index).onclick = activatingLogs;
     })
 }

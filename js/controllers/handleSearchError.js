@@ -9,12 +9,12 @@ function handleSearchError() {
     const buttonError = document.getElementById('search_error');
     
     // Клик по кнопке Сообщить об ошибке
-    buttonError.addEventListener('click', function() {
+    buttonError.onclick = function() {
         //Создать сам запрос к серверу
         const getAttrib = buttonError.getAttribute('name');
         const dataRequest = 'name=' + encodeURIComponent(getAttrib);
         //Запрос отправляется когда сеттеру fetchData придать значение
         //Ответ будет в геттере fetchData
         httpAsk.fetchData = dataRequest;
-    });
+    };
 }

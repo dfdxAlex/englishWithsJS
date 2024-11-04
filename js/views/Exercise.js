@@ -15,7 +15,7 @@ class Exercise
           </div>
         </div>
         `;
-        document.getElementById('level29').addEventListener('click', ()=>{cardHelp(this)});
+        document.getElementById('level29').onclick = cardHelp.bind(null, this);
     }
 }
 

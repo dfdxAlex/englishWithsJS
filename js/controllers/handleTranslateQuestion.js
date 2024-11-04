@@ -4,7 +4,7 @@
 // на кнопку и ссылку на объект, в котором присутствуют 
 // данные для переводов
 
-function handleTranslateQuestion(event, thisButton)
+function handleTranslateQuestion(thisButton, event)
 {
         // Изменяет число запрошенных подсказок непосредственно на 
         // странице

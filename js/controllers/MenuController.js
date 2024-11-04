@@ -45,7 +45,7 @@ class MenuController
                     continue;
             } 
             unit[i] = document.getElementById('level'+i);
-            unit[i].addEventListener('click', () => {handleLevelX(new LevelDataModel(i))});
+            unit[i].onclick = handleLevelX.bind(null, new LevelDataModel(i));
         }
     }
 }

@@ -29,7 +29,7 @@ class Statistic
        document.getElementById('level25').innerHTML = translate.translate('Ошибок:') + error;
        document.getElementById('level26').innerHTML = translate.translate('Успех:') + Math.floor(rez)+'%';
        document.getElementById('level27').innerHTML = translate.translate('Сброс');
-       document.getElementById('level27').addEventListener('click', resetStatistic);
+       document.getElementById('level27').onclick = resetStatistic;
        document.getElementById('level28').innerHTML = translate.translate('Переводов:')+count;
     }
 }

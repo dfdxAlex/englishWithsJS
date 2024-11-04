@@ -54,18 +54,14 @@ class LanguageController
         // --по умолчанию положения меню выбора языка
         rez.innerHTML = langSelector.init(this.langStr);
 
-        // Добавление события изменения выбора языка
-        // выбрать меню по id
-        const langEn = document.getElementById("languageSelect");
-
         // Добавить событие изменения выбора
-        langEn.addEventListener('change', (event) => {
+        document.getElementById("languageSelect").onchange = function(event) {
 
             // получить данные о выбранном языке из формы
             const selectedValue = event.target.value;
 
             // запомнить выбор языка
             localStorage.setItem('EnglishWithJs_lang',selectedValue);
-        });
+        };
     }
 }

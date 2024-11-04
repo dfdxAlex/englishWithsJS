@@ -5,26 +5,19 @@
 // объект достаточно просто создать в нужном месте
 class EventController {
     init() {
-        const option1 = document.getElementById('option1');
-        option1.addEventListener('click', (event) => {handleOkErr('Ok',event)});
+        document.getElementById('option1').onclick = handleOkErr.bind(null,'Ok');
 
-        const option2 = document.getElementById('option2');
-        option2.addEventListener('click', (event) => {handleOkErr('Error',event)});
+        document.getElementById('option2').onclick = handleOkErr.bind(null,'Error');
 
-        const option3 = document.getElementById('option3');
-        option3.addEventListener('click', (event) => {handleOkErr('Error',event)});
+        document.getElementById('option3').onclick = handleOkErr.bind(null,'Error');
 
-        const option4 = document.getElementById('option4');
-        option4.addEventListener('click', (event) => {handleOkErr('Error',event)});
+        document.getElementById('option4').onclick = handleOkErr.bind(null,'Error');
          
         // Добавить обработчик события по кнопке с переводом.
         // Перевод должен появиться только после клика на кнопку
-        const translateButton = document.getElementById('translate');
-        translateButton.addEventListener('click',(event)=>{handleTranslateQuestion(event, FactoryRegistr.getObject('WorkingField'))});
-
+        document.getElementById('translate').onclick = handleTranslateQuestion.bind(null, FactoryRegistr.getObject('WorkingField'));
+        
         // обработчик события клика по кнопке логов
-        const buttonLog = document.getElementById('log');
-        buttonLog.addEventListener('click',()=>{handleLog()});
-
+        document.getElementById('log').onclick = handleLog;
     }
 }

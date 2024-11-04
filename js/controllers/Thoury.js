@@ -38,7 +38,7 @@ static handleThoury(level)
       </div>
     </div>
     `;
-    document.getElementById('level30').addEventListener('click', ()=>{cardThoury(this)});
+    document.getElementById('level30').onclick = cardThoury.bind(null, this);
     }
 
     // Функция помещает информацию в заголовок раздела Теория

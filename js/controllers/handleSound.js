@@ -2,9 +2,7 @@
 
 function buttonSound()
 {
-const buttonSound = document.getElementById('sound');
-
-buttonSound.addEventListener('click', ()=>{
+document.getElementById('sound').onclick = ()=>{
 
     const buttonQuestionOne = document.getElementById('question_old');
     const buttonQuestionTwo = document.getElementById('clicked_element');
@@ -51,9 +49,7 @@ buttonSound.addEventListener('click', ()=>{
 
     sound.then((onSuccess) => {
         const audio = new Audio(onSuccess);
-        audio.addEventListener('loadeddata', () => {
-            audio.play(); // Воспроизведение звука после загрузки
-            });
+        audio.onloadeddata = () => audio.play();
         audio.load();
     });
 
@@ -64,9 +60,5 @@ buttonSound.addEventListener('click', ()=>{
     sound.finally(() => {
         console.log('Запрос окончен');
     }); 
-        
-    
-       
-});
-
+};
 }
