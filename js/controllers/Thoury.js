@@ -7,28 +7,6 @@ static handleThoury(level)
     this.level = level;
     this.translate = FactoryRegistr.getObject("LanguageController");
 
-    // const modslWindow = `
-    // <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    //   Теория
-    // </button>
-    // <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    //   <div class="modal-dialog">
-    //     <div class="modal-content">
-    //       <div class="modal-header">
-    //         <h1 class="modal-title fs-5" id="staticBackdropLabel">${this.headerThoury()}</h1>
-    //         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-    //       </div>
-    //       <div class="modal-body">
-    //         ${this.bodyThoury()}
-    //       </div>
-    //       <div class="modal-footer">
-    //         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">${this.translate.translate('Понятно')}</button>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
-    //     `;    
-
     this.strLocal = `
     <div class="card shadow-lg rounded-3" style="width: 80vw;  position: relative;">
      <button type="button" class="btn-close" aria-label="Close" style="position: absolute; top: 10px; right: 10px;"  onclick="document.getElementById('exercise').style.display='none'"></button>
@@ -66,6 +44,8 @@ static handleThoury(level)
           return this.translate.translate('Глаголы Have и Have Got');
         if (this.level === 23) 
             return this.translate.translate(`<h1 style="text-align: center; color: #333; font-size: 2.5em; margin-bottom: 20px; border-bottom: 2px solid #4CAF50; padding-bottom: 10px;">Глаголы Was и Were</h1>`);
+        if (this.level === 31) 
+            return this.translate.translate(`<h1 style="text-align: center; color: #333; font-size: 2.5em; margin-bottom: 20px; border-bottom: 2px solid #4CAF50; padding-bottom: 10px;">Past Simple</h1>`);
 
         return this.translate.translate('Просто учим слова');
     }
@@ -74,6 +54,78 @@ static handleThoury(level)
     {
       // if (this.level === 15) 
       //   return this.translate.translate(``);
+      // if (this.level === 15) 
+      //   return this.translate.translate(``);
+      // if (this.level === 15) 
+      //   return this.translate.translate(``);
+      // if (this.level === 15) 
+      //   return this.translate.translate(``);
+      // if (this.level === 15) 
+      //   return this.translate.translate(``);
+       if (this.level === 31) 
+         return this.translate.translate(`<div class="container" style="margin: 20px;">
+    <div class="border border-primary rounded p-4 bg-light">
+        <h3 class="text-primary text-center">Правило образования предложений в Past Simple</h3>
+        
+        <h5 class="text-secondary">1. Утвердительное предложение:</h5>
+        <p>Для образования утвердительного предложения в Past Simple используется вторая форма глагола (глагол в прошедшем времени).</p>
+        <p class="font-weight-bold">Примеры:</p>
+        <ul>
+            <li>I <strong>visited</strong> my grandmother last week.</li>
+            <li>They <strong>played</strong> soccer yesterday.</li>
+        </ul>
+
+        <h5 class="text-secondary">2. Правила для правильных глаголов:</h5>
+        <p>Правильные глаголы образуют Past Simple, добавляя окончание <strong>-ed</strong>.</p>
+        
+        <table class="table table-bordered mt-2">
+            <thead>
+                <tr class="table-primary">
+                    <th>Основная форма</th>
+                    <th>Правильный Past Simple</th>
+                    <th>Примечание</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>walk</td>
+                    <td>walked</td>
+                    <td>Добавляется окончание -ed.</td>
+                </tr>
+                <tr>
+                    <td>play</td>
+                    <td>played</td>
+                    <td>Добавляется окончание -ed.</td>
+                </tr>
+                <tr>
+                    <td>try</td>
+                    <td>tried</td>
+                    <td>Y меняется на I перед добавлением -ed.</td>
+                </tr>
+                <tr>
+                    <td>stop</td>
+                    <td>stopped</td>
+                    <td>Удваивается конечная согласная.</td>
+                </tr>
+                <tr>
+                    <td>like</td>
+                    <td>liked</td>
+                    <td>Добавляется окончание -ed.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h5 class="text-secondary">3. Правила для неправильных глаголов:</h5>
+        <p>Неправильные глаголы имеют уникальные формы в прошедшем времени, которые нужно запомнить.</p>
+        <ul>
+            <li>go → <strong>went</strong></li>
+            <li>have → <strong>had</strong></li>
+            <li>see → <strong>saw</strong></li>
+        </ul>
+    </div>
+</div>
+`);
+
       if (this.level === 23) 
          return this.translate.translate(`<div class="container" style="margin-top: 20px;">
     <h1 style="text-align: center; color: #333;">Справка по глаголам "was" и "were"</h1>

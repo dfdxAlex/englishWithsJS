@@ -25,10 +25,254 @@ BDTranslate.push(
      ``,
      ``]);
 BDTranslate.push(
-   [``, 
-    ``, 
-    ``,
-    ``]);
+   [`<div class="container" style="margin: 20px;">
+    <div class="border border-primary rounded p-4 bg-light">
+        <h3 class="text-primary text-center">Правило образования предложений в Past Simple</h3>
+        
+        <h5 class="text-secondary">1. Утвердительное предложение:</h5>
+        <p>Для образования утвердительного предложения в Past Simple используется вторая форма глагола (глагол в прошедшем времени).</p>
+        <p class="font-weight-bold">Примеры:</p>
+        <ul>
+            <li>I <strong>visited</strong> my grandmother last week.</li>
+            <li>They <strong>played</strong> soccer yesterday.</li>
+        </ul>
+
+        <h5 class="text-secondary">2. Правила для правильных глаголов:</h5>
+        <p>Правильные глаголы образуют Past Simple, добавляя окончание <strong>-ed</strong>.</p>
+        
+        <table class="table table-bordered mt-2">
+            <thead>
+                <tr class="table-primary">
+                    <th>Основная форма</th>
+                    <th>Правильный Past Simple</th>
+                    <th>Примечание</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>walk</td>
+                    <td>walked</td>
+                    <td>Добавляется окончание -ed.</td>
+                </tr>
+                <tr>
+                    <td>play</td>
+                    <td>played</td>
+                    <td>Добавляется окончание -ed.</td>
+                </tr>
+                <tr>
+                    <td>try</td>
+                    <td>tried</td>
+                    <td>Y меняется на I перед добавлением -ed.</td>
+                </tr>
+                <tr>
+                    <td>stop</td>
+                    <td>stopped</td>
+                    <td>Удваивается конечная согласная.</td>
+                </tr>
+                <tr>
+                    <td>like</td>
+                    <td>liked</td>
+                    <td>Добавляется окончание -ed.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h5 class="text-secondary">3. Правила для неправильных глаголов:</h5>
+        <p>Неправильные глаголы имеют уникальные формы в прошедшем времени, которые нужно запомнить.</p>
+        <ul>
+            <li>go → <strong>went</strong></li>
+            <li>have → <strong>had</strong></li>
+            <li>see → <strong>saw</strong></li>
+        </ul>
+    </div>
+</div>
+`, 
+    `<div class="container" style="margin: 20px;">
+    <div class="border border-primary rounded p-4 bg-light">
+        <h3 class="text-primary text-center">Правило утворення речень у Past Simple</h3>
+        
+        <h5 class="text-secondary">1. Позитивне речення:</h5>
+        <p>Для утворення позитивного речення в Past Simple використовується друга форма дієслова (дієслово в минулому часі).</p>
+        <p class="font-weight-bold">Приклади:</p>
+        <ul>
+            <li>I <strong>visited</strong> my grandmother last week.</li>
+            <li>They <strong>played</strong> soccer yesterday.</li>
+        </ul>
+
+        <h5 class="text-secondary">2. Правила для правильних дієслів:</h5>
+        <p>Правильні дієслова утворюють Past Simple, додаючи закінчення <strong>-ed</strong>.</p>
+        
+        <table class="table table-bordered mt-2">
+            <thead>
+                <tr class="table-primary">
+                    <th>Основна форма</th>
+                    <th>Правильний Past Simple</th>
+                    <th>Примітка</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>walk</td>
+                    <td>walked</td>
+                    <td>Додається закінчення -ed.</td>
+                </tr>
+                <tr>
+                    <td>play</td>
+                    <td>played</td>
+                    <td>Додається закінчення -ed.</td>
+                </tr>
+                <tr>
+                    <td>try</td>
+                    <td>tried</td>
+                    <td>Y змінюється на I перед додаванням -ed.</td>
+                </tr>
+                <tr>
+                    <td>stop</td>
+                    <td>stopped</td>
+                    <td>Подвоюється кінцева приголосна.</td>
+                </tr>
+                <tr>
+                    <td>like</td>
+                    <td>liked</td>
+                    <td>Додається закінчення -ed.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h5 class="text-secondary">3. Правила для неправильних дієслів:</h5>
+        <p>Неправильні дієслова мають унікальні форми в минулому часі, які потрібно запам'ятати.</p>
+        <ul>
+            <li>go → <strong>went</strong></li>
+            <li>have → <strong>had</strong></li>
+            <li>see → <strong>saw</strong></li>
+        </ul>
+    </div>
+</div>
+`, 
+    `<div class="container" style="margin: 20px;">
+    <div class="border border-primary rounded p-4 bg-light">
+        <h3 class="text-primary text-center">Zasada tworzenia zdań w Past Simple</h3>
+        
+        <h5 class="text-secondary">1. Zdanie pozytywne:</h5>
+        <p>Aby utworzyć zdanie pozytywne w Past Simple, używa się drugiej formy czasownika (czasownik w czasie przeszłym).</p>
+        <p class="font-weight-bold">Przykłady:</p>
+        <ul>
+            <li>I <strong>visited</strong> my grandmother last week.</li>
+            <li>They <strong>played</strong> soccer yesterday.</li>
+        </ul>
+
+        <h5 class="text-secondary">2. Zasady dla czasowników regularnych:</h5>
+        <p>Czasowniki regularne tworzą Past Simple, dodając końcówkę <strong>-ed</strong>.</p>
+        
+        <table class="table table-bordered mt-2">
+            <thead>
+                <tr class="table-primary">
+                    <th>Forma podstawowa</th>
+                    <th>Regularny Past Simple</th>
+                    <th>Uwagi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>walk</td>
+                    <td>walked</td>
+                    <td>Dodaje się końcówkę -ed.</td>
+                </tr>
+                <tr>
+                    <td>play</td>
+                    <td>played</td>
+                    <td>Dodaje się końcówkę -ed.</td>
+                </tr>
+                <tr>
+                    <td>try</td>
+                    <td>tried</td>
+                    <td>Y zmienia się na I przed dodaniem -ed.</td>
+                </tr>
+                <tr>
+                    <td>stop</td>
+                    <td>stopped</td>
+                    <td>Podwaja się ostatnia spółgłoska.</td>
+                </tr>
+                <tr>
+                    <td>like</td>
+                    <td>liked</td>
+                    <td>Dodaje się końcówkę -ed.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h5 class="text-secondary">3. Zasady dla czasowników nieregularnych:</h5>
+        <p>Czasowniki nieregularne mają unikalne formy w czasie przeszłym, które należy zapamiętać.</p>
+        <ul>
+            <li>go → <strong>went</strong></li>
+            <li>have → <strong>had</strong></li>
+            <li>see → <strong>saw</strong></li>
+        </ul>
+    </div>
+</div>
+`,
+    `<div class="container" style="margin: 20px;">
+    <div class="border border-primary rounded p-4 bg-light">
+        <h3 class="text-primary text-center">Rule for Forming Sentences in Past Simple</h3>
+        
+        <h5 class="text-secondary">1. Positive Sentence:</h5>
+        <p>To create a positive sentence in Past Simple, the second form of the verb (the past tense) is used.</p>
+        <p class="font-weight-bold">Examples:</p>
+        <ul>
+            <li>I <strong>visited</strong> my grandmother last week.</li>
+            <li>They <strong>played</strong> soccer yesterday.</li>
+        </ul>
+
+        <h5 class="text-secondary">2. Rules for Regular Verbs:</h5>
+        <p>Regular verbs form the Past Simple by adding the ending <strong>-ed</strong>.</p>
+        
+        <table class="table table-bordered mt-2">
+            <thead>
+                <tr class="table-primary">
+                    <th>Base Form</th>
+                    <th>Regular Past Simple</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>walk</td>
+                    <td>walked</td>
+                    <td>The ending -ed is added.</td>
+                </tr>
+                <tr>
+                    <td>play</td>
+                    <td>played</td>
+                    <td>The ending -ed is added.</td>
+                </tr>
+                <tr>
+                    <td>try</td>
+                    <td>tried</td>
+                    <td>The 'y' changes to 'i' before adding -ed.</td>
+                </tr>
+                <tr>
+                    <td>stop</td>
+                    <td>stopped</td>
+                    <td>The final consonant is doubled.</td>
+                </tr>
+                <tr>
+                    <td>like</td>
+                    <td>liked</td>
+                    <td>The ending -ed is added.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h5 class="text-secondary">3. Rules for Irregular Verbs:</h5>
+        <p>Irregular verbs have unique forms in the past tense that must be memorized.</p>
+        <ul>
+            <li>go → <strong>went</strong></li>
+            <li>have → <strong>had</strong></li>
+            <li>see → <strong>saw</strong></li>
+        </ul>
+    </div>
+</div>
+`]);
 BDTranslate.push(
     [`Вставьте глагол вместо троеточия или подберите правильное предложение в простом прошедшем времени.`, 
      `Вставте дієслово замість три крапки або підберіть правильну пропозицію в минулому часі.`, 
