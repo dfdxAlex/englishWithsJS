@@ -32,7 +32,7 @@ class Statistic
        document.getElementById('level27').onclick = () => {
            resetStatistic();
            // пересчитать статистику и записать в хранилище
-           resetStatistic(false);
+           //resetStatistic(false);
        }
        document.getElementById('level28').innerHTML = translate.translate('Переводов:')+count;
     }
