@@ -7,7 +7,7 @@
 // хранится отдельно в хранилище.
 // Соединив всё это получаются две переменные, которые используются
 // как индекс, который нужно обнулить.
-const resetStatistic = () => {
+const resetStatistic = (reset = true) => {
 
     const level = parseInt(localStorage.getItem('level'));
     const resetOk = 'level'+level+'_Ok';
@@ -16,19 +16,24 @@ const resetStatistic = () => {
     let numberError = +localStorage.getItem(resetError);
     let numberOk =  +localStorage.getItem(resetOk);
 
-    // Если вдруг ошибка то обнулить
-    if (isNaN(localStorage.getItem(resetError))) localStorage.setItem(resetError,0);
-    if (isNaN(localStorage.getItem(resetOk))) localStorage.setItem(resetOk,0);
+    // переменная станет false если не было команды на сброс, но нужно 
+    // пересчитать данные.
+    if (reset) {
+        // Если вдруг ошибка то обнулить
+        if (isNaN(localStorage.getItem(resetError))) localStorage.setItem(resetError,0);
+        if (isNaN(localStorage.getItem(resetOk))) localStorage.setItem(resetOk,0);
 
-    [numberOk, numberError] = succesP(numberOk, numberError);
+        [numberOk, numberError] = succesP(numberOk, numberError);
 
-    localStorage.setItem(resetError,numberError);
-    localStorage.setItem(resetOk,numberOk); 
-
+        localStorage.setItem(resetError,numberError);
+        localStorage.setItem(resetOk,numberOk); 
+    }
     const translate = FactoryRegistr.getObject("LanguageController");
     document.getElementById('level24').innerHTML = translate.translate('Пройдено заданий:') + localStorage.getItem(resetOk);
     document.getElementById('level25').innerHTML = translate.translate('Ошибок:') + localStorage.getItem(resetError);
     document.getElementById('level26').innerHTML = translate.translate('Успех:') + Math.floor(numberOk/(numberOk+numberError)*100)+'%';
+    //перерисовать статус диамантов
+    diament();
 }
 
 // сбросс ошибок

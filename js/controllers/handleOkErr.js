@@ -81,4 +81,9 @@ function handleOkErr(str, event) {
         clickedEl.style.backgroundColor = "red";
         clickedElementOld.style.backgroundColor = "red";
     }
+    
+    // пересчитать статистику и записать в хранилище
+    resetStatistic(false);
+    // перерисовать статус диамантов
+    diament();
 }

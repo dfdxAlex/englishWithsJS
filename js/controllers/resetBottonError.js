@@ -5,4 +5,7 @@ function resetBottonError()
 
         // Сброс состояния кнопки
         document.getElementById('search_error').textContent = translate.translate('Сообщить об ошибке');
+
+        // перерисовать статус диамантов
+        //diament();
 }
