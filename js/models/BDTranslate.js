@@ -20,10 +20,10 @@ BDTranslate.push(
     ``,
     ``]);
 BDTranslate.push(
-    [``, 
-     ``, 
-     ``,
-     ``]);
+    [`Вставьте глагол вместо троеточия или подберите правильное предложение в простом прошедшем времени.`, 
+     `Вставте дієслово замість три крапки або підберіть правильну пропозицію в простому часі.`, 
+     `Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym prostym.`,
+     `Insert a verb instead of the ellipsis or choose the correct sentence in the simple past tense.`]);
 BDTranslate.push(
    [`<div class="container" style="margin: 20px;">
     <div class="border border-primary rounded p-4 bg-light">
@@ -274,10 +274,10 @@ BDTranslate.push(
 </div>
 `]);
 BDTranslate.push(
-    [`Вставьте глагол вместо троеточия или подберите правильное предложение в простом прошедшем времени.`, 
-     `Вставте дієслово замість три крапки або підберіть правильну пропозицію в минулому часі.`, 
-     `Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym prostym.`,
-     `Insert a verb instead of the ellipsis or choose the correct sentence in the simple past tense.`]);
+    [`Подобрать пару правильный - неправильный глагол. Тест разбавлен небольшим числом правильных глаголов.`, 
+     `Підібрати пару правильне - неправильне дієслово. Тест розбавлений невеликою кількістю правильних дієслів.`, 
+     `Dopasuj właściwy czasownik nieregularny. Test jest rozcieńczany niewielką liczbą czasowników regularnych.`,
+     `Match a pair of regular and irregular verbs. The test is diluted with a small number of regular verbs.`]);
 BDTranslate.push(
    [`Прошедшее простое`, 
     `Минуле просте`, 

@@ -121,7 +121,7 @@ class LevelDataModel
         this.selectLevel('Вставить правильное слово','presentSimpleNegative',17);
         this.selectLevel('Подобрать правильно вопрос или ответ','presentSimpleQuestions',18);
         this.selectLevel('Выбрать правильное время PS or PC','presentSimpleOrContinius',19);
-        this.selectLevel('Выбери верную форму глагола','irregularVerbsPastSimple',20);
+        this.selectLevel('Подобрать пару правильный - неправильный глагол. Тест разбавлен небольшим числом правильных глаголов.','irregularVerbsPastSimple',20);
         this.selectLevel('Выбрать правильную пару.','haveAndHaveGot',21);
         this.selectLevel('Text A1 Beginer.','textA1Begginer',22);
         this.selectLevel('Выбрать правильную пару.','wasOrWere',23);
