@@ -6,7 +6,5 @@ function diament()
     [emodzi, smile, diament] = diamentReturnStr();
 
     diamentView(diament, emodzi, smile);
+    return;
 }
-
-
-
