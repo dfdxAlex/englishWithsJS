@@ -89,7 +89,7 @@ const irregularVerbsPastSimple = [
         ["hear", "heard", "hearing", "hears", "heard", "услышал", "почув", "heard"],
         ["hide", "hid", "hiding", "hides", "hidden", "скрыл", "сховав", "hid"],
         ["hit", "hit", "hitting", "hits", "hit", "ударил", "вдарив", "hit"],
-        ["hold", "held", "holding", "holds", "held", "держал", "тримав", "held"],
+        ["hold", "held", "holding", "holds", "holded", "держал", "тримав", "held"],
         ["hurt", "hurt", "hurting", "hurts", "hurted", "повредил", "ушкодив", "hurt"],
         ["keep", "kept", "keeping", "keeps", "kept", "сохранил", "зберіг", "kept"],
         ["know", "knew", "knowing", "knows", "known", "знал", "знав", "knew"],
