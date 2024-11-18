@@ -10,10 +10,310 @@ BDTranslate.push(
     ``,
     ``]);
 BDTranslate.push(
-    [``, 
-     ``, 
-     ``,
-     ``]);
+    [`<div class="container mt-4">
+  <h2 class="text-center mb-4">Past Simple: Негативные предложения и вопросы</h2>
+
+  <div class="row">
+    <div class="col-12">
+      <p><strong>Зачем нужно время Past Simple?</strong></p>
+      <p>Past Simple используется для описания действий, событий или состояний, которые происходили в прошлом. Это время указывает, что действие завершилось и больше не связано с настоящим.</p>
+      <ul>
+        <li>Для рассказов о прошедших событиях: <strong>I visited Paris last year.</strong></li>
+        <li>Для описания привычек в прошлом: <strong>She always walked to school as a child.</strong></li>
+        <li>Для упоминания однократных действий в прошлом: <strong>He broke his arm yesterday.</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-12">
+      <p><strong>Как формируются негативные предложения?</strong></p>
+      <p>Чтобы сделать отрицание в Past Simple, используйте вспомогательный глагол <code>did</code> + <code>not</code> (<code>didn't</code>) перед основной формой глагола. Основной глагол используется в базовой форме (без окончания <code>-ed</code>).</p>
+      <p><strong>Формула:</strong></p>
+      <pre><code>Subject + did not (didn't) + verb (base form).</code></pre>
+      <p>Примеры:</p>
+      <ul>
+        <li><strong>I didn't eat</strong> breakfast this morning.</li>
+        <li><strong>She didn't go</strong> to the party last night.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-12">
+      <p><strong>Как формируются вопросы?</strong></p>
+      <p>Вопросы в Past Simple требуют использования вспомогательного глагола <code>did</code>. Он ставится перед подлежащим, а основной глагол остаётся в базовой форме.</p>
+      <p><strong>Формула:</strong></p>
+      <pre><code>Did + subject + verb (base form)?</code></pre>
+      <p>Примеры:</p>
+      <ul>
+        <li><strong>Did</strong> you <strong>watch</strong> the movie yesterday?</li>
+        <li><strong>Did</strong> they <strong>finish</strong> their homework on time?</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-12">
+      <p><strong>Когда используется отрицание и вопросы?</strong></p>
+      <p>Отрицания нужны, чтобы сказать, что что-то не произошло: <strong>He didn't call me.</strong></p>
+      <p>Вопросы используются, чтобы узнать, произошло ли событие или действие: <strong>Did she call you?</strong></p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-12">
+      <p><strong>Особенности:</strong></p>
+      <ul>
+        <li>В отрицаниях и вопросах основной глагол всегда остаётся в базовой форме (не добавляется <code>-ed</code> или другая форма прошедшего времени).</li>
+        <li>Слова-временные указатели, такие как <strong>yesterday</strong>, <strong>last week</strong>, <strong>two years ago</strong>, помогают понять, что речь идёт о прошлом.</li>
+      </ul>
+      <p><strong>Пример:</strong></p>
+      <ul>
+        <li><strong>Утверждение:</strong> She arrived late.</li>
+        <li><strong>Отрицание:</strong> She didn’t arrive late.</li>
+        <li><strong>Вопрос:</strong> Did she arrive late?</li>
+      </ul>
+    </div>
+  </div>
+</div>
+`, 
+     `<div class="container mt-4">
+  <h2 class="text-center mb-4">Past Simple: Негативні речення та питання</h2>
+
+  <div class="row">
+    <div class="col-12">
+      <p><strong>Для чого потрібен час Past Simple?</strong></p>
+      <p>Past Simple використовується для опису дій, подій або станів, які відбулися в минулому. Цей час вказує на те, що дія завершена і більше не пов'язана з теперішнім.</p>
+      <ul>
+        <li>Для розповідей про події минулого: <strong>I visited Paris last year.</strong></li>
+        <li>Для опису звичок у минулому: <strong>She always walked to school as a child.</strong></li>
+        <li>Для згадок одноразових дій у минулому: <strong>He broke his arm yesterday.</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-12">
+      <p><strong>Як утворюються негативні речення?</strong></p>
+      <p>Щоб зробити заперечення в Past Simple, використовуйте допоміжний дієслово <code>did</code> + <code>not</code> (<code>didn't</code>) перед основною формою дієслова. Основне дієслово використовується в базовій формі (без закінчення <code>-ed</code>).</p>
+      <p><strong>Формула:</strong></p>
+      <pre><code>Subject + did not (didn't) + verb (base form).</code></pre>
+      <p>Приклади:</p>
+      <ul>
+        <li><strong>I didn't eat</strong> breakfast this morning.</li>
+        <li><strong>She didn't go</strong> to the party last night.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-12">
+      <p><strong>Як утворюються питання?</strong></p>
+      <p>Питання в Past Simple вимагають використання допоміжного дієслова <code>did</code>. Воно ставиться перед підметом, а основне дієслово залишається в базовій формі.</p>
+      <p><strong>Формула:</strong></p>
+      <pre><code>Did + subject + verb (base form)?</code></pre>
+      <p>Приклади:</p>
+      <ul>
+        <li><strong>Did</strong> you <strong>watch</strong> the movie yesterday?</li>
+        <li><strong>Did</strong> they <strong>finish</strong> their homework on time?</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-12">
+      <p><strong>Коли використовується заперечення та питання?</strong></p>
+      <p>Заперечення потрібні, щоб сказати, що щось не сталося: <strong>He didn't call me.</strong></p>
+      <p>Питання використовуються, щоб дізнатися, чи відбулася подія чи дія: <strong>Did she call you?</strong></p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-12">
+      <p><strong>Особливості:</strong></p>
+      <ul>
+        <li>В запереченнях і питаннях основне дієслово завжди залишається в базовій формі (не додається <code>-ed</code> або інша форма минулого часу).</li>
+        <li>Слова-тимчасові вказівники, такі як <strong>yesterday</strong>, <strong>last week</strong>, <strong>two years ago</strong>, допомагають зрозуміти, що йдеться про минуле.</li>
+      </ul>
+      <p><strong>Приклад:</strong></p>
+      <ul>
+        <li><strong>Ствердження:</strong> She arrived late.</li>
+        <li><strong>Заперечення:</strong> She didn’t arrive late.</li>
+        <li><strong>Питання:</strong> Did she arrive late?</li>
+      </ul>
+    </div>
+  </div>
+</div>
+`, 
+     `<div class="container mt-4">
+  <h2 class="text-center mb-4">Past Simple: Negatywne zdania i pytania</h2>
+
+  <div class="row">
+    <div class="col-12">
+      <p><strong>Po co potrzebny jest czas Past Simple?</strong></p>
+      <p>Past Simple jest używane do opisywania działań, wydarzeń lub stanów, które miały miejsce w przeszłości. Czas ten wskazuje, że akcja została zakończona i nie ma już związku z teraźniejszością.</p>
+      <ul>
+        <li>Do opisywania wydarzeń z przeszłości: <strong>I visited Paris last year.</strong></li>
+        <li>Do opisywania przyzwyczajeń w przeszłości: <strong>She always walked to school as a child.</strong></li>
+        <li>Do wspomnienia o jednorazowych działaniach w przeszłości: <strong>He broke his arm yesterday.</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-12">
+      <p><strong>Jak tworzyć zdania negatywne?</strong></p>
+      <p>Aby stworzyć zdanie negatywne w Past Simple, używamy czasownika pomocniczego <code>did</code> + <code>not</code> (<code>didn't</code>) przed podstawową formą czasownika. Czasownik główny używamy w formie podstawowej (bez końcówki <code>-ed</code>).</p>
+      <p><strong>Wzór:</strong></p>
+      <pre><code>Subject + did not (didn't) + verb (base form).</code></pre>
+      <p>Przykłady:</p>
+      <ul>
+        <li><strong>I didn't eat</strong> breakfast this morning.</li>
+        <li><strong>She didn't go</strong> to the party last night.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-12">
+      <p><strong>Jak tworzyć pytania?</strong></p>
+      <p>Aby utworzyć pytanie w Past Simple, należy użyć czasownika pomocniczego <code>did</code>. Stawiamy go przed podmiotem, a czasownik główny pozostaje w podstawowej formie.</p>
+      <p><strong>Wzór:</strong></p>
+      <pre><code>Did + subject + verb (base form)?</code></pre>
+      <p>Przykłady:</p>
+      <ul>
+        <li><strong>Did</strong> you <strong>watch</strong> the movie yesterday?</li>
+        <li><strong>Did</strong> they <strong>finish</strong> their homework on time?</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-12">
+      <p><strong>Kiedy używać negacji i pytań?</strong></p>
+      <p>Negacje są używane, aby powiedzieć, że coś się nie wydarzyło: <strong>He didn't call me.</strong></p>
+      <p>Pytania są używane, aby dowiedzieć się, czy wydarzyła się jakaś akcja lub zdarzenie: <strong>Did she call you?</strong></p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-12">
+      <p><strong>Specjalności:</strong></p>
+      <ul>
+        <li>W negacjach i pytaniach czasownik główny zawsze pozostaje w podstawowej formie (nie dodajemy <code>-ed</code> ani żadnej innej formy czasu przeszłego).</li>
+        <li>Słowa wskazujące czas, takie jak <strong>yesterday</strong>, <strong>last week</strong>, <strong>two years ago</strong>, pomagają zrozumieć, że chodzi o przeszłość.</li>
+      </ul>
+      <p><strong>Przykład:</strong></p>
+      <ul>
+        <li><strong>Twierdzenie:</strong> She arrived late.</li>
+        <li><strong>Negacja:</strong> She didn’t arrive late.</li>
+        <li><strong>Pytanie:</strong> Did she arrive late?</li>
+      </ul>
+    </div>
+  </div>
+</div>
+`,
+     `<div class="container mt-4">
+  <h2 class="text-center mb-4">Past Simple: Negative Sentences and Questions</h2>
+
+  <div class="row">
+    <div class="col-12">
+      <p><strong>Why is Past Simple used?</strong></p>
+      <p>Past Simple is used to describe actions, events, or states that happened in the past. This tense indicates that the action is complete and has no connection with the present.</p>
+      <ul>
+        <li>For telling about past events: <strong>I visited Paris last year.</strong></li>
+        <li>For describing habits in the past: <strong>She always walked to school as a child.</strong></li>
+        <li>For mentioning one-time actions in the past: <strong>He broke his arm yesterday.</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-12">
+      <p><strong>How to form negative sentences?</strong></p>
+      <p>To make a sentence negative in Past Simple, use the auxiliary verb <code>did</code> + <code>not</code> (<code>didn't</code>) before the base form of the main verb. The main verb is used in its base form (without the <code>-ed</code> ending).</p>
+      <p><strong>Formula:</strong></p>
+      <pre><code>Subject + did not (didn't) + verb (base form).</code></pre>
+      <p>Examples:</p>
+      <ul>
+        <li><strong>I didn't eat</strong> breakfast this morning.</li>
+        <li><strong>She didn't go</strong> to the party last night.</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-12">
+      <p><strong>How to form questions?</strong></p>
+      <p>To make a question in Past Simple, use the auxiliary verb <code>did</code>. It is placed before the subject, and the main verb stays in its base form.</p>
+      <p><strong>Formula:</strong></p>
+      <pre><code>Did + subject + verb (base form)?</code></pre>
+      <p>Examples:</p>
+      <ul>
+        <li><strong>Did</strong> you <strong>watch</strong> the movie yesterday?</li>
+        <li><strong>Did</strong> they <strong>finish</strong> their homework on time?</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-12">
+      <p><strong>When are negative sentences and questions used?</strong></p>
+      <p>Negative sentences are used to say that something did not happen: <strong>He didn't call me.</strong></p>
+      <p>Questions are used to ask whether an action or event happened: <strong>Did she call you?</strong></p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="row">
+    <div class="col-12">
+      <p><strong>Special Notes:</strong></p>
+      <ul>
+        <li>In negatives and questions, the main verb always remains in its base form (we don't add <code>-ed</code> or any other past tense form).</li>
+        <li>Time indicators such as <strong>yesterday</strong>, <strong>last week</strong>, <strong>two years ago</strong> help to indicate that the event occurred in the past.</li>
+      </ul>
+      <p><strong>Example:</strong></p>
+      <ul>
+        <li><strong>Statement:</strong> She arrived late.</li>
+        <li><strong>Negative:</strong> She didn’t arrive late.</li>
+        <li><strong>Question:</strong> Did she arrive late?</li>
+      </ul>
+    </div>
+  </div>
+</div>
+`]);
 BDTranslate.push(
    [`Past Simple отрицательные и вопросы`, 
     `Past Simple негативні та питання`, 
