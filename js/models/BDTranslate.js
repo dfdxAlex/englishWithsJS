@@ -15,10 +15,10 @@ BDTranslate.push(
      ``,
      ``]);
 BDTranslate.push(
-   [``, 
-    ``, 
-    ``,
-    ``]);
+   [`Past Simple отрицательные и вопросы`, 
+    `Past Simple негативні та питання`, 
+    `Past Simple przeczenia i pytania`,
+    `Past Simple Negative and Questions`]);
 BDTranslate.push(
     [`Вставьте глагол вместо троеточия или подберите правильное предложение в простом прошедшем времени.`, 
      `Вставте дієслово замість три крапки або підберіть правильну пропозицію в простому часі.`, 
