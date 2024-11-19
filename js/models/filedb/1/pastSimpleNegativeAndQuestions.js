@@ -735,7 +735,7 @@ const pastSimpleNegativeAndQuestions = [
       [
         "Did they understand the lesson?", 
         "Yes, they understood the lesson.",
-        "Yes, they understand the lesson.",
+        "Yes, have understand the lesson.",
         "Yes, they were understanding the lesson.",
         "Yes, they will understand the lesson.",
         "Они поняли урок? Да, они поняли урок.",
@@ -891,16 +891,6 @@ const pastSimpleNegativeAndQuestions = [
         "Ты видел этот фильм? Да, я видел этот фильм.",
         "Ти бачив цей фільм? Так, я бачив цей фільм.",
         "Czy widziałeś ten film? Tak, widziałem ten film."
-      ],
-      [
-        "Did they understand the lesson?", 
-        "Yes, they understood the lesson.",
-        "Yes, they understand the lesson.",
-        "Yes, they were understanding the lesson.",
-        "Yes, they will understand the lesson.",
-        "Они поняли урок? Да, они поняли урок.",
-        "Вони зрозуміли урок? Так, вони зрозуміли урок.",
-        "Czy oni zrozumieli lekcję? Tak, zrozumieli lekcję."
       ],
       [
         "Did you finish your work on time?", 
@@ -1092,16 +1082,6 @@ const pastSimpleNegativeAndQuestions = [
         "Они не приехали вовремя? Нет, они не приехали вовремя.",
         "Вони не приїхали вчасно? Ні, вони не приїхали вчасно.",
         "Czy oni nie przyjechali na czas? Nie, nie przyjechali na czas."
-      ],
-      [
-        "Did she go to the party?", 
-        "No, she didn't go to the party.",
-        "No, she doesn't go to the party.",
-        "No, she wasn't going to the party.",
-        "No, she will not go to the party.",
-        "Она не пошла на вечеринку? Нет, она не пошла на вечеринку.",
-        "Вона не пішла на вечірку? Ні, вона не пішла на вечірку.",
-        "Czy ona nie poszła na imprezę? Nie, nie poszła na imprezę."
       ],
       [
         "Did we meet yesterday?", 
@@ -1337,7 +1317,7 @@ const pastSimpleNegativeAndQuestions = [
       ["I didn't see her at the party.", "Did I see her at the party?", "I saw her at the party?", "Did I saw her at the party?", "Did I didn't see her at the party?", "Я не видел её на вечеринке.", "Я не бачив її на вечірці.", "Nie widziałem jej na imprezie."],
       ["She didn't sing at the concert.", "Did she sing at the concert?", "She sang at the concert?", "Did she sings at the concert?", "Did she didn't sing at the concert?", "Она не пела на концерте.", "Вона не співала на концерті.", "Nie śpiewała na koncercie."],
       ["We didn't go for a walk.", "Did we go for a walk?", "We went for a walk?", "Did we went for a walk?", "Did we didn't go for a walk?", "Мы не пошли на прогулку.", "Ми не пішли на прогулянку.", "Nie poszliśmy na spacer."],
-      ["They didn't understand the question.", "Did they understand the question?", "They understood the question?", "Did they understood the question?", "Did they didn't understand the question?", "Они не поняли вопрос.", "Вони не зрозуміли питання.", "Nie zrozumieli pytania."],
+      ["They didn't understand the question.", "Did they understand the question?", "They understood a question?", "They understood the question?", "Did they didn't understand the question?", "Они не поняли вопрос.", "Вони не зрозуміли питання.", "Nie zrozumieli pytania."],
       ["I didn't like the movie.", "Did I like the movie?", "I liked the movie?", "Did I liked the movie?", "Did I didn't like the movie?", "Мне не понравился фильм.", "Мені не сподобався фільм.", "Nie podobał mi się film."],
       ["He didn't arrive on time.", "Did he arrive on time?", "He arrived on time?", "Did he arrived on time?", "Did he didn't arrive on time?", "Он не приехал вовремя.", "Він не приїхав вчасно.", "Nie przyjechał na czas."],
       ["She didn't finish her work.", "Did she finish her work?", "She finished her work?", "Did she finished her work?", "Did she didn't finish her work?", "Она не закончила свою работу.", "Вона не закінчила свою роботу.", "Nie skończyła swojej pracy."],
