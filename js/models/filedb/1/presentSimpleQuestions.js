@@ -706,18 +706,7 @@ const presentSimpleQuestions = [
                             ["Yes, she does enjoy visiting art galleries; she finds inspiration there.", "Does she like art galleries?", "Does she enjoys exhibitions?", "Does she visit galleries often?", "Does she like museums?", "Да, ей нравится посещать художественные галереи; она находит там вдохновение.", "Так, їй подобається відвідувати художні галереї; вона знаходить там натхнення.", "Tak, lubi odwiedzać galerie sztuki; tam znajduje inspirację."],
                                                     
     function (id) {
-        //функция подготавливает предложение, которое должно попасть
-        //в блок предыдущих ответов, для этого все индексы 0-74
-        //конкатенируются нулевой и первый индекс.
-        if (id>=0 && id<=74) {
-            let str1 = presentSimpleQuestions[id][0];
-            let str2 = presentSimpleQuestions[id][1];
-            str1 = str1.replace('...', str2);
-            return str1;
-        }
-        if ((id>74 && id<=704)) {
-             return presentSimpleQuestions[id][1];
-         }
+        return replaceEllipsisWithWord(id, presentSimpleQuestions);
     }         
 ];
 

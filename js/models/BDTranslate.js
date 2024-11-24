@@ -20,10 +20,10 @@ BDTranslate.push(
      ``,
      ``]);
 BDTranslate.push(
-    [``, 
-     ``, 
-     ``,
-     ``]);
+    [`Вставьте глагол вместо троеточия или подберите правильное предложение в продолженном прошедшем времени.`, 
+     `Вставте дієслово замість три крапки або підберіть правильну пропозицію в минулому часі.`, 
+     `Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym ciągłym.`,
+     `Insert a verb instead of the ellipsis or choose the correct sentence in the past continuous tense.`]);
 BDTranslate.push(
    [`<div class="container">
   <div class="row">

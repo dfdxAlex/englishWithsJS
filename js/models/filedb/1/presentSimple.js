@@ -1310,10 +1310,7 @@ const presentSimple = [
           "Nie myją samochodu w każdą sobotę."
         ],
         function (id) {
-            let str1 = presentSimple[id][0];
-            let str2 = presentSimple[id][1];
-            str1 = str1.replace('...', str2);
-            return str1;
+            return replaceEllipsisWithWord(id, presentSimple);
         }
   ];
   

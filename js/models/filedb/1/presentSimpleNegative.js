@@ -653,9 +653,6 @@ const presentSimpleNegative = [
             ["He ... the task until it is completed.", "doesn't finish", "doesn't finishes", "doesn't finishing", "doesn't finished", "Он не завершает задачу, пока она не будет выполнена.", "Він не завершує завдання, поки воно не буде завершене.", "On nie kończy zadania, dopóki nie zostanie ono ukończone."],
             ["We ... the report until it is approved.", "don't submit", "don't submits", "don't submitting", "don't submitted", "Мы не представляем отчет, пока он не будет одобрен.", "Ми не подаємо звіт, поки він не буде затверджений.", "Nie składamy raportu, dopóki nie zostanie on zatwierdzony."],
             function (id) {
-                let str1 = presentSimpleNegative[id][0];
-                let str2 = presentSimpleNegative[id][1];
-                str1 = str1.replace('...', str2);
-                return str1;
+                return replaceEllipsisWithWord(id, presentSimpleNegative);
             }
 ];

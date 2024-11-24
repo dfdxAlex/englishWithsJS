@@ -1536,17 +1536,6 @@ const pastSimpleSentences = [
         "Uprawiają jogę."
     ],
     function (id) {
-        //функция подготавливает предложение, которое должно попасть
-        //в блок предыдущих ответов, для этого все вопроссы
-        //в которых есть три точки, соединяются с правильным
-        //вариантом ответа.
-        if (pastSimpleSentences[id][0].indexOf('...') !== -1) {
-            let str = pastSimpleSentences[id][0];
-            const rez = str.replace('...',pastSimpleSentences[id][1]);
-            return rez;
-        } else {
-            return pastSimpleSentences[id][1];
-        }
-      }  
-    // продление массива для 50 элементов ...
+        return replaceEllipsisWithWord(id, pastSimpleSentences);
+    }  
 ];

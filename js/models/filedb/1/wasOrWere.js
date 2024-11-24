@@ -2298,16 +2298,7 @@ const wasOrWere = [
   ["He ... not very pleased with the situation.", "was", "were", "", "", "Он не был очень доволен ситуацией.", "Він не був дуже задоволений ситуацією.", "Nie był zbyt zadowolony z sytuacji."],
   
   function (id) {
-    //функция подготавливает предложение, которое должно попасть
-    //в блок предыдущих ответов, для этого все индексы 0-74
-    //конкатенируются нулевой и первый индекс.
-    if (wasOrWere[id][0].indexOf('...') !== -1) {
-        let str = wasOrWere[id][0];
-        const rez = str.replace('...',wasOrWere[id][1]);
-        return rez;
-    } else {
-        return wasOrWere[id][1];
-    }
+    return replaceEllipsisWithWord(id, wasOrWere);
   }   
 ];
 

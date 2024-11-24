@@ -738,9 +738,9 @@ const pastSimpleNegativeAndQuestions = [
         "Yes, have understand the lesson.",
         "Yes, they were understanding the lesson.",
         "Yes, they will understand the lesson.",
-        "Они поняли урок? Да, они поняли урок.",
-        "Вони зрозуміли урок? Так, вони зрозуміли урок.",
-        "Czy oni zrozumieli lekcję? Tak, zrozumieli lekcję."
+        "Они поняли урок?",
+        "Вони зрозуміли урок?",
+        "Czy oni zrozumieli lekcję?"
       ],
       [
         "Did you finish your work on time?", 
@@ -788,9 +788,9 @@ const pastSimpleNegativeAndQuestions = [
         "Yes, they arrive on time.",
         "Yes, they were arriving on time.",
         "Yes, they will arrive on time.",
-        "Они прибыли вовремя? Да, они прибыли вовремя.",
-        "Вони приїхали вчасно? Так, вони приїхали вчасно.",
-        "Czy oni przyjechali na czas? Tak, przyjechali na czas."
+        "Они прибыли вовремя?",
+        "Вони приїхали вчасно?",
+        "Czy oni przyjechali na czas?"
       ],
       [
         "Did you visit your grandparents?", 
@@ -798,9 +798,9 @@ const pastSimpleNegativeAndQuestions = [
         "Yes, I visit my grandparents.",
         "Yes, I was visiting my grandparents.",
         "Yes, I will visit my grandparents.",
-        "Ты посетил своих бабушку и дедушку? Да, я посетил своих бабушку и дедушку.",
-        "Ти відвідав своїх бабусю і дідуся? Так, я відвідав своїх бабусю і дідуся.",
-        "Czy odwiedziłeś swoich dziadków? Tak, odwiedziłem swoich dziadków."
+        "Ты посетил своих бабушку и дедушку?",
+        "Ти відвідав своїх бабусю і дідуся?",
+        "Czy odwiedziłeś swoich dziadków?"
       ],
       [
         "Did he eat breakfast?", 
@@ -808,9 +808,9 @@ const pastSimpleNegativeAndQuestions = [
         "Yes, he eats breakfast.",
         "Yes, he was eating breakfast.",
         "Yes, he will eat breakfast.",
-        "Он позавтракал? Да, он позавтракал.",
-        "Він поснідав? Так, він поснідав.",
-        "Czy on zjadł śniadanie? Tak, zjadł śniadanie."
+        "Он позавтракал?",
+        "Він поснідав?",
+        "Czy on zjadł śniadanie?"
       ],
       [
         "Did you run in the park?", 
@@ -1333,17 +1333,7 @@ const pastSimpleNegativeAndQuestions = [
       ["They didn't leave early.", "Did they leave early?", "They left early?", "Did they left early?", "Did they didn't leave early?", "Они не ушли рано.", "Вони не пішли рано.", "Nie wyszli wcześniej."],
       ["I didn't study last night.", "Did I study last night?", "I studied last night?", "Did I studied last night?", "Did I didn't study last night?", "Я не учил(а) вчера вечером.", "Я не вчив(лася) вчора ввечері.", "Nie uczyłem się wczoraj wieczorem."],
       function (id) {
-          //функция подготавливает предложение, которое должно попасть
-          //в блок предыдущих ответов, для этого все вопроссы
-          //в которых есть три точки, соединяются с правильным
-          //вариантом ответа.
-          if (pastSimpleNegativeAndQuestions[id][0].indexOf('...') !== -1) {
-              let str = pastSimpleNegativeAndQuestions[id][0];
-              const rez = str.replace('...',pastSimpleNegativeAndQuestions[id][1]);
-              return rez;
-          } else {
-              return pastSimpleNegativeAndQuestions[id][1];
-          }
+          return replaceEllipsisWithWord(id, pastSimpleNegativeAndQuestions);
         }  
   ];
 
