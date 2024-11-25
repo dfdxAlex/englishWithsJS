@@ -6,8 +6,6 @@
 
 const handleLevelX = (dataObj) =>
     {
-        // // Исключение для служебных нажатий
-        // if (lo)
         // Записать в хранилище что работаем на неком уровне
         localStorage.setItem('level',dataObj.getLevel());
     
@@ -18,10 +16,18 @@ const handleLevelX = (dataObj) =>
         localStorage.setItem('randomEl', randomEl);
         let mas = dataObj.getArrayDB()[randomEl];
     
+
+        // Блок проверяет есть ли в рабочем массиве свойство nameLeson
+        // Если есть, то через одноимённую переменную оно передается в WorkingField
+        // Где используется для установки в заголовок теста названия теста.
+        let nameLeson = false;
+        if ('nameLeson' in dataObj.getArrayDB())
+            nameLeson = dataObj.getArrayDB().nameLeson;
+
         // создать рабочее поле с вопроссом и вариантами ответа
         // поместить форму в соответствующий div
         document.getElementById('working_field')
-                .innerHTML = FactoryRegistr.getObject('WorkingField').init(mas);
+                .innerHTML = FactoryRegistr.getObject('WorkingField').init(mas, nameLeson);
     
         // Объект накидывает на кнопки обработчики 
         // соответствующих событий, ответ правильный или нет

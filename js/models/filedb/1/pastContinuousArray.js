@@ -1253,3 +1253,9 @@ const pastContinuousArray = [
         return replaceEllipsisWithWord(id, pastContinuousArray);
       }  
 ];
+
+pastContinuousArray.nameLeson = "Past Continuous";
+    // setTimeout(()=>{
+    //   console.log('sdfcsdc');
+    //   document.getElementById('fieldset-legend').textContent = "Привет";
+    // },2110);

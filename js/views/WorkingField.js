@@ -1,7 +1,7 @@
 //класс получает данные для создания рабочей формы и создает её
 
 class WorkingField {
-  init(arrayBD) {
+  init(arrayBD, nameLeson = false) {
       if (arrayBD !== undefined && arrayBD.length == 8) {
           [this.question, 
           this.option1,
@@ -23,8 +23,12 @@ class WorkingField {
 
           // Используем Card вместо fieldset
           let cardStart = `<div class="card fieldSetWorkField" style="width: 100%; margin: auto; border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0 8px 16px rgba(0,0,0,0.2);"><div class="card-body">`;
-          let legend = `<h5 class="card-title" id="fieldset-legend">${transL.translate('Вопрос с вариантами ответа')}</h5>`;
+          let legend = '';
 
+          if (!nameLeson)
+              legend = `<h5 class="card-title" id="fieldset-legend">${transL.translate('Вопрос с вариантами ответа')}</h5>`;
+          if (nameLeson)
+              legend = `<h5 class="card-title" id="fieldset-legend">${nameLeson}</h5>`;
           let buttonOption = [];
           buttonOption[0] = `<div class='row mb-2'><div class='col-12'><button style='width: 100%; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button' id='option1'>${this.option1}</button></div></div>`;
           buttonOption[1] = `<div class='row mb-2'><div class='col-12'><button style='width: 100%; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button' id='option2'>${this.option2}</button></div></div>`;
