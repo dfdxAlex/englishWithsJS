@@ -83,3 +83,6 @@ whereThat = [
         return str1;
     }
 ]
+
+// Если это свойство есть, то оно попадает в заголовок теста
+whereThat.nameLeson = "Where/That...";

@@ -120,6 +120,9 @@ let commonWalk100pl = [
 // это вместо того, чтобы заполнить это с помощью чата джипити
 // такой фокус с переводом на украинский и польский не получится,
 // нужен новый массив
-commonWalk100.forEach((el, index, array) => {
+commonWalk100pl.forEach((el, index, array) => {
     array[index][5] = el[1];
 });
+
+// Если это свойство есть, то оно попадает в заголовок теста
+commonWalk100pl.nameLeson = "Walk 100";

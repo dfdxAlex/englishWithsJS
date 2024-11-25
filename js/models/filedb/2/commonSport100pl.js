@@ -130,3 +130,6 @@ const commonSport100pl = [
 commonSport100pl.forEach((el, index, array) => {
         array[index][7] = el[1];
       });
+
+// Если это свойство есть, то оно попадает в заголовок теста
+commonSport100pl.nameLeson = "Sport 100";

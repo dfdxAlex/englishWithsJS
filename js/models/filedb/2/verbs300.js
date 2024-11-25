@@ -210,4 +210,7 @@ const verbs300 = [
 verbs300.forEach((el, index, array) => {
     array[index][5] = el[1];
 });
+
+// Если это свойство есть, то оно попадает в заголовок теста
+verbs300.nameLeson = "Verbs 300";
   

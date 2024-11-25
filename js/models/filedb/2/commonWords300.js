@@ -340,3 +340,6 @@ const commonWords300 = [
 commonWords300.forEach((el, index, array) => {
     array[index][5] = el[1];
 });
+
+// Если это свойство есть, то оно попадает в заголовок теста
+commonWords300.nameLeson = "Words 300";

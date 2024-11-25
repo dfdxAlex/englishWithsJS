@@ -107,3 +107,6 @@ const commonFood100pl = [
     ['syrup', 'syrop', 'miód', 'dżem', 'cukier', 'syrop', 'syrop', 'syrop'],
     ['tomato', 'pomidor', 'ogórek', 'papryka', 'marchew', 'pomidor', 'pomidor', 'pomidor']
 ];
+
+    // Если это свойство есть, то оно попадает в заголовок теста
+    commonFood100pl.nameLeson = "Food 100";

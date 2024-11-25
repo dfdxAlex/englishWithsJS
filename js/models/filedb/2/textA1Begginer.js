@@ -776,4 +776,6 @@ let textA1Begginer = [
         "Uwielbiam oglądać dokumenty o przyrodzie. Inspirowują mnie do doceniania środowiska i ochrony dzikiej fauny."
       ]
   ];
-  
+
+    // Если это свойство есть, то оно попадает в заголовок теста
+    textA1Begginer.nameLeson = "A1 Beginner";

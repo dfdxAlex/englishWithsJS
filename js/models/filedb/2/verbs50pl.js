@@ -61,3 +61,5 @@ verbs50pl.forEach((el, index, array) => {
   array[index][7] = el[1];
 });
   
+// Если это свойство есть, то оно попадает в заголовок теста
+verbs50pl.nameLeson = "Verbs 50";

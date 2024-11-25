@@ -600,3 +600,7 @@ presentSimpleHeSheIt.forEach((el, index, array) => {
     if (!array[index][0].includes('...'))
         array[index][0] = '...'+array[index][0];
   });
+
+  // Если это свойство есть, то оно попадает в заголовок теста
+  presentSimpleHeSheIt.nameLeson = "Present Simple He/She/It";
+

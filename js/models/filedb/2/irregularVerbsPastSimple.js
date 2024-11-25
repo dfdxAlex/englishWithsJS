@@ -259,3 +259,6 @@ irregularVerbsPastSimple.forEach((el, index, array) => {
     if (!array[index][0].includes('...'))
         array[index][0] = '...'+array[index][0];
   });
+
+// Если это свойство есть, то оно попадает в заголовок теста
+irregularVerbsPastSimple.nameLeson = "Irregular Verbs Past Simple";
