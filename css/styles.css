@@ -1,8 +1,25 @@
 /* Основные стили */
 body {
     font-family: Arial, sans-serif;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/learningBackground.jpg'); /* Нормальный фон */
+    background-size: cover;
+    background-position: center;
 }
+.nav-transparent, .html-old-questions-transparent {
+    position: relative;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7); /* Прозрачный белый фон для текста */
+    border-radius: 10px; /* Скруглённые углы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Лёгкая тень */
+}
+.html-old-questions-transparent {
+    max-width: 100%;
+}
+
 
 select{
     all: unset;
