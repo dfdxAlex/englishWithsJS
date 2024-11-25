@@ -20,3 +20,7 @@ const toBeForms = [
     ['They are not', "They aren't", 'Theyre not', 'They arent', 'They arnt', 'Они не есть', 'Вони не є', 'Oni nie są'],
     ['They are not', "They're not", 'Theyre not', 'They are not', 'They arenot', 'Они не есть', 'Вони не є', 'Oni nie są']
 ];
+
+
+    // Если это свойство есть, то оно попадает в заголовок теста
+    toBeForms.nameLeson = "I am / I'm";

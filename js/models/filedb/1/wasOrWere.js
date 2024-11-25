@@ -2317,3 +2317,5 @@ wasOrWere.forEach((el, index, array) => {
       
 });
   
+    // Если это свойство есть, то оно попадает в заголовок теста
+    wasOrWere.nameLeson = "Was Or Were";

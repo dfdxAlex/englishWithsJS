@@ -73,3 +73,6 @@ const questionsWithAnswers = [
     ['Is the coffee cold?', "Yes, it is.", "Yes, its.", "Yes, it cold.", "Yes, it are.", 'Кофе холодный?', 'Кава холодна?', 'Czy kawa jest zimna?'],
     ['Are the lights working?', "Yes, they are.", "Yes, theyre.", "Yes, they working.", "Yes, it is.", 'Огни работают?', 'Лампи працюють?', 'Czy światła działają?'],
 ];
+
+    // Если это свойство есть, то оно попадает в заголовок теста
+    questionsWithAnswers.nameLeson = "Questions With Answers";

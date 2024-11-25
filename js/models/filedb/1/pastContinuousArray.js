@@ -1254,8 +1254,5 @@ const pastContinuousArray = [
       }  
 ];
 
+// Если это свойство есть, то оно попадает в заголовок теста
 pastContinuousArray.nameLeson = "Past Continuous";
-    // setTimeout(()=>{
-    //   console.log('sdfcsdc');
-    //   document.getElementById('fieldset-legend').textContent = "Привет";
-    // },2110);

@@ -1539,3 +1539,6 @@ const pastSimpleSentences = [
         return replaceEllipsisWithWord(id, pastSimpleSentences);
     }  
 ];
+
+  // Если это свойство есть, то оно попадает в заголовок теста
+  pastSimpleSentences.nameLeson = "Past Simple Sentences";

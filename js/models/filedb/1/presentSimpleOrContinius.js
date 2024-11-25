@@ -1334,3 +1334,6 @@ const presentSimpleOrContinius = [
     }
 
 ];
+
+    // Если это свойство есть, то оно попадает в заголовок теста
+    presentSimpleOrContinius.nameLeson = "Present Simple or Present Continuous";

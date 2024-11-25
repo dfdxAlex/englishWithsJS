@@ -296,3 +296,6 @@ const presentSimpleNever = [
                     ["...", "I always prepare my outfit the night before.", "I prepare always my outfit the night before.", "I always prepares my outfit the night before.", "I always prepared my outfit the night before.", "Я всегда подготавливаю свой наряд на ночь.", "Я завжди готую свій наряд на ніч.", "Zawsze przygotowuję mój strój na noc przedtem."]
                   
 ];
+
+    // Если это свойство есть, то оно попадает в заголовок теста
+    presentSimpleNever.nameLeson = "Present Simple Never";

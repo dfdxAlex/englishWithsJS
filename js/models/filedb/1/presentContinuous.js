@@ -302,4 +302,5 @@ const presentContinuous = [
         }
 ];
 
-
+  // Если это свойство есть, то оно попадает в заголовок теста
+  presentContinuous.nameLeson = "Present Continuous";

@@ -1441,3 +1441,6 @@ const presetnContiniusQuestion = [
     ]
 
 ];
+
+    // Если это свойство есть, то оно попадает в заголовок теста
+    presetnContiniusQuestion.nameLeson = "Present Continius Questions";

@@ -1314,3 +1314,5 @@ const presentSimple = [
         }
   ];
   
+    // Если это свойство есть, то оно попадает в заголовок теста
+    presentSimple.nameLeson = "Present Simple";

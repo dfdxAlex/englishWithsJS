@@ -100,3 +100,8 @@ const toBeSentences = [
     ['They ... not coming.', "They aren't", 'Theyre not', 'They arent', 'They arnt', 'Они не идут.', 'Вони не йдуть.', 'Oni nie idą.'],
     ['They ... not coming.', "They're not", 'Theyre not', 'They are not', 'They arenot', 'Они не идут.', 'Вони не йдуть.', 'Oni nie idą.']
 ];
+
+
+
+    // Если это свойство есть, то оно попадает в заголовок теста
+    toBeSentences.nameLeson = "to Be Sentences";

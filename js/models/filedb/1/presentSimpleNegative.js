@@ -656,3 +656,6 @@ const presentSimpleNegative = [
                 return replaceEllipsisWithWord(id, presentSimpleNegative);
             }
 ];
+
+    // Если это свойство есть, то оно попадает в заголовок теста
+    presentSimpleNegative.nameLeson = "Present Simple Negative";

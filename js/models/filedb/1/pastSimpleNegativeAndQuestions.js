@@ -1337,3 +1337,6 @@ const pastSimpleNegativeAndQuestions = [
         }  
   ];
 
+  // Если это свойство есть, то оно попадает в заголовок теста
+  pastSimpleNegativeAndQuestions.nameLeson = "Past Simple Negative and Questions";
+

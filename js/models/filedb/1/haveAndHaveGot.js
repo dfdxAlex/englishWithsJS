@@ -2890,3 +2890,6 @@ const haveAndHaveGot = [
         "On nie ma psa"
       ]
 ];
+
+// Если это свойство есть, то оно попадает в заголовок теста
+haveAndHaveGot.nameLeson = "Have and Have Got";

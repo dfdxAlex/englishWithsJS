@@ -728,3 +728,6 @@ presentSimpleQuestions.forEach((el, index, array) => {
     }
     
 });
+
+    // Если это свойство есть, то оно попадает в заголовок теста
+    presentSimpleQuestions.nameLeson = "Present Simple Questions";
