@@ -682,7 +682,7 @@ const pastContinuousArray = [
     [
         "Were you playing the piano when she entered the room?", 
         "Yes, I was playing the piano.", 
-        "No, I wasn't playing the piano.", 
+        "No, I wasn't played the piano.", 
         "Yes, I play the piano.", 
         "No, I didn't play the piano.", 
         "Ты играл на пианино, когда она вошла в комнату?", 
@@ -742,7 +742,7 @@ const pastContinuousArray = [
     [
         "Were they watching TV when you called?", 
         "Yes, they were watching TV.", 
-        "No, they weren't watching TV.", 
+        "No, they weren't watch to TV.", 
         "Yes, they watch TV.", 
         "No, they didn't watch TV.", 
         "Они смотрели телевизор, когда ты позвонил?", 
@@ -912,7 +912,7 @@ const pastContinuousArray = [
     [
         "Were they working when you called?", 
         "Yes, they were working.", 
-        "No, they weren't working.", 
+        "They not were working.", 
         "Yes, they work.", 
         "No, they didn't work.", 
         "Они работали, когда ты позвонил?", 
@@ -932,7 +932,7 @@ const pastContinuousArray = [
     [
         "Was she talking to her friend when you arrived?", 
         "Yes, she was talking to her friend.", 
-        "No, she wasn't talking to her friend.", 
+        "No, she wasn't talk to her friend.", 
         "Yes, she talks to her friend.", 
         "No, she didn't talk to her friend.", 
         "Она разговаривала с другом, когда ты пришел?", 
