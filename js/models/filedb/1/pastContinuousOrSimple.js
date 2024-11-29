@@ -1333,5 +1333,5 @@ const pastContinuousOrSimple = [
   ];
 
 // Если это свойство есть, то оно попадает в заголовок теста
-commonFood100pl.nameLeson = "Past Continuous Or Past Simple";
+pastContinuousOrSimple.nameLeson = "Past Continuous Or Past Simple";
   

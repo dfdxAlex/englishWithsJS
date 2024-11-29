@@ -10,10 +10,230 @@ BDTranslate.push(
      ``,
      ``]);
 BDTranslate.push(
-    [``, 
-     ``, 
-     ``,
-     ``]);
+    [`<div class="card border-success">
+  <div class="card-header bg-success text-white">
+    <h5 class="mb-0">
+      <button class="btn btn-light text-success" type="button" data-bs-toggle="collapse" data-bs-target="#pastRule" aria-expanded="true" aria-controls="pastRule">
+        Сравнение Past Continuous и Past Simple
+      </button>
+    </h5>
+  </div>
+  <div id="pastRule" class="collapse show">
+    <div class="card-body text-success">
+      <h6><strong>1. Основные правила:</strong></h6>
+      <p><strong>Past Simple:</strong> действия, которые завершились в прошлом в определенный момент.</p>
+      <p><strong>Past Continuous:</strong> действия, которые были в процессе в определенный момент в прошлом.</p>
+
+      <h6><strong>2. Слова-маркеры:</strong></h6>
+      <button class="btn btn-success text-white mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#markers" aria-expanded="false" aria-controls="markers">
+        Слова-маркеры
+      </button>
+      <div class="collapse" id="markers">
+        <ul>
+          <li><strong>Past Simple:</strong> yesterday, last week, last month, two days ago, in 2010.</li>
+          <li><strong>Past Continuous:</strong> while, when, at 5 PM, all day yesterday.</li>
+        </ul>
+      </div>
+
+      <h6><strong>3. Формулы:</strong></h6>
+      <button class="btn btn-success text-white mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#formulas" aria-expanded="false" aria-controls="formulas">
+        Формулы
+      </button>
+      <div class="collapse" id="formulas">
+        <ul>
+          <li><strong>Past Simple:</strong>
+            <ul>
+              <li><strong>Положительное:</strong> Subject + Verb (V2/ed)</li>
+              <li><strong>Отрицательное:</strong> Subject + did not + Verb (V1)</li>
+              <li><strong>Вопросительное:</strong> Did + Subject + Verb (V1)</li>
+            </ul>
+          </li>
+          <li><strong>Past Continuous:</strong>
+            <ul>
+              <li><strong>Положительное:</strong> Subject + was/were + Verb (-ing)</li>
+              <li><strong>Отрицательное:</strong> Subject + was not/were not + Verb (-ing)</li>
+              <li><strong>Вопросительное:</strong> Was/Were + Subject + Verb (-ing)</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <h6><strong>4. Примеры:</strong></h6>
+      <button class="btn btn-success text-white mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#examples" aria-expanded="false" aria-controls="examples">
+        Примеры
+      </button>
+      <div class="collapse" id="examples">
+        <p><strong>Past Simple:</strong></p>
+        <ul>
+          <li>Положительное: <em>I played football yesterday.</em></li>
+          <li>Отрицательное: <em>I didn’t play football yesterday.</em></li>
+          <li>Вопросительное: <em>Did you play football yesterday?</em></li>
+        </ul>
+        <p><strong>Past Continuous:</strong></p>
+        <ul>
+          <li>Положительное: <em>I was reading a book at 5 PM yesterday.</em></li>
+          <li>Отрицательное: <em>I wasn’t reading a book at 5 PM yesterday.</em></li>
+          <li>Вопросительное: <em>Were you reading a book at 5 PM yesterday?</em></li>
+        </ul>
+      </div>
+
+      <h6><strong>5. Сравнение:</strong></h6>
+      <button class="btn btn-success text-white mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#comparison" aria-expanded="false" aria-controls="comparison">
+        Сравнение
+      </button>
+      <div class="collapse" id="comparison">
+        <ul>
+          <li><strong>Past Simple:</strong> <em>I cleaned the house yesterday.</em></li>
+          <li><strong>Past Continuous:</strong> <em>I was cleaning the house when she called.</em></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`, 
+     `<div class="card border-success">
+  <div class="card-header bg-success text-white">
+    <h5 class="mb-0">
+      <button class="btn btn-light text-success" type="button" data-bs-toggle="collapse" data-bs-target="#pastRule" aria-expanded="true" aria-controls="pastRule">
+        Порівняння Past Continuous і Past Simple
+      </button>
+    </h5>
+  </div>
+  <div id="pastRule" class="collapse show">
+    <div class="card-body text-success">
+      <h6><strong>1. Основні правила:</strong></h6>
+      <p><strong>Past Simple:</strong> дії, що завершилися в минулому в певний момент.</p>
+      <p><strong>Past Continuous:</strong> дії, що були в процесі у певний момент в минулому.</p>
+
+      <h6><strong>2. Слова-маркери:</strong></h6>
+      <button class="btn btn-success text-white mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#markers" aria-expanded="false" aria-controls="markers">
+        Слова-маркери
+      </button>
+      <div class="collapse" id="markers">
+        <ul>
+          <li><strong>Past Simple:</strong> yesterday, last week, last month, two days ago, in 2010.</li>
+          <li><strong>Past Continuous:</strong> while, when, at 5 PM, all day yesterday.</li>
+        </ul>
+      </div>
+
+      <h6><strong>3. Формули:</strong></h6>
+      <button class="btn btn-success text-white mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#formulas" aria-expanded="false" aria-controls="formulas">
+        Формули
+      </button>
+      <div class="collapse" id="formulas">
+        <ul>
+          <li><strong>Past Simple:</strong>
+            <ul>
+              <li><strong>Позитивне:</strong> Subject + Verb (V2/ed)</li>
+              <li><strong>Негативне:</strong> Subject + did not + Verb (V1)</li>
+              <li><strong>Питальне:</strong> Did + Subject + Verb (V1)</li>
+            </ul>
+          </li>
+          <li><strong>Past Continuous:</strong>
+            <ul>
+              <li><strong>Позитивне:</strong> Subject + was/were + Verb (-ing)</li>
+              <li><strong>Негативне:</strong> Subject + was not/were not + Verb (-ing)</li>
+              <li><strong>Питальне:</strong> Was/Were + Subject + Verb (-ing)</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <h6><strong>4. Приклади:</strong></h6>
+      <button class="btn btn-success text-white mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#examples" aria-expanded="false" aria-controls="examples">
+        Приклади
+      </button>
+      <div class="collapse" id="examples">
+        <p><strong>Past Simple:</strong></p>
+        <ul>
+          <li>Позитивне: <em>I played football yesterday.</em></li>
+          <li>Негативне: <em>I didn’t play football yesterday.</em></li>
+          <li>Питальне: <em>Did you play football yesterday?</em></li>
+        </ul>
+        <p><strong>Past Continuous:</strong></p>
+        <ul>
+          <li>Позитивне: <em>I was reading a book at 5 PM yesterday.</em></li>
+          <li>Негативне: <em>I wasn’t reading a book at 5 PM yesterday.</em></li>
+          <li>Питальне: <em>Were you reading a book at 5 PM yesterday?</em></li>
+        </ul>
+      </div>
+
+      <h6><strong>5. Порівняння:</strong></h6>
+      <button class="btn btn-success text-white mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#comparison" aria-expanded="false" aria-controls="comparison">
+        Порівняння
+      </button>
+      <div class="collapse" id="comparison">
+        <ul>
+          <li><strong>Past Simple:</strong> <em>I cleaned the house yesterday.</em></li>
+          <li><strong>Past Continuous:</strong> <em>I was cleaning the house when she called.</em></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`, 
+     `<div class="card mt-3">
+  <div class="card-header bg-success text-white">
+    <h5 class="mb-0">Porównanie Past Continuous i Past Simple</h5>
+  </div>
+  <div class="card-body">
+    <p><strong>Past Continuous</strong> opisuje czynność w toku w określonym momencie w przeszłości, często zakłóconą przez inną czynność w czasie <strong>Past Simple</strong>.</p>
+    <p><strong>Słowa kluczowe dla Past Continuous:</strong> while, at that moment, all day.</p>
+    <p><strong>Słowa kluczowe dla Past Simple:</strong> yesterday, last night, two days ago, in 2000.</p>
+    <h6>Tworzenie zdań:</h6>
+    <ul>
+      <li><strong>Zdania twierdzące (Past Continuous):</strong> Osoba + was/were + czasownik z końcówką -ing.</li>
+      <li><strong>Zdania twierdzące (Past Simple):</strong> Osoba + czasownik w formie przeszłej.</li>
+      <li><strong>Zdania przeczące (Past Continuous):</strong> Osoba + was/were not + czasownik z końcówką -ing.</li>
+      <li><strong>Zdania przeczące (Past Simple):</strong> Osoba + did not + czasownik w podstawowej formie.</li>
+      <li><strong>Pytania (Past Continuous):</strong> Was/Were + osoba + czasownik z końcówką -ing?</li>
+      <li><strong>Pytania (Past Simple):</strong> Did + osoba + czasownik w podstawowej formie?</li>
+    </ul>
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#przyklady" aria-expanded="false" aria-controls="przyklady">
+      Przykłady
+    </button>
+    <div class="collapse mt-3" id="przyklady">
+      <ul>
+        <li>While I ... (read), my phone rang. ➡ <strong>was reading</strong></li>
+        <li>She ... (not watch) TV when the lights went out. ➡ <strong>wasn't watching</strong></li>
+        <li>Did you ... (play) the piano yesterday? ➡ <strong>play</strong></li>
+        <li>When we ... (walk) in the park, it started to rain. ➡ <strong>were walking</strong></li>
+      </ul>
+    </div>
+  </div>
+</div>
+`,
+     `<div class="card mt-3">
+  <div class="card-header bg-success text-white">
+    <h5 class="mb-0">Comparison of Past Continuous and Past Simple</h5>
+  </div>
+  <div class="card-body">
+    <p><strong>Past Continuous</strong> describes an action that was happening at a specific time in the past, often interrupted by another action in the <strong>Past Simple</strong>.</p>
+    <p><strong>Key words for Past Continuous:</strong> while, at that moment, all day.</p>
+    <p><strong>Key words for Past Simple:</strong> yesterday, last night, two days ago, in 2000.</p>
+    <h6>Sentence formation:</h6>
+    <ul>
+      <li><strong>Affirmative sentences (Past Continuous):</strong> Subject + was/were + verb-ing.</li>
+      <li><strong>Affirmative sentences (Past Simple):</strong> Subject + verb in the past form.</li>
+      <li><strong>Negative sentences (Past Continuous):</strong> Subject + was/were not + verb-ing.</li>
+      <li><strong>Negative sentences (Past Simple):</strong> Subject + did not + verb in the base form.</li>
+      <li><strong>Questions (Past Continuous):</strong> Was/Were + subject + verb-ing?</li>
+      <li><strong>Questions (Past Simple):</strong> Did + subject + verb in the base form?</li>
+    </ul>
+    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#examples" aria-expanded="false" aria-controls="examples">
+      Examples
+    </button>
+    <div class="collapse mt-3" id="examples">
+      <ul>
+        <li>While I ... (read), my phone rang. ➡ <strong>was reading</strong></li>
+        <li>She ... (not watch) TV when the lights went out. ➡ <strong>wasn't watching</strong></li>
+        <li>Did you ... (play) the piano yesterday? ➡ <strong>play</strong></li>
+        <li>When we ... (walk) in the park, it started to rain. ➡ <strong>were walking</strong></li>
+      </ul>
+    </div>
+  </div>
+</div>
+`]);
 BDTranslate.push(
     [`<div class="card" style="width: 100%; border: 1px solid #28a745; border-radius: 5px; background-color: #e9f7ec;">
   <div class="card-body">
