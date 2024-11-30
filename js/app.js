@@ -3,6 +3,7 @@
 window.onload = () => {
     diament();
     nav();
+    daimentInfo();
     htmlHelp();
     htmlOldQuestions();
     buttonSound();
