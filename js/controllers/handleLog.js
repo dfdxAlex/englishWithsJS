@@ -9,6 +9,6 @@ function handleLog()
     logForDiv.innerHTML = viewLogs.getField();
 
     Logs.logs.forEach((el, index) => {
-        document.getElementById('button_return_log'+index).onclick = activatingLogs;
+        document.getElementById('button_return_log'+index).onclick = () => {activatingLogs()};
     })
 }

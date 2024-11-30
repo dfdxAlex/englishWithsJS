@@ -5,7 +5,6 @@ function activatingLogs(regim = false)
     const searchErrorLog = document.getElementById('log');
     const searchErrorWorkField = document.getElementById('working_field');
     const logForDiv = document.getElementById('log_for_div');
-
   if (regim) {
     searchErrorButton.style.display = 'none';
     searchErrorLog.style.display = 'none';
