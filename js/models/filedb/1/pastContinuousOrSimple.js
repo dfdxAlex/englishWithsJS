@@ -1226,7 +1226,7 @@ const pastContinuousOrSimple = [
             "They ate when I arrived.",                           // Правильный ответ в Past Simple
             "They was eating when I arrived.",                    // Неправильный ответ с ошибкой (Past Continuous)
             "Did they ate when I arrived?",                       // Неправильный ответ с ошибкой (Past Simple)
-            "They eat when I arrived.",                           // Неправильный ответ с ошибкой (Past Simple)
+            "They were eat when I arrived.",                           // Неправильный ответ с ошибкой (Past Simple)
             "Они ели, когда ты пришел?",                         // Перевод на русский
             "Вони їли, коли ти прийшов?",                        // Перевод на украинский
             "Jedli, kiedy przyjechałeś?"                          // Перевод на польский
