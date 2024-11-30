@@ -8,9 +8,6 @@ function handleLog()
     const viewLogs = new LogField(Logs);
     logForDiv.innerHTML = viewLogs.getField();
 
-    document.getElementById('accordionLog').onclick = (ev) => {activatingLogs(false, ev)};
-//     Logs.logs.forEach((el, index) => {
-//         document.getElementById('button_return_log'+index).onclick = () => {activatingLogs()};
-//     }
-// )
+    // Добавить обработчик кликов, используется эффект всплытия
+    logForDiv.onclick = (ev) => {activatingLogs(false, ev)};
 }

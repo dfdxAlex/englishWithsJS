@@ -47,7 +47,6 @@ class LogField
             bodyAccordion += '<strong>Question:<i>' +element.question + '</i></strong><br>';
             bodyAccordion += '<strong>Answer:<i>' +element.rezult + '</i></strong><br>';
 
-
             let accordionElLocal = accordionEl;
             accordionElLocal = accordionElLocal.replace(/headingOne/g, headingOne);
             accordionElLocal = accordionElLocal.replace(/collapseOne/g, collapseOne);
