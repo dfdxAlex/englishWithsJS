@@ -1148,17 +1148,15 @@ const pastContinuousOrSimple = [
           "Ти вчився до тесту вчора?",                          // Перевод на украинский
           "Czy uczyłeś się do testu wczoraj?"                    // Перевод на польский
         ],
-      
-        // Пример 6
         [
-          "Were they talking when I entered the room?",         // Вопрос в Past Continuous
-          "They talked when I entered the room.",               // Правильный ответ в Past Simple
-          "They was talking when I entered the room.",          // Неправильный ответ с ошибкой (Past Continuous)
-          "Did they talk when I entered the room?",             // Неправильный ответ с ошибкой (Past Simple)
-          "They talk when I entered the room.",                 // Неправильный ответ с ошибкой (Past Simple)
-          "Они разговаривали, когда я вошел в комнату?",       // Перевод на русский
-          "Вони розмовляли, коли я увійшов у кімнату?",        // Перевод на украинский
-          "Oni rozmawiali, kiedy wszedłem do pokoju?"           // Перевод на польский
+          "Were they talking when I entered the room?",      
+          "They talked when I entered the room.",        
+          "They was talking when I entered the room.",    
+          "Did they talk when I entered the room?",     
+          "They talk when I entered the room.",           
+          "Они разговаривали, когда я вошел в комнату?",  
+          "Вони розмовляли, коли я увійшов у кімнату?",   
+          "Oni rozmawiali, kiedy wszedłem do pokoju?"     
         ],
         
         // Пример 7
@@ -1196,17 +1194,15 @@ const pastContinuousOrSimple = [
           "Ти працював вчора?",                                 // Перевод на украинский
           "Czy pracowałeś wczoraj?"                             // Перевод на польский
         ],
-        
-        // Пример 10
         [
-          "Were you studying when I called?",                   // Вопрос в Past Continuous
-          "I studied when you called.",                         // Правильный ответ в Past Simple
-          "I was studied when you called.",                     // Неправильный ответ с ошибкой (Past Continuous)
-          "Did you studied when I called?",                     // Неправильный ответ с ошибкой (Past Simple)
-          "I study when you called.",                           // Неправильный ответ с ошибкой (Past Simple)
-          "Ты учился, когда я позвонил?",                       // Перевод на русский
-          "Ти вчився, коли я подзвонив?",                       // Перевод на украинский
-          "Uczyłeś się, gdy zadzwoniłem?"                       // Перевод на польский
+          "Were you studying when I called?",                  
+          "I studied when you called.",                   
+          "I was studied when you called.",              
+          "Did you studied when I called?",                   
+          "I study when you called.",                           
+          "Ты учился, когда я позвонил?",                   
+          "Ти вчився, коли я подзвонив?",                    
+          "Uczyłeś się, gdy zadzwoniłem?"                    
         ],
 
         [
@@ -1219,17 +1215,15 @@ const pastContinuousOrSimple = [
             "Ти дивився матч вчора?",                            // Перевод на украинский
             "Czy oglądałeś mecz wczoraj?"                         // Перевод на польский
           ],
-        
-          // Пример 12
           [
-            "Were they eating when you arrived?",                 // Вопрос в Past Continuous
-            "They ate when I arrived.",                           // Правильный ответ в Past Simple
-            "They was eating when I arrived.",                    // Неправильный ответ с ошибкой (Past Continuous)
-            "Did they ate when I arrived?",                       // Неправильный ответ с ошибкой (Past Simple)
-            "They were eat when I arrived.",                           // Неправильный ответ с ошибкой (Past Simple)
-            "Они ели, когда ты пришел?",                         // Перевод на русский
-            "Вони їли, коли ти прийшов?",                        // Перевод на украинский
-            "Jedli, kiedy przyjechałeś?"                          // Перевод на польский
+            "Were they eating when you arrived?",    
+            "They ate when I arrived.",     
+            "They was eating when I arrived.", 
+            "Did they ate when I arrived?",   
+            "They were eat when I arrived.",  
+            "Они ели, когда ты пришел?", 
+            "Вони їли, коли ти прийшов?",  
+            "Jedli, kiedy przyjechałeś?"  
           ],
         
           // Пример 13
@@ -1243,17 +1237,15 @@ const pastContinuousOrSimple = [
             "Ти ходив на вечірку минулого вихідного?",           // Перевод на украинский
             "Czy poszedłeś na imprezę w zeszły weekend?"          // Перевод на польский
           ],
-        
-          // Пример 14
           [
-            "Were you reading the book when I called?",           // Вопрос в Past Continuous
-            "I read the book when you called.",                   // Правильный ответ в Past Simple
-            "I was read the book when you called.",               // Неправильный ответ с ошибкой (Past Continuous)
-            "Did you read the book when I called?",               // Неправильный ответ с ошибкой (Past Simple)
-            "I reads the book when you called.",                  // Неправильный ответ с ошибкой (Past Simple)
-            "Ты читал книгу, когда я позвонил?",                  // Перевод на русский
-            "Ти читав книгу, коли я подзвонив?",                  // Перевод на украинский
-            "Czy czytałeś książkę, kiedy zadzwoniłem?"            // Перевод на польский
+            "Were you reading the book when I called?",          
+            "I read the book when you called.",              
+            "I was read the book when you called.",        
+            "Did you read the book when I called?",        
+            "I reads the book when you called.",           
+            "Ты читал книгу, когда я позвонил?",           
+            "Ти читав книгу, коли я подзвонив?",            
+            "Czy czytałeś książkę, kiedy zadzwoniłem?"      
           ],
         
           // Пример 15
