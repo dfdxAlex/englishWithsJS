@@ -26,9 +26,69 @@ BDTranslate.push(
   </div>
 </div>
 `, 
-     ``, 
-     ``,
-     ``]);
+     `<div class="modal fade" id="diamondsModal" tabindex="-1" aria-labelledby="diamondsModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="border: 2px solid #28a745; border-radius: 10px;">
+      <div class="modal-header" style="background-color: #e6f7e6;">
+        <h5 class="modal-title" id="diamondsModalLabel" style="color: #28a745; font-weight: bold;">Інформація про діаманти</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="font-size: 1rem; line-height: 1.5; color: #333;">
+        <p style="margin-bottom: 10px;">За кожну правильну відповідь нараховується <span style="color: #28a745; font-weight: bold;">один діамант</span>.</p>
+        <p style="margin-bottom: 10px;">За кожну не зняту помилку знімається <span style="color: #dc3545; font-weight: bold;">три діаманти</span>.</p>
+        <p style="margin-bottom: 10px;">Для зняття однієї помилки витрачається <span style="color: #ffc107; font-weight: bold;">два діаманти</span>.</p>
+        <p style="margin-bottom: 10px;">Помилки знімаються в розділі статистики кнопкою <span style="color: #007bff; font-style: italic;">"Скинути"</span>.</p>
+        <p style="margin-bottom: 0;">Для зняття помилок необхідно мати позитивні відповіді у кожному конкретному тесті.</p>
+      </div>
+      <div class="modal-footer" style="background-color: #f8f9fa;">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрити</button>
+      </div>
+    </div>
+  </div>
+</div>
+`, 
+     `<div class="modal fade" id="diamondsModal" tabindex="-1" aria-labelledby="diamondsModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="border: 2px solid #28a745; border-radius: 10px;">
+      <div class="modal-header" style="background-color: #e6f7e6;">
+        <h5 class="modal-title" id="diamondsModalLabel" style="color: #28a745; font-weight: bold;">Informacje o diamentach</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="font-size: 1rem; line-height: 1.5; color: #333;">
+        <p style="margin-bottom: 10px;">Za każdą poprawną odpowiedź przyznawany jest <span style="color: #28a745; font-weight: bold;">jeden diament</span>.</p>
+        <p style="margin-bottom: 10px;">Za każdy niezredukowany błąd odejmowane są <span style="color: #dc3545; font-weight: bold;">trzy diamenty</span>.</p>
+        <p style="margin-bottom: 10px;">Aby usunąć jeden błąd, trzeba zużyć <span style="color: #ffc107; font-weight: bold;">dwa diamenty</span>.</p>
+        <p style="margin-bottom: 10px;">Błędy można usuwać w sekcji statystyk przyciskiem <span style="color: #007bff; font-style: italic;">"Zresetuj"</span>.</p>
+        <p style="margin-bottom: 0;">Aby usunąć błędy, należy uzyskać pozytywne odpowiedzi w każdym konkretnym teście.</p>
+      </div>
+      <div class="modal-footer" style="background-color: #f8f9fa;">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+      </div>
+    </div>
+  </div>
+</div>
+`,
+     `<div class="modal fade" id="diamondsModal" tabindex="-1" aria-labelledby="diamondsModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="border: 2px solid #28a745; border-radius: 10px;">
+      <div class="modal-header" style="background-color: #e6f7e6;">
+        <h5 class="modal-title" id="diamondsModalLabel" style="color: #28a745; font-weight: bold;">Information about diamonds</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="font-size: 1rem; line-height: 1.5; color: #333;">
+        <p style="margin-bottom: 10px;">For each correct answer, <span style="color: #28a745; font-weight: bold;">one diamond</span> is awarded.</p>
+        <p style="margin-bottom: 10px;">For each unresolved error, <span style="color: #dc3545; font-weight: bold;">three diamonds</span> are deducted.</p>
+        <p style="margin-bottom: 10px;">To remove one error, you need to spend <span style="color: #ffc107; font-weight: bold;">two diamonds</span>.</p>
+        <p style="margin-bottom: 10px;">Errors can be removed in the statistics section using the <span style="color: #007bff; font-style: italic;">"Reset"</span> button.</p>
+        <p style="margin-bottom: 0;">To remove errors, you must have positive answers in each specific test.</p>
+      </div>
+      <div class="modal-footer" style="background-color: #f8f9fa;">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+`]);
 BDTranslate.push(
     [`<div class="card border-success">
   <div class="card-header bg-success text-white">
