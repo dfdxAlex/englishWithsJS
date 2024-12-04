@@ -1,5 +1,30 @@
 const BDTranslate = [];
 BDTranslate.push(
+  [``, 
+   ``, 
+   ``,
+   ``]);
+BDTranslate.push(
+    [``, 
+     ``, 
+     ``,
+     ``]);
+BDTranslate.push(
+  [``, 
+   ``, 
+   ``,
+   ``]);
+BDTranslate.push(
+    [``, 
+     ``, 
+     ``,
+     ``]);
+BDTranslate.push(
+  [``, 
+   ``, 
+   ``,
+   ``]);
+BDTranslate.push(
     [``, 
      ``, 
      ``,

@@ -8,19 +8,34 @@
 // если использовать как функцию, то handleOkErr(Ok|Error)
 // если как обработчик событий, то () => {handleOkErr(Ok|Error)}
 
+// Данные о колличестве правильных и не правильных ответов хранятся
+// в локальном хранилище, и у каждого теста есть свои два ключа в хранилище.
+
 function handleOkErr(str, event) {
-    let tic = 0;
     // Переменные, в которых хранится инфа об верных и не верных 
-    // ответак создается так:
+    // ответак создается так: 
     // слово "level", к нему добавляется уровень, на котором
     // в данный момент времени работает пользователь, он хранится
     // в хранилище  localStorage.getItem('level').
     // дальше добавляется знак "_", и заканчивается имя пересенной
     // либо словом "Ok", либо "Error", эта инфа приходит через
     // входной параметр функции (str)
-    const levexW = 'level'+localStorage.getItem('level')+'_'+str;
-    tic = +localStorage.getItem(levexW);
-    localStorage.setItem(levexW,tic+1);
+    const level = localStorage.getItem('level');
+    const levexW = 'level'+level+'_'+str;
+    let tic = +localStorage.getItem(levexW);
+
+    // объект с разными данными для подсчёта бонусов
+    const propertyForBonus = {
+        tic,
+        str,
+        log:false, // усли true, то calculateBonusMultiplier() пишет логи
+        levexW,
+        level,
+    };
+    // Увеличить число ответов
+    // функция calculateBonusMultiplier() берет число текущих балов
+    // и увеличивает его. Правила смотреть внутри функции
+    localStorage.setItem(levexW,tic+calculateBonusMultiplier(propertyForBonus));
 
     // Достать из регистра объект переводчика
     const translate = FactoryRegistr.getObject('LanguageController');
