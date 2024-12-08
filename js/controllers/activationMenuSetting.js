@@ -11,4 +11,5 @@ function activationMenuSetting(active = true)
     document.querySelector('#container-all').style.display = setArray[1];
     document.querySelector('#html_old_questions').style.display = setArray[2];
     document.querySelector('#div-for-setting').style.display = setArray[3];
+    document.querySelector('#working_field').innerHTML = '';
 }

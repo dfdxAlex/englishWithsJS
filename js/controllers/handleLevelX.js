@@ -26,13 +26,15 @@ const handleLevelX = (dataObj) =>
 
         // создать рабочее поле с вопроссом и вариантами ответа
         // поместить форму в соответствующий div
-        document.getElementById('working_field')
-                .innerHTML = FactoryRegistr.getObject('WorkingField').init(mas, nameLeson);
-    
-        // Объект накидывает на кнопки обработчики 
-        // соответствующих событий, ответ правильный или нет
-        FactoryRegistr.getObject('EventController').init();
-        return dataObj;
+        if (SettingForProgram.selectTypeTest === 'simple') {
+            document.getElementById('working_field')
+                    .innerHTML = FactoryRegistr.getObject('WorkingField').init(mas, nameLeson);
+        
+            // Объект накидывает на кнопки обработчики 
+            // соответствующих событий, ответ правильный или нет
+            FactoryRegistr.getObject('EventController').init();
+            return dataObj;
+        }
     }
     
     
