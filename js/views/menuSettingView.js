@@ -33,11 +33,7 @@ function menuSettingView()
 
     // создать событие показа меню Сеттинг
     document.querySelector('#save-settings').onclick = () => {
-        document.querySelector('#nav').style.display = "block";
-        document.querySelector('#container-all').style.display = "block";
-        document.querySelector('#html_old_questions').style.display = "block";
-        document.querySelector('#div-for-setting').style.display = "none";
-
+        activationMenuSetting(false);
         // Получить информацию о выборе и записать в хранилище
         SettingForProgram.selectTypeTest = document.querySelector('#testType').value;
     };

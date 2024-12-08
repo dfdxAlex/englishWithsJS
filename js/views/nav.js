@@ -22,7 +22,7 @@ function nav()
             <div class="nav-link" id="statistic">Statistic</div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="setting" href="#">Setting</a>
+            <div class="nav-link" id="setting">Setting</div>
           </li>
           <li class="nav-item">
             <div class="nav-link" id="button_lang_selected"></div>

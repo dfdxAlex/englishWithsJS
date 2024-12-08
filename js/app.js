@@ -22,12 +22,8 @@ window.onload = () => {
     // нарисовать невидимое меню Сеттинг
     menuSettingView();
     // спрятать все ненужные блоки и показать меню Настроек
-    document.querySelector('#setting').onclick = () => {
-    document.querySelector('#nav').style.display = "none";
-    document.querySelector('#container-all').style.display = "none";
-    document.querySelector('#html_old_questions').style.display = "none";
-    document.querySelector('#div-for-setting').style.display = "block";
-    };
+    document.querySelector('#setting').onclick = activationMenuSetting;
+    
 };
 
 // инициализация переменных, хранящихся в классе данных
