@@ -24,17 +24,26 @@ const handleLevelX = (dataObj) =>
         if ('nameLeson' in dataObj.getArrayDB())
             nameLeson = dataObj.getArrayDB().nameLeson;
 
+        // Тест уровня Simple
         // создать рабочее поле с вопроссом и вариантами ответа
         // поместить форму в соответствующий div
         if (SettingForProgram.selectTypeTest === 'simple') {
             document.getElementById('working_field')
                     .innerHTML = FactoryRegistr.getObject('WorkingField').init(mas, nameLeson);
-        
-            // Объект накидывает на кнопки обработчики 
-            // соответствующих событий, ответ правильный или нет
-            FactoryRegistr.getObject('EventController').init();
-            return dataObj;
         }
+        
+        // Тест уровня Word-assembly
+        // создать рабочее поле с вопроссом и вариантами ответа
+        // поместить форму в соответствующий div
+        if (SettingForProgram.selectTypeTest === 'word-assembly') {
+            document.getElementById('working_field')
+                    .innerHTML = FactoryRegistr.getObject('WorkingField').initWordAssembly(mas, nameLeson);
+        }
+        
+        // Объект накидывает на кнопки обработчики 
+        // соответствующих событий, ответ правильный или нет
+        FactoryRegistr.getObject('EventController').init();
+        return dataObj;
     }
     
     
