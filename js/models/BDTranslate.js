@@ -20,15 +20,475 @@ BDTranslate.push(
      ``,
      ``]);
 BDTranslate.push(
-  [``, 
-   ``, 
-   ``,
-   ``]);
+  [`<div class="container mt-5">
+  <div class="row">
+    <div class="col-12 col-md-8 offset-md-2">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Неправильные глаголы второй группы</h3>
+        </div>
+        <div class="card-body">
+          <p class="lead">
+            Неправильные глаголы второй группы имеют четкий шаблон для образования прошедшего времени (Past Simple) и причастия прошедшего времени (Past Participle). Эти глаголы обычно изменяют гласную в корне в обеих формах, и их изменение необходимо запомнить, поскольку шаблон не всегда одинаков.
+          </p>
+
+          <!-- Основные характеристики -->
+          <h5>Основные характеристики:</h5>
+          <ul>
+            <li><strong>Изменение гласной:</strong> Прошедшее и причастие прошедшего времени часто связаны с изменением гласной в середине глагола.</li>
+            <li><strong>Регулярный шаблон:</strong> Хотя это не полностью предсказуемо, неправильные глаголы второй группы обычно следуют более согласованному шаблону, чем другие неправильные глаголы. Пример:
+              <ul>
+                <li><strong>Основная форма:</strong> <em>drink</em> — <strong>Past Simple:</strong> <em>drank</em> — <strong>Past Participle:</strong> <em>drunk</em></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Где используются -->
+          <h5>Где используются:</h5>
+          <p>Неправильные глаголы второй группы часто используются в повседневной речи и письме. Они выражают:</p>
+          <ul>
+            <li><strong>Действия в прошлом:</strong> "Она <em>пела</em> прекрасно." (глагол <em>sang</em> — форма прошедшего времени от <em>sing</em>).</li>
+            <li><strong>Время Present Perfect:</strong> "Он <em>написал</em> книгу." (глагол <em>written</em> — форма прошедшего времени от <em>write</em>).</li>
+            <li><strong>Страдательные конструкции:</strong> "Песню <em>спели</em> хором." (глагол <em>sung</em> — форма прошедшего времени от <em>sing</em>).</li>
+          </ul>
+
+          <!-- Роль в обучении -->
+          <h5>Роль в обучении:</h5>
+          <p>Изучение неправильных глаголов второй группы важно для освоения прошедших времен и конструкций Perfect. В английском языке многие распространенные глаголы принадлежат ко второй группе, что делает их необходимыми для языковой грамотности.</p>
+
+          <!-- Кнопка для примеров -->
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#examples" aria-expanded="false" aria-controls="examples">
+            Пример
+          </button>
+
+          <!-- Примеры глаголов -->
+          <div class="collapse mt-3" id="examples">
+            <div class="card card-body">
+              <ul>
+                <li><strong>Основная форма:</strong> drink — <strong>Past Simple:</strong> drank — <strong>Past Participle:</strong> drunk</li>
+                <li><strong>Основная форма:</strong> sing — <strong>Past Simple:</strong> sang — <strong>Past Participle:</strong> sung</li>
+                <li><strong>Основная форма:</strong> speak — <strong>Past Simple:</strong> spoke — <strong>Past Participle:</strong> spoken</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`, 
+   `<div class="container mt-5">
+  <div class="row">
+    <div class="col-12 col-md-8 offset-md-2">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Неправильні дієслова другої групи</h3>
+        </div>
+        <div class="card-body">
+          <p class="lead">
+            Неправильні дієслова другої групи мають чіткий шаблон для утворення минулого часу (Past Simple) та дієприкметника минулого часу (Past Participle). Ці дієслова зазвичай змінюють голосні в основі в обох формах, і їх зміна повинна бути запам’ятована, оскільки шаблон не завжди є однаковим.
+          </p>
+
+          <!-- Основні характеристики -->
+          <h5>Основні характеристики:</h5>
+          <ul>
+            <li><strong>Зміна голосної:</strong> Минуле та дієприкметник минулого часу часто пов’язані зі зміною голосної в середині дієслова.</li>
+            <li><strong>Регулярний шаблон:</strong> Хоча це не повністю передбачувано, неправильні дієслова другої групи зазвичай слідують більш узгодженому шаблону, ніж інші неправильні дієслова. Приклад:
+              <ul>
+                <li><strong>Основна форма:</strong> <em>drink</em> — <strong>Past Simple:</strong> <em>drank</em> — <strong>Past Participle:</strong> <em>drunk</em></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Де використовуються -->
+          <h5>Де використовуються:</h5>
+          <p>Неправильні дієслова другої групи часто використовуються в повсякденній розмові та письмі. Вони виражають:</p>
+          <ul>
+            <li><strong>Дії в минулому:</strong> "Вона <em>співала</em> чудово." (дієслово <em>sang</em> є формою минулого часу дієслова <em>sing</em>).</li>
+            <li><strong>Час Present Perfect:</strong> "Він <em>написав</em> книгу." (дієслово <em>written</em> є формою минулого часу дієслова <em>write</em>).</li>
+            <li><strong>Страждання:</strong> "Пісню було <em>співано</em> хором." (дієслово <em>sung</em> є формою минулого часу дієслова <em>sing</em>).</li>
+          </ul>
+
+          <!-- Роль у навчанні -->
+          <h5>Роль у навчанні:</h5>
+          <p>Вивчення неправильних дієслів другої групи є важливим для освоєння минулих часів і конструкцій Perfect. В англійській мові багато поширених дієслів належать до цієї групи, що робить їх необхідними для мовної плавності.</p>
+
+          <!-- Кнопка для прикладів -->
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#examples" aria-expanded="false" aria-controls="examples">
+            Приклад
+          </button>
+
+          <!-- Приклади дієслів -->
+          <div class="collapse mt-3" id="examples">
+            <div class="card card-body">
+              <ul>
+                <li><strong>Основна форма:</strong> drink — <strong>Past Simple:</strong> drank — <strong>Past Participle:</strong> drunk</li>
+                <li><strong>Основна форма:</strong> sing — <strong>Past Simple:</strong> sang — <strong>Past Participle:</strong> sung</li>
+                <li><strong>Основна форма:</strong> speak — <strong>Past Simple:</strong> spoke — <strong>Past Participle:</strong> spoken</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`, 
+   `<div class="container mt-5">
+  <div class="row">
+    <div class="col-12 col-md-8 offset-md-2">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Czasowniki Nieregularne Drugiej Grupy</h3>
+        </div>
+        <div class="card-body">
+          <p class="lead">
+            Czasowniki nieregularne z drugiej grupy mają wyraźny wzór w tworzeniu czasu przeszłego (Past Simple) i imiesłowu biernego (Past Participle). Czasowniki te zwykle zmieniają samogłoskę w rdzeniu w obu formach, a ich odmiana musi być zapamiętana, ponieważ wzór nie jest zawsze spójny.
+          </p>
+
+          <!-- Kluczowe cechy -->
+          <h5>Kluczowe cechy:</h5>
+          <ul>
+            <li><strong>Zmiana samogłoski:</strong> Czas przeszły i imiesłów bierny często wiążą się ze zmianą samogłoski w środku czasownika.</li>
+            <li><strong>Regularny wzór:</strong> Choć nie jest to całkowicie przewidywalne, czasowniki nieregularne drugiej grupy podążają za bardziej spójnym wzorem niż inne czasowniki nieregularne. Przykład:
+              <ul>
+                <li><strong>Forma podstawowa:</strong> <em>drink</em> — <strong>Past Simple:</strong> <em>drank</em> — <strong>Past Participle:</strong> <em>drunk</em></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Gdzie są używane -->
+          <h5>Gdzie są używane:</h5>
+          <p>Czasowniki nieregularne drugiej grupy są często używane w codziennej rozmowie i piśmie. Wyrażają:</p>
+          <ul>
+            <li><strong>Akcje w przeszłości:</strong> "Ona <em>śpiewała</em> pięknie." (czasownik <em>sang</em> jest formą przeszłą czasownika <em>sing</em>).</li>
+            <li><strong>Czas Present Perfect:</strong> "On <em>napisał</em> książkę." (czasownik <em>written</em> jest formą przeszłą czasownika <em>write</em>).</li>
+            <li><strong>Strona bierna:</strong> "Piosenka została <em>zaśpiewana</em> przez chór." (czasownik <em>sung</em> jest formą przeszłą czasownika <em>sing</em>).</li>
+          </ul>
+
+          <!-- Rola w nauce -->
+          <h5>Rola w nauce:</h5>
+          <p>Nauka czasowników nieregularnych drugiej grupy jest ważna dla opanowania czasów przeszłych i konstrukcji Perfect. W języku angielskim wiele powszechnie używanych czasowników należy do tej grupy, co czyni je niezbędnymi do płynności językowej.</p>
+
+          <!-- Przycisk do przykładów -->
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#examples" aria-expanded="false" aria-controls="examples">
+            Przykład
+          </button>
+
+          <!-- Przykłady czasowników -->
+          <div class="collapse mt-3" id="examples">
+            <div class="card card-body">
+              <ul>
+                <li><strong>Forma podstawowa:</strong> drink — <strong>Past Simple:</strong> drank — <strong>Past Participle:</strong> drunk</li>
+                <li><strong>Forma podstawowa:</strong> sing — <strong>Past Simple:</strong> sang — <strong>Past Participle:</strong> sung</li>
+                <li><strong>Forma podstawowa:</strong> speak — <strong>Past Simple:</strong> spoke — <strong>Past Participle:</strong> spoken</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`,
+   `<div class="container mt-5">
+  <div class="row">
+    <div class="col-12 col-md-8 offset-md-2">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Second Group Irregular Verbs</h3>
+        </div>
+        <div class="card-body">
+          <p class="lead">
+            Irregular verbs from the second group follow a distinct pattern in forming the past tense (Past Simple) and past participle (Past Participle). These verbs usually have a vowel change in the stem for both forms, and their conjugation needs to be memorized because the pattern is not always consistent.
+          </p>
+
+          <!-- Key Characteristics -->
+          <h5>Key Characteristics:</h5>
+          <ul>
+            <li><strong>Vowel Change:</strong> The past tense and past participle often involve a change in the vowel in the middle of the verb.</li>
+            <li><strong>Regular Pattern:</strong> While not completely predictable, second-group irregular verbs follow a more consistent pattern than other irregular verbs. Example:
+              <ul>
+                <li><strong>Base Form:</strong> <em>drink</em> — <strong>Past Simple:</strong> <em>drank</em> — <strong>Past Participle:</strong> <em>drunk</em></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Usage -->
+          <h5>Usage:</h5>
+          <p>Second-group irregular verbs are frequently used in everyday conversation and writing. They express:</p>
+          <ul>
+            <li><strong>Actions in the past:</strong> "She <em>sang</em> beautifully."</li>
+            <li><strong>Perfect tenses:</strong> "He has <em>written</em> a book."</li>
+            <li><strong>Passive voice:</strong> "The song was <em>sung</em> by the choir."</li>
+          </ul>
+
+          <!-- Role in Learning -->
+          <h5>Role in Learning:</h5>
+          <p>Learning the second group of irregular verbs is important for mastering the past and perfect tenses. In English, many commonly used verbs belong to this group, making them essential for fluency.</p>
+
+          <!-- Button for examples -->
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#examples" aria-expanded="false" aria-controls="examples">
+            Example
+          </button>
+
+          <!-- Examples of verbs -->
+          <div class="collapse mt-3" id="examples">
+            <div class="card card-body">
+              <ul>
+                <li><strong>Base Form</strong>: drink — <strong>Past Simple</strong>: drank — <strong>Past Participle</strong>: drunk</li>
+                <li><strong>Base Form</strong>: sing — <strong>Past Simple</strong>: sang — <strong>Past Participle</strong>: sung</li>
+                <li><strong>Base Form</strong>: speak — <strong>Past Simple</strong>: spoke — <strong>Past Participle</strong>: spoken</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`]);
 BDTranslate.push(
-    [``, 
-     ``, 
-     ``,
-     ``]);
+    [`<div class="container mt-5">
+  <div class="row">
+    <div class="col-12 col-md-8 offset-md-2">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Глаголы из третьей группы (Неправильные глаголы)</h3>
+        </div>
+        <div class="card-body">
+          <p class="lead">
+            Глаголы из третьей группы (irregular verbs) не следуют стандартным правилам образования форм прошедшего времени и причастия прошедшего времени. Эти глаголы имеют уникальные формы, которые необходимо запоминать, так как их нельзя предсказать по правилам.
+          </p>
+
+          <!-- Основные характеристики -->
+          <h5>Основные характеристики:</h5>
+          <ul>
+            <li><strong>Неизменяемый инфинитив:</strong> Например, глагол <em>read</em> сохраняет одинаковое написание во всех формах, но произношение различается:
+              <ul>
+                <li><strong>Present:</strong> [riːd]</li>
+                <li><strong>Past:</strong> [rɛd]</li>
+              </ul>
+            </li>
+            <li><strong>Различие форм:</strong> Формы неправильных глаголов могут быть уникальными для каждой из их временных форм. Пример:
+              <ul>
+                <li><strong>Base Form (инфинитив):</strong> <em>begin</em> — <strong>Past Simple:</strong> <em>began</em> — <strong>Past Participle:</strong> <em>begun</em></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Где используются -->
+          <h5>Где используются:</h5>
+          <p>Неправильные глаголы широко используются в английском языке и встречаются как в разговорной речи, так и в письменной. Они необходимы для правильного построения различных временных конструкций и используются в следующих случаях:</p>
+          <ul>
+            <li><strong>Действия в прошлом:</strong> Например, в предложении <em>"She went to the store."</em> (Она пошла в магазин), где глагол <em>went</em> является неправильной формой от <em>go</em>.</li>
+            <li><strong>Перфектные времена:</strong> В предложении <em>"He has written a letter."</em> (Он написал письмо) используется форма <em>written</em> от глагола <em>write</em> для образования Present Perfect.</li>
+            <li><strong>Пассивный залог:</strong> В предложении <em>"The book was written by an unknown author."</em> (Книга была написана неизвестным автором) используется форма <em>written</em> от <em>write</em>.</li>
+          </ul>
+
+          <!-- Роль в изучении -->
+          <h5>Роль в изучении:</h5>
+          <p>Изучение неправильных глаголов очень важно для правильного формирования предложений в английском языке, особенно в прошедшем времени и перфектных конструкциях. Они составляют значительную часть повседневной речи и письменного общения. В учебниках, таких как <em>Essential Grammar in Use</em> Рэймонда Мерфи, неправильным глаголам уделяется особое внимание, включая таблицы для заучивания.</p>
+
+          <!-- Кнопка для примеров -->
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#examples" aria-expanded="false" aria-controls="examples">
+            Пример
+          </button>
+
+          <!-- Примеры глаголов -->
+          <div class="collapse mt-3" id="examples">
+            <div class="card card-body">
+              <ul>
+                <li><strong>Base Form</strong>: begin — <strong>Past Simple</strong>: began — <strong>Past Participle</strong>: begun</li>
+                <li><strong>Base Form</strong>: read — <strong>Past Simple</strong>: read — <strong>Past Participle</strong>: read</li>
+                <li><strong>Base Form</strong>: go — <strong>Past Simple</strong>: went — <strong>Past Participle</strong>: gone</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`, 
+     `<div class="container mt-5">
+  <div class="row">
+    <div class="col-12 col-md-8 offset-md-2">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Дієслова з третьої групи (Неправильні дієслова)</h3>
+        </div>
+        <div class="card-body">
+          <p class="lead">
+            Дієслова з третьої групи (irregular verbs) не слідують стандартним правилам утворення форм минулого часу та дієприкметника минулого часу. Ці дієслова мають унікальні форми, які необхідно запам'ятовувати, оскільки їх неможливо передбачити за правилами.
+          </p>
+
+          <!-- Основні характеристики -->
+          <h5>Основні характеристики:</h5>
+          <ul>
+            <li><strong>Незмінний інфінітив:</strong> Наприклад, дієслово <em>read</em> зберігає однакове написання у всіх формах, але вимова різниться:
+              <ul>
+                <li><strong>Present:</strong> [riːd]</li>
+                <li><strong>Past:</strong> [rɛd]</li>
+              </ul>
+            </li>
+            <li><strong>Різниця форм:</strong> Форми неправильних дієслів можуть бути унікальними для кожної з їхніх тимчасових форм. Приклад:
+              <ul>
+                <li><strong>Base Form (інфінітив):</strong> <em>begin</em> — <strong>Past Simple:</strong> <em>began</em> — <strong>Past Participle:</strong> <em>begun</em></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Де використовуються -->
+          <h5>Де використовуються:</h5>
+          <p>Неправильні дієслова широко використовуються в англійській мові і зустрічаються як у розмовній мові, так і в письмовій. Вони необхідні для правильного побудови різних часових конструкцій і використовуються в наступних випадках:</p>
+          <ul>
+            <li><strong>Дії в минулому:</strong> Наприклад, у реченні <em>"She went to the store."</em> (Вона пішла до магазину), де дієслово <em>went</em> є неправильною формою від <em>go</em>.</li>
+            <li><strong>Перфектні часи:</strong> У реченні <em>"He has written a letter."</em> (Він написав листа) використовується форма <em>written</em> від дієслова <em>write</em> для утворення Present Perfect.</li>
+            <li><strong>Пасивний стан:</strong> У реченні <em>"The book was written by an unknown author."</em> (Книга була написана невідомим автором) використовується форма <em>written</em> від <em>write</em>.</li>
+          </ul>
+
+          <!-- Роль вивчення -->
+          <h5>Роль вивчення:</h5>
+          <p>Вивчення неправильних дієслів є дуже важливим для правильного формулювання речень в англійській мові, особливо в минулому часі та перфектних конструкціях. Вони складають значну частину повсякденної мови та письмового спілкування. У підручниках, таких як <em>Essential Grammar in Use</em> Реймона Мерфі, неправильним дієслів приділяється особлива увага, зокрема таблиці для запам'ятовування.</p>
+
+          <!-- Кнопка для прикладів -->
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#examples" aria-expanded="false" aria-controls="examples">
+            Приклад
+          </button>
+
+          <!-- Приклади дієслів -->
+          <div class="collapse mt-3" id="examples">
+            <div class="card card-body">
+              <ul>
+                <li><strong>Base Form</strong>: begin — <strong>Past Simple</strong>: began — <strong>Past Participle</strong>: begun</li>
+                <li><strong>Base Form</strong>: read — <strong>Past Simple</strong>: read — <strong>Past Participle</strong>: read</li>
+                <li><strong>Base Form</strong>: go — <strong>Past Simple</strong>: went — <strong>Past Participle</strong>: gone</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`, 
+     `<div class="container mt-5">
+  <div class="row">
+    <div class="col-12 col-md-8 offset-md-2">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Czasowniki trzeciej grupy (Nieregularne czasowniki)</h3>
+        </div>
+        <div class="card-body">
+          <p class="lead">
+            Czasowniki trzeciej grupy (irregular verbs) nie przestrzegają standardowych zasad tworzenia formy czasu przeszłego i formy czasownika przeszłego (Past Participle). Te czasowniki mają unikalne formy, które należy zapamiętać, ponieważ nie można ich przewidzieć na podstawie zasad.
+          </p>
+
+          <!-- Główne cechy -->
+          <h5>Główne cechy:</h5>
+          <ul>
+            <li><strong>Niezmienny bezokolicznik:</strong> Na przykład, czasownik <em>read</em> zachowuje takie samo pisownię we wszystkich formach, ale wymowa różni się:
+              <ul>
+                <li><strong>Present:</strong> [riːd]</li>
+                <li><strong>Past:</strong> [rɛd]</li>
+              </ul>
+            </li>
+            <li><strong>Różnica form:</strong> Formy nieregularnych czasowników mogą być unikalne dla każdego z ich form czasowych. Przykład:
+              <ul>
+                <li><strong>Base Form (bezokolicznik):</strong> <em>begin</em> — <strong>Past Simple:</strong> <em>began</em> — <strong>Past Participle:</strong> <em>begun</em></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Gdzie używane -->
+          <h5>Gdzie używane:</h5>
+          <p>Czasowniki nieregularne są szeroko stosowane w języku angielskim i można je znaleźć zarówno w mowie, jak i w piśmie. Są one niezbędne do prawidłowego formułowania różnych konstrukcji czasowych i wykorzystywane są w następujących przypadkach:</p>
+          <ul>
+            <li><strong>Działania w przeszłości:</strong> Przykładowo, w zdaniu <em>"She went to the store."</em> (Ona poszła do sklepu), czasownik <em>went</em> jest formą nieregularną od <em>go</em>.</li>
+            <li><strong>Perfect tenses:</strong> W zdaniu <em>"He has written a letter."</em> (On napisał list) używana jest forma <em>written</em> od <em>write</em> do utworzenia Present Perfect.</li>
+            <li><strong>Strona bierna:</strong> W zdaniu <em>"The book was written by an unknown author."</em> (Książka została napisana przez nieznanego autora) używana jest forma <em>written</em> od <em>write</em>.</li>
+          </ul>
+
+          <!-- Rola nauki -->
+          <h5>Rola nauki:</h5>
+          <p>Uczenie się nieregularnych czasowników jest bardzo ważne dla prawidłowego formułowania zdań w języku angielskim, zwłaszcza w czasie przeszłym i konstrukcjach perfektywnych. Stanowią one dużą część codziennej mowy i pisania. W podręcznikach, takich jak <em>Essential Grammar in Use</em> R. Murphy'ego, poświęca się im szczególną uwagę, w tym tabelki do zapamiętywania.</p>
+
+          <!-- Przycisk do przykładów -->
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#examples" aria-expanded="false" aria-controls="examples">
+            Przykład
+          </button>
+
+          <!-- Przykłady czasowników -->
+          <div class="collapse mt-3" id="examples">
+            <div class="card card-body">
+              <ul>
+                <li><strong>Base Form</strong>: begin — <strong>Past Simple</strong>: began — <strong>Past Participle</strong>: begun</li>
+                <li><strong>Base Form</strong>: read — <strong>Past Simple</strong>: read — <strong>Past Participle</strong>: read</li>
+                <li><strong>Base Form</strong>: go — <strong>Past Simple</strong>: went — <strong>Past Participle</strong>: gone</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`,
+     `<div class="container mt-5">
+  <div class="row">
+    <div class="col-12 col-md-8 offset-md-2">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Third Group Verbs (Irregular Verbs)</h3>
+        </div>
+        <div class="card-body">
+          <p class="lead">
+            Third group verbs (irregular verbs) do not follow the standard rules for forming the past tense and past participle. These verbs have unique forms that need to be memorized, as they cannot be predicted based on rules.
+          </p>
+
+          <!-- Main features -->
+          <h5>Main Features:</h5>
+          <ul>
+            <li><strong>Unchanged base form:</strong> For example, the verb <em>read</em> keeps the same spelling in all forms, but the pronunciation differs:
+              <ul>
+                <li><strong>Present:</strong> [riːd]</li>
+                <li><strong>Past:</strong> [rɛd]</li>
+              </ul>
+            </li>
+            <li><strong>Form Differences:</strong> The forms of irregular verbs can be unique for each of their tenses. Example:
+              <ul>
+                <li><strong>Base Form:</strong> <em>begin</em> — <strong>Past Simple:</strong> <em>began</em> — <strong>Past Participle:</strong> <em>begun</em></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- Where are they used -->
+          <h5>Where are they used:</h5>
+          <p>Irregular verbs are widely used in English and appear in both spoken and written language. They are essential for correct formation of various tense constructions and are used in the following contexts:</p>
+          <ul>
+            <li><strong>Actions in the past:</strong> For example, in the sentence <em>"She went to the store."</em>, where the verb <em>went</em> is the irregular form of <em>go</em>.</li>
+            <li><strong>Present Perfect tense:</strong> In the sentence <em>"He has written a letter."</em>, the form <em>written</em> of the verb <em>write</em> is used to create Present Perfect.</li>
+            <li><strong>Passive voice:</strong> In the sentence <em>"The book was written by an unknown author."</em>, the form <em>written</em> of <em>write</em> is used.</li>
+          </ul>
+
+          <!-- Role of learning -->
+          <h5>Role of Learning:</h5>
+          <p>Learning irregular verbs is crucial for correctly forming sentences in English, especially in the past tense and in perfect constructions. These verbs are an important part of everyday speech and writing. In textbooks like <em>Essential Grammar in Use</em> by Raymond Murphy, irregular verbs are given special attention, including tables for memorization.</p>
+
+          <!-- Button for examples -->
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#examples" aria-expanded="false" aria-controls="examples">
+            Example
+          </button>
+
+          <!-- Examples of verbs -->
+          <div class="collapse mt-3" id="examples">
+            <div class="card card-body">
+              <ul>
+                <li><strong>Base Form</strong>: begin — <strong>Past Simple</strong>: began — <strong>Past Participle</strong>: begun</li>
+                <li><strong>Base Form</strong>: read — <strong>Past Simple</strong>: read — <strong>Past Participle</strong>: read</li>
+                <li><strong>Base Form</strong>: go — <strong>Past Simple</strong>: went — <strong>Past Participle</strong>: gone</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`]);
 BDTranslate.push(
     [`<div class="modal fade" id="diamondsModal" tabindex="-1" aria-labelledby="diamondsModalLabel" aria-hidden="true">
   <div class="modal-dialog">
