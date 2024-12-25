@@ -67,7 +67,8 @@ class LevelDataModel
         this.propertyArrayNameButton.push('Present Simple He, She, It');// пункт 2
         this.propertyArrayNameButton.push(this.translate.translate('Past Continuous'));// пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('Past Continuous Or Simple'));// пункт 1
-        this.propertyArrayNameButton.push(this.translate.translate('Irregular Verbs V3'));// пункт 1
+        this.propertyArrayNameButton.push(this.translate.translate('Irregular Verbs V3'));// пункт 2
+        this.propertyArrayNameButton.push(this.translate.translate('Present Perfect'));// пункт 1
         this.tic = this.propertyArrayNameButton.length;
     }
 
@@ -76,7 +77,7 @@ class LevelDataModel
     // пункта. Первый элемент находится в меню 2, второй тоже и т.д.
     static mapNameMenu(test) 
     {
-        const arrayForButton = [2,2,2,2,2,2,2,2,1,1,1,2,1,1,1,1,1,1,1,2,1,2,1,4,4,4,4,4,3,3,1,1,2,1,1,2];
+        const arrayForButton = [2,2,2,2,2,2,2,2,1,1,1,2,1,1,1,1,1,1,1,2,1,2,1,4,4,4,4,4,3,3,1,1,2,1,1,2,1];
         return arrayForButton[test];
     }
     
@@ -128,6 +129,7 @@ class LevelDataModel
         this.selectLevel('Вставьте глагол вместо троеточия или подберите правильное предложение в продолженном прошедшем времени.','pastContinuousArray',34);
         this.selectLevel('Выбрать правильную пару.','pastContinuousOrSimple',35);
         this.selectLevel('Выбрать правильную пару.','irregularVerbsV3',36);
+        this.selectLevel('Выбрать правильную пару.','presentPerfectIHaveDone',37);
         return this.rez;
     }
 
