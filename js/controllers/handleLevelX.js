@@ -6,9 +6,15 @@
 
 const handleLevelX = (dataObj, constIndexArray = false) =>
     {
-        // console.log(dataObj);
         // Записать в хранилище что работаем на неком уровне
         localStorage.setItem('level',dataObj.getLevel());
+
+        // Блокировка работы с форматом word-assembly если 
+        // выбрано изучение слов, там нет предложений, 
+        // которые можно собирать по словам
+        if (LevelDataModel.mapNameMenu(dataObj.getLevel()) === 2) {
+            localStorage.setItem('user_select','simple');
+        }
     
         // Взять значение индекса из локального хранилища
         // Используется как дефолтное значение
