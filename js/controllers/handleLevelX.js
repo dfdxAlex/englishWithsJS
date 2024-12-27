@@ -4,14 +4,23 @@
 // и на активные элементы накидываются обработчики событий.
 // данная функция так-же является обработчиком событий.
 
-const handleLevelX = (dataObj) =>
+const handleLevelX = (dataObj, constIndexArray = false) =>
     {
+        
         // Записать в хранилище что работаем на неком уровне
         localStorage.setItem('level',dataObj.getLevel());
     
-        // выбрать случайную позицию из массива вопроссов
-        // данный массив хранит в себе вопроссы и ответы.
-        const randomEl = getRandomInt(0, dataObj.getArrayDB().length-1);
+        // Взять значение индекса из локального хранилища
+        // Используется как дефолтное значение
+        let randomEl = localStorage.getItem('randomEl');
+        // Если работает цикл с новым вопросом, то сгенерировать
+        // новый номер вопроса
+        // Если нужно использовать старый вопрос, то останется
+        // дефолтное значение
+        if (constIndexArray === false)
+            // выбрать случайную позицию из массива вопроссов
+            // данный массив хранит в себе вопроссы и ответы.
+            randomEl = getRandomInt(0, dataObj.getArrayDB().length-1);
         //Записать в сторадж выбранный индекс
         localStorage.setItem('randomEl', randomEl);
         let mas = dataObj.getArrayDB()[randomEl];
@@ -21,6 +30,7 @@ const handleLevelX = (dataObj) =>
         // Если есть, то через одноимённую переменную оно передается в WorkingField
         // Где используется для установки в заголовок теста названия теста.
         let nameLeson = false;
+        //console.log(dataObj.getArrayDB());
         if ('nameLeson' in dataObj.getArrayDB())
             nameLeson = dataObj.getArrayDB().nameLeson;
 

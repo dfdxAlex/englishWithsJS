@@ -17,7 +17,7 @@ class LevelDataModel
     constructor(level = 1)
     {
         this.rez = false;
-        this.level = level+0;
+        this.level = parseInt(level); // parsInt() добавил 27.12.2024
         this.ex = new Exercise();
         this.translate = FactoryRegistr.getObject("LanguageController");
         this.lang = localStorage.getItem('EnglishWithJs_lang');

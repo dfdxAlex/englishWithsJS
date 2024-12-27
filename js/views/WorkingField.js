@@ -125,7 +125,7 @@ class WorkingField {
         });
 
         const buttonOk = `<div class='row mb-2'>
-                            <div class='col-6'>
+                            <div class='col-12'>
                               <button 
                                 style='width: 100%; 
                                        border: 1px solid rgba(0, 0, 0, 0.2); 
@@ -134,17 +134,6 @@ class WorkingField {
                                 id='button-ok'
                                >
                                 Проверить
-                              </button>
-                            </div>
-                            <div class='col-6'>
-                              <button 
-                                style='width: 100%; 
-                                       border: 1px solid rgba(0, 0, 0, 0.2); 
-                                       box-shadow: 0 4px 8px rgba(0,0,0,0.2);' 
-                                type='button' 
-                                id='button-reset'
-                               >
-                                Сбросс
                               </button>
                             </div>
                            </div>`;

@@ -18,32 +18,16 @@ class EventController {
         if (SettingForProgram.selectTypeTest === "word-assembly") {
             document.querySelector('.fieldSetWorkField').onclick = handleClickTestTwo;
             
-        // которое возвращает ее обратно
-        // должен был вернуть кнопку обратно вниз
-        document.querySelector('#container-for-rezult').onclick = (el) => {
-
-            el.stopPropagation();
-
-            //Найти нажатую кнопку - при возврате слова назад
-            const dataReturn = '[data-index="'+el.target.dataset.index+'"]';
-            //console.log(document.querySelector('#container-for-rezult'));
-            
-            const buttonKillReturn = document.querySelector([dataReturn]);
-
-            const buttonBufferReturn = buttonKillReturn.innerHTML;
-            console.log(buttonKillReturn);
-            buttonKillReturn.remove();
-
-            let container = document.querySelector('.fieldSetWorkField').innerHTML;
-            container+= buttonBufferReturn;
-            document.querySelector('.fieldSetWorkField').innerHTML = container;
-            
-
-            // const obj = FactoryRegistr.getObject('WorkingField');
-            // obj.initWordAssembly();
-            console.log('Вернуть назад');
-        };
-
+            // которое возвращает ее обратно
+            // должен был вернуть кнопку обратно вниз
+            document.querySelector('#container-for-rezult').onclick = (el) => {
+                el.stopPropagation();
+                const i = localStorage.getItem('level');
+                const obj = new LevelDataModel(i);
+                // перерисовать рабочее поле.
+                // параметр true отключает генерацию нового вопросса
+                handleLevelX(obj, true);
+            };
         }
         
         // Добавить обработчик события по кнопке с переводом.
