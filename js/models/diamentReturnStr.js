@@ -7,9 +7,11 @@ function diamentReturnStr()
 
     for(let key in localStorage) {
         unitSum = parseInt(localStorage.getItem(key));
-        if (isNaN(unitSum)) continue;
+        if (key === 'level21_Ok') unitSum = "";
+        if (isNaN(unitSum) || unitSum == "") continue;
 
         if (key.includes('_Ok')) {
+            //console.log(key);
             sumOk += unitSum;
         }
         if (key.includes('_Error')) {
@@ -20,7 +22,8 @@ function diamentReturnStr()
         }
     }
 
-    let diament = parseInt(sumOk - sumError*3 - sumTranslate/2);
+    const diamandTime = sumOk - sumError*3 - sumTranslate/2;
+    let diament = parseInt(diamandTime);
 
     let emodziDiament = '💎';
     if (diament<0) emodziDiament = '💀';
