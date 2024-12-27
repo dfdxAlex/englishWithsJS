@@ -10,8 +10,8 @@ function calculateBonusMultiplier(propertyForBonus)
     // вычислить нахождение числа ошибок
     let errorName = propertyForBonus.levexW.replace('Ok', "Error");
     // Узнать число правильных и не правильных ответов
-    const ok = +localStorage.getItem(propertyForBonus.levexW);
-    const error = +localStorage.getItem(errorName);
+    const ok = parseInt(localStorage.getItem(propertyForBonus.levexW));
+    const error = parseInt(localStorage.getItem(errorName));
 
     // Узнать число существующих тестов
     const levelDataModel = FactoryRegistr.getObject("LevelDataModel");
@@ -57,6 +57,13 @@ function calculateBonusMultiplier(propertyForBonus)
     }
 
     ticLocal = bonusOne * bonusTwo * bonusThree;
+
+    // Если работаем с тестом word-assembly то удвоить баллы
+    if (localStorage.getItem('user_select') === 'word-assembly') {
+        ticLocal*=2;
+        if (ticLocal > 6) return 6;
+    }
+    //console.log(localStorage.user_select);
     if (ticLocal < 0.4) return 0.4;
     if (ticLocal > 3) return 3;
     return ticLocal;
