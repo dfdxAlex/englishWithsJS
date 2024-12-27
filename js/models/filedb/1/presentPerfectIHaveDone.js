@@ -859,4 +859,13 @@ const presentPerfectIHaveDone = [
         "Я ще не отримав.", 
         "Jeszcze nie otrzymałem."
       ],
+
+
+      // Заменяет многоточие словом
+      function (id) {
+         return replaceEllipsisWithWord(id, presentPerfectIHaveDone);
+      }
 ];
+
+    // Если это свойство есть, то оно попадает в заголовок теста
+    presentPerfectIHaveDone.nameLeson = "Present Perfect";

@@ -1309,6 +1309,7 @@ const presentSimple = [
           "Вони не миють свою машину кожної суботи.",
           "Nie myją samochodu w każdą sobotę."
         ],
+        // Заменяет многоточие словом
         function (id) {
             return replaceEllipsisWithWord(id, presentSimple);
         }

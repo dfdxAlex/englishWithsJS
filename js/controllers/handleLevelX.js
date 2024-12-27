@@ -6,7 +6,6 @@
 
 const handleLevelX = (dataObj, constIndexArray = false) =>
     {
-        
         // Записать в хранилище что работаем на неком уровне
         localStorage.setItem('level',dataObj.getLevel());
     

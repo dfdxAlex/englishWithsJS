@@ -109,6 +109,9 @@ class WorkingField {
         if (question.includes('...')) {
             question = question.replace('...', option1);
         }
+        if (question.includes('…')) {
+            question = question.replace('…', option1);
+        }
 
         // массив arrayButton должен содержать разбитые на слова предложения
         const arrayButton = question.split(' ');
