@@ -78,7 +78,16 @@ function handleOkErr(str, event) {
     // продублировать в поле предыдущего вопросса и ответа
     const oldElementText = document.getElementById('question');
     const clickedElementOld = document.getElementById('question_old');
-    clickedElementOld.innerText = oldElementText.innerText;
+    // Проверить есть ли поле с вопроссом, это поле отсутствует 
+    // При втором уровне тестов, сборка предложения по словам
+    if (oldElementText !== null)
+        clickedElementOld.innerText = oldElementText.innerText;
+    else
+        // Если не было поля с вопроссом, то инфу про предыдущий ответ
+        // можно поймать на этой кнопке в пределах одного цикла.
+        // Данная кнопка получает текст последнего ответа, но при перерисовке
+        // информация теряется, поэтому на странице её не видно.
+        clickedElementOld.innerText = document.querySelector('#button-ok').innerText;
 
     // Поле со старым или текущим вопроссом
     const fieldsetLegend = document.getElementById('fieldset-legend');

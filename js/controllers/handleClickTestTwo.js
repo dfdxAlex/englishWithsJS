@@ -20,6 +20,4 @@ function handleClickTestTwo(event)
     let pullButton = document.querySelector('#container-for-rezult').innerHTML;
     pullButton+=buttonBuffer;
     document.querySelector('#container-for-rezult').innerHTML = pullButton;
-
-
 }

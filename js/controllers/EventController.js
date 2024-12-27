@@ -17,9 +17,8 @@ class EventController {
         // Оригинальные обработчики событий для второго варианта теста
         if (SettingForProgram.selectTypeTest === "word-assembly") {
             document.querySelector('.fieldSetWorkField').onclick = handleClickTestTwo;
-            
-            // которое возвращает ее обратно
-            // должен был вернуть кнопку обратно вниз
+
+            // вернуть все кнопки обратно вниз.
             document.querySelector('#container-for-rezult').onclick = (el) => {
                 el.stopPropagation();
                 const i = localStorage.getItem('level');
@@ -28,6 +27,7 @@ class EventController {
                 // параметр true отключает генерацию нового вопросса
                 handleLevelX(obj, true);
             };
+
         }
         
         // Добавить обработчик события по кнопке с переводом.

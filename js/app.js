@@ -36,5 +36,6 @@ SettingForProgram.initializeToProperty();
 // EnglishWithJs_lang - выбранный язык ru, en, pl, eu
 // 'intTranslate_'+level - число заказанных подсказок на каждом уровне
 // 'user_select' - информация о том, какой режим теста выбран
+// 'indexMax' - число кнопок, которое получилось при разбитии предложения на отдельные слова
 
 // sk_a0c451bdcbb8b32e659dca5f6fd1b3d5ff33e432e4d57b34

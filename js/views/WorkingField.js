@@ -120,9 +120,12 @@ class WorkingField {
         }
 
         // создание кнопок
+        let indexMax = 0;
         arrayButton.forEach((element, index) => {
             buttonOption.push(strStart+`" data-index="${index}" id="word${index}"> `+element+this.strFinish);
+            indexMax = index;
         });
+        localStorage.setItem('indexMax', indexMax);
 
         const buttonOk = `<div class='row mb-2'>
                             <div class='col-12'>
@@ -132,6 +135,7 @@ class WorkingField {
                                        box-shadow: 0 4px 8px rgba(0,0,0,0.2);' 
                                 type='button' 
                                 id='button-ok'
+                                onclick = 'handleButtonOk(event)'
                                >
                                 Проверить
                               </button>

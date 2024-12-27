@@ -30,7 +30,6 @@ const handleLevelX = (dataObj, constIndexArray = false) =>
         // Если есть, то через одноимённую переменную оно передается в WorkingField
         // Где используется для установки в заголовок теста названия теста.
         let nameLeson = false;
-        //console.log(dataObj.getArrayDB());
         if ('nameLeson' in dataObj.getArrayDB())
             nameLeson = dataObj.getArrayDB().nameLeson;
 
