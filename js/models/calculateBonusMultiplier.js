@@ -54,35 +54,51 @@ function calculateBonusMultiplier(propertyForBonus)
     const bonusTwo = levelTest / numberTest * 2;
     log.bonusTwo = bonusTwo;
 
-    //log.maxOkLocal = {};
     // Третий бонус - самые малопройденные тесты дают больше баллов
-    let maxOk = 0, maxError = 0;
+    // Плюс создать массив с цифрами, сколько есть данных по числу
+    // пройденных тестов
+    const testsOk = []; // набить массив цифрами
+    const testsError = []; // набить массив цифрами
     arrayNumberTest.forEach((element, index) => {
         let nameKey = 'level'+index+'_Ok';
-        
         let maxOkLocal = parseFloat(localStorage.getItem(nameKey));
         if (isNaN(maxOkLocal)) maxOkLocal = 0;
-        if (maxOkLocal > maxOk) maxOk = maxOkLocal;
+        testsOk.push(maxOkLocal);
+
         nameKey = 'level'+index+'_Error';
         let maxErrorLocal = parseFloat(localStorage.getItem(nameKey));
         if (isNaN(maxErrorLocal)) maxErrorLocal = 0;
-        if (maxErrorLocal > maxError) maxError = maxErrorLocal;
+        testsError.push(maxErrorLocal);
     });
+
+    const maxOk = Math.max(...testsOk);
+    let maxError = Math.max(...testsError);
+
     if (maxError === maxOk) maxError+=1;
     log.maxError = maxError;
+    log.testsOk = testsOk;
     log.maxOk = maxOk;
+    log.testsError = testsError;
 
     const bonusThree = (1 - (ok + error)/(maxOk+maxError)) * 3;
     log.bonusThree = bonusThree;
 
-    if (propertyForBonus.log) {
-        console.log('---calculateBonusMultiplier---');
-        console.log(log);
-        console.log('***************************');
-    }
+    log.calculateMedian = calculateMedian(testsOk);
 
-    ticLocal = bonusOne * bonusTwo * bonusThree;
+    let diferent;
+    if (ok == 0 && calculateMedian(testsOk) == 0) diferent = 1;
+    if (ok > calculateMedian(testsOk)) diferent = calculateMedian(testsOk)+1 / ok;
+    // else if (ok > calculateMedian(testsOk) && ok==0) diferent = 1;
+    else if (ok < calculateMedian(testsOk)) diferent = ok+1 / calculateMedian(testsOk);
+    // else if (ok < calculateMedian(testsOk) && calculateMedian(testsOk)==0) diferent = 1;
 
+
+    let bonusFour = diferent * 3;
+    log.bonusFour = bonusFour;
+
+
+    ticLocal = bonusOne + bonusTwo + bonusThree + bonusFour;
+    log.ticLocalFull = ticLocal;
     // Если работаем с тестом word-assembly то удвоить баллы
     if (localStorage.getItem('user_select') === 'word-assembly') {
         ticLocal*=2;
@@ -92,6 +108,27 @@ function calculateBonusMultiplier(propertyForBonus)
     //console.log(localStorage.user_select);
     if (ticLocal < 0.4) return 0.4;
     if (ticLocal > 3) return 3;
-    
+    log.ticLocalRezult = ticLocal;
+    if (propertyForBonus.log) {
+        console.log('---calculateBonusMultiplier---');
+        console.log(log);
+        console.log('***************************');
+    }
+
     return ticLocal;
+}
+
+
+
+function calculateMedian(array) {
+    const sorted = [...array].sort((a, b) => a - b); // Сортируем массив
+    const mid = Math.floor(sorted.length / 2);       // Находим середину
+
+    if (sorted.length % 2 === 0) {
+        // Если чётное количество элементов, среднее двух центральных
+        return (sorted[mid - 1] + sorted[mid]) / 2;
+    } else {
+        // Если нечётное, возвращаем центральный элемент
+        return sorted[mid];
+    }
 }
