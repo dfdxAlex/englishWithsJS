@@ -20,8 +20,14 @@ const resetStatistic = (reset = true) => {
     // пересчитать данные.
     if (reset) {
         // Если вдруг ошибка то обнулить
-        if (isNaN(localStorage.getItem(resetError))) localStorage.setItem(resetError,0);
-        if (isNaN(localStorage.getItem(resetOk))) localStorage.setItem(resetOk,0);
+        if (isNaN(numberError)) {
+            localStorage.setItem(resetError,0);
+            numberError = 0;
+        }
+        if (isNaN(numberOk)) {
+            localStorage.setItem(resetOk,0);
+            numberOk = 0;
+        }
 
         [numberOk, numberError] = succesP(numberOk, numberError);
 
