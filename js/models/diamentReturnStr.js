@@ -3,16 +3,20 @@ function diamentReturnStr()
     let sumOk = 0;
     let sumError = 0;
     let sumTranslate = 0;
+    let unitSum = 0;
 
     for(let key in localStorage) {
+        unitSum = parseInt(localStorage.getItem(key));
+        if (isNaN(unitSum)) continue;
+
         if (key.includes('_Ok')) {
-            sumOk += parseInt(localStorage.getItem(key));
+            sumOk += unitSum;
         }
         if (key.includes('_Error')) {
-            sumError += parseInt(localStorage.getItem(key));
+            sumError += unitSum;
         }
         if (key.includes('intTranslate')) {
-            sumTranslate += parseInt(localStorage.getItem(key));
+            sumTranslate += unitSum;
         }
     }
 
