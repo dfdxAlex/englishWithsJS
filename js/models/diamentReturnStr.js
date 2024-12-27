@@ -7,7 +7,7 @@ function diamentReturnStr()
 
     for(let key in localStorage) {
         unitSum = parseInt(localStorage.getItem(key));
-        if (key === 'level21_Ok') unitSum = "";
+        //if (key === 'level21_Ok') unitSum = "";
         if (isNaN(unitSum) || unitSum == "") continue;
 
         if (key.includes('_Ok')) {

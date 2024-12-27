@@ -67,8 +67,6 @@ class WorkingField {
     const strStart = `<div class='row mb-2'><div class='col-12'><button style='border-radius: 10px; margin-left: 5px; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button'`;
     let question, option1, option2, option3, option4;
 
-
-
     if (arrayBD !== undefined && arrayBD.length == 8) {
         [question, option1, option2, option3, option4,
         this.translateRu, this.translateUa, this.translatePl] = arrayBD;
@@ -81,7 +79,6 @@ class WorkingField {
 
         // Настроить переводчик
         const transL = FactoryRegistr.getObject("LanguageController");
-
 
         //////////////////////////////////////////////////////////
         // Используем Card вместо fieldset

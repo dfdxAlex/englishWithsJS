@@ -21,10 +21,12 @@ function handleOkErr(str, event) {
     // либо словом "Ok", либо "Error", эта инфа приходит через
     // входной параметр функции (str)
     const level = localStorage.getItem('level');
+    
     const levexW = 'level'+level+'_'+str;
+    
     let ticTime = localStorage.getItem(levexW);
-    if (isNaN(unitSum) || unitSum == "") ticTime = 0;
-    let tic = parseInt(ticTime);
+    if (isNaN(ticTime) || ticTime == "" || ticTime == null) ticTime = 0;
+    let tic = parseFloat(ticTime);
 
     // объект с разными данными для подсчёта бонусов
     const propertyForBonus = {
@@ -38,7 +40,6 @@ function handleOkErr(str, event) {
     // функция calculateBonusMultiplier() берет число текущих балов
     // и увеличивает его. Правила смотреть внутри функции
     localStorage.setItem(levexW,tic+calculateBonusMultiplier(propertyForBonus));
-
     // Достать из регистра объект переводчика
     const translate = FactoryRegistr.getObject('LanguageController');
 
@@ -101,7 +102,7 @@ function handleOkErr(str, event) {
         clickedEl.style.color = "white";
         clickedElementOld.style.color = "white";
         fieldsetLegend.innerHTML = translate.translate('Предыдущий вопрос/ответ');
-        handleLevelX(new LevelDataModel(+localStorage.getItem('level')));
+        handleLevelX(new LevelDataModel(localStorage.getItem('level')));
     }
     else {
         clickedEl.style.backgroundColor = "red";

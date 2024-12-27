@@ -9,13 +9,18 @@ function calculateBonusMultiplier(propertyForBonus)
 
     // вычислить нахождение числа ошибок
     let errorName = propertyForBonus.levexW.replace('Ok', "Error");
+    
     // Узнать число правильных и не правильных ответов
-    const ok = parseInt(localStorage.getItem(propertyForBonus.levexW));
-    const error = parseInt(localStorage.getItem(errorName));
+    let ok = parseFloat(localStorage.getItem(propertyForBonus.levexW));
+    if (isNaN(ok)) ok = 0;
+    
+    let error = parseFloat(localStorage.getItem(errorName));
+    if (isNaN(error)) error = 0;
 
     // Узнать число существующих тестов
     const levelDataModel = FactoryRegistr.getObject("LevelDataModel");
     const numberTest = levelDataModel.getArrayNameButton().length;
+
     // Уровень текущего теста
     const levelTest = propertyForBonus.level;
 
@@ -43,14 +48,17 @@ function calculateBonusMultiplier(propertyForBonus)
     let maxOk = 0, maxError = 0;
     arrayNumberTest.forEach((element, index) => {
         let nameKey = 'level'+index+'_Ok';
-        let maxOkLocal = +localStorage.getItem(nameKey);
+        let maxOkLocal = parseFloat(localStorage.getItem(nameKey));
+        if (isNaN(maxOkLocal)) maxOkLocal = 0;
+        
         if (maxOkLocal > maxOk) maxOk = maxOkLocal;
         nameKey = 'level'+index+'_Error';
-        let maxErrorLocal = +localStorage.getItem(nameKey);
+        let maxErrorLocal = parseFloat(localStorage.getItem(nameKey));
+        if (isNaN(maxErrorLocal)) maxErrorLocal = 0;
+        
         if (maxErrorLocal > maxError) maxError = maxErrorLocal;
     });
     const bonusThree = (1 - (ok + error)/(maxOk+maxError)) * 3;
-    
 
     if (propertyForBonus.log) {
         console.log(bonusOne * bonusTwo * bonusThree);
@@ -63,8 +71,10 @@ function calculateBonusMultiplier(propertyForBonus)
         ticLocal*=2;
         if (ticLocal > 6) return 6;
     }
+
     //console.log(localStorage.user_select);
     if (ticLocal < 0.4) return 0.4;
     if (ticLocal > 3) return 3;
+    
     return ticLocal;
 }

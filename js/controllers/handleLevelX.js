@@ -6,12 +6,14 @@
 
 const handleLevelX = (dataObj, constIndexArray = false) =>
     {
+        // console.log(dataObj);
         // Записать в хранилище что работаем на неком уровне
         localStorage.setItem('level',dataObj.getLevel());
     
         // Взять значение индекса из локального хранилища
         // Используется как дефолтное значение
         let randomEl = localStorage.getItem('randomEl');
+        
         // Если работает цикл с новым вопросом, то сгенерировать
         // новый номер вопроса
         // Если нужно использовать старый вопрос, то останется
@@ -29,6 +31,10 @@ const handleLevelX = (dataObj, constIndexArray = false) =>
         // значение вопроса в рабочий массив. Если не входит, то пользователь
         // переключил тесты и можно спокойно сгенерировать новый вопрос.
         if (parseInt(randomEl) > dataObj.getArrayDB().length-1) {
+            randomEl = getRandomInt(0, dataObj.getArrayDB().length-1);
+        }
+
+        if (randomEl == null) {
             randomEl = getRandomInt(0, dataObj.getArrayDB().length-1);
         }
 
