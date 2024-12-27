@@ -29,7 +29,7 @@ const resetStatistic = (reset = true) => {
         localStorage.setItem(resetOk,numberOk); 
     }
     const translate = FactoryRegistr.getObject("LanguageController");
-    document.getElementById('level24').innerHTML = translate.translate('Пройдено заданий:') + localStorage.getItem(resetOk);
+    document.getElementById('level24').innerHTML = translate.translate('Пройдено заданий:') + parseInt(localStorage.getItem(resetOk));
     document.getElementById('level25').innerHTML = translate.translate('Ошибок:') + localStorage.getItem(resetError);
     document.getElementById('level26').innerHTML = translate.translate('Успех:') + Math.floor(numberOk/(numberOk+numberError)*100)+'%';
     //перерисовать статус диамантов
