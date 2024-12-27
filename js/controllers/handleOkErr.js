@@ -22,7 +22,9 @@ function handleOkErr(str, event) {
     // входной параметр функции (str)
     const level = localStorage.getItem('level');
     const levexW = 'level'+level+'_'+str;
-    let tic = +localStorage.getItem(levexW);
+    const ticTime = localStorage.getItem(levexW);
+    if (isNaN(unitSum) || unitSum == "") ticTime = 0;
+    let tic = parseInt(ticTime);
 
     // объект с разными данными для подсчёта бонусов
     const propertyForBonus = {
