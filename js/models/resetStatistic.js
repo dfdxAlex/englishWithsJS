@@ -13,8 +13,8 @@ const resetStatistic = (reset = true) => {
     const resetOk = 'level'+level+'_Ok';
     const resetError = 'level'+level+'_Error';
 
-    let numberError = +localStorage.getItem(resetError);
-    let numberOk =  +localStorage.getItem(resetOk);
+    let numberError = parseInt(localStorage.getItem(resetError));
+    let numberOk =  parseInt(localStorage.getItem(resetOk));
 
     // переменная станет false если не было команды на сброс, но нужно 
     // пересчитать данные.
@@ -30,7 +30,7 @@ const resetStatistic = (reset = true) => {
     }
     const translate = FactoryRegistr.getObject("LanguageController");
     document.getElementById('level24').innerHTML = translate.translate('Пройдено заданий:') + parseInt(localStorage.getItem(resetOk));
-    document.getElementById('level25').innerHTML = translate.translate('Ошибок:') + localStorage.getItem(resetError);
+    document.getElementById('level25').innerHTML = translate.translate('Ошибок:') + parseInt(localStorage.getItem(resetError));
     document.getElementById('level26').innerHTML = translate.translate('Успех:') + Math.floor(numberOk/(numberOk+numberError)*100)+'%';
     //перерисовать статус диамантов
     diament();
