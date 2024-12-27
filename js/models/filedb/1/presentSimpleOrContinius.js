@@ -190,12 +190,12 @@ const presentSimpleOrContinius = [
     "Idziemy do sklepu w soboty."
 ],
 [
-    "She ___ a letter to her friend.",
+    "She ___ a letter to her friend every month.",
     "writes",
     "is writing",
     "wrote",
     "will write",
-    "Она пишет письмо своему другу.",
+    "Она пишет письмо своему другу каждый месяц.",
     "Вона пише листа своєму другові.",
     "Ona pisze list do przyjaciela."
 ],

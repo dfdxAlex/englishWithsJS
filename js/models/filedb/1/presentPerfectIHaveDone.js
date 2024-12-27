@@ -421,7 +421,7 @@ const presentPerfectIHaveDone = [
       ],
       [
         "Have you seen that movie?", 
-        "Yes, I watched it last weekend.", 
+        "Yes, I have seen it.", 
         "I watch it now.", 
         "I will watch it tomorrow.", 
         "I saw it last month.", 
@@ -601,7 +601,7 @@ const presentPerfectIHaveDone = [
       ],
       [
         "Have they met each other?", 
-        "Yes, they met at the party last weekend.", 
+        "Yes, they have met each other.", 
         "They meet regularly.", 
         "They will meet next month.", 
         "They met last year.", 
@@ -691,7 +691,7 @@ const presentPerfectIHaveDone = [
       ],
       [
         "No, he hasn't had the chance to go yet.", 
-        "Has he visited the new museum?", 
+        "Has he had the chance to go?", 
         "Does he visit it every weekend?", 
         "Will he visit it soon?", 
         "Had he visited it last week?", 
