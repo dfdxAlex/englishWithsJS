@@ -1025,9 +1025,9 @@ const presentPerfectIHaveDone = [
         "Yes, I just have packed.",
         "Yes, I has just packed.",
         "Yes just, I have packed.",
-        "Она завершила проект?",
-        "Вона завершила проект?",
-        "Czy ukończyła projekt?"
+        "Мы уже собрали чемоданы?",
+        "Ми спакували валізи?",
+        "Czy spakowaliśmy walizki?"
     ],
     [
         "Have you written the report?",
@@ -1145,9 +1145,9 @@ const presentPerfectIHaveDone = [
         "Yes, I just have learned.",
         "Yes, I has just learned.",
         "Yes just, I have learned.",
-        "Он принял свои лекарства?",
-        "Він прийняв свої ліки?",
-        "Czy wziął swoje lekarstwa?"
+        "Она выучила песню?",
+        "Вона вивчила пісню?",
+        "Czy ona nauczyła się tej piosenki?"
     ],
     [
         "Have they planned the trip?",
