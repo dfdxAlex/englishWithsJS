@@ -76,7 +76,11 @@ class LevelDataModel
     // пункта. Первый элемент находится в меню 2, второй тоже и т.д.
     static mapNameMenu(test) 
     {
-        const arrayForButton = [2,2,2,2,2,2,2,2,1,1,1,2,1,1,1,1,1,1,1,2,1,2,1,4,4,4,4,4,3,3,1,1,2,1,1,2,1];
+        const arrayForButton = [2,2,2,2,2,2,2,2,1,1,
+                                1,2,1,1,1,1,1,1,1,2,
+                                1,2,1,4,4,4,4,4,3,3,
+                                1,1,2,1,1,2,1];
+
         return arrayForButton[test];
     }
     

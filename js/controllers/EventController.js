@@ -21,7 +21,7 @@ class EventController {
                 setWorkField.onclick = handleClickTestTwo;
             }
 
-            // вернуть все кнопки обратно вниз.
+            // вернуть все кнопки обратно вниз, если был клик по любой кнопку
             let containerForRezult = document.querySelector('#container-for-rezult');
             if (containerForRezult) {
                 containerForRezult.onclick = (el) => {
