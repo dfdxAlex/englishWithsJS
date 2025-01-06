@@ -1959,6 +1959,406 @@ const presentPerfectIHaveDone = [
     "Він вже грав на гітарі?",
     "Czy on już grał na gitarze?"
 ],
+[
+    "Have you ever been to Paris?",
+    "Yes, I have been to Paris.",
+    "No, I been to Paris.",
+    "Yes, I have to Paris.",
+    "I never have been to Paris.",
+    "Ты когда-нибудь был в Париже?",
+    "Ти коли-небудь був у Парижі?",
+    "Czy kiedykolwiek byłeś w Paryżu?"
+  ],
+  [
+    "Has she never eaten sushi?",
+    "No, she has never eaten sushi.",
+    "Yes, she have never eaten sushi.",
+    "No, she has eaten sushi.",
+    "She has never eat sushi.",
+    "Она никогда не ела суши?",
+    "Вона ніколи не їла суші?",
+    "Czy ona nigdy nie jadła sushi?"
+  ],
+  [
+    "Have they ever played tennis?",
+    "Yes, they have played tennis.",
+    "No, they has played tennis.",
+    "Yes, they ever played tennis.",
+    "They have ever played tennis?",
+    "Они когда-нибудь играли в теннис?",
+    "Вони коли-небудь грали в теніс?",
+    "Czy oni kiedykolwiek grali w tenisa?"
+  ],
+  [
+    "Have we never tried this game before?",
+    "No, we have never tried this game before.",
+    "Yes, we has never tried this game.",
+    "No, we have tried this game.",
+    "We have never try this game before.",
+    "Мы никогда не пробовали эту игру раньше?",
+    "Ми ніколи не пробували цю гру раніше?",
+    "Czy nigdy wcześniej nie próbowaliśmy tej gry?"
+  ],
+  [
+    "Has he ever met a famous person?",
+    "Yes, he has met a famous person.",
+    "No, he never met a famous person.",
+    "Yes, he has meet a famous person.",
+    "He has ever met a famous person?",
+    "Он когда-нибудь встречал знаменитость?",
+    "Він коли-небудь зустрічав відому людину?",
+    "Czy on kiedykolwiek spotkał sławną osobę?"
+  ],
+  [
+    "Have you never seen this movie?",
+    "No, I have never seen this movie.",
+    "Yes, I has never seen this movie.",
+    "No, I have saw this movie.",
+    "I never have seen this movie.",
+    "Ты никогда не видел этот фильм?",
+    "Ти ніколи не бачив цей фільм?",
+    "Czy nigdy nie widziałeś tego filmu?"
+  ],
+  [
+    "Have they ever traveled by plane?",
+    "Yes, they have traveled by plane.",
+    "No, they has traveled by plane.",
+    "Yes, they have traveling by plane.",
+    "They have ever traveled by plane.",
+    "Они когда-нибудь летали на самолёте?",
+    "Вони коли-небудь літали літаком?",
+    "Czy oni kiedykolwiek podróżowali samolotem?"
+  ],
+  [
+    "Have you never visited this museum?",
+    "No, I have never visited this museum.",
+    "Yes, I has visited this museum.",
+    "No, I have visit this museum.",
+    "I never have visited this museum.",
+    "Ты никогда не посещал этот музей?",
+    "Ти ніколи не відвідував цей музей?",
+    "Czy nigdy nie odwiedziłeś tego muzeum?"
+  ],
+  [
+    "Has she ever worked abroad?",
+    "Yes, she has worked abroad.",
+    "No, she has work abroad.",
+    "Yes, she has ever worked abroad.",
+    "She has ever worked abroad?",
+    "Она когда-нибудь работала за границей?",
+    "Вона коли-небудь працювала за кордоном?",
+    "Czy ona kiedykolwiek pracowała za granicą?"
+  ],
+  [
+    "Have we never talked about this topic?",
+    "No, we have never talked about this topic.",
+    "Yes, we has talked about this topic.",
+    "No, we have talk about this topic.",
+    "We never have talked about this topic.",
+    "Мы никогда не говорили на эту тему?",
+    "Ми ніколи не говорили на цю тему?",
+    "Czy nigdy nie rozmawialiśmy na ten temat?"
+  ],
+  [
+    "Has he ever solved this puzzle?",
+    "Yes, he has solved this puzzle.",
+    "No, he have solved this puzzle.",
+    "Yes, he has solving this puzzle.",
+    "He has ever solved this puzzle?",
+    "Он когда-нибудь решал эту головоломку?",
+    "Він коли-небудь розв’язував цю головоломку?",
+    "Czy on kiedykolwiek rozwiązał tę zagadkę?"
+  ],
+  [
+    "Have you ever cooked Italian food?",
+    "Yes, I have cooked Italian food.",
+    "No, I have cook Italian food.",
+    "Yes, I has cooked Italian food.",
+    "I ever have cooked Italian food.",
+    "Ты когда-нибудь готовил итальянскую еду?",
+    "Ти коли-небудь готував італійську їжу?",
+    "Czy kiedykolwiek gotowałeś włoskie jedzenie?"
+  ],
+  [
+    "Have they never missed a train?",
+    "No, they have never missed a train.",
+    "Yes, they have miss a train.",
+    "No, they never have missed a train.",
+    "They has never missed a train.",
+    "Они никогда не опаздывали на поезд?",
+    "Вони ніколи не запізнювались на потяг?",
+    "Czy oni nigdy nie spóźnili się na pociąg?"
+  ],
+  [
+    "Has he ever climbed a mountain?",
+    "Yes, he has climbed a mountain.",
+    "No, he have climbed a mountain.",
+    "Yes, he has climb a mountain.",
+    "He has never climbed a mountain.",
+    "Он когда-нибудь поднимался на гору?",
+    "Він коли-небудь підіймався на гору?",
+    "Czy on kiedykolwiek wspinał się na górę?"
+  ],
+  [
+    "Have you ever written a book?",
+    "Yes, I have written a book.",
+    "No, I have write a book.",
+    "Yes, I has written a book.",
+    "I never have written a book.",
+    "Ты когда-нибудь писал книгу?",
+    "Ти коли-небудь писав книгу?",
+    "Czy kiedykolwiek napisałeś książkę?"
+  ],
+  [
+    "Have they ever played the piano?",
+    "Yes, they have played the piano.",
+    "No, they has played piano.",
+    "Yes, they have playing the piano.",
+    "They have ever played piano.",
+    "Они когда-нибудь играли на пианино?",
+    "Вони коли-небудь грали на піаніно?",
+    "Czy oni kiedykolwiek grali na pianinie?"
+  ],
+  [
+    "Has she ever won a prize?",
+    "Yes, she has won a prize.",
+    "No, she has win a prize.",
+    "Yes, she have won a prize.",
+    "She has never won a prize.",
+    "Она когда-нибудь выигрывала приз?",
+    "Вона коли-небудь вигравала приз?",
+    "Czy ona kiedykolwiek wygrała nagrodę?"
+  ],
+  [
+    "Have you never drawn a picture?",
+    "No, I have never drawn a picture.",
+    "Yes, I has never drawn a picture.",
+    "No, I have draw a picture.",
+    "I never have drawn a picture.",
+    "Ты никогда не рисовал картину?",
+    "Ти ніколи не малював картину?",
+    "Czy nigdy nie rysowałeś obrazu?"
+  ],
+  [
+    "Have they never played basketball?",
+    "No, they have never played basketball.",
+    "Yes, they has played basketball.",
+    "No, they never have played basketball.",
+    "They has never played basketball.",
+    "Они никогда не играли в баскетбол?",
+    "Вони ніколи не грали в баскетбол?",
+    "Czy oni nigdy nie grali w koszykówkę?"
+  ],
+  [
+    "Has he ever read a novel?",
+    "Yes, he has read a novel.",
+    "No, he has never read a novel.",
+    "Yes, he have read a novel.",
+    "He has never read novel.",
+    "Он когда-нибудь читал роман?",
+    "Він коли-небудь читав роман?",
+    "Czy on kiedykolwiek czytał powieść?"
+  ],
+  [
+    "Yes, I have eaten sushi.", 
+    "Have you ever eaten sushi?", 
+    "Did you ever eat sushi?", 
+    "Have you never eaten sushi?", 
+    "Have you eat sushi?", 
+    "Да, я ел суши.", 
+    "Так, я їв суші.", 
+    "Tak, jadłem sushi."
+  ],
+  [
+    "No, I have never traveled by plane.", 
+    "Have you ever traveled by plane?", 
+    "Did you ever travel by plane?", 
+    "Have you traveled by plane?", 
+    "Have you never traveled by plane?", 
+    "Нет, я никогда не путешествовал на самолёте.", 
+    "Ні, я ніколи не подорожував літаком.", 
+    "Nie, nigdy nie podróżowałem samolotem."
+  ],
+  [
+    "Yes, she has read that book.", 
+    "Has she ever read that book?", 
+    "Did she ever read that book?", 
+    "Has she never read that book?", 
+    "Have she ever read that book?", 
+    "Да, она читала эту книгу.", 
+    "Так, вона читала цю книгу.", 
+    "Tak, ona czytała tę książkę."
+  ],
+  [
+    "No, I have never met a celebrity.", 
+    "Have you ever met a celebrity?", 
+    "Did you ever meet a celebrity?", 
+    "Have you never met a celebrity?", 
+    "Have you met a celebrity?", 
+    "Нет, я никогда не встречал знаменитость.", 
+    "Ні, я ніколи не зустрічав знаменитість.", 
+    "Nie, nigdy nie spotkałem celebryty."
+  ],
+  [
+    "Yes, they have visited New York.", 
+    "Have they ever visited New York?", 
+    "Did they ever visit New York?", 
+    "Have they never visited New York?", 
+    "Have they visit New York?", 
+    "Да, они посетили Нью-Йорк.", 
+    "Так, вони відвідали Нью-Йорк.", 
+    "Tak, oni odwiedzili Nowy Jork."
+  ],
+  [
+    "No, we have never gone skiing.", 
+    "Have you ever gone skiing?", 
+    "Did you ever go skiing?", 
+    "Have you gone skiing?", 
+    "Have you never gone skiing?", 
+    "Нет, мы никогда не катались на лыжах.", 
+    "Ні, ми ніколи не каталися на лижах.", 
+    "Nie, nigdy nie jeździliśmy na nartach."
+  ],
+  [
+    "Yes, he has cooked dinner before.", 
+    "Has he ever cooked dinner?", 
+    "Did he ever cook dinner?", 
+    "Has he never cooked dinner?", 
+    "Have he ever cooked dinner?", 
+    "Да, он готовил ужин раньше.", 
+    "Так, він готував вечерю раніше.", 
+    "Tak, on wcześniej gotował kolację."
+  ],
+  [
+    "No, I have never seen a shooting star.", 
+    "Have you ever seen a shooting star?", 
+    "Did you ever see a shooting star?", 
+    "Have you seen a shooting star?", 
+    "Have you never seen a shooting star?", 
+    "Нет, я никогда не видел падающую звезду.", 
+    "Ні, я ніколи не бачив падаючу зірку.", 
+    "Nie, nigdy nie widziałem spadającej gwiazdy."
+  ],
+  [
+    "Yes, I have danced in the rain.", 
+    "Have you ever danced in the rain?", 
+    "Did you ever dance in the rain?", 
+    "Have you never danced in the rain?", 
+    "Have you dance in the rain?", 
+    "Да, я танцевал под дождём.", 
+    "Так, я танцював під дощем.", 
+    "Tak, tańczyłem w deszczu."
+  ],
+  [
+    "No, she has never played the piano.", 
+    "Has she ever played the piano?", 
+    "Did she ever play the piano?", 
+    "Has she never played the piano?", 
+    "Have she ever played the piano?", 
+    "Нет, она никогда не играла на пианино.", 
+    "Ні, вона ніколи не грала на піаніно.", 
+    "Nie, ona nigdy nie grała na pianinie."
+  ],
+  [
+    "Yes, we have climbed a mountain.", 
+    "Have you ever climbed a mountain?", 
+    "Did you ever climb a mountain?", 
+    "Have you never climbed a mountain?", 
+    "Have you climb a mountain?", 
+    "Да, мы поднимались на гору.", 
+    "Так, ми піднімалися на гору.", 
+    "Tak, wspięliśmy się na górę."
+  ],
+  [
+    "No, they have never eaten sushi.", 
+    "Have they ever eaten sushi?", 
+    "Did they ever eat sushi?", 
+    "Have they eaten sushi?", 
+    "Have they never eaten sushi?", 
+    "Нет, они никогда не ели суши.", 
+    "Ні, вони ніколи не їли суші.", 
+    "Nie, oni nigdy nie jedli sushi."
+  ],
+  [
+    "Yes, I have watched this movie.", 
+    "Have you ever watched this movie?", 
+    "Did you ever watch this movie?", 
+    "Have you never watched this movie?", 
+    "Have you watch this movie?", 
+    "Да, я смотрел этот фильм.", 
+    "Так, я дивився цей фільм.", 
+    "Tak, oglądałem ten film."
+  ],
+  [
+    "No, he has never worked abroad.", 
+    "Has he ever worked abroad?", 
+    "Did he ever work abroad?", 
+    "Has he worked abroad?", 
+    "Has he never worked abroad?", 
+    "Нет, он никогда не работал за границей.", 
+    "Ні, він ніколи не працював за кордоном.", 
+    "Nie, on nigdy nie pracował za granicą."
+  ],
+  [
+    "Yes, they have played soccer together.", 
+    "Have they ever played soccer together?", 
+    "Did they ever play soccer together?", 
+    "Have they never played soccer together?", 
+    "Have they play soccer together?", 
+    "Да, они играли в футбол вместе.", 
+    "Так, вони грали у футбол разом.", 
+    "Tak, oni grali razem w piłkę nożną."
+  ],
+  [
+    "No, we have never stayed at a hotel.", 
+    "Have you ever stayed at a hotel?", 
+    "Did you ever stay at a hotel?", 
+    "Have you stayed at a hotel?", 
+    "Have you never stayed at a hotel?", 
+    "Нет, мы никогда не останавливались в гостинице.", 
+    "Ні, ми ніколи не зупинялися в готелі.", 
+    "Nie, nigdy nie zatrzymaliśmy się w hotelu."
+  ],
+  [
+    "Yes, she has written a book.", 
+    "Has she ever written a book?", 
+    "Did she ever write a book?", 
+    "Has she never written a book?", 
+    "Have she ever written a book?", 
+    "Да, она написала книгу.", 
+    "Так, вона написала книгу.", 
+    "Tak, ona napisała książkę."
+  ],
+  [
+    "No, I have never swum in the ocean.", 
+    "Have you ever swum in the ocean?", 
+    "Did you ever swim in the ocean?", 
+    "Have you swum in the ocean?", 
+    "Have you never swum in the ocean?", 
+    "Нет, я никогда не плавал в океане.", 
+    "Ні, я ніколи не плавав в океані.", 
+    "Nie, nigdy nie pływałem w oceanie."
+  ],
+  [
+    "Yes, we have painted a picture.", 
+    "Have you ever painted a picture?", 
+    "Did you ever paint a picture?", 
+    "Have you never painted a picture?", 
+    "Have you paint a picture?", 
+    "Да, мы рисовали картину.", 
+    "Так, ми малювали картину.", 
+    "Tak, malowaliśmy obraz."
+  ],
+  [
+    "No, they have never driven a car.", 
+    "Have they ever driven a car?", 
+    "Did they ever drive a car?", 
+    "Have they driven a car?", 
+    "Have they never driven a car?", 
+    "Нет, они никогда не водили машину.", 
+    "Ні, вони ніколи не водили машину.", 
+    "Nie, oni nigdy nie prowadzili samochodu."
+  ],
       // Заменяет многоточие словом
       function (id) {
          return replaceEllipsisWithWord(id, presentPerfectIHaveDone);
