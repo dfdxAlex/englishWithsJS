@@ -81,14 +81,13 @@ class WorkingField {
         const transL = FactoryRegistr.getObject("LanguageController");
 
         //////////////////////////////////////////////////////////
-        // Используем Card вместо fieldset
         let cardStart = `<div class="card fieldSetWorkField" style="width: 100%; margin: auto; border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0 8px 16px rgba(0,0,0,0.2);"><div class="card-body">`;
         let legend = '';
 
         if (!nameLeson)
             legend = `<h5 class="card-title" id="fieldset-legend">${transL.translate('Вопрос с вариантами ответа')}</h5>`;
         if (nameLeson)
-            legend = `<h5 class="card-title" id="fieldset-legend">${nameLeson}</h5>`;
+            legend = `<h5 class="card-title" id="fieldset-legend">${nameLeson}:${transL.translate('(может отличаться)')}</h5>`;
         
         // Создание кнопок
         let buttonOption = [];
@@ -160,6 +159,9 @@ class WorkingField {
         let rez = cardStart + legend + translate + containerForRezzult;
         const strButton = buttonOption.join('');
         rez+='<hr>'+strButton+buttonOk+cardFinish;
+
+        //Подменить описание Задания если собираются предложения
+        //document.querySelector('#help').innerHTML = "Привет";
 
         return rez;
     }

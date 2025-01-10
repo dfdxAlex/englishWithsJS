@@ -5,6 +5,7 @@
 // объект достаточно просто создать в нужном месте
 class EventController {
     init() {
+
         // Оригинальные обработчики для первого варианта теста
         if (SettingForProgram.selectTypeTest === "simple") {
             document.getElementById('option1').onclick = handleOkErr.bind(null,'Ok');
@@ -13,14 +14,13 @@ class EventController {
             document.getElementById('option4').onclick = handleOkErr.bind(null,'Error');
         }
 
-
         // Оригинальные обработчики событий для второго варианта теста
         if (SettingForProgram.selectTypeTest === "word-assembly") {
             let setWorkField = document.querySelector('.fieldSetWorkField');
             if (setWorkField) {
                 setWorkField.onclick = handleClickTestTwo;
             }
-
+            
             // вернуть все кнопки обратно вниз, если был клик по любой кнопку
             let containerForRezult = document.querySelector('#container-for-rezult');
             if (containerForRezult) {
@@ -33,7 +33,6 @@ class EventController {
                     handleLevelX(obj, true);
                 };
             }
-
         }
         
         // Добавить обработчик события по кнопке с переводом.

@@ -84,8 +84,10 @@ class LevelDataModel
         return arrayForButton[test];
     }
     
-    selectLevel(exercise, nameArray, level, lang = true)
+    selectLevel(exercise = "Выбрать правильный перевод", nameArray, level, lang = true)
     {
+        if (SettingForProgram.selectTypeTest === "word-assembly")
+            exercise = "В этом тесте нужно собрать предложение из предложенных слов. Имейте в виду, что иногда собранное предложение может не совпадать с общей темой теста.";
         if (level == this.level && (lang === true || lang === this.lang)) {
             this.ex.init(this.translate.translate(exercise));
             localStorage.setItem('nameArrayDb',nameArray);
@@ -99,18 +101,18 @@ class LevelDataModel
         // 2 параметр - Массив с содержимым теста
         // 3 параметр - позиция пункта меню в своей категории.
         // 4 параметн - язык теста. Необходим если есть один тест для разных языков
-        this.selectLevel('Выбрать правильный перевод','commonFood100',1,'ru');
-        this.selectLevel('Выбрать правильный перевод','commonFood100ua',1,'ua');
-        this.selectLevel('Выбрать правильный перевод','commonFood100pl',1,'pl');
-        this.selectLevel('Выбрать правильный перевод','commonSport100',2,'ru');
-        this.selectLevel('Выбрать правильный перевод','commonSport100pl',2,'pl');
-        this.selectLevel('Выбрать правильный перевод','commonWalk100',3,'ru');
-        this.selectLevel('Выбрать правильный перевод','commonWords100',4,'ru');
-        this.selectLevel('Выбрать правильный перевод','commonWords300',5,'ru');
-        this.selectLevel('Выбрать правильный перевод','commonWords500',6,'ru');
-        this.selectLevel('Выбрать правильный перевод','verbs50',7,'ru');
-        this.selectLevel('Выбрать правильный перевод','verbs50pl',7,'pl');
-        this.selectLevel('Выбрать правильный перевод','verbs300',8,'ru');
+        this.selectLevel(undefined,'commonFood100',1,'ru');
+        this.selectLevel(undefined,'commonFood100ua',1,'ua');
+        this.selectLevel(undefined,'commonFood100pl',1,'pl');
+        this.selectLevel(undefined,'commonSport100',2,'ru');
+        this.selectLevel(undefined,'commonSport100pl',2,'pl');
+        this.selectLevel(undefined,'commonWalk100',3,'ru');
+        this.selectLevel(undefined,'commonWords100',4,'ru');
+        this.selectLevel(undefined,'commonWords300',5,'ru');
+        this.selectLevel(undefined,'commonWords500',6,'ru');
+        this.selectLevel(undefined,'verbs50',7,'ru');
+        this.selectLevel(undefined,'verbs50pl',7,'pl');
+        this.selectLevel(undefined,'verbs300',8,'ru');
         this.selectLevel('Выбрать правильный вариант сокращенной формы глагола to Be','toBeForms',9);
         this.selectLevel('Выбрать правильный вариант сокращенной формы глагола to Be','toBeSentences',10);
         this.selectLevel('Выбрать правильный вариант ответа','questionsWithAnswers',11);

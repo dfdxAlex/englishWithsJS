@@ -10,15 +10,15 @@ BDTranslate.push(
      ``,
      ``]);
 BDTranslate.push(
-  [``, 
-   ``, 
-   ``,
-   ``]);
+  [`В этом тесте нужно собрать предложение из предложенных слов. Имейте в виду, что иногда собранное предложение может не совпадать с общей темой теста.`, 
+   `У цьому тесті потрібно зібрати пропозицію із запропонованих слів. Майте на увазі, що інколи зібрана пропозиція може не співпадати із загальною темою тесту.`, 
+   `W tym teście musisz ułożyć zdanie z podanych słów. Pamiętaj, że czasami zebrane zdanie może nie pokrywać się z ogólnym tematem testu.`,
+   `In this test you need to assemble a sentence from the given words. Keep in mind that sometimes the assembled sentence may not match the general topic of the test.`]);
 BDTranslate.push(
-    [``, 
-     ``, 
-     ``,
-     ``]);
+    [`(может отличаться)`, 
+     `(може відрізнятися)`, 
+     `(może się różnić)`,
+     `(may differ)`]);
 BDTranslate.push(
   [`<div class="container mt-5">
   <div class="row">

@@ -4,6 +4,9 @@
 // и на активные элементы накидываются обработчики событий.
 // данная функция так-же является обработчиком событий.
 
+// параметр dataObj - это екземпляр LevelDataModel(i)
+// c входящим парамером определяющим масив с данными.(масив теста)
+
 const handleLevelX = (dataObj, constIndexArray = false) =>
     {
         // Записать в хранилище что работаем на неком уровне
@@ -47,7 +50,6 @@ const handleLevelX = (dataObj, constIndexArray = false) =>
         //Записать в сторадж выбранный индекс
         localStorage.setItem('randomEl', randomEl);
         let mas = dataObj.getArrayDB()[randomEl];
-    
 
         // Блок проверяет есть ли в рабочем массиве свойство nameLeson
         // Если есть, то через одноимённую переменную оно передается в WorkingField
@@ -75,8 +77,5 @@ const handleLevelX = (dataObj, constIndexArray = false) =>
         // Объект накидывает на кнопки обработчики 
         // соответствующих событий, ответ правильный или нет
         FactoryRegistr.getObject('EventController').init();
-        return dataObj;
-    }
-    
-    
-    
+        //return dataObj;
+    };
