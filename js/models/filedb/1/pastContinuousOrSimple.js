@@ -1162,7 +1162,7 @@ const pastContinuousOrSimple = [
         // Пример 7
         [
           "Did you read the book last weekend?",                // Вопрос в Past Simple
-          "I was reading the book last weekend.",               // Правильный ответ в Past Continuous
+          "Yes, I read the book last weekend.",               // Правильный ответ в Past Continuous
           "I read book last weekend.",                      // Неправильный ответ с ошибкой (Past Simple)
           "Was you reading the book last weekend?",            // Неправильный ответ с ошибкой (Past Continuous)
           "I reads the book last weekend.",                     // Неправильный ответ с ошибкой (Past Simple)
