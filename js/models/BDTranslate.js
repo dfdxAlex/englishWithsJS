@@ -5,10 +5,401 @@ BDTranslate.push(
    ``,
    ``]);
 BDTranslate.push(
-    [``, 
-     ``, 
-     ``,
-     ``]);
+    [`<div class="accordion" id="presentPerfectAccordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Определение времени Present Perfect
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <strong>Present Perfect</strong> — это время, которое используется для описания действий, имеющих связь с настоящим моментом. Оно подчеркивает результат действия, который имеет значение в текущем времени, или действия, произошедшие в неопределённый момент в прошлом. Это время формируется с помощью вспомогательного глагола <em>have</em> (или <em>has</em> для третьего лица) и причастия прошедшего времени основного глагола.
+            </div>
+        </div>
+    </div>
+
+    <!-- Пример 1: I have done -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                I have done
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <code>I have done my homework.</code> — Я сделал домашку. Это пример использования Present Perfect, когда результат действия важен для текущего момента.
+            </div>
+        </div>
+    </div>
+
+    <!-- Пример 2: I have just -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                I have just
+            </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <code>I have just finished my lunch.</code> — Я только что закончил обедать. Здесь "just" указывает на недавность действия.
+            </div>
+        </div>
+    </div>
+
+    <!-- Пример 3: I have already -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                I have already
+            </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <code>I have already seen that movie.</code> — Я уже видел этот фильм. Используется для выражения действий, которые произошли раньше, чем ожидалось.
+            </div>
+        </div>
+    </div>
+
+    <!-- Пример 4: I have not... yet -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                I have not... yet
+            </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <code>I have not finished my project yet.</code> — Я ещё не закончил мой проект. Здесь "yet" подчеркивает, что действие ещё не завершено.
+            </div>
+        </div>
+    </div>
+
+    <!-- Пример 5: Have you ever...? -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                Have you ever...?
+            </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <code>Have you ever been to Paris?</code> — Ты когда-нибудь был в Париже? Это вопрос о прошлом опыте, не привязанном к конкретному времени.
+            </div>
+        </div>
+    </div>
+
+    <!-- Пример 6: I have never... -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                I have never...
+            </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <code>I have never tried sushi.</code> — Я никогда не пробовал суши. Здесь "never" указывает на отсутствие опыта.
+            </div>
+        </div>
+    </div>
+</div>`, 
+     `<div class="accordion" id="presentPerfectAccordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Визначення часу Present Perfect
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <strong>Present Perfect</strong> — це час, який використовується для опису дій, що мають зв'язок з теперішнім моментом. Він підкреслює результат дії, який має значення в поточний час, або дії, що сталися в невизначений момент в минулому. Цей час утворюється за допомогою допоміжного дієслова <em>have</em> (або <em>has</em> для третьої особи) та причастя минулого часу основного дієслова.
+            </div>
+        </div>
+    </div>
+
+    <!-- Приклад 1: I have done -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                I have done
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <code>I have done my homework.</code> — Я зробив домашнє завдання. Це приклад використання Present Perfect, коли результат дії важливий для поточного моменту.
+            </div>
+        </div>
+    </div>
+
+    <!-- Приклад 2: I have just -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                I have just
+            </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <code>I have just finished my lunch.</code> — Я тільки що закінчив обідати. Тут "just" вказує на нещодавність дії.
+            </div>
+        </div>
+    </div>
+
+    <!-- Приклад 3: I have already -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                I have already
+            </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <code>I have already seen that movie.</code> — Я вже бачив цей фільм. Використовується для вираження дій, які сталися раніше, ніж очікувалося.
+            </div>
+        </div>
+    </div>
+
+    <!-- Приклад 4: I have not... yet -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                I have not... yet
+            </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <code>I have not finished my project yet.</code> — Я ще не закінчив мій проєкт. Тут "yet" підкреслює, що дія ще не завершена.
+            </div>
+        </div>
+    </div>
+
+    <!-- Приклад 5: Have you ever...? -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                Have you ever...?
+            </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <code>Have you ever been to Paris?</code> — Ти колись був у Парижі? Це питання про минулий досвід, не прив'язаний до конкретного часу.
+            </div>
+        </div>
+    </div>
+
+    <!-- Приклад 6: I have never... -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                I have never...
+            </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <code>I have never tried sushi.</code> — Я ніколи не пробував суші. Тут "never" вказує на відсутність досвіду.
+            </div>
+        </div>
+    </div>
+</div>
+`, 
+     `<div class="accordion" id="presentPerfectAccordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Definicja czasu Present Perfect
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <strong>Present Perfect</strong> — to czas, który jest używany do opisywania działań związanych z teraźniejszością. Podkreśla wynik działania, który ma znaczenie w danym momencie, lub działania, które miały miejsce w nieokreślonym czasie w przeszłości. Czas ten tworzy się za pomocą czasownika pomocniczego <em>have</em> (lub <em>has</em> w przypadku trzeciej osoby) oraz formy przeszłej głównego czasownika.
+            </div>
+        </div>
+    </div>
+
+    <!-- Przykład 1: I have done -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                I have done
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <code>I have done my homework.</code> — Zrobiłem moją pracę domową. Jest to przykład użycia Present Perfect, gdy wynik działania jest ważny dla bieżącego momentu.
+            </div>
+        </div>
+    </div>
+
+    <!-- Przykład 2: I have just -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                I have just
+            </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <code>I have just finished my lunch.</code> — Właśnie skończyłem jeść lunch. "Just" wskazuje na niedawność działania.
+            </div>
+        </div>
+    </div>
+
+    <!-- Przykład 3: I have already -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                I have already
+            </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <code>I have already seen that movie.</code> — Widziałem już ten film. Używane do wyrażenia działań, które miały miejsce wcześniej, niż się tego spodziewano.
+            </div>
+        </div>
+    </div>
+
+    <!-- Przykład 4: I have not... yet -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                I have not... yet
+            </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <code>I have not finished my project yet.</code> — Jeszcze nie skończyłem mojego projektu. "Yet" podkreśla, że działanie nie zostało jeszcze zakończone.
+            </div>
+        </div>
+    </div>
+
+    <!-- Przykład 5: Have you ever...? -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                Have you ever...?
+            </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <code>Have you ever been to Paris?</code> — Czy kiedykolwiek byłeś w Paryżu? To pytanie o doświadczenie z przeszłości, niezwiązane z konkretnym czasem.
+            </div>
+        </div>
+    </div>
+
+    <!-- Przykład 6: I have never... -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                I have never...
+            </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <code>I have never tried sushi.</code> — Nigdy nie próbowałem sushi. "Never" wskazuje na brak doświadczenia.
+            </div>
+        </div>
+    </div>
+</div>
+`,
+     `<div class="accordion" id="presentPerfectAccordion">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Definition of Present Perfect Tense
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <strong>Present Perfect</strong> is a tense used to describe actions that are connected to the present moment. It emphasizes the result of an action that is relevant at the present time, or actions that occurred at an unspecified time in the past. This tense is formed using the auxiliary verb <em>have</em> (or <em>has</em> for third person singular) and the past participle of the main verb.
+            </div>
+        </div>
+    </div>
+
+    <!-- Example 1: I have done -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                I have done
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <code>I have done my homework.</code> — This sentence is an example of Present Perfect, where the result of the action (homework completion) is important at the present moment.
+            </div>
+        </div>
+    </div>
+
+    <!-- Example 2: I have just -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                I have just
+            </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <code>I have just finished my lunch.</code> — "Just" indicates that the action has happened recently.
+            </div>
+        </div>
+    </div>
+
+    <!-- Example 3: I have already -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                I have already
+            </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <code>I have already seen that movie.</code> — This is used to express actions that happened earlier than expected.
+            </div>
+        </div>
+    </div>
+
+    <!-- Example 4: I have not... yet -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                I have not... yet
+            </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <code>I have not finished my project yet.</code> — "Yet" emphasizes that the action has not been completed.
+            </div>
+        </div>
+    </div>
+
+    <!-- Example 5: Have you ever...? -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                Have you ever...?
+            </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <code>Have you ever been to Paris?</code> — This question refers to past experience, not tied to a specific time.
+            </div>
+        </div>
+    </div>
+
+    <!-- Example 6: I have never... -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                I have never...
+            </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#presentPerfectAccordion">
+            <div class="accordion-body">
+                <code>I have never tried sushi.</code> — "Never" indicates the absence of experience.
+            </div>
+        </div>
+    </div>
+</div>
+`]);
 BDTranslate.push(
   [`В этом тесте нужно собрать предложение из предложенных слов. Имейте в виду, что иногда собранное предложение может не совпадать с общей темой теста.`, 
    `У цьому тесті потрібно зібрати пропозицію із запропонованих слів. Майте на увазі, що інколи зібрана пропозиція може не співпадати із загальною темою тесту.`, 
