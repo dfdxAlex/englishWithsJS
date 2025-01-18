@@ -1205,9 +1205,9 @@ const presentPerfectIHaveDone = [
         "Yes, I just have arranged.",
         "Yes, I has just arranged.",
         "Yes just, I have arranged.",
-        "Мы убрали дом?",
-        "Ми прибрали дім?",
-        "Czy posprzątaliśmy dom?"
+        "Она организовала встречу?",
+        "Вона домовилася про зустріч?",
+        "Czy ona zorganizowała spotkanie?"
     ],
     [
         "Have they discussed the issue?",
@@ -1225,9 +1225,9 @@ const presentPerfectIHaveDone = [
         "Yes, I just have decorated.",
         "Yes, I has just decorated.",
         "Yes just, I have decorated.",
-        "Она завершила проект?",
-        "Вона завершила проект?",
-        "Czy ukończyła projekt?"
+        "Он украсил комнату?",
+        "Він прикрасив кімнату?",
+        "Czy on udekorował pokój?"
     ],
     [
         "Have you signed the papers?",
@@ -1932,7 +1932,7 @@ const presentPerfectIHaveDone = [
 [
     "Has she come yet?",
     "Yes, she has just come.",
-    "No, she hasn't come yet.",
+    "She hasn't come yet.",
     "She has come yet.",
     "She hasn't come yet.",
     "Она уже пришла?",
@@ -2151,8 +2151,8 @@ const presentPerfectIHaveDone = [
   ],
   [
     "Has he ever read a novel?",
-    "Yes, he has read a novel.",
     "No, he has never read a novel.",
+    "Yes, he has reading a novel.",
     "Yes, he have read a novel.",
     "He has never read novel.",
     "Он когда-нибудь читал роман?",
