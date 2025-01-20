@@ -1091,13 +1091,13 @@ const presentPerfectIHaveDone = [
     ],
     [
         "Have you organized the files?",
-        "Yes, I have just organized.",
-        "Yes, I just have organized.",
-        "Yes, I has just organized.",
-        "Yes just, I have organized.",
-        "Он посетил музей?",
-        "Він відвідав музей?",
-        "Czy odwiedził muzeum?"
+        "Yes, I have just organized the files.",
+        "Yes, I just have organized the files.",
+        "Yes, I has just organized the files.",
+        "Yes just, I have organized the files.",
+        "Вы организовали файлы?",
+        "Ви впорядкували файли?",
+        "Czy uporządkowałeś pliki?"
     ],
     [
         "Has she painted the picture?",
@@ -1150,24 +1150,24 @@ const presentPerfectIHaveDone = [
         "Czy ona nauczyła się tej piosenki?"
     ],
     [
-        "Have they planned the trip?",
-        "Yes, I have just planned.",
-        "Yes, I just have planned.",
-        "Yes, I has just planned.",
-        "Yes just, I have planned.",
-        "Ты встретил нового учителя?",
-        "Ти зустрів нового вчителя?",
-        "Czy poznałeś nowego nauczyciela?"
+        "Have you planned the trip?",
+        "Yes, I have just planned the trip.",
+        "Yes, I just have planned the trip.",
+        "Yes, I has just planned the trip.",
+        "Yes just, I have planned the trip.",
+        "Они запланировали поездку?",
+        "Вони запланували поїздку?",
+        "Czy zaplanowali tę podróż?"
     ],
     [
         "Have you called the plumber?",
-        "Yes, I have just called.",
-        "Yes, I just have called.",
-        "Yes, I has just called.",
-        "Yes just, I have called.",
-        "Ты закончил свою домашнюю работу?",
-        "Ти закінчив своє домашнє завдання?",
-        "Czy skończyłeś swoje zadanie domowe?"
+        "Yes, I have just called the plumber?.",
+        "Yes, I just have called the plumber?.",
+        "Yes, I has just called the plumber?.",
+        "Yes just, I have called the plumber?.",
+        "Вы вызывали сантехника?",
+        "Ви викликали сантехніка?",
+        "Czy dzwoniłeś po hydraulika?"
     ],
     [
         "Has he answered the question?",
@@ -1181,13 +1181,13 @@ const presentPerfectIHaveDone = [
     ],
     [
         "Have we solved the problem?",
-        "Yes, I have just solved.",
-        "Yes, I just have solved.",
-        "Yes, I has just solved.",
-        "Yes just, I have solved.",
-        "Они пообедали?",
-        "Вони пообідали?",
-        "Czy zjedli obiad?"
+        "Yes, we have just solved the problem.",
+        "Yes, we just have solved the problem..",
+        "Yes, we has just solved the problem..",
+        "Yes just, we have solved the problem..",
+        "Решили ли мы проблему?",
+        "Ми вирішили проблему?",
+        "Czy rozwiązaliśmy problem?"
     ],
     [
         "Have you fed the dog?",
@@ -1201,10 +1201,10 @@ const presentPerfectIHaveDone = [
     ],
     [
         "Has she arranged the meeting?",
-        "Yes, I have just arranged.",
-        "Yes, I just have arranged.",
-        "Yes, I has just arranged.",
-        "Yes just, I have arranged.",
+        "Yes, I have just arranged the meeting.",
+        "Yes, I just have arranged the meeting.",
+        "Yes, I has just arranged the meeting.",
+        "Yes just, I have arranged the meeting.",
         "Она организовала встречу?",
         "Вона домовилася про зустріч?",
         "Czy ona zorganizowała spotkanie?"
@@ -1221,10 +1221,10 @@ const presentPerfectIHaveDone = [
     ],
     [
         "Has he decorated the room?",
-        "Yes, I have just decorated.",
-        "Yes, I just have decorated.",
-        "Yes, I has just decorated.",
-        "Yes just, I have decorated.",
+        "Yes, I have just decorated the room.",
+        "Yes, I just have decorated the room.",
+        "Yes, I has just decorated the room.",
+        "Yes just, I have decorated the room.",
         "Он украсил комнату?",
         "Він прикрасив кімнату?",
         "Czy on udekorował pokój?"
@@ -1772,7 +1772,7 @@ const presentPerfectIHaveDone = [
 [
     "Has he played the game yet?",
     "No, he hasn't played it yet.",
-    "Yes, he has just played it.",
+    "Yes, he have just played it.",
     "He played it yet.",
     "He hasn't just played it yet.",
     "Он уже сыграл в игру?",
@@ -1932,9 +1932,9 @@ const presentPerfectIHaveDone = [
 [
     "Has she come yet?",
     "Yes, she has just come.",
-    "She hasn't come yet.",
+    "She have not come yet.",
     "She has come yet.",
-    "She hasn't come yet.",
+    "She come hasn't yet.",
     "Она уже пришла?",
     "Вона вже прийшла?",
     "Czy ona już przyszła?"
