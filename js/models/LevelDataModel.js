@@ -86,7 +86,7 @@ class LevelDataModel
     
     selectLevel(exercise = "Выбрать правильный перевод", nameArray, level, lang = true)
     {
-        if (SettingForProgram.selectTypeTest === "word-assembly")
+        if (SettingForProgram.selectTypeTest === "word-assembly" || SettingForProgram.selectTypeTest === "word-assembly-not-translate")
             exercise = "В этом тесте нужно собрать предложение из предложенных слов. Имейте в виду, что иногда собранное предложение может не совпадать с общей темой теста.";
         if (level == this.level && (lang === true || lang === this.lang)) {
             this.ex.init(this.translate.translate(exercise));

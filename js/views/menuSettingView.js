@@ -15,6 +15,7 @@ function menuSettingView()
         <select class="form-select" id="testType" style="width: 95%; font-size: 1rem; padding: 0.375rem 0.75rem;">
           <option value="simple">Simple Test</option>
           <option value="word-assembly">Word Assembly</option>
+          <option value="word-assembly-not-translate">Word Assembly (not translate)</option>
         </select>
       </div>
       

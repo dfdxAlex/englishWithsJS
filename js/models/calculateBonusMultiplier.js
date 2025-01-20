@@ -105,6 +105,13 @@ function calculateBonusMultiplier(propertyForBonus)
         if (ticLocal > 6) return 6;
     }
 
+    // Если работаем с тестом word-assembly-not-translate 
+    // то умножить балы на 2,5
+    if (localStorage.getItem('user_select') === 'word-assembly-not-translate') {
+        ticLocal*=2.5;
+        if (ticLocal > 6) return 6;
+    }
+
     //console.log(localStorage.user_select);
     if (ticLocal < 0.4) return 0.4;
     if (ticLocal > 3) return 3;

@@ -20,7 +20,27 @@ class EventController {
             if (setWorkField) {
                 setWorkField.onclick = handleClickTestTwo;
             }
-            
+            // вернуть все кнопки обратно вниз, если был клик по любой кнопку
+            let containerForRezult = document.querySelector('#container-for-rezult');
+            if (containerForRezult) {
+                containerForRezult.onclick = (el) => {
+                    el.stopPropagation();
+                    const i = localStorage.getItem('level');
+                    const obj = new LevelDataModel(i);
+                    // перерисовать рабочее поле.
+                    // параметр true отключает генерацию нового вопросса
+                    handleLevelX(obj, true);
+                };
+            }
+        }
+
+        // Оригинальные обработчики событий для третьего варианта теста
+        // По возможности объеденить этот блок с предыдущим
+        if (SettingForProgram.selectTypeTest === "word-assembly-not-translate") {
+            let setWorkField = document.querySelector('.fieldSetWorkField');
+            if (setWorkField) {
+                setWorkField.onclick = handleClickTestTwo;
+            }
             // вернуть все кнопки обратно вниз, если был клик по любой кнопку
             let containerForRezult = document.querySelector('#container-for-rezult');
             if (containerForRezult) {
@@ -37,10 +57,17 @@ class EventController {
         
         // Добавить обработчик события по кнопке с переводом.
         // Перевод должен появиться только после клика на кнопку
-        let translate = document.getElementById('translate');
-        if (translate) {
-            translate.onclick = handleTranslateQuestion.bind(null, FactoryRegistr.getObject('WorkingField'));
+        // Добавлено: перевод исключается на тесте word-assembly-not-translate
+        if (SettingForProgram.selectTypeTest !== "word-assembly-not-translate") {
+            let translate = document.getElementById('translate');
+            if (translate) {
+                translate.onclick = handleTranslateQuestion.bind(null, FactoryRegistr.getObject('WorkingField'));
+            }
+        } else {
+            let translate = document.getElementById('translate');
+            translate.innerHTML = '';
         }
+
         // обработчик события клика по кнопке логов
         document.getElementById('log').onclick = handleLog;
     }
