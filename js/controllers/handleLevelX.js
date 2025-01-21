@@ -77,9 +77,12 @@ const handleLevelX = (dataObj, constIndexArray = false) =>
         // Тест уровня Word-assembly-not-translate
         // создать рабочее поле с вопроссом и вариантами ответа
         // поместить форму в соответствующий div
+        const property = {
+            constIndexArray
+        };
         if (SettingForProgram.selectTypeTest === 'word-assembly-not-translate') {
             document.getElementById('working_field')
-                    .innerHTML = FactoryRegistr.getObject('WorkingField').initWordAssemblyNotTranslate(mas, nameLeson);
+                    .innerHTML = FactoryRegistr.getObject('WorkingField').initWordAssemblyNotTranslate(mas, nameLeson, property);
         }
         
         // Объект накидывает на кнопки обработчики 

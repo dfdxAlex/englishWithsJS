@@ -169,15 +169,20 @@ class WorkingField {
     }
     }
 
-// рядом будет подобная функция, будет врмя можно совместить
+  // рядом будет подобная функция, будет врмя можно совместить
   // initWordAssembly() и initWordAssemblyNotTranslate()
-  initWordAssemblyNotTranslate(arrayBD, nameLeson = false) {
+  // новый параметр dataObj, объект для масштабирования функции.
+  initWordAssemblyNotTranslate(arrayBD, nameLeson = false, property = false) {
     const strStart = `<div class='row mb-2'><div class='col-12'><button style='border-radius: 10px; margin-left: 5px; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button'`;
     let question, option1, option2, option3, option4;
 
     if (arrayBD !== undefined && arrayBD.length == 8) {
         [question, option1, option2, option3, option4,
         this.translateRu, this.translateUa, this.translatePl] = arrayBD;
+
+        // Запомнить исходное значение этого параметра, потому как он 
+        // меняется внутри функции
+        const questionOld = question;
 
         let levelForStaticticOk = 'level' + localStorage.getItem('level') + '_Ok';
         let levelForStaticticError = 'level' + localStorage.getItem('level') + '_Error';
@@ -200,7 +205,7 @@ class WorkingField {
         // Создание кнопок
         let buttonOption = [];
 
-        // признак того, что правильный ответ есть предложение а не 
+        // признак того, что правильный ответ есть предложение, а не 
         // пропущенное слово
         let trueSentences = true;
 
@@ -228,15 +233,23 @@ class WorkingField {
             trueSentences = false;
         }
 
-        // Если признак того, что правильный ответ - это готовое предложение
-        // сохранился как Труе, то выбрать случайно в качестве вопросса
-        // либо сам вопрос, либо правильный ответ на него
-        if (trueSentences) {
-            let randomNumber = Math.random();
-            if (randomNumber > 0.5) randomNumber = 1;
-            else randomNumber = 2;
-            if (randomNumber === 2) question = option1;
+        if (property && !property.constIndexArray) {
+            // Если признак того, что правильный ответ - это готовое предложение
+            // сохранился как Труе, то выбрать случайно в качестве вопросса
+            // либо сам вопрос, либо правильный ответ на него
+            if (trueSentences) {
+                let randomNumber = Math.random();
+                if (randomNumber > 0.5) randomNumber = 1;
+                else randomNumber = 2;
+                if (randomNumber === 2) question = option1;
+                localStorage.setItem('init_word_assembly_not_translate_question', question);
+            }
+        } else {
+            question = localStorage.getItem('init_word_assembly_not_translate_question');
         }
+        // Если не удалось получить question, то поднять его из архива
+        if (!question)
+            question = questionOld;
         // массив arrayButton должен содержать разбитые на слова предложения
         const arrayButton = question.split(' ');
 
