@@ -30,10 +30,318 @@ BDTranslate.push(
    ``,
    ``]);
 BDTranslate.push(
-  [``, 
-   ``, 
-   ``,
-   ``]);
+  [`<div class="accordion" id="presentPerfectAccordion">
+  <!-- Определение Present Perfect -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDefinition" aria-expanded="true">
+        Что такое Present Perfect?
+      </button>
+    </h2>
+    <div id="collapseDefinition" class="accordion-collapse collapse show" data-bs-parent="#presentPerfectAccordion">
+      <div class="accordion-body">
+        <p><strong>Present Perfect</strong> (<code>have/has + V3 (Past Participle)</code>) используется, когда действие:</p>
+        <ul>
+          <li>✔ Завершено, но связано с настоящим (результат важен сейчас).</li>
+          <li>✔ Началось в прошлом и продолжается до настоящего момента.</li>
+          <li>✔ Произошло в неопределённое время в прошлом, но имеет значение для настоящего.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Present Perfect + Present Simple -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrPerfPrSimp">
+        Когда Present Perfect используется с Present Simple?
+      </button>
+    </h2>
+    <div id="collapsePrPerfPrSimp" class="accordion-collapse collapse" data-bs-parent="#presentPerfectAccordion">
+      <div class="accordion-body">
+        <p>Используется, когда <strong>Present Simple</strong> описывает повторяющееся или общее явление, а <strong>Present Perfect</strong> подчёркивает опыт, изменения или их влияние.</p>
+        
+        <div class="p-3 border-start border-primary">
+          <p>✅ <strong>I've always loved how she cooks.</strong> (Я всегда любил, как она готовит.)</p>
+          <p>✅ <strong>We have noticed that he talks too much.</strong> (Мы заметили, что он слишком много говорит.)</p>
+          <p>✅ <strong>She has never understood why people like this movie.</strong> (Она никогда не понимала, почему людям нравится этот фильм.)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Present Perfect + Present Continuous -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrPerfPrCont">
+        Когда Present Perfect используется с Present Continuous?
+      </button>
+    </h2>
+    <div id="collapsePrPerfPrCont" class="accordion-collapse collapse" data-bs-parent="#presentPerfectAccordion">
+      <div class="accordion-body">
+        <p>Используется, когда <strong>Present Continuous</strong> описывает текущее действие, а <strong>Present Perfect</strong> объясняет его причину или подводит итог.</p>
+
+        <div class="p-3 border-start border-primary">
+          <p>✅ <strong>I have noticed that she is talking to him again.</strong> (Я заметил, что она снова с ним разговаривает.)</p>
+          <p>✅ <strong>They have been surprised that he is learning a new language.</strong> (Они были удивлены, что он учит новый язык.)</p>
+          <p>✅ <strong>We have realized that she is working too hard.</strong> (Мы поняли, что она слишком много работает.)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Общий вывод -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseConclusion">
+        Общий вывод
+      </button>
+    </h2>
+    <div id="collapseConclusion" class="accordion-collapse collapse" data-bs-parent="#presentPerfectAccordion">
+      <div class="accordion-body">
+        <ul>
+          <li>📌 <strong>PrPerf + PrSimp</strong> → акцент на факте, опыте, изменении.</li>
+          <li>📌 <strong>PrPerf + PrCont</strong> → акцент на действии, происходящем сейчас.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`, 
+   `<div class="accordion" id="presentPerfectAccordion">
+  <!-- Визначення Present Perfect -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDefinition" aria-expanded="true">
+        Що таке Present Perfect?
+      </button>
+    </h2>
+    <div id="collapseDefinition" class="accordion-collapse collapse show" data-bs-parent="#presentPerfectAccordion">
+      <div class="accordion-body">
+        <p><strong>Present Perfect</strong> (<code>have/has + V3 (Past Participle)</code>) використовується, коли дія:</p>
+        <ul>
+          <li>✔ Завершена, але пов'язана з теперішнім (результат важливий зараз).</li>
+          <li>✔ Почалася в минулому і триває до теперішнього моменту.</li>
+          <li>✔ Сталася в невизначений час у минулому, але має значення для теперішнього.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Present Perfect + Present Simple -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrPerfPrSimp">
+        Коли Present Perfect використовується з Present Simple?
+      </button>
+    </h2>
+    <div id="collapsePrPerfPrSimp" class="accordion-collapse collapse" data-bs-parent="#presentPerfectAccordion">
+      <div class="accordion-body">
+        <p>Використовується, коли <strong>Present Simple</strong> описує повторюване чи загальне явище, а <strong>Present Perfect</strong> підкреслює досвід, зміни або їхній вплив.</p>
+        
+        <div class="p-3 border-start border-primary">
+          <p>✅ <strong>I've always loved how she cooks.</strong> (Я завжди любив, як вона готує.)</p>
+          <p>✅ <strong>We have noticed that he talks too much.</strong> (Ми помітили, що він надто багато говорить.)</p>
+          <p>✅ <strong>She has never understood why people like this movie.</strong> (Вона ніколи не розуміла, чому людям подобається цей фільм.)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Present Perfect + Present Continuous -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrPerfPrCont">
+        Коли Present Perfect використовується з Present Continuous?
+      </button>
+    </h2>
+    <div id="collapsePrPerfPrCont" class="accordion-collapse collapse" data-bs-parent="#presentPerfectAccordion">
+      <div class="accordion-body">
+        <p>Використовується, коли <strong>Present Continuous</strong> описує поточну дію, а <strong>Present Perfect</strong> пояснює її причину або підсумовує її наслідки.</p>
+
+        <div class="p-3 border-start border-primary">
+          <p>✅ <strong>I have noticed that she is talking to him again.</strong> (Я помітив, що вона знову з ним розмовляє.)</p>
+          <p>✅ <strong>They have been surprised that he is learning a new language.</strong> (Вони здивовані, що він вивчає нову мову.)</p>
+          <p>✅ <strong>We have realized that she is working too hard.</strong> (Ми зрозуміли, що вона працює надто багато.)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Загальний висновок -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseConclusion">
+        Загальний висновок
+      </button>
+    </h2>
+    <div id="collapseConclusion" class="accordion-collapse collapse" data-bs-parent="#presentPerfectAccordion">
+      <div class="accordion-body">
+        <ul>
+          <li>📌 <strong>PrPerf + PrSimp</strong> → акцент на факті, досвіді, зміні.</li>
+          <li>📌 <strong>PrPerf + PrCont</strong> → акцент на дії, що відбувається зараз.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`, 
+   `<div class="accordion" id="presentPerfectAccordion">
+  <!-- Definicja Present Perfect -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDefinition" aria-expanded="true">
+        Co to jest Present Perfect?
+      </button>
+    </h2>
+    <div id="collapseDefinition" class="accordion-collapse collapse show" data-bs-parent="#presentPerfectAccordion">
+      <div class="accordion-body">
+        <p><strong>Present Perfect</strong> (<code>have/has + V3 (Past Participle)</code>) jest używane, gdy czynność:</p>
+        <ul>
+          <li>✔ Została zakończona, ale ma związek z teraźniejszością (rezultat jest ważny teraz).</li>
+          <li>✔ Zaczęła się w przeszłości i trwa do teraz.</li>
+          <li>✔ Wydarzyła się w nieokreślonym czasie w przeszłości, ale ma znaczenie dla teraźniejszości.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Present Perfect + Present Simple -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrPerfPrSimp">
+        Kiedy używamy Present Perfect z Present Simple?
+      </button>
+    </h2>
+    <div id="collapsePrPerfPrSimp" class="accordion-collapse collapse" data-bs-parent="#presentPerfectAccordion">
+      <div class="accordion-body">
+        <p>Używamy, gdy <strong>Present Simple</strong> opisuje powtarzające się lub ogólne zjawisko, a <strong>Present Perfect</strong> podkreśla doświadczenie, zmiany lub ich wpływ.</p>
+        
+        <div class="p-3 border-start border-primary">
+          <p>✅ <strong>I've always loved how she cooks.</strong> (Zawsze kochałem, jak ona gotuje.)</p>
+          <p>✅ <strong>We have noticed that he talks too much.</strong> (Zauważyliśmy, że on mówi za dużo.)</p>
+          <p>✅ <strong>She has never understood why people like this movie.</strong> (Ona nigdy nie rozumiała, dlaczego ludziom podoba się ten film.)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Present Perfect + Present Continuous -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrPerfPrCont">
+        Kiedy używamy Present Perfect z Present Continuous?
+      </button>
+    </h2>
+    <div id="collapsePrPerfPrCont" class="accordion-collapse collapse" data-bs-parent="#presentPerfectAccordion">
+      <div class="accordion-body">
+        <p>Używamy, gdy <strong>Present Continuous</strong> opisuje bieżącą czynność, a <strong>Present Perfect</strong> wyjaśnia jej przyczynę lub podsumowuje jej skutki.</p>
+
+        <div class="p-3 border-start border-primary">
+          <p>✅ <strong>I have noticed that she is talking to him again.</strong> (Zauważyłem, że ona znowu rozmawia z nim.)</p>
+          <p>✅ <strong>They have been surprised that he is learning a new language.</strong> (Byli zaskoczeni, że on uczy się nowego języka.)</p>
+          <p>✅ <strong>We have realized that she is working too hard.</strong> (Zrozumieliśmy, że ona pracuje za dużo.)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Ogólne podsumowanie -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseConclusion">
+        Ogólne Podsumowanie
+      </button>
+    </h2>
+    <div id="collapseConclusion" class="accordion-collapse collapse" data-bs-parent="#presentPerfectAccordion">
+      <div class="accordion-body">
+        <ul>
+          <li>📌 <strong>PrPerf + PrSimp</strong> → akcent na fakt, doświadczenie, zmianę.</li>
+          <li>📌 <strong>PrPerf + PrCont</strong> → akcent na czynność, która trwa teraz.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`,
+   `<div class="accordion" id="presentPerfectAccordion">
+  <!-- Definition of Present Perfect -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDefinition" aria-expanded="true">
+        What is Present Perfect?
+      </button>
+    </h2>
+    <div id="collapseDefinition" class="accordion-collapse collapse show" data-bs-parent="#presentPerfectAccordion">
+      <div class="accordion-body">
+        <p><strong>Present Perfect</strong> (<code>have/has + V3 (Past Participle)</code>) is used when an action:</p>
+        <ul>
+          <li>✔ Has been completed but has relevance to the present (the result is important now).</li>
+          <li>✔ Started in the past and continues to the present.</li>
+          <li>✔ Happened at an unspecified time in the past but is relevant to the present.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Present Perfect + Present Simple -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrPerfPrSimp">
+        When do we use Present Perfect with Present Simple?
+      </button>
+    </h2>
+    <div id="collapsePrPerfPrSimp" class="accordion-collapse collapse" data-bs-parent="#presentPerfectAccordion">
+      <div class="accordion-body">
+        <p>We use Present Simple when referring to recurring or general facts, and Present Perfect emphasizes experience, changes, or their impact.</p>
+        
+        <div class="p-3 border-start border-primary">
+          <p>✅ <strong>I've always loved how she cooks.</strong> (Experience related to the present.)</p>
+          <p>✅ <strong>We have noticed that he talks too much.</strong> (The action observed, with the result related to the present.)</p>
+          <p>✅ <strong>She has never understood why people like this movie.</strong> (Refers to an experience up until the present.)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Present Perfect + Present Continuous -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrPerfPrCont">
+        When do we use Present Perfect with Present Continuous?
+      </button>
+    </h2>
+    <div id="collapsePrPerfPrCont" class="accordion-collapse collapse" data-bs-parent="#presentPerfectAccordion">
+      <div class="accordion-body">
+        <p>We use Present Continuous to describe an ongoing action, and Present Perfect explains its cause or summarizes its result.</p>
+
+        <div class="p-3 border-start border-primary">
+          <p>✅ <strong>I have noticed that she is talking to him again.</strong> (Present Perfect gives a sense of impact, Present Continuous describes the ongoing action.)</p>
+          <p>✅ <strong>They have been surprised that he is learning a new language.</strong> (The surprise in the present and the continuous action of learning.)</p>
+          <p>✅ <strong>We have realized that she is working too hard.</strong> (Realization in the present of the ongoing action.)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- General Summary -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseConclusion">
+        General Summary
+      </button>
+    </h2>
+    <div id="collapseConclusion" class="accordion-collapse collapse" data-bs-parent="#presentPerfectAccordion">
+      <div class="accordion-body">
+        <ul>
+          <li>📌 <strong>PrPerf + PrSimp</strong> → Emphasis on fact, experience, or change.</li>
+          <li>📌 <strong>PrPerf + PrCont</strong> → Emphasis on ongoing action and its relevance to the present.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`]);
 BDTranslate.push(
     [`<div class="accordion" id="presentPerfectAccordion">
     <div class="accordion-item">

@@ -108,16 +108,6 @@ class WorkingField {
         }
 
         question = this.insertWord(question, option1);
-        // // Замена троеточия на правильное слово
-        // if (question.includes('...')) {
-        //     question = question.replace('...', option1);
-        // }
-        // if (question.includes('…')) {
-        //     question = question.replace('…', option1);
-        // }
-        // if (question.includes('___')) {
-        //     question = question.replace('___', option1);
-        // }
 
         // массив arrayButton должен содержать разбитые на слова предложения
         const arrayButton = question.split(' ');
@@ -135,22 +125,8 @@ class WorkingField {
             indexMax = index;
         });
         localStorage.setItem('indexMax', indexMax);
-        
+
         const buttonOk = this.buttonOk();
-        // const buttonOk = `<div class='row mb-2'>
-        //                     <div class='col-12'>
-        //                       <button 
-        //                         style='width: 100%; 
-        //                                border: 1px solid rgba(0, 0, 0, 0.2); 
-        //                                box-shadow: 0 4px 8px rgba(0,0,0,0.2);' 
-        //                         type='button' 
-        //                         id='button-ok'
-        //                         onclick = 'handleButtonOk(event)'
-        //                        >
-        //                         Проверить
-        //                       </button>
-        //                     </div>
-        //                    </div>`;
 
         const cardFinish = "</div></div>";
 
@@ -227,20 +203,6 @@ class WorkingField {
 
         question = this.insertWord(question, option1);
 
-        // // Замена троеточия на правильное слово
-        // if (question.includes('...')) {
-        //     question = question.replace('...', option1);
-        //     this.trueSentences = false;
-        // }
-        // if (question.includes('…')) {
-        //     question = question.replace('…', option1);
-        //     this.trueSentences = false;
-        // }
-        // if (question.includes('___')) {
-        //     question = question.replace('___', option1);
-        //     this.trueSentences = false;
-        // }
-
         if (property && !property.constIndexArray) {
             // Если признак того, что правильный ответ - это готовое предложение
             // сохранился как Труе, то выбрать случайно в качестве вопросса
@@ -276,20 +238,6 @@ class WorkingField {
         localStorage.setItem('indexMax', indexMax);
 
         const buttonOk = this.buttonOk();
-        // const buttonOk = `<div class='row mb-2'>
-        //                     <div class='col-12'>
-        //                       <button 
-        //                         style='width: 100%; 
-        //                                border: 1px solid rgba(0, 0, 0, 0.2); 
-        //                                box-shadow: 0 4px 8px rgba(0,0,0,0.2);' 
-        //                         type='button' 
-        //                         id='button-ok'
-        //                         onclick = 'handleButtonOk(event)'
-        //                        >
-        //                         Проверить
-        //                       </button>
-        //                     </div>
-        //                    </div>`;
 
         const cardFinish = "</div></div>";
 
