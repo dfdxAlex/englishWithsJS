@@ -30,52 +30,7 @@ BDTranslate.push(
    ``,
    ``]);
 BDTranslate.push(
-  [`<div class="modal fade" id="presentPerfectModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title fw-bold text-primary" id="modalTitle">Present Perfect: Определение и Использование</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-      </div>
-      <div class="modal-body">
-        <p><strong>Present Perfect</strong> (<code>have/has + V3 (Past Participle)</code>) используется, когда действие:</p>
-        <ul>
-          <li>✔ Завершено, но связано с настоящим (результат важен сейчас).</li>
-          <li>✔ Началось в прошлом и продолжается до настоящего момента.</li>
-          <li>✔ Произошло в неопределённое время в прошлом, но имеет значение для настоящего.</li>
-        </ul>
-
-        <h5 class="mt-4 text-success">Когда <strong>Present Perfect</strong> используется с <strong>Present Simple</strong>?</h5>
-        <p>Используется, когда <strong>Present Simple</strong> описывает повторяющееся или общее явление, а <strong>Present Perfect</strong> подчёркивает опыт, изменения или их влияние.</p>
-        
-        <div class="p-3 border-start border-primary">
-          <p>✅ <strong>I've always loved how she cooks.</strong> (Я всегда любил, как она готовит.)</p>
-          <p>✅ <strong>We have noticed that he talks too much.</strong> (Мы заметили, что он слишком много говорит.)</p>
-          <p>✅ <strong>She has never understood why people like this movie.</strong> (Она никогда не понимала, почему людям нравится этот фильм.)</p>
-        </div>
-
-        <h5 class="mt-4 text-success">Когда <strong>Present Perfect</strong> используется с <strong>Present Continuous</strong>?</h5>
-        <p>Используется, когда <strong>Present Continuous</strong> описывает текущее действие, а <strong>Present Perfect</strong> объясняет его причину или подводит итог.</p>
-
-        <div class="p-3 border-start border-primary">
-          <p>✅ <strong>I have noticed that she is talking to him again.</strong> (Я заметил, что она снова с ним разговаривает.)</p>
-          <p>✅ <strong>They have been surprised that he is learning a new language.</strong> (Они были удивлены, что он учит новый язык.)</p>
-          <p>✅ <strong>We have realized that she is working too hard.</strong> (Мы поняли, что она слишком много работает.)</p>
-        </div>
-
-        <h5 class="mt-4 text-danger">Общий вывод:</h5>
-        <ul>
-          <li>📌 <strong>PrPerf + PrSimp</strong> → акцент на факте, опыте, изменении.</li>
-          <li>📌 <strong>PrPerf + PrCont</strong> → акцент на действии, происходящем сейчас.</li>
-        </ul>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-      </div>
-    </div>
-  </div>
-</div>
-`, 
+  [``, 
    ``, 
    ``,
    ``]);

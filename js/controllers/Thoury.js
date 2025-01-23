@@ -57,8 +57,7 @@ static handleThoury(level)
         if (this.level === 37) 
           return this.translate.translate(`<h1 style="text-align: center; color: #333; font-size: 2.5em; margin-bottom: 20px; border-bottom: 2px solid #4CAF50; padding-bottom: 10px;">Present perfect</h1>`);           
         if (this.level === 38) 
-          return this.translate.translate(`<h3 class="text-center text-primary fw-bold">Present Perfect: Определение и Использование</h3>
-`);           
+          return this.translate.translate(`<h1 style="text-align: center; color: #333; font-size: 2.5em; margin-bottom: 20px; border-bottom: 2px solid #4CAF50; padding-bottom: 10px;">Present perfect + (present simple or continius)</h1>`);          
         
         return this.translate.translate('Просто учим слова');
     }
@@ -74,22 +73,35 @@ static handleThoury(level)
       // if (this.level === 15) 
       //   return this.translate.translate(``);
        if (this.level === 38) 
-         return this.translate.translate(`<div class="modal fade" id="presentPerfectModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title fw-bold text-primary" id="modalTitle">Present Perfect: Определение и Использование</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-      </div>
-      <div class="modal-body">
+         return this.translate.translate(`<div class="accordion" id="presentPerfectAccordion">
+  <!-- Определение Present Perfect -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDefinition" aria-expanded="true">
+        Что такое Present Perfect?
+      </button>
+    </h2>
+    <div id="collapseDefinition" class="accordion-collapse collapse show" data-bs-parent="#presentPerfectAccordion">
+      <div class="accordion-body">
         <p><strong>Present Perfect</strong> (<code>have/has + V3 (Past Participle)</code>) используется, когда действие:</p>
         <ul>
           <li>✔ Завершено, но связано с настоящим (результат важен сейчас).</li>
           <li>✔ Началось в прошлом и продолжается до настоящего момента.</li>
           <li>✔ Произошло в неопределённое время в прошлом, но имеет значение для настоящего.</li>
         </ul>
+      </div>
+    </div>
+  </div>
 
-        <h5 class="mt-4 text-success">Когда <strong>Present Perfect</strong> используется с <strong>Present Simple</strong>?</h5>
+  <!-- Present Perfect + Present Simple -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrPerfPrSimp">
+        Когда Present Perfect используется с Present Simple?
+      </button>
+    </h2>
+    <div id="collapsePrPerfPrSimp" class="accordion-collapse collapse" data-bs-parent="#presentPerfectAccordion">
+      <div class="accordion-body">
         <p>Используется, когда <strong>Present Simple</strong> описывает повторяющееся или общее явление, а <strong>Present Perfect</strong> подчёркивает опыт, изменения или их влияние.</p>
         
         <div class="p-3 border-start border-primary">
@@ -97,8 +109,19 @@ static handleThoury(level)
           <p>✅ <strong>We have noticed that he talks too much.</strong> (Мы заметили, что он слишком много говорит.)</p>
           <p>✅ <strong>She has never understood why people like this movie.</strong> (Она никогда не понимала, почему людям нравится этот фильм.)</p>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <h5 class="mt-4 text-success">Когда <strong>Present Perfect</strong> используется с <strong>Present Continuous</strong>?</h5>
+  <!-- Present Perfect + Present Continuous -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrPerfPrCont">
+        Когда Present Perfect используется с Present Continuous?
+      </button>
+    </h2>
+    <div id="collapsePrPerfPrCont" class="accordion-collapse collapse" data-bs-parent="#presentPerfectAccordion">
+      <div class="accordion-body">
         <p>Используется, когда <strong>Present Continuous</strong> описывает текущее действие, а <strong>Present Perfect</strong> объясняет его причину или подводит итог.</p>
 
         <div class="p-3 border-start border-primary">
@@ -106,15 +129,23 @@ static handleThoury(level)
           <p>✅ <strong>They have been surprised that he is learning a new language.</strong> (Они были удивлены, что он учит новый язык.)</p>
           <p>✅ <strong>We have realized that she is working too hard.</strong> (Мы поняли, что она слишком много работает.)</p>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <h5 class="mt-4 text-danger">Общий вывод:</h5>
+  <!-- Общий вывод -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseConclusion">
+        Общий вывод
+      </button>
+    </h2>
+    <div id="collapseConclusion" class="accordion-collapse collapse" data-bs-parent="#presentPerfectAccordion">
+      <div class="accordion-body">
         <ul>
           <li>📌 <strong>PrPerf + PrSimp</strong> → акцент на факте, опыте, изменении.</li>
           <li>📌 <strong>PrPerf + PrCont</strong> → акцент на действии, происходящем сейчас.</li>
         </ul>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
       </div>
     </div>
   </div>
