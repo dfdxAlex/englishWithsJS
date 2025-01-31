@@ -1,5 +1,5 @@
 const forSinceAgoPrPerfPastSimple = [
-    ["I moved to this city ...", "ago", "for", "since", "earlier", "Я переехал в этот город год назад.", "Я переїхав у це місто рік тому.", "Przeprowadziłem się do tego miasta rok temu."],
+    ["I moved to this city a year ...", "ago", "for", "since", "earlier", "Я переехал в этот город год назад.", "Я переїхав у це місто рік тому.", "Przeprowadziłem się do tego miasta rok temu."],
     ["She finished university ...", "ago", "for", "since", "previously", "Она закончила университет два года назад.", "Вона закінчила університет два роки тому.", "Ukończyła uniwersytet dwa lata temu."],
     ["They left the party an hour ...", "ago", "for", "since", "before", "Они ушли с вечеринки час назад.", "Вони пішли з вечірки годину тому.", "Wyszli z imprezy godzinę temu."],
     ["He bought his car two years ...", "ago", "for", "since", "back", "Он купил свою машину два года назад.", "Він купив свою машину два роки тому.", "Kupił swój samochód dwa lata temu."],
