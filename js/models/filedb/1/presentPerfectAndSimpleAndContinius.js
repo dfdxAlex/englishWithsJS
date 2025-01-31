@@ -459,7 +459,7 @@ const presentPerfectAndSimpleAndContinius = [
         "Він завжди спав допізна, але сьогодні прокинувся рано.",
         "Zawsze spał do późna, ale dziś obudził się wcześnie."
        ],
-       ["We have just ... tickets, but we need to check the seats.", "buy", "buys", "bought", "buying", 
+       ["We have just ... tickets, but we need to check the seats.", "bought", "buys", "buy", "buying", 
         "Мы только что купили билеты, но нам нужно проверить места.",
         "Ми щойно купили квитки, але нам потрібно перевірити місця.",
         "Właśnie kupiliśmy bilety, ale musimy sprawdzić miejsca."
@@ -479,12 +479,12 @@ const presentPerfectAndSimpleAndContinius = [
         "Вона ніколи не пекла торт, але хоче навчитися.",
         "Nigdy nie piekła ciasta, ale chce się nauczyć."
        ],
-       ["We have just ... a new apartment, but we need to move in.", "rent", "rents", "rented", "renting", 
+       ["We have just ... a new apartment, but we need to move in.", "rented", "rents", "rent", "renting", 
         "Мы только что арендовали новую квартиру, но нам нужно въехать.",
         "Ми щойно орендували нову квартиру, але нам потрібно заїхати.",
         "Właśnie wynajęliśmy nowe mieszkanie, ale musimy się wprowadzić."
        ],
-       ["I have already ... the dishes, so we can eat now.", "wash", "washes", "washed", "washing", 
+       ["I have already ... the dishes, so we can eat now.", "hwashed", "washes", "was", "washing", 
         "Я уже помыл посуду, так что теперь мы можем поесть.",
         "Я вже помив посуд, тож тепер ми можемо поїсти.",
         "Już umyłem naczynia, więc możemy teraz zjeść."
