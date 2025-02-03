@@ -25,10 +25,363 @@ BDTranslate.push(
    ``,
    ``]);
 BDTranslate.push(
-  [``, 
-   ``, 
-   ``,
-   ``]);
+  [`<div class="container mt-5">
+    <h2>Present Perfect: Rules for Using <code>For</code>, <code>Since</code>, and <code>Ago</code></h2>
+    <div class="accordion" id="accordionExample">
+        
+        <!-- For -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFor">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFor" aria-expanded="true" aria-controls="collapseFor" style="font-weight: bold; background-color: #f8f9fa;">
+                    <strong>For</strong>
+                </button>
+            </h2>
+            <div id="collapseFor" class="accordion-collapse collapse show" aria-labelledby="headingFor" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background-color: #f7f7f7; padding: 20px;">
+                    <p><strong>For</strong> используется для указания длительности действия или состояния (в течение какого-то времени).</p>
+                    <p>Когда вы хотите сказать, что что-то происходило на протяжении определенного периода времени, используйте <strong>for</strong>.</p>
+                    <p><strong>Примеры:</strong></p>
+                    <ul>
+                        <li>I have lived here <strong>for</strong> five years. (Я живу здесь <strong>в течение</strong> пяти лет.)</li>
+                        <li>She has worked at the company <strong>for</strong> two months. (Она работает в компании <strong>в течение</strong> двух месяцев.)</li>
+                        <li>They have known each other <strong>for</strong> a long time. (Они знают друг друга <strong>в течение</strong> долгого времени.)</li>
+                        <li>We have been waiting <strong>for</strong> 30 minutes. (Мы ждали <strong>в течение</strong> 30 минут.)</li>
+                    </ul>
+                    <p><strong>Обратите внимание:</strong> <strong>For</strong> используется с определенными промежутками времени, такими как:</p>
+                    <ul>
+                        <li>days (дни)</li>
+                        <li>weeks (недели)</li>
+                        <li>months (месяцы)</li>
+                        <li>years (годы)</li>
+                        <li>hours (часы)</li>
+                        <li>minutes (минуты)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Since -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSince">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSince" aria-expanded="false" aria-controls="collapseSince" style="font-weight: bold; background-color: #f8f9fa;">
+                    <strong>Since</strong>
+                </button>
+            </h2>
+            <div id="collapseSince" class="accordion-collapse collapse" aria-labelledby="headingSince" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background-color: #f7f7f7; padding: 20px;">
+                    <p><strong>Since</strong> используется для указания точного момента времени, с которого началось действие.</p>
+                    <p>Когда вы хотите указать момент времени, с которого началось действие, используйте <strong>since</strong>.</p>
+                    <p><strong>Примеры:</strong></p>
+                    <ul>
+                        <li>I have lived here <strong>since</strong> 2010. (Я живу здесь <strong>с 2010 года</strong>.)</li>
+                        <li>She has worked at the company <strong>since</strong> last month. (Она работает в компании <strong>с прошлого месяца</strong>.)</li>
+                        <li>They have known each other <strong>since</strong> childhood. (Они знают друг друга <strong>с детства</strong>.)</li>
+                        <li>We have been friends <strong>since</strong> high school. (Мы друзья <strong>с старшей школы</strong>.)</li>
+                    </ul>
+                    <p><strong>Обратите внимание:</strong> <strong>Since</strong> используется с точными моментами времени, такими как:</p>
+                    <ul>
+                        <li>years (годы)</li>
+                        <li>months (месяцы)</li>
+                        <li>dates (даты)</li>
+                        <li>days of the week (дни недели)</li>
+                        <li>events (события)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ago -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingAgo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAgo" aria-expanded="false" aria-controls="collapseAgo" style="font-weight: bold; background-color: #f8f9fa;">
+                    <strong>Ago</strong>
+                </button>
+            </h2>
+            <div id="collapseAgo" class="accordion-collapse collapse" aria-labelledby="headingAgo" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background-color: #f7f7f7; padding: 20px;">
+                    <p><strong>Ago</strong> используется для указания времени, прошедшего с момента действия. Однако, это слово не используется с Present Perfect, а только с Past Simple.</p>
+                    <p>Когда вы хотите выразить, что что-то произошло в прошлом относительно настоящего времени, используйте <strong>ago</strong> с Past Simple.</p>
+                    <p><strong>Примеры:</strong></p>
+                    <ul>
+                        <li>I met him <strong>two days ago</strong>. (Я встретил его <strong>два дня назад</strong>.)</li>
+                        <li>We went to the cinema <strong>a week ago</strong>. (Мы пошли в кино <strong>неделю назад</strong>.)</li>
+                        <li>She left the office <strong>three hours ago</strong>. (Она ушла из офиса <strong>три часа назад</strong>.)</li>
+                    </ul>
+                    <p><strong>Обратите внимание:</strong> <strong>Ago</strong> не используется с Present Perfect и всегда используется с Past Simple для указания прошедшего времени.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>`, 
+   `<div class="container mt-5">
+    <h2>Present Perfect: Правила використання <code>For</code>, <code>Since</code> та <code>Ago</code></h2>
+    <div class="accordion" id="accordionExample">
+        
+        <!-- For -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFor">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFor" aria-expanded="true" aria-controls="collapseFor" style="font-weight: bold; background-color: #f8f9fa;">
+                    <strong>For</strong>
+                </button>
+            </h2>
+            <div id="collapseFor" class="accordion-collapse collapse show" aria-labelledby="headingFor" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background-color: #f7f7f7; padding: 20px;">
+                    <p><strong>For</strong> використовується для вказівки тривалості дії або стану (протягом якогось часу).</p>
+                    <p>Коли ви хочете сказати, що щось відбувалося протягом певного періоду часу, використовуйте <strong>for</strong>.</p>
+                    <p><strong>Приклади:</strong></p>
+                    <ul>
+                        <li>I have lived here <strong>for</strong> five years. (Я живу тут <strong>протягом</strong> п'яти років.)</li>
+                        <li>She has worked at the company <strong>for</strong> two months. (Вона працює в компанії <strong>протягом</strong> двох місяців.)</li>
+                        <li>They have known each other <strong>for</strong> a long time. (Вони знають одне одного <strong>протягом</strong> довгого часу.)</li>
+                        <li>We have been waiting <strong>for</strong> 30 minutes. (Ми чекали <strong>протягом</strong> 30 хвилин.)</li>
+                    </ul>
+                    <p><strong>Зверніть увагу:</strong> <strong>For</strong> використовується з певними проміжками часу, такими як:</p>
+                    <ul>
+                        <li>days (дні)</li>
+                        <li>weeks (тижні)</li>
+                        <li>months (місяці)</li>
+                        <li>years (роки)</li>
+                        <li>hours (години)</li>
+                        <li>minutes (хвилини)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Since -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSince">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSince" aria-expanded="false" aria-controls="collapseSince" style="font-weight: bold; background-color: #f8f9fa;">
+                    <strong>Since</strong>
+                </button>
+            </h2>
+            <div id="collapseSince" class="accordion-collapse collapse" aria-labelledby="headingSince" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background-color: #f7f7f7; padding: 20px;">
+                    <p><strong>Since</strong> використовується для вказівки точного моменту часу, з якого почалося дію.</p>
+                    <p>Коли ви хочете вказати момент часу, з якого почалася дія, використовуйте <strong>since</strong>.</p>
+                    <p><strong>Приклади:</strong></p>
+                    <ul>
+                        <li>I have lived here <strong>since</strong> 2010. (Я живу тут <strong>з 2010 року</strong>.)</li>
+                        <li>She has worked at the company <strong>since</strong> last month. (Вона працює в компанії <strong>з минулого місяця</strong>.)</li>
+                        <li>They have known each other <strong>since</strong> childhood. (Вони знають одне одного <strong>з дитинства</strong>.)</li>
+                        <li>We have been friends <strong>since</strong> high school. (Ми друзі <strong>з старшої школи</strong>.)</li>
+                    </ul>
+                    <p><strong>Зверніть увагу:</strong> <strong>Since</strong> використовується з точними моментами часу, такими як:</p>
+                    <ul>
+                        <li>years (роки)</li>
+                        <li>months (місяці)</li>
+                        <li>dates (дати)</li>
+                        <li>days of the week (дні тижня)</li>
+                        <li>events (події)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ago -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingAgo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAgo" aria-expanded="false" aria-controls="collapseAgo" style="font-weight: bold; background-color: #f8f9fa;">
+                    <strong>Ago</strong>
+                </button>
+            </h2>
+            <div id="collapseAgo" class="accordion-collapse collapse" aria-labelledby="headingAgo" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background-color: #f7f7f7; padding: 20px;">
+                    <p><strong>Ago</strong> використовується для вказівки часу, що пройшов від моменту дії. Однак це слово не використовується з Present Perfect, а тільки з Past Simple.</p>
+                    <p>Коли ви хочете виразити, що щось сталося в минулому стосовно теперішнього часу, використовуйте <strong>ago</strong> з Past Simple.</p>
+                    <p><strong>Приклади:</strong></p>
+                    <ul>
+                        <li>I met him <strong>two days ago</strong>. (Я зустрів його <strong>два дні тому</strong>.)</li>
+                        <li>We went to the cinema <strong>a week ago</strong>. (Ми пішли в кіно <strong>тиждень тому</strong>.)</li>
+                        <li>She left the office <strong>three hours ago</strong>. (Вона пішла з офісу <strong>три години тому</strong>.)</li>
+                    </ul>
+                    <p><strong>Зверніть увагу:</strong> <strong>Ago</strong> не використовується з Present Perfect і завжди використовується з Past Simple для вказівки минулого часу.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+`, 
+   `<div class="container mt-5">
+    <h2>Present Perfect: Zasady użycia <code>For</code>, <code>Since</code> i <code>Ago</code></h2>
+    <div class="accordion" id="accordionExample">
+        
+        <!-- For -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFor">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFor" aria-expanded="true" aria-controls="collapseFor" style="font-weight: bold; background-color: #f8f9fa;">
+                    <strong>For</strong>
+                </button>
+            </h2>
+            <div id="collapseFor" class="accordion-collapse collapse show" aria-labelledby="headingFor" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background-color: #f7f7f7; padding: 20px;">
+                    <p><strong>For</strong> jest używane do wskazania czasu trwania działania lub stanu (przez jakiś czas).</p>
+                    <p>Kiedy chcesz powiedzieć, że coś działo się przez określony okres czasu, użyj <strong>for</strong>.</p>
+                    <p><strong>Przykłady:</strong></p>
+                    <ul>
+                        <li>I have lived here <strong>for</strong> five years. (Mieszkam tu <strong>przez</strong> pięć lat.)</li>
+                        <li>She has worked at the company <strong>for</strong> two months. (Ona pracuje w firmie <strong>przez</strong> dwa miesiące.)</li>
+                        <li>They have known each other <strong>for</strong> a long time. (Znają się <strong>przez</strong> długi czas.)</li>
+                        <li>We have been waiting <strong>for</strong> 30 minutes. (Czekamy <strong>przez</strong> 30 minut.)</li>
+                    </ul>
+                    <p><strong>Zauważ:</strong> <strong>For</strong> jest używane z określonymi okresami czasu, takimi jak:</p>
+                    <ul>
+                        <li>days (dni)</li>
+                        <li>weeks (tygodnie)</li>
+                        <li>months (miesiące)</li>
+                        <li>years (lata)</li>
+                        <li>hours (godziny)</li>
+                        <li>minutes (minuty)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Since -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSince">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSince" aria-expanded="false" aria-controls="collapseSince" style="font-weight: bold; background-color: #f8f9fa;">
+                    <strong>Since</strong>
+                </button>
+            </h2>
+            <div id="collapseSince" class="accordion-collapse collapse" aria-labelledby="headingSince" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background-color: #f7f7f7; padding: 20px;">
+                    <p><strong>Since</strong> jest używane do wskazania dokładnego momentu w czasie, od którego rozpoczęło się działanie.</p>
+                    <p>Kiedy chcesz wskazać moment w czasie, od którego zaczęła się czynność, użyj <strong>since</strong>.</p>
+                    <p><strong>Przykłady:</strong></p>
+                    <ul>
+                        <li>I have lived here <strong>since</strong> 2010. (Mieszkam tu <strong>od 2010 roku</strong>.)</li>
+                        <li>She has worked at the company <strong>since</strong> last month. (Ona pracuje w firmie <strong>od zeszłego miesiąca</strong>.)</li>
+                        <li>They have known each other <strong>since</strong> childhood. (Znają się <strong>od dzieciństwa</strong>.)</li>
+                        <li>We have been friends <strong>since</strong> high school. (Jesteśmy przyjaciółmi <strong>od liceum</strong>.)</li>
+                    </ul>
+                    <p><strong>Zauważ:</strong> <strong>Since</strong> jest używane z dokładnymi momentami czasu, takimi jak:</p>
+                    <ul>
+                        <li>years (lata)</li>
+                        <li>months (miesiące)</li>
+                        <li>dates (daty)</li>
+                        <li>days of the week (dni tygodnia)</li>
+                        <li>events (wydarzenia)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ago -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingAgo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAgo" aria-expanded="false" aria-controls="collapseAgo" style="font-weight: bold; background-color: #f8f9fa;">
+                    <strong>Ago</strong>
+                </button>
+            </h2>
+            <div id="collapseAgo" class="accordion-collapse collapse" aria-labelledby="headingAgo" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background-color: #f7f7f7; padding: 20px;">
+                    <p><strong>Ago</strong> jest używane do wskazania czasu, który minął od momentu działania. Jednak to słowo nie jest używane z Present Perfect, tylko z Past Simple.</p>
+                    <p>Kiedy chcesz wyrazić, że coś wydarzyło się w przeszłości w stosunku do chwili obecnej, użyj <strong>ago</strong> z Past Simple.</p>
+                    <p><strong>Przykłady:</strong></p>
+                    <ul>
+                        <li>I met him <strong>two days ago</strong>. (Spotkałem go <strong>dwa dni temu</strong>.)</li>
+                        <li>We went to the cinema <strong>a week ago</strong>. (Poszliśmy do kina <strong>tydzień temu</strong>.)</li>
+                        <li>She left the office <strong>three hours ago</strong>. (Ona opuściła biuro <strong>trzy godziny temu</strong>.)</li>
+                    </ul>
+                    <p><strong>Zauważ:</strong> <strong>Ago</strong> nie jest używane z Present Perfect i zawsze używane z Past Simple, aby wskazać miniony czas.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>`,
+   `<div class="container mt-5">
+    <h2>Present Perfect: Rules for <code>For</code>, <code>Since</code>, and <code>Ago</code></h2>
+    <div class="accordion" id="accordionExample">
+        
+        <!-- For -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFor">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFor" aria-expanded="true" aria-controls="collapseFor" style="font-weight: bold; background-color: #f8f9fa;">
+                    <strong>For</strong>
+                </button>
+            </h2>
+            <div id="collapseFor" class="accordion-collapse collapse show" aria-labelledby="headingFor" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background-color: #f7f7f7; padding: 20px;">
+                    <p><strong>For</strong> is used to indicate the duration of an action or state (for a certain period of time).</p>
+                    <p>When you want to say that something has been happening for a certain period of time, use <strong>for</strong>.</p>
+                    <p><strong>Examples:</strong></p>
+                    <ul>
+                        <li>I have lived here <strong>for</strong> five years.</li>
+                        <li>She has worked at the company <strong>for</strong> two months.</li>
+                        <li>They have known each other <strong>for</strong> a long time.</li>
+                        <li>We have been waiting <strong>for</strong> 30 minutes.</li>
+                    </ul>
+                    <p><strong>Note:</strong> <strong>For</strong> is used with certain time periods such as:</p>
+                    <ul>
+                        <li>days</li>
+                        <li>weeks</li>
+                        <li>months</li>
+                        <li>years</li>
+                        <li>hours</li>
+                        <li>minutes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Since -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSince">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSince" aria-expanded="false" aria-controls="collapseSince" style="font-weight: bold; background-color: #f8f9fa;">
+                    <strong>Since</strong>
+                </button>
+            </h2>
+            <div id="collapseSince" class="accordion-collapse collapse" aria-labelledby="headingSince" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background-color: #f7f7f7; padding: 20px;">
+                    <p><strong>Since</strong> is used to indicate the starting point in time when an action began.</p>
+                    <p>When you want to specify the exact moment in time when an action started, use <strong>since</strong>.</p>
+                    <p><strong>Examples:</strong></p>
+                    <ul>
+                        <li>I have lived here <strong>since</strong> 2010.</li>
+                        <li>She has worked at the company <strong>since</strong> last month.</li>
+                        <li>They have known each other <strong>since</strong> childhood.</li>
+                        <li>We have been friends <strong>since</strong> high school.</li>
+                    </ul>
+                    <p><strong>Note:</strong> <strong>Since</strong> is used with specific points in time such as:</p>
+                    <ul>
+                        <li>years</li>
+                        <li>months</li>
+                        <li>dates</li>
+                        <li>days of the week</li>
+                        <li>events</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ago -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingAgo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAgo" aria-expanded="false" aria-controls="collapseAgo" style="font-weight: bold; background-color: #f8f9fa;">
+                    <strong>Ago</strong>
+                </button>
+            </h2>
+            <div id="collapseAgo" class="accordion-collapse collapse" aria-labelledby="headingAgo" data-bs-parent="#accordionExample">
+                <div class="accordion-body" style="background-color: #f7f7f7; padding: 20px;">
+                    <p><strong>Ago</strong> is used to indicate how long ago something happened from the present moment. However, it is not used with Present Perfect, but rather with Past Simple.</p>
+                    <p>When you want to express that something happened in the past relative to the present time, use <strong>ago</strong> with Past Simple.</p>
+                    <p><strong>Examples:</strong></p>
+                    <ul>
+                        <li>I met him <strong>two days ago</strong>.</li>
+                        <li>We went to the cinema <strong>a week ago</strong>.</li>
+                        <li>She left the office <strong>three hours ago</strong>.</li>
+                    </ul>
+                    <p><strong>Note:</strong> <strong>Ago</strong> is not used with Present Perfect and is always used with Past Simple to indicate past time.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>`]);
 BDTranslate.push(
   [`<div class="accordion" id="presentPerfectAccordion">
   <!-- Определение Present Perfect -->

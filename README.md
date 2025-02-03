@@ -3,6 +3,25 @@
 <a href="https://dfdxalex.github.io/englishWithsJS/index.html" target="_blank">Link for project:</a>
 
 
+## Why Data is Stored in an Array Instead of a Database
+
+In this project, data is stored in a local array, not in a database. This approach is designed to ensure smooth operation in environments with unstable internet and minimal server usage.
+
+### Key Reasons:
+
+- **Offline Functionality:** The app works without a constant internet connection, allowing users to access core features even when the network is unavailable.
+  
+- **Reduced Server Load:** With no database queries, the server is kept lightweight and efficient, avoiding unnecessary strain.
+
+- **Speed and Simplicity:** Storing data in an array ensures faster access and a more responsive user experience, without the overhead of database interactions.
+
+- **Minimal Network Usage:** The app reduces data traffic by not requiring frequent server communication, ideal for areas with limited bandwidth.
+
+- **Data Integrity and Security:** Data remains local, minimizing the risk of network disruptions or security issues related to external databases.
+
+This approach is ideal for applications where reliability, speed, and minimal server interaction are key priorities.
+
+
 ## Структура проекта
 
 ```plaintext
