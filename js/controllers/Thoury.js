@@ -58,7 +58,8 @@ static handleThoury(level)
           return this.translate.translate(`<h1 style="text-align: center; color: #333; font-size: 2.5em; margin-bottom: 20px; border-bottom: 2px solid #4CAF50; padding-bottom: 10px;">Present perfect</h1>`);           
         if (this.level === 38) 
           return this.translate.translate(`<h1 style="text-align: center; color: #333; font-size: 2.5em; margin-bottom: 20px; border-bottom: 2px solid #4CAF50; padding-bottom: 10px;">Present perfect + (present simple or continius)</h1>`);          
-        
+        if (this.level === 39) 
+          return this.translate.translate(`<h1 style="text-align: center; color: #333; font-size: 2.5em; margin-bottom: 20px; border-bottom: 2px solid #4CAF50; padding-bottom: 10px;">Present perfect + (for, since and ago)</h1>`);          
         return this.translate.translate('Просто учим слова');
     }
     // Функция помещает информацию в тело раздела Теория
