@@ -203,17 +203,30 @@ class WorkingField {
         console.log(property);
 
         if (property && !property.constIndexArray) {
-            // Если признак того, что правильный ответ - это готовое предложение
-            // сохранился как Труе, то выбрать случайно в качестве вопросса
-            // либо сам вопрос, либо правильный ответ на него
-            if (this.trueSentences) {
+
+            // this.trueSentences содержит информацию о правильном варианте ответа
+            // Это нужно для того, чтобы понимать стоит ли правильный вариант ответа
+            // использовать в качестве предложения для теста. Если содержится 
+            // значение false, то в главном предложении обнаружены многоточия, а значит 
+            // в варианте правильного ответа есть только одно слово.
+            //if (this.trueSentences) {
+                // Простой алгоритм для выбора между вопроссом и правильным вариантом ответа
+                // для разборки на слова - кубики
                 let randomNumber = Math.random();
                 if (randomNumber > 0.5) randomNumber = 1;
                 else randomNumber = 2;
+                // Если false, то правильный ответ - это слово, не предложение,
+                // поэтому отменить результат алгоритма выбора между 
+                // главным вопроссом и правильным ответом
+                if (!this.trueSentences) randomNumber = 1;
+                // Если алгоритм выбрал работу с правильным ответом, 
+                // то взять его из переменной option1
                 if (randomNumber === 2) question = option1;
-                console.log(question);
+                // В переменной question находится готовое для разборки предложение
+                //console.log(question);
+                //console.log("в блоке выбора между вопроссом и ответом");
                 localStorage.setItem('init_word_assembly_not_translate_question', question);
-            }
+            //}
         } else {
             question = localStorage.getItem('init_word_assembly_not_translate_question');
         }
