@@ -203,13 +203,6 @@ class WorkingField {
         console.log(property);
 
         if (property && !property.constIndexArray) {
-
-            // this.trueSentences содержит информацию о правильном варианте ответа
-            // Это нужно для того, чтобы понимать стоит ли правильный вариант ответа
-            // использовать в качестве предложения для теста. Если содержится 
-            // значение false, то в главном предложении обнаружены многоточия, а значит 
-            // в варианте правильного ответа есть только одно слово.
-            //if (this.trueSentences) {
                 // Простой алгоритм для выбора между вопроссом и правильным вариантом ответа
                 // для разборки на слова - кубики
                 let randomNumber = Math.random();
@@ -223,10 +216,7 @@ class WorkingField {
                 // то взять его из переменной option1
                 if (randomNumber === 2) question = option1;
                 // В переменной question находится готовое для разборки предложение
-                //console.log(question);
-                //console.log("в блоке выбора между вопроссом и ответом");
                 localStorage.setItem('init_word_assembly_not_translate_question', question);
-            //}
         } else {
             question = localStorage.getItem('init_word_assembly_not_translate_question');
         }
