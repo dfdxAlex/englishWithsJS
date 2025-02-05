@@ -151,7 +151,7 @@ class WorkingField {
     }
     }
 
-  // рядом будет подобная функция, будет врмя можно совместить
+  // рядом будет подобная функция, будет время можно совместить
   // initWordAssembly() и initWordAssemblyNotTranslate()
   // новый параметр dataObj, объект для масштабирования функции.
   initWordAssemblyNotTranslate(arrayBD, nameLeson = false, property = false) 
@@ -188,20 +188,19 @@ class WorkingField {
         // Создание кнопок
         let buttonOption = [];
 
-
-
         // Специальная проверка на работу с массивом toBeSentences
         // Он создан не стандартно, в нем дублируется первое слово
         // и слово Not
         if (localStorage.getItem('nameArrayDb') === 'toBeSentences') {
             if (question.includes('not')) {
                 question = question.replace(' not', '');
-                trueSentences = false;
+                this.trueSentences = false;
                 localStorage.setItem('init_word_assembly_not_translate_question', question);
             }
         }
 
         question = this.insertWord(question, option1);
+        console.log(property);
 
         if (property && !property.constIndexArray) {
             // Если признак того, что правильный ответ - это готовое предложение
@@ -212,6 +211,7 @@ class WorkingField {
                 if (randomNumber > 0.5) randomNumber = 1;
                 else randomNumber = 2;
                 if (randomNumber === 2) question = option1;
+                console.log(question);
                 localStorage.setItem('init_word_assembly_not_translate_question', question);
             }
         } else {
