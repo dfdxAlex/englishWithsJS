@@ -7,8 +7,13 @@ class WorkingField {
   // признак того, что правильный ответ есть предложение, а не 
   // пропущенное слово
   trueSentences = true;
+  // Вызвать из регистра объект переводчика
+  transL = FactoryRegistr.getObject("LanguageController");
+  // Постоянная часть разметки компонента
+  cardStart = `<div class="card fieldSetWorkField" style="width: 100%; margin: auto; border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0 8px 16px rgba(0,0,0,0.2);"><div class="card-body">`;
 
-  init(arrayBD, nameLeson = false) {
+  init(arrayBD, nameLeson = false) 
+  {
       if (arrayBD !== undefined && arrayBD.length == 8) {
           [this.question, 
           this.option1,
@@ -22,18 +27,9 @@ class WorkingField {
           // местная функция для отработки статистики
           this.workingWihtOkAndError();
 
-          // Настроить переводчик
-          const transL = FactoryRegistr.getObject("LanguageController");
-
           // Используем Card вместо fieldset
-          let cardStart = `<div class="card fieldSetWorkField" style="width: 100%; margin: auto; border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0 8px 16px rgba(0,0,0,0.2);"><div class="card-body">`;
-          let legend = '';
+          let legend = this.cardStartAndLegend(nameLeson);
 
-          if (!nameLeson)
-              legend = `<h5 class="card-title" id="fieldset-legend">${transL.translate('Вопрос с вариантами ответа')}</h5>`;
-          if (nameLeson)
-              legend = `<h5 class="card-title" id="fieldset-legend">${nameLeson}</h5>`;
-          
           let buttonOption = [];
           buttonOption[0] = this.strStart+' id="option1"> '+this.option1+this.strFinish;
           buttonOption[1] = this.strStart+' id="option2"> '+this.option2+this.strFinish;
@@ -44,14 +40,14 @@ class WorkingField {
           const buttonQuestion = `<br><div class='row mb-2'><div class='col-12'><button style='width: 100%; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button' id='question'>${this.question}</button></div></div><br>`;
 
           // Начальный текст для кнопки перевода вопроса
-          let translateFromArray = transL.translate('Перевести вопрос');
+          let translateFromArray = this.transL.translate('Перевести вопрос');
 
           // Кнопка "Перевести вопрос"
           const translate = `<div class='row mb-2'><div class='col-12'><button style='width: 100%; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button' id='translate'>${translateFromArray}</button></div></div><br><br><br>`;
 
           buttonOption = shuffleArray(buttonOption);
 
-          return cardStart +
+          return this.cardStart +
               legend +
               buttonQuestion +
               translate +
@@ -77,18 +73,9 @@ class WorkingField {
         // местная функция для отработки статистики
         this.workingWihtOkAndError();
 
-        // Настроить переводчик
-        const transL = FactoryRegistr.getObject("LanguageController");
-
         //////////////////////////////////////////////////////////
-        let cardStart = `<div class="card fieldSetWorkField" style="width: 100%; margin: auto; border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0 8px 16px rgba(0,0,0,0.2);"><div class="card-body">`;
-        let legend = '';
+        let legend = this.cardStartAndLegend(nameLeson);
 
-        if (!nameLeson)
-            legend = `<h5 class="card-title" id="fieldset-legend">${transL.translate('Вопрос с вариантами ответа')}</h5>`;
-        if (nameLeson)
-            legend = `<h5 class="card-title" id="fieldset-legend">${nameLeson}:${transL.translate('(может отличаться)')}</h5>`;
-        
         // Создание кнопок
         let buttonOption = [];
 
@@ -125,7 +112,7 @@ class WorkingField {
         const cardFinish = "</div></div>";
 
         // Начальный текст для кнопки перевода вопроса
-        let translateFromArray = transL.translate('Перевести вопрос');
+        let translateFromArray = this.transL.translate('Перевести вопрос');
 
         // Кнопка "Перевести вопрос"
         const translate = `<div class='row mb-2'><div class='col-12'><button style='width: 100%; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button' id='translate'>${translateFromArray}</button></div></div>`;
@@ -134,7 +121,10 @@ class WorkingField {
 
         buttonOption = shuffleArray(buttonOption);
 
-        let rez = cardStart + legend + translate + containerForRezzult;
+        let rez = this.cardStart + 
+                  legend + 
+                  translate + 
+                  containerForRezzult;
         const strButton = buttonOption.join('');
         rez+='<hr>'+strButton+buttonOk+cardFinish;
 
@@ -164,18 +154,9 @@ class WorkingField {
         // местная функция для отработки статистики
         this.workingWihtOkAndError();
 
-        // Настроить переводчик
-        const transL = FactoryRegistr.getObject("LanguageController");
-
         //////////////////////////////////////////////////////////
-        let cardStart = `<div class="card fieldSetWorkField" style="width: 100%; margin: auto; border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0 8px 16px rgba(0,0,0,0.2);"><div class="card-body">`;
-        let legend = '';
+        let legend = this.cardStartAndLegend(nameLeson);
 
-        if (!nameLeson)
-            legend = `<h5 class="card-title" id="fieldset-legend">${transL.translate('Вопрос с вариантами ответа')}</h5>`;
-        if (nameLeson)
-            legend = `<h5 class="card-title" id="fieldset-legend">${nameLeson}:${transL.translate('(может отличаться)')}</h5>`;
-        
         // Создание кнопок
         let buttonOption = [];
 
@@ -191,7 +172,6 @@ class WorkingField {
         }
 
         question = this.insertWord(question, option1);
-        console.log(property);
 
         if (property && !property.constIndexArray) {
                 // Простой алгоритм для выбора между вопроссом и правильным вариантом ответа
@@ -236,7 +216,7 @@ class WorkingField {
         const cardFinish = "</div></div>";
 
         // Начальный текст для кнопки перевода вопроса
-        let translateFromArray = transL.translate('Перевести вопрос');
+        let translateFromArray = this.transL.translate('Перевести вопрос');
 
         // Кнопка "Перевести вопрос"
         const translate = `<div class='row mb-2'><div class='col-12'><button style='width: 100%; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button' id='translate'>${translateFromArray}</button></div></div>`;
@@ -245,7 +225,10 @@ class WorkingField {
 
         buttonOption = shuffleArray(buttonOption);
 
-        let rez = cardStart + legend + translate + containerForRezzult;
+        let rez = this.cardStart + 
+                  legend + 
+                  translate + 
+                  containerForRezzult;
         const strButton = buttonOption.join('');
         rez+='<hr>'+strButton+buttonOk+cardFinish;
 
@@ -258,6 +241,26 @@ class WorkingField {
 
   // Дальше служебные функции класса *****************************
   // *************************************************************
+
+  // Функция немного изменяет постоянную часть разметки
+  // компонента Card от Bootstrap.
+  // дефолтная разметка хра
+  cardStartAndLegend(nameLeson)
+  {
+    let result = false;
+    result = new Error().stack.includes('init ');
+    
+    let legend = '';
+    if (!nameLeson)
+        legend = `<h5 class="card-title" id="fieldset-legend">${this.transL.translate('Вопрос с вариантами ответа')}</h5>`;
+    if (nameLeson && result)
+        legend = `<h5 class="card-title" id="fieldset-legend">${nameLeson}</h5>`;
+    else
+        legend = `<h5 class="card-title" id="fieldset-legend">${nameLeson}:${this.transL.translate('(может отличаться)')}</h5>`;
+     
+    return legend;
+  }
+
   insertWord(question, option1) 
   {
         // Замена троеточия на правильное слово
