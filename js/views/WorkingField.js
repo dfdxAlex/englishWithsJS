@@ -19,11 +19,8 @@ class WorkingField {
           this.translateUa,
           this.translatePl] = arrayBD;
 
-          let levelForStaticticOk = 'level' + localStorage.getItem('level') + '_Ok';
-          let levelForStaticticError = 'level' + localStorage.getItem('level') + '_Error';
-
-          const statistic = FactoryRegistr.getObject('Statistic');
-          statistic.init(localStorage.getItem(levelForStaticticOk), localStorage.getItem(levelForStaticticError));
+          // местная функция для отработки статистики
+          this.workingWihtOkAndError();
 
           // Настроить переводчик
           const transL = FactoryRegistr.getObject("LanguageController");
@@ -77,11 +74,8 @@ class WorkingField {
         [question, option1, ,,, this.translateRu, this.translateUa, 
          this.translatePl] = arrayBD;
 
-        let levelForStaticticOk = 'level' + localStorage.getItem('level') + '_Ok';
-        let levelForStaticticError = 'level' + localStorage.getItem('level') + '_Error';
-
-        const statistic = FactoryRegistr.getObject('Statistic');
-        statistic.init(localStorage.getItem(levelForStaticticOk), localStorage.getItem(levelForStaticticError));
+        // местная функция для отработки статистики
+        this.workingWihtOkAndError();
 
         // Настроить переводчик
         const transL = FactoryRegistr.getObject("LanguageController");
@@ -167,11 +161,8 @@ class WorkingField {
         // меняется внутри функции
         const questionOld = question;
 
-        let levelForStaticticOk = 'level' + localStorage.getItem('level') + '_Ok';
-        let levelForStaticticError = 'level' + localStorage.getItem('level') + '_Error';
-
-        const statistic = FactoryRegistr.getObject('Statistic');
-        statistic.init(localStorage.getItem(levelForStaticticOk), localStorage.getItem(levelForStaticticError));
+        // местная функция для отработки статистики
+        this.workingWihtOkAndError();
 
         // Настроить переводчик
         const transL = FactoryRegistr.getObject("LanguageController");
@@ -265,6 +256,8 @@ class WorkingField {
     }
   }
 
+  // Дальше служебные функции класса *****************************
+  // *************************************************************
   insertWord(question, option1) 
   {
         // Замена троеточия на правильное слово
@@ -281,6 +274,17 @@ class WorkingField {
             this.trueSentences = false;
         }
         return question;
+  }
+
+  // Местная функция, которая вызывает обработку статичтики по правильным
+  // и не правильным ответам
+  workingWihtOkAndError()
+  {
+    let staticticOk = 'level' + localStorage.getItem('level') + '_Ok';
+    let staticticError = 'level' + localStorage.getItem('level') + '_Error';
+    const statistic = FactoryRegistr.getObject('Statistic');
+    statistic.init(localStorage.getItem(staticticOk), 
+                   localStorage.getItem(staticticError));
   }
 
   buttonOk()

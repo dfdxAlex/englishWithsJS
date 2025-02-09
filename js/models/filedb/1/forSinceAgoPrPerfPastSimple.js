@@ -65,7 +65,7 @@ const forSinceAgoPrPerfPastSimple = [
     ["I have lived here ... I was a child.", "since", "for", "ago", "now", "Я живу здесь с детства.", "Я живу тут з дитинства.", "Mieszkam tutaj od dzieciństwa."],
     ["She has been waiting ... 10 o'clock.", "since", "for", "ago", "currently", "Она ждет с 10 часов.", "Вона чекає з 10 години.", "Czeka od godziny 10."],
     ["They have studied English ... three years.", "since", "for", "ago", "lately", "Они учат английский три года.", "Вони вивчають англійську вже три роки.", "Oni uczą się angielskiego od trzech lat."],
-    ["I have been playing the piano ... I was a kid.", "since", "for", "ago", "recently", "Я играю на пианино с детства.", "Я граю на піаніно з дитинства.", "Gram na pianinie od dzieciństwa."],
+    ["He has been playing the piano ... He was a kid.", "since", "for", "ago", "recently", "Он играет на пианино с детства.", "Вiн грае на піаніно з дитинства.", "Gra na pianinie od dzieciństwa."],
     ["He has been sick ... last week.", "since", "for", "ago", "currently", "Он болен с прошлой недели.", "Він хворіє з минулого тижня.", "Jest chory od zeszłego tygodnia."],
     ["She has worked here ... five years.", "since", "for", "ago", "now", "Она работает здесь пять лет.", "Вона працює тут вже п’ять років.", "Ona pracuje tutaj od pięciu lat."],
     ["I have been reading this book ... two weeks.", "for", "since", "ago", "recently", "Я читаю эту книгу две недели.", "Я читаю цю книгу вже два тижні.", "Czytam tę książkę od dwóch tygodni."],
