@@ -70,5 +70,7 @@ class EventController {
 
         // обработчик события клика по кнопке логов
         document.getElementById('log').onclick = handleLog;
+
+
     }
 }

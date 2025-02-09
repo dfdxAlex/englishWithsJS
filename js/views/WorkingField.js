@@ -12,6 +12,11 @@ class WorkingField {
   // Постоянная часть разметки компонента
   cardStart = `<div class="card fieldSetWorkField" style="width: 100%; margin: auto; border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0 8px 16px rgba(0,0,0,0.2);"><div class="card-body">`;
 
+  // принудительное изменение вопроса.
+  // труе назначается в функции app(), событие на клик по кнопке
+  // выпадающего меню выбора теста
+  resetQuestion = false;
+
   init(arrayBD, nameLeson = false) 
   {
       if (arrayBD !== undefined && arrayBD.length == 8) {
@@ -24,10 +29,8 @@ class WorkingField {
           this.translateUa,
           this.translatePl] = arrayBD;
 
-          // местная функция для отработки статистики
           this.workingWihtOkAndError();
 
-          // Используем Card вместо fieldset
           let legend = this.cardStartAndLegend(nameLeson);
 
           let buttonOption = [];
@@ -70,23 +73,14 @@ class WorkingField {
         [question, option1, ,,, this.translateRu, this.translateUa, 
          this.translatePl] = arrayBD;
 
-        // местная функция для отработки статистики
         this.workingWihtOkAndError();
 
-        //////////////////////////////////////////////////////////
         let legend = this.cardStartAndLegend(nameLeson);
 
         // Создание кнопок
         let buttonOption = [];
 
-        // Специальная проверка на работу с массивом toBeSentences
-        // Он создан не стандартно, в нем дублируется первое слово
-        // и слово Not
-        if (localStorage.getItem('nameArrayDb') === 'toBeSentences') {
-            if (question.includes('not')) {
-                question = question.replace(' not', '');
-            }
-        }
+        question = this.clearNotToBeSentences(question);
 
         question = this.insertWord(question, option1);
 
@@ -107,8 +101,6 @@ class WorkingField {
         });
         localStorage.setItem('indexMax', indexMax);
 
-        const buttonOk = this.buttonOk();
-
         const cardFinish = "</div></div>";
 
         // Начальный текст для кнопки перевода вопроса
@@ -126,7 +118,7 @@ class WorkingField {
                   translate + 
                   containerForRezzult;
         const strButton = buttonOption.join('');
-        rez+='<hr>'+strButton+buttonOk+cardFinish;
+        rez+='<hr>'+strButton+this.buttonOk()+cardFinish;
 
         //Подменить описание Задания если собираются предложения
         //document.querySelector('#help').innerHTML = "Привет";
@@ -147,33 +139,19 @@ class WorkingField {
         [question, option1, ,,, this.translateRu, this.translateUa, 
          this.translatePl] = arrayBD;
 
-        // Запомнить исходное значение этого параметра, потому как он 
-        // меняется внутри функции
-        const questionOld = question;
-
-        // местная функция для отработки статистики
         this.workingWihtOkAndError();
 
-        //////////////////////////////////////////////////////////
         let legend = this.cardStartAndLegend(nameLeson);
 
         // Создание кнопок
         let buttonOption = [];
 
-        // Специальная проверка на работу с массивом toBeSentences
-        // Он создан не стандартно, в нем дублируется первое слово
-        // и слово Not
-        if (localStorage.getItem('nameArrayDb') === 'toBeSentences') {
-            if (question.includes('not')) {
-                question = question.replace(' not', '');
-                this.trueSentences = false;
-                localStorage.setItem('init_word_assembly_not_translate_question', question);
-            }
-        }
+        question = this.clearNotToBeSentences(question);
 
         question = this.insertWord(question, option1);
 
-        if (property && !property.constIndexArray) {
+        if (property && !property.constIndexArray || this.resetQuestion) {
+                this.resetQuestion = false;
                 // Простой алгоритм для выбора между вопроссом и правильным вариантом ответа
                 // для разборки на слова - кубики
                 let randomNumber = Math.random();
@@ -190,10 +168,9 @@ class WorkingField {
                 localStorage.setItem('init_word_assembly_not_translate_question', question);
         } else {
             question = localStorage.getItem('init_word_assembly_not_translate_question');
+            question = this.insertWord(question, option1);
         }
-        // Если не удалось получить question, то поднять его из архива
-        if (!question)
-            question = questionOld;
+
         // массив arrayButton должен содержать разбитые на слова предложения
         const arrayButton = question.split(' ');
 
@@ -210,8 +187,6 @@ class WorkingField {
             indexMax = index;
         });
         localStorage.setItem('indexMax', indexMax);
-
-        const buttonOk = this.buttonOk();
 
         const cardFinish = "</div></div>";
 
@@ -230,7 +205,7 @@ class WorkingField {
                   translate + 
                   containerForRezzult;
         const strButton = buttonOption.join('');
-        rez+='<hr>'+strButton+buttonOk+cardFinish;
+        rez+='<hr>'+strButton+this.buttonOk()+cardFinish;
 
         //Подменить описание Задания если собираются предложения
         //document.querySelector('#help').innerHTML = "Привет";
@@ -242,14 +217,35 @@ class WorkingField {
   // Дальше служебные функции класса *****************************
   // *************************************************************
 
-  // Функция немного изменяет постоянную часть разметки
-  // компонента Card от Bootstrap.
-  // дефолтная разметка хра
+  // Функция очищает массив toBeSentences от лишнего слова Not.
+  // Данный массив изначательно построен особенным образом.
+  clearNotToBeSentences(question)
+  {
+    if (localStorage.getItem('nameArrayDb') !== 'toBeSentences') 
+        return question;
+
+    if (question.includes('not'))
+        question = question.replace(' not', '');
+
+    let result = false;
+    result = new Error().stack.includes('initWordAssembly ');
+    
+    if (result) return question;
+
+    this.trueSentences = false;
+    localStorage.setItem('init_word_assembly_not_translate_question', question);
+
+    return question;
+  }
+
+  // Функция возвращает значение Legend, которое изменяется в зависимости
+  // от места использования. В первом тесте у легенды одно значение, во
+  // втором и третьем другое. Функция сама определяет из какого места
+  // она запускается.
   cardStartAndLegend(nameLeson)
   {
     let result = false;
     result = new Error().stack.includes('init ');
-    
     let legend = '';
     if (!nameLeson)
         legend = `<h5 class="card-title" id="fieldset-legend">${this.transL.translate('Вопрос с вариантами ответа')}</h5>`;
@@ -257,13 +253,16 @@ class WorkingField {
         legend = `<h5 class="card-title" id="fieldset-legend">${nameLeson}</h5>`;
     else
         legend = `<h5 class="card-title" id="fieldset-legend">${nameLeson}:${this.transL.translate('(может отличаться)')}</h5>`;
-     
     return legend;
   }
 
+  // Функция используется там, где необходимо получить предложение
+  // для разбора его на кубики, но в нем есть пропущенное слово. 
+  // Необходимое слово находится в первом индексе массива с данными
+  // функция заменяет пропущенное слово на необходимое слово и 
+  // возвращает его.
   insertWord(question, option1) 
   {
-        // Замена троеточия на правильное слово
         if (question.includes('...')) {
             question = question.replace('...', option1);
             this.trueSentences = false;
@@ -279,8 +278,9 @@ class WorkingField {
         return question;
   }
 
-  // Местная функция, которая вызывает обработку статичтики по правильным
-  // и не правильным ответам
+  // Метод вызывает метод другого класса и передает ему данные для 
+  // обработки. Данные касаются статистики правильных и не правильных 
+  // ответов.
   workingWihtOkAndError()
   {
     let staticticOk = 'level' + localStorage.getItem('level') + '_Ok';
@@ -290,6 +290,8 @@ class WorkingField {
                    localStorage.getItem(staticticError));
   }
 
+  // Функция создает разметку для кнопки "Проверить" 
+  // во втором и третьем тесте
   buttonOk()
   {
     return `<div class='row mb-2'>

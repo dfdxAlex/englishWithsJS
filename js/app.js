@@ -24,6 +24,11 @@ window.onload = () => {
     // спрятать все ненужные блоки и показать меню Настроек
     document.querySelector('#setting').onclick = activationMenuSetting;
     
+    // обработчил для клика по одному из вариантов выбора теста
+    // присвоив свойство true принудительно обновляет вопрос
+    document.getElementById('btnGroupDrop1').onclick = () => {
+        FactoryRegistr.getObject('WorkingField').resetQuestion = true;
+    }
 };
 
 // инициализация переменных, хранящихся в классе данных
