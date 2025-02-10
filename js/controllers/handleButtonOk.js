@@ -15,6 +15,7 @@ function handleButtonOk(ev)
     // индекса елемента, то ответ не правильный rezult = false;
     // параллельно собрать предложение получившееся
     for (let i=0; i<=buttonMax; i++) {
+
         if (!arrayButton[i] || parseInt(arrayButton[i].dataset.index) !== i) {
             rezult = false;
         }
@@ -22,12 +23,25 @@ function handleButtonOk(ev)
             rezultString+=arrayButton[i].innerText + ' ';
     }
 
+    //************************************************************
+    //Этот блок дублирует проверку. Изменение алгоритма проверки результата
+    //так как алгоритм проверяющий порядок слов уязвим для предложений
+    //с одинаковыми двумя словами.
+
+    // Достать образец текущего задания в тесте из другого объекта
+    let testState = FactoryRegistr.getObject('WorkingField').question;
+    testState = testState.replace(/\s+/g, '');
+    let testForButton = rezultString.replace(/\s+/g, '');
+
+    let testRezult = String(testState) == String(testForButton);
+    //************************************************************
+
     // Накинуть на кнопку текст, который будет прочитан функцией
     // handleOkErr(). Но сразу же после этого будет обновление страницы
     // и информация вернется к дефолтной. Данного текста видно не будет.
     document.querySelector('#button-ok').innerText = rezultString;
     // Если ответ правильный
-    if (rezult) {
+    if (rezult || testRezult) {
         handleOkErr('Ok',ev);
     } else {
         handleOkErr('Error',ev);
