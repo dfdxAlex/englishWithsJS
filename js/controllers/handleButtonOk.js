@@ -29,11 +29,11 @@ function handleButtonOk(ev)
     //с одинаковыми двумя словами.
 
     // Достать образец текущего задания в тесте из другого объекта
-    let testState = FactoryRegistr.getObject('WorkingField').question;
+    let testState = FactoryRegistr.getObject('WorkingField').questionDB;
     testState = testState.replace(/\s+/g, '');
     let testForButton = rezultString.replace(/\s+/g, '');
 
-    let testRezult = String(testState) == String(testForButton);
+    let testRezult = String(testState.toLowerCase()) == String(testForButton.toLowerCase());
     //************************************************************
 
     // Накинуть на кнопку текст, который будет прочитан функцией
