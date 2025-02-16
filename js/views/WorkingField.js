@@ -272,8 +272,14 @@ class WorkingField {
   // Необходимое слово находится в первом индексе массива с данными
   // функция заменяет пропущенное слово на необходимое слово и 
   // возвращает его.
+  // 17.02.2025.Добавлена проверка на /, если он есть в первом предложении
+  // то нужно взять второе для разборки на слова.
   insertWord(question, option1) 
   {
+        if (question.includes('/')) {
+            question = option1;
+            this.trueSentences = false;
+        }
         if (question.includes('...')) {
             question = question.replace('...', option1);
             this.trueSentences = false;
