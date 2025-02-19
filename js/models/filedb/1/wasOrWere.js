@@ -1435,7 +1435,7 @@ const wasOrWere = [
     "Were the team winning?",
     "Winning was the team?",
     "Were winning the team?",
-    "Команда побеждала.",
+    "Команда выигрывала.",
     "Команда перемагала.",
     "Zespół wygrywał."
   ],
@@ -2164,7 +2164,7 @@ const wasOrWere = [
   ["... happy with the outcome?", "was", "were", "", "", "Ты был доволен результатом?", "Ти був задоволений результатом?", "Ty byłeś zadowolony z wyniku?"],
   ["... excited about the trip?", "were", "was", "", "", "Вы были в восторге от поездки?", "Ви були в захваті від поїздки?", "Byliście podekscytowani wyjazdem?"],
   ["... ready for the challenge?", "was", "were", "", "", "Ты был готов к испытанию?", "Ти був готовий до випробування?", "Ty byłeś gotowy na wyzwanie?"],
-  ["... afraid of the storm?", "was", "were", "", "", "Ты боялся шторма?", "Ти боявся шторму?", "Ty bałeś się burzy?"],
+  ["You ... afraid of the storm?", "were", "was", "", "", "Ты боялся шторма?", "Ти боявся шторму?", "Ty bałeś się burzy?"],
   ["... satisfied with your work?", "were", "was", "", "", "Вы были довольны своей работой?", "Ви були задоволені своєю роботою?", "Byliście zadowoleni z swojej pracy?"],
   ["... invited to the party?", "were", "was", "", "", "Ты был приглашен на вечеринку?", "Ти був запрошений на вечірку?", "Ty byłeś zaproszony na imprezę?"],
   ["... at home last weekend?", "were", "was", "", "", "Вы были дома на прошлых выходных?", "Ви були вдома на минулих вихідних?", "Byliście w domu w zeszły weekend?"],
@@ -2172,7 +2172,7 @@ const wasOrWere = [
   
   ["... your favorite movie?", "was", "were", "", "", "Это был твой любимый фильм?", "Це був твій улюблений фільм?", "To był twój ulubiony film?"],
   ["... friends with your classmates?", "were", "was", "", "", "Вы дружили с одноклассниками?", "Ви дружили з однокласниками?", "Byliście przyjaciółmi z kolegami z klasy?"],
-  ["... happy about the results?", "was", "were", "", "", "Ты был рад результатам?", "Ти був радий результатам?", "Ty byłeś zadowolony z wyników?"],
+  ["You ... happy about the results?", "were", "was", "", "", "Ты был рад результатам?", "Ти був радий результатам?", "Ty byłeś zadowolony z wyników?"],
   ["... you at the meeting last Friday?", "were", "was", "", "", "Вы были на встрече в прошлую пятницу?", "Ви були на зустрічі в минулий п'ятницю?", "Byliście na spotkaniu w zeszły piątek?"],
   ["... you working on the project?", "were", "was", "", "", "Ты работал над проектом?", "Ти працював над проектом?", "Ty pracowałeś nad projektem?"],
   ["... able to attend the wedding?", "were", "was", "", "", "Ты смог прийти на свадьбу?", "Ти зміг прийти на весілля?", "Ty byłeś w stanie przyjść na wesele?"],
@@ -2225,7 +2225,7 @@ const wasOrWere = [
   // проверено
   ["Who ... the guests able to attend the wedding?", "were", "was", "", "", "Кто смог прийти на свадьбу?", "Хто зміг прийти на весілля?", "Kto mógł przyjść na wesele?"],
   ["Why ... aware of the changes?", "was", "were", "", "", "Почему ты был в курсе изменений?", "Чому ти був у курсі змін?", "Dlaczego byłeś świadomy zmian?"],
-  ["What ... happy to see your family?", "was", "were", "", "", "Что тебя радовало видеть свою семью?", "Що тебе радувало бачити свою сім'ю?", "Co ciebie cieszyło, widząc swoją rodzinę?"],
+  ["Who ... happy to see your family?", "was", "were", "", "", "Кто был рад видеть вашу семью?", "Хто був радий бачити вашу родину?", "Kto cieszył się na widok Twojej rodziny?"],
   ["Where ... you involved in the project?", "were", "was", "", "", "Где вы были вовлечены в проект?", "Де ви були залучені до проекту?", "Gdzie byliście zaangażowani w projekt?"],
   ["When ... on vacation last month?", "were", "was", "", "", "Когда ты был в отпуске в прошлом месяце?", "Коли ти був у відпустці минулого місяця?", "Kiedy byłeś na wakacjach w zeszłym miesiącu?"],
   
