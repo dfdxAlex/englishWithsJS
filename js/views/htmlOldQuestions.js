@@ -9,14 +9,14 @@ function htmlOldQuestions()
           <!-- Предыдущий вопрос -->
           <div class="row mb-3">
             <div class="col-12">
-              <div class="p-2 border rounded text-white" id="question_old">Предыдущий вопрос здесь</div>
+              <div class="p-2 border rounded text-white bg-success" id="question_old">Предыдущий вопрос здесь</div>
             </div>
           </div>
 
           <!-- Последний ответ -->
           <div class="row mb-3">
             <div class="col-12">
-              <div class="p-2 border rounded text-white" id="clicked_element">Последний ответ здесь</div>
+              <div class="p-2 border rounded text-white bg-success" id="clicked_element">Последний ответ здесь</div>
             </div>
           </div>
 

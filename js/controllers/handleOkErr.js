@@ -79,7 +79,7 @@ function handleOkErr(str, event) {
 
     // Запомнить содержимое вопросса, для того, чтобы его 
     // продублировать в поле предыдущего вопросса и ответа
-    const oldElementText = document.getElementById('question');
+    let oldElementText = document.getElementById('question');
     const clickedElementOld = document.getElementById('question_old');
     // Проверить есть ли поле с вопроссом, это поле отсутствует 
     // При втором уровне тестов, сборка предложения по словам
@@ -97,20 +97,28 @@ function handleOkErr(str, event) {
     fieldsetLegend.innerHTML = 'Текущий вопрос/ответ';
     // Изменить вопрос только если есть правильный ответ на предыдущий
     if (str === 'Ok') {
-        clickedEl.style.backgroundColor = "green";
-        clickedElementOld.style.backgroundColor = "green";
-        clickedEl.style.color = "white";
-        clickedElementOld.style.color = "white";
+        colorErrorOrOk('bg-danger', "bg-success");
         fieldsetLegend.innerHTML = translate.translate('Предыдущий вопрос/ответ');
         handleLevelX(new LevelDataModel(localStorage.getItem('level')));
     }
     else {
-        clickedEl.style.backgroundColor = "red";
-        clickedElementOld.style.backgroundColor = "red";
+        colorErrorOrOk("bg-success",'bg-danger');
     }
     
     // пересчитать статистику и записать в хранилище
     resetStatistic(false);
     // перерисовать статус диамантов
     diament();
+}
+
+// служебная функция удаляет из элементов question_old и clicked_element
+// класс переданный в первом параметре и добавляет класс переданный во
+// втором параметре. Используется пседомассив arguments
+function colorErrorOrOk()
+{
+    if (arguments.length < 2) return;
+    document.getElementById("question_old").classList.add(arguments[1]);
+    document.getElementById("question_old").classList.remove(arguments[0]);
+    document.getElementById("clicked_element").classList.add(arguments[1]);
+    document.getElementById("clicked_element").classList.remove(arguments[0]);
 }

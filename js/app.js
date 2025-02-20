@@ -3,9 +3,10 @@
 window.onload = () => {
     diament();
     nav();
+    htmlOldQuestions();
     daimentInfo();
     htmlHelp();
-    htmlOldQuestions();
+    //htmlOldQuestions();
     buttonSound();
 
     // Запуск контроллера языковых настроек
