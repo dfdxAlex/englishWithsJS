@@ -40,8 +40,6 @@ function handleOkErr(str, event) {
     // функция calculateBonusMultiplier() берет число текущих балов
     // и увеличивает его. Правила смотреть внутри функции
     localStorage.setItem(levexW,tic+calculateBonusMultiplier(propertyForBonus));
-    // Достать из регистра объект переводчика
-    const translate = FactoryRegistr.getObject('LanguageController');
 
     // Сброс состояния кнопки
     resetBottonError();
@@ -93,12 +91,9 @@ function handleOkErr(str, event) {
         clickedElementOld.innerText = document.querySelector('#button-ok').innerText;
 
     // Поле со старым или текущим вопроссом
-    const fieldsetLegend = document.getElementById('fieldset-legend');
-    fieldsetLegend.innerHTML = 'Текущий вопрос/ответ';
     // Изменить вопрос только если есть правильный ответ на предыдущий
     if (str === 'Ok') {
         colorErrorOrOk('bg-danger', "bg-success");
-        fieldsetLegend.innerHTML = translate.translate('Предыдущий вопрос/ответ');
         handleLevelX(new LevelDataModel(localStorage.getItem('level')));
     }
     else {
@@ -116,9 +111,15 @@ function handleOkErr(str, event) {
 // втором параметре. Используется пседомассив arguments
 function colorErrorOrOk()
 {
+    const questionOld = document.getElementById("question_old");
+    const clickedElement= document.getElementById("clicked_element");
+    questionOld.classList.remove('bg-warning');
+    clickedElement.classList.remove('bg-warning');
+    
     if (arguments.length < 2) return;
-    document.getElementById("question_old").classList.add(arguments[1]);
-    document.getElementById("question_old").classList.remove(arguments[0]);
-    document.getElementById("clicked_element").classList.add(arguments[1]);
-    document.getElementById("clicked_element").classList.remove(arguments[0]);
+    
+    questionOld.classList.add(arguments[1]);
+    questionOld.classList.remove(arguments[0]);
+    clickedElement.classList.add(arguments[1]);
+    clickedElement.classList.remove(arguments[0]);
 }

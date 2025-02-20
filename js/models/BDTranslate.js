@@ -15,15 +15,15 @@ BDTranslate.push(
    ``,
    ``]);
 BDTranslate.push(
-  [``, 
-   ``, 
-   ``,
-   ``]);
+  [`Последний ответ здесь`, 
+   `Остання відповідь тут`, 
+   `Najnowsza odpowiedź tutaj`,
+   `The last answer is here`]);
 BDTranslate.push(
-  [``, 
-   ``, 
-   ``,
-   ``]);
+  [`Предыдущий вопрос здесь`, 
+   `Попереднє питання тут`, 
+   `Poprzednie pytanie tutaj`,
+   `Previous question here`]);
 BDTranslate.push(
   [`<div class="container mt-5">
     <h2>Present Perfect: Rules for Using <code>For</code>, <code>Since</code>, and <code>Ago</code></h2>
