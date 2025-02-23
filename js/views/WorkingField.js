@@ -26,6 +26,8 @@ class WorkingField {
         // Начальный текст для кнопки перевода вопроса
         const translateFromArray = this.transL.translate('Перевести вопрос');
         this.translate = `<div class='row mb-2'><div class='col-12'><button style='width: 100%; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button' id='translate'>${translateFromArray}</button></div></div>`;
+
+        this.cardFinish = "</div></div>";
   }
 
   init(arrayBD, nameLeson = false) 
@@ -43,7 +45,6 @@ class WorkingField {
           buttonOption[2] = this.strStart+' id="option3"> '+this.option3+this.strFinish;
           buttonOption[3] = this.strStart+' id="option4"> '+this.option4+this.strFinish;
 
-          const cardFinish = "</div></div>";
           const buttonQuestion = `<br><div class='row mb-2'><div class='col-12'><button style='width: 100%; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button' id='question'>${this.question}</button></div></div><br>`;
 
           buttonOption = shuffleArray(buttonOption);
@@ -56,7 +57,7 @@ class WorkingField {
               buttonOption[1] +
               buttonOption[2] +
               buttonOption[3] +
-              cardFinish;
+              this.cardFinish;
       }
 
   // рядом будет подобная функция, будет врмя можно совместить
@@ -94,8 +95,6 @@ class WorkingField {
         });
         localStorage.setItem('indexMax', indexMax);
 
-        const cardFinish = "</div></div>";
-
         const containerForRezzult = `<div class='row mb-2'><div id="container-for-rezult" class='col-12'></div></div>`;
 
         buttonOption = shuffleArray(buttonOption);
@@ -105,7 +104,7 @@ class WorkingField {
                   this.translate + 
                   containerForRezzult;
         const strButton = buttonOption.join('');
-        rez+='<hr>'+strButton+this.buttonOk()+cardFinish;
+        rez+='<hr>'+strButton+this.buttonOk()+this.cardFinish;
 
         return rez;
     }
@@ -167,8 +166,6 @@ class WorkingField {
         });
         localStorage.setItem('indexMax', indexMax);
 
-        const cardFinish = "</div></div>";
-
         const containerForRezzult = `<div class='row mb-2'><div id="container-for-rezult" class='col-12'></div></div>`;
 
         buttonOption = shuffleArray(buttonOption);
@@ -177,7 +174,7 @@ class WorkingField {
                   legend + 
                   containerForRezzult;
         const strButton = buttonOption.join('');
-        rez+='<hr>'+strButton+this.buttonOk()+cardFinish;
+        rez+='<hr>'+strButton+this.buttonOk()+this.cardFinish;
 
         return rez;
     }
@@ -185,7 +182,6 @@ class WorkingField {
 
   // Дальше служебные функции класса *****************************
   // *************************************************************
-  // handleButtonOk.js проверяет правильно ли собрано предложение.
 
   cleartoBeSentences(arrayButton)
   {
