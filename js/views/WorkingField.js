@@ -81,11 +81,7 @@ class WorkingField {
         // массив arrayButton должен содержать разбитые на слова предложения
         const arrayButton = this.question.split(' ');
 
-        // Специальная проверка на работу с массивом toBeSentences
-        // Он создан не стандартно, в нем дублируется первое слово
-        if (localStorage.getItem('nameArrayDb') === 'toBeSentences') {
-            arrayButton.shift();
-        }
+        this.cleartoBeSentences(arrayButton);
 
         // Для внешнего использования. Переменная хранит предложение-вопрос
         this.questionDB = arrayButton.join(' ');
@@ -158,11 +154,7 @@ class WorkingField {
         // массив arrayButton должен содержать разбитые на слова предложения
         const arrayButton = this.question.split(' ');
 
-        // Специальная проверка на работу с массивом toBeSentences
-        // Он создан не стандартно, в нем дублируется первое слово
-        if (localStorage.getItem('nameArrayDb') === 'toBeSentences') {
-            arrayButton.shift();
-        }
+        this.cleartoBeSentences(arrayButton);
 
         // Для внешнего использования. Переменная хранит предложение-вопрос
         this.questionDB = arrayButton.join(' ');
@@ -183,7 +175,6 @@ class WorkingField {
 
         let rez = this.cardStart + 
                   legend + 
-                  //this.translate + 
                   containerForRezzult;
         const strButton = buttonOption.join('');
         rez+='<hr>'+strButton+this.buttonOk()+cardFinish;
@@ -196,6 +187,15 @@ class WorkingField {
   // *************************************************************
   // handleButtonOk.js проверяет правильно ли собрано предложение.
 
+  cleartoBeSentences(arrayButton)
+  {
+        // Специальная проверка на работу с массивом toBeSentences
+        // Он создан не стандартно, в нем дублируется первое слово
+        if (localStorage.getItem('nameArrayDb') === 'toBeSentences') {
+            arrayButton.shift();
+        }
+        return arrayButton;
+  }
   // Функция деструктуризирует - подготавливает данные из входного
   // массива. Данные принадлежат классу, поэтому обновляются через this.
   getArrayQuestions(arrayBD)
