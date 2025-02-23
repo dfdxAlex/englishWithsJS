@@ -21,17 +21,17 @@ class WorkingField {
   // выпадающего меню выбора теста
   resetQuestion = false;
 
+  constructor()
+  {
+        // Начальный текст для кнопки перевода вопроса
+        const translateFromArray = this.transL.translate('Перевести вопрос');
+        this.translate = `<div class='row mb-2'><div class='col-12'><button style='width: 100%; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button' id='translate'>${translateFromArray}</button></div></div>`;
+  }
+
   init(arrayBD, nameLeson = false) 
   {
-      if (arrayBD !== undefined && arrayBD.length == 8) {
-          [this.question, 
-          this.option1,
-          this.option2, 
-          this.option3, 
-          this.option4,
-          this.translateRu,
-          this.translateUa,
-          this.translatePl] = arrayBD;
+
+          this.getArrayQuestions(arrayBD);
 
           this.workingWihtOkAndError();
 
@@ -46,36 +46,26 @@ class WorkingField {
           const cardFinish = "</div></div>";
           const buttonQuestion = `<br><div class='row mb-2'><div class='col-12'><button style='width: 100%; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button' id='question'>${this.question}</button></div></div><br>`;
 
-          // Начальный текст для кнопки перевода вопроса
-          let translateFromArray = this.transL.translate('Перевести вопрос');
-
-          // Кнопка "Перевести вопрос"
-          const translate = `<div class='row mb-2'><div class='col-12'><button style='width: 100%; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button' id='translate'>${translateFromArray}</button></div></div><br><br><br>`;
-
           buttonOption = shuffleArray(buttonOption);
 
           return this.cardStart +
               legend +
               buttonQuestion +
-              translate +
+              this.translate +
               buttonOption[0] +
               buttonOption[1] +
               buttonOption[2] +
               buttonOption[3] +
               cardFinish;
       }
-  }
 
   // рядом будет подобная функция, будет врмя можно совместить
   // initWordAssembly() и initWordAssemblyNotTranslate()
   initWordAssembly(arrayBD, nameLeson = false) 
   {
     const strStart = `<div class='row mb-2'><div class='col-12'><button style='border-radius: 10px; margin-left: 5px; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button'`;
-    let question, option1;
 
-    if (arrayBD !== undefined && arrayBD.length == 8) {
-        [question, option1, ,,, this.translateRu, this.translateUa, 
-         this.translatePl] = arrayBD;
+        this.getArrayQuestions(arrayBD);
 
         this.workingWihtOkAndError();
 
@@ -84,12 +74,12 @@ class WorkingField {
         // Создание кнопок
         let buttonOption = [];
 
-        question = this.clearNotToBeSentences(question);
+        this.question = this.clearNotToBeSentences(this.question);
 
-        question = this.insertWord(question, option1);
+        this.question = this.insertWord(this.question, this.option1);
 
         // массив arrayButton должен содержать разбитые на слова предложения
-        const arrayButton = question.split(' ');
+        const arrayButton = this.question.split(' ');
 
         // Специальная проверка на работу с массивом toBeSentences
         // Он создан не стандартно, в нем дублируется первое слово
@@ -110,28 +100,18 @@ class WorkingField {
 
         const cardFinish = "</div></div>";
 
-        // Начальный текст для кнопки перевода вопроса
-        let translateFromArray = this.transL.translate('Перевести вопрос');
-
-        // Кнопка "Перевести вопрос"
-        const translate = `<div class='row mb-2'><div class='col-12'><button style='width: 100%; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button' id='translate'>${translateFromArray}</button></div></div>`;
-
         const containerForRezzult = `<div class='row mb-2'><div id="container-for-rezult" class='col-12'></div></div>`;
 
         buttonOption = shuffleArray(buttonOption);
 
         let rez = this.cardStart + 
                   legend + 
-                  translate + 
+                  this.translate + 
                   containerForRezzult;
         const strButton = buttonOption.join('');
         rez+='<hr>'+strButton+this.buttonOk()+cardFinish;
 
-        //Подменить описание Задания если собираются предложения
-        //document.querySelector('#help').innerHTML = "Привет";
-
         return rez;
-    }
     }
 
   // рядом будет подобная функция, будет время можно совместить
@@ -140,11 +120,8 @@ class WorkingField {
   initWordAssemblyNotTranslate(arrayBD, nameLeson = false, property = false) 
   {
     const strStart = `<div class='row mb-2'><div class='col-12'><button style='border-radius: 10px; margin-left: 5px; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button'`;
-    let question, option1;
 
-    if (arrayBD !== undefined && arrayBD.length == 8) {
-        [question, option1, ,,, this.translateRu, this.translateUa, 
-         this.translatePl] = arrayBD;
+        this.getArrayQuestions(arrayBD);
 
         this.workingWihtOkAndError();
 
@@ -153,9 +130,9 @@ class WorkingField {
         // Создание кнопок
         let buttonOption = [];
 
-        question = this.clearNotToBeSentences(question);
+        this.question = this.clearNotToBeSentences(this.question);
 
-        question = this.insertWord(question, option1);
+        this.question = this.insertWord(this.question, this.option1);
 
         if (property && !property.constIndexArray || this.resetQuestion) {
                 this.resetQuestion = false;
@@ -170,16 +147,16 @@ class WorkingField {
                 if (!this.trueSentences) randomNumber = 1;
                 // Если алгоритм выбрал работу с правильным ответом, 
                 // то взять его из переменной option1
-                if (randomNumber === 2) question = option1;
+                if (randomNumber === 2) this.question = this.option1;
                 // В переменной question находится готовое для разборки предложение
-                localStorage.setItem('init_word_assembly_not_translate_question', question);
+                localStorage.setItem('init_word_assembly_not_translate_question', this.question);
         } else {
-            question = localStorage.getItem('init_word_assembly_not_translate_question');
-            question = this.insertWord(question, option1);
+            this.question = localStorage.getItem('init_word_assembly_not_translate_question');
+            this.question = this.insertWord(this.question, this.option1);
         }
 
         // массив arrayButton должен содержать разбитые на слова предложения
-        const arrayButton = question.split(' ');
+        const arrayButton = this.question.split(' ');
 
         // Специальная проверка на работу с массивом toBeSentences
         // Он создан не стандартно, в нем дублируется первое слово
@@ -200,34 +177,40 @@ class WorkingField {
 
         const cardFinish = "</div></div>";
 
-        // Начальный текст для кнопки перевода вопроса
-        let translateFromArray = this.transL.translate('Перевести вопрос');
-
-        // Кнопка "Перевести вопрос"
-        const translate = `<div class='row mb-2'><div class='col-12'><button style='width: 100%; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button' id='translate'>${translateFromArray}</button></div></div>`;
-
         const containerForRezzult = `<div class='row mb-2'><div id="container-for-rezult" class='col-12'></div></div>`;
 
         buttonOption = shuffleArray(buttonOption);
 
         let rez = this.cardStart + 
                   legend + 
-                  translate + 
+                  //this.translate + 
                   containerForRezzult;
         const strButton = buttonOption.join('');
         rez+='<hr>'+strButton+this.buttonOk()+cardFinish;
 
-        //Подменить описание Задания если собираются предложения
-        //document.querySelector('#help').innerHTML = "Привет";
-
         return rez;
     }
-  }
+  
 
   // Дальше служебные функции класса *****************************
   // *************************************************************
   // handleButtonOk.js проверяет правильно ли собрано предложение.
 
+  // Функция деструктуризирует - подготавливает данные из входного
+  // массива. Данные принадлежат классу, поэтому обновляются через this.
+  getArrayQuestions(arrayBD)
+  {
+    if (arrayBD !== undefined && arrayBD.length == 8) {
+        [this.question, 
+        this.option1,
+        this.option2, 
+        this.option3, 
+        this.option4,
+        this.translateRu,
+        this.translateUa,
+        this.translatePl] = arrayBD;
+    }
+  }
   // Функция очищает массив toBeSentences от лишнего слова Not.
   // Данный массив изначательно построен особенным образом.
   clearNotToBeSentences(question)
@@ -327,3 +310,4 @@ class WorkingField {
    </div>`;
   }
 }
+

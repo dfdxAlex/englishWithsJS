@@ -57,20 +57,12 @@ class EventController {
         
         // Добавить обработчик события по кнопке с переводом.
         // Перевод должен появиться только после клика на кнопку
-        // Добавлено: перевод исключается на тесте word-assembly-not-translate
-        if (SettingForProgram.selectTypeTest !== "word-assembly-not-translate") {
-            let translate = document.getElementById('translate');
-            if (translate) {
-                translate.onclick = handleTranslateQuestion.bind(null, FactoryRegistr.getObject('WorkingField'));
-            }
-        } else {
-            let translate = document.getElementById('translate');
-            translate.innerHTML = '';
+        let translate = document.getElementById('translate');
+        if (translate) {
+            translate.onclick = handleTranslateQuestion.bind(null, FactoryRegistr.getObject('WorkingField'));
         }
 
         // обработчик события клика по кнопке логов
         document.getElementById('log').onclick = handleLog;
-
-
     }
 }
