@@ -53,6 +53,7 @@ class WorkingField {
               legend +
               buttonQuestion +
               this.translate +
+              '<hr>'+
               buttonOption[0] +
               buttonOption[1] +
               buttonOption[2] +
