@@ -3,34 +3,36 @@
 
 function calculateBonusMultiplier(propertyForBonus)
 {
+    // пока просто дублирую - деструктуризирую объект для
+    // упрощения кода
+    let {str, levexW, level} = propertyForBonus;
+
     // объект для логов
     const log = {};
-    log.propertyForBonus_input = propertyForBonus;
+    log.propertyForBonus_input = propertyForBonus; //logs
+    log.levelTest = level;
+
     // На случай если произошел ошибочный ответ, то вернуть 1
     // Штрафы оставляю на будущее
-    if (propertyForBonus.str === "Error") return 1;
+    if (str === "Error") return 1;
 
     // вычислить нахождение числа ошибок
-    let errorName = propertyForBonus.levexW.replace('Ok', "Error");
+    let errorName = levexW.replace('Ok', "Error");
     log.errorName = errorName;
     
     // Узнать число правильных и не правильных ответов
-    let ok = parseFloat(localStorage.getItem(propertyForBonus.levexW));
-    if (isNaN(ok)) ok = 0;
+    let ok = parseFloat(localStorage.getItem(levexW));
+    if (Number.isFinite(ok)) ok = 0;
     log.ok = ok;
     
     let error = parseFloat(localStorage.getItem(errorName));
-    if (isNaN(error)) error = 0;
+    if (Number.isFinite(error)) error = 0;
     log.error = error;
 
     // Узнать число существующих тестов
     const levelDataModel = FactoryRegistr.getObject("LevelDataModel");
     const numberTest = levelDataModel.getArrayNameButton().length;
     log.numberTest = numberTest;
-
-    // Уровень текущего теста
-    const levelTest = propertyForBonus.level;
-    log.levelTest = levelTest;
 
     // для третьего бонуса
     // Массив с пунктами меню, нужен просто для обхода всех сохраненных 
@@ -43,15 +45,20 @@ function calculateBonusMultiplier(propertyForBonus)
 
     // Первый бонус должен зависеть от числа непогашенных ошибок
     // если такие ошибки есть, то коэффициент считается по формуле снизу
+    // переделан 3.3.2025
     let bonusOne;
-    if (ok !==0)
-        bonusOne = ok / (error + ok);
-    else 
-        bonusOne = 1;
+    // if (ok !== 0)
+    //     bonusOne = ok / (error + ok);
+    // else 
+    //     bonusOne = 1;
+    if (error == 0) bonusOne = 1;
+    if (error > 0 && ok == 0) bonusOne = 0 - error;
+    if (error > 0 && ok > 0) bonusOne = ok / (error + ok);
     log.bonusOne = bonusOne;
+
     // Второй бонус, попытка настройть раздачу балов в зависимости
     // от сложности. Сложным считается последний тест.
-    const bonusTwo = levelTest / numberTest * 2;
+    const bonusTwo = level / numberTest * 2;
     log.bonusTwo = bonusTwo;
 
     // Третий бонус - самые малопройденные тесты дают больше баллов
@@ -88,9 +95,7 @@ function calculateBonusMultiplier(propertyForBonus)
     let diferent;
     if (ok == 0 && calculateMedian(testsOk) == 0) diferent = 1;
     if (ok > calculateMedian(testsOk)) diferent = calculateMedian(testsOk)+1 / ok;
-    // else if (ok > calculateMedian(testsOk) && ok==0) diferent = 1;
     else if (ok < calculateMedian(testsOk)) diferent = ok+1 / calculateMedian(testsOk);
-    // else if (ok < calculateMedian(testsOk) && calculateMedian(testsOk)==0) diferent = 1;
 
 
     let bonusFour = diferent * 3;
