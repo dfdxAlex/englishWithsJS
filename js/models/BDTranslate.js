@@ -10,10 +10,230 @@ BDTranslate.push(
    ``,
    ``]);
 BDTranslate.push(
-  [``, 
-   ``, 
-   ``,
-   ``]);
+  [`<div class="accordion" id="grammarAccordion">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" 
+        style="background-color: #007bff; color: white; font-weight: bold;">
+        Present Perfect (I have done)
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#grammarAccordion">
+      <div class="accordion-body" style="background-color: #f8f9fa; padding: 15px; border: 1px solid #ddd;">
+        <p><strong>Объяснение:</strong> Present Perfect используется, когда действие связано с настоящим моментом. Это может быть результат, недавнее действие или жизненный опыт.</p>
+        <p><strong>Примеры:</strong></p>
+        <ul>
+          <li><strong>Недавнее действие:</strong> I have just finished my work. (Я только что закончил работу.)</li>
+          <li><strong>Жизненный опыт:</strong> She has visited Paris. (Она была в Париже.)</li>
+          <li><strong>Результат:</strong> We have lost the keys. (Мы потеряли ключи, и сейчас их нет.)</li>
+        </ul>
+        <p><strong>Позитивные:</strong> Подлежащее + have/has + глагол (3-я форма)</p>
+        <p style="font-weight: bold; color: #333;">I have finished my work.</p>
+        <p><strong>Негативные:</strong> Подлежащее + have/has + not + глагол (3-я форма)</p>
+        <p style="font-weight: bold; color: #333;">She has not seen this movie.</p>
+        <p><strong>Вопросительные:</strong> Have/Has + подлежащее + глагол (3-я форма)?</p>
+        <p style="font-weight: bold; color: #333;">Have you ever been to Paris?</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+        style="background-color: #007bff; color: white; font-weight: bold;">
+        Past Simple (I did)
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#grammarAccordion">
+      <div class="accordion-body" style="background-color: #f8f9fa; padding: 15px; border: 1px solid #ddd;">
+        <p><strong>Объяснение:</strong> Past Simple используется для описания действий, которые произошли в конкретный момент в прошлом. Важно, когда именно это случилось.</p>
+        <p><strong>Примеры:</strong></p>
+        <ul>
+          <li><strong>Определённое время в прошлом:</strong> I finished my work yesterday. (Я закончил работу вчера.)</li>
+          <li><strong>Завершённое действие:</strong> She visited Paris last year. (Она посетила Париж в прошлом году.)</li>
+          <li><strong>Событие в прошлом:</strong> We lost the keys last night. (Мы потеряли ключи прошлой ночью.)</li>
+        </ul>
+        <p><strong>Позитивные:</strong> Подлежащее + глагол (2-я форма)</p>
+        <p style="font-weight: bold; color: #333;">I finished my work yesterday.</p>
+        <p><strong>Негативные:</strong> Подлежащее + did not + глагол (1-я форма)</p>
+        <p style="font-weight: bold; color: #333;">She did not see that movie.</p>
+        <p><strong>Вопросительные:</strong> Did + подлежащее + глагол (1-я форма)?</p>
+        <p style="font-weight: bold; color: #333;">Did you visit Paris last year?</p>
+      </div>
+    </div>
+  </div>
+</div>
+`, 
+   `<div class="accordion" id="grammarAccordion">
+  
+  <!-- Present Perfect -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" 
+        style="background-color: #007bff; color: white; font-weight: bold;">
+        Present Perfect (I have done)
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#grammarAccordion">
+      <div class="accordion-body" style="background-color: #f8f9fa; padding: 15px; border: 1px solid #ddd;">
+        <p><strong>Пояснення:</strong> Present Perfect використовується, коли дія пов'язана з теперішнім моментом. Це може бути результат, нещодавня дія або життєвий досвід.</p>
+        <p><strong>Приклади:</strong></p>
+        <ul>
+          <li><strong>Нещодавня дія:</strong> I have just finished my work. (Я щойно закінчив роботу.)</li>
+          <li><strong>Життєвий досвід:</strong> She has visited Paris. (Вона була в Парижі.)</li>
+          <li><strong>Результат:</strong> We have lost the keys. (Ми загубили ключі, і зараз їх немає.)</li>
+        </ul>
+        <p><strong>Позитивні:</strong> Підмет + have/has + дієслово (3-я форма)</p>
+        <p style="font-weight: bold; color: #333;">I have finished my work.</p>
+        <p><strong>Негативні:</strong> Підмет + have/has + not + дієслово (3-я форма)</p>
+        <p style="font-weight: bold; color: #333;">She has not seen this movie.</p>
+        <p><strong>Питальні:</strong> Have/Has + підмет + дієслово (3-я форма)?</p>
+        <p style="font-weight: bold; color: #333;">Have you ever been to Paris?</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Past Simple -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+        style="background-color: #007bff; color: white; font-weight: bold;">
+        Past Simple (I did)
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#grammarAccordion">
+      <div class="accordion-body" style="background-color: #f8f9fa; padding: 15px; border: 1px solid #ddd;">
+        <p><strong>Пояснення:</strong> Past Simple використовується для опису дій, які сталися в конкретний момент у минулому. Важливо, коли саме це сталося.</p>
+        <p><strong>Приклади:</strong></p>
+        <ul>
+          <li><strong>Конкретний час у минулому:</strong> I finished my work yesterday. (Я закінчив роботу вчора.)</li>
+          <li><strong>Завершена дія:</strong> She visited Paris last year. (Вона відвідала Париж минулого року.)</li>
+          <li><strong>Подія в минулому:</strong> We lost the keys last night. (Ми загубили ключі минулої ночі.)</li>
+        </ul>
+        <p><strong>Позитивні:</strong> Підмет + дієслово (2-я форма)</p>
+        <p style="font-weight: bold; color: #333;">I finished my work yesterday.</p>
+        <p><strong>Негативні:</strong> Підмет + did not + дієслово (1-я форма)</p>
+        <p style="font-weight: bold; color: #333;">She did not see that movie.</p>
+        <p><strong>Питальні:</strong> Did + підмет + дієслово (1-я форма)?</p>
+        <p style="font-weight: bold; color: #333;">Did you visit Paris last year?</p>
+      </div>
+    </div>
+  </div>
+</div>
+`, 
+   `<div class="accordion" id="grammarAccordion">
+  
+  <!-- Present Perfect -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" 
+        style="background-color: #007bff; color: white; font-weight: bold;">
+        Present Perfect (I have done)
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#grammarAccordion">
+      <div class="accordion-body" style="background-color: #f8f9fa; padding: 15px; border: 1px solid #ddd;">
+        <p><strong>Wyjaśnienie:</strong> Present Perfect jest używany, gdy czynność jest powiązana z teraźniejszością. Może to być rezultat, niedawne działanie lub doświadczenie życiowe.</p>
+        <p><strong>Przykłady:</strong></p>
+        <ul>
+          <li><strong>Niedawne działanie:</strong> I have just finished my work. (Właśnie skończyłem pracę.)</li>
+          <li><strong>Doświadczenie życiowe:</strong> She has visited Paris. (Była w Paryżu.)</li>
+          <li><strong>Rezultat:</strong> We have lost the keys. (Zgubiliśmy klucze i teraz ich nie ma.)</li>
+        </ul>
+        <p><strong>Zdania twierdzące:</strong> Podmiot + have/has + czasownik (3. forma)</p>
+        <p style="font-weight: bold; color: #333;">I have finished my work.</p>
+        <p><strong>Zdania przeczące:</strong> Podmiot + have/has + not + czasownik (3. forma)</p>
+        <p style="font-weight: bold; color: #333;">She has not seen this movie.</p>
+        <p><strong>Pytania:</strong> Have/Has + podmiot + czasownik (3. forma)?</p>
+        <p style="font-weight: bold; color: #333;">Have you ever been to Paris?</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Past Simple -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+        style="background-color: #007bff; color: white; font-weight: bold;">
+        Past Simple (I did)
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#grammarAccordion">
+      <div class="accordion-body" style="background-color: #f8f9fa; padding: 15px; border: 1px solid #ddd;">
+        <p><strong>Wyjaśnienie:</strong> Past Simple jest używany do opisywania działań, które miały miejsce w określonym momencie w przeszłości. Ważne jest, kiedy dokładnie to się stało.</p>
+        <p><strong>Przykłady:</strong></p>
+        <ul>
+          <li><strong>Konkretna chwila w przeszłości:</strong> I finished my work yesterday. (Skończyłem pracę wczoraj.)</li>
+          <li><strong>Zakończone działanie:</strong> She visited Paris last year. (Odwiedziła Paryż w zeszłym roku.)</li>
+          <li><strong>Wydarzenie w przeszłości:</strong> We lost the keys last night. (Zgubiliśmy klucze zeszłej nocy.)</li>
+        </ul>
+        <p><strong>Zdania twierdzące:</strong> Podmiot + czasownik (2. forma)</p>
+        <p style="font-weight: bold; color: #333;">I finished my work yesterday.</p>
+        <p><strong>Zdania przeczące:</strong> Podmiot + did not + czasownik (1. forma)</p>
+        <p style="font-weight: bold; color: #333;">She did not see that movie.</p>
+        <p><strong>Pytania:</strong> Did + podmiot + czasownik (1. forma)?</p>
+        <p style="font-weight: bold; color: #333;">Did you visit Paris last year?</p>
+      </div>
+    </div>
+  </div>
+</div>
+`,
+   `<div class="accordion" id="grammarAccordion">
+  
+  <!-- Present Perfect -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" 
+        style="background-color: #007bff; color: white; font-weight: bold;">
+        Present Perfect (I have done)
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#grammarAccordion">
+      <div class="accordion-body" style="background-color: #f8f9fa; padding: 15px; border: 1px solid #ddd;">
+        <p><strong>Explanation:</strong> The Present Perfect is used when an action is connected to the present moment. It can indicate a result, a recent action, or life experience.</p>
+        <p><strong>Examples:</strong></p>
+        <ul>
+          <li><strong>Recent action:</strong> I have just finished my work.</li>
+          <li><strong>Life experience:</strong> She has visited Paris.</li>
+          <li><strong>Result:</strong> We have lost the keys.</li>
+        </ul>
+        <p><strong>Affirmative:</strong> Subject + have/has + verb (past participle)</p>
+        <p style="font-weight: bold; color: #333;">I have finished my work.</p>
+        <p><strong>Negative:</strong> Subject + have/has + not + verb (past participle)</p>
+        <p style="font-weight: bold; color: #333;">She has not seen this movie.</p>
+        <p><strong>Questions:</strong> Have/Has + subject + verb (past participle)?</p>
+        <p style="font-weight: bold; color: #333;">Have you ever been to Paris?</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Past Simple -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+        style="background-color: #007bff; color: white; font-weight: bold;">
+        Past Simple (I did)
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#grammarAccordion">
+      <div class="accordion-body" style="background-color: #f8f9fa; padding: 15px; border: 1px solid #ddd;">
+        <p><strong>Explanation:</strong> The Past Simple is used to describe actions that happened at a specific time in the past. The exact time of the action is important.</p>
+        <p><strong>Examples:</strong></p>
+        <ul>
+          <li><strong>Specific time in the past:</strong> I finished my work yesterday.</li>
+          <li><strong>Completed action:</strong> She visited Paris last year.</li>
+          <li><strong>Past event:</strong> We lost the keys last night.</li>
+        </ul>
+        <p><strong>Affirmative:</strong> Subject + verb (past simple form)</p>
+        <p style="font-weight: bold; color: #333;">I finished my work yesterday.</p>
+        <p><strong>Negative:</strong> Subject + did not + verb (base form)</p>
+        <p style="font-weight: bold; color: #333;">She did not see that movie.</p>
+        <p><strong>Questions:</strong> Did + subject + verb (base form)?</p>
+        <p style="font-weight: bold; color: #333;">Did you visit Paris last year?</p>
+      </div>
+    </div>
+  </div>
+</div>
+`]);
 BDTranslate.push(
   [`Последний ответ здесь`, 
    `Остання відповідь тут`, 

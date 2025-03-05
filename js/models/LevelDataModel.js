@@ -70,6 +70,7 @@ class LevelDataModel
         this.propertyArrayNameButton.push(this.translate.translate('Present Perfect'));// пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('PrPerf, PrCont, PsSimpl'));// пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('for, since, ago'));// пункт 1
+        this.propertyArrayNameButton.push(this.translate.translate('PrPerf or PsSimpl'));// пункт 1
         this.tic = this.propertyArrayNameButton.length;
     }
 
@@ -81,7 +82,7 @@ class LevelDataModel
         const arrayForButton = [2,2,2,2,2,2,2,2,1,1,
                                 1,2,1,1,1,1,1,1,1,2,
                                 1,2,1,4,4,4,4,4,3,3,
-                                1,1,2,1,1,2,1,1,1];
+                                1,1,2,1,1,2,1,1,1,1];
 
         return arrayForButton[test];
     }
@@ -139,6 +140,7 @@ class LevelDataModel
         this.selectLevel('Выбрать правильную пару.','presentPerfectIHaveDone',37);
         this.selectLevel('Выбрать правильную пару.','presentPerfectAndSimpleAndContinius',38);
         this.selectLevel('Выбрать правильную пару.','forSinceAgoPrPerfPastSimple',39);
+        this.selectLevel('Выбрать правильную пару.','forSinceAgoPrPerfPastSimple',40);
         return this.rez;
     }
 
