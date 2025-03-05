@@ -140,7 +140,7 @@ class LevelDataModel
         this.selectLevel('Выбрать правильную пару.','presentPerfectIHaveDone',37);
         this.selectLevel('Выбрать правильную пару.','presentPerfectAndSimpleAndContinius',38);
         this.selectLevel('Выбрать правильную пару.','forSinceAgoPrPerfPastSimple',39);
-        this.selectLevel('Выбрать правильную пару.','forSinceAgoPrPerfPastSimple',40);
+        this.selectLevel('Выбрать правильную пару.','presentPerfectOrPastSimple',40);
         return this.rez;
     }
 
