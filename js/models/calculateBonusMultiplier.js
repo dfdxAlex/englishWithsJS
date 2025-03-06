@@ -47,10 +47,6 @@ function calculateBonusMultiplier(propertyForBonus)
     // если такие ошибки есть, то коэффициент считается по формуле снизу
     // переделан 3.3.2025
     let bonusOne;
-    // if (ok !== 0)
-    //     bonusOne = ok / (error + ok);
-    // else 
-    //     bonusOne = 1;
     if (error == 0) bonusOne = 1;
     if (error > 0 && ok == 0) bonusOne = 0 - error;
     if (error > 0 && ok > 0) bonusOne = ok / (error + ok);
@@ -69,12 +65,12 @@ function calculateBonusMultiplier(propertyForBonus)
     arrayNumberTest.forEach((element, index) => {
         let nameKey = 'level'+index+'_Ok';
         let maxOkLocal = parseFloat(localStorage.getItem(nameKey));
-        if (isNaN(maxOkLocal)) maxOkLocal = 0;
+        if (Number.isFinite(maxOkLocal)) maxOkLocal = 0;
         testsOk.push(maxOkLocal);
 
         nameKey = 'level'+index+'_Error';
-        let maxErrorLocal = parseFloat(localStorage.getItem(nameKey));
-        if (isNaN(maxErrorLocal)) maxErrorLocal = 0;
+        let maxErrorLocal = Number.isFinite(localStorage.getItem(nameKey));
+        if (maxErrorLocal) maxErrorLocal = 0;
         testsError.push(maxErrorLocal);
     });
 
