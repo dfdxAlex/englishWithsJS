@@ -25,7 +25,7 @@ function handleOkErr(str, event) {
     const levexW = 'level'+level+'_'+str;
     
     let ticTime = localStorage.getItem(levexW);
-    if (isNaN(ticTime) || ticTime == "" || ticTime == null) ticTime = 0;
+    if (Number.isFinite(ticTime) || ticTime == "" || ticTime == null) ticTime = 0;
     let tic = parseFloat(ticTime);
 
     // объект с разными данными для подсчёта бонусов
