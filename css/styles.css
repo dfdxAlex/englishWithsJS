@@ -122,3 +122,32 @@ select{
 .modal-body {
     text-align: left;
 }
+
+/*кнопки light, normal, hard*/
+.btn-custom-yellow {
+    background-color: #FFFFFF;
+    color: #e3db4e;
+    border: 2px solid #e3db4e;
+}
+.btn-custom-blue {
+    background-color: #FFFFFF;
+    color: #1E90FF;
+    border: 2px solid #1E90FF;
+}
+.btn-custom-white {
+    background-color: #FFFFFF;
+    color: #c00e1a;;
+    border: 2px solid #c00e1a;
+}
+
+.btn-custom-help {
+    background-color: #9ce97b;
+    color: #1a1718;;
+    border: 2px solid #1dae80;
+}
+.btn-custom-help-big {
+    width: 70%;
+    background-color: #9ce97b;
+    color: #1a1718;;
+    border: 2px solid #1dae80;
+}

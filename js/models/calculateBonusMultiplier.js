@@ -3,9 +3,16 @@
 
 function calculateBonusMultiplier(propertyForBonus)
 {
+    // Если была использована помощь, то обнулить балл
+    if (localStorage.getItem('was_click_help') === 'true') 
+        {
+            localStorage.setItem('was_click_help','false');
+            return 0;
+        }
+
     // пока просто дублирую - деструктуризирую объект для
     // упрощения кода
-    let {str, levexW, level} = propertyForBonus;
+    let {str, levexW, level, log:logView} = propertyForBonus;
 
     // объект для логов
     const log = {};
@@ -14,7 +21,9 @@ function calculateBonusMultiplier(propertyForBonus)
 
     // На случай если произошел ошибочный ответ, то вернуть 1
     // Штрафы оставляю на будущее
-    if (str === "Error") return 1;
+    if (str === "Error") {
+        return 1;
+    }
 
     // вычислить нахождение числа ошибок
     let errorName = levexW.replace('Ok', "Error");
@@ -22,12 +31,13 @@ function calculateBonusMultiplier(propertyForBonus)
     
     // Узнать число правильных и не правильных ответов
     let ok = parseFloat(localStorage.getItem(levexW));
-    if (Number.isFinite(ok)) ok = 0;
+    if (!Number.isFinite(ok)) ok = 0;
     log.ok = ok;
     
     let error = parseFloat(localStorage.getItem(errorName));
-    if (Number.isFinite(error)) error = 0;
+    if (!Number.isFinite(error)) error = 0;
     log.error = error;
+
 
     // Узнать число существующих тестов
     const levelDataModel = FactoryRegistr.getObject("LevelDataModel");
@@ -51,7 +61,6 @@ function calculateBonusMultiplier(propertyForBonus)
     if (error > 0 && ok == 0) bonusOne = 0 - error;
     if (error > 0 && ok > 0) bonusOne = ok / (error + ok);
     log.bonusOne = bonusOne;
-
     // Второй бонус, попытка настройть раздачу балов в зависимости
     // от сложности. Сложным считается последний тест.
     const bonusTwo = level / numberTest * 2;
@@ -65,12 +74,12 @@ function calculateBonusMultiplier(propertyForBonus)
     arrayNumberTest.forEach((element, index) => {
         let nameKey = 'level'+index+'_Ok';
         let maxOkLocal = parseFloat(localStorage.getItem(nameKey));
-        if (Number.isFinite(maxOkLocal)) maxOkLocal = 0;
+        if (!Number.isFinite(maxOkLocal)) maxOkLocal = 0;
         testsOk.push(maxOkLocal);
 
         nameKey = 'level'+index+'_Error';
-        let maxErrorLocal = Number.isFinite(localStorage.getItem(nameKey));
-        if (maxErrorLocal) maxErrorLocal = 0;
+        let maxErrorLocal = parseFloat(localStorage.getItem(nameKey));
+        if (!Number.isFinite(maxErrorLocal)) maxErrorLocal = 0;
         testsError.push(maxErrorLocal);
     });
 
@@ -100,24 +109,35 @@ function calculateBonusMultiplier(propertyForBonus)
 
     ticLocal = bonusOne + bonusTwo + bonusThree + bonusFour;
     log.ticLocalFull = ticLocal;
+
+    let koefForTypeTest = 1;
+
     // Если работаем с тестом word-assembly то удвоить баллы
     if (localStorage.getItem('user_select') === 'word-assembly') {
-        ticLocal*=2;
-        if (ticLocal > 6) return 6;
+        koefForTypeTest = 2;
     }
 
     // Если работаем с тестом word-assembly-not-translate 
     // то умножить балы на 2,5
     if (localStorage.getItem('user_select') === 'word-assembly-not-translate') {
-        ticLocal*=2.5;
-        if (ticLocal > 6) return 6;
+        koefForTypeTest = 2.5;
     }
 
-    //console.log(localStorage.user_select);
-    if (ticLocal < 0.4) return 0.4;
-    if (ticLocal > 3) return 3;
+    ticLocal *= koefForTypeTest;
+
+    if (ticLocal < 0.4) ticLocal = 0.4;
+    
+    if (koefForTypeTest === 1)
+        if (ticLocal > 3) ticLocal = 3;
+    if (koefForTypeTest === 2)
+        if (ticLocal > 6) ticLocal = 6;
+    if (koefForTypeTest === 2.5)
+        if (ticLocal > 7) ticLocal = 7;
     log.ticLocalRezult = ticLocal;
-    if (propertyForBonus.log) {
+    
+    
+    //if (propertyForBonus.log) {
+    if (logView) {
         console.log('---calculateBonusMultiplier---');
         console.log(log);
         console.log('***************************');

@@ -172,10 +172,13 @@ class WorkingField {
         buttonOption = shuffleArray(buttonOption);
 
         let rez = this.cardStart + 
+                  
                   legend + 
                   containerForRezzult;
+
         const strButton = buttonOption.join('');
-        rez+='<hr>'+strButton+this.buttonOk()+this.cardFinish;
+        rez+='<hr>'+strButton+this.buttonOk()
+           +this.cardFinish+this.createButtonHardNormalLight();
 
         return rez;
     }
@@ -183,6 +186,27 @@ class WorkingField {
 
   // Дальше служебные функции класса *****************************
   // *************************************************************
+
+  createButtonHardNormalLight()
+  {
+    let button =`<div class="container text-center mt-5">
+                       <button id="button-light" class="btn btn-custom-yellow mx-2">Light</button>
+                       <button id="button-normal" class="btn btn-custom-blue mx-2">Normal</button>
+                       <button id="button-hard" class="btn btn-custom-white mx-2">Hard</button>
+                       <button id="button-help" class="btn btn-custom-help mx-2">Help</button>
+                   </div>`;
+
+       const nameArray = localStorage.getItem('nameArrayDb');
+       const workingArray = eval(nameArray);
+
+       if (workingArray.lengthTrue === undefined) {
+           button =`<div class="container text-center mt-5">
+                        <button id="button-help" class="btn btn-custom-help-big mx-2" onclick="handleHelp()">Help</button>
+                    </div>`;
+       }
+
+       return button;
+  }
 
   cleartoBeSentences(arrayButton)
   {

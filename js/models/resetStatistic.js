@@ -20,11 +20,11 @@ const resetStatistic = (reset = true) => {
     // пересчитать данные.
     if (reset) {
         // Если вдруг ошибка то обнулить
-        if (isNaN(numberError)) {
+        if (!Number.isFinite(numberError)) {
             localStorage.setItem(resetError,0);
             numberError = 0;
         }
-        if (isNaN(numberOk)) {
+        if (!Number.isFinite(numberOk)) {
             localStorage.setItem(resetOk,0);
             numberOk = 0;
         }
@@ -35,9 +35,13 @@ const resetStatistic = (reset = true) => {
         localStorage.setItem(resetOk,numberOk); 
     }
     const translate = FactoryRegistr.getObject("LanguageController");
-    document.getElementById('level24').innerHTML = translate.translate('Пройдено заданий:') + parseInt(localStorage.getItem(resetOk));
-    document.getElementById('level25').innerHTML = translate.translate('Ошибок:') + parseInt(localStorage.getItem(resetError));
-    document.getElementById('level26').innerHTML = translate.translate('Успех:') + Math.floor(numberOk/(numberOk+numberError)*100)+'%';
+    let resultSucces = numberOk+numberError;
+    if (resultSucces !== 0) {
+        resultSucces = Math.floor(numberOk/(numberOk+numberError)*100);
+    }
+    document.getElementById('level24').innerHTML = translate.translate('Пройдено заданий:') + numberOk;
+    document.getElementById('level25').innerHTML = translate.translate('Ошибок:') + numberError;
+    document.getElementById('level26').innerHTML = translate.translate('Успех:') + resultSucces +'%';
     //перерисовать статус диамантов
     diament();
 }

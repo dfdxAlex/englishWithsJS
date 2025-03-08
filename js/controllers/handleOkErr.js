@@ -24,23 +24,23 @@ function handleOkErr(str, event) {
     
     const levexW = 'level'+level+'_'+str;
     
-    let ticTime = localStorage.getItem(levexW);
-    if (Number.isFinite(ticTime) || ticTime == "" || ticTime == null) ticTime = 0;
-    let tic = parseFloat(ticTime);
+    let ticTime = parseFloat(localStorage.getItem(levexW));
+    if (!Number.isFinite(ticTime)) ticTime = 0;
+    let tic = ticTime;
 
     // объект с разными данными для подсчёта бонусов
     const propertyForBonus = {
         tic,
         str,
-        log:false, // усли true, то calculateBonusMultiplier() пишет логи
+        log:false, // Если true, то calculateBonusMultiplier() пишет логи
         levexW,
         level,
     };
     // Увеличить число ответов
     // функция calculateBonusMultiplier() берет число текущих балов
     // и увеличивает его. Правила смотреть внутри функции
-    localStorage.setItem(levexW,tic+calculateBonusMultiplier(propertyForBonus));
-
+    let ticResult = tic+calculateBonusMultiplier(propertyForBonus);
+    localStorage.setItem(levexW,ticResult);
     // Сброс состояния кнопки
     resetBottonError();
 
