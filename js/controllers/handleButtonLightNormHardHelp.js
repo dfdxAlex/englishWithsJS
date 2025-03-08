@@ -3,8 +3,6 @@ function handleHelp()
     const respons = document.getElementById('clicked_element');
     respons.innerText = indexQuestion()[0];
     localStorage.setItem('was_click_help','true');
-    //console.log(respons);
-    //console.log(returnWorkArray());
 }
 
 
