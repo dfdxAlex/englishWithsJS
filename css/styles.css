@@ -129,15 +129,30 @@ select{
     color: #e3db4e;
     border: 2px solid #e3db4e;
 }
+.btn-custom-yellow-active {
+    background-color: #d0a935;
+    color: #121101;
+    border: 2px solid #070704;
+}
 .btn-custom-blue {
     background-color: #FFFFFF;
     color: #1E90FF;
     border: 2px solid #1E90FF;
 }
+.btn-custom-blue-active {
+    background-color: #3d20cb;
+    color: #dcdedf;
+    border: 2px solid #aab1b8;
+}
 .btn-custom-white {
     background-color: #FFFFFF;
     color: #c00e1a;;
-    border: 2px solid #c00e1a;
+    border: 2px solid #0e0b0b;
+}
+.btn-custom-white-active {
+    background-color: #8d0808;
+    color: #f0eeee;;
+    border: 2px solid #0c080a;
 }
 
 .btn-custom-help {

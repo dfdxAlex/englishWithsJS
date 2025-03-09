@@ -190,9 +190,9 @@ class WorkingField {
   createButtonHardNormalLight()
   {
     let button =`<div class="container text-center mt-5">
-                       <button id="button-light" class="btn btn-custom-yellow mx-2">Light</button>
-                       <button id="button-normal" class="btn btn-custom-blue mx-2">Normal</button>
-                       <button id="button-hard" class="btn btn-custom-white mx-2">Hard</button>
+                       <button id="button-light" class="btn btn-custom-yellow mx-2" onclick="selectLightNormalHard('light')">Light</button>
+                       <button id="button-normal" class="btn btn-custom-blue mx-2" onclick="selectLightNormalHard('normal')">Normal</button>
+                       <button id="button-hard" class="btn btn-custom-white mx-2" onclick="selectLightNormalHard('hard')">Hard</button>
                        <button id="button-help" class="btn btn-custom-help mx-2" onclick="handleHelp()">Help</button>
                    </div>`;
 
