@@ -1,5 +1,16 @@
-function selectLightNormalHard(level)
+function selectLightNormalHard(level = false)
 {
+    // Условие позволяет функции работать обфчным способом
+    // без входящего параметра. Параметр тогда берется из
+    // локального хранилища
+    if (!level) {
+        if (localStorage.getItem('light_normal_hard') !== null)
+            level = localStorage.getItem('light_normal_hard');
+        else {
+          level = 'light';
+        }
+    }
+
     const buttonLight = document.getElementById('button-light');
     const buttonNormal = document.getElementById('button-normal');
     const buttonHard = document.getElementById('button-hard');
@@ -28,8 +39,15 @@ function selectLightNormalHard(level)
 
 function handleHelp()
 {
+    let randomNumber = parseFloat(localStorage.getItem('randomNumber'));
     const respons = document.getElementById('clicked_element');
-    respons.innerText = indexQuestion()[0];
+    // Если работаем со вторым тестом, то там всегда выбирается только главный вопрос
+    if (SettingForProgram.selectTypeTest === "word-assembly") randomNumber = 1;
+    respons.innerText = indexQuestion()[randomNumber-1];
+    respons.classList.remove('bg-success');
+    respons.classList.remove('bg-warning');
+    respons.style.backgroundColor = "#062654";
+    //признак того что был запрос на подсказку, блокирует добавление баллов
     localStorage.setItem('was_click_help','true');
 }
 

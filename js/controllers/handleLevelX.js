@@ -83,6 +83,7 @@ const handleLevelX = (dataObj, constIndexArray = false) =>
         if (SettingForProgram.selectTypeTest === 'word-assembly-not-translate') {
             document.getElementById('working_field')
                     .innerHTML = FactoryRegistr.getObject('WorkingField').initWordAssemblyNotTranslate(mas, nameLeson, property);
+        selectLightNormalHard();
         }
         
         // Объект накидывает на кнопки обработчики 

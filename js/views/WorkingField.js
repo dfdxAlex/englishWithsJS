@@ -105,7 +105,7 @@ class WorkingField {
                   this.translate + 
                   containerForRezzult;
         const strButton = buttonOption.join('');
-        rez+='<hr>'+strButton+this.buttonOk()+this.cardFinish;
+        rez+='<hr>'+strButton+this.buttonOk()+this.cardFinish+this.createButtonHardNormalLight();
 
         return rez;
     }
@@ -113,6 +113,7 @@ class WorkingField {
   // рядом будет подобная функция, будет время можно совместить
   // initWordAssembly() и initWordAssemblyNotTranslate()
   // новый параметр dataObj, объект для масштабирования функции.
+  // property = false служит для отмены создания нового теста, на случай предыдущего ошибочного ответа
   initWordAssemblyNotTranslate(arrayBD, nameLeson = false, property = false) 
   {
     const strStart = `<div class='row mb-2'><div class='col-12'><button style='border-radius: 10px; margin-left: 5px; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button'`;
@@ -126,30 +127,39 @@ class WorkingField {
         // Создание кнопок
         let buttonOption = [];
 
+        //специальная обработка предложения из toBeSentences
         this.question = this.clearNotToBeSentences(this.question);
 
+        //вставка пропущенного слова, если это необходимо
         this.question = this.insertWord(this.question, this.option1);
 
-        if (property && !property.constIndexArray || this.resetQuestion) {
-                this.resetQuestion = false;
-                // Простой алгоритм для выбора между вопроссом и правильным вариантом ответа
-                // для разборки на слова - кубики
-                let randomNumber = Math.random();
-                if (randomNumber > 0.5) randomNumber = 1;
-                else randomNumber = 2;
-                // Если false, то правильный ответ - это слово, не предложение,
-                // поэтому отменить результат алгоритма выбора между 
-                // главным вопроссом и правильным ответом
-                if (!this.trueSentences) randomNumber = 1;
-                // Если алгоритм выбрал работу с правильным ответом, 
-                // то взять его из переменной option1
-                if (randomNumber === 2) this.question = this.option1;
-                // В переменной question находится готовое для разборки предложение
-                localStorage.setItem('init_word_assembly_not_translate_question', this.question);
-        } else {
-            this.question = localStorage.getItem('init_word_assembly_not_translate_question');
-            this.question = this.insertWord(this.question, this.option1);
-        }
+        // метод подготавливает предложение для разборки на кубики.
+        // результат работы в локалсторадж и свойствах объекта
+        this.generateQuestion(property);
+
+        // // Если есть объект с дополнительными данными и свойство
+        // // property.constIndexArray не блокирует создание нового
+        // // тестового вопроса. Либо была смена теста-в меню выбора теста
+        // if (property && !property.constIndexArray || this.resetQuestion) {
+        //         this.resetQuestion = false;
+        //         // Простой алгоритм для выбора между вопроссом и правильным вариантом ответа
+        //         // для разборки на слова - кубики
+        //         let randomNumber = Math.random();
+        //         if (randomNumber > 0.5) randomNumber = 1;
+        //         else randomNumber = 2;
+        //         // Если false, то правильный ответ - это слово, не предложение,
+        //         // поэтому отменить результат алгоритма выбора между 
+        //         // главным вопроссом и правильным ответом
+        //         if (!this.trueSentences) randomNumber = 1;
+        //         // Если алгоритм выбрал работу с правильным ответом, 
+        //         // то взять его из переменной option1
+        //         if (randomNumber === 2) this.question = this.option1;
+        //         // В переменной question находится готовое для разборки предложение
+        //         localStorage.setItem('init_word_assembly_not_translate_question', this.question);
+        // } else {
+        //     this.question = localStorage.getItem('init_word_assembly_not_translate_question');
+        //     this.question = this.insertWord(this.question, this.option1);
+        // }
 
         // массив arrayButton должен содержать разбитые на слова предложения
         const arrayButton = this.question.split(' ');
@@ -172,7 +182,6 @@ class WorkingField {
         buttonOption = shuffleArray(buttonOption);
 
         let rez = this.cardStart + 
-                  
                   legend + 
                   containerForRezzult;
 
@@ -180,12 +189,76 @@ class WorkingField {
         rez+='<hr>'+strButton+this.buttonOk()
            +this.cardFinish+this.createButtonHardNormalLight();
 
+        // запуск функции для подсвечивания выбранной сложности
+        // если таковая выбрана
+        
+
+
         return rez;
     }
   
 
   // Дальше служебные функции класса *****************************
   // *************************************************************
+
+  getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  // Функция помещает с локальное хранилище и свойства класса
+  // предложение, которое будет разобрано на кубики
+  generateQuestion()
+  {
+        let [property] = arguments;
+            // Если есть объект с дополнительными данными и свойство
+            // property.constIndexArray не блокирует создание нового
+            // тестового вопроса. Либо была смена теста-в меню выбора теста
+            if (property && !property.constIndexArray || this.resetQuestion) {
+              this.resetQuestion = false;
+              // Простой алгоритм для выбора между вопроссом и правильным вариантом ответа
+              // для разборки на слова - кубики
+              // let randomNumber = Math.random();
+              // if (randomNumber > 0.5) randomNumber = 1;
+              // else randomNumber = 2;
+              
+              // если выбрана сложность light, то работаем только с индексом 0
+              let randomNumber = 1;
+              if (localStorage.getItem('light_normal_hard') === 'hard') {
+                  randomNumber = getRandomInt(1,this.countValidOptions());
+              }   
+              if (localStorage.getItem('light_normal_hard') === 'normal') {
+                  randomNumber = getRandomInt(1,2);
+              }   
+              
+              // если выбрана сложность light, то работаем только с индексом 0
+              // if (localStorage.getItem('light_normal_hard') === 'light') {
+              //     randomNumber = 1;
+              // }
+
+              // Если false, то правильный ответ - это слово, не предложение,
+              // поэтому отменить результат алгоритма выбора между 
+              // главным вопроссом и правильным ответом
+              if (!this.trueSentences) randomNumber = 1;
+
+              // Если алгоритм выбрал работу с правильным ответом, 
+              // то взять его из переменной option1
+              if (randomNumber === 2) this.question = this.option1;
+              if (randomNumber === 3) this.question = this.option2;
+              if (randomNumber === 4) this.question = this.option3;
+              if (randomNumber === 5) this.question = this.option4;
+              // запомнить рандомный номер для того, чтобы корректно
+              // выбрать из массива правильный вариант исходного
+              // предложения.
+              localStorage.setItem('randomNumber',randomNumber);
+
+              // В переменной question находится готовое для разборки предложение
+              this.question = this.insertWord(this.question, this.option1);
+              localStorage.setItem('init_word_assembly_not_translate_question', this.question);
+      } else {
+          this.question = localStorage.getItem('init_word_assembly_not_translate_question');
+          //this.question = this.insertWord(this.question, this.option1);
+      }
+  }
 
   createButtonHardNormalLight()
   {
@@ -196,16 +269,28 @@ class WorkingField {
                        <button id="button-help" class="btn btn-custom-help mx-2" onclick="handleHelp()">Help</button>
                    </div>`;
 
-       const nameArray = localStorage.getItem('nameArrayDb');
-       const workingArray = eval(nameArray);
-
-       if (workingArray.lengthTrue === undefined) {
+       if (this.countValidOptions() === 1 
+        || SettingForProgram.selectTypeTest === "word-assembly") {
            button =`<div class="container text-center mt-5">
                         <button id="button-help" class="btn btn-custom-help-big mx-2" onclick="handleHelp()">Help</button>
                     </div>`;
        }
 
        return button;
+  }
+
+  // функция возвращает число определяющее сколько в массиве правильно
+  // созданных предложений
+  countValidOptions()
+  {
+    const nameArray = localStorage.getItem('nameArrayDb');
+    const workingArray = eval(nameArray);
+
+    if (workingArray.lengthTrue === undefined) {
+        return 1;
+    } else {
+        return workingArray.lengthTrue;
+    }
   }
 
   cleartoBeSentences(arrayButton)
