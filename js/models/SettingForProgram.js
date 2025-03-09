@@ -3,6 +3,10 @@ class SettingForProgram
     // хранит тип теста, simple - это просто ответ на вопрос
     static selectTypeTestProperty = 'simple';
 
+    // массив для хранения текущего и предыдущего перевода
+    // некий конвейер по смещению данных
+    static dataElevator = [];
+
     static get selectTypeTest()
     {
         this.initializeToProperty();

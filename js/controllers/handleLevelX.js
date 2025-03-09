@@ -9,8 +9,12 @@
 
 const handleLevelX = (dataObj, constIndexArray = false) =>
     {
-        // Записать в хранилище что работаем на неком уровне
-        localStorage.setItem('level',dataObj.getLevel());
+        // Сменили тест
+        if (parseFloat(localStorage.getItem('level')) !== dataObj.getLevel()) {
+            // Записать в хранилище что работаем на неком уровне
+            localStorage.setItem('level',dataObj.getLevel());
+            SettingForProgram.dataElevator.shift();
+        }
 
         // Блокировка работы с форматом word-assembly если 
         // выбрано изучение слов, там нет предложений, 
@@ -32,11 +36,7 @@ const handleLevelX = (dataObj, constIndexArray = false) =>
             // данный массив хранит в себе вопроссы и ответы.
             randomEl = getRandomInt(0, dataObj.getArrayDB().length-1);
 
-        // Небольшое жульничество, пользователь не заметит
-        // При замене тестов из большего числа вопроссов на меньшее
-        // может случиться так, что старое значение номера теста выходит 
-        // за пределы текущего массива с вопросами.
-        // Поэтому нужно проверить дополнительно входит ли старое
+        // Нужно проверить дополнительно входит ли старый
         // значение вопроса в рабочий массив. Если не входит, то пользователь
         // переключил тесты и можно спокойно сгенерировать новый вопрос.
         if (parseInt(randomEl) > dataObj.getArrayDB().length-1) {

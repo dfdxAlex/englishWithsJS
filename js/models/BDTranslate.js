@@ -5,10 +5,10 @@ BDTranslate.push(
    ``,
    ``]);
 BDTranslate.push(
-  [``, 
-   ``, 
-   ``,
-   ``]);
+  [`Речь примерно о:`, 
+   `Мова приблизно про:`, 
+   `Mówimy o:`,
+   `We are talking approximately about:`]);
 BDTranslate.push(
   [`<div class="accordion" id="grammarAccordion">
   <div class="accordion-item">

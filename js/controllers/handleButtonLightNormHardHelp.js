@@ -1,6 +1,9 @@
 function selectLightNormalHard(level = false)
 {
-    // Условие позволяет функции работать обфчным способом
+    if (!setHard()) 
+        if (localStorage.getItem('light_normal_hard') === 'hard') 
+            localStorage.setItem('light_normal_hard', 'normal');
+    // Условие позволяет функции работать обычным способом
     // без входящего параметра. Параметр тогда берется из
     // локального хранилища
     if (!level) {
@@ -11,30 +14,43 @@ function selectLightNormalHard(level = false)
         }
     }
 
+    let buttonHard;
     const buttonLight = document.getElementById('button-light');
     const buttonNormal = document.getElementById('button-normal');
-    const buttonHard = document.getElementById('button-hard');
+    if (setHard()) buttonHard = document.getElementById('button-hard');
 
     buttonLight.classList = 'btn mx-2';
     buttonNormal.classList = 'btn mx-2';
-    buttonHard.classList = 'btn mx-2';
+    if (setHard()) buttonHard.classList = 'btn mx-2';
 
     localStorage.setItem('light_normal_hard',level);
     if (level === "light") {
         buttonLight.classList.add('btn-custom-yellow-active');
         buttonNormal.classList.add('btn-custom-blue');
-        buttonHard.classList.add('btn-custom-white');
+        if (setHard())
+            buttonHard.classList.add('btn-custom-white');
     }
     if (level === "normal") {
         buttonLight.classList.add('btn-custom-yellow');
         buttonNormal.classList.add('btn-custom-blue-active');
-        buttonHard.classList.add('btn-custom-white');
+        if (setHard())
+            buttonHard.classList.add('btn-custom-white');
     }
-    if (level === "hard") {
+    if (level === "hard" && setHard()) {
         buttonLight.classList.add('btn-custom-yellow');
         buttonNormal.classList.add('btn-custom-blue');
         buttonHard.classList.add('btn-custom-white-active');
     }
+}
+
+// Для повторного использования кода
+// функция вернет true если есть причины ставить кнопку Hard
+function setHard()
+{
+    if (returnWorkArray().lengthTrue !== undefined 
+        && returnWorkArray().lengthTrue > 2)
+            return true;
+    return false;
 }
 
 function handleHelp()

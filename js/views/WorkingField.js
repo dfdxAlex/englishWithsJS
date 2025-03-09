@@ -189,11 +189,6 @@ class WorkingField {
         rez+='<hr>'+strButton+this.buttonOk()
            +this.cardFinish+this.createButtonHardNormalLight();
 
-        // запуск функции для подсвечивания выбранной сложности
-        // если таковая выбрана
-        
-
-
         return rez;
     }
   
@@ -215,11 +210,6 @@ class WorkingField {
             // тестового вопроса. Либо была смена теста-в меню выбора теста
             if (property && !property.constIndexArray || this.resetQuestion) {
               this.resetQuestion = false;
-              // Простой алгоритм для выбора между вопроссом и правильным вариантом ответа
-              // для разборки на слова - кубики
-              // let randomNumber = Math.random();
-              // if (randomNumber > 0.5) randomNumber = 1;
-              // else randomNumber = 2;
               
               // если выбрана сложность light, то работаем только с индексом 0
               let randomNumber = 1;
@@ -227,14 +217,9 @@ class WorkingField {
                   randomNumber = getRandomInt(1,this.countValidOptions());
               }   
               if (localStorage.getItem('light_normal_hard') === 'normal') {
-                  randomNumber = getRandomInt(1,2);
+                  randomNumber = this.getRandomInt(1,2);
               }   
               
-              // если выбрана сложность light, то работаем только с индексом 0
-              // if (localStorage.getItem('light_normal_hard') === 'light') {
-              //     randomNumber = 1;
-              // }
-
               // Если false, то правильный ответ - это слово, не предложение,
               // поэтому отменить результат алгоритма выбора между 
               // главным вопроссом и правильным ответом
@@ -256,7 +241,6 @@ class WorkingField {
               localStorage.setItem('init_word_assembly_not_translate_question', this.question);
       } else {
           this.question = localStorage.getItem('init_word_assembly_not_translate_question');
-          //this.question = this.insertWord(this.question, this.option1);
       }
   }
 
@@ -264,13 +248,11 @@ class WorkingField {
   {
     let button =`<div class="container text-center mt-5">
                        <button id="button-light" class="btn btn-custom-yellow mx-2" onclick="selectLightNormalHard('light')">Light</button>
-                       <button id="button-normal" class="btn btn-custom-blue mx-2" onclick="selectLightNormalHard('normal')">Normal</button>
-                       <button id="button-hard" class="btn btn-custom-white mx-2" onclick="selectLightNormalHard('hard')">Hard</button>
-                       <button id="button-help" class="btn btn-custom-help mx-2" onclick="handleHelp()">Help</button>
-                   </div>`;
+                       <button id="button-normal" class="btn btn-custom-blue mx-2" onclick="selectLightNormalHard('normal')">Normal</button>`;
+    if (this.countValidOptions() > 2) button += `<button id="button-hard" class="btn btn-custom-white mx-2" onclick="selectLightNormalHard('hard')">Hard</button>`;
+    button += `<button id="button-help" class="btn btn-custom-help mx-2" onclick="handleHelp()">Help</button></div>`;
 
-       if (this.countValidOptions() === 1 
-        || SettingForProgram.selectTypeTest === "word-assembly") {
+       if (SettingForProgram.selectTypeTest === "word-assembly") {
            button =`<div class="container text-center mt-5">
                         <button id="button-help" class="btn btn-custom-help-big mx-2" onclick="handleHelp()">Help</button>
                     </div>`;
