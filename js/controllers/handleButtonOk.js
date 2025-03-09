@@ -50,6 +50,7 @@ function outpurTranslateForTest()
 {
     let commentPlus = '';
     if (localStorage.getItem('randomNumber') !== "1") {
+        //console.log(localStorage.getItem('randomNumber'));
         let transL = FactoryRegistr.getObject("LanguageController");
         commentPlus = transL.translate('Речь примерно о:');
     }
