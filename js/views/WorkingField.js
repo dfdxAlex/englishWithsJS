@@ -110,12 +110,12 @@ class WorkingField {
         return rez;
     }
 
-  // рядом будет подобная функция, будет время можно совместить
-  // initWordAssembly() и initWordAssemblyNotTranslate()
   // новый параметр dataObj, объект для масштабирования функции.
   // property = false служит для отмены создания нового теста, на случай предыдущего ошибочного ответа
   initWordAssemblyNotTranslate(arrayBD, nameLeson = false, property = false) 
   {
+    // в этой функции всегда лежим light
+    localStorage.setItem('light_normal_hard', 'light');
     const strStart = `<div class='row mb-2'><div class='col-12'><button style='border-radius: 10px; margin-left: 5px; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button'`;
 
         this.getArrayQuestions(arrayBD);
@@ -136,30 +136,6 @@ class WorkingField {
         // метод подготавливает предложение для разборки на кубики.
         // результат работы в локалсторадж и свойствах объекта
         this.generateQuestion(property);
-
-        // // Если есть объект с дополнительными данными и свойство
-        // // property.constIndexArray не блокирует создание нового
-        // // тестового вопроса. Либо была смена теста-в меню выбора теста
-        // if (property && !property.constIndexArray || this.resetQuestion) {
-        //         this.resetQuestion = false;
-        //         // Простой алгоритм для выбора между вопроссом и правильным вариантом ответа
-        //         // для разборки на слова - кубики
-        //         let randomNumber = Math.random();
-        //         if (randomNumber > 0.5) randomNumber = 1;
-        //         else randomNumber = 2;
-        //         // Если false, то правильный ответ - это слово, не предложение,
-        //         // поэтому отменить результат алгоритма выбора между 
-        //         // главным вопроссом и правильным ответом
-        //         if (!this.trueSentences) randomNumber = 1;
-        //         // Если алгоритм выбрал работу с правильным ответом, 
-        //         // то взять его из переменной option1
-        //         if (randomNumber === 2) this.question = this.option1;
-        //         // В переменной question находится готовое для разборки предложение
-        //         localStorage.setItem('init_word_assembly_not_translate_question', this.question);
-        // } else {
-        //     this.question = localStorage.getItem('init_word_assembly_not_translate_question');
-        //     this.question = this.insertWord(this.question, this.option1);
-        // }
 
         // массив arrayButton должен содержать разбитые на слова предложения
         const arrayButton = this.question.split(' ');
