@@ -61,10 +61,10 @@ class WorkingField {
               this.cardFinish;
       }
 
-  // рядом будет подобная функция, будет врмя можно совместить
-  // initWordAssembly() и initWordAssemblyNotTranslate()
   initWordAssembly(arrayBD, nameLeson = false) 
   {
+    // в этой функции всегда лежим light
+    localStorage.setItem('light_normal_hard', 'light');
     const strStart = `<div class='row mb-2'><div class='col-12'><button style='border-radius: 10px; margin-left: 5px; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button'`;
 
         this.getArrayQuestions(arrayBD);
@@ -114,8 +114,6 @@ class WorkingField {
   // property = false служит для отмены создания нового теста, на случай предыдущего ошибочного ответа
   initWordAssemblyNotTranslate(arrayBD, nameLeson = false, property = false) 
   {
-    // в этой функции всегда лежим light
-    localStorage.setItem('light_normal_hard', 'light');
     const strStart = `<div class='row mb-2'><div class='col-12'><button style='border-radius: 10px; margin-left: 5px; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button'`;
 
         this.getArrayQuestions(arrayBD);
