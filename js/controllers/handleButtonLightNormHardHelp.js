@@ -1,3 +1,5 @@
+// Функции обрабатывающие кнопки Light, Normal, Hard, Help
+
 function selectLightNormalHard(level = false)
 {
     if (!setHard()) 
@@ -66,7 +68,6 @@ function handleHelp()
     //признак того что был запрос на подсказку, блокирует добавление баллов
     localStorage.setItem('was_click_help','true');
 }
-
 
 function returnWorkArray()
 {

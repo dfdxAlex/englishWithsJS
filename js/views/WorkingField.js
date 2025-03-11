@@ -32,21 +32,15 @@ class WorkingField {
 
   init(arrayBD, nameLeson = false) 
   {
-
           this.getArrayQuestions(arrayBD);
-
           this.workingWihtOkAndError();
-
           let legend = this.cardStartAndLegend(nameLeson);
-
           let buttonOption = [];
           buttonOption[0] = this.strStart+' id="option1"> '+this.option1+this.strFinish;
           buttonOption[1] = this.strStart+' id="option2"> '+this.option2+this.strFinish;
           buttonOption[2] = this.strStart+' id="option3"> '+this.option3+this.strFinish;
           buttonOption[3] = this.strStart+' id="option4"> '+this.option4+this.strFinish;
-
           const buttonQuestion = `<br><div class='row mb-2'><div class='col-12'><button style='width: 100%; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button' id='question'>${this.question}</button></div></div><br>`;
-
           buttonOption = shuffleArray(buttonOption);
 
           return this.cardStart +
@@ -66,18 +60,13 @@ class WorkingField {
     // в этой функции всегда лежим light
     localStorage.setItem('light_normal_hard', 'light');
     const strStart = `<div class='row mb-2'><div class='col-12'><button style='border-radius: 10px; margin-left: 5px; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button'`;
-
         this.getArrayQuestions(arrayBD);
-
         this.workingWihtOkAndError();
-
         let legend = this.cardStartAndLegend(nameLeson);
 
         // Создание кнопок
         let buttonOption = [];
-
         this.question = this.clearNotToBeSentences(this.question);
-
         this.question = this.insertWord(this.question, this.option1);
 
         // массив arrayButton должен содержать разбитые на слова предложения
@@ -115,11 +104,8 @@ class WorkingField {
   initWordAssemblyNotTranslate(arrayBD, nameLeson = false, property = false) 
   {
     const strStart = `<div class='row mb-2'><div class='col-12'><button style='border-radius: 10px; margin-left: 5px; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button'`;
-
         this.getArrayQuestions(arrayBD);
-
         this.workingWihtOkAndError();
-
         let legend = this.cardStartAndLegend(nameLeson);
 
         // Создание кнопок
@@ -231,7 +217,6 @@ class WorkingField {
                         <button id="button-help" class="btn btn-custom-help-big mx-2" onclick="handleHelp()">Help</button>
                     </div>`;
        }
-
        return button;
   }
 
