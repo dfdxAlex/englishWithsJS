@@ -115,9 +115,7 @@ function colorErrorOrOk()
     const clickedElement= document.getElementById("clicked_element");
     questionOld.classList.remove('bg-warning');
     clickedElement.classList.remove('bg-warning');
-    
     if (arguments.length < 2) return;
-    
     questionOld.classList.add(arguments[1]);
     questionOld.classList.remove(arguments[0]);
     clickedElement.classList.add(arguments[1]);

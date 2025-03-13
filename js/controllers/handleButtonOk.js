@@ -55,7 +55,7 @@ function outpurTranslateForTest()
     }
 
     SettingForProgram.dataElevator.push(indexQuestion()[5]);
-    const place = document.getElementById('question_old');
+    const place = document.getElementById('clicked_element');
     if (SettingForProgram.dataElevator.length > 1)
         place.innerText = commentPlus+' '+SettingForProgram.dataElevator.shift();
 }

@@ -89,5 +89,4 @@ const handleLevelX = (dataObj, constIndexArray = false) =>
         // Объект накидывает на кнопки обработчики 
         // соответствующих событий, ответ правильный или нет
         FactoryRegistr.getObject('EventController').init();
-        //return dataObj;
     };
