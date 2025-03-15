@@ -54,7 +54,7 @@ class LevelDataModel
         this.propertyArrayNameButton.push(this.translate.translate('I Have or I Have got'));// пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('A1 Beginer text'));// пункт 2
         this.propertyArrayNameButton.push(this.translate.translate('Was Or Were'));// пункт 1
-        this.propertyArrayNameButton.push(this.translate.translate('Пройдено заданий:'));// пункт 4
+        this.propertyArrayNameButton.push(this.translate.translate('Собрано алмазов:'));// пункт 4
         this.propertyArrayNameButton.push(this.translate.translate('Ошибок:'));// пункт 4
         this.propertyArrayNameButton.push(this.translate.translate('Успех:'));// пункт 4
         this.propertyArrayNameButton.push(this.translate.translate('Сброс'));// пункт 4

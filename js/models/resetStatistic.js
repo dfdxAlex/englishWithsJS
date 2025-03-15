@@ -39,7 +39,7 @@ const resetStatistic = (reset = true) => {
     if (resultSucces !== 0) {
         resultSucces = Math.floor(numberOk/(numberOk+numberError)*100);
     }
-    document.getElementById('level24').innerHTML = translate.translate('Пройдено заданий:') + numberOk;
+    document.getElementById('level24').innerHTML = translate.translate('Собрано алмазов:') + Math.trunc(numberOk);
     document.getElementById('level25').innerHTML = translate.translate('Ошибок:') + numberError;
     document.getElementById('level26').innerHTML = translate.translate('Успех:') + resultSucces +'%';
     //перерисовать статус диамантов

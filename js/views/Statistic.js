@@ -25,7 +25,7 @@ class Statistic
        // Проверка наличия одной из кнопок ответов, если она есть,
        // значит можно событие сброса ставить
        // Добавить статистику в текст на кнопке
-       document.getElementById('level24').innerHTML = translate.translate('Пройдено заданий:') + ok;
+       document.getElementById('level24').innerHTML = translate.translate('Собрано алмазов:') + Math.trunc(ok);
        document.getElementById('level25').innerHTML = translate.translate('Ошибок:') + error;
        document.getElementById('level26').innerHTML = translate.translate('Успех:') + Math.floor(rez)+'%';
        document.getElementById('level27').innerHTML = translate.translate('Сброс');
