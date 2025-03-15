@@ -139,6 +139,9 @@ function calculateBonusMultiplier(propertyForBonus)
         koefForTypeTest = 9;
     }
 
+    if (SettingForProgram.inputLightNormalHard == 'normal') koefForTypeTest += 1;
+    if (SettingForProgram.inputLightNormalHard == 'hard') koefForTypeTest += 3;
+
     ticLocal *= koefForTypeTest;
 
     if (ticLocal < 0.4) ticLocal = 0.4;
