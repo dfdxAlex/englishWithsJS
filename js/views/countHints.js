@@ -11,6 +11,12 @@ function countHints()
             && search.innerText !== "Translate question"
     )
         return false;
+    // Это функционал из кнопки помощи, который блокирует начисление балов
+    // при изучении слов перевод равнозначен кнопке Help, поэтому проще 
+    // воспользоваться уже готовым приемом.
+    if (LevelDataModel.mapNameMenu(parseFloat(localStorage.getItem('level')-1)) == 2) {
+        localStorage.setItem('was_click_help','true');
+    }
 
     // получить информацию о текущем тесте - уровне
     const level = localStorage.getItem('level');
