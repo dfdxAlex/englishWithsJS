@@ -3,6 +3,9 @@ class SettingForProgram
     // хранит тип теста, simple - это просто ответ на вопрос
     static selectTypeTestProperty = 'simple';
 
+    // инфа для цены баллов
+    static inputLightNormalHard = 'light';
+    // инфа для пузырьков
     static buttonCheckX;
     static buttonCheckY;
     static diamant;
