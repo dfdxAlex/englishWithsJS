@@ -12,6 +12,9 @@
 // в локальном хранилище, и у каждого теста есть свои два ключа в хранилище.
 
 function handleOkErr(str, event) {
+    // Сохранить координаты места клика по кнопке Проверить
+    SettingForProgram.buttonCheckX = event.pageX;
+    SettingForProgram.buttonCheckY = event.pageY;
     // Переменные, в которых хранится инфа об верных и не верных 
     // ответак создается так: 
     // слово "level", к нему добавляется уровень, на котором

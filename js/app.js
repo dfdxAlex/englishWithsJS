@@ -30,7 +30,52 @@ window.onload = () => {
     document.getElementById('btnGroupDrop1').onclick = () => {
         FactoryRegistr.getObject('WorkingField').resetQuestion = true;
     }
+    let divCreate = document.createElement("div");
+    let putEl = false;
+    let arrayTic = () => {
+        return Math.floor(Math.random() * 3) -1 ;
+    }
+    let lag = 3;
+    let numberRand = 0;
+    let propertyTest;
+
+    setInterval(() => {
+        if (SettingForProgram.buttonCheckY > 50) {
+            if (lag < 0) {
+                numberRand = arrayTic();
+                lag = 3;
+            }
+            lag--;
+
+            SettingForProgram.buttonCheckX+=numberRand;
+            divCreate.style.left = SettingForProgram.buttonCheckX + "px"; // Начальная позиция
+            divCreate.style.top = SettingForProgram.buttonCheckY + "px";
+
+            if (!putEl || propertyTest < SettingForProgram.buttonCheckY) {
+                if (SettingForProgram.diamant !== '-1') {
+                    divCreate.style.backgroundColor = "green";
+                } else {
+                    divCreate.style.backgroundColor = "red";
+                }
+                divCreate.innerText = SettingForProgram.diamant;
+                divCreate.style.color = "white";
+                divCreate.style.position = "absolute"; // Позволяет двигать элемент по координатам
+                divCreate.style.border = "1px solid black";
+                divCreate.style.borderRadius = "50%";
+                document.body.appendChild(divCreate);
+                putEl = true;
+            }
+
+            SettingForProgram.buttonCheckY-=1;
+            propertyTest = SettingForProgram.buttonCheckY;
+        } else {
+            divCreate.innerText = '';
+            putEl = false;
+        }
+    }, 15);
 };
+
+
 
 // инициализация переменных, хранящихся в классе данных
 SettingForProgram.initializeToProperty();

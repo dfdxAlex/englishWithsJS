@@ -36,6 +36,7 @@ class WorkingField {
           this.workingWihtOkAndError();
           let legend = this.cardStartAndLegend(nameLeson);
           let buttonOption = [];
+
           buttonOption[0] = this.strStart+' id="option1"> '+this.option1+this.strFinish;
           buttonOption[1] = this.strStart+' id="option2"> '+this.option2+this.strFinish;
           buttonOption[2] = this.strStart+' id="option3"> '+this.option3+this.strFinish;

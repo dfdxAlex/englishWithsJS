@@ -22,6 +22,9 @@ function calculateBonusMultiplier(propertyForBonus)
     // На случай если произошел ошибочный ответ, то вернуть 1
     // Штрафы оставляю на будущее
     if (str === "Error") {
+        // поместить инфу в статическую переменную для использования
+        // в остальной части кода.
+            SettingForProgram.diamant = "-1";
         return 1;
     }
 
@@ -136,12 +139,15 @@ function calculateBonusMultiplier(propertyForBonus)
     log.ticLocalRezult = ticLocal;
     
     
-    //if (propertyForBonus.log) {
     if (logView) {
         console.log('---calculateBonusMultiplier---');
         console.log(log);
         console.log('***************************');
     }
+
+    // поместить инфу в статическую переменную для использования
+    // в остальной части кода.
+    SettingForProgram.diamant = ticLocal.toFixed(2);
 
     return ticLocal;
 }
