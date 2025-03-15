@@ -7,6 +7,9 @@ function calculateBonusMultiplier(propertyForBonus)
     if (localStorage.getItem('was_click_help') === 'true') 
         {
             localStorage.setItem('was_click_help','false');
+            // поместить инфу в статическую переменную для использования
+            // в остальной части кода.
+            SettingForProgram.diamant = "0";
             return 0;
         }
 

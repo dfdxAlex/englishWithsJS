@@ -52,10 +52,12 @@ window.onload = () => {
             divCreate.style.top = SettingForProgram.buttonCheckY + "px";
 
             if (!putEl || propertyTest < SettingForProgram.buttonCheckY) {
-                if (SettingForProgram.diamant !== '-1') {
-                    divCreate.style.backgroundColor = "green";
-                } else {
+                if (SettingForProgram.diamant === '-1') {
                     divCreate.style.backgroundColor = "red";
+                } else if (SettingForProgram.diamant === '0') {
+                    divCreate.style.backgroundColor = "#8b00ff";
+                } else {
+                    divCreate.style.backgroundColor = "green";
                 }
                 divCreate.innerText = SettingForProgram.diamant;
                 divCreate.style.color = "white";
