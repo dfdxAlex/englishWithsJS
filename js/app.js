@@ -43,7 +43,7 @@ window.onload = () => {
         if (SettingForProgram.buttonCheckY > 50) {
             if (lag < 0) {
                 numberRand = arrayTic();
-                lag = 6;
+                lag = 16;
             }
             lag--;
 
@@ -63,6 +63,7 @@ window.onload = () => {
                 divCreate.style.color = "white";
                 divCreate.style.position = "absolute"; // Позволяет двигать элемент по координатам
                 divCreate.style.border = "1px solid black";
+                
                 divCreate.style.borderRadius = "50%";
                 document.body.appendChild(divCreate);
                 putEl = true;
