@@ -74,7 +74,7 @@ window.onload = () => {
             divCreate.innerText = '';
             putEl = false;
         }
-    }, 15);
+    }, 10);
 };
 
 
