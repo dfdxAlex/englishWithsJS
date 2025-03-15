@@ -35,7 +35,7 @@ window.onload = () => {
     let arrayTic = () => {
         return Math.floor(Math.random() * 3) -1 ;
     }
-    let lag = 3;
+    let lag = 6;
     let numberRand = 0;
     let propertyTest;
 
@@ -43,7 +43,7 @@ window.onload = () => {
         if (SettingForProgram.buttonCheckY > 50) {
             if (lag < 0) {
                 numberRand = arrayTic();
-                lag = 3;
+                lag = 6;
             }
             lag--;
 
