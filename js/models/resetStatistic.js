@@ -13,8 +13,8 @@ const resetStatistic = (reset = true) => {
     const resetOk = 'level'+level+'_Ok';
     const resetError = 'level'+level+'_Error';
 
-    let numberError = parseInt(localStorage.getItem(resetError));
-    let numberOk =  parseInt(localStorage.getItem(resetOk));
+    let numberError = parseFloat(localStorage.getItem(resetError));
+    let numberOk =  parseFloat(localStorage.getItem(resetOk));
 
     // переменная станет false если не было команды на сброс, но нужно 
     // пересчитать данные.

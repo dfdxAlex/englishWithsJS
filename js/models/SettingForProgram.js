@@ -7,6 +7,10 @@ class SettingForProgram
     static buttonCheckY;
     static diamant;
 
+    // массивы с данными по реальным пройденным тестам и ошибкам
+    static testsOk;
+    static testsError;
+
     // массив для хранения текущего и предыдущего перевода
     // некий конвейер по смещению данных
     static dataElevator = [];

@@ -3,10 +3,6 @@
 // построено правильно
 function handleButtonOk(ev)
 {
-    // // Сохранить координаты места клика по кнопке Проверить
-    // SettingForProgram.buttonCheckX = ev.pageX;
-    // SettingForProgram.buttonCheckY = ev.pageY;
-
     // Узнать сколько должно быть кнопок в зоне ответа.
     const buttonMax = parseInt(localStorage.getItem('indexMax'));
     // Создать массив с кнопками в зоне ответа.

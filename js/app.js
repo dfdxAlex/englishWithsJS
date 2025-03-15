@@ -41,6 +41,7 @@ window.onload = () => {
 
     setInterval(() => {
         if (SettingForProgram.buttonCheckY > 50) {
+            // Здесь задается смещение вправо-влево
             if (lag < 0) {
                 numberRand = arrayTic();
                 lag = 16;
@@ -52,24 +53,32 @@ window.onload = () => {
             divCreate.style.top = SettingForProgram.buttonCheckY + "px";
 
             if (!putEl || propertyTest < SettingForProgram.buttonCheckY) {
+                let pre = '';
+                // раскрашивание фона
                 if (SettingForProgram.diamant === '-1') {
                     divCreate.style.backgroundColor = "red";
                 } else if (SettingForProgram.diamant === '0') {
                     divCreate.style.backgroundColor = "#8b00ff";
                 } else {
                     divCreate.style.backgroundColor = "green";
+                    pre = '+';
                 }
-                divCreate.innerText = SettingForProgram.diamant;
+                // постоянные настройки пузырька
+                divCreate.innerText = pre+SettingForProgram.diamant;
                 divCreate.style.color = "white";
                 divCreate.style.position = "absolute"; // Позволяет двигать элемент по координатам
                 divCreate.style.border = "1px solid black";
-                
                 divCreate.style.borderRadius = "50%";
                 document.body.appendChild(divCreate);
                 putEl = true;
             }
 
+            // Скорость всплытия
             SettingForProgram.buttonCheckY-=1;
+            // Переменняя propertyTest нужна для контроля факта
+            // необходимости нового пузыря до окончания всплытия старого
+            // Выше в коде проверяется, если фактический Y стал снова больше
+            // то прекращаем старое всплытие и начинаем новое.
             propertyTest = SettingForProgram.buttonCheckY;
         } else {
             divCreate.innerText = '';

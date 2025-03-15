@@ -61,15 +61,13 @@ function calculateBonusMultiplier(propertyForBonus)
 
     // Первый бонус должен зависеть от числа непогашенных ошибок
     // если такие ошибки есть, то коэффициент считается по формуле снизу
-    // переделан 3.3.2025
     let bonusOne;
-    if (error == 0) bonusOne = 1;
-    if (error > 0 && ok == 0) bonusOne = 0 - error;
-    if (error > 0 && ok > 0) bonusOne = ok / (error + ok);
+    if (error > 0 || ok > 0) bonusOne = ok / (error + ok);
+    if (error == 0 && ok ==0) bonusOne = 1;
     log.bonusOne = bonusOne;
     // Второй бонус, попытка настройть раздачу балов в зависимости
     // от сложности. Сложным считается последний тест.
-    const bonusTwo = level / numberTest * 2;
+    const bonusTwo = level / numberTest;
     log.bonusTwo = bonusTwo;
 
     // Третий бонус - самые малопройденные тесты дают больше баллов
@@ -95,50 +93,56 @@ function calculateBonusMultiplier(propertyForBonus)
     if (maxError === maxOk) maxError+=1;
     log.maxError = maxError;
     log.testsOk = testsOk;
+    // сбор информации в статический класс
+    SettingForProgram.testsOk = testsOk;
+    SettingForProgram.testsError = testsError;
+    //******************************
     log.maxOk = maxOk;
     log.testsError = testsError;
 
-    const bonusThree = (1 - (ok + error)/(maxOk+maxError)) * 3;
+    let bonusThree = (1 - (ok + error)/(maxOk+maxError));
     log.bonusThree = bonusThree;
 
     log.calculateMedian = calculateMedian(testsOk);
 
+    // Бонус пробует определить на сколько равномерно пройдены все тесты
     let diferent;
+    // Если число пройденных тестов 0 и медианное среднее 0, 
+    // то коэф. максимальный = 1
     if (ok == 0 && calculateMedian(testsOk) == 0) diferent = 1;
-    if (ok > calculateMedian(testsOk)) diferent = calculateMedian(testsOk)+1 / ok;
-    else if (ok < calculateMedian(testsOk)) diferent = ok+1 / calculateMedian(testsOk);
+    // дальше находим отношение меньшего к большему. То есть коэф.
+    // тем больше, чем ближе медианная средняя и число пройденных
+    // тестов в конкретном задании
+    if (ok > calculateMedian(testsOk)) diferent = calculateMedian(testsOk) / ok;
+    else if (ok < calculateMedian(testsOk)) diferent = ok / calculateMedian(testsOk);
 
 
-    let bonusFour = diferent * 3;
+    //let bonusFour = diferent * 3;
+    let bonusFour = diferent;
     log.bonusFour = bonusFour;
 
 
-    ticLocal = bonusOne + bonusTwo + bonusThree + bonusFour;
+    ticLocal = (bonusOne + bonusTwo + bonusThree + bonusFour)/4;
     log.ticLocalFull = ticLocal;
 
-    let koefForTypeTest = 1;
+    // Цена положительного ответа при коэф.=1 для первого теста
+    let koefForTypeTest = 3;
 
     // Если работаем с тестом word-assembly то удвоить баллы
     if (localStorage.getItem('user_select') === 'word-assembly') {
-        koefForTypeTest = 2;
+        koefForTypeTest = 6;
     }
 
     // Если работаем с тестом word-assembly-not-translate 
     // то умножить балы на 2,5
     if (localStorage.getItem('user_select') === 'word-assembly-not-translate') {
-        koefForTypeTest = 2.5;
+        koefForTypeTest = 9;
     }
 
     ticLocal *= koefForTypeTest;
 
     if (ticLocal < 0.4) ticLocal = 0.4;
-    
-    if (koefForTypeTest === 1)
-        if (ticLocal > 3) ticLocal = 3;
-    if (koefForTypeTest === 2)
-        if (ticLocal > 6) ticLocal = 6;
-    if (koefForTypeTest === 2.5)
-        if (ticLocal > 7) ticLocal = 7;
+ 
     log.ticLocalRezult = ticLocal;
     
     
