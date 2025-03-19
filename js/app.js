@@ -45,6 +45,10 @@ window.onload = () => {
             if (lag < 0) {
                 numberRand = arrayTic();
                 lag = 16;
+                // если приближаемся к правой стороне то скорректировать тренд в левую
+                if (window.innerWidth - SettingForProgram.buttonCheckX < 100) {
+                    numberRand = -1;
+                }
             }
             lag--;
 
