@@ -72,6 +72,7 @@ class LevelDataModel
         this.propertyArrayNameButton.push(this.translate.translate('for, since, ago'));// пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('PrPerf or PsSimpl'));// пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('Animals 100 (RU)'));// пункт 2
+        this.propertyArrayNameButton.push(this.translate.translate('Is Done Was Done (passive 1)'));// пункт 1
         this.tic = this.propertyArrayNameButton.length;
     }
 
@@ -84,7 +85,7 @@ class LevelDataModel
                                 1,2,1,1,1,1,1,1,1,2,
                                 1,2,1,4,4,4,4,4,3,3,
                                 1,1,2,1,1,2,1,1,1,1,
-                                2];
+                                2,1];
 
         return arrayForButton[test];
     }
@@ -144,6 +145,7 @@ class LevelDataModel
         this.selectLevel('Выбрать правильную пару.','forSinceAgoPrPerfPastSimple',39);
         this.selectLevel('Выбрать правильную пару.','presentPerfectOrPastSimple',40);
         this.selectLevel('Выбрать правильную пару.','animals100',41);
+        this.selectLevel('Выбрать правильную пару.','passiveIsDoneWasDone',42);
         return this.rez;
     }
 
