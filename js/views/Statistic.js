@@ -6,8 +6,8 @@ class Statistic
     {
        let rez = 0;
        // Проверяются значения правильных и не правильных ответов
-       let ok = isNaN(parseInt(okInput)) ? 0 : parseInt(okInput);
-       let error = isNaN(parseInt(errorInput)) ? 0 : parseInt(errorInput);
+       let ok = isNaN(parseFloat(okInput)) ? 0 : parseFloat(okInput);
+       let error = isNaN(parseFloat(errorInput)) ? 0 : parseFloat(errorInput);
 
        // считаются проценты только если сумма балов отлична от нуля
        // и является цифрой
