@@ -16,6 +16,8 @@ const resetStatistic = (reset = true) => {
     let numberError = parseFloat(localStorage.getItem(resetError));
     let numberOk =  parseFloat(localStorage.getItem(resetOk));
 
+    if (isNaN(numberError)) numberError = 0;
+
     // переменная станет false если не было команды на сброс, но нужно 
     // пересчитать данные.
     if (reset) {
