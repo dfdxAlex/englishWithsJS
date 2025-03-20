@@ -86,6 +86,294 @@ const passiveIsDoneWasDone = [
     ["She drank water.", "Water was drunk by her.", "She is drinking water.", "Water will be drunk by her.", "She had drunk water.", "Она пила воду.", "Вона пила воду.", "Piła wodę."],
     ["They gave me a gift.", "I was given a gift by them.", "They are giving me a gift.", "I will be given a gift by them.", "They had given me a gift.", "Они дали мне подарок.", "Вони дали мені подарунок.", "Dali mi prezent."],
     ["He ran a marathon.", "A marathon was run by him.", "He is running a marathon.", "A marathon will be run by him.", "He had run a marathon.", "Он пробежал марафон.", "Він пробіг марафон.", "Biegł w maratonie."],
+    [
+      "She does not eat apples.",
+      "Apples are not eaten by her.",
+      "She did not eat apples.",
+      "She will not eat apples.",
+      "She is not eating apples.",
+      "Она не ест яблоки.",
+      "Вона не їсть яблука.",
+      "Ona nie je jabłek."
+    ],
+    [
+      "He does not watch TV.",
+      "TV is not watched by him.",
+      "He did not watch TV.",
+      "He will not watch TV.",
+      "He is not watching TV.",
+      "Он не смотрит телевизор.",
+      "Він не дивиться телевізор.",
+      "On nie ogląda telewizji."
+    ],
+    [
+      "They do not play football.",
+      "Football is not played by them.",
+      "They did not play football.",
+      "They will not play football.",
+      "They are not playing football.",
+      "Они не играют в футбол.",
+      "Вони не грають у футбол.",
+      "Oni nie grają w piłkę nożną."
+    ],
+    [
+      "She does not like coffee.",
+      "Coffee is not liked by her.",
+      "She did not like coffee.",
+      "She will not like coffee.",
+      "She is not liking coffee.",
+      "Она не любит кофе.",
+      "Вона не любить каву.",
+      "Ona nie lubi kawy."
+    ],
+    [
+      "We do not read books.",
+      "Books are not read by us.",
+      "We did not read books.",
+      "We will not read books.",
+      "We are not reading books.",
+      "Мы не читаем книги.",
+      "Ми не читаємо книги.",
+      "My nie czytamy książek."
+    ],
+    [
+      "You do not write letters.",
+      "Letters are not written by you.",
+      "You did not write letters.",
+      "You will not write letters.",
+      "You are not writing letters.",
+      "Ты не пишешь письма.",
+      "Ти не пишеш листи.",
+      "Ty nie piszesz listów."
+    ],
+    [
+      "She does not drive a car.",
+      "A car is not driven by her.",
+      "She did not drive a car.",
+      "She will not drive a car.",
+      "She is not driving a car.",
+      "Она не водит машину.",
+      "Вона не водить машину.",
+      "Ona nie prowadzi samochodu."
+    ],
+    [
+      "They do not cook dinner.",
+      "Dinner is not cooked by them.",
+      "They did not cook dinner.",
+      "They will not cook dinner.",
+      "They are not cooking dinner.",
+      "Они не готовят ужин.",
+      "Вони не готують вечерю.",
+      "Oni nie gotują kolacji."
+    ],
+    [
+      "He does not open the window.",
+      "The window is not opened by him.",
+      "He did not open the window.",
+      "He will not open the window.",
+      "He is not opening the window.",
+      "Он не открывает окно.",
+      "Він не відкриває вікно.",
+      "On nie otwiera okna."
+    ],
+    [
+      "We do not clean the house.",
+      "The house is not cleaned by us.",
+      "We did not clean the house.",
+      "We will not clean the house.",
+      "We are not cleaning the house.",
+      "Мы не убираем дом.",
+      "Ми не прибираємо будинок.",
+      "My nie sprzątamy domu."
+    ],
+    [
+      "She does not sing songs.",
+      "Songs are not sung by her.",
+      "She did not sing songs.",
+      "She will not sing songs.",
+      "She is not singing songs.",
+      "Она не поёт песни.",
+      "Вона не співає пісень.",
+      "Ona nie śpiewa piosenek."
+    ],
+    [
+      "He does not fix cars.",
+      "Cars are not fixed by him.",
+      "He did not fix cars.",
+      "He will not fix cars.",
+      "He is not fixing cars.",
+      "Он не чинит машины.",
+      "Він не ремонтує машини.",
+      "On nie naprawia samochodów."
+    ],
+
+        // 0 - негативное предложение в Present Simple (активный залог)
+        ["I don't like coffee.", 
+     
+          // 1 - тот же вопрос в Past Simple (пассивный залог)
+          "Coffee was not liked by me.", 
+          
+          // 2 - тот же вопрос в Future Simple (активный залог)
+          "I won't like coffee tomorrow.", 
+          
+          // 3 - тот же вопрос в Present Continuous (активный залог)
+          "I am not liking coffee right now.", 
+          
+          // 4 - тот же вопрос в Past Simple (активный залог)
+          "I didn't like coffee yesterday.", 
+          
+          // 5 - перевод на русский
+          "Я не люблю кофе.", 
+          
+          // 6 - перевод на украинский
+          "Я не люблю каву.", 
+          
+          // 7 - перевод на польский
+          "Nie lubię kawy."],
+      
+          // 8 - негативное предложение в Present Simple (активный залог)
+          ["She doesn't play the piano.", 
+          
+          // 9 - тот же вопрос в Past Simple (пассивный залог)
+          "The piano was not played by her.", 
+          
+          // 10 - тот же вопрос в Future Simple (активный залог)
+          "She won't play the piano tomorrow.", 
+          
+          // 11 - тот же вопрос в Present Continuous (активный залог)
+          "She is not playing the piano right now.", 
+          
+          // 12 - тот же вопрос в Past Simple (активный залог)
+          "She didn't play the piano yesterday.", 
+          
+          // 13 - перевод на русский
+          "Она не играет на пианино.", 
+          
+          // 14 - перевод на украинский
+          "Вона не грає на піаніно.", 
+          
+          // 15 - перевод на польский
+          "Ona nie gra na fortepianie."],
+      
+          // 16 - негативное предложение в Present Simple (активный залог)
+          ["They don't understand the lesson.", 
+          
+          // 17 - тот же вопрос в Past Simple (пассивный залог)
+          "The lesson was not understood by them.", 
+          
+          // 18 - тот же вопрос в Future Simple (активный залог)
+          "They won't understand the lesson tomorrow.", 
+          
+          // 19 - тот же вопрос в Present Continuous (активный залог)
+          "They are not understanding the lesson right now.", 
+          
+          // 20 - тот же вопрос в Past Simple (активный залог)
+          "They didn't understand the lesson yesterday.", 
+          
+          // 21 - перевод на русский
+          "Они не понимают урок.", 
+          
+          // 22 - перевод на украинский
+          "Вони не розуміють урок.", 
+          
+          // 23 - перевод на польский
+          "Oni nie rozumieją lekcji."],
+      
+          // 24 - негативное предложение в Present Simple (активный залог)
+          ["I don't eat vegetables.", 
+          
+          // 25 - тот же вопрос в Past Simple (пассивный залог)
+          "Vegetables were not eaten by me.", 
+          
+          // 26 - тот же вопрос в Future Simple (активный залог)
+          "I won't eat vegetables tomorrow.", 
+          
+          // 27 - тот же вопрос в Present Continuous (активный залог)
+          "I am not eating vegetables right now.", 
+          
+          // 28 - тот же вопрос в Past Simple (активный залог)
+          "I didn't eat vegetables yesterday.", 
+          
+          // 29 - перевод на русский
+          "Я не ем овощи.", 
+          
+          // 30 - перевод на украинский
+          "Я не їм овочі.", 
+          
+          // 31 - перевод на польский
+          "Nie jem warzyw."],
+      
+          // 32 - негативное предложение в Present Simple (активный залог)
+          ["He doesn't read books.", 
+          
+          // 33 - тот же вопрос в Past Simple (пассивный залог)
+          "Books were not read by him.", 
+          
+          // 34 - тот же вопрос в Future Simple (активный залог)
+          "He won't read books tomorrow.", 
+          
+          // 35 - тот же вопрос в Present Continuous (активный залог)
+          "He is not reading books right now.", 
+          
+          // 36 - тот же вопрос в Past Simple (активный залог)
+          "He didn't read books yesterday.", 
+          
+          // 37 - перевод на русский
+          "Он не читает книги.", 
+          
+          // 38 - перевод на украинский
+          "Він не читає книжки.", 
+          
+          // 39 - перевод на польский
+          "On nie czyta książek."],
+      
+          // 40 - негативное предложение в Present Simple (активный залог)
+          ["We don't travel abroad.", 
+          
+          // 41 - тот же вопрос в Past Simple (пассивный залог)
+          "Travels abroad were not made by us.", 
+          
+          // 42 - тот же вопрос в Future Simple (активный залог)
+          "We won't travel abroad next year.", 
+          
+          // 43 - тот же вопрос в Present Continuous (активный залог)
+          "We are not traveling abroad right now.", 
+          
+          // 44 - тот же вопрос в Past Simple (активный залог)
+          "We didn't travel abroad last year.", 
+          
+          // 45 - перевод на русский
+          "Мы не путешествуем за границу.", 
+          
+          // 46 - перевод на украинский
+          "Ми не подорожуємо за кордон.", 
+          
+          // 47 - перевод на польский
+          "Nie podróżujemy za granicę."],
+      
+          // 48 - негативное предложение в Present Simple (активный залог)
+          ["I don't eat breakfast.", 
+          
+          // 49 - тот же вопрос в Past Simple (пассивный залог)
+          "Breakfast was not eaten by me.", 
+          
+          // 50 - тот же вопрос в Future Simple (активный залог)
+          "I won't eat breakfast tomorrow.", 
+          
+          // 51 - тот же вопрос в Present Continuous (активный залог)
+          "I am not eating breakfast right now.", 
+          
+          // 52 - тот же вопрос в Past Simple (активный залог)
+          "I didn't eat breakfast yesterday.", 
+          
+          // 53 - перевод на русский
+          "Я не ем завтрак.", 
+          
+          // 54 - перевод на украинский
+          "Я не їм сніданок.", 
+          
+          // 55 - перевод на польский
+          "Nie jem śniadania."],
     
   ];
   
