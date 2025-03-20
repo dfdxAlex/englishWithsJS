@@ -40,22 +40,27 @@ function handleButtonOk(ev)
     // Если ответ правильный
     if (testRezult) {
         handleOkErr('Ok',ev);
-        outpurTranslateForTest();
+        outputTranslateForTest();
     } else {
         handleOkErr('Error',ev);
     }
 }
 
-function outpurTranslateForTest()
+function outputTranslateForTest()
 {
     let commentPlus = '';
     if (localStorage.getItem('randomNumber') !== "1") {
         let transL = FactoryRegistr.getObject("LanguageController");
         commentPlus = transL.translate('Речь примерно о:');
+        SettingForProgram.commentPlus.push(commentPlus);
+    } else {
+        SettingForProgram.commentPlus.push('');
     }
 
     SettingForProgram.dataElevator.push(indexQuestion()[5]);
     const place = document.getElementById('clicked_element');
-    if (SettingForProgram.dataElevator.length > 1)
+    if (SettingForProgram.dataElevator.length > 1) {
+        commentPlus = SettingForProgram.commentPlus.shift();
         place.innerText = commentPlus+' '+SettingForProgram.dataElevator.shift();
+    }
 }

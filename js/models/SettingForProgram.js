@@ -18,6 +18,9 @@ class SettingForProgram
     // некий конвейер по смещению данных
     static dataElevator = [];
 
+    // хранит конвейер со значениями Речь примерно о: или пустая строка
+    static commentPlus = [];
+
     static get selectTypeTest()
     {
         this.initializeToProperty();
