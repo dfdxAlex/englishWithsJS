@@ -1,3 +1,5 @@
+// This code is written inefficiently.
+
 const BDTranslate = [];
 BDTranslate.push(
   [``, 
