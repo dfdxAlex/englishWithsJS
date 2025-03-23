@@ -427,9 +427,6 @@ const passiveIsDoneWasDone = [
           ['Was the video edited by you yesterday?', 'Yes, the video was edited by me yesterday.', 'Yes, I edited the video yesterday.', 'Yes, the video is edited by me every week.', 'Yes, I edit the video every week.', 'Было ли видео отредактировано вами вчера?', 'Чи було відео відредаговано вами вчора?', 'Czy wideo zostało edytowane przez ciebie wczoraj?'],
           ['Was the survey completed by you last year?', 'Yes, the survey was completed by me last year.', 'Yes, I completed the survey last year.', 'Yes, the survey is completed by me every year.', 'Yes, I complete the survey every year.', 'Был ли опрос завершен вами в прошлом году?', 'Чи був опитування завершений вами минулого року?', 'Czy ankieta została wypełniona przez ciebie w zeszłym roku?'],
           ['Was the document updated by you last week?', 'Yes, the document was updated by me last week.', 'Yes, I updated the document last week.', 'Yes, the document is updated by me every month.', 'Yes, I update the document every month.', 'Был ли документ обновлён вами на прошлой неделе?', 'Чи був документ оновлений вами минулого тижня?', 'Czy dokument został zaktualizowany przez ciebie w zeszłym tygodniu?'],
-          
-        
-    
   ];
   
     // Если это свойство есть, то оно попадает в заголовок теста
