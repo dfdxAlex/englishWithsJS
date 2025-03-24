@@ -256,15 +256,11 @@ BDTranslate.push(
      returnLevel16UA(), 
      returnLevel16PL(),
      returnLevel16EN()]);
-
-
 BDTranslate.push(
     [`Простое настоящее  P.S. плюс периодичность`, 
      `Просте справжнє P.S. плюс періодичність`, 
      `Prosty prezent P.S. plus częstotliwość`,
      `Simple present P.S. plus periodicity`]);
-
-
 BDTranslate.push(
     [returnLevel15(), 
      returnLevel15UA(), 
