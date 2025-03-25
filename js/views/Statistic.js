@@ -5,13 +5,15 @@ class Statistic
     init(okInput, errorInput)
     {
        let rez = 0;
+
        // Проверяются значения правильных и не правильных ответов
-       let ok = isNaN(parseFloat(okInput)) ? 0 : parseFloat(okInput);
-       let error = isNaN(parseFloat(errorInput)) ? 0 : parseFloat(errorInput);
+       let ok = parseFloat(okInput);
+       if (isNaN(ok)) ok = 0;
+       let error = parseFloat(errorInput);
+       if (isNaN(error)) error = 0;
 
        // считаются проценты только если сумма балов отлична от нуля
-       // и является цифрой
-       let allPunkt = (+ok+error);
+       let allPunkt = ok + error;
        if (allPunkt !== 0) {
            rez = (ok/(allPunkt))*100;
        }

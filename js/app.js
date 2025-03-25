@@ -4,9 +4,8 @@ window.onload = () => {
     diament();
     nav();
     htmlOldQuestions();
-    daimentInfo();
+    //daimentInfo();
     htmlHelp();
-    //htmlOldQuestions();
     buttonSound();
 
     // Запуск контроллера языковых настроек
@@ -30,6 +29,7 @@ window.onload = () => {
     document.getElementById('btnGroupDrop1').onclick = () => {
         FactoryRegistr.getObject('WorkingField').resetQuestion = true;
     }
+    // постоянная часть для всплывающего шарика
     let divCreate = document.createElement("div");
     let putEl = false;
     let arrayTic = () => {
