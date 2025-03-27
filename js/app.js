@@ -61,14 +61,14 @@ window.onload = () => {
 
             if (!putEl || propertyTest < SettingForProgram.buttonCheckY) {
                 //let pre = '';
-                let pre = '<span style="font-size: 50px;">💎</span>';
-                let diamant = `<span class="text-for-booble">${SettingForProgram.diamant}</span>`;
+                let pre = '<span class="diamond">💎</span>';
+                let diamant = `<span class="score">${SettingForProgram.diamant}</span>`;
                 if (SettingForProgram.diamant === '-1') {
-                    pre = '<span style="font-size: 50px;">💀</span>';
+                    pre = '<span class="diamond">💀</span>';
                     diamant = '';
                 }
                 if (SettingForProgram.diamant === '0') {
-                    pre = '<span style="font-size: 50px;">🎓</span>';
+                    pre = '<span class="diamond">🎓</span>';
                     diamant = '';
                 }
                 // раскрашивание фона
