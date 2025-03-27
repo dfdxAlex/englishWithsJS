@@ -348,7 +348,7 @@ class WorkingField {
       <button 
         style='width: 100%; 
                border: 1px solid rgba(0, 0, 0, 0.2); 
-               box-shadow: 0 4px 8px rgba(0,0,0,0.2);' 
+               box-shadow: 0 4px 8px rgba(0,0,0,0.2);'
         type='button' 
         id='button-ok'
         onclick = 'handleButtonOk(event)'

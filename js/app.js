@@ -29,8 +29,11 @@ window.onload = () => {
     document.getElementById('btnGroupDrop1').onclick = () => {
         FactoryRegistr.getObject('WorkingField').resetQuestion = true;
     }
+
+
     // постоянная часть для всплывающего шарика
     let divCreate = document.createElement("div");
+    divCreate.innerText = '💎';
     let putEl = false;
     let arrayTic = () => {
         return Math.floor(Math.random() * 3) -1 ;
@@ -57,22 +60,33 @@ window.onload = () => {
             divCreate.style.top = SettingForProgram.buttonCheckY + "px";
 
             if (!putEl || propertyTest < SettingForProgram.buttonCheckY) {
-                let pre = '';
-                // раскрашивание фона
+                //let pre = '';
+                let pre = '<span style="font-size: 50px;">💎</span>';
+                let diamant = `<span class="text-for-booble">${SettingForProgram.diamant}</span>`;
                 if (SettingForProgram.diamant === '-1') {
-                    divCreate.style.backgroundColor = "red";
-                } else if (SettingForProgram.diamant === '0') {
-                    divCreate.style.backgroundColor = "#8b00ff";
-                } else {
-                    divCreate.style.backgroundColor = "green";
-                    pre = '+';
+                    pre = '<span style="font-size: 50px;">💀</span>';
+                    diamant = '';
                 }
+                if (SettingForProgram.diamant === '0') {
+                    pre = '<span style="font-size: 50px;">🎓</span>';
+                    diamant = '';
+                }
+                // раскрашивание фона
+                // if (SettingForProgram.diamant === '-1') { 🎓
+                //     divCreate.style.backgroundColor = "red";
+                // } else if (SettingForProgram.diamant === '0') {
+                //     divCreate.style.backgroundColor = "#8b00ff";
+                // } else {
+                //     divCreate.style.backgroundColor = "green";
+                //     pre = '+';
+                // }
                 // постоянные настройки пузырька
-                divCreate.innerText = pre+SettingForProgram.diamant;
-                divCreate.style.color = "white";
+                divCreate.innerHTML = pre+diamant;
+                divCreate.style.color = "black";
+                divCreate.style.fontSize = "20px";
                 divCreate.style.position = "absolute"; // Позволяет двигать элемент по координатам
-                divCreate.style.border = "1px solid black";
-                divCreate.style.borderRadius = "50%";
+                //divCreate.style.border = "1px solid black";
+                //divCreate.style.borderRadius = "50%";
                 document.body.appendChild(divCreate);
                 putEl = true;
             }
