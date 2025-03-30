@@ -32,17 +32,14 @@ function calculateBonusMultiplier(propertyForBonus)
     }
 
     // вычислить нахождение числа ошибок
-    let errorName = levexW.replace('Ok', "Error");
-    log.errorName = errorName;
+    log.errorName = DataOk.levelNameError;
     
     // Узнать число правильных и не правильных ответов
-    let ok = parseFloat(localStorage.getItem(levexW));
-    if (!Number.isFinite(ok)) ok = 0;
-    log.ok = ok;
-    
-    let error = parseFloat(localStorage.getItem(errorName));
-    if (!Number.isFinite(error)) error = 0;
-    log.error = error;
+    let ok = DataOk.ok;
+    log.ok = DataOk.ok;
+
+    let error = DataOk.error;
+    log.error = DataOk.error;
 
 
     // Узнать число существующих тестов
@@ -76,16 +73,9 @@ function calculateBonusMultiplier(propertyForBonus)
     const testsOk = []; // набить массив цифрами
     const testsError = []; // набить массив цифрами
     arrayNumberTest.forEach((element, index) => {
-        // let nameKey = 'level'+index+'_Ok';
-        // let maxOkLocal = parseFloat(localStorage.getItem(nameKey));
-        // if (!Number.isFinite(maxOkLocal)) maxOkLocal = 0;
-        // testsOk.push(maxOkLocal);
+        
         testsOk.push(DataOk.getOkIndex(index));
 
-        // nameKey = 'level'+index+'_Error';
-        // let maxErrorLocal = parseFloat(localStorage.getItem(nameKey));
-        // if (!Number.isFinite(maxErrorLocal)) maxErrorLocal = 0;
-        // testsError.push(maxErrorLocal);
         testsError.push(DataOk.getErrorIndex(index));
     });
 

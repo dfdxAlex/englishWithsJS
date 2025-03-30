@@ -121,10 +121,11 @@ function scarbClick(xx=1)
     bonusForScarb.style.left = x+'px';
     bonusForScarb.style.top = y+'px';
 
+    DataOk.addOk(SettingForProgram.diamant*xx);
+
     setTimeout(()=>{
         document.querySelector('.text-about-scarb').remove();
-        DataOk.addOk(SettingForProgram.diamant*xx);
-
+        
     }, 2500);
 
     //bonusForScarb.

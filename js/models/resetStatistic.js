@@ -9,32 +9,16 @@
 // как индекс, который нужно обнулить.
 const resetStatistic = (reset = true) => {
 
-    const level = parseInt(localStorage.getItem('level'));
-    const resetOk = 'level'+level+'_Ok';
-    const resetError = 'level'+level+'_Error';
-
-    let numberError = parseFloat(localStorage.getItem(resetError));
-    let numberOk =  parseFloat(localStorage.getItem(resetOk));
-
-    if (isNaN(numberError)) numberError = 0;
+    let numberError = DataOk.error;
+    let numberOk = DataOk.ok;
 
     // переменная станет false если не было команды на сброс, но нужно 
     // пересчитать данные.
     if (reset) {
-        // Если вдруг ошибка то обнулить
-        if (!Number.isFinite(numberError)) {
-            localStorage.setItem(resetError,0);
-            numberError = 0;
-        }
-        if (!Number.isFinite(numberOk)) {
-            localStorage.setItem(resetOk,0);
-            numberOk = 0;
-        }
-
+        // сбросс ошибок
         [numberOk, numberError] = succesP(numberOk, numberError);
-
-        localStorage.setItem(resetError,numberError);
-        localStorage.setItem(resetOk,numberOk); 
+        DataOk.error = numberError;
+        DataOk.ok = numberOk;
     }
     const translate = FactoryRegistr.getObject("LanguageController");
     let resultSucces = numberOk+numberError;
