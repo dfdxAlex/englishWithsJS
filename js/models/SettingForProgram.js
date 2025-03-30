@@ -5,10 +5,16 @@ class SettingForProgram
 
     // инфа для цены баллов
     static inputLightNormalHard = 'light';
-    // инфа для пузырьков
+
+    // ********* инфа для пузырьков
+    // В эти переменные попадает стартовая координата для пузырька, определяется по клику
     static buttonCheckX;
     static buttonCheckY;
+    // хранит число выбитых диамантов
     static diamant;
+    // хранит дубликат стартовых координат для сравнения
+    static buttonCheckXStart;
+    static buttonCheckYStart;
 
     // массивы с данными по реальным пройденным тестам и ошибкам
     static testsOk;
