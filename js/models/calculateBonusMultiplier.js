@@ -76,15 +76,17 @@ function calculateBonusMultiplier(propertyForBonus)
     const testsOk = []; // набить массив цифрами
     const testsError = []; // набить массив цифрами
     arrayNumberTest.forEach((element, index) => {
-        let nameKey = 'level'+index+'_Ok';
-        let maxOkLocal = parseFloat(localStorage.getItem(nameKey));
-        if (!Number.isFinite(maxOkLocal)) maxOkLocal = 0;
-        testsOk.push(maxOkLocal);
+        // let nameKey = 'level'+index+'_Ok';
+        // let maxOkLocal = parseFloat(localStorage.getItem(nameKey));
+        // if (!Number.isFinite(maxOkLocal)) maxOkLocal = 0;
+        // testsOk.push(maxOkLocal);
+        testsOk.push(DataOk.getOkIndex(index));
 
-        nameKey = 'level'+index+'_Error';
-        let maxErrorLocal = parseFloat(localStorage.getItem(nameKey));
-        if (!Number.isFinite(maxErrorLocal)) maxErrorLocal = 0;
-        testsError.push(maxErrorLocal);
+        // nameKey = 'level'+index+'_Error';
+        // let maxErrorLocal = parseFloat(localStorage.getItem(nameKey));
+        // if (!Number.isFinite(maxErrorLocal)) maxErrorLocal = 0;
+        // testsError.push(maxErrorLocal);
+        testsError.push(DataOk.getErrorIndex(index));
     });
 
     const maxOk = Math.max(...testsOk);

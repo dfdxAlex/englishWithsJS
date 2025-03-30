@@ -45,17 +45,30 @@ let DataOk = {
         this.ok = value;
         localStorage.setItem(this.level.levelNameOk, value);
     },
+    getOk: () => {
+        return this.ok
+    },
+    getOkIndex: (index) => {
+        return parseFloat(localStorage.getItem('level'+index+'_Ok')) || 0;
+    },
 
     // Сеттер для error
     setError: function(value) {
         this.error = value;
         localStorage.setItem(this.level.levelNameError, value);
     },
+    getError: () => {
+        return this.error
+    },
+    getErrorIndex: (index) => {
+        return parseFloat(localStorage.getItem('level'+index+'_Error')) || 0;
+    },
     // Сумматор для ok
     addOk: function(value) {
         this.ok += parseFloat(value) || 0;
         localStorage.setItem(this.level.levelNameOk, this.ok);
     },
+
      // Сумматор для error
     addError: function(value) {
         this.error += parseFloat(value) || 0;
