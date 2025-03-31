@@ -3,7 +3,7 @@ let DataOk = {
         str : localStorage.getItem('level') || '9',                                // номер текущего уровня Строка
         int : parseInt(localStorage.getItem('level')) || 9,                                           // номер текущего уровня Число
         get levelNameOk() {return 'level' + this.str + '_Ok'},  // Имя переменной где хранится число ОК
-        get levelNameError() {'level' + this.str + '_Error'},   // Имя переменной где хранится число Error
+        get levelNameError() {return 'level' + this.str + '_Error'},   // Имя переменной где хранится число Error
     },
     // Число баллов Ок
     get ok() {
