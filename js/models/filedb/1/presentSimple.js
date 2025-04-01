@@ -232,7 +232,7 @@ const presentSimple = [
     [
       "They ... their parents every weekend.",
       "visit",
-      "visit",
+      "visiting",
       "are visiting",
       "visited",
       "Они навещают своих родителей каждые выходные.",
@@ -472,7 +472,7 @@ const presentSimple = [
     [
       "They ... together every weekend.",
       "dance",
-      "dance",
+      "danceing",
       "are dancing",
       "danced",
       "Они танцуют вместе каждые выходные.",

@@ -1,11 +1,9 @@
 function boobleUp()
 {
-    //
    // постоянная часть для всплывающего шарика
    let divCreate = document.createElement("div");
    divCreate.innerText = '💎';
    let divCreateForBonusBox = document.createElement("div");
-   //divCreateForBonusBox.innerText = "🎁";
 
    let putEl = false;
    let arrayTic = (min=1, max=3) => {
@@ -27,8 +25,6 @@ function boobleUp()
                SettingForProgram.buttonCheckYStart = SettingForProgram.buttonCheckY;
                // признак того что уже запомнили стартовое значение
                propertySrartXInitialise = true;
-               // Разрешить попытку выбить ящик
-               //bonusBox = false;
            }
            // Здесь задается смещение вправо-влево
            if (lag < 0) {
@@ -70,7 +66,6 @@ function boobleUp()
                bonusBox = true;
                let randomInt = arrayTic(1,10);
                if (randomInt == 5) randomOk = true;
-               //console.log(randomInt);
                //randomOk = true; // если раскомментировать, то ящик падает всегда
                if (randomOk) {
                    preBon = '<span onclick="scarbClick(2)" class="scarb">🎁</span>';
@@ -128,6 +123,4 @@ function scarbClick(xx=1)
         
     }, 2500);
 
-    //bonusForScarb.
-    //console.log(bonusForScarb.style.left);
 }

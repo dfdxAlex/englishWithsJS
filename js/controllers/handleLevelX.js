@@ -10,9 +10,10 @@
 const handleLevelX = (dataObj, constIndexArray = false) =>
     {
         // Сменили тест
-        if (parseFloat(localStorage.getItem('level')) !== dataObj.getLevel()) {
+        if (DataOk.level.int !== dataObj.getLevel()) {
             // Записать в хранилище что работаем на неком уровне
-            localStorage.setItem('level',dataObj.getLevel());
+            //localStorage.setItem('level',dataObj.getLevel());
+            DataOk.setLevel(dataObj.getLevel());
             SettingForProgram.dataElevator.shift();
         }
 

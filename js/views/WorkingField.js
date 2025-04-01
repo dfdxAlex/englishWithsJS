@@ -330,13 +330,8 @@ class WorkingField {
   // ответов.
   workingWihtOkAndError()
   {
-    
-    let staticticOk = 'level' + localStorage.getItem('level') + '_Ok';
-    let staticticError = 'level' + localStorage.getItem('level') + '_Error';
-    //console.log(staticticOk);
     const statistic = FactoryRegistr.getObject('Statistic');
-    statistic.init(localStorage.getItem(staticticOk), 
-                   localStorage.getItem(staticticError));
+    statistic.init(DataOk.ok, DataOk.error);    
   }
 
   // Функция создает разметку для кнопки "Проверить" 
