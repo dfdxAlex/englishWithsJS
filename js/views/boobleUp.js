@@ -66,11 +66,12 @@ function boobleUp()
                bonusBox = true;
                let randomInt = arrayTic(1,10);
                if (randomInt == 5) randomOk = true;
-               //randomOk = true; // если раскомментировать, то ящик падает всегда
+               randomOk = true; // если раскомментировать, то ящик падает всегда
                if (randomOk) {
                    preBon = '<span onclick="scarbClick(2)" class="scarb">🎁</span>';
                    divCreateForBonusBox.innerHTML = preBon;
                    document.body.appendChild(divCreateForBonusBox);
+                   SettingForProgram.randomOk = true;
                }
            }
 
@@ -96,6 +97,7 @@ function boobleUp()
            randomOk = false;
            const signal = document.getElementById('fieldset-legend');
            signal.style.backgroundColor = '#a4f1b9';
+           SettingForProgram.randomOk = false;
        }
    }, 10);
 }

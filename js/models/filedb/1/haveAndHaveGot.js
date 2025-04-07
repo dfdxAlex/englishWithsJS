@@ -2544,7 +2544,7 @@ const haveAndHaveGot = [
         "Haven't you got the answer?", 
         "You've not got the answer, have you?", 
         "Got you not the answer?", 
-        "Haven't you got the answer?", 
+        "Haven't you goting the answer?", 
         "У тебя нет ответа", 
         "У тебе немає відповіді", 
         "Nie masz odpowiedzi"                          

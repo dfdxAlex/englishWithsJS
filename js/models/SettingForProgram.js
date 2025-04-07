@@ -15,6 +15,8 @@ class SettingForProgram
     // хранит дубликат стартовых координат для сравнения
     static buttonCheckXStart;
     static buttonCheckYStart;
+    // хранит признак того, что падает ящик
+    static randomOk = false;
 
     // массивы с данными по реальным пройденным тестам и ошибкам
     static testsOk;
