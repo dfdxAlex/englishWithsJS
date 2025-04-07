@@ -124,6 +124,13 @@ select{
 }
 
 /*кнопки light, normal, hard*/
+.btn-custom-yellow, .btn-custom-yellow-active,
+.btn-custom-blue, .btn-custom-blue-active,
+.btn-custom-white, .btn-custom-white-active,
+.btn-custom-help, .btn-custom-help-big {
+    margin-top: 15px;
+}
+
 .btn-custom-yellow {
     background-color: #FFFFFF;
     color: #e3db4e;
