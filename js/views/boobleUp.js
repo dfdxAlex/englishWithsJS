@@ -66,7 +66,7 @@ function boobleUp()
                bonusBox = true;
                let randomInt = arrayTic(1,10);
                if (randomInt == 5) randomOk = true;
-               randomOk = true; // если раскомментировать, то ящик падает всегда
+               //randomOk = true; // если раскомментировать, то ящик падает всегда
                if (randomOk) {
                    preBon = '<span onclick="scarbClick(2)" class="scarb">🎁</span>';
                    divCreateForBonusBox.innerHTML = preBon;
