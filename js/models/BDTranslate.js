@@ -32,10 +32,10 @@ BDTranslate.push(
      ``,
      ``]);
 BDTranslate.push(
-  [``, 
-   ``, 
-   ``,
-   ``]);
+  [helpForGreenPoleOneRU(), 
+   helpForGreenPoleOneUA(), 
+   helpForGreenPoleOnePL(),
+   helpForGreenPoleOneEN()]);
 BDTranslate.push(
  [returnLevel42(), 
   returnLevel42UA(), 

@@ -36,8 +36,9 @@ class LanguageController
         BDTranslate.forEach((el)=>{
             // Если нашли совпадение по русскому языку
             // то вернуть соответствующее значение выбранного языка
-            if (el[0] == str)
+            if (el[0] == str) {
                 returnTranslate = (el[lang]);
+            }
         });
         return returnTranslate;
     }

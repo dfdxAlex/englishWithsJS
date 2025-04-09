@@ -4,7 +4,6 @@ window.onload = () => {
     diament();
     nav();
     htmlOldQuestions();
-    //daimentInfo();
     htmlHelp();
     buttonSound();
 
