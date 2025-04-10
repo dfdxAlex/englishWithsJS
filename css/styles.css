@@ -260,3 +260,11 @@ select{
     float: right;
     border-radius: 50px;
 }
+
+/* стиль для прокручивания модального окна в объекте Help */
+.help-for-green-pole-one {
+    max-height: 80vh; /* Максимальная высота 80% от высоты экрана */
+    margin: 0 auto;
+    /* max-height: 400px; */
+    overflow-y: auto;
+}

@@ -1,10 +1,10 @@
-function helpForGreenPoleOneRU()
+function helpForGreenPoleOneRU(video)
 {
     return `
     <div id='modalOverlay' style='position: fixed; top: 0; left: 0; width: 100%; height: 100%;
      background: rgba(0, 0, 0, 0.5); z-index: 9998;' onclick='document.getElementById(\"modalOverlay\").remove(); document.getElementById(\"modalBox\").remove();'></div>
 
-    <div id='modalBox' style='position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    <div class = "help-for-green-pole-one" id='modalBox' style='position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
         background: white; border: 1px solid #ccc; border-radius: 12px; padding: 24px;
         width: 90%; max-width: 520px; z-index: 9999;
         box-shadow: 0 6px 24px rgba(0,0,0,0.25); font-family: sans-serif;
@@ -39,6 +39,8 @@ function helpForGreenPoleOneRU()
         Поэтому если в задании используется предложение из любого другого элемента,
         перевод будет отражать <em>лишь общий смысл</em>, а не дословное значение.
       </p>
+
+      <div id='video-help'></div>
 
       <div style='text-align: right; margin-top: 20px;'>
         <button onclick='document.getElementById("modalBox").remove(); document.getElementById("modalOverlay").remove();'
