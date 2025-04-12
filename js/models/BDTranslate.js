@@ -26,11 +26,11 @@ BDTranslate.push(
    ``, 
    ``,
    ``]);
-   BDTranslate.push(
-    [``, 
-     ``, 
-     ``,
-     ``]);
+BDTranslate.push(
+  [helpForHomeMenuRU(), 
+   helpForHomeMenuUA(), 
+   helpForHomeMenuPL(),
+   helpForHomeMenuEN()]);
 BDTranslate.push(
   [helpForGreenPoleOneRU(), 
    helpForGreenPoleOneUA(), 

@@ -9,6 +9,9 @@ function nav()
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
+          <li>
+            <button onclick = "Help.viewhandleHelpToTranslate(helpForHomeMenuRU(),'vkQYDmiTlmQ')" type = "button" class="fs-6 text-primary mb-3 button-help">&#10067;</button>
+          </li>
           <li class="nav-item" id="nav-item-burger">
             <div class="nav-link" id="burger"></div>
           </li>
