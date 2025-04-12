@@ -7,6 +7,7 @@ function diamentView(diament, emodzi, smile)
             <span style="margin: 0 4px; font-size: 1.5rem;" data-bs-toggle="modal" data-bs-target="#diamondsModal">${emodzi}</span>
         </div>
         <div style="display: flex; align-items: center;">
+        <button onclick = "Help.viewhandleHelpToTranslate(helpForProgramRU(),'RwzDBkaEwjI')" type = "button" style = "font-sise: 0.55rem" class="text-primary mb-3 button-help">&#10067;</button> 
             ${smile}  
         </div>
     </div><div id="daiment-info"></div>`;

@@ -22,10 +22,10 @@ BDTranslate.push(
      ``,
      ``]);
 BDTranslate.push(
-  [``, 
-   ``, 
-   ``,
-   ``]);
+  [helpForProgramRU(), 
+   helpForProgramUA(), 
+   helpForProgramPL(),
+   helpForProgramEN()]);
 BDTranslate.push(
   [helpForHomeMenuRU(), 
    helpForHomeMenuUA(), 
