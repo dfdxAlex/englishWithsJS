@@ -10,7 +10,7 @@ function htmlOldQuestions()
     <div class="card shadow-lg mb-3 mx-auto position-relative" style="width: 80vw; transform: translateY(-10px); transition: transform 0.3s, box-shadow 0.3s;">
       <div class="card-body">
         <fieldset class="border-0">
-          <legend class="fs-4 text-primary mb-3" id="fieldset-legend-old">${yourQuestion}<button onclick = 'Help.viewhandleHelpToTranslate()' type='button' id = 'button-help' class='button-help'>&#10067;</button></legend>
+          <legend class="fs-4 text-primary mb-3" id="fieldset-legend-old">${yourQuestion}<button onclick = 'Help.viewhandleHelpToTranslate(helpForGreenPoleOneRU(),"VuUKoWdyu6Y")' type='button' id = 'button-help' class='button-help'>&#10067;</button></legend>
           
           <div class="row mb-3">
             <div class="col-12">
