@@ -16,11 +16,11 @@ BDTranslate.push(
    ``, 
    ``,
    ``]);
-   BDTranslate.push(
-    [``, 
-     ``, 
-     ``,
-     ``]);
+BDTranslate.push(
+    [returnInfoUnit22RU(), 
+     returnInfoUnit22UA(), 
+     returnInfoUnit22PL(),
+     returnInfoUnit22EN()]);
 BDTranslate.push(
   [helpForProgramRU(), 
    helpForProgramUA(), 

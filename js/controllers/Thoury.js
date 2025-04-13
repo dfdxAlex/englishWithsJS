@@ -67,6 +67,8 @@ static handleThoury(level)
                 return this.addStyleForH1+`Present perfect or Past simple</h1>`;       
             case 42: 
                 return this.addStyleForH1+`Present simple passive, past simple passive</h1>`;    
+            case 43: 
+                return this.addStyleForH1+`Present Continuous Passive, Present Perfect Passive</h1>`;    
             default:
                 return `${this.addStyleForH1+this.translate.translate('Просто учим слова')}</h1>`;
         }
@@ -75,10 +77,8 @@ static handleThoury(level)
     static bodyThoury()
     {
       switch (this.level) {
-      // if (this.level === 15) 
-      //   return this.translate.translate(``);
-      // if (this.level === 15) 
-      //   return this.translate.translate(``);
+      case 43: 
+        return this.translate.translate(returnInfoUnit22RU());
       case 42: 
         return this.translate.translate(returnLevel42());
       case 40:
