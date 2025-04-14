@@ -6,21 +6,21 @@ BDTranslate.push(
    ``, 
    ``,
    ``]);
-   BDTranslate.push(
-    [``, 
-     ``, 
-     ``,
-     ``]);
+BDTranslate.push(
+ [``, 
+  ``, 
+  ``,
+  ``]);
 BDTranslate.push(
   [``, 
    ``, 
    ``,
    ``]);
 BDTranslate.push(
-    [returnInfoUnit22RU(), 
-     returnInfoUnit22UA(), 
-     returnInfoUnit22PL(),
-     returnInfoUnit22EN()]);
+  [returnInfoUnit22RU(), 
+   returnInfoUnit22UA(), 
+   returnInfoUnit22PL(),
+   returnInfoUnit22EN()]);
 BDTranslate.push(
   [helpForProgramRU(), 
    helpForProgramUA(), 
@@ -37,10 +37,10 @@ BDTranslate.push(
    helpForGreenPoleOnePL(),
    helpForGreenPoleOneEN()]);
 BDTranslate.push(
- [returnLevel42(), 
-  returnLevel42UA(), 
-  returnLevel42PL(),
-  returnLevel42EN()]);
+  [returnLevel42(), 
+   returnLevel42UA(), 
+   returnLevel42PL(),
+   returnLevel42EN()]);
 BDTranslate.push(
   [`Речь примерно о:`, 
    `Мова приблизно про:`, 
@@ -82,10 +82,10 @@ BDTranslate.push(
    `W tym teście musisz ułożyć zdanie z podanych słów. Pamiętaj, że czasami zebrane zdanie może nie pokrywać się z ogólnym tematem testu.`,
    `In this test you need to assemble a sentence from the given words. Keep in mind that sometimes the assembled sentence may not match the general topic of the test.`]);
 BDTranslate.push(
-    [`(может отличаться)`, 
-     `(може відрізнятися)`, 
-     `(może się różnić)`,
-     `(may differ)`]);
+  [`(может отличаться)`, 
+   `(може відрізнятися)`, 
+   `(może się różnić)`,
+   `(may differ)`]);
 BDTranslate.push(
   [returnLevel20(), 
    returnLevel20UA(), 
@@ -102,20 +102,20 @@ BDTranslate.push(
    returnInfoForDiamantPL(),
    returnInfoForDiamantEN()]);
 BDTranslate.push(
-    [returnLevel35(), 
-     returnLevel35UA(), 
-     returnLevel35PL(),
-     returnLevel35EN()]);
+   [returnLevel35(), 
+    returnLevel35UA(), 
+    returnLevel35PL(),
+    returnLevel35EN()]);
 BDTranslate.push(
-    [returnLevel34(), 
-     returnLevel34UA(), 
-     returnLevel34PL(),
-     returnLevel34EN()]);
+   [returnLevel34(), 
+    returnLevel34UA(), 
+    returnLevel34PL(),
+    returnLevel34EN()]);
 BDTranslate.push(
-    [`Вставьте глагол вместо троеточия или подберите правильное предложение в продолженном прошедшем времени.`, 
-     `Вставте дієслово замість три крапки або підберіть правильну пропозицію в минулому часі.`, 
-     `Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym ciągłym.`,
-     `Insert a verb instead of the ellipsis or choose the correct sentence in the past continuous tense.`]);
+   [`Вставьте глагол вместо троеточия или подберите правильное предложение в продолженном прошедшем времени.`, 
+    `Вставте дієслово замість три крапки або підберіть правильну пропозицію в минулому часі.`, 
+    `Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym ciągłym.`,
+    `Insert a verb instead of the ellipsis or choose the correct sentence in the past continuous tense.`]);
 BDTranslate.push(
    [returnLevel33(), 
     returnLevel33UA(), 
