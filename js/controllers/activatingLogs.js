@@ -26,6 +26,7 @@ function activatingLogs(regim = false, ev = null)
         }
 
    // создать простой промис
+   // Задача промиса просто закончиться в пользу появления или скрытия логов
    const workingForLogPromise = new Promise((logSee, logDontSee)=>{
      if (regim) logSee();
      else logDontSee();
