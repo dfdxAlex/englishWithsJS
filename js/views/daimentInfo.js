@@ -11,11 +11,13 @@
     let result;
     const translate = FactoryRegistr.getObject("LanguageController");
     let id = setInterval(()=>{
+
     if (typeof returnInfoForDiamant !== 'function') return;
+    if (typeof translate !== 'object') return;
     result = translate.translate(returnInfoForDiamant());
-    let diamentInfo = document.getElementById('daiment-info');
-    if (!diamentInfo) return;
-    diamentInfo.innerHTML = result;
+
+    document.body.insertAdjacentHTML("beforeend", result);
+
     clearInterval(id);
     },100);
 })();

@@ -10,6 +10,6 @@ function diamentView(diament, emodzi, smile)
         <button onclick = "Help.viewhandleHelpToTranslate(helpForProgramRU(),'RwzDBkaEwjI')" type = "button" style = "font-sise: 0.55rem" class="text-primary mb-3 button-help">&#10067;</button> 
             ${smile}  
         </div>
-    </div><div id="daiment-info"></div>`;
+    </div>`;
     document.querySelector('#diament').innerHTML = strHeader;
 }
