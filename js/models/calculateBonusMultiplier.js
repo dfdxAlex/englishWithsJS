@@ -57,12 +57,14 @@ function calculateBonusMultiplier(propertyForBonus)
     // если такие ошибки есть, то коэффициент считается по формуле снизу
     let bonusOne;
     if (error > 0 || ok > 0) bonusOne = ok / (error + ok);
-    if (error == 0 && ok ==0) bonusOne = 1;
+    if (error == 0 && ok == 0) bonusOne = 1;
     log.bonusOne = bonusOne;
+
     // Второй бонус, попытка настройть раздачу балов в зависимости
     // от сложности. Сложным считается последний тест.
     const bonusTwo = level / numberTest;
     log.bonusTwo = bonusTwo;
+
     // Третий бонус - самые малопройденные тесты дают больше баллов
     // Плюс создать массив с цифрами, сколько есть данных по числу
     // пройденных тестов
@@ -89,6 +91,7 @@ function calculateBonusMultiplier(propertyForBonus)
     log.testsError = testsError;
 
     let bonusThree = (1 - (ok + error)/(maxOk+maxError));
+    if (isNaN(bonusThree)) bonusThree = 1;
     log.bonusThree = bonusThree;
 
     log.calculateMedian = calculateMedian(testsOk);
@@ -103,11 +106,9 @@ function calculateBonusMultiplier(propertyForBonus)
     if (ok > calculateMedian(testsOk)) diferent = calculateMedian(testsOk) / ok;
     else if (ok < calculateMedian(testsOk)) diferent = ok / calculateMedian(testsOk);
 
-
-    //let bonusFour = diferent * 3;
     let bonusFour = diferent;
+    if (isNaN(bonusFour)) bonusFour = 1;
     log.bonusFour = bonusFour;
-
 
     ticLocal = (bonusOne + bonusTwo + bonusThree + bonusFour)/4;
     log.ticLocalFull = ticLocal;
@@ -148,8 +149,6 @@ function calculateBonusMultiplier(propertyForBonus)
 
     return ticLocal;
 }
-
-
 
 function calculateMedian(array) {
     const sorted = [...array].sort((a, b) => a - b); // Сортируем массив

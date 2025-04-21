@@ -20,9 +20,10 @@ function countHints()
             }
 
     // получить информацию о текущем тесте - уровне
-    const level = localStorage.getItem('level');
+    //const level = localStorage.getItem('level');
+    const level = DataOk.level.int;
     // получить текущее число подсказок, добавить 1 и записать
-    let intTranslate = +localStorage.getItem('intTranslate_'+level) | 0;
+    let intTranslate = parseFloat(localStorage.getItem('intTranslate_'+level)) | 0;
     intTranslate++;
     localStorage.setItem('intTranslate_'+level, intTranslate);
 }
