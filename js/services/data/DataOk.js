@@ -39,9 +39,10 @@ let DataOk = {
 
     //Сеттер для level
     setLevel: function(value) {
-        this.level.int = parseInt(value);
+        this.level.int = parseFloat(value);
         this.level.str = value;
         localStorage.setItem('level', value);
+        return this.level.int;
     },
 
     getOkIndex: (index) => {

@@ -55,9 +55,12 @@ const handleLevelX = (dataObj, constIndexArray = false) =>
         // Блок проверяет есть ли в рабочем массиве свойство nameLeson
         // Если есть, то через одноимённую переменную оно передается в WorkingField
         // Где используется для установки в заголовок теста названия теста.
-        let nameLeson = false;
-        if ('nameLeson' in dataObj.getArrayDB())
-            nameLeson = dataObj.getArrayDB().nameLeson;
+        // let nameLeson = false;
+        // if ('nameLeson' in dataObj.getArrayDB())
+        //     nameLeson = dataObj.getArrayDB().nameLeson;
+        const db = dataObj.getArrayDB();
+        const nameLeson = db?.nameLeson ?? false;
+        //console.log(db);
 
         // Тест уровня Simple
         // создать рабочее поле с вопроссом и вариантами ответа

@@ -4,7 +4,7 @@ class MenuController
 {
     constructor ()
     {
-        this.levelDataModel = new LevelDataModel();
+        this.levelDataModel = new LevelDataModel(DataOk.level.int);
     }
 
     init() 

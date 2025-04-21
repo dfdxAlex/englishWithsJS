@@ -15,7 +15,7 @@ function calculateBonusMultiplier(propertyForBonus)
 
     // пока просто дублирую - деструктуризирую объект для
     // упрощения кода
-    let {str, levexW, level, log:logView} = propertyForBonus;
+    let {str, level, log:logView} = propertyForBonus;
 
     // объект для логов
     const log = {};
@@ -35,15 +35,12 @@ function calculateBonusMultiplier(propertyForBonus)
     log.errorName = DataOk.levelNameError;
     
     // Узнать число правильных и не правильных ответов
-    let ok = DataOk.ok;
-    log.ok = DataOk.ok;
-
-    let error = DataOk.error;
-    log.error = DataOk.error;
-
+    const {ok, error} = DataOk;
+    log.ok = ok;
+    log.error = error;
 
     // Узнать число существующих тестов
-    const levelDataModel = FactoryRegistr.getObject("LevelDataModel");
+    const levelDataModel = FactoryRegistr.getObject("LevelDataModel", [DataOk.level.int]);
     const numberTest = levelDataModel.getArrayNameButton().length;
     log.numberTest = numberTest;
 
@@ -66,7 +63,6 @@ function calculateBonusMultiplier(propertyForBonus)
     // от сложности. Сложным считается последний тест.
     const bonusTwo = level / numberTest;
     log.bonusTwo = bonusTwo;
-
     // Третий бонус - самые малопройденные тесты дают больше баллов
     // Плюс создать массив с цифрами, сколько есть данных по числу
     // пройденных тестов
@@ -96,7 +92,6 @@ function calculateBonusMultiplier(propertyForBonus)
     log.bonusThree = bonusThree;
 
     log.calculateMedian = calculateMedian(testsOk);
-
     // Бонус пробует определить на сколько равномерно пройдены все тесты
     let diferent;
     // Если число пройденных тестов 0 и медианное среднее 0, 

@@ -46,7 +46,6 @@ function handleOkErr(str, event) {
     localStorage.setItem(levexW,ticResult);
     // Сброс состояния кнопки
     resetBottonError();
-
     // Выбрать html тег, который покажет выбранный неправильный вариант
     // или весь правильный вопрос
     const clickedEl = document.getElementById('clicked_element');
