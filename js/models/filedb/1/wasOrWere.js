@@ -1793,7 +1793,7 @@ const wasOrWere = [
     "Was the city crowded?",
     "The city was crowded.",
     "The city were crowded.",
-    "The city was not crowded.",
+    "The city not crowded.",
     "Crowded was the city?",
     "Город был переполнен.",
     "Місто було переповнене.",
