@@ -27,10 +27,10 @@ BDTranslate.push(
   ``,
   ``]);
 BDTranslate.push(
-  [``, 
-   ``, 
-   ``,
-   ``]);
+  [`be/have/do in present and past tenses`, 
+  `be/have/do in present and past tenses`, 
+  `be/have/do in present and past tenses`, 
+  `be/have/do in present and past tenses`]);
 BDTranslate.push(
   [returnInfoUnit22RU(),
    returnInfoUnit22UA(), 

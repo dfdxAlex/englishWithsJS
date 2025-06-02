@@ -76,6 +76,7 @@ class LevelDataModel
         this.propertyArrayNameButton.push(this.translate.translate('Animals 100 (RU)'));// пункт 2
         this.propertyArrayNameButton.push(this.translate.translate('Is Done Was Done (passive 1)'));// пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('Is Being Done Has Been Done (passive 2)'));// пункт 1
+        this.propertyArrayNameButton.push(this.translate.translate('be/have/do in present and past tenses'));// пункт 1
         this.tic = this.propertyArrayNameButton.length;
     }
 
@@ -88,7 +89,7 @@ class LevelDataModel
                                 1,2,1,1,1,1,1,1,1,2,
                                 1,2,1,4,4,4,4,4,3,3,
                                 1,1,2,1,1,2,1,1,1,1,
-                                2,1,1];
+                                2,1,1,1];
 
         return arrayForButton[test];
     }
@@ -150,6 +151,7 @@ class LevelDataModel
         this.selectLevel('Выбрать правильную пару.','animals100',41);
         this.selectLevel('Выбрать правильную пару.','passiveIsDoneWasDone',42);
         this.selectLevel('Выбрать правильную пару.','prContiniusPerfectPassive',43);
+        this.selectLevel('Выбрать правильную пару.','unit23',44);
         return this.rez;
     }
 
