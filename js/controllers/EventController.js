@@ -8,10 +8,38 @@ class EventController {
 
         // Оригинальные обработчики для первого варианта теста
         if (SettingForProgram.selectTypeTest === "simple") {
-            document.getElementById('option1').onclick = handleOkErr.bind(null,'Ok');
-            document.getElementById('option2').onclick = handleOkErr.bind(null,'Error');
-            document.getElementById('option3').onclick = handleOkErr.bind(null,'Error');
-            document.getElementById('option4').onclick = handleOkErr.bind(null,'Error');
+            let optionsOne = document.getElementById('option1');
+            let optionsTwo = document.getElementById('option2');
+            let optionsThree = document.getElementById('option3');
+            let optionsFour = document.getElementById('option4');
+
+            // Сделать образец правильной строки без пробелов. Нужен для:
+            // иногда в тестах есть два одинаковых варианта ответов, чтобы они оба сработали, на 
+            // них должен быть статус "Ок". Чтобы этот статус повесить на дополнительные варианты
+            // ответов нужно эти варианты ответов сравнить с заведомо правильным. Если он такой-же,
+            // то дать статус Ok, если отличается то Error
+            let optionsOneString = optionsOne.innerText.replaceAll(' ','');
+            let optionsTwoString = optionsTwo.innerText.replaceAll(' ','');
+            let optionsThreeString = optionsThree.innerText.replaceAll(' ','');
+            let optionsFourString = optionsFour.innerText.replaceAll(' ','');
+
+            // Всегда правильный вариант ответа, по определению.
+            optionsOne.onclick = handleOkErr.bind(null,'Ok');
+
+            if (optionsOneString !== optionsTwoString)
+                optionsTwo.onclick = handleOkErr.bind(null,'Error');
+            else 
+                optionsTwo.onclick = handleOkErr.bind(null,'Ok');
+
+            if (optionsOneString !== optionsThreeString)
+                optionsThree.onclick = handleOkErr.bind(null,'Error');
+            else
+                optionsThree.onclick = handleOkErr.bind(null,'Ok');
+
+            if (optionsOneString !== optionsFourString)
+                optionsFour.onclick = handleOkErr.bind(null,'Error');
+            else
+                optionsFour.onclick = handleOkErr.bind(null,'Ok');
         }
 
         // Оригинальные обработчики событий для второго варианта теста
