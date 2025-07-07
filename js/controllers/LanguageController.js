@@ -17,6 +17,10 @@ class LanguageController
        this.langStr = localStorage.getItem('EnglishWithJs_lang') || 'en';
     }
     translate(str) {
+
+        // Если выбран русский язык то нет смысла тратить ресурсы на поиск перевода
+        if (this.langStr === 'ru') return str;
+
         let returnTranslate = '';
 
         // получить данные о выбранном языке
@@ -29,10 +33,11 @@ class LanguageController
             break;
             case 'ua': lang = 1;
             break;
-            case 'ru': lang = 0;
+            // case 'ru': lang = 0;
         }
         // Если не нашли перевод то вернуть исходный текст
         returnTranslate = str;
+        
         BDTranslate.forEach((el)=>{
             // Если нашли совпадение по русскому языку
             // то вернуть соответствующее значение выбранного языка
