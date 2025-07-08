@@ -4199,10 +4199,10 @@ const unit23 = [
 ];
 
     // Если это свойство есть, то оно попадает в заголовок теста
-    presentPerfectIHaveDone.nameLeson = "Be/Have/Do in present and past tenses";
+    unit23.nameLeson = "Be/Have/Do in present and past tenses";
 
     // Свойство показывает сколько индексов содержат правильные предложения
     // Если его нет, то будет считаться, что правильные предложения 
     // только индекс 0 и 1. Если 5 - это индексы 0,1,2,3,4 с правильно
     // созданными предложениями.
-    presentPerfectOrPastSimple.lengthTrue = 5;
+    unit23.lengthTrue = 5;
