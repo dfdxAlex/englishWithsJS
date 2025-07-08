@@ -14,7 +14,7 @@ class LanguageController
 {
     constructor() {
        // получить данные о выбранном языке
-       this.langStr = localStorage.getItem('EnglishWithJs_lang') || 'en';
+       this.langStr = localStorage.getItem('EnglishWithJs_lang') || 'ru';
     }
     translate(str) {
 
@@ -37,7 +37,7 @@ class LanguageController
         }
         // Если не нашли перевод то вернуть исходный текст
         returnTranslate = str;
-        
+
         BDTranslate.forEach((el)=>{
             // Если нашли совпадение по русскому языку
             // то вернуть соответствующее значение выбранного языка
