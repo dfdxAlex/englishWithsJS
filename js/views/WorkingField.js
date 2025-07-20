@@ -23,6 +23,7 @@ class WorkingField {
 
   constructor()
   {
+    
         // Начальный текст для кнопки перевода вопроса
         const translateFromArray = this.transL.translate('Перевести вопрос');
         this.translate = `<div class='row mb-2'><div class='col-12'><button style='width: 100%; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button' id='translate'>${translateFromArray}</button></div></div>`;
@@ -43,7 +44,7 @@ class WorkingField {
           buttonOption[3] = this.strStart+' id="option4"> '+this.option4+this.strFinish;
           const buttonQuestion = `<br><div class='row mb-2'><div class='col-12'><button style='width: 100%; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button' id='question'>${this.question}</button></div></div><br>`;
           buttonOption = shuffleArray(buttonOption);
-
+          
           return this.cardStart +
               legend +
               buttonQuestion +

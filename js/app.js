@@ -23,11 +23,14 @@ window.onload = () => {
     // спрятать все ненужные блоки и показать меню Настроек
     document.querySelector('#setting').onclick = activationMenuSetting;
     
-    // обработчил для клика по одному из вариантов выбора теста
+    // обработчил для клика по одному из вариантов выбора теста 
     // присвоив свойство true принудительно обновляет вопрос
-    document.getElementById('btnGroupDrop1').onclick = () => {
+    document.getElementById('exampleModalburger').onclick = () => {
         FactoryRegistr.getObject('WorkingField').resetQuestion = true;
     }
+    // document.getElementById('btnGroupDrop1burger').onclick = () => {
+    //     FactoryRegistr.getObject('WorkingField').resetQuestion = true;
+    // }
 
     // функция отслеживает инфу по ответам и запускает процесс
     // всплытия кристала, шапки или черепа

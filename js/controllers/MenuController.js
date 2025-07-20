@@ -41,9 +41,12 @@ class MenuController
         const point4 = menu4.getSeedForMenu();
         
         // поместить меню на выбранное место.
+        // point.innerHTML = menu.menuDropdown2();
+        // document.getElementById('container-all').innerHTML = 
         point.innerHTML = menu.menuDropdown2();
-        dellPrimaryItemForUpMenu(); // добавляет клик для самоудаления
-        returnPrimaryItemForUpMenu(); // добавить клик на все пункты, чтобы вернуть главную кнопку
+        // dellPrimaryItemForUpMenu(menu.menuItem()); // добавляет клик для самоудаления
+        // returnPrimaryItemForUpMenu(); // добавить клик на все пункты, чтобы вернуть главную кнопку
+
         point2.innerHTML = menu2.menuDropdown2();
         point3.innerHTML = menu3.menuDropdown2();
         point4.innerHTML = menu4.menuDropdown2();

@@ -24,7 +24,7 @@ class MenuRight
         this.numberMenuLocal=0;
     }
     
-    menuDropdown2()
+    menuDropdown3()
     {
         let rez = `<div 
                     id="container-menu-up"
@@ -37,7 +37,7 @@ class MenuRight
         // Here the main menu buttons are formed, Select test, Edit words...
         rez+=`<button 
                 class="btn btn-light" 
-                id="btnGroupDrop1" 
+                id="btnGroupDrop1${this.seedMenu}" 
                 type="button" 
                 data-bs-toggle="dropdown" 
                 aria-expanded="false"
@@ -46,7 +46,11 @@ class MenuRight
         rez+=this.nameMenu;
         rez+='</button>';
 
-        rez+='<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1" id = "itemSelectTest">';
+        rez+=`<ul 
+                class="dropdown-menu" 
+                aria-labelledby="btnGroupDrop1${this.seedMenu}" 
+                id = "itemSelectTest"
+              >`;
         
 
         // перебрать массив с названиями пунктов для меню
@@ -62,8 +66,88 @@ class MenuRight
 
         rez+='</ul>';
         rez+='</div></div>';
-        // returnPrimaryItemForUpMenu();
         return rez;
+    }
+
+    // Этот метод возвращает список пунктов для меню выбора теста
+    menuItem()
+    {
+        let rez = '<ul id="pullItem">';
+        // перебрать массив с названиями пунктов для меню
+        // перебирается весь список всех пунктов всех категорий
+        rez += this.nameButtons.map((element, index) => {
+            
+            // получить номер-принадлежность конкретного пункта, в какой категории должен быть текущий пункт
+            this.numberMenuLocal = LevelDataModel.mapNameMenu(index);
+            
+            //Если конкретный пункт не подходит к текущему меню то выйти.
+            // this.numberMenu при наследовании этого класса изменяется, таким образом происходит
+            // передача конкретного пункта меню в свою категорию.
+            if (this.numberMenuLocal !== this.numberMenu) {
+                return;
+            }
+
+            // если дошли до этого места то пункт меню подходит для текущей категории и оформляем его
+            return `<li><a class="dropdown-item ${this.addClass()}" id="level${index+1}">${element}</a></li>`;
+        }).join(''); 
+
+        rez+='</ul>';
+        return rez;
+    }
+
+        // Этот метод возвращает список пунктов для меню выбора теста
+    menuItem2()
+    {
+        let rez = '<ul id="pullItem">';
+        // перебрать массив с названиями пунктов для меню
+        // перебирается весь список всех пунктов всех категорий
+        rez += this.nameButtons.map((element, index) => {
+            
+            // получить номер-принадлежность конкретного пункта, в какой категории должен быть текущий пункт
+            this.numberMenuLocal = LevelDataModel.mapNameMenu(index);
+            
+            //Если конкретный пункт не подходит к текущему меню то выйти.
+            // this.numberMenu при наследовании этого класса изменяется, таким образом происходит
+            // передача конкретного пункта меню в свою категорию.
+            if (this.numberMenuLocal !== this.numberMenu) {
+                return;
+            }
+
+            // если дошли до этого места то пункт меню подходит для текущей категории и оформляем его
+            return `<li><a  data-bs-dismiss="modal" class="dropdown-item ${this.addClass()}" id="level${index+1}">${element}</a></li>`;
+        }).join(''); 
+
+        rez+='</ul>';
+        return rez;
+    }
+
+    menuDropdown2()
+    { 
+        
+        return `
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal${this.seedMenu}">
+            ${this.nameMenu}
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal${this.seedMenu}" tabindex="-1" aria-labelledby="exampleModalLabel${this.seedMenu}" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel${this.seedMenu}">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ${this.menuItem2()}
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          `;
     }
 
     // Функция проанализирует какой категории принадлежит элемент меню. Это тесты или Учить слова
@@ -109,21 +193,3 @@ class MenuRight
         return document.getElementById(this.seedMenu);
     }
 }
-
-   // Функция должна спрятать лишнее при открытии меню выбора теста.
-   function dellPrimaryItemForUpMenu()
-    {
-        let generalItem = document.getElementById('btnGroupDrop1');
-        generalItem.addEventListener('click', ()=>{generalItem.style.display = 'none'; });
-    }
-
-   // Накидывает событие возврата категории меню при выборе любого теста. Событие на 
-   // контейнере, который содержит в себе все тесты и срабатывает эффект всплытия.
-   function returnPrimaryItemForUpMenu()
-    {
-        let generalItem = document.getElementById('itemSelectTest');
-        generalItem.addEventListener('click', ()=>{
-            let generalItemP = document.getElementById('btnGroupDrop1');
-            generalItemP.style.display = 'block'; 
-        });
-    }
