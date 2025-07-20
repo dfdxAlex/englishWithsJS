@@ -73,13 +73,7 @@ class MenuController
 }
 
 
-function fixModalFocus() {
-  document.querySelectorAll('[data-bs-dismiss="modal"]').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      document.activeElement.blur();
-    });
-  });
-}
+
 
 
 
