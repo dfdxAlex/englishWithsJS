@@ -65,7 +65,9 @@ class MenuController
             unit[i].onclick = handleLevelX.bind(null, new LevelDataModel(i));
             // unit[i].addEventListener('onclick', handleLevelX.bind(null, new LevelDataModel(i)));
         }
-
+        
+        // Функция находит все элементы с атрибутом data-bs-dismiss="modal" во всех модальных окнах
+        // и навешивает на них обработчик, который убирает фокус с активного элемента после закрытия модалки
         fixModalFocus();
     }
 

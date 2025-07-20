@@ -169,8 +169,13 @@ class WorkingField {
             // Если есть объект с дополнительными данными и свойство
             // property.constIndexArray не блокирует создание нового
             // тестового вопроса. Либо была смена теста-в меню выбора теста
-            if (property && !property.constIndexArray || this.resetQuestion) {
-              this.resetQuestion = false;
+            
+            
+            // if (property && !property.constIndexArray || this.resetQuestion) {
+            //   this.resetQuestion = false;
+
+             if (property && !property.constIndexArray) {
+               this.resetQuestion = false;
               
               // если выбрана сложность light, то работаем только с индексом 0
               let randomNumber = 1;
