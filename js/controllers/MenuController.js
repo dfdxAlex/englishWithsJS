@@ -65,12 +65,21 @@ class MenuController
             unit[i].onclick = handleLevelX.bind(null, new LevelDataModel(i));
             // unit[i].addEventListener('onclick', handleLevelX.bind(null, new LevelDataModel(i)));
         }
+
+        fixModalFocus();
     }
 
 
 }
 
 
+function fixModalFocus() {
+  document.querySelectorAll('[data-bs-dismiss="modal"]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.activeElement.blur();
+    });
+  });
+}
 
 
 
