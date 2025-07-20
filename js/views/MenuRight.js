@@ -27,7 +27,6 @@ class MenuRight
     menuDropdown3()
     {
         let rez = `<div 
-                    id="container-menu-up"
                     class="btn-group" 
                     role="group" 
                     aria-label="Button group with nested dropdown"
@@ -46,25 +45,28 @@ class MenuRight
         rez+=this.nameMenu;
         rez+='</button>';
 
+        // 
+
         rez+=`<ul 
                 class="dropdown-menu" 
                 aria-labelledby="btnGroupDrop1${this.seedMenu}" 
-                id = "itemSelectTest"
               >`;
         
+        rez+=menuItem();
+        // // перебрать массив с названиями пунктов для меню
+        // rez += this.nameButtons.map((element, index) => {
+        //     // The method returns the location of a specific item. LevelDataModel.mapNameMenu()
+        //     this.numberMenuLocal = LevelDataModel.mapNameMenu(index);
+        //     if (this.numberMenuLocal !== this.numberMenu) {
+        //         return;
+        //     }
 
-        // перебрать массив с названиями пунктов для меню
-        rez += this.nameButtons.map((element, index) => {
-            // The method returns the location of a specific item. LevelDataModel.mapNameMenu()
-            this.numberMenuLocal = LevelDataModel.mapNameMenu(index);
-            if (this.numberMenuLocal !== this.numberMenu) {
-                return;
-            }
+        //     return `<li><a class="dropdown-item ${this.addClass()}" id="level${index+1}">${element}</a></li>`;
+        // }).join(''); 
 
-            return `<li><a class="dropdown-item ${this.addClass()}" id="level${index+1}">${element}</a></li>`;
-        }).join(''); 
+        // rez+='</ul>';
 
-        rez+='</ul>';
+
         rez+='</div></div>';
         return rez;
     }
@@ -72,7 +74,7 @@ class MenuRight
     // Этот метод возвращает список пунктов для меню выбора теста
     menuItem()
     {
-        let rez = '<ul id="pullItem">';
+        let rez = '';
         // перебрать массив с названиями пунктов для меню
         // перебирается весь список всех пунктов всех категорий
         rez += this.nameButtons.map((element, index) => {
@@ -95,10 +97,10 @@ class MenuRight
         return rez;
     }
 
-        // Этот метод возвращает список пунктов для меню выбора теста
+    // Этот метод возвращает список пунктов для меню выбора теста
     menuItem2()
     {
-        let rez = '<ul id="pullItem">';
+        let rez = '<ul id="pullItem" class="ul-for-menu">';
         // перебрать массив с названиями пунктов для меню
         // перебирается весь список всех пунктов всех категорий
         rez += this.nameButtons.map((element, index) => {
@@ -114,7 +116,7 @@ class MenuRight
             }
 
             // если дошли до этого места то пункт меню подходит для текущей категории и оформляем его
-            return `<li><a  data-bs-dismiss="modal" class="dropdown-item ${this.addClass()}" id="level${index+1}">${element}</a></li>`;
+            return `<li><a  data-bs-dismiss="modal" class="btn ${this.addClass()}" id="level${index+1}">${element}</a></li>`;
         }).join(''); 
 
         rez+='</ul>';

@@ -27,8 +27,11 @@ window.onload = () => {
     // присвоив свойство true принудительно обновляет вопрос
     document.getElementById('exampleModalburger').onclick = () => {
         FactoryRegistr.getObject('WorkingField').resetQuestion = true;
-        // console.log('Заказали обновление задания');
     }
+    // принудительное изменение тестового вопосса при первом пуске или обновлении
+    // срабатывает один раз.
+    FactoryRegistr.getObject('WorkingField').resetQuestion = true;
+    
     // document.getElementById('btnGroupDrop1burger').onclick = () => {
     //     FactoryRegistr.getObject('WorkingField').resetQuestion = true;
     // }
