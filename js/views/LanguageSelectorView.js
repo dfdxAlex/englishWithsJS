@@ -12,8 +12,8 @@ class LanguageSelectorView
         let ret =   `<select id="languageSelect">`;
         ret+=         `<option ${en} id="selectEn"  value="en">EN</option>`;
         ret+=         `<option ${pl} id="selectPl"  value="pl">PL</option>`;
-        ret+=         `<option ${ua} id="selectUa"  value="ua">УК</option>`;
-        ret+=         `<option ${ru} id="selectRu"  value="ru">РУ</option>`;
+        ret+=         `<option ${ua} id="selectUa"  value="ua">UA</option>`;
+        ret+=         `<option ${ru} id="selectRu"  value="ru">RU</option>`;
         ret+=       `</select>`;
         return ret;
     }
