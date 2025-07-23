@@ -1,0 +1,18 @@
+# 📦 node.js
+node_modules/
+
+# 📂 Vite output
+dist/
+
+# 💡 Vite cache
+.vite/
+
+# 🧪 log файлы
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 📂 системное
+.DS_Store
+Thumbs.db
