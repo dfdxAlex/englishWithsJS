@@ -1,4 +1,4 @@
-// vite.config.js
-export default {
-  base: '/englishWithsJS/',
-}
+export default defineConfig({
+  base: '/englishWithsJS/', // путь к репозиторию
+  // ... другие настройки
+})
