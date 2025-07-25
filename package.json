@@ -26,6 +26,7 @@
   "homepage": "https://github.com/dfdxAlex/englishWithsJS#readme",
   "devDependencies": {
     "gh-pages": "^6.3.0",
+    "sass": "^1.89.2",
     "vite": "^7.0.5"
   }
 }
