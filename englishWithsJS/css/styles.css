@@ -1,0 +1,297 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/learningBackground.jpg'); /* Нормальный фон */
+    background-size: cover;
+    background-position: center;
+}
+.nav-transparent, .html-old-questions-transparent {
+    position: relative;
+    margin: 20px auto;
+    max-width: 800px;
+    /*padding: 20px;*/
+    background: rgba(255, 255, 255, 0.7); /* Прозрачный белый фон для текста */
+    border-radius: 10px; /* Скруглённые углы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Лёгкая тень */
+}
+.html-old-questions-transparent {
+    max-width: 100%;
+}
+
+
+select{
+    all: unset;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.fieldSetWorkField {
+    margin: 5px;
+    font-size: 25px;
+    line-height: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.fieldSetWorkField legend{
+    border: 1px solid black;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+/* Адаптивный текст */
+.text-wrap {
+    font-size: 4vw; /* Базовый размер текста для адаптивности */
+}
+
+@media (max-width: 480px) {
+    .text-wrap {
+        font-size: 5vw; /* Увеличение текста для мобильных устройств */
+    }
+}
+
+@media (min-width: 768px) {
+    .text-wrap {
+        font-size: 24px; /* Фиксированный размер текста для более крупных экранов */
+    }
+}
+
+@media (orientation: portrait) {
+    .text-wrap {
+        font-size: 5vw; /* Увеличение текста в вертикальной ориентации */
+    }
+}
+
+@media (orientation: landscape) {
+    .text-wrap {
+        font-size: 3vw; /* Уменьшение текста в горизонтальной ориентации */
+    }
+}
+
+/* Стили для элементов с классами */
+.clicked_element,
+.question_old, 
+.search_error, .history {
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.search_error, .history {
+    background-color: chocolate;
+}
+
+.search_error:hover, .history {
+    background-color: rgb(142, 17, 8);
+}
+
+.search_error:active, .history {
+    background-color: gray;
+}
+
+.search_error:focus, .history {
+    background-color: yellow;
+}
+
+/* Стили для fieldset */
+.class_fieldset {
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.fieldset-legend {
+    color: black;
+}
+
+.log-accordion-header-error {
+    color:red;
+    font-weight: bold;
+}
+.log-accordion-header-ok {
+    color:green;
+    font-weight: bold;
+}
+.button_return_log {
+    font-size: 18px;
+}
+.modal-body {
+    text-align: left;
+}
+
+/*кнопки light, normal, hard*/
+.btn-custom-yellow, .btn-custom-yellow-active,
+.btn-custom-blue, .btn-custom-blue-active,
+.btn-custom-white, .btn-custom-white-active,
+.btn-custom-help, .btn-custom-help-big {
+    margin-top: 15px;
+}
+
+.btn-custom-yellow {
+    background-color: #FFFFFF;
+    color: #e3db4e;
+    border: 2px solid #e3db4e;
+}
+.btn-custom-yellow-active {
+    background-color: #d0a935;
+    color: #121101;
+    border: 2px solid #070704;
+}
+.btn-custom-blue {
+    background-color: #FFFFFF;
+    color: #1E90FF;
+    border: 2px solid #1E90FF;
+}
+.btn-custom-blue-active {
+    background-color: #3d20cb;
+    color: #dcdedf;
+    border: 2px solid #aab1b8;
+}
+.btn-custom-white {
+    background-color: #FFFFFF;
+    color: #c00e1a;;
+    border: 2px solid #0e0b0b;
+}
+.btn-custom-white-active {
+    background-color: #8d0808;
+    color: #f0eeee;;
+    border: 2px solid #0c080a;
+}
+
+.btn-custom-help {
+    background-color: #9ce97b;
+    color: #1a1718;;
+    border: 2px solid #1dae80;
+}
+.btn-custom-help-big {
+    width: 70%;
+    background-color: #9ce97b;
+    color: #1a1718;;
+    border: 2px solid #1dae80;
+}
+
+/*пузырь*/
+.diamond {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 34px;
+    animation: flyUp 4.5s ease-out forwards;
+  }
+  
+  .score {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 34px;
+    font-weight: bold;
+    color: #0d8e7b;
+    text-shadow: 0 0 8px #00ffff, 0 0 12px #00ffff;
+    opacity: 1;
+    animation: floatUp 4.5s ease-out forwards, glow 1s infinite alternate;
+  }
+  
+  @keyframes flyUp {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100px); opacity: 0; }
+  }
+  
+  @keyframes floatUp {
+    0% { transform: translateX(-50%) translateY(0); opacity: 1; }
+    100% { transform: translateX(-50%) translateY(-40px); opacity: 0; }
+  }
+  
+  @keyframes glow {
+    0% { text-shadow: 0 0 8px #00ffff, 0 0 12px #00ffff; }
+    100% { text-shadow: 0 0 12px #00ffcc, 0 0 16px #00ffcc; }
+  }
+
+/* Клад*/
+.scarb {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 34px;
+    animation: flyUp2 8s ease-out forwards;
+  }
+  
+  @keyframes flyUp2 {
+    0% { transform: translateY(0); opacity: 1; }
+    90% { opacity: 1; } /* Дольше остаётся видимым */
+    100% { transform: translateY(-100px); opacity: 0; }
+  }
+   
+  @keyframes glow {
+    0% { text-shadow: 0 0 8px #00ffff, 0 0 12px #00ffff; }
+    100% { text-shadow: 0 0 12px #00ffcc, 0 0 16px #00ffcc; }
+  }
+  
+  .bonus-for-scarb {
+    position: absolute;
+  }
+
+.text-about-scarb {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0f1899; /* Красивый оранжевый */
+    animation: fadeGrow 2s ease-out forwards;
+}
+
+@keyframes fadeGrow {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(3); /* Увеличение в 2 раза */
+        opacity: 0; /* Полностью исчезает */
+    }
+}
+
+.button-help {
+    font-size: 0.5em;
+    border: 1 solid green;
+    float: right;
+    border-radius: 50px;
+}
+
+/* стиль для прокручивания модального окна в объекте Help */
+.help-for-green-pole-one {
+    max-height: 80vh; /* Максимальная высота 80% от высоты экрана */
+    margin: 0 auto;
+    overflow-y: auto;
+}
+
+/*general style for menu tests*/
+.ul-for-menu {
+    list-style: none; 
+}
+.style-for-item-start {
+    
+    background-color: #ffffff;
+    /* border-radius: 16px; */
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    /* margin: 40px auto; */
+    font-family: sans-serif;
+}
+.style-for-item-one {
+    background-color:#c3eeb1;
+    border-radius: 10px 100px / 120px;;
+}
+
+.style-for-item-two {
+    background-color:#d3e2cd;
+    border-radius: 50% 20% / 10% 40%;
+}
+
+/* .dell-general-item {
+
+} */
