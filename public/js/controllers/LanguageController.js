@@ -52,7 +52,10 @@ class LanguageController
     {
         // Поставить кнопки выбора языка
         // --создать объект меню выбора языка
-        const langSelector = new LanguageSelectorView();
+        // const langSelector = new LanguageSelectorView(); // тут
+        // window.languageSelectorView формируется в специальном классе - мосте 
+        // между старым и новым кодом
+        const langSelector = window.languageSelectorView;
         // --выбрать место на странице, куда поместить меню
         const rez = document.getElementById("button_lang_selected");
 

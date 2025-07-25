@@ -1,6 +1,8 @@
 // Класс ставит кнопки выбора языка
 
-class LanguageSelectorView
+import './LanguageSelectorView.scss';
+
+export class LanguageSelectorView
 {
     init(lang)
     {
