@@ -13,7 +13,7 @@ class LanguageSelectorView
         ret+=         `<option ${en} id="selectEn"  value="en">EN</option>`;
         ret+=         `<option ${pl} id="selectPl"  value="pl">PL</option>`;
         ret+=         `<option ${ua} id="selectUa"  value="ua">UA</option>`;
-        ret+=         `<option ${ru} id="selectRu"  value="ru">RU</option>`;
+        ret+=         `<option ${ru} id="selectRu"  value="ru">RURU</option>`;
         ret+=       `</select>`;
         return ret;
     }
