@@ -1,6 +1,6 @@
 // This code is written inefficiently.
 
-const BDTranslate = [];
+export const BDTranslate = [];
 BDTranslate.push(
     [``, 
      ``, 
