@@ -1,4 +1,7 @@
-function diament()
+import { diamentView } from './../view/diamentView.js';
+import { diamentReturnStr } from './../models/diamentReturnStr.js';
+
+export function diament()
 {
     let emodzi = '';
     let smile = '';

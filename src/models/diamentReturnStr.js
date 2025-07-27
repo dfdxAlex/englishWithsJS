@@ -1,4 +1,6 @@
-function diamentReturnStr()
+import './styles/diamentReturnStr.scss';
+
+export function diamentReturnStr()
 {
     let sumOk = 0;
     let sumError = 0;
@@ -25,12 +27,12 @@ function diamentReturnStr()
 
     let emodziDiament = '💎';
     if (diament<0) emodziDiament = '💀';
-    let smile = '<span style="margin: 0 4px; font-size: 1.5rem;">😊</span>';
+    let smile = '<span>😊</span>';
     if (sumError/sumOk <= 0.5 && sumError/sumOk > 0) {
-        smile = '<span style="margin: 0 4px; font-size: 1.5rem;">😔</span>';
+        smile = '<span>😔</span>';
     }
     if (sumError/sumOk <= 0.8 && sumError/sumOk > 0.5) {
-        smile = '<span style="margin: 0 4px; font-size: 1.5rem;">😭</span>';
+        smile = '<span">😭</span>';
     }
     return [emodziDiament, smile, diament];
 }
