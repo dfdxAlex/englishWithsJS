@@ -33,12 +33,10 @@ class LanguageController
             break;
             case 'ua': lang = 1;
             break;
-            // case 'ru': lang = 0;
         }
         // Если не нашли перевод то вернуть исходный текст
         returnTranslate = str;
 
-        // const BDTranslate = window.BDTranslate;
         window.BDTranslate.forEach((el)=>{
             // Если нашли совпадение по русскому языку
             // то вернуть соответствующее значение выбранного языка
@@ -53,7 +51,6 @@ class LanguageController
     {
         // Поставить кнопки выбора языка
         // --создать объект меню выбора языка
-        // const langSelector = new LanguageSelectorView(); // тут
         // window.languageSelectorView формируется в специальном классе - мосте 
         // между старым и новым кодом
         const langSelector = window.languageSelectorView;

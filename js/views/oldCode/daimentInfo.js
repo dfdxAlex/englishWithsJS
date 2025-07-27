@@ -6,6 +6,11 @@
 
 // функция переделана на самозапускающуюся, она ждёт пока не появятся 
 // все нужные элементы и помещает Бутстрап компонент
+
+// import { FactoryRegistr } from '../models/FactoryRegistr.js';
+// import { LanguageController } from './LanguageController.js';
+
+
 (function daimentInfo()
 {
     let result;

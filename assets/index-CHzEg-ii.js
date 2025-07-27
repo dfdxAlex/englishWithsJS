@@ -1,4 +1,4 @@
-(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))r(t);new MutationObserver(t=>{for(const o of t)if(o.type==="childList")for(const s of o.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&r(s)}).observe(document,{childList:!0,subtree:!0});function i(t){const o={};return t.integrity&&(o.integrity=t.integrity),t.referrerPolicy&&(o.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?o.credentials="include":t.crossOrigin==="anonymous"?o.credentials="omit":o.credentials="same-origin",o}function r(t){if(t.ep)return;t.ep=!0;const o=i(t);fetch(t.href,o)}})();class n{init(a){const i=a=="en"?"selected":"",r=a=="pl"?"selected":"",t=a=="ua"?"selected":"",o=a=="ru"?"selected":"";let s='<select id="languageSelect">';return s+=`<option ${i} id="selectEn"  value="en">EN</option>`,s+=`<option ${r} id="selectPl"  value="pl">PL</option>`,s+=`<option ${t} id="selectUa"  value="ua">UA</option>`,s+=`<option ${o} id="selectRu"  value="ru">RU</option>`,s+="</select>",s}}function l(){return`
+(function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))r(t);new MutationObserver(t=>{for(const s of t)if(s.type==="childList")for(const i of s.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&r(i)}).observe(document,{childList:!0,subtree:!0});function a(t){const s={};return t.integrity&&(s.integrity=t.integrity),t.referrerPolicy&&(s.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?s.credentials="include":t.crossOrigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function r(t){if(t.ep)return;t.ep=!0;const s=a(t);fetch(t.href,s)}})();function returnInfoUnit22EN(){return`
       <div class="modal-body" style="color: #333; font-family: sans-serif; padding: 24px;">
         <h4 style="margin-bottom: 16px;">Passive Voice: <code>is being done</code> and <code>has been done</code></h4>
 
@@ -47,7 +47,7 @@
           </tr>
         </table>
       </div>
-    `}function d(){return`
+    `}function returnInfoUnit22RU(){return`
       <div class="modal-body" style="color: #333; font-family: sans-serif; padding: 24px;">
         <h4 style="margin-bottom: 16px;">Пассивный залог: <code>is being done</code> и <code>has been done</code></h4>
 
@@ -96,7 +96,7 @@
           </tr>
         </table>
       </div>
-    `}function c(){return`
+    `}function returnInfoUnit22PL(){return`
       <div class="modal-body" style="color: #333; font-family: sans-serif; padding: 24px;">
         <h4 style="margin-bottom: 16px;">Пассивный залог: <code>is being done</code> и <code>has been done</code></h4>
 
@@ -145,7 +145,7 @@
           </tr>
         </table>
       </div>
-    `}function p(){return`
+    `}function returnInfoUnit22UA(){return`
       <div class="modal-body" style="color: #333; font-family: sans-serif; padding: 24px;">
         <h4 style="margin-bottom: 16px;">Strona bierna: <code>is being done</code> i <code>has been done</code></h4>
 
@@ -194,7 +194,7 @@
           </tr>
         </table>
       </div>
-    `}function g(){return`<div class="modal fade" id="diamondsModal" tabindex="-1" aria-labelledby="diamondsModalLabel" aria-hidden="true">
+    `}function returnInfoForDiamant$1(){return`<div class="modal fade" id="diamondsModal" tabindex="-1" aria-labelledby="diamondsModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content" style="border: 2px solid #28a745; border-radius: 10px;">
       <div class="modal-header" style="background-color: #e6f7e6;">
@@ -214,7 +214,7 @@
     </div>
   </div>
 </div>
-`}function h(){return`<div class="modal fade" id="diamondsModal" tabindex="-1" aria-labelledby="diamondsModalLabel" aria-hidden="true">
+`}function returnInfoForDiamantEN(){return`<div class="modal fade" id="diamondsModal" tabindex="-1" aria-labelledby="diamondsModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content" style="border: 2px solid #28a745; border-radius: 10px;">
       <div class="modal-header" style="background-color: #e6f7e6;">
@@ -234,7 +234,7 @@
     </div>
   </div>
 </div>
-`}function y(){return`<div class="modal fade" id="diamondsModal" tabindex="-1" aria-labelledby="diamondsModalLabel" aria-hidden="true">
+`}function returnInfoForDiamantPL(){return`<div class="modal fade" id="diamondsModal" tabindex="-1" aria-labelledby="diamondsModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content" style="border: 2px solid #28a745; border-radius: 10px;">
       <div class="modal-header" style="background-color: #e6f7e6;">
@@ -254,7 +254,7 @@
     </div>
   </div>
 </div>
-`}function b(){return`<div class="modal fade" id="diamondsModal" tabindex="-1" aria-labelledby="diamondsModalLabel" aria-hidden="true">
+`}function returnInfoForDiamantUA(){return`<div class="modal fade" id="diamondsModal" tabindex="-1" aria-labelledby="diamondsModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content" style="border: 2px solid #28a745; border-radius: 10px;">
       <div class="modal-header" style="background-color: #e6f7e6;">
@@ -274,7 +274,7 @@
     </div>
   </div>
 </div>
-`}function u(){return`<div style="font-family: Arial, sans-serif; background-color: #f0f0f0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 20px;">
+`}function returnLevel13(){return`<div style="font-family: Arial, sans-serif; background-color: #f0f0f0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 20px;">
     <h2 style="color: #333;">Образование утверждений</h2>
     <p style="line-height: 1.6; color: #555;">
         Настоящее продолженное время (Present Continuous) используется для описания действий, которые происходят в данный момент времени или временно происходят в настоящем. 
@@ -324,7 +324,7 @@
         They are not sleeping. — Они не спят.
     </p>
 </div>
-`}function m(){return`<div style="font-family: Arial, sans-serif; background-color: #f0f0f0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 20px;">
+`}function returnLevel13EN(){return`<div style="font-family: Arial, sans-serif; background-color: #f0f0f0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 20px;">
     <h2 style="color: #333;">Formation of Statements</h2>
     <p style="line-height: 1.6; color: #555;">
         Present Continuous tense is used to describe actions happening at the moment or temporarily in the present. 
@@ -374,7 +374,7 @@
         They are not sleeping.
     </p>
 </div>
-`}function v(){return`<div style="font-family: Arial, sans-serif; background-color: #f0f0f0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 20px;">
+`}function returnLevel13PL(){return`<div style="font-family: Arial, sans-serif; background-color: #f0f0f0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 20px;">
     <h2 style="color: #333;">Tworzenie stwierdzeń</h2>
     <p style="line-height: 1.6; color: #555;">
         Czas teraźniejszy ciągły (Present Continuous) jest używany do opisywania działań, które mają miejsce w danym momencie lub tymczasowo zachodzą w teraźniejszości. 
@@ -424,7 +424,7 @@
         They are not sleeping. — Oni nie śpią.
     </p>
 </div>
-`}function w(){return`<div style="font-family: Arial, sans-serif; background-color: #f0f0f0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 20px;">
+`}function returnLevel13UA(){return`<div style="font-family: Arial, sans-serif; background-color: #f0f0f0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 20px;">
     <h2 style="color: #333;">Утворення стверджень</h2>
     <p style="line-height: 1.6; color: #555;">
         Теперішній тривалий час (Present Continuous) використовується для опису дій, які відбуваються в даний момент часу або тимчасово відбуваються в теперішньому. 
@@ -456,7 +456,7 @@
     <p style="line-height: 1.6; color: #555;">
         Are you working? — Ти працюєш? <br>
         Is she reading a book? — Вона ч
-`}function f(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 20px;">
+`}function returnLevel11(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 20px;">
     <h2 style="color: #333;">Вопросы с глаголом "to be" (Present/Past Simple)</h2>
     <p style="line-height: 1.6; color: #555;">
         Для образования вопросительных предложений с глаголом to be в настоящем (Present Simple) или прошедшем времени (Past Simple), глагол выносится на первое место перед подлежащим.
@@ -480,7 +480,7 @@
         Это правило не применяется в предложениях с другими глаголами (не to be), там используются вспомогательные глаголы (do, does, did).
     </p>
 </div>
-`}function x(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 20px;">
+`}function returnLevel11EN(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 20px;">
     <h2 style="color: #333;">Questions with the verb "to be" (Present/Past Simple)</h2>
     <p style="line-height: 1.6; color: #555;">
         To form interrogative sentences with the verb to be in the present (Present Simple) or past tense (Past Simple), the verb is placed first before the subject.
@@ -504,7 +504,7 @@
         This rule does not apply to sentences with other verbs (not to be), where auxiliary verbs (do, does, did) are used.
     </p>
 </div>
-`}function z(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 20px;">
+`}function returnLevel11PL(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 20px;">
     <h2 style="color: #333;">Pytania z czasownikiem "to be" (Present/Past Simple)</h2>
     <p style="line-height: 1.6; color: #555;">
         Aby utworzyć zdania pytające z czasownikiem to be w czasie teraźniejszym (Present Simple) lub przeszłym (Past Simple), czasownik należy postawić na pierwszym miejscu przed podmiotem.
@@ -528,7 +528,7 @@
         Ta zasada nie ma zastosowania w zdaniach z innymi czasownikami (nie to be), tam używane są czasowniki pomocnicze (do, does, did).
     </p>
 </div>
-`}function k(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 20px;">
+`}function returnLevel11UA(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 20px;">
     <h2 style="color: #333;">Запитання з дієсловом "to be" (Present/Past Simple)</h2>
     <p style="line-height: 1.6; color: #555;">
         Для утворення запитальних речень з дієсловом to be у теперішньому (Present Simple) або минулому часі (Past Simple), дієслово виноситься на перше місце перед підлягаючим.
@@ -552,7 +552,7 @@
         Це правило не застосовується в реченнях з іншими дієсловами (не to be), там використовуються допоміжні дієслова (do, does, did).
     </p>
 </div>
-`}function P(){return`<div class="accordion" id="presentPerfectAccordion">
+`}function returnLevel38(){return`<div class="accordion" id="presentPerfectAccordion">
   <!-- Определение Present Perfect -->
   <div class="accordion-item">
     <h2 class="accordion-header">
@@ -629,7 +629,7 @@
     </div>
   </div>
 </div>
-`}function S(){return`<div class="accordion" id="presentPerfectAccordion">
+`}function returnLevel38EN(){return`<div class="accordion" id="presentPerfectAccordion">
   <!-- Definition of Present Perfect -->
   <div class="accordion-item">
     <h2 class="accordion-header">
@@ -706,7 +706,7 @@
     </div>
   </div>
 </div>
-`}function j(){return`<div class="accordion" id="presentPerfectAccordion">
+`}function returnLevel38PL(){return`<div class="accordion" id="presentPerfectAccordion">
   <!-- Definicja Present Perfect -->
   <div class="accordion-item">
     <h2 class="accordion-header">
@@ -783,7 +783,7 @@
     </div>
   </div>
 </div>
-`}function T(){return`<div class="accordion" id="presentPerfectAccordion">
+`}function returnLevel38UA(){return`<div class="accordion" id="presentPerfectAccordion">
   <!-- Визначення Present Perfect -->
   <div class="accordion-item">
     <h2 class="accordion-header">
@@ -860,7 +860,7 @@
     </div>
   </div>
 </div>
-`}function I(){return`<div class="container mt-5">
+`}function returnLevel20(){return`<div class="container mt-5">
   <div class="row">
     <div class="col-12 col-md-8 offset-md-2">
       <div class="card">
@@ -915,7 +915,7 @@
       </div>
     </div>
   </div>
-</div>`}function A(){return`<div class="container mt-5">
+</div>`}function returnLevel20EN(){return`<div class="container mt-5">
   <div class="row">
     <div class="col-12 col-md-8 offset-md-2">
       <div class="card">
@@ -970,7 +970,7 @@
       </div>
     </div>
   </div>
-</div>`}function F(){return`<div class="container mt-5">
+</div>`}function returnLevel20PL(){return`<div class="container mt-5">
   <div class="row">
     <div class="col-12 col-md-8 offset-md-2">
       <div class="card">
@@ -1025,7 +1025,7 @@
       </div>
     </div>
   </div>
-</div>`}function C(){return`<div class="container mt-5">
+</div>`}function returnLevel20UA(){return`<div class="container mt-5">
   <div class="row">
     <div class="col-12 col-md-8 offset-md-2">
       <div class="card">
@@ -1080,7 +1080,7 @@
       </div>
     </div>
   </div>
-</div>`}function W(){return`<div class="container mt-5">
+</div>`}function returnLevel42(){return`<div class="container mt-5">
             <h1>Правило: Present Simple Passive и Past Simple Passive</h1>
 
             <p><strong>Что такое Present Simple Passive и Past Simple Passive?</strong></p>
@@ -1153,7 +1153,7 @@
               <li>The work was done by the team yesterday. (Работа была выполнена командой вчера.)</li>
               <li>The reports were checked last week. (Отчеты были проверены на прошлой неделе.)</li>
             </ul>
-         </div>`}function E(){return`
+         </div>`}function returnLevel42EN(){return`
   <div class="container mt-5">
   <h1>Rule: Present Simple Passive and Past Simple Passive</h1>
 
@@ -1228,7 +1228,7 @@
     <li>The reports were checked last week. (The reports were checked last week.)</li>
   </ul>
 
-</div>`}function H(){return`
+</div>`}function returnLevel42PL(){return`
           <div class="container mt-5">
           <h1>Zasada: Present Simple Passive i Past Simple Passive</h1>
 
@@ -1303,7 +1303,7 @@
             <li>The reports were checked last week. (Raporty zostały sprawdzone w zeszłym tygodniu.)</li>
           </ul>
 
-        </div>`}function D(){return`
+        </div>`}function returnLevel42UA(){return`
         <div class="container mt-5">
           <h1>Правило: Present Simple Passive та Past Simple Passive</h1>
 
@@ -1378,7 +1378,7 @@
             <li>The reports were checked last week. (Звіти були перевірені на минулому тижні.)</li>
           </ul>
 
-        </div>`}function N(){return`<div class="container mt-5">
+        </div>`}function returnLevel39(){return`<div class="container mt-5">
     <h2>Present Perfect: Rules for Using <code>For</code>, <code>Since</code>, and <code>Ago</code></h2>
     <div class="accordion" id="accordionExample">
         <!-- For -->
@@ -1463,7 +1463,7 @@
         </div>
 
     </div>
-</div>`}function L(){return`<div class="container mt-5">
+</div>`}function returnLevel39EN(){return`<div class="container mt-5">
     <h2>Present Perfect: Rules for <code>For</code>, <code>Since</code>, and <code>Ago</code></h2>
     <div class="accordion" id="accordionExample">
         <div class="accordion-item">
@@ -1544,7 +1544,7 @@
             </div>
         </div>
     </div>
-</div>`}function O(){return`<div class="container mt-5">
+</div>`}function returnLevel39PL(){return`<div class="container mt-5">
     <h2>Present Perfect: Zasady użycia <code>For</code>, <code>Since</code> i <code>Ago</code></h2>
     <div class="accordion" id="accordionExample">
         <div class="accordion-item">
@@ -1625,7 +1625,7 @@
             </div>
         </div>
     </div>
-</div>`}function R(){return`<div class="container mt-5">
+</div>`}function returnLevel39UA(){return`<div class="container mt-5">
     <h2>Present Perfect: Правила використання <code>For</code>, <code>Since</code> та <code>Ago</code></h2>
     <div class="accordion" id="accordionExample">
         <div class="accordion-item">
@@ -1707,7 +1707,7 @@
         </div>
     </div>
 </div>
-`}function U(){return`<div class="accordion" id="presentPerfectAccordion">
+`}function returnLevel37(){return`<div class="accordion" id="presentPerfectAccordion">
     <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -1804,7 +1804,7 @@
             </div>
         </div>
     </div>
-</div>`}function B(){return`<div class="accordion" id="presentPerfectAccordion">
+</div>`}function returnLevel37EN(){return`<div class="accordion" id="presentPerfectAccordion">
     <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -1902,7 +1902,7 @@
         </div>
     </div>
 </div>
-`}function Z(){return`<div class="accordion" id="presentPerfectAccordion">
+`}function returnLevel37PL(){return`<div class="accordion" id="presentPerfectAccordion">
     <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -2000,7 +2000,7 @@
         </div>
     </div>
 </div>
-`}function M(){return`<div class="accordion" id="presentPerfectAccordion">
+`}function returnLevel37UA(){return`<div class="accordion" id="presentPerfectAccordion">
     <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -2098,7 +2098,7 @@
         </div>
     </div>
 </div>
-`}function V(){return`<div class="container mt-5">
+`}function returnLevel36(){return`<div class="container mt-5">
   <div class="row">
     <div class="col-12 col-md-8 offset-md-2">
       <div class="card">
@@ -2158,7 +2158,7 @@
       </div>
     </div>
   </div>
-</div>`}function q(){return`<div class="container mt-5">
+</div>`}function returnLevel36EN(){return`<div class="container mt-5">
   <div class="row">
     <div class="col-12 col-md-8 offset-md-2">
       <div class="card">
@@ -2218,7 +2218,7 @@
       </div>
     </div>
   </div>
-</div>`}function Q(){return`<div class="container mt-5">
+</div>`}function returnLevel36PL(){return`<div class="container mt-5">
   <div class="row">
     <div class="col-12 col-md-8 offset-md-2">
       <div class="card">
@@ -2278,7 +2278,7 @@
       </div>
     </div>
   </div>
-</div>`}function Y(){return`<div class="container mt-5">
+</div>`}function returnLevel36UA(){return`<div class="container mt-5">
   <div class="row">
     <div class="col-12 col-md-8 offset-md-2">
       <div class="card">
@@ -2338,7 +2338,7 @@
       </div>
     </div>
   </div>
-</div>`}function K(){return`<div class="card border-success">
+</div>`}function returnLevel35(){return`<div class="card border-success">
   <div class="card-header bg-success text-white">
     <h5 class="mb-0">
       <button class="btn btn-light text-success" type="button" data-bs-toggle="collapse" data-bs-target="#pastRule" aria-expanded="true" aria-controls="pastRule">
@@ -2418,7 +2418,7 @@
     </div>
   </div>
 </div>
-`}function G(){return`<div class="card mt-3">
+`}function returnLevel35EN(){return`<div class="card mt-3">
   <div class="card-header bg-success text-white">
     <h5 class="mb-0">Comparison of Past Continuous and Past Simple</h5>
   </div>
@@ -2448,7 +2448,7 @@
     </div>
   </div>
 </div>
-`}function J(){return`<div class="card mt-3">
+`}function returnLevel35PL(){return`<div class="card mt-3">
   <div class="card-header bg-success text-white">
     <h5 class="mb-0">Porównanie Past Continuous i Past Simple</h5>
   </div>
@@ -2478,7 +2478,7 @@
     </div>
   </div>
 </div>
-`}function $(){return`<div class="card border-success">
+`}function returnLevel35UA(){return`<div class="card border-success">
   <div class="card-header bg-success text-white">
     <h5 class="mb-0">
       <button class="btn btn-light text-success" type="button" data-bs-toggle="collapse" data-bs-target="#pastRule" aria-expanded="true" aria-controls="pastRule">
@@ -2558,7 +2558,7 @@
     </div>
   </div>
 </div>
-`}function X(){return`<div class="accordion" id="grammarAccordion">
+`}function returnLevel40(){return`<div class="accordion" id="grammarAccordion">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" 
@@ -2610,7 +2610,7 @@
     </div>
   </div>
 </div>
-`}function _(){return`<div class="accordion" id="grammarAccordion">
+`}function returnLevel40EN(){return`<div class="accordion" id="grammarAccordion">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" 
@@ -2662,7 +2662,7 @@
     </div>
   </div>
 </div>
-`}function ee(){return`<div class="accordion" id="grammarAccordion">
+`}function returnLevel40PL(){return`<div class="accordion" id="grammarAccordion">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" 
@@ -2714,7 +2714,7 @@
     </div>
   </div>
 </div>
-`}function te(){return`<div class="accordion" id="grammarAccordion">
+`}function returnLevel40UA(){return`<div class="accordion" id="grammarAccordion">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" 
@@ -2766,7 +2766,7 @@
     </div>
   </div>
 </div>
-`}function oe(){return`<div class="card" style="width: 100%; border: 1px solid #28a745; border-radius: 5px; background-color: #e9f7ec;">
+`}function returnLevel34(){return`<div class="card" style="width: 100%; border: 1px solid #28a745; border-radius: 5px; background-color: #e9f7ec;">
   <div class="card-body">
     <h4 class="card-title" style="font-size: 1.2rem; margin-bottom: 10px; color: #28a745;"><strong>Past Continuous Tense</strong></h4>
     <p class="card-text" style="font-size: 1rem; color: #155724;">Past Continuous Tense описывает действия, которые происходили в определённый момент в прошлом или в течение определённого времени в прошлом. Он также используется для выражения двух действий, происходивших одновременно.</p>
@@ -2806,7 +2806,7 @@
       </div>
     </div>
   </div>
-</div>`}function se(){return`<div class="card" style="width: 100%; border: 1px solid #28a745; border-radius: 5px; background-color: #e9f7ec;">
+</div>`}function returnLevel34EN(){return`<div class="card" style="width: 100%; border: 1px solid #28a745; border-radius: 5px; background-color: #e9f7ec;">
   <div class="card-body">
     <h4 class="card-title" style="font-size: 1.2rem; margin-bottom: 10px; color: #28a745;"><strong>Past Continuous Tense</strong></h4>
     <p class="card-text" style="font-size: 1rem; color: #155724;">The Past Continuous tense describes actions that were happening at a particular moment in the past or actions that were ongoing for some time in the past. It is also used to express two actions happening at the same time in the past.</p>
@@ -2846,7 +2846,7 @@
       </div>
     </div>
   </div>
-</div>`}function ae(){return`<div class="card" style="width: 100%; border: 1px solid #28a745; border-radius: 5px; background-color: #e9f7ec;">
+</div>`}function returnLevel34PL(){return`<div class="card" style="width: 100%; border: 1px solid #28a745; border-radius: 5px; background-color: #e9f7ec;">
   <div class="card-body">
     <h4 class="card-title" style="font-size: 1.2rem; margin-bottom: 10px; color: #28a745;"><strong>Czas Past Continuous</strong></h4>
     <p class="card-text" style="font-size: 1rem; color: #155724;">Czas Past Continuous opisuje działania, które miały miejsce w określonym momencie w przeszłości lub trwały przez jakiś czas w przeszłości. Używany jest również do wyrażenia dwóch działań, które miały miejsce jednocześnie.</p>
@@ -2886,7 +2886,7 @@
       </div>
     </div>
   </div>
-</div>`}function re(){return`<div class="card" style="width: 100%; border: 1px solid #28a745; border-radius: 5px; background-color: #e9f7ec;">
+</div>`}function returnLevel34UA(){return`<div class="card" style="width: 100%; border: 1px solid #28a745; border-radius: 5px; background-color: #e9f7ec;">
   <div class="card-body">
     <h4 class="card-title" style="font-size: 1.2rem; margin-bottom: 10px; color: #28a745;"><strong>Час Past Continuous</strong></h4>
     <p class="card-text" style="font-size: 1rem; color: #155724;">Час Past Continuous описує дії, які відбувалися в певний момент у минулому або протягом певного часу в минулому. Він також використовується для вираження двох дій, що відбувалися одночасно.</p>
@@ -2926,7 +2926,7 @@
       </div>
     </div>
   </div>
-</div>`}function ie(){return`<div class="container">
+</div>`}function returnLevel33(){return`<div class="container">
   <div class="row">
     <div class="col-md-12">
       <h3>Правила с глаголами (Добавление окончаний)</h3>
@@ -3033,7 +3033,7 @@
       </div>
     </div>
   </div>
-</div>`}function ne(){return`<div class="container">
+</div>`}function returnLevel33EN(){return`<div class="container">
   <div class="row">
     <div class="col-md-12">
       <h3>Rules for Verbs (Adding Endings)</h3>
@@ -3140,7 +3140,7 @@
       </div>
     </div>
   </div>
-</div>`}function le(){return`<div class="container">
+</div>`}function returnLevel33PL(){return`<div class="container">
   <div class="row">
     <div class="col-md-12">
       <h3>Zasady dotyczące czasowników (Dodawanie końcówek)</h3>
@@ -3247,7 +3247,7 @@
       </div>
     </div>
   </div>
-</div>`}function de(){return`<div class="container">
+</div>`}function returnLevel33UA(){return`<div class="container">
   <div class="row">
     <div class="col-md-12">
       <h3>Правила з дієсловами (Додавання закінчень)</h3>
@@ -3354,7 +3354,7 @@
       </div>
     </div>
   </div>
-</div>`}function ce(){return`<div class="container mt-4">
+</div>`}function returnLevel32(){return`<div class="container mt-4">
   <h2 class="text-center mb-4">Past Simple: Негативные предложения и вопросы</h2>
   <div class="row">
     <div class="col-12">
@@ -3420,7 +3420,7 @@
     </div>
   </div>
 </div>
-`}function pe(){return`<div class="container mt-4">
+`}function returnLevel32EN(){return`<div class="container mt-4">
   <h2 class="text-center mb-4">Past Simple: Negative Sentences and Questions</h2>
   <div class="row">
     <div class="col-12">
@@ -3486,7 +3486,7 @@
     </div>
   </div>
 </div>
-`}function ge(){return`<div class="container mt-4">
+`}function returnLevel32PL(){return`<div class="container mt-4">
   <h2 class="text-center mb-4">Past Simple: Negatywne zdania i pytania</h2>
   <div class="row">
     <div class="col-12">
@@ -3552,7 +3552,7 @@
     </div>
   </div>
 </div>
-`}function he(){return`<div class="container mt-4">
+`}function returnLevel32UA(){return`<div class="container mt-4">
   <h2 class="text-center mb-4">Past Simple: Негативні речення та питання</h2>
   <div class="row">
     <div class="col-12">
@@ -3618,7 +3618,7 @@
     </div>
   </div>
 </div>
-`}function ye(){return`<div class="container" style="margin: 20px;">
+`}function returnLevel31(){return`<div class="container" style="margin: 20px;">
     <div class="border border-primary rounded p-4 bg-light">
         <h3 class="text-primary text-center">Правило образования предложений в Past Simple</h3>
         
@@ -3679,7 +3679,7 @@
         </ul>
     </div>
 </div>
-`}function be(){return`<div class="container" style="margin: 20px;">
+`}function returnLevel31EN(){return`<div class="container" style="margin: 20px;">
     <div class="border border-primary rounded p-4 bg-light">
         <h3 class="text-primary text-center">Rule for Forming Sentences in Past Simple</h3>
         
@@ -3740,7 +3740,7 @@
         </ul>
     </div>
 </div>
-`}function ue(){return`<div class="container" style="margin: 20px;">
+`}function returnLevel31PL(){return`<div class="container" style="margin: 20px;">
     <div class="border border-primary rounded p-4 bg-light">
         <h3 class="text-primary text-center">Zasada tworzenia zdań w Past Simple</h3>
         
@@ -3801,7 +3801,7 @@
         </ul>
     </div>
 </div>
-`}function me(){return`<div class="container" style="margin: 20px;">
+`}function returnLevel31UA(){return`<div class="container" style="margin: 20px;">
     <div class="border border-primary rounded p-4 bg-light">
         <h3 class="text-primary text-center">Правило утворення речень у Past Simple</h3>
         
@@ -3862,7 +3862,7 @@
         </ul>
     </div>
 </div>
-`}function ve(){return`<div class="container" style="margin-top: 20px;">
+`}function returnLevel23(){return`<div class="container" style="margin-top: 20px;">
     <h1 style="text-align: center; color: #333;">Справка по глаголам "was" и "were"</h1>
 
     <h2 style="color: #444; margin-top: 20px;">1. Правила использования</h2>
@@ -3917,7 +3917,7 @@
         </li>
     </ul>
 </div>
-`}function we(){return`<div class="container" style="margin-top: 20px;">
+`}function returnLevel23EN(){return`<div class="container" style="margin-top: 20px;">
     <h1 style="text-align: center; color: #333;">Reference for the verbs "was" and "were"</h1>
 
     <h2 style="color: #444; margin-top: 20px;">1. Rules of Usage</h2>
@@ -3972,7 +3972,7 @@
         </li>
     </ul>
 </div>
-`}function fe(){return`<div class="container" style="margin-top: 20px;">
+`}function returnLevel23PL(){return`<div class="container" style="margin-top: 20px;">
     <h1 style="text-align: center; color: #333;">Informacje o czasownikach "was" i "were"</h1>
 
     <h2 style="color: #444; margin-top: 20px;">1. Zasady użycia</h2>
@@ -4027,7 +4027,7 @@
         </li>
     </ul>
 </div>
-`}function xe(){return`<div class="container" style="margin-top: 20px;">
+`}function returnLevel23UA(){return`<div class="container" style="margin-top: 20px;">
     <h1 style="text-align: center; color: #333;">Довідка по дієсловам "was" і "were"</h1>
 
     <h2 style="color: #444; margin-top: 20px;">1. Правила використання</h2>
@@ -4082,7 +4082,7 @@
         </li>
     </ul>
 </div>
-`}function ze(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
+`}function returnLevel21(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
     <h2 style="color: #333;">Использование глаголов "have" и "have got"</h2>
     <p style="line-height: 1.6; color: #555;">
         Глаголы "have" и "have got" используются для выражения обладания, но могут различаться в формальном и неформальном использовании. Ниже представлены правила их использования.
@@ -4197,7 +4197,7 @@
         </tbody>
     </table>
 </div>
-`}function ke(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
+`}function returnLevel21EN(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
     <h2 style="color: #333;">Using the Verbs "have" and "have got"</h2>
     <p style="line-height: 1.6; color: #555;">
         The verbs "have" and "have got" are used to express possession, but they may differ in formal and informal contexts. Below are the rules for their use.
@@ -4312,7 +4312,7 @@
         </tbody>
     </table>
 </div>
-`}function Pe(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
+`}function returnLevel21PL(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
     <h2 style="color: #333;">Użycie czasowników "have" i "have got"</h2>
     <p style="line-height: 1.6; color: #555;">
         Czasowniki "have" i "have got" są używane do wyrażania posiadania, ale mogą różnić się w formalnym i nieformalnym użyciu. Poniżej przedstawione są zasady ich użycia.
@@ -4427,7 +4427,7 @@
         </tbody>
     </table>
 </div>
-`}function Se(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
+`}function returnLevel21UA(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
     <h2 style="color: #333;">Використання дієслів "have" та "have got"</h2>
     <p style="line-height: 1.6; color: #555;">
         Дієслова "have" та "have got" використовуються для вираження володіння, але можуть відрізнятися в формальному та неформальному використанні. Нижче наведені правила їх використання.
@@ -4542,7 +4542,7 @@
         </tbody>
     </table>
 </div>
-`}function je(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
+`}function returnLevel19(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
     <h2 style="color: #333;">Простое настоящее vs. Настоящее продолженное</h2>
     
     <h3 style="color: #444;">Простое настоящее</h3>
@@ -4660,7 +4660,7 @@
         Эти различия помогут понять, в каких контекстах правильно использовать каждое время как в устной, так и в письменной речи.
     </p>
 </div>
-`}function Te(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
+`}function returnLevel19EN(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
     <h2 style="color: #333;">Present Simple vs. Present Continuous</h2>
     
     <h3 style="color: #444;">Present Simple</h3>
@@ -4778,7 +4778,7 @@
         These differences will help understand the contexts in which to use each tense correctly, both in speaking and writing.
     </p>
 </div>
-`}function Ie(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
+`}function returnLevel19PL(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
     <h2 style="color: #333;">Czas Present Simple vs. Present Continuous</h2>
     
     <h3 style="color: #444;">Present Simple</h3>
@@ -4896,7 +4896,7 @@
         Te różnice pomogą zrozumieć, w jakich kontekstach poprawnie używać każdego czasu zarówno w mowie, jak i piśmie.
     </p>
 </div>
-`}function Ae(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
+`}function returnLevel19UA(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
     <h2 style="color: #333;">Просте теперішнє vs. Теперішнє тривале</h2>
     
     <h3 style="color: #444;">Просте теперішнє</h3>
@@ -5014,7 +5014,7 @@
         Ці відмінності допоможуть зрозуміти, в яких контекстах правильно використовувати кожен час як в усній, так і в письмовій мові.
     </p>
 </div>
-`}function Fe(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
+`}function returnLevel18(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
     <h2 style="color: #333;">Правило для образования вопросов в Простом настоящем времени (Present Simple)</h2>
     
     <h3 style="color: #444;">Структура вопросов:</h3>
@@ -5047,7 +5047,7 @@
         Эти правила помогают правильно формировать вопросы в Простом настоящем времени в различных контекстах.
     </p>
 </div>
-`}function Ce(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
+`}function returnLevel18EN(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
     <h2 style="color: #333;">Rules for Forming Questions in the Present Simple Tense</h2>
     
     <h3 style="color: #444;">Question Structure:</h3>
@@ -5080,7 +5080,7 @@
         These rules help to correctly formulate questions in the Present Simple tense in various contexts.
     </p>
 </div>
-`}function We(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
+`}function returnLevel18PL(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
     <h2 style="color: #333;">Zasada tworzenia pytań w czasie Present Simple</h2>
     
     <h3 style="color: #444;">Struktura pytań:</h3>
@@ -5113,7 +5113,7 @@
         Te zasady pomagają poprawnie formułować pytania w czasie Present Simple w różnych kontekstach.
     </p>
 </div>
-`}function Ee(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
+`}function returnLevel18UA(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
     <h2 style="color: #333;">Правило для утворення запитань у Простому теперішньому часі (Present Simple)</h2>
     
     <h3 style="color: #444;">Структура запитань:</h3>
@@ -5146,7 +5146,7 @@
         Ці правила допомагають правильно формувати запитання в Простому теперішньому часі в різних контекстах.
     </p>
 </div>
-`}function He(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
+`}function returnLevel17(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
     <h2 style="color: #333;">Простое настоящее время (Present Simple) в негативной форме</h2>
     
     <h4 style="color: #444;">Правило образования:</h4>
@@ -5179,7 +5179,7 @@
         Эти правила обеспечивают правильное использование простого настоящего времени в различных контекстах и формах.
     </p>
 </div>
-`}function De(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
+`}function returnLevel17EN(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
     <h2 style="color: #333;">Present Simple Tense (Negative Form)</h2>
     
     <h4 style="color: #444;">Rule for Formation:</h4>
@@ -5212,7 +5212,7 @@
         These rules ensure the correct use of the Present Simple tense in various contexts and forms.
     </p>
 </div>
-`}function Ne(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
+`}function returnLevel17PL(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
     <h2 style="color: #333;">Czas teraźniejszy prosty (Present Simple) w formie negatywnej</h2>
     
     <h4 style="color: #444;">Zasada tworzenia:</h4>
@@ -5245,7 +5245,7 @@
         Te zasady zapewniają prawidłowe użycie czasu teraźniejszego prostego w różnych kontekstach i formach.
     </p>
 </div>
-`}function Le(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
+`}function returnLevel17UA(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
     <h2 style="color: #333;">Просте теперішнє час (Present Simple) у негативній формі</h2>
     
     <h4 style="color: #444;">Правило утворення:</h4>
@@ -5278,7 +5278,7 @@
         Ці правила забезпечують правильне використання простого теперішнього часу в різних контекстах і формах.
     </p>
 </div>
-`}function Oe(){return`<div style="font-family: Arial, sans-serif; line-height: 1.6; background-color: #f4f4f4; margin: 20px; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+`}function returnLevel16(){return`<div style="font-family: Arial, sans-serif; line-height: 1.6; background-color: #f4f4f4; margin: 20px; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
     <h1 style="color: #333;">Простое Настоящее Время с Периодичностью</h1>
 
     <h2 style="color: #555;">Определение:</h2>
@@ -5332,7 +5332,7 @@
         Эта структура помогает четко передать частоту действий в простом настоящем времени.
     </p>
 </div>
-`}function Re(){return`<div style="font-family: Arial, sans-serif; line-height: 1.6; background-color: #f4f4f4; margin: 20px; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+`}function returnLevel16EN(){return`<div style="font-family: Arial, sans-serif; line-height: 1.6; background-color: #f4f4f4; margin: 20px; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
     <h1 style="color: #333;">Present Simple with Frequency</h1>
 
     <h2 style="color: #555;">Definition:</h2>
@@ -5386,7 +5386,7 @@
         This structure helps clearly convey the frequency of actions in the present simple tense.
     </p>
 </div>
-`}function Ue(){return`<div style="font-family: Arial, sans-serif; line-height: 1.6; background-color: #f4f4f4; margin: 20px; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+`}function returnLevel16PL(){return`<div style="font-family: Arial, sans-serif; line-height: 1.6; background-color: #f4f4f4; margin: 20px; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
     <h1 style="color: #333;">Prosty Czas Teraźniejszy z Częstotliwością</h1>
 
     <h2 style="color: #555;">Definicja:</h2>
@@ -5440,7 +5440,7 @@
         Ta struktura pomaga wyraźnie przekazać częstotliwość działań w prostym czasie teraźniejszym.
     </p>
 </div>
-`}function Be(){return`<div style="font-family: Arial, sans-serif; line-height: 1.6; background-color: #f4f4f4; margin: 20px; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+`}function returnLevel16UA(){return`<div style="font-family: Arial, sans-serif; line-height: 1.6; background-color: #f4f4f4; margin: 20px; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
     <h1 style="color: #333;">Простий Теперішній Час з Періодичністю</h1>
 
     <h2 style="color: #555;">Визначення:</h2>
@@ -5494,7 +5494,7 @@
         Ця структура допомагає чітко передати частоту дій у простому теперішньому часі.
     </p>
 </div>
-`}function Ze(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
+`}function returnLevel15(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
     <h2 style="color: #333;">Present Simple</h2>
     <p style="line-height: 1.6; color: #555;">
         Настоящее простое время (Present Simple) используется для описания регулярных действий, привычек, фактов и состояний, а также для выражения общеизвестных истин.
@@ -5535,7 +5535,7 @@
     <p style="line-height: 1.6; color: #555;">
         Эти правила обеспечивают правильное использование Present Simple в различных контекстах.
     </p>
-</div>`}function Me(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
+</div>`}function returnLevel15EN(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
     <h2 style="color: #333;">Present Simple</h2>
     <p style="line-height: 1.6; color: #555;">
         The Present Simple tense is used to describe regular actions, habits, facts, and states, as well as to express universally known truths.
@@ -5577,7 +5577,7 @@
         These rules ensure correct usage of the Present Simple tense in various contexts.
     </p>
 </div>
-`}function Ve(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
+`}function returnLevel15PL(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
     <h2 style="color: #333;">Present Simple</h2>
     <p style="line-height: 1.6; color: #555;">
         Czas teraźniejszy prosty (Present Simple) jest używany do opisywania regularnych czynności, nawyków, faktów i stanów, a także do wyrażania powszechnie znanych prawd.
@@ -5619,7 +5619,7 @@
         Te zasady zapewniają prawidłowe użycie Present Simple w różnych kontekstach.
     </p>
 </div>
-`}function qe(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
+`}function returnLevel15UA(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
     <h2 style="color: #333;">Present Simple</h2>
     <p style="line-height: 1.6; color: #555;">
         Теперішній простий час (Present Simple) використовується для опису регулярних дій, звичок, фактів і станів, а також для вираження загальновідомих істин.
@@ -5660,7 +5660,7 @@
     <p style="line-height: 1.6; color: #555;">
         Ці правила забезпечують правильне використання Present Simple в різних контекстах.
     </p>
-</div>`}function Qe(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
+</div>`}function returnLevel14(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
     <h2 style="color: #333;">Определение настоящего продолженного времени</h2>
     <p style="line-height: 1.6; color: #555;">
         Настоящее продолженное время используется для описания действий, происходящих в данный момент, или для обозначения временных ситуаций. Оно образуется при помощи вспомогательного глагола "to be" и основного глагола с окончанием -ing.
@@ -5696,7 +5696,7 @@
         Таким образом, для образования вопросов в настоящем продолженном времени важно определить правильную форму "to be" в зависимости от подлежащего и следовать указанной формуле.
     </p>
 </div>
-`}function Ye(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
+`}function returnLevel14EN(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
     <h2 style="color: #333;">Definition of Present Continuous Tense</h2>
     <p style="line-height: 1.6; color: #555;">
         The Present Continuous tense is used to describe actions happening at the moment or temporary situations. It is formed using the auxiliary verb "to be" and the main verb with the -ing ending.
@@ -5732,7 +5732,7 @@
         To correctly form questions in Present Continuous, it is important to identify the correct form of "to be" based on the subject and follow the given formula.
     </p>
 </div>
-`}function Ke(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
+`}function returnLevel14PL(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
     <h2 style="color: #333;">Definicja czasu teraźniejszego ciągłego (Present Continuous)</h2>
     <p style="line-height: 1.6; color: #555;">
         Czas teraźniejszy ciągły jest używany do opisywania działań, które odbywają się w danym momencie, lub do oznaczania sytuacji tymczasowych. Tworzy się go za pomocą czasownika pomocniczego "to be" oraz czasownika głównego z końcówką -ing.
@@ -5768,7 +5768,7 @@
         Aby utworzyć pytania w czasie Present Continuous, należy określić formę czasownika "to be" w zależności od podmiotu i zastosować podaną formułę.
     </p>
 </div>
-`}function Ge(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
+`}function returnLevel14UA(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
     <h2 style="color: #333;">Визначення теперішнього тривалого часу (Present Continuous)</h2>
     <p style="line-height: 1.6; color: #555;">
         Теперішній тривалий час використовується для опису дій, які відбуваються в даний момент, або для позначення тимчасових ситуацій. Він утворюється за допомогою допоміжного дієслова "to be" та основного дієслова з закінченням -ing.
@@ -5804,7 +5804,7 @@
         Отже, для утворення питань у Present Continuous потрібно визначити форму дієслова "to be" в залежності від підмета та слідувати вказаній формулі.
     </p>
 </div>
-`}function Je(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 20px;">
+`}function returnLevel10(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 20px;">
     <h2 style="color: #333;">Краткая форма глагола to be</h2>
     <p style="line-height: 1.6; color: #555;">
         Краткая форма глагола to be (сокращённая форма) образуется за счет соединения глагола с подлежащим (местоимением) с помощью апострофа. Вот основные правила:
@@ -5822,7 +5822,7 @@
         Сокращённая форма часто используется в разговорной речи и неформальной письменной речи.
     </p>
 </div>
-`}function $e(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 20px;">
+`}function returnLevel10EN(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 20px;">
     <h2 style="color: #333;">Short Form of the Verb "to be"</h2>
     <p style="line-height: 1.6; color: #555;">
         The short form of the verb "to be" (contraction) is created by combining the verb with the subject (pronoun) using an apostrophe. Here are the main rules:
@@ -5840,7 +5840,7 @@
         The contraction is commonly used in spoken language and informal writing.
     </p>
 </div>
-`}function Xe(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 20px;">
+`}function returnLevel10PL(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 20px;">
     <h2 style="color: #333;">Skrócona forma czasownika to be</h2>
     <p style="line-height: 1.6; color: #555;">
         Skrócona forma czasownika to be (forma skrócona) powstaje przez połączenie czasownika z podmiotem (zaimkiem) za pomocą apostrofu. Oto podstawowe zasady:
@@ -5858,7 +5858,7 @@
         Forma skrócona często jest używana w mowie potocznej i nieformalnym piśmie.
     </p>
 </div>
-`}function _e(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 20px;">
+`}function returnLevel10UA(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); margin: 20px;">
     <h2 style="color: #333;">Скорочена форма дієслова to be</h2>
     <p style="line-height: 1.6; color: #555;">
         Скорочена форма дієслова to be (скорочена форма) утворюється за рахунок з'єднання дієслова з підлеглим (займенником) за допомогою апострофа. Ось основні правила:
@@ -5875,7 +5875,7 @@
     <p style="line-height: 1.6; color: #555;">
         Скорочена форма часто використовується в розмовній мові та неформальній письмовій мові.
     </p>
-</div>`}function et(){return`
+</div>`}function helpForProgramRU(){return`
     <div class="modal" tabindex="-1" id="infoModal" style="display: block; background-color: rgba(0,0,0,0.5);">
       <div class="modal-dialog" style="max-width: 600px; margin: 10% auto;">
         <div class="modal-content" style="border-radius: 12px; padding: 20px; font-family: sans-serif;">
@@ -5891,7 +5891,7 @@
         </div>
       </div>
     </div>    
-    `}function tt(){return`
+    `}function helpForProgramPL(){return`
     <div class="modal" tabindex="-1" id="infoModal" style="display: block; background-color: rgba(0,0,0,0.5);">
       <div class="modal-dialog" style="max-width: 600px; margin: 10% auto;">
         <div class="modal-content" style="border-radius: 12px; padding: 20px; font-family: sans-serif;">
@@ -5907,7 +5907,7 @@
         </div>
       </div>
     </div>    
-    `}function ot(){return`
+    `}function helpForProgramUA(){return`
     <div class="modal" tabindex="-1" id="infoModal" style="display: block; background-color: rgba(0,0,0,0.5);">
       <div class="modal-dialog" style="max-width: 600px; margin: 10% auto;">
         <div class="modal-content" style="border-radius: 12px; padding: 20px; font-family: sans-serif;">
@@ -5923,7 +5923,7 @@
         </div>
       </div>
     </div>    
-    `}function st(){return`
+    `}function helpForProgramEN(){return`
     <div class="modal" tabindex="-1" id="infoModal" style="display: block; background-color: rgba(0,0,0,0.5);">
       <div class="modal-dialog" style="max-width: 600px; margin: 10% auto;">
         <div class="modal-content" style="border-radius: 12px; padding: 20px; font-family: sans-serif;">
@@ -5939,7 +5939,7 @@
         </div>
       </div>
     </div>    
-    `}function at(){return`
+    `}function helpForHomeMenuRU(){return`
     <div class="modal" tabindex="-1" id="infoModal" style="display: block; background-color: rgba(0,0,0,0.5);">
       <div class="modal-dialog" style="max-width: 600px; margin: 10% auto;">
         <div class="modal-content" style="border-radius: 12px; padding: 20px; font-family: sans-serif;">
@@ -5960,7 +5960,7 @@
         </div>
       </div>
     </div>    
-    `}function rt(){return`
+    `}function helpForHomeMenuUA(){return`
     <div class="modal" tabindex="-1" id="infoModal" style="display: block; background-color: rgba(0,0,0,0.5);">
       <div class="modal-dialog" style="max-width: 600px; margin: 10% auto;">
         <div class="modal-content" style="border-radius: 12px; padding: 20px; font-family: sans-serif;">
@@ -5981,7 +5981,7 @@
         </div>
       </div>
     </div>
-    `}function it(){return`
+    `}function helpForHomeMenuPL(){return`
     <div class="modal" tabindex="-1" id="infoModal" style="display: block; background-color: rgba(0,0,0,0.5);">
       <div class="modal-dialog" style="max-width: 600px; margin: 10% auto;">
         <div class="modal-content" style="border-radius: 12px; padding: 20px; font-family: sans-serif;">
@@ -6002,7 +6002,7 @@
         </div>
       </div>
     </div>
-    `}function nt(){return`
+    `}function helpForHomeMenuEN(){return`
     <div class="modal" tabindex="-1" id="infoModal" style="display: block; background-color: rgba(0,0,0,0.5);">
       <div class="modal-dialog" style="max-width: 600px; margin: 10% auto;">
         <div class="modal-content" style="border-radius: 12px; padding: 20px; font-family: sans-serif;">
@@ -6023,7 +6023,7 @@
         </div>
       </div>
     </div>
-    `}function lt(){return`
+    `}function helpForGreenPoleOneUA(){return`
     <div id='modalOverlay' style='position: fixed; top: 0; left: 0; width: 100%; height: 100%;
      background: rgba(0, 0, 0, 0.5); z-index: 9998;' onclick='document.getElementById("modalOverlay").remove(); document.getElementById("modalBox").remove();'></div>
 
@@ -6072,7 +6072,7 @@
         </button>
       </div>
     </div>
-    `}function dt(e){return`
+    `}function helpForGreenPoleOneRU(e){return`
     <div id='modalOverlay' style='position: fixed; top: 0; left: 0; width: 100%; height: 100%;
      background: rgba(0, 0, 0, 0.5); z-index: 9998;' onclick='document.getElementById("modalOverlay").remove(); document.getElementById("modalBox").remove();'></div>
 
@@ -6123,7 +6123,7 @@
         </button>
       </div>
     </div>
-    `}function ct(){return`
+    `}function helpForGreenPoleOnePL(){return`
     <div id='modalOverlay' style='position: fixed; top: 0; left: 0; width: 100%; height: 100%;
      background: rgba(0, 0, 0, 0.5); z-index: 9998;' onclick='document.getElementById("modalOverlay").remove(); document.getElementById("modalBox").remove();'></div>
 
@@ -6172,7 +6172,7 @@
         </button>
       </div>
     </div>
-    `}function pt(){return`
+    `}function helpForGreenPoleOneEN(){return`
         <div id='modalOverlay' style='position: fixed; top: 0; left: 0; width: 100%; height: 100%;
          background: rgba(0, 0, 0, 0.5); z-index: 9998;' onclick='document.getElementById("modalOverlay").remove(); document.getElementById("modalBox").remove();'></div>
     
@@ -6221,4 +6221,4 @@
             </button>
           </div>
         </div>
-        `}function gt(){const e=[];return e.push(["","","",""]),e.push(["be/have/do in present and past tenses","be/have/do in present and past tenses","be/have/do in present and past tenses","be/have/do in present and past tenses"]),e.push([d(),p(),c(),l()]),e.push([et(),ot(),tt(),st()]),e.push([at(),rt(),it(),nt()]),e.push([dt(),lt(),ct(),pt()]),e.push([W(),D(),H(),E()]),e.push(["Речь примерно о:","Мова приблизно про:","Mówimy o:","We are talking approximately about:"]),e.push([X(),te(),ee(),_()]),e.push(["Последний ответ здесь","Остання відповідь тут","Najnowsza odpowiedź tutaj","The last answer is here"]),e.push(["Предыдущий вопрос здесь","Попереднє питання тут","Poprzednie pytanie tutaj","Previous question here"]),e.push([N(),R(),O(),L()]),e.push([P(),T(),j(),S()]),e.push([U(),M(),Z(),B()]),e.push(["В этом тесте нужно собрать предложение из предложенных слов. Имейте в виду, что иногда собранное предложение может не совпадать с общей темой теста.","У цьому тесті потрібно зібрати пропозицію із запропонованих слів. Майте на увазі, що інколи зібрана пропозиція може не співпадати із загальною темою тесту.","W tym teście musisz ułożyć zdanie z podanych słów. Pamiętaj, że czasami zebrane zdanie może nie pokrywać się z ogólnym tematem testu.","In this test you need to assemble a sentence from the given words. Keep in mind that sometimes the assembled sentence may not match the general topic of the test."]),e.push(["(может отличаться)","(може відрізнятися)","(może się różnić)","(may differ)"]),e.push([I(),C(),F(),A()]),e.push([V(),Y(),Q(),q()]),e.push([g(),b(),y(),h()]),e.push([K(),$(),J(),G()]),e.push([oe(),re(),ae(),se()]),e.push(["Вставьте глагол вместо троеточия или подберите правильное предложение в продолженном прошедшем времени.","Вставте дієслово замість три крапки або підберіть правильну пропозицію в минулому часі.","Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym ciągłym.","Insert a verb instead of the ellipsis or choose the correct sentence in the past continuous tense."]),e.push([ie(),de(),le(),ne()]),e.push([ce(),he(),ge(),pe()]),e.push(["Past Simple отрицательные и вопросы","Past Simple негативні та питання","Past Simple przeczenia i pytania","Past Simple Negative and Questions"]),e.push(["Вставьте глагол вместо троеточия или подберите правильное предложение в простом прошедшем времени.","Вставте дієслово замість три крапки або підберіть правильну пропозицію в простому часі.","Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym prostym.","Insert a verb instead of the ellipsis or choose the correct sentence in the simple past tense."]),e.push([ye(),me(),ue(),be()]),e.push(["Подобрать пару правильный - неправильный глагол. Тест разбавлен небольшим числом правильных глаголов.","Підібрати пару правильне - неправильне дієслово. Тест розбавлений невеликою кількістю правильних дієслів.","Dopasuj właściwy czasownik nieregularny. Test jest rozcieńczany niewielką liczbą czasowników regularnych.","Match a pair of regular and irregular verbs. The test is diluted with a small number of regular verbs."]),e.push(["Прошедшее простое","Минуле просте","Przeszłość prosta","Past simple"]),e.push(["Помощь","Допомога","Pomoc","Help"]),e.push(["Теория:","Теорія:","Teoria:","Theory:"]),e.push(["Задание теста:","Завдання тесту:","Zadanie testowe:","Test task:"]),e.push(["Переводов:","Перекладів:","Tłumaczenia:","Translations:"]),e.push(["Успех:","Успіх:","Sukces:","Success:"]),e.push(["Ошибок:","Помилок:","Błędy:","Errors:"]),e.push(["Статистика","Статистика","Statystyka","Statistics"]),e.push(["Собрано алмазов:","Зібрано алмазів:","Zebrane diamenty:","Diamonds collected:"]),e.push(["Глаголы Was и Were","Глаголи Was і Were","Czasowniki Was i Were","Verbs Was and Were"]),e.push([ve(),xe(),fe(),we()]),e.push(["Упс. Кто-то уже сообщил об этой ошибке.","Упс. Хтось уже повідомив про цю помилку.","Ups. Ktoś już zgłosił ten błąd.","Oops. Someone already reported this bug."]),e.push(["Ошибка зафиксирована","Помилка зафіксована","Zapisano błąd","Error recorded"]),e.push([ze(),Se(),Pe(),ke()]),e.push(["Глаголы Have и Have Got","Дієслова Have та Have Got","Czasowniki Have i Have Got","The verbs Have and Have Got"]),e.push([je(),Ae(),Ie(),Te()]),e.push(["Выбор между P.S. и настоящим продолженным P.C.","Вибір між P.S. та справжнім продовженим P.C.","Wybór pomiędzy P.S. i niniejszym kontynuuje P.C.","The choice between P.S. and the present continuation P.C."]),e.push([Fe(),Ee(),We(),Ce()]),e.push(["Простое настоящее  P.S. вопросы","Просте справжнє P.S. питання","Prosty prezent P.S. pytania","Simple present P.S. questions"]),e.push([He(),Le(),Ne(),De()]),e.push(["Простое настоящее  P.S. негативное","Просте справжнє P.S. негативне","Prosty prezent P.S. negatywny","Simple present P.S. negative"]),e.push([Oe(),Be(),Ue(),Re()]),e.push(["Простое настоящее  P.S. плюс периодичность","Просте справжнє P.S. плюс періодичність","Prosty prezent P.S. plus częstotliwość","Simple present P.S. plus periodicity"]),e.push([Ze(),qe(),Ve(),Me()]),e.push(["Простое настоящее P.S.","Просте справжнє P.S.","Prosty prezent P.S.","Simple present P.S."]),e.push([Qe(),Ge(),Ke(),Ye()]),e.push(["Образования вопросов в настоящем продолженном времени P.C.","Утворення питань у поточному продовженому часі P.C.","Tworzenie pytań w czasie teraźniejszym ciągłym P.C.","Formation of questions in the present continuous tense P.C."]),e.push([u(),w(),v(),m()]),e.push(["Правило для настоящего продолженного времени (Present Continuous)","Правило для поточного часу (Present Continuous)","Reguła czasu teraźniejszego ciągłego","Rule for the Present Continuous"]),e.push([f(),k(),z(),x()]),e.push(["Создание вопросов в Present Simple и Past Simple","Створення питань у Present Simple та Past Simple","Tworzenie pytań w czasie Present Simple i Past Simple","Forming questions in Present Simple and Past Simple"]),e.push([Je(),_e(),Xe(),$e()]),e.push(["Понятно","Зрозуміло","To jasne","It's clear"]),e.push(["Просто учим слова","Просто вчимо слова","Dopiero uczę się słówek","Just learning words"]),e.push(["Сокращенная форма глагола to Be","Скорочена форма дієслова","Krótka forma czasownika być","Shortened form of the verb to be"]),e.push(["Выбрать правильную пару.","Вибрати правильну пару.","Wybierz odpowiednią parę.","Choose the right pair."]),e.push(["Выбери верную форму глагола","Вибери правильну форму дієслова","Wybierz poprawną formę czasownika","Choose the correct form of the verb"]),e.push(["Вторая форма неправильных глаголов","Друга форма неправильних дієслів","Druga forma czasowników nieregularnych","The second form of irregular verbs"]),e.push(["Выбрать правильное время PS or PC","Вибрати правильне час PS or PC","Wybierz odpowiedni czas PS or PC","Choose the right time PS or PC"]),e.push(["Учить слова","Вчити слова","Ucz się słów","Learn words"]),e.push(["Подобрать правильно вопрос или ответ","Підібрати правильно питання чи відповідь","Wybierz właściwe pytanie lub odpowiedź","Choose the right question or answer"]),e.push(["Настоящее простое вопросы","Справжнє просте питання","Przedstaw proste pytania","Present simple questions"]),e.push(["Настоящее простое негативное","Справжнє просте негативне","Przedstaw prosty negatyw","Present simple negative"]),e.push(["300 глаголов","300 дієслів (RU)","300 czasowników (RU)","300 verbs (RU)"]),e.push(["50 глаголов","50 дієслів (RU/PL)","50 czasowników (RU/PL)","50 verbs (RU/PL)"]),e.push(["100 слов про спорт","100 слів про спорт (RU/PL)","100 słów o sporcie (RU/PL)","100 words about sports(RU/PL)"]),e.push(["Выберите правильно составленное предложение.","Виберіть правильно складену пропозицію.","Wybierz właściwe zdanie.","Choose the correctly constructed sentence."]),e.push(["Настоящее простое + периодичность","Справжнє просте + періодичність","Czas teraźniejszy prosty + okresowość","Present Simple + Periodicity"]),e.push(["Настоящее простое","Справжнє просте","Prezent prosty","Present simple"]),e.push(["Настоящее продолженное - вопрос","Справжнє продовжене – питання","Czas teraźniejszy ciągły – pytanie","Choose the right question"]),e.push(["Выбрать правильный вопрос","Вибрати правильне питання","Wybierz właściwe pytanie","Choose the right question"]),e.push(["Сообщить об ошибке","Повідомити про помилку","Zgłoś błąd","Report a bug"]),e.push(["Перевести вопрос","Перекласти питання","Przetłumacz pytanie","Translate question"]),e.push(["Выбрать правильный перевод","Вибрати правильний переклад","Wybierz właściwe tłumaczenie","Choose the correct translation"]),e.push(["100 слов о еде","100 слів про їжу","100 słów o jedzeniu","100 words about food"]),e.push(["100 слов о путешествии","100 слів про подорож (RU)","100 słów o podróżach (RU)","100 words about travel (RU)"]),e.push(["100 слов","100 слів (RU)","100 słów (RU)","100 words (RU)"]),e.push(["300 слов","300 слів (RU)","300 słów (RU)","300 words (RU)"]),e.push(["500 слов","500 слів (RU)","500 słów (RU)","500 words (RU)"]),e.push(["Настоящее продолженное","Присутній безперервний","Teraźniejszość ciągła","Present continuous"]),e.push(["Предыдущий вопрос/ответ","Попереднє запитання/відповідь","Poprzednie pytanie/odpowiedź","Previous question/answer"]),e.push(["Задание для теста","Завдання для тесту","Zadanie testowe","Task for the test"]),e.push(["Вопрос с вариантами ответа","Питання з варіантами відповіді","Pytanie wielokrotnego wyboru","Multiple choice question"]),e.push(["Выбрать тест.","Вибрати тест.","Wybierz test.","Select a test."]),e.push(["Where/Who...","Where/Who...","Where/Who...","Where/Who..."]),e.push(["Вставить правильное слово","Вставити правильне слово","Wstaw właściwe słowo","Insert the correct word"]),e.push(["To Be, ответь на вопрос","To Be, дай відповідь на запитання","Być, odpowiedz na pytanie","To Be, answer the question"]),e.push(["To Be, вопрос/ответ","To Be, питання/відповідь","Być, pytanie/odpowiedź","To Be, Q&A"]),e.push(["To Be, краткая форма","To Be, коротка форма","Być, krótka forma","To Be, short form"]),e.push(["Выбрать правильный вариант ответа","Вибрати правильний варіант відповіді","Wybierz poprawną odpowiedź","Choose the correct answer"]),e.push(["Сброс","Скидання","Resetowanie","Reset"]),e.push(["Выбрать правильный вариант сокращенной формы глагола to Be","Вибрати правильний варіант скороченої форми дієслова to Be","Wybierz poprawną wersję skróconej formy czasownika to Be","Choose the correct version of the shortened form of the verb to Be"]),e}window.languageSelectorView=new n;window.BDTranslate=gt();
+        `}function exportBDTranslate(){const e=[];return e.push(["","","",""]),e.push(["be/have/do in present and past tenses","be/have/do in present and past tenses","be/have/do in present and past tenses","be/have/do in present and past tenses"]),e.push([returnInfoUnit22RU(),returnInfoUnit22UA(),returnInfoUnit22PL(),returnInfoUnit22EN()]),e.push([helpForProgramRU(),helpForProgramUA(),helpForProgramPL(),helpForProgramEN()]),e.push([helpForHomeMenuRU(),helpForHomeMenuUA(),helpForHomeMenuPL(),helpForHomeMenuEN()]),e.push([helpForGreenPoleOneRU(),helpForGreenPoleOneUA(),helpForGreenPoleOnePL(),helpForGreenPoleOneEN()]),e.push([returnLevel42(),returnLevel42UA(),returnLevel42PL(),returnLevel42EN()]),e.push(["Речь примерно о:","Мова приблизно про:","Mówimy o:","We are talking approximately about:"]),e.push([returnLevel40(),returnLevel40UA(),returnLevel40PL(),returnLevel40EN()]),e.push(["Последний ответ здесь","Остання відповідь тут","Najnowsza odpowiedź tutaj","The last answer is here"]),e.push(["Предыдущий вопрос здесь","Попереднє питання тут","Poprzednie pytanie tutaj","Previous question here"]),e.push([returnLevel39(),returnLevel39UA(),returnLevel39PL(),returnLevel39EN()]),e.push([returnLevel38(),returnLevel38UA(),returnLevel38PL(),returnLevel38EN()]),e.push([returnLevel37(),returnLevel37UA(),returnLevel37PL(),returnLevel37EN()]),e.push(["В этом тесте нужно собрать предложение из предложенных слов. Имейте в виду, что иногда собранное предложение может не совпадать с общей темой теста.","У цьому тесті потрібно зібрати пропозицію із запропонованих слів. Майте на увазі, що інколи зібрана пропозиція може не співпадати із загальною темою тесту.","W tym teście musisz ułożyć zdanie z podanych słów. Pamiętaj, że czasami zebrane zdanie może nie pokrywać się z ogólnym tematem testu.","In this test you need to assemble a sentence from the given words. Keep in mind that sometimes the assembled sentence may not match the general topic of the test."]),e.push(["(может отличаться)","(може відрізнятися)","(może się różnić)","(may differ)"]),e.push([returnLevel20(),returnLevel20UA(),returnLevel20PL(),returnLevel20EN()]),e.push([returnLevel36(),returnLevel36UA(),returnLevel36PL(),returnLevel36EN()]),e.push([returnInfoForDiamant$1(),returnInfoForDiamantUA(),returnInfoForDiamantPL(),returnInfoForDiamantEN()]),e.push([returnLevel35(),returnLevel35UA(),returnLevel35PL(),returnLevel35EN()]),e.push([returnLevel34(),returnLevel34UA(),returnLevel34PL(),returnLevel34EN()]),e.push(["Вставьте глагол вместо троеточия или подберите правильное предложение в продолженном прошедшем времени.","Вставте дієслово замість три крапки або підберіть правильну пропозицію в минулому часі.","Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym ciągłym.","Insert a verb instead of the ellipsis or choose the correct sentence in the past continuous tense."]),e.push([returnLevel33(),returnLevel33UA(),returnLevel33PL(),returnLevel33EN()]),e.push([returnLevel32(),returnLevel32UA(),returnLevel32PL(),returnLevel32EN()]),e.push(["Past Simple отрицательные и вопросы","Past Simple негативні та питання","Past Simple przeczenia i pytania","Past Simple Negative and Questions"]),e.push(["Вставьте глагол вместо троеточия или подберите правильное предложение в простом прошедшем времени.","Вставте дієслово замість три крапки або підберіть правильну пропозицію в простому часі.","Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym prostym.","Insert a verb instead of the ellipsis or choose the correct sentence in the simple past tense."]),e.push([returnLevel31(),returnLevel31UA(),returnLevel31PL(),returnLevel31EN()]),e.push(["Подобрать пару правильный - неправильный глагол. Тест разбавлен небольшим числом правильных глаголов.","Підібрати пару правильне - неправильне дієслово. Тест розбавлений невеликою кількістю правильних дієслів.","Dopasuj właściwy czasownik nieregularny. Test jest rozcieńczany niewielką liczbą czasowników regularnych.","Match a pair of regular and irregular verbs. The test is diluted with a small number of regular verbs."]),e.push(["Прошедшее простое","Минуле просте","Przeszłość prosta","Past simple"]),e.push(["Помощь","Допомога","Pomoc","Help"]),e.push(["Теория:","Теорія:","Teoria:","Theory:"]),e.push(["Задание теста:","Завдання тесту:","Zadanie testowe:","Test task:"]),e.push(["Переводов:","Перекладів:","Tłumaczenia:","Translations:"]),e.push(["Успех:","Успіх:","Sukces:","Success:"]),e.push(["Ошибок:","Помилок:","Błędy:","Errors:"]),e.push(["Статистика","Статистика","Statystyka","Statistics"]),e.push(["Собрано алмазов:","Зібрано алмазів:","Zebrane diamenty:","Diamonds collected:"]),e.push(["Глаголы Was и Were","Глаголи Was і Were","Czasowniki Was i Were","Verbs Was and Were"]),e.push([returnLevel23(),returnLevel23UA(),returnLevel23PL(),returnLevel23EN()]),e.push(["Упс. Кто-то уже сообщил об этой ошибке.","Упс. Хтось уже повідомив про цю помилку.","Ups. Ktoś już zgłosił ten błąd.","Oops. Someone already reported this bug."]),e.push(["Ошибка зафиксирована","Помилка зафіксована","Zapisano błąd","Error recorded"]),e.push([returnLevel21(),returnLevel21UA(),returnLevel21PL(),returnLevel21EN()]),e.push(["Глаголы Have и Have Got","Дієслова Have та Have Got","Czasowniki Have i Have Got","The verbs Have and Have Got"]),e.push([returnLevel19(),returnLevel19UA(),returnLevel19PL(),returnLevel19EN()]),e.push(["Выбор между P.S. и настоящим продолженным P.C.","Вибір між P.S. та справжнім продовженим P.C.","Wybór pomiędzy P.S. i niniejszym kontynuuje P.C.","The choice between P.S. and the present continuation P.C."]),e.push([returnLevel18(),returnLevel18UA(),returnLevel18PL(),returnLevel18EN()]),e.push(["Простое настоящее  P.S. вопросы","Просте справжнє P.S. питання","Prosty prezent P.S. pytania","Simple present P.S. questions"]),e.push([returnLevel17(),returnLevel17UA(),returnLevel17PL(),returnLevel17EN()]),e.push(["Простое настоящее  P.S. негативное","Просте справжнє P.S. негативне","Prosty prezent P.S. negatywny","Simple present P.S. negative"]),e.push([returnLevel16(),returnLevel16UA(),returnLevel16PL(),returnLevel16EN()]),e.push(["Простое настоящее  P.S. плюс периодичность","Просте справжнє P.S. плюс періодичність","Prosty prezent P.S. plus częstotliwość","Simple present P.S. plus periodicity"]),e.push([returnLevel15(),returnLevel15UA(),returnLevel15PL(),returnLevel15EN()]),e.push(["Простое настоящее P.S.","Просте справжнє P.S.","Prosty prezent P.S.","Simple present P.S."]),e.push([returnLevel14(),returnLevel14UA(),returnLevel14PL(),returnLevel14EN()]),e.push(["Образования вопросов в настоящем продолженном времени P.C.","Утворення питань у поточному продовженому часі P.C.","Tworzenie pytań w czasie teraźniejszym ciągłym P.C.","Formation of questions in the present continuous tense P.C."]),e.push([returnLevel13(),returnLevel13UA(),returnLevel13PL(),returnLevel13EN()]),e.push(["Правило для настоящего продолженного времени (Present Continuous)","Правило для поточного часу (Present Continuous)","Reguła czasu teraźniejszego ciągłego","Rule for the Present Continuous"]),e.push([returnLevel11(),returnLevel11UA(),returnLevel11PL(),returnLevel11EN()]),e.push(["Создание вопросов в Present Simple и Past Simple","Створення питань у Present Simple та Past Simple","Tworzenie pytań w czasie Present Simple i Past Simple","Forming questions in Present Simple and Past Simple"]),e.push([returnLevel10(),returnLevel10UA(),returnLevel10PL(),returnLevel10EN()]),e.push(["Понятно","Зрозуміло","To jasne","It's clear"]),e.push(["Просто учим слова","Просто вчимо слова","Dopiero uczę się słówek","Just learning words"]),e.push(["Сокращенная форма глагола to Be","Скорочена форма дієслова","Krótka forma czasownika być","Shortened form of the verb to be"]),e.push(["Выбрать правильную пару.","Вибрати правильну пару.","Wybierz odpowiednią parę.","Choose the right pair."]),e.push(["Выбери верную форму глагола","Вибери правильну форму дієслова","Wybierz poprawną formę czasownika","Choose the correct form of the verb"]),e.push(["Вторая форма неправильных глаголов","Друга форма неправильних дієслів","Druga forma czasowników nieregularnych","The second form of irregular verbs"]),e.push(["Выбрать правильное время PS or PC","Вибрати правильне час PS or PC","Wybierz odpowiedni czas PS or PC","Choose the right time PS or PC"]),e.push(["Учить слова","Вчити слова","Ucz się słów","Learn words"]),e.push(["Подобрать правильно вопрос или ответ","Підібрати правильно питання чи відповідь","Wybierz właściwe pytanie lub odpowiedź","Choose the right question or answer"]),e.push(["Настоящее простое вопросы","Справжнє просте питання","Przedstaw proste pytania","Present simple questions"]),e.push(["Настоящее простое негативное","Справжнє просте негативне","Przedstaw prosty negatyw","Present simple negative"]),e.push(["300 глаголов","300 дієслів (RU)","300 czasowników (RU)","300 verbs (RU)"]),e.push(["50 глаголов","50 дієслів (RU/PL)","50 czasowników (RU/PL)","50 verbs (RU/PL)"]),e.push(["100 слов про спорт","100 слів про спорт (RU/PL)","100 słów o sporcie (RU/PL)","100 words about sports(RU/PL)"]),e.push(["Выберите правильно составленное предложение.","Виберіть правильно складену пропозицію.","Wybierz właściwe zdanie.","Choose the correctly constructed sentence."]),e.push(["Настоящее простое + периодичность","Справжнє просте + періодичність","Czas teraźniejszy prosty + okresowość","Present Simple + Periodicity"]),e.push(["Настоящее простое","Справжнє просте","Prezent prosty","Present simple"]),e.push(["Настоящее продолженное - вопрос","Справжнє продовжене – питання","Czas teraźniejszy ciągły – pytanie","Choose the right question"]),e.push(["Выбрать правильный вопрос","Вибрати правильне питання","Wybierz właściwe pytanie","Choose the right question"]),e.push(["Сообщить об ошибке","Повідомити про помилку","Zgłoś błąd","Report a bug"]),e.push(["Перевести вопрос","Перекласти питання","Przetłumacz pytanie","Translate question"]),e.push(["Выбрать правильный перевод","Вибрати правильний переклад","Wybierz właściwe tłumaczenie","Choose the correct translation"]),e.push(["100 слов о еде","100 слів про їжу","100 słów o jedzeniu","100 words about food"]),e.push(["100 слов о путешествии","100 слів про подорож (RU)","100 słów o podróżach (RU)","100 words about travel (RU)"]),e.push(["100 слов","100 слів (RU)","100 słów (RU)","100 words (RU)"]),e.push(["300 слов","300 слів (RU)","300 słów (RU)","300 words (RU)"]),e.push(["500 слов","500 слів (RU)","500 słów (RU)","500 words (RU)"]),e.push(["Настоящее продолженное","Присутній безперервний","Teraźniejszość ciągła","Present continuous"]),e.push(["Предыдущий вопрос/ответ","Попереднє запитання/відповідь","Poprzednie pytanie/odpowiedź","Previous question/answer"]),e.push(["Задание для теста","Завдання для тесту","Zadanie testowe","Task for the test"]),e.push(["Вопрос с вариантами ответа","Питання з варіантами відповіді","Pytanie wielokrotnego wyboru","Multiple choice question"]),e.push(["Выбрать тест.","Вибрати тест.","Wybierz test.","Select a test."]),e.push(["Where/Who...","Where/Who...","Where/Who...","Where/Who..."]),e.push(["Вставить правильное слово","Вставити правильне слово","Wstaw właściwe słowo","Insert the correct word"]),e.push(["To Be, ответь на вопрос","To Be, дай відповідь на запитання","Być, odpowiedz na pytanie","To Be, answer the question"]),e.push(["To Be, вопрос/ответ","To Be, питання/відповідь","Być, pytanie/odpowiedź","To Be, Q&A"]),e.push(["To Be, краткая форма","To Be, коротка форма","Być, krótka forma","To Be, short form"]),e.push(["Выбрать правильный вариант ответа","Вибрати правильний варіант відповіді","Wybierz poprawną odpowiedź","Choose the correct answer"]),e.push(["Сброс","Скидання","Resetowanie","Reset"]),e.push(["Выбрать правильный вариант сокращенной формы глагола to Be","Вибрати правильний варіант скороченої форми дієслова to Be","Wybierz poprawną wersję skróconej formy czasownika to Be","Choose the correct version of the shortened form of the verb to Be"]),e}class LanguageSelectorView{init(o){const a=o=="en"?"selected":"",r=o=="pl"?"selected":"",t=o=="ua"?"selected":"",s=o=="ru"?"selected":"";let i='<select id="languageSelect">';return i+=`<option ${a} id="selectEn"  value="en">EN</option>`,i+=`<option ${r} id="selectPl"  value="pl">PL</option>`,i+=`<option ${t} id="selectUa"  value="ua">UA</option>`,i+=`<option ${s} id="selectRu"  value="ru">RU</option>`,i+="</select>",i}}class LanguageController{constructor(){this.langStr=localStorage.getItem("EnglishWithJs_lang")||"ru"}translate(o){if(this.langStr==="ru")return o;let a="",r=3;switch(this.langStr){case"pl":r=2;break;case"ua":r=1;break}return a=o,exportBDTranslate().forEach(t=>{t[0]==o&&(a=t[r])}),a}init(){const o=new LanguageSelectorView,a=document.getElementById("button_lang_selected");a.innerHTML=o.init(this.langStr),document.getElementById("languageSelect").onchange=function(r){const t=r.target.value;localStorage.setItem("EnglishWithJs_lang",t)}}}class FactoryRegistr{static factoryArray={};static addObject(e,o){FactoryRegistr.factoryArray[e]=o}static getObject(nameClass,property=!1){if(nameClass in FactoryRegistr.factoryArray)return FactoryRegistr.factoryArray[nameClass];const className=eval(nameClass);let obj="";return property?obj=new className(...property):obj=new className,FactoryRegistr.addObject(nameClass,obj),obj}}function daimentInfo(){let e;const o=FactoryRegistr.getObject("LanguageController");let a=setInterval(()=>{typeof returnInfoForDiamant=="function"&&typeof o=="object"&&(e=o.translate(returnInfoForDiamant()),document.body.insertAdjacentHTML("beforeend",e),clearInterval(a))},100)}daimentInfo();window.languageSelectorView=new LanguageSelectorView;window.BDTranslate=exportBDTranslate();window.LanguageController=new LanguageController;window.FactoryRegistr=FactoryRegistr;
