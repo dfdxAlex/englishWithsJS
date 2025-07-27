@@ -1,0 +1,24 @@
+.modal-container {
+    display: block; 
+    background-color: rgba(0,0,0,0.5);
+    > div:first-of-type { // первый див внутри класса modal-container
+        max-width: 600px; 
+        margin: 10% auto;
+        > div:first-of-type { // первый див внутри предыдущего дива
+            border-radius: 12px; 
+            padding: 20px; 
+            font-family: sans-serif;
+            > div:first-of-type { // первый див внутри предыдущего дива
+                color: #333;
+                text-align: left;
+                > h5:first-of-type {  // первый h5 внутри предыдущего дива
+                    margin-bottom: 16px;
+                }
+            }
+            > div:nth-of-type(3) {   // третий див внутри предыдущего дива
+                border-top: none; 
+                text-align: right;
+            }
+        }
+    }
+}

@@ -1,5 +1,15 @@
-function nav()
+import { helpForHomeMenuRU } from './help/helpForHomeMenuRU.js';
+import { Help } from './Help.js';
+
+export function nav()
 {
+    setTimeout(() => {
+      document.getElementById('button-help-video').addEventListener('click', () => { 
+        Help.viewhandleHelpToTranslate(helpForHomeMenuRU(),'vkQYDmiTlmQ');
+      });
+      
+    }, 0);
+
     document.getElementById('nav').innerHTML = `
      <nav class="navbar navbar-expand-sm navbar-light bg-light" id="first-teg-nav-for-nav">
     <div class="container-fluid" id="nav-first-div">
@@ -9,7 +19,7 @@ function nav()
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li id="helpVideo">
-            <button onclick = "Help.viewhandleHelpToTranslate(helpForHomeMenuRU(),'vkQYDmiTlmQ')" type = "button" class="fs-6 text-primary mb-3 button-help">&#10067;</button>
+            <button id="button-help-video" type = "button" class="fs-6 text-primary mb-3 button-help">&#10067;</button>
           </li>
           <li class="nav-item" id="nav-item-burger">
             <div class="nav-link" id="burger"></div>

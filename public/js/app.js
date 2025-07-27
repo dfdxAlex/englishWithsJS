@@ -2,8 +2,9 @@
 // Описывается событие загрузки документа
 window.onload = () => {
     diament();
-    nav();
-    htmlOldQuestions();
+    // nav();
+    window.nav;
+    // htmlOldQuestions();
     htmlHelp();
     buttonSound();
 
