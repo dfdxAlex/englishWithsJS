@@ -1,4 +1,4 @@
-(function(){const o=document.createElement("link").relList;if(o&&o.supports&&o.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))r(t);new MutationObserver(t=>{for(const s of t)if(s.type==="childList")for(const i of s.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&r(i)}).observe(document,{childList:!0,subtree:!0});function a(t){const s={};return t.integrity&&(s.integrity=t.integrity),t.referrerPolicy&&(s.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?s.credentials="include":t.crossOrigin==="anonymous"?s.credentials="omit":s.credentials="same-origin",s}function r(t){if(t.ep)return;t.ep=!0;const s=a(t);fetch(t.href,s)}})();function returnInfoUnit22EN(){return`
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const o of document.querySelectorAll('link[rel="modulepreload"]'))a(o);new MutationObserver(o=>{for(const r of o)if(r.type==="childList")for(const i of r.addedNodes)i.tagName==="LINK"&&i.rel==="modulepreload"&&a(i)}).observe(document,{childList:!0,subtree:!0});function s(o){const r={};return o.integrity&&(r.integrity=o.integrity),o.referrerPolicy&&(r.referrerPolicy=o.referrerPolicy),o.crossOrigin==="use-credentials"?r.credentials="include":o.crossOrigin==="anonymous"?r.credentials="omit":r.credentials="same-origin",r}function a(o){if(o.ep)return;o.ep=!0;const r=s(o);fetch(o.href,r)}})();function returnInfoUnit22EN(){return`
       <div class="modal-body" style="color: #333; font-family: sans-serif; padding: 24px;">
         <h4 style="margin-bottom: 16px;">Passive Voice: <code>is being done</code> and <code>has been done</code></h4>
 
@@ -5876,15 +5876,15 @@
         Скорочена форма часто використовується в розмовній мові та неформальній письмовій мові.
     </p>
 </div>`}function helpForProgramRU(){return`
-    <div class="modal" tabindex="-1" id="infoModal" style="display: block; background-color: rgba(0,0,0,0.5);">
-      <div class="modal-dialog" style="max-width: 600px; margin: 10% auto;">
-        <div class="modal-content" style="border-radius: 12px; padding: 20px; font-family: sans-serif;">
-          <div class="modal-body" style="color: #333;">
-            <h5 style="margin-bottom: 16px;">Учим английский</h5>
+    <div class="modal help-for-program-ru" tabindex="-1" id="infoModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h5>Учим английский</h5>
           </div>
           <div id='video-help'></div>
-          <div class="modal-footer" style="border-top: none; text-align: right;">
-            <button type="button" class="btn btn-primary" onclick="document.getElementById('infoModal').style.display='none';">
+          <div class="modal-footer">
+            <button id="button-close-info-modal" type="button" class="btn btn-primary">
               Закрыть
             </button>
           </div>
@@ -5892,15 +5892,15 @@
       </div>
     </div>    
     `}function helpForProgramPL(){return`
-    <div class="modal" tabindex="-1" id="infoModal" style="display: block; background-color: rgba(0,0,0,0.5);">
-      <div class="modal-dialog" style="max-width: 600px; margin: 10% auto;">
-        <div class="modal-content" style="border-radius: 12px; padding: 20px; font-family: sans-serif;">
-          <div class="modal-body" style="color: #333;">
-            <h5 style="margin-bottom: 16px;">Ucz się angielskiego</h5>
+    <div class="modal" tabindex="-1" id="infoModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h5>Ucz się angielskiego</h5>
           </div>
           <div id='video-help'></div>
-          <div class="modal-footer" style="border-top: none; text-align: right;">
-            <button type="button" class="btn btn-primary" onclick="document.getElementById('infoModal').style.display='none';">
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="button-close-info-modal">
               Zamknąć
             </button>
           </div>
@@ -5908,15 +5908,15 @@
       </div>
     </div>    
     `}function helpForProgramUA(){return`
-    <div class="modal" tabindex="-1" id="infoModal" style="display: block; background-color: rgba(0,0,0,0.5);">
-      <div class="modal-dialog" style="max-width: 600px; margin: 10% auto;">
-        <div class="modal-content" style="border-radius: 12px; padding: 20px; font-family: sans-serif;">
-          <div class="modal-body" style="color: #333;">
-            <h5 style="margin-bottom: 16px;">Вчимо англійську</h5>
+    <div class="modal" tabindex="-1" id="infoModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h5>Вчимо англійську</h5>
           </div>
           <div id='video-help'></div>
-          <div class="modal-footer" style="border-top: none; text-align: right;">
-            <button type="button" class="btn btn-primary" onclick="document.getElementById('infoModal').style.display='none';">
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="button-close-info-modal">
               Закрити
             </button>
           </div>
@@ -5924,15 +5924,15 @@
       </div>
     </div>    
     `}function helpForProgramEN(){return`
-    <div class="modal" tabindex="-1" id="infoModal" style="display: block; background-color: rgba(0,0,0,0.5);">
-      <div class="modal-dialog" style="max-width: 600px; margin: 10% auto;">
-        <div class="modal-content" style="border-radius: 12px; padding: 20px; font-family: sans-serif;">
-          <div class="modal-body" style="color: #333;">
-            <h5 style="margin-bottom: 16px;">Learn English</h5>
+    <div class="modal" tabindex="-1" id="infoModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h5>Learn English</h5>
           </div>
           <div id='video-help'></div>
-          <div class="modal-footer" style="border-top: none; text-align: right;">
-            <button type="button" class="btn btn-primary" onclick="document.getElementById('infoModal').style.display='none';">
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="button-close-info-modal">
               Close
             </button>
           </div>
@@ -5940,11 +5940,11 @@
       </div>
     </div>    
     `}function helpForHomeMenuRU(){return`
-    <div class="modal" tabindex="-1" id="infoModal" style="display: block; background-color: rgba(0,0,0,0.5);">
-      <div class="modal-dialog" style="max-width: 600px; margin: 10% auto;">
-        <div class="modal-content" style="border-radius: 12px; padding: 20px; font-family: sans-serif;">
-          <div class="modal-body" style="color: #333;">
-            <h5 style="margin-bottom: 16px;">Навигация по разделам</h5>
+    <div class="modal modal-container" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div>
+            <h5>Навигация по разделам</h5>
             <p><strong>Первый пункт меню</strong> — выбор теста по грамматике.</p>
             <p><strong>Второй пункт меню</strong> — выбор тестов для изучения слов.</p>
             <p><strong>Третий пункт меню</strong> — <em>помощь</em>. Здесь можно найти как информацию о сути задания, так и грамматические правила по теме теста.</p>
@@ -5952,8 +5952,8 @@
             <p><strong>Раздел "Setting"</strong> — выбор типа теста.</p>
           </div>
           <div id='video-help'></div>
-          <div class="modal-footer" style="border-top: none; text-align: right;">
-            <button type="button" class="btn btn-primary" onclick="document.getElementById('infoModal').style.display='none';">
+          <div class="modal-footer">
+            <button id="button-close-info-modal" type="button" class="btn btn-primary">
               Закрыть
             </button>
           </div>
@@ -5961,11 +5961,11 @@
       </div>
     </div>    
     `}function helpForHomeMenuUA(){return`
-    <div class="modal" tabindex="-1" id="infoModal" style="display: block; background-color: rgba(0,0,0,0.5);">
-      <div class="modal-dialog" style="max-width: 600px; margin: 10% auto;">
-        <div class="modal-content" style="border-radius: 12px; padding: 20px; font-family: sans-serif;">
-          <div class="modal-body" style="color: #333;">
-            <h5 style="margin-bottom: 16px;">Навігація по розділах</h5>
+    <div class="modal modal-container" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h5>Навігація по розділах</h5>
             <p><strong>Перший пункт меню</strong> — вибір тесту з граматики.</p>
             <p><strong>Другий пункт меню</strong> — вибір тестів для вивчення слів.</p>
             <p><strong>Третій пункт меню</strong> — <em>допомога</em>. Тут можна знайти як інформацію про суть завдання, так і граматичні правила за темою тесту.</p>
@@ -5973,8 +5973,8 @@
             <p><strong>Розділ "Setting"</strong> — вибір типу тесту.</p>
           </div>
           <div id='video-help'></div>
-          <div class="modal-footer" style="border-top: none; text-align: right;">
-            <button type="button" class="btn btn-primary" onclick="document.getElementById('infoModal').style.display='none';">
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" id="button-close-info-modal">
               Закрити
             </button>
           </div>
@@ -5982,11 +5982,11 @@
       </div>
     </div>
     `}function helpForHomeMenuPL(){return`
-    <div class="modal" tabindex="-1" id="infoModal" style="display: block; background-color: rgba(0,0,0,0.5);">
-      <div class="modal-dialog" style="max-width: 600px; margin: 10% auto;">
-        <div class="modal-content" style="border-radius: 12px; padding: 20px; font-family: sans-serif;">
-          <div class="modal-body" style="color: #333;">
-            <h5 style="margin-bottom: 16px;">Nawigacja po sekcjach</h5>
+    <div class="modal modal-container" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h5>Nawigacja po sekcjach</h5>
             <p><strong>Pierwszy element menu</strong> — wybór testu gramatycznego.</p>
             <p><strong>Drugi element menu</strong> — wybór testów do nauki słówek.</p>
             <p><strong>Trzeci element menu</strong> — <em>pomoc</em>. Znajdziesz tu zarówno informacje o zadaniu, jak i zasady gramatyczne związane z tematem testu.</p>
@@ -5994,8 +5994,8 @@
             <p><strong>Sekcja "Setting"</strong> — wybór typu testu.</p>
           </div>
           <div id='video-help'></div>
-          <div class="modal-footer" style="border-top: none; text-align: right;">
-            <button type="button" class="btn btn-primary" onclick="document.getElementById('infoModal').style.display='none';">
+          <div class="modal-footer">
+            <button id="button-close-info-modal" type="button" class="btn btn-primary">
               Zamknij
             </button>
           </div>
@@ -6003,11 +6003,11 @@
       </div>
     </div>
     `}function helpForHomeMenuEN(){return`
-    <div class="modal" tabindex="-1" id="infoModal" style="display: block; background-color: rgba(0,0,0,0.5);">
-      <div class="modal-dialog" style="max-width: 600px; margin: 10% auto;">
-        <div class="modal-content" style="border-radius: 12px; padding: 20px; font-family: sans-serif;">
-          <div class="modal-body" style="color: #333;">
-            <h5 style="margin-bottom: 16px;">Navigation Guide</h5>
+    <div class="modal modal-container" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h5>Navigation Guide</h5>
             <p><strong>First menu item</strong> — lets you choose a grammar test.</p>
             <p><strong>Second menu item</strong> — allows you to select vocabulary tests.</p>
             <p><strong>Third menu item</strong> — <em>help section</em>. Here, you can find both an explanation of the task and grammar rules related to the test topic.</p>
@@ -6015,8 +6015,8 @@
             <p><strong>"Setting" section</strong> — allows you to choose the type of test.</p>
           </div>
           <div id='video-help'></div>
-          <div class="modal-footer" style="border-top: none; text-align: right;">
-            <button type="button" class="btn btn-primary" onclick="document.getElementById('infoModal').style.display='none';">
+          <div class="modal-footer">
+            <button id="button-close-info-modal" type="button" class="btn btn-primary">
               Close
             </button>
           </div>
@@ -6024,24 +6024,14 @@
       </div>
     </div>
     `}function helpForGreenPoleOneUA(){return`
-    <div id='modalOverlay' style='position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-     background: rgba(0, 0, 0, 0.5); z-index: 9998;' onclick='document.getElementById("modalOverlay").remove(); document.getElementById("modalBox").remove();'></div>
-
-    <div class = "help-for-green-pole-one" id='modalBox' style='position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
-        background: white; border: 1px solid #ccc; border-radius: 12px; padding: 24px;
-        width: 90%; max-width: 520px; z-index: 9999;
-        box-shadow: 0 6px 24px rgba(0,0,0,0.25); font-family: sans-serif;
-        line-height: 1.6; color: #333;'>
-
-      <h2 style='margin-top: 0; font-size: 1.5rem; color: #222;'>
+    <div class="help-for-green-pole-one" id='modalBox'>
+      <h2>
         Чому переклад не завжди точний?
       </h2>
-
-      <p style='margin-bottom: 12px;'>
+      <p>
         Масив з даними для тесту складається з наступних елементів:
       </p>
-
-      <ul style='padding-left: 20px; margin: 0;'>
+      <ul>
         <li><strong>0</strong> — пункт (запитання)</li>
         <li><strong>1</strong> — правильна пара до пункту 0</li>
         <li><strong>2</strong> — неправильна пара до пункту 0</li>
@@ -6051,97 +6041,65 @@
         <li><strong>6</strong> — переклад пункту 0 російською</li>
         <li><strong>7</strong> — переклад пункту 0 польською</li>
       </ul>
-
-      <p style='margin-top: 16px;'>
+      <p>
         У тестах з розбором речення на слова, речення можуть братися не тільки з елемента з індексом <strong>0</strong>,
         але й з елементів <strong>1</strong>, <strong>2</strong>, <strong>3</strong> або <strong>4</strong>.
         При цьому <strong>точний переклад</strong> зберігається <u>лише для елемента з індексом 0</u>.
       </p>
-
       <p>
         Тому якщо у завданні використано речення з іншого елемента,
         переклад лише передає <em>загальний зміст</em>, а не дослівне значення.
       </p>
       <div id='video-help'></div>
-      <div style='text-align: right; margin-top: 20px;'>
-        <button onclick='document.getElementById("modalBox").remove(); document.getElementById("modalOverlay").remove();'
-                style='background: #007BFF; color: white; border: none;
-                       padding: 10px 20px; border-radius: 6px; font-size: 1rem;
-                       cursor: pointer;'>
+      <div>
+        <button id="button-close-info-modal">
           Зрозуміло
         </button>
       </div>
     </div>
     `}function helpForGreenPoleOneRU(e){return`
-    <div id='modalOverlay' style='position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-     background: rgba(0, 0, 0, 0.5); z-index: 9998;' onclick='document.getElementById("modalOverlay").remove(); document.getElementById("modalBox").remove();'></div>
-
-    <div class = "help-for-green-pole-one" id='modalBox' style='position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
-        background: white; border: 1px solid #ccc; border-radius: 12px; padding: 24px;
-        width: 90%; max-width: 520px; z-index: 9999;
-        box-shadow: 0 6px 24px rgba(0,0,0,0.25); font-family: sans-serif;
-        line-height: 1.6; color: #333;'>
-
-      <h2 style='margin-top: 0; font-size: 1.5rem; color: #222;'>
-        Почему перевод не всегда точный?
-      </h2>
-
-      <p style='margin-bottom: 12px;'>
-        Массив с данными по тесту состоит из следующих элементов:
-      </p>
-
-      <ul style='padding-left: 20px; margin: 0;'>
-        <li><strong>0</strong> — пункт (вопрос)</li>
-        <li><strong>1</strong> — правильная пара к пункту 0</li>
-        <li><strong>2</strong> — неверная пара к пункту 0</li>
-        <li><strong>3</strong> — неверная пара к пункту 0</li>
-        <li><strong>4</strong> — неверная пара к пункту 0</li>
-        <li><strong>5</strong> — перевод пункта 0 на русский язык</li>
-        <li><strong>6</strong> — перевод пункта 0 на украинский язык</li>
-        <li><strong>7</strong> — перевод пункта 0 на польский язык</li>
-      </ul>
-
-      <p style='margin-top: 16px;'>
-        На тестах с разборкой предложения на слова, предложения могут браться не только из элемента с индексом <strong>0</strong>,
-        но и из элементов <strong>1</strong>, <strong>2</strong>, <strong>3</strong> или <strong>4</strong>.
-        При этом <strong>точный перевод</strong> хранится <u>только для элемента с индексом 0</u>.
-      </p>
-
-      <p>
-        Поэтому если в задании используется предложение из любого другого элемента,
-        перевод будет отражать <em>лишь общий смысл</em>, а не дословное значение.
-      </p>
-
-      <div id='video-help'></div>
-
-      <div style='text-align: right; margin-top: 20px;'>
-        <button onclick='document.getElementById("modalBox").remove(); document.getElementById("modalOverlay").remove();'
-                style='background: #007BFF; color: white; border: none;
-                       padding: 10px 20px; border-radius: 6px; font-size: 1rem;
-                       cursor: pointer;'>
-          Понятно
-        </button>
+    <div class="help-for-green-pole-one" id='modalBox'>
+        <h2>
+          Почему перевод не всегда точный?
+        </h2>
+        <p>
+          Массив с данными по тесту состоит из следующих элементов:
+        </p>
+        <ul>
+            <li><strong>0</strong> — пункт (вопрос)</li>
+            <li><strong>1</strong> — правильная пара к пункту 0</li>
+            <li><strong>2</strong> — неверная пара к пункту 0</li>
+            <li><strong>3</strong> — неверная пара к пункту 0</li>
+            <li><strong>4</strong> — неверная пара к пункту 0</li>
+            <li><strong>5</strong> — перевод пункта 0 на русский язык</li>
+            <li><strong>6</strong> — перевод пункта 0 на украинский язык</li>
+            <li><strong>7</strong> — перевод пункта 0 на польский язык</li>
+        </ul>
+        <p>
+            На тестах с разборкой предложения на слова, предложения могут браться не только из элемента с индексом <strong>0</strong>,
+            но и из элементов <strong>1</strong>, <strong>2</strong>, <strong>3</strong> или <strong>4</strong>.
+            При этом <strong>точный перевод</strong> хранится <u>только для элемента с индексом 0</u>.
+        </p>
+        <p>
+            Поэтому если в задании используется предложение из любого другого элемента,
+            перевод будет отражать <em>лишь общий смысл</em>, а не дословное значение.
+        </p>
+        <div id='video-help'></div>
+        <div>
+            <button id="button-close-info-modal">
+              Понятно
+            </button>
+        </div>
       </div>
-    </div>
-    `}function helpForGreenPoleOnePL(){return`
-    <div id='modalOverlay' style='position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-     background: rgba(0, 0, 0, 0.5); z-index: 9998;' onclick='document.getElementById("modalOverlay").remove(); document.getElementById("modalBox").remove();'></div>
-
-    <div class = "help-for-green-pole-one" id='modalBox' style='position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
-        background: white; border: 1px solid #ccc; border-radius: 12px; padding: 24px;
-        width: 90%; max-width: 520px; z-index: 9999;
-        box-shadow: 0 6px 24px rgba(0,0,0,0.25); font-family: sans-serif;
-        line-height: 1.6; color: #333;'>
-
-      <h2 style='margin-top: 0; font-size: 1.5rem; color: #222;'>
+      `}function helpForGreenPoleOnePL(){return`
+    <div class="help-for-green-pole-one" id='modalBox'>
+      <h2>
         Dlaczego tłumaczenie nie zawsze jest dokładne?
       </h2>
-
-      <p style='margin-bottom: 12px;'>
+      <p>
         Tablica z danymi testowymi składa się z następujących elementów:
       </p>
-
-      <ul style='padding-left: 20px; margin: 0;'>
+      <ul>
         <li><strong>0</strong> — punkt (pytanie)</li>
         <li><strong>1</strong> — poprawna para do punktu 0</li>
         <li><strong>2</strong> — błędna para do punktu 0</li>
@@ -6151,46 +6109,31 @@
         <li><strong>6</strong> — tłumaczenie punktu 0 na język ukraiński</li>
         <li><strong>7</strong> — tłumaczenie punktu 0 na język polski</li>
       </ul>
-
-      <p style='margin-top: 16px;'>
+      <p>
         W testach z rozbiciem zdania na słowa, zdania mogą pochodzić nie tylko z elementu o indeksie <strong>0</strong>,
         ale także z elementów <strong>1</strong>, <strong>2</strong>, <strong>3</strong> lub <strong>4</strong>.
         Jedynie <strong>punkt 0</strong> zawiera <u>dokładne tłumaczenie</u>.
       </p>
-
       <p>
         Dlatego jeśli zadanie zawiera zdanie z innego elementu niż 0,
         tłumaczenie będzie odzwierciedlać jedynie <em>ogólny sens</em>, a nie dosłowne znaczenie.
       </p>
       <div id='video-help'></div>
-      <div style='text-align: right; margin-top: 20px;'>
-        <button onclick='document.getElementById("modalBox").remove(); document.getElementById("modalOverlay").remove();'
-                style='background: #007BFF; color: white; border: none;
-                       padding: 10px 20px; border-radius: 6px; font-size: 1rem;
-                       cursor: pointer;'>
+      <div>
+        <button id="button-close-info-modal">
           Rozumiem
         </button>
       </div>
     </div>
     `}function helpForGreenPoleOneEN(){return`
-        <div id='modalOverlay' style='position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-         background: rgba(0, 0, 0, 0.5); z-index: 9998;' onclick='document.getElementById("modalOverlay").remove(); document.getElementById("modalBox").remove();'></div>
-    
-        <div class = "help-for-green-pole-one" id='modalBox' style='position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
-            background: white; border: 1px solid #ccc; border-radius: 12px; padding: 24px;
-            width: 90%; max-width: 520px; z-index: 9999;
-            box-shadow: 0 6px 24px rgba(0,0,0,0.25); font-family: sans-serif;
-            line-height: 1.6; color: #333;'>
-    
-          <h2 style='margin-top: 0; font-size: 1.5rem; color: #222;'>
+        <div class = "help-for-green-pole-one" id='modalBox'>
+          <h2>
             Why is the translation not always accurate?
           </h2>
-    
-          <p style='margin-bottom: 12px;'>
+          <p>
             The test data table consists of the following elements:
           </p>
-    
-          <ul style='padding-left: 20px; margin: 0;'>
+          <ul>
             <li><strong>0</strong> — point (question)</li>
             <li><strong>1</strong> — correct pair to point 0</li>
             <li><strong>2</strong> — incorrect pair to point 0</li>
@@ -6200,25 +6143,100 @@
             <li><strong>6</strong> — translation of point 0 to Ukrainian</li>
             <li><strong>7</strong> — translation of point 0 to Polish</li>
           </ul>
-    
-          <p style='margin-top: 16px;'>
+          <p>
             In tests with sentence breakdowns, the sentences may come not only from the element with index <strong>0</strong>,
             but also from elements <strong>1</strong>, <strong>2</strong>, <strong>3</strong>, or <strong>4</strong>.
             Only <strong>point 0</strong> contains the <u>exact translation</u>.
           </p>
-    
           <p>
             Therefore, if the task contains a sentence from an element other than 0,
             the translation will reflect only the <em>general meaning</em>, not the literal meaning.
           </p>
           <div id='video-help'></div>
-          <div style='text-align: right; margin-top: 20px;'>
-            <button onclick='document.getElementById("modalBox").remove(); document.getElementById("modalOverlay").remove();'
-                    style='background: #007BFF; color: white; border: none;
-                           padding: 10px 20px; border-radius: 6px; font-size: 1rem;
-                           cursor: pointer;'>
+          <div>
+            <button id="button-close-info-modal">
               I Understand
             </button>
           </div>
         </div>
-        `}function exportBDTranslate(){const e=[];return e.push(["","","",""]),e.push(["be/have/do in present and past tenses","be/have/do in present and past tenses","be/have/do in present and past tenses","be/have/do in present and past tenses"]),e.push([returnInfoUnit22RU(),returnInfoUnit22UA(),returnInfoUnit22PL(),returnInfoUnit22EN()]),e.push([helpForProgramRU(),helpForProgramUA(),helpForProgramPL(),helpForProgramEN()]),e.push([helpForHomeMenuRU(),helpForHomeMenuUA(),helpForHomeMenuPL(),helpForHomeMenuEN()]),e.push([helpForGreenPoleOneRU(),helpForGreenPoleOneUA(),helpForGreenPoleOnePL(),helpForGreenPoleOneEN()]),e.push([returnLevel42(),returnLevel42UA(),returnLevel42PL(),returnLevel42EN()]),e.push(["Речь примерно о:","Мова приблизно про:","Mówimy o:","We are talking approximately about:"]),e.push([returnLevel40(),returnLevel40UA(),returnLevel40PL(),returnLevel40EN()]),e.push(["Последний ответ здесь","Остання відповідь тут","Najnowsza odpowiedź tutaj","The last answer is here"]),e.push(["Предыдущий вопрос здесь","Попереднє питання тут","Poprzednie pytanie tutaj","Previous question here"]),e.push([returnLevel39(),returnLevel39UA(),returnLevel39PL(),returnLevel39EN()]),e.push([returnLevel38(),returnLevel38UA(),returnLevel38PL(),returnLevel38EN()]),e.push([returnLevel37(),returnLevel37UA(),returnLevel37PL(),returnLevel37EN()]),e.push(["В этом тесте нужно собрать предложение из предложенных слов. Имейте в виду, что иногда собранное предложение может не совпадать с общей темой теста.","У цьому тесті потрібно зібрати пропозицію із запропонованих слів. Майте на увазі, що інколи зібрана пропозиція може не співпадати із загальною темою тесту.","W tym teście musisz ułożyć zdanie z podanych słów. Pamiętaj, że czasami zebrane zdanie może nie pokrywać się z ogólnym tematem testu.","In this test you need to assemble a sentence from the given words. Keep in mind that sometimes the assembled sentence may not match the general topic of the test."]),e.push(["(может отличаться)","(може відрізнятися)","(może się różnić)","(may differ)"]),e.push([returnLevel20(),returnLevel20UA(),returnLevel20PL(),returnLevel20EN()]),e.push([returnLevel36(),returnLevel36UA(),returnLevel36PL(),returnLevel36EN()]),e.push([returnInfoForDiamant$1(),returnInfoForDiamantUA(),returnInfoForDiamantPL(),returnInfoForDiamantEN()]),e.push([returnLevel35(),returnLevel35UA(),returnLevel35PL(),returnLevel35EN()]),e.push([returnLevel34(),returnLevel34UA(),returnLevel34PL(),returnLevel34EN()]),e.push(["Вставьте глагол вместо троеточия или подберите правильное предложение в продолженном прошедшем времени.","Вставте дієслово замість три крапки або підберіть правильну пропозицію в минулому часі.","Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym ciągłym.","Insert a verb instead of the ellipsis or choose the correct sentence in the past continuous tense."]),e.push([returnLevel33(),returnLevel33UA(),returnLevel33PL(),returnLevel33EN()]),e.push([returnLevel32(),returnLevel32UA(),returnLevel32PL(),returnLevel32EN()]),e.push(["Past Simple отрицательные и вопросы","Past Simple негативні та питання","Past Simple przeczenia i pytania","Past Simple Negative and Questions"]),e.push(["Вставьте глагол вместо троеточия или подберите правильное предложение в простом прошедшем времени.","Вставте дієслово замість три крапки або підберіть правильну пропозицію в простому часі.","Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym prostym.","Insert a verb instead of the ellipsis or choose the correct sentence in the simple past tense."]),e.push([returnLevel31(),returnLevel31UA(),returnLevel31PL(),returnLevel31EN()]),e.push(["Подобрать пару правильный - неправильный глагол. Тест разбавлен небольшим числом правильных глаголов.","Підібрати пару правильне - неправильне дієслово. Тест розбавлений невеликою кількістю правильних дієслів.","Dopasuj właściwy czasownik nieregularny. Test jest rozcieńczany niewielką liczbą czasowników regularnych.","Match a pair of regular and irregular verbs. The test is diluted with a small number of regular verbs."]),e.push(["Прошедшее простое","Минуле просте","Przeszłość prosta","Past simple"]),e.push(["Помощь","Допомога","Pomoc","Help"]),e.push(["Теория:","Теорія:","Teoria:","Theory:"]),e.push(["Задание теста:","Завдання тесту:","Zadanie testowe:","Test task:"]),e.push(["Переводов:","Перекладів:","Tłumaczenia:","Translations:"]),e.push(["Успех:","Успіх:","Sukces:","Success:"]),e.push(["Ошибок:","Помилок:","Błędy:","Errors:"]),e.push(["Статистика","Статистика","Statystyka","Statistics"]),e.push(["Собрано алмазов:","Зібрано алмазів:","Zebrane diamenty:","Diamonds collected:"]),e.push(["Глаголы Was и Were","Глаголи Was і Were","Czasowniki Was i Were","Verbs Was and Were"]),e.push([returnLevel23(),returnLevel23UA(),returnLevel23PL(),returnLevel23EN()]),e.push(["Упс. Кто-то уже сообщил об этой ошибке.","Упс. Хтось уже повідомив про цю помилку.","Ups. Ktoś już zgłosił ten błąd.","Oops. Someone already reported this bug."]),e.push(["Ошибка зафиксирована","Помилка зафіксована","Zapisano błąd","Error recorded"]),e.push([returnLevel21(),returnLevel21UA(),returnLevel21PL(),returnLevel21EN()]),e.push(["Глаголы Have и Have Got","Дієслова Have та Have Got","Czasowniki Have i Have Got","The verbs Have and Have Got"]),e.push([returnLevel19(),returnLevel19UA(),returnLevel19PL(),returnLevel19EN()]),e.push(["Выбор между P.S. и настоящим продолженным P.C.","Вибір між P.S. та справжнім продовженим P.C.","Wybór pomiędzy P.S. i niniejszym kontynuuje P.C.","The choice between P.S. and the present continuation P.C."]),e.push([returnLevel18(),returnLevel18UA(),returnLevel18PL(),returnLevel18EN()]),e.push(["Простое настоящее  P.S. вопросы","Просте справжнє P.S. питання","Prosty prezent P.S. pytania","Simple present P.S. questions"]),e.push([returnLevel17(),returnLevel17UA(),returnLevel17PL(),returnLevel17EN()]),e.push(["Простое настоящее  P.S. негативное","Просте справжнє P.S. негативне","Prosty prezent P.S. negatywny","Simple present P.S. negative"]),e.push([returnLevel16(),returnLevel16UA(),returnLevel16PL(),returnLevel16EN()]),e.push(["Простое настоящее  P.S. плюс периодичность","Просте справжнє P.S. плюс періодичність","Prosty prezent P.S. plus częstotliwość","Simple present P.S. plus periodicity"]),e.push([returnLevel15(),returnLevel15UA(),returnLevel15PL(),returnLevel15EN()]),e.push(["Простое настоящее P.S.","Просте справжнє P.S.","Prosty prezent P.S.","Simple present P.S."]),e.push([returnLevel14(),returnLevel14UA(),returnLevel14PL(),returnLevel14EN()]),e.push(["Образования вопросов в настоящем продолженном времени P.C.","Утворення питань у поточному продовженому часі P.C.","Tworzenie pytań w czasie teraźniejszym ciągłym P.C.","Formation of questions in the present continuous tense P.C."]),e.push([returnLevel13(),returnLevel13UA(),returnLevel13PL(),returnLevel13EN()]),e.push(["Правило для настоящего продолженного времени (Present Continuous)","Правило для поточного часу (Present Continuous)","Reguła czasu teraźniejszego ciągłego","Rule for the Present Continuous"]),e.push([returnLevel11(),returnLevel11UA(),returnLevel11PL(),returnLevel11EN()]),e.push(["Создание вопросов в Present Simple и Past Simple","Створення питань у Present Simple та Past Simple","Tworzenie pytań w czasie Present Simple i Past Simple","Forming questions in Present Simple and Past Simple"]),e.push([returnLevel10(),returnLevel10UA(),returnLevel10PL(),returnLevel10EN()]),e.push(["Понятно","Зрозуміло","To jasne","It's clear"]),e.push(["Просто учим слова","Просто вчимо слова","Dopiero uczę się słówek","Just learning words"]),e.push(["Сокращенная форма глагола to Be","Скорочена форма дієслова","Krótka forma czasownika być","Shortened form of the verb to be"]),e.push(["Выбрать правильную пару.","Вибрати правильну пару.","Wybierz odpowiednią parę.","Choose the right pair."]),e.push(["Выбери верную форму глагола","Вибери правильну форму дієслова","Wybierz poprawną formę czasownika","Choose the correct form of the verb"]),e.push(["Вторая форма неправильных глаголов","Друга форма неправильних дієслів","Druga forma czasowników nieregularnych","The second form of irregular verbs"]),e.push(["Выбрать правильное время PS or PC","Вибрати правильне час PS or PC","Wybierz odpowiedni czas PS or PC","Choose the right time PS or PC"]),e.push(["Учить слова","Вчити слова","Ucz się słów","Learn words"]),e.push(["Подобрать правильно вопрос или ответ","Підібрати правильно питання чи відповідь","Wybierz właściwe pytanie lub odpowiedź","Choose the right question or answer"]),e.push(["Настоящее простое вопросы","Справжнє просте питання","Przedstaw proste pytania","Present simple questions"]),e.push(["Настоящее простое негативное","Справжнє просте негативне","Przedstaw prosty negatyw","Present simple negative"]),e.push(["300 глаголов","300 дієслів (RU)","300 czasowników (RU)","300 verbs (RU)"]),e.push(["50 глаголов","50 дієслів (RU/PL)","50 czasowników (RU/PL)","50 verbs (RU/PL)"]),e.push(["100 слов про спорт","100 слів про спорт (RU/PL)","100 słów o sporcie (RU/PL)","100 words about sports(RU/PL)"]),e.push(["Выберите правильно составленное предложение.","Виберіть правильно складену пропозицію.","Wybierz właściwe zdanie.","Choose the correctly constructed sentence."]),e.push(["Настоящее простое + периодичность","Справжнє просте + періодичність","Czas teraźniejszy prosty + okresowość","Present Simple + Periodicity"]),e.push(["Настоящее простое","Справжнє просте","Prezent prosty","Present simple"]),e.push(["Настоящее продолженное - вопрос","Справжнє продовжене – питання","Czas teraźniejszy ciągły – pytanie","Choose the right question"]),e.push(["Выбрать правильный вопрос","Вибрати правильне питання","Wybierz właściwe pytanie","Choose the right question"]),e.push(["Сообщить об ошибке","Повідомити про помилку","Zgłoś błąd","Report a bug"]),e.push(["Перевести вопрос","Перекласти питання","Przetłumacz pytanie","Translate question"]),e.push(["Выбрать правильный перевод","Вибрати правильний переклад","Wybierz właściwe tłumaczenie","Choose the correct translation"]),e.push(["100 слов о еде","100 слів про їжу","100 słów o jedzeniu","100 words about food"]),e.push(["100 слов о путешествии","100 слів про подорож (RU)","100 słów o podróżach (RU)","100 words about travel (RU)"]),e.push(["100 слов","100 слів (RU)","100 słów (RU)","100 words (RU)"]),e.push(["300 слов","300 слів (RU)","300 słów (RU)","300 words (RU)"]),e.push(["500 слов","500 слів (RU)","500 słów (RU)","500 words (RU)"]),e.push(["Настоящее продолженное","Присутній безперервний","Teraźniejszość ciągła","Present continuous"]),e.push(["Предыдущий вопрос/ответ","Попереднє запитання/відповідь","Poprzednie pytanie/odpowiedź","Previous question/answer"]),e.push(["Задание для теста","Завдання для тесту","Zadanie testowe","Task for the test"]),e.push(["Вопрос с вариантами ответа","Питання з варіантами відповіді","Pytanie wielokrotnego wyboru","Multiple choice question"]),e.push(["Выбрать тест.","Вибрати тест.","Wybierz test.","Select a test."]),e.push(["Where/Who...","Where/Who...","Where/Who...","Where/Who..."]),e.push(["Вставить правильное слово","Вставити правильне слово","Wstaw właściwe słowo","Insert the correct word"]),e.push(["To Be, ответь на вопрос","To Be, дай відповідь на запитання","Być, odpowiedz na pytanie","To Be, answer the question"]),e.push(["To Be, вопрос/ответ","To Be, питання/відповідь","Być, pytanie/odpowiedź","To Be, Q&A"]),e.push(["To Be, краткая форма","To Be, коротка форма","Być, krótka forma","To Be, short form"]),e.push(["Выбрать правильный вариант ответа","Вибрати правильний варіант відповіді","Wybierz poprawną odpowiedź","Choose the correct answer"]),e.push(["Сброс","Скидання","Resetowanie","Reset"]),e.push(["Выбрать правильный вариант сокращенной формы глагола to Be","Вибрати правильний варіант скороченої форми дієслова to Be","Wybierz poprawną wersję skróconej formy czasownika to Be","Choose the correct version of the shortened form of the verb to Be"]),e}class LanguageSelectorView{init(o){const a=o=="en"?"selected":"",r=o=="pl"?"selected":"",t=o=="ua"?"selected":"",s=o=="ru"?"selected":"";let i='<select id="languageSelect">';return i+=`<option ${a} id="selectEn"  value="en">EN</option>`,i+=`<option ${r} id="selectPl"  value="pl">PL</option>`,i+=`<option ${t} id="selectUa"  value="ua">UA</option>`,i+=`<option ${s} id="selectRu"  value="ru">RU</option>`,i+="</select>",i}}class LanguageController{constructor(){this.langStr=localStorage.getItem("EnglishWithJs_lang")||"ru"}translate(o){if(this.langStr==="ru")return o;let a="",r=3;switch(this.langStr){case"pl":r=2;break;case"ua":r=1;break}return a=o,exportBDTranslate().forEach(t=>{t[0]==o&&(a=t[r])}),a}init(){const o=new LanguageSelectorView,a=document.getElementById("button_lang_selected");a.innerHTML=o.init(this.langStr),document.getElementById("languageSelect").onchange=function(r){const t=r.target.value;localStorage.setItem("EnglishWithJs_lang",t)}}}class FactoryRegistr{static factoryArray={};static addObject(e,o){FactoryRegistr.factoryArray[e]=o}static getObject(nameClass,property=!1){if(nameClass in FactoryRegistr.factoryArray)return FactoryRegistr.factoryArray[nameClass];const className=eval(nameClass);let obj="";return property?obj=new className(...property):obj=new className,FactoryRegistr.addObject(nameClass,obj),obj}}function daimentInfo(){let e;const o=FactoryRegistr.getObject("LanguageController");let a=setInterval(()=>{typeof returnInfoForDiamant=="function"&&typeof o=="object"&&(e=o.translate(returnInfoForDiamant()),document.body.insertAdjacentHTML("beforeend",e),clearInterval(a))},100)}daimentInfo();window.languageSelectorView=new LanguageSelectorView;window.BDTranslate=exportBDTranslate();window.LanguageController=new LanguageController;window.FactoryRegistr=FactoryRegistr;
+        `}function exportBDTranslate(){const e=[];return e.push(["","","",""]),e.push(["be/have/do in present and past tenses","be/have/do in present and past tenses","be/have/do in present and past tenses","be/have/do in present and past tenses"]),e.push([returnInfoUnit22RU(),returnInfoUnit22UA(),returnInfoUnit22PL(),returnInfoUnit22EN()]),e.push([helpForProgramRU(),helpForProgramUA(),helpForProgramPL(),helpForProgramEN()]),e.push([helpForHomeMenuRU(),helpForHomeMenuUA(),helpForHomeMenuPL(),helpForHomeMenuEN()]),e.push([helpForGreenPoleOneRU(),helpForGreenPoleOneUA(),helpForGreenPoleOnePL(),helpForGreenPoleOneEN()]),e.push([returnLevel42(),returnLevel42UA(),returnLevel42PL(),returnLevel42EN()]),e.push(["Речь примерно о:","Мова приблизно про:","Mówimy o:","We are talking approximately about:"]),e.push([returnLevel40(),returnLevel40UA(),returnLevel40PL(),returnLevel40EN()]),e.push(["Последний ответ здесь","Остання відповідь тут","Najnowsza odpowiedź tutaj","The last answer is here"]),e.push(["Предыдущий вопрос здесь","Попереднє питання тут","Poprzednie pytanie tutaj","Previous question here"]),e.push([returnLevel39(),returnLevel39UA(),returnLevel39PL(),returnLevel39EN()]),e.push([returnLevel38(),returnLevel38UA(),returnLevel38PL(),returnLevel38EN()]),e.push([returnLevel37(),returnLevel37UA(),returnLevel37PL(),returnLevel37EN()]),e.push(["В этом тесте нужно собрать предложение из предложенных слов. Имейте в виду, что иногда собранное предложение может не совпадать с общей темой теста.","У цьому тесті потрібно зібрати пропозицію із запропонованих слів. Майте на увазі, що інколи зібрана пропозиція може не співпадати із загальною темою тесту.","W tym teście musisz ułożyć zdanie z podanych słów. Pamiętaj, że czasami zebrane zdanie może nie pokrywać się z ogólnym tematem testu.","In this test you need to assemble a sentence from the given words. Keep in mind that sometimes the assembled sentence may not match the general topic of the test."]),e.push(["(может отличаться)","(може відрізнятися)","(może się różnić)","(may differ)"]),e.push([returnLevel20(),returnLevel20UA(),returnLevel20PL(),returnLevel20EN()]),e.push([returnLevel36(),returnLevel36UA(),returnLevel36PL(),returnLevel36EN()]),e.push([returnInfoForDiamant$1(),returnInfoForDiamantUA(),returnInfoForDiamantPL(),returnInfoForDiamantEN()]),e.push([returnLevel35(),returnLevel35UA(),returnLevel35PL(),returnLevel35EN()]),e.push([returnLevel34(),returnLevel34UA(),returnLevel34PL(),returnLevel34EN()]),e.push(["Вставьте глагол вместо троеточия или подберите правильное предложение в продолженном прошедшем времени.","Вставте дієслово замість три крапки або підберіть правильну пропозицію в минулому часі.","Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym ciągłym.","Insert a verb instead of the ellipsis or choose the correct sentence in the past continuous tense."]),e.push([returnLevel33(),returnLevel33UA(),returnLevel33PL(),returnLevel33EN()]),e.push([returnLevel32(),returnLevel32UA(),returnLevel32PL(),returnLevel32EN()]),e.push(["Past Simple отрицательные и вопросы","Past Simple негативні та питання","Past Simple przeczenia i pytania","Past Simple Negative and Questions"]),e.push(["Вставьте глагол вместо троеточия или подберите правильное предложение в простом прошедшем времени.","Вставте дієслово замість три крапки або підберіть правильну пропозицію в простому часі.","Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym prostym.","Insert a verb instead of the ellipsis or choose the correct sentence in the simple past tense."]),e.push([returnLevel31(),returnLevel31UA(),returnLevel31PL(),returnLevel31EN()]),e.push(["Подобрать пару правильный - неправильный глагол. Тест разбавлен небольшим числом правильных глаголов.","Підібрати пару правильне - неправильне дієслово. Тест розбавлений невеликою кількістю правильних дієслів.","Dopasuj właściwy czasownik nieregularny. Test jest rozcieńczany niewielką liczbą czasowników regularnych.","Match a pair of regular and irregular verbs. The test is diluted with a small number of regular verbs."]),e.push(["Прошедшее простое","Минуле просте","Przeszłość prosta","Past simple"]),e.push(["Помощь","Допомога","Pomoc","Help"]),e.push(["Теория:","Теорія:","Teoria:","Theory:"]),e.push(["Задание теста:","Завдання тесту:","Zadanie testowe:","Test task:"]),e.push(["Переводов:","Перекладів:","Tłumaczenia:","Translations:"]),e.push(["Успех:","Успіх:","Sukces:","Success:"]),e.push(["Ошибок:","Помилок:","Błędy:","Errors:"]),e.push(["Статистика","Статистика","Statystyka","Statistics"]),e.push(["Собрано алмазов:","Зібрано алмазів:","Zebrane diamenty:","Diamonds collected:"]),e.push(["Глаголы Was и Were","Глаголи Was і Were","Czasowniki Was i Were","Verbs Was and Were"]),e.push([returnLevel23(),returnLevel23UA(),returnLevel23PL(),returnLevel23EN()]),e.push(["Упс. Кто-то уже сообщил об этой ошибке.","Упс. Хтось уже повідомив про цю помилку.","Ups. Ktoś już zgłosił ten błąd.","Oops. Someone already reported this bug."]),e.push(["Ошибка зафиксирована","Помилка зафіксована","Zapisano błąd","Error recorded"]),e.push([returnLevel21(),returnLevel21UA(),returnLevel21PL(),returnLevel21EN()]),e.push(["Глаголы Have и Have Got","Дієслова Have та Have Got","Czasowniki Have i Have Got","The verbs Have and Have Got"]),e.push([returnLevel19(),returnLevel19UA(),returnLevel19PL(),returnLevel19EN()]),e.push(["Выбор между P.S. и настоящим продолженным P.C.","Вибір між P.S. та справжнім продовженим P.C.","Wybór pomiędzy P.S. i niniejszym kontynuuje P.C.","The choice between P.S. and the present continuation P.C."]),e.push([returnLevel18(),returnLevel18UA(),returnLevel18PL(),returnLevel18EN()]),e.push(["Простое настоящее  P.S. вопросы","Просте справжнє P.S. питання","Prosty prezent P.S. pytania","Simple present P.S. questions"]),e.push([returnLevel17(),returnLevel17UA(),returnLevel17PL(),returnLevel17EN()]),e.push(["Простое настоящее  P.S. негативное","Просте справжнє P.S. негативне","Prosty prezent P.S. negatywny","Simple present P.S. negative"]),e.push([returnLevel16(),returnLevel16UA(),returnLevel16PL(),returnLevel16EN()]),e.push(["Простое настоящее  P.S. плюс периодичность","Просте справжнє P.S. плюс періодичність","Prosty prezent P.S. plus częstotliwość","Simple present P.S. plus periodicity"]),e.push([returnLevel15(),returnLevel15UA(),returnLevel15PL(),returnLevel15EN()]),e.push(["Простое настоящее P.S.","Просте справжнє P.S.","Prosty prezent P.S.","Simple present P.S."]),e.push([returnLevel14(),returnLevel14UA(),returnLevel14PL(),returnLevel14EN()]),e.push(["Образования вопросов в настоящем продолженном времени P.C.","Утворення питань у поточному продовженому часі P.C.","Tworzenie pytań w czasie teraźniejszym ciągłym P.C.","Formation of questions in the present continuous tense P.C."]),e.push([returnLevel13(),returnLevel13UA(),returnLevel13PL(),returnLevel13EN()]),e.push(["Правило для настоящего продолженного времени (Present Continuous)","Правило для поточного часу (Present Continuous)","Reguła czasu teraźniejszego ciągłego","Rule for the Present Continuous"]),e.push([returnLevel11(),returnLevel11UA(),returnLevel11PL(),returnLevel11EN()]),e.push(["Создание вопросов в Present Simple и Past Simple","Створення питань у Present Simple та Past Simple","Tworzenie pytań w czasie Present Simple i Past Simple","Forming questions in Present Simple and Past Simple"]),e.push([returnLevel10(),returnLevel10UA(),returnLevel10PL(),returnLevel10EN()]),e.push(["Понятно","Зрозуміло","To jasne","It's clear"]),e.push(["Просто учим слова","Просто вчимо слова","Dopiero uczę się słówek","Just learning words"]),e.push(["Сокращенная форма глагола to Be","Скорочена форма дієслова","Krótka forma czasownika być","Shortened form of the verb to be"]),e.push(["Выбрать правильную пару.","Вибрати правильну пару.","Wybierz odpowiednią parę.","Choose the right pair."]),e.push(["Выбери верную форму глагола","Вибери правильну форму дієслова","Wybierz poprawną formę czasownika","Choose the correct form of the verb"]),e.push(["Вторая форма неправильных глаголов","Друга форма неправильних дієслів","Druga forma czasowników nieregularnych","The second form of irregular verbs"]),e.push(["Выбрать правильное время PS or PC","Вибрати правильне час PS or PC","Wybierz odpowiedni czas PS or PC","Choose the right time PS or PC"]),e.push(["Учить слова","Вчити слова","Ucz się słów","Learn words"]),e.push(["Подобрать правильно вопрос или ответ","Підібрати правильно питання чи відповідь","Wybierz właściwe pytanie lub odpowiedź","Choose the right question or answer"]),e.push(["Настоящее простое вопросы","Справжнє просте питання","Przedstaw proste pytania","Present simple questions"]),e.push(["Настоящее простое негативное","Справжнє просте негативне","Przedstaw prosty negatyw","Present simple negative"]),e.push(["300 глаголов","300 дієслів (RU)","300 czasowników (RU)","300 verbs (RU)"]),e.push(["50 глаголов","50 дієслів (RU/PL)","50 czasowników (RU/PL)","50 verbs (RU/PL)"]),e.push(["100 слов про спорт","100 слів про спорт (RU/PL)","100 słów o sporcie (RU/PL)","100 words about sports(RU/PL)"]),e.push(["Выберите правильно составленное предложение.","Виберіть правильно складену пропозицію.","Wybierz właściwe zdanie.","Choose the correctly constructed sentence."]),e.push(["Настоящее простое + периодичность","Справжнє просте + періодичність","Czas teraźniejszy prosty + okresowość","Present Simple + Periodicity"]),e.push(["Настоящее простое","Справжнє просте","Prezent prosty","Present simple"]),e.push(["Настоящее продолженное - вопрос","Справжнє продовжене – питання","Czas teraźniejszy ciągły – pytanie","Choose the right question"]),e.push(["Выбрать правильный вопрос","Вибрати правильне питання","Wybierz właściwe pytanie","Choose the right question"]),e.push(["Сообщить об ошибке","Повідомити про помилку","Zgłoś błąd","Report a bug"]),e.push(["Перевести вопрос","Перекласти питання","Przetłumacz pytanie","Translate question"]),e.push(["Выбрать правильный перевод","Вибрати правильний переклад","Wybierz właściwe tłumaczenie","Choose the correct translation"]),e.push(["100 слов о еде","100 слів про їжу","100 słów o jedzeniu","100 words about food"]),e.push(["100 слов о путешествии","100 слів про подорож (RU)","100 słów o podróżach (RU)","100 words about travel (RU)"]),e.push(["100 слов","100 слів (RU)","100 słów (RU)","100 words (RU)"]),e.push(["300 слов","300 слів (RU)","300 słów (RU)","300 words (RU)"]),e.push(["500 слов","500 слів (RU)","500 słów (RU)","500 words (RU)"]),e.push(["Настоящее продолженное","Присутній безперервний","Teraźniejszość ciągła","Present continuous"]),e.push(["Предыдущий вопрос/ответ","Попереднє запитання/відповідь","Poprzednie pytanie/odpowiedź","Previous question/answer"]),e.push(["Задание для теста","Завдання для тесту","Zadanie testowe","Task for the test"]),e.push(["Вопрос с вариантами ответа","Питання з варіантами відповіді","Pytanie wielokrotnego wyboru","Multiple choice question"]),e.push(["Выбрать тест.","Вибрати тест.","Wybierz test.","Select a test."]),e.push(["Where/Who...","Where/Who...","Where/Who...","Where/Who..."]),e.push(["Вставить правильное слово","Вставити правильне слово","Wstaw właściwe słowo","Insert the correct word"]),e.push(["To Be, ответь на вопрос","To Be, дай відповідь на запитання","Być, odpowiedz na pytanie","To Be, answer the question"]),e.push(["To Be, вопрос/ответ","To Be, питання/відповідь","Być, pytanie/odpowiedź","To Be, Q&A"]),e.push(["To Be, краткая форма","To Be, коротка форма","Być, krótka forma","To Be, short form"]),e.push(["Выбрать правильный вариант ответа","Вибрати правильний варіант відповіді","Wybierz poprawną odpowiedź","Choose the correct answer"]),e.push(["Сброс","Скидання","Resetowanie","Reset"]),e.push(["Выбрать правильный вариант сокращенной формы глагола to Be","Вибрати правильний варіант скороченої форми дієслова to Be","Wybierz poprawną wersję skróconej formy czasownika to Be","Choose the correct version of the shortened form of the verb to Be"]),e}class LanguageSelectorView{init(t){const s=t=="en"?"selected":"",a=t=="pl"?"selected":"",o=t=="ua"?"selected":"",r=t=="ru"?"selected":"";let i='<select id="languageSelect">';return i+=`<option ${s} id="selectEn"  value="en">EN</option>`,i+=`<option ${a} id="selectPl"  value="pl">PL</option>`,i+=`<option ${o} id="selectUa"  value="ua">UA</option>`,i+=`<option ${r} id="selectRu"  value="ru">RU</option>`,i+="</select>",i}}class LanguageController{constructor(){this.langStr=localStorage.getItem("EnglishWithJs_lang")||"ru"}translate(t){if(this.langStr==="ru")return t;let s="",a=3;switch(this.langStr){case"pl":a=2;break;case"ua":a=1;break}return s=t,exportBDTranslate().forEach(o=>{o[0]==t&&(s=o[a])}),s}init(){const t=new LanguageSelectorView,s=document.getElementById("button_lang_selected");s.innerHTML=t.init(this.langStr),document.getElementById("languageSelect").onchange=function(a){const o=a.target.value;localStorage.setItem("EnglishWithJs_lang",o)}}}let Help={translate:new LanguageController,viewhandleHelpToTranslate:function(e,t){const s=document.createElement("div");s.id="container-for-video-help";let a=this.translate.translate(e);a=a.replace(/<div id='video-help'><\/div>/,this.addVideoHelp(t)),s.innerHTML=a,document.body.appendChild(s),document.getElementById("button-close-info-modal").addEventListener("click",()=>{document.getElementById("container-for-video-help").remove()})},addVideoHelp(e){return`
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe showinfo=1 class="embed-responsive-item" src="https://www.youtube.com/embed/${e}" allowfullscreen></iframe>
+        </div>
+        `}};function diamentView(e,t,s){let a=`
+    <div class="diament-view">
+        <div>
+            <span>${e}</span>
+            <span data-bs-toggle="modal" data-bs-target="#diamondsModal">${t}</span>
+        </div>
+        <div>
+        <button type = "button" class="text-primary mb-3">&#10067;</button> 
+            ${s}  
+        </div>
+    </div>`;const o=document.querySelector("#diament");o.innerHTML=a,o.addEventListener("click",()=>{Help.viewhandleHelpToTranslate(helpForProgramRU(),"RwzDBkaEwjI")})}function diamentReturnStr(){let e=0,t=0,s=0,a=0;for(let n in localStorage)a=parseInt(localStorage.getItem(n)),!(isNaN(a)||a=="")&&(n.includes("_Ok")&&(e+=a),n.includes("_Error")&&(t+=a),n.includes("intTranslate")&&(s+=a));const o=e-t*3-s/2;let r=parseInt(o),i="💎";r<0&&(i="💀");let l="<span>😊</span>";return t/e<=.5&&t/e>0&&(l="<span>😔</span>"),t/e<=.8&&t/e>.5&&(l='<span">😭</span>'),[i,l,r]}function diament(){let e="",t="",s=0;[e,t,s]=diamentReturnStr(),diamentView(s,e,t)}class FactoryRegistr{static factoryArray={};static addObject(e,t){FactoryRegistr.factoryArray[e]=t}static getObject(nameClass,property=!1){if(nameClass in FactoryRegistr.factoryArray)return FactoryRegistr.factoryArray[nameClass];const className=eval(nameClass);let obj="";return property?obj=new className(...property):obj=new className,FactoryRegistr.addObject(nameClass,obj),obj}}function daimentInfo(){let e;const t=FactoryRegistr.getObject("LanguageController");let s=setInterval(()=>{typeof returnInfoForDiamant=="function"&&typeof t=="object"&&(e=t.translate(returnInfoForDiamant()),document.body.insertAdjacentHTML("beforeend",e),clearInterval(s))},100)}function htmlOldQuestions(){const e=FactoryRegistr.getObject("LanguageController"),t=e.translate("Предыдущий вопрос/ответ"),s=e.translate("Предыдущий вопрос здесь"),a=e.translate("Последний ответ здесь"),o=e.translate("Сообщить об ошибке");document.getElementById("html_old_questions").innerHTML=`
+    <div class="card shadow-lg mb-3 mx-auto position-relative" style="width: 80vw; transform: translateY(-10px); transition: transform 0.3s, box-shadow 0.3s;">
+      <div class="card-body">
+        <fieldset class="border-0">
+          <legend class="fs-4 text-primary mb-3" id="fieldset-legend-old">${t}<button type='button' id = 'button-help' class='button-help'>&#10067;</button></legend>
+          
+          <div class="row mb-3">
+            <div class="col-12">
+              <div class="p-2 border rounded text-white bg-warning" id="question_old">${s}</div>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-12">
+              <div class="p-2 border rounded text-white bg-warning" id="clicked_element">${a}</div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-8">
+              <button type="button" id="search_error" class="btn btn-warning w-100">${o}</button>
+            </div>
+            <div class="col-2">
+              <button type="button" id="log" class="btn btn-light w-100" name="log">&#x1F4DC;</button>
+            </div>
+            <div class="col-2">
+              <button type="button" id="sound" class="btn btn-light w-100" name="sound">&#x1F50A;</button>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+    `,document.getElementById("button-help").addEventListener("click",()=>{Help.viewhandleHelpToTranslate(helpForGreenPoleOneRU(),"VuUKoWdyu6Y")})}daimentInfo();htmlOldQuestions();diament();function nav(){setTimeout(()=>{document.getElementById("button-help-video").addEventListener("click",()=>{Help.viewhandleHelpToTranslate(helpForHomeMenuRU(),"vkQYDmiTlmQ")})},0),document.getElementById("nav").innerHTML=`
+     <nav class="navbar navbar-expand-sm navbar-light bg-light" id="first-teg-nav-for-nav">
+    <div class="container-fluid" id="nav-first-div">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li id="helpVideo">
+            <button id="button-help-video" type = "button" class="fs-6 text-primary mb-3 button-help">&#10067;</button>
+          </li>
+          <li class="nav-item" id="nav-item-burger">
+            <div class="nav-link" id="burger"></div>
+          </li>
+          <li class="nav-item">
+            <div class="nav-link" id="word"></div>
+          </li>
+          <li class="nav-item">
+            <div class="nav-link" id="help"></div>
+          </li>
+          <li class="nav-item">
+            <div class="nav-link" id="statistic">Statistic</div>
+          </li>
+          <li class="nav-item">
+            <div class="nav-link" id="setting">Setting</div>
+          </li>
+          <li class="nav-item">
+            <div class="nav-link" id="button_lang_selected"></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="select-level-test"></div>
+    `}window.languageSelectorView=new LanguageSelectorView;window.BDTranslate=exportBDTranslate();window.LanguageController=new LanguageController;window.FactoryRegistr=FactoryRegistr;window.Help=Help;window.nav=nav();

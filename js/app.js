@@ -1,9 +1,7 @@
 // Основной файл приложения
 // Описывается событие загрузки документа
 window.onload = () => {
-    diament();
-    nav();
-    htmlOldQuestions();
+    window.nav;
     htmlHelp();
     buttonSound();
 
@@ -32,10 +30,6 @@ window.onload = () => {
     // срабатывает один раз.
     FactoryRegistr.getObject('WorkingField').resetQuestion = true;
     
-    // document.getElementById('btnGroupDrop1burger').onclick = () => {
-    //     FactoryRegistr.getObject('WorkingField').resetQuestion = true;
-    // }
-
     // функция отслеживает инфу по ответам и запускает процесс
     // всплытия кристала, шапки или черепа
     boobleUp();

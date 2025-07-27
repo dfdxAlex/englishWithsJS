@@ -1,5 +1,6 @@
 let Help = {
-    translate: FactoryRegistr.getObject("LanguageController"),
+    // translate: FactoryRegistr.getObject("LanguageController"),
+    translate: window.LanguageController,
     
     // Метод принимает функцию, которая возвращает текстовую инфу для помощи
     // и в результат этой функции вставляет видеоролик, код которого приходит
