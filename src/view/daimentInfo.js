@@ -6,7 +6,12 @@
 
 // функция переделана на самозапускающуюся, она ждёт пока не появятся 
 // все нужные элементы и помещает Бутстрап компонент
-(function daimentInfo()
+
+import { FactoryRegistr } from '../models/FactoryRegistr.js';
+// import { LanguageController } from './LanguageController.js';
+
+
+export function daimentInfo()
 {
     let result;
     const translate = FactoryRegistr.getObject("LanguageController");
@@ -20,4 +25,4 @@
 
     clearInterval(id);
     },100);
-})();
+};

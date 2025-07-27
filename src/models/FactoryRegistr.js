@@ -3,10 +3,9 @@
 // Запускается фабрика:
 // FactoryRegistr.getObject('name class')
 
-// достать этот объект из модульной системы.
-let LanguageController = window.LanguageController;
+import { LanguageController } from '../controllers/LanguageController.js';
 
-class FactoryRegistr
+export class FactoryRegistr
 {
     static factoryArray = {};
 
@@ -23,15 +22,6 @@ class FactoryRegistr
             return FactoryRegistr.factoryArray[nameClass];
         };
   
-        // временное решение для некоторых объектов. Если у класса - регистратора запрашиваются 
-        // эти объекты, то они берутся из глобальных переменных, которые созданы в специальном
-        // контроллере bridgOldAndNewCode
-        // по сути регистратор перестал работать для перенесенных в модули объектов
-        if (nameClass == 'LanguageController') {
-            // this.addObject('LanguageController', window.LanguageController);
-            return window.LanguageController;
-        }
-
         // Если объекта нет, то создать, зарегистрировать и вернуть
         // Получить имя класса, из которого нужно вернуть объект
         const className = eval(nameClass);
