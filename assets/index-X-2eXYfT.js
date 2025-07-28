@@ -6173,27 +6173,27 @@
         <button type = "button" class="text-primary mb-3">&#10067;</button> 
             ${s}  
         </div>
-    </div>`;const o=document.querySelector("#diament");o.innerHTML=a,o.addEventListener("click",()=>{Help.viewhandleHelpToTranslate(helpForProgramRU(),"RwzDBkaEwjI")})}function diamentReturnStr(){let e=0,t=0,s=0,a=0;for(let n in localStorage)a=parseInt(localStorage.getItem(n)),!(isNaN(a)||a=="")&&(n.includes("_Ok")&&(e+=a),n.includes("_Error")&&(t+=a),n.includes("intTranslate")&&(s+=a));const o=e-t*3-s/2;let r=parseInt(o),i="💎";r<0&&(i="💀");let l="<span>😊</span>";return t/e<=.5&&t/e>0&&(l="<span>😔</span>"),t/e<=.8&&t/e>.5&&(l='<span">😭</span>'),[i,l,r]}function diament(){let e="",t="",s=0;[e,t,s]=diamentReturnStr(),diamentView(s,e,t)}class FactoryRegistr{static factoryArray={};static addObject(e,t){FactoryRegistr.factoryArray[e]=t}static getObject(nameClass,property=!1){if(nameClass in FactoryRegistr.factoryArray)return FactoryRegistr.factoryArray[nameClass];const className=eval(nameClass);let obj="";return property?obj=new className(...property):obj=new className,FactoryRegistr.addObject(nameClass,obj),obj}}function daimentInfo(){let e;const t=FactoryRegistr.getObject("LanguageController");let s=setInterval(()=>{typeof returnInfoForDiamant=="function"&&typeof t=="object"&&(e=t.translate(returnInfoForDiamant()),document.body.insertAdjacentHTML("beforeend",e),clearInterval(s))},100)}function htmlOldQuestions(){const e=FactoryRegistr.getObject("LanguageController"),t=e.translate("Предыдущий вопрос/ответ"),s=e.translate("Предыдущий вопрос здесь"),a=e.translate("Последний ответ здесь"),o=e.translate("Сообщить об ошибке");document.getElementById("html_old_questions").innerHTML=`
-    <div class="card shadow-lg mb-3 mx-auto position-relative" style="width: 80vw; transform: translateY(-10px); transition: transform 0.3s, box-shadow 0.3s;">
+    </div>`;const o=document.querySelector("#diament");o.innerHTML=a,o.addEventListener("click",()=>{Help.viewhandleHelpToTranslate(helpForProgramRU(),"RwzDBkaEwjI")})}function diamentReturnStr(){let e=0,t=0,s=0,a=0;for(let n in localStorage)a=parseInt(localStorage.getItem(n)),!(isNaN(a)||a=="")&&(n.includes("_Ok")&&(e+=a),n.includes("_Error")&&(t+=a),n.includes("intTranslate")&&(s+=a));const o=e-t*3-s/2;let r=parseInt(o),i="💎";r<0&&(i="💀");let l="<span>😊</span>";return t/e<=.5&&t/e>0&&(l="<span>😔</span>"),t/e<=.8&&t/e>.5&&(l='<span">😭</span>'),[i,l,r]}function diament(){let e="",t="",s=0;[e,t,s]=diamentReturnStr(),diamentView(s,e,t)}class FactoryRegistr{static factoryArray={};static addObject(e,t){FactoryRegistr.factoryArray[e]=t}static getObject(nameClass,property=!1){if(nameClass in FactoryRegistr.factoryArray)return FactoryRegistr.factoryArray[nameClass];const className=eval(nameClass);let obj="";return property?obj=new className(...property):obj=new className,FactoryRegistr.addObject(nameClass,obj),obj}}function daimentInfo(){let e;const t=FactoryRegistr.getObject("LanguageController");let s=setInterval(()=>{typeof returnInfoForDiamant=="function"&&typeof t=="object"&&(e=t.translate(returnInfoForDiamant()),document.body.insertAdjacentHTML("beforeend",e),clearInterval(s))},100)}function htmlOldQuestionsView(e){return`
+      <div class="card shadow-lg mb-3 mx-auto position-relative html-old-questions-view">
       <div class="card-body">
         <fieldset class="border-0">
-          <legend class="fs-4 text-primary mb-3" id="fieldset-legend-old">${t}<button type='button' id = 'button-help' class='button-help'>&#10067;</button></legend>
+          <legend class="fs-4 text-primary mb-3" id="fieldset-legend-old">${e.yourQuestion}<button type='button' id='button-help' class='button-help'>&#10067;</button></legend>
           
           <div class="row mb-3">
             <div class="col-12">
-              <div class="p-2 border rounded text-white bg-warning" id="question_old">${s}</div>
+              <div class="p-2 border rounded text-white bg-warning" id="question_old">${e.questionOld}</div>
             </div>
           </div>
 
           <div class="row mb-3">
             <div class="col-12">
-              <div class="p-2 border rounded text-white bg-warning" id="clicked_element">${a}</div>
+              <div class="p-2 border rounded text-white bg-warning" id="clicked_element">${e.clickedElement}</div>
             </div>
           </div>
 
           <div class="row">
             <div class="col-8">
-              <button type="button" id="search_error" class="btn btn-warning w-100">${o}</button>
+              <button type="button" id="search_error" class="btn btn-warning w-100">${e.searchError}</button>
             </div>
             <div class="col-2">
               <button type="button" id="log" class="btn btn-light w-100" name="log">&#x1F4DC;</button>
@@ -6205,7 +6205,7 @@
         </fieldset>
       </div>
     </div>
-    `,document.getElementById("button-help").addEventListener("click",()=>{Help.viewhandleHelpToTranslate(helpForGreenPoleOneRU(),"VuUKoWdyu6Y")})}daimentInfo();htmlOldQuestions();diament();function nav(){setTimeout(()=>{document.getElementById("button-help-video").addEventListener("click",()=>{Help.viewhandleHelpToTranslate(helpForHomeMenuRU(),"vkQYDmiTlmQ")})},0),document.getElementById("nav").innerHTML=`
+    `}function htmlOldQuestions(){const e=FactoryRegistr.getObject("LanguageController");return{yourQuestion:e.translate("Предыдущий вопрос/ответ"),questionOld:e.translate("Предыдущий вопрос здесь"),clickedElement:e.translate("Последний ответ здесь"),searchError:e.translate("Сообщить об ошибке")}}function htmlOldQuestionsCntr(){document.getElementById("html_old_questions").innerHTML=htmlOldQuestionsView(htmlOldQuestions()),document.getElementById("button-help").addEventListener("click",()=>{Help.viewhandleHelpToTranslate(helpForGreenPoleOneRU(),"VuUKoWdyu6Y")})}daimentInfo();htmlOldQuestionsCntr();diament();function nav(){setTimeout(()=>{document.getElementById("button-help-video").addEventListener("click",()=>{Help.viewhandleHelpToTranslate(helpForHomeMenuRU(),"vkQYDmiTlmQ")})},0),document.getElementById("nav").innerHTML=`
      <nav class="navbar navbar-expand-sm navbar-light bg-light" id="first-teg-nav-for-nav">
     <div class="container-fluid" id="nav-first-div">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
