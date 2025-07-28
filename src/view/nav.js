@@ -1,5 +1,6 @@
 import { helpForHomeMenuRU } from './help/helpForHomeMenuRU.js';
 import { Help } from './Help.js';
+import './styles/nav.scss';
 
 export function nav()
 {
@@ -19,7 +20,7 @@ export function nav()
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li id="helpVideo">
-            <button id="button-help-video" type = "button" class="fs-6 text-primary mb-3 button-help">&#10067;</button>
+            <button id="button-help-video" type="button" class="fs-6 text-primary mb-3 button-help">&#10067;</button>
           </li>
           <li class="nav-item" id="nav-item-burger">
             <div class="nav-link" id="burger"></div>
@@ -42,7 +43,5 @@ export function nav()
         </ul>
       </div>
     </div>
-  </nav>
-  <div id="select-level-test"></div>
-    `;
+  </nav>`;
 }

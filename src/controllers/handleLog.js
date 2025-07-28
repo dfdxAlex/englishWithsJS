@@ -1,5 +1,7 @@
+import { activatingLogs } from './activatingLogs.js';
+
 // функция обрабатывает нажатие кнопки Log
-function handleLog()
+export function handleLog()
 {
     // убрать лишнее перед показом логов
     activatingLogs(true);
