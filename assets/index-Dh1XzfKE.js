@@ -6214,7 +6214,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li id="helpVideo">
-            <button id="button-help-video" type = "button" class="fs-6 text-primary mb-3 button-help">&#10067;</button>
+            <button id="button-help-video" type="button" class="fs-6 text-primary mb-3 button-help">&#10067;</button>
           </li>
           <li class="nav-item" id="nav-item-burger">
             <div class="nav-link" id="burger"></div>
@@ -6237,6 +6237,4 @@
         </ul>
       </div>
     </div>
-  </nav>
-  <div id="select-level-test"></div>
-    `}window.languageSelectorView=new LanguageSelectorView;window.BDTranslate=exportBDTranslate();window.LanguageController=new LanguageController;window.FactoryRegistr=FactoryRegistr;window.Help=Help;window.nav=nav();
+  </nav>`}const sellect=()=>[document.getElementById("search_error"),document.getElementById("log"),document.getElementById("working_field"),document.getElementById("log_for_div")];function viewLogOff(){let e=sellect();e[0].style.display="none",e[1].style.display="none",e[2].style.display="none",e[3].style.display="block"}function viewLogOn(){let e;e=sellect(),e[0].style.display="block",e[1].style.display="block",e[2].style.display="block",e[3].style.display="none"}function activatingLogs(e=!1,t=null){if(t!==null&&t.target.className!=="button_return_log")return null;new Promise((a,o)=>{e?a():o()}).then(()=>{viewLogOff()},()=>{viewLogOn()})}function handleLog(){activatingLogs(!0);const e=document.getElementById("log_for_div"),t=new LogField(Logs);e.innerHTML=t.getField(),e.onclick=s=>{activatingLogs(!1,s)}}window.languageSelectorView=new LanguageSelectorView;window.BDTranslate=exportBDTranslate();window.LanguageController=new LanguageController;window.FactoryRegistr=FactoryRegistr;window.Help=Help;window.nav=nav();window.diament=diament;window.handleLog=handleLog;
