@@ -1,0 +1,12 @@
+.html-old-questions-view {
+    width: 80vw; 
+    transform: translateY(-10px); 
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.button-help {
+    font-size: 0.5em;
+    border: 1 solid green;
+    float: right;
+    border-radius: 50px;
+}
