@@ -101,7 +101,7 @@ class LevelDataModel
         if (level == this.level && (lang === true || lang === this.lang)) {
             this.ex.init(this.translate.translate(exercise));
             localStorage.setItem('nameArrayDb',nameArray);
-            Thoury.handleThoury(level);
+            window.Thoury.handleThoury(level);
             this.rez = eval(nameArray);
         }
     }
