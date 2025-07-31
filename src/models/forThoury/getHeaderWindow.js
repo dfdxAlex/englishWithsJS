@@ -1,44 +1,43 @@
-import { FactoryRegistr } from '../FactoryRegistr.js';
+import '../../controllers/styles/thoury.scss';
 
 // Функция возвращает нужную разметку для заголовка окна теории
 // В параметре передается this, поэтому доступны ресурсы вызываемого класса.
 export function getHeaderWindow(thisS) 
 {
-    let translate = FactoryRegistr.getObject("LanguageController");
     let rez = "";
     switch (thisS.level) {
             case 9:
             case 10:
-                rez = `${translate.translate('Сокращенная форма глагола to Be')}</h1>`;
+                rez = `${thisS.translate.translate('Сокращенная форма глагола to Be')}</h1>`;
                 break;
             case 11:
-                rez = `${translate.translate('Создание вопросов в Present Simple и Past Simple')}</h1>`;
+                rez = `${thisS.translate.translate('Создание вопросов в Present Simple и Past Simple')}</h1>`;
                 break;
             case 13: 
-                rez = `${translate.translate('Правило для настоящего продолженного времени (Present Continuous)')}</h1>`;
+                rez = `${thisS.translate.translate('Правило для настоящего продолженного времени (Present Continuous)')}</h1>`;
                 break;
             case 14: 
-                rez = `${translate.translate('Образования вопросов в настоящем продолженном времени P.C.')}</h1>`;
+                rez = `${thisS.translate.translate('Образования вопросов в настоящем продолженном времени P.C.')}</h1>`;
                 break;
             case 15: 
-                rez = `${translate.translate('Простое настоящее P.S.')}</h1>`;
+                rez = `${thisS.translate.translate('Простое настоящее P.S.')}</h1>`;
                 break;
             case 16: 
-                rez = `${translate.translate('Простое настоящее  P.S. плюс периодичность')}</h1>`;
+                rez = `${thisS.translate.translate('Простое настоящее  P.S. плюс периодичность')}</h1>`;
                 break;
             case 17: 
-                rez = `${translate.translate('Простое настоящее  P.S. негативное')}</h1>`;
+                rez = `${thisS.translate.translate('Простое настоящее  P.S. негативное')}</h1>`;
                 break;
             case 18: 
-                rez = `${translate.translate('Простое настоящее  P.S. вопросы')}</h1>`;
+                rez = `${thisS.translate.translate('Простое настоящее  P.S. вопросы')}</h1>`;
                 break;
             case 19: 
-                rez = `${translate.translate('Выбор между P.S. и настоящим продолженным P.C.')}</h1>`;break;
+                rez = `${thisS.translate.translate('Выбор между P.S. и настоящим продолженным P.C.')}</h1>`;break;
             case 21: 
-                rez = `${translate.translate('Глаголы Have и Have Got')}</h1>`;
+                rez = `${thisS.translate.translate('Глаголы Have и Have Got')}</h1>`;
                 break;
             case 23: 
-                rez = `${translate.translate(`Глаголы Was и Were`)}</h1>`;
+                rez = `${thisS.translate.translate(`Глаголы Was и Were`)}</h1>`;
                 break;
             case 31: 
                 rez = `Past Simple</h1>`;
@@ -74,9 +73,8 @@ export function getHeaderWindow(thisS)
                 rez = `Present Continuous Passive, Present Perfect Passive</h1>`; 
                 break;   
             default:
-                rez = `${translate.translate('Просто учим слова')}</h1>`;
+                rez = `${thisS.translate.translate('Просто учим слова')}</h1>`;
         }
 
-        let rezult = thisS.addStyleForH1 + rez;
-        return rezult;
+        return '<h1 class="add-style-for-H1">' + rez;
     }

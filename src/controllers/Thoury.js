@@ -2,34 +2,29 @@ import './styles/thoury.scss';
 import { FactoryRegistr } from '../models/FactoryRegistr.js';
 import { getHeaderWindow } from '../models/forThoury/getHeaderWindow.js';
 import { getBodyThoury } from '../models/forThoury/getBodyThoury.js';
+import { getWorkPlace } from '../view/thoury/getWorkPlace.js';
 
 export class Thoury
 {
+    static translate = FactoryRegistr.getObject("LanguageController");
 
-static handleThoury(level)
-{
-    this.level = level;
-    this.translate = FactoryRegistr.getObject("LanguageController");
+    static handleThoury(level)
+    {
+        this.level = level;    
 
-    this.strLocal = `
-    <div class="card shadow-lg rounded-3" style="width: 80vw;  position: relative;">
-     <button type="button" class="btn-close" aria-label="Close" style="position: absolute; top: 10px; right: 10px;"  onclick="document.getElementById('exercise').style.display='none'"></button>
-      <div class="card-body">
-        <h5 class="card-title">${this.headerThoury()}</h5>
-        <p class="card-text">${this.bodyThoury()}</p>
-      </div>
-    </div>
-    `;
-    document.getElementById('level30').onclick = cardThoury.bind(null, this);
+        this.strLocal = getWorkPlace(this.headerThoury(), this.bodyThoury());    
+
+        document.getElementById('level30').onclick = cardThoury.bind(null, this);
     }
 
     // Функция помещает информацию в заголовок раздела Теория
-    static addStyleForH1 = '<h1 class="add-style-for-H1">';
+    // Раздел предоставляющий теоретическую информацию.
     static headerThoury()
     {
         return getHeaderWindow(this);
     }
     // Функция помещает информацию в тело раздела Теория
+    // Раздел предоставляющий теоретическую информацию.
     static bodyThoury()
     {
         return getBodyThoury(this);
@@ -40,4 +35,7 @@ function cardThoury(thisS)
 {
     document.getElementById('exercise').style.display='block';
     document.getElementById('exercise').innerHTML = thisS.strLocal;
+    document.getElementById('button-for-get-work-place').addEventListener('click', ()=>{
+        document.getElementById('exercise').style.display='none';
+    });
 }
