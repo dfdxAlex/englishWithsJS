@@ -20,7 +20,7 @@ class LevelDataModel
         // и возвращает это число. 
         this.level = DataOk.setLevel(level);
         this.rez = false;
-        this.ex = new Exercise();
+        this.ex = new window.Exercise();
         this.translate = FactoryRegistr.getObject("LanguageController");
         this.lang = localStorage.getItem('EnglishWithJs_lang');
         this.propertyArrayNameButton = [];

@@ -7,6 +7,7 @@ import { nav } from './../view/nav.js';
 import { handleLog } from './../../src/controllers/handleLog.js';
 import { diament } from './../controllers/diament.js';
 import { Thoury } from './Thoury.js';
+import { Exercise } from '../view/Exercise.js';
 
 window.languageSelectorView = new LanguageSelectorView();
 window.BDTranslate = exportBDTranslate();
@@ -18,5 +19,6 @@ window.nav = nav();
 window.diament = diament;
 window.handleLog = handleLog;
 window.Thoury = Thoury;
+window.Exercise = Exercise;
 
 

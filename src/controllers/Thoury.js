@@ -11,9 +11,7 @@ export class Thoury
     static handleThoury(level)
     {
         this.level = level;    
-
-        this.strLocal = getWorkPlace(this.headerThoury(), this.bodyThoury());    
-
+        this.strLocal = getWorkPlace(this.headerThoury(), this.bodyThoury(), 'button-for-get-work-place');    
         document.getElementById('level30').onclick = cardThoury.bind(null, this);
     }
 

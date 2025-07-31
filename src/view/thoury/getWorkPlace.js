@@ -1,10 +1,12 @@
 import '../styles/getWorkPlace.scss';
 
-export function getWorkPlace(header, body)
+// функция возвращает разметку для окон помощи по тесту и по типу задания. 
+// функция универмальная, принимает три параметра, шапку, тело и id для персонализации окна
+export function getWorkPlace(header, body, id)
 {
     return `
     <div class="card shadow-lg rounded-3 get-work-place">
-     <button id="button-for-get-work-place"
+     <button id="${id}"
          type="button" class="btn-close" aria-label="Close" 
     >
      </button>
