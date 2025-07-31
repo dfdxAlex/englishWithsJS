@@ -1,5 +1,30 @@
+import './styles/thoury.scss';
 import { FactoryRegistr } from '../models/FactoryRegistr.js';
 import { getHeaderWindow } from '../models/forThoury/getHeaderWindow.js';
+import { returnInfoUnit22RU, 
+         returnLevel42,
+         returnLevel40,
+         returnLevel39,
+         returnLevel38,
+         returnLevel37,
+         returnLevel20,
+         returnLevel36,
+         returnLevel35,
+         returnLevel34, 
+         returnLevel33, 
+         returnLevel32,
+         returnLevel31,
+         returnLevel23,
+         returnLevel21,
+         returnLevel19,
+         returnLevel18,
+         returnLevel17,
+         returnLevel16,
+         returnLevel15,
+         returnLevel14,
+         returnLevel10,
+         returnLevel11,
+         returnLevel13 } from './forThoury/indexForThoury.js';
 
 export class Thoury
 {
@@ -22,7 +47,7 @@ static handleThoury(level)
     }
 
     // Функция помещает информацию в заголовок раздела Теория
-    static addStyleForH1 = '<h1 style="text-align: center; color: #333; font-size: 2.5em; margin-bottom: 20px; border-bottom: 2px solid #4CAF50; padding-bottom: 10px;">';
+    static addStyleForH1 = '<h1 class="add-style-for-H1">';
     static headerThoury()
     {
         return getHeaderWindow(this);
