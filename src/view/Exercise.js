@@ -1,24 +1,18 @@
 // Класс помещает вопрос для урока
 
 import { getWorkPlace } from '../view/thoury/getWorkPlace.js';
+import { renderThoury, getTranslate } from '../controllers/forThoury/renderThoury.js';
 
 export class Exercise
 {
+    static idForButtonClosed = 'help-for-test';
+
     init(str)
     {
-        const transL = FactoryRegistr.getObject("LanguageController");
+        const transL = getTranslate();
         this.cartTitle = transL.translate('Задание для теста');
-        this.strLocal = getWorkPlace(this.cartTitle, str, 'help-for-test');
-        document.getElementById('level29').onclick = cardHelp.bind(null, this);
-
+        this.strLocal = getWorkPlace(this.cartTitle, str, this.idForButtonClosed);
+        document.getElementById('level29').onclick = renderThoury.bind(this);
     }
 }
 
-function cardHelp(thisS)
-{
-    document.getElementById('exercise').style.display='block';
-    document.getElementById('exercise').innerHTML = thisS.strLocal;
-    document.getElementById('help-for-test').addEventListener('click', ()=>{
-        document.getElementById('exercise').style.display='none';
-    });
-}

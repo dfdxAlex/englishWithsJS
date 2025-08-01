@@ -1,18 +1,19 @@
 import './styles/thoury.scss';
-import { FactoryRegistr } from '../models/FactoryRegistr.js';
 import { getHeaderWindow } from '../models/forThoury/getHeaderWindow.js';
 import { getBodyThoury } from '../models/forThoury/getBodyThoury.js';
 import { getWorkPlace } from '../view/thoury/getWorkPlace.js';
+import { renderThoury, getTranslate } from './forThoury/renderThoury.js';
 
 export class Thoury
 {
-    static translate = FactoryRegistr.getObject("LanguageController");
+    static translate = getTranslate();
+    static idForButtonClosed = 'button-for-get-work-place';
 
     static handleThoury(level)
     {
         this.level = level;    
-        this.strLocal = getWorkPlace(this.headerThoury(), this.bodyThoury(), 'button-for-get-work-place');    
-        document.getElementById('level30').onclick = cardThoury.bind(null, this);
+        this.strLocal = getWorkPlace(this.headerThoury(), this.bodyThoury(), this.idForButtonClosed);    
+        document.getElementById('level30').onclick = renderThoury.bind(this);
     }
 
     // Функция помещает информацию в заголовок раздела Теория
@@ -29,11 +30,3 @@ export class Thoury
     }
 }
 
-function cardThoury(thisS)
-{
-    document.getElementById('exercise').style.display='block';
-    document.getElementById('exercise').innerHTML = thisS.strLocal;
-    document.getElementById('button-for-get-work-place').addEventListener('click', ()=>{
-        document.getElementById('exercise').style.display='none';
-    });
-}
