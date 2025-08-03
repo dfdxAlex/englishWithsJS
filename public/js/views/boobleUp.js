@@ -125,5 +125,5 @@ function scarbClick(xx=1)
         
     }, 2500);
 
-    diament();
+    window.hundleHelpPrime();
 }

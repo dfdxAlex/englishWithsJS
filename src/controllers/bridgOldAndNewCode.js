@@ -8,6 +8,7 @@ import { handleLog } from './../../src/controllers/handleLog.js';
 import { diament } from './../controllers/diament.js';
 import { Thoury } from './Thoury.js';
 import { Exercise } from '../view/Exercise.js';
+import { hundleHelpPrime } from './forInitEventListeners/hundleHelpPrime.js';
 
 window.languageSelectorView = new LanguageSelectorView();
 window.BDTranslate = exportBDTranslate();
@@ -20,5 +21,7 @@ window.diament = diament;
 window.handleLog = handleLog;
 window.Thoury = Thoury;
 window.Exercise = Exercise;
+
+window.hundleHelpPrime = hundleHelpPrime;
 
 
