@@ -5,7 +5,8 @@ import './styles/nav.scss';
 export function nav()
 {
     setTimeout(() => {
-      document.getElementById('button-help-video').addEventListener('click', () => { 
+      document.getElementById('button-help-video').addEventListener('click', (event) => { 
+        event.stopPropagation();
         Help.viewhandleHelpToTranslate(helpForHomeMenuRU(),'vkQYDmiTlmQ');
       });
       
