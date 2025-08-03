@@ -4,24 +4,17 @@
 //  data-bs-toggle="modal" data-bs-target="#diamondsModal"
 // бутстрап сам накидывает события на кнопку используя триггеры data-bs-
 
-// функция переделана на самозапускающуюся, она ждёт пока не появятся 
 // все нужные элементы и помещает Бутстрап компонент
 
-import { FactoryRegistr } from '../models/FactoryRegistr.js';
 import { returnInfoForDiamant } from '../view/thoury/returnInfoForDiamant.js';
+import { getTranslate } from '../models/forFactoryRegistr/getTranslate.js';
 
 export function daimentInfo()
 {
-    let result;
-    const translate = FactoryRegistr.getObject("LanguageController");
-    let id = setInterval(()=>{
+    const translate = getTranslate();
 
-    if (typeof returnInfoForDiamant !== 'function') return;
-    if (typeof translate !== 'object') return;
-    result = translate.translate(returnInfoForDiamant());
+    const result = translate.translate(returnInfoForDiamant());
 
+    // Вставить разметку для помощи по диамантам в конец body
     document.body.insertAdjacentHTML("beforeend", result);
-
-    clearInterval(id);
-    },100);
 };
