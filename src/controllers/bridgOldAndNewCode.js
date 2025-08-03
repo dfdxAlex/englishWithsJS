@@ -5,7 +5,7 @@ import { FactoryRegistr } from '../models/FactoryRegistr.js';
 import { Help } from '../view/Help.js';
 import { nav } from './../view/nav.js';
 import { handleLog } from './../../src/controllers/handleLog.js';
-import { diament } from './../controllers/diament.js';
+// import { diament } from './../controllers/diament.js';
 import { Thoury } from './Thoury.js';
 import { Exercise } from '../view/Exercise.js';
 import { hundleHelpPrime } from './forInitEventListeners/hundleHelpPrime.js';

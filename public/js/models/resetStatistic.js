@@ -28,7 +28,7 @@ const resetStatistic = (reset = true) => {
     document.getElementById('level24').innerHTML = translate.translate('Собрано алмазов:') + Math.trunc(numberOk);
     document.getElementById('level25').innerHTML = translate.translate('Ошибок:') + numberError;
     document.getElementById('level26').innerHTML = translate.translate('Успех:') + resultSucces +'%';
-    window.diament();
+    window.hundleHelpPrime();
 }
 
 // сбросс ошибок

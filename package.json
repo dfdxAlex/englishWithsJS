@@ -25,6 +25,9 @@
   },
   "homepage": "https://github.com/dfdxAlex/englishWithsJS#readme",
   "devDependencies": {
+    "@babel/cli": "^7.28.0",
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
     "gh-pages": "^6.3.0",
     "sass": "^1.89.2",
     "vite": "^7.0.5"
