@@ -9,7 +9,6 @@ class MenuController
 
     init() 
     {
-        console.log('запустили инит');
         // levelDataModel.getArrayNameButton() - возвращает массив с названиями кнопок
         // menu.getSeedForMenu() - выбирает нужный контейнер для кнопок
 
