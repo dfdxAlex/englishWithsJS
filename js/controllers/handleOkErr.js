@@ -105,7 +105,8 @@ function handleOkErr(str, event) {
     // пересчитать статистику и записать в хранилище
     resetStatistic(false);
     // перерисовать статус диамантов
-    diament();
+    // diament();
+    window.hundleHelpPrime();
 }
 
 // служебная функция удаляет из элементов question_old и clicked_element
