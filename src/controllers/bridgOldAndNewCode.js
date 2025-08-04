@@ -5,23 +5,22 @@ import { FactoryRegistr } from '../models/FactoryRegistr.js';
 import { Help } from '../view/Help.js';
 import { nav } from './../view/nav.js';
 import { handleLog } from './../../src/controllers/handleLog.js';
-// import { diament } from './../controllers/diament.js';
 import { Thoury } from './Thoury.js';
 import { Exercise } from '../view/Exercise.js';
 import { hundleHelpPrime } from './forInitEventListeners/hundleHelpPrime.js';
+import { instanceStatistic } from '../view/Statistic.js';
 
 window.languageSelectorView = new LanguageSelectorView();
 window.BDTranslate = exportBDTranslate();
 window.LanguageController = new LanguageController();
 window.FactoryRegistr = FactoryRegistr;
 window.Help = Help;
-
 window.nav = nav();
 window.diament = diament;
 window.handleLog = handleLog;
 window.Thoury = Thoury;
 window.Exercise = Exercise;
-
 window.hundleHelpPrime = hundleHelpPrime;
+window.instanceStatistic = instanceStatistic;
 
 

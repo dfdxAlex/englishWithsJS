@@ -334,7 +334,8 @@ class WorkingField {
   // ответов.
   workingWihtOkAndError()
   {
-    const statistic = FactoryRegistr.getObject('Statistic');
+    // const statistic = FactoryRegistr.getObject('Statistic');
+    const statistic = window.instanceStatistic;
     statistic.init(DataOk.ok, DataOk.error);    
   }
 
