@@ -16,6 +16,8 @@ const id = setInterval(()=>{
     // если функция сделает всё что должна, то вернет true
     test = hundleHelpPrime();
 
+    // функция находит кнопки меню Статистики и заполняет их содержимым
+    // если не удалось найти все кнопки то вернет false
     test = initEventForMenuStatistic();
 
 

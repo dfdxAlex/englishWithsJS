@@ -37,9 +37,10 @@ export function initEventForMenuStatistic()
        } else {
            level27.innerHTML = translate.translate('Сброс');
            level27.addEventListener('click', () => {
-           resetStatistic();
-           // пересчитать статистику и записать в хранилище
-       });
+               resetStatistic();
+               // пересчитать статистику и записать в хранилище
+           });
+       }
 
        const level28 = document.getElementById('level28');
        if (!level28) {
@@ -48,7 +49,7 @@ export function initEventForMenuStatistic()
            level28.innerHTML = translate.translate('Переводов:')+instanceStatistic.count;
        }
            
-       }
-
+       
+    // вернет true если удалось найти все элементы
     return test;
 }
