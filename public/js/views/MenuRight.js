@@ -24,78 +24,6 @@ class MenuRight
         this.numberMenuLocal=0;
     }
     
-    menuDropdown3()
-    {
-        let rez = `<div 
-                    class="btn-group" 
-                    role="group" 
-                    aria-label="Button group with nested dropdown"
-                   >`;
-        rez+='<div class="btn-group" role="group">';
-        
-        // Here the main menu buttons are formed, Select test, Edit words...
-        rez+=`<button 
-                class="btn btn-light" 
-                id="btnGroupDrop1${this.seedMenu}" 
-                type="button" 
-                data-bs-toggle="dropdown" 
-                aria-expanded="false"
-              >`;
-
-        rez+=this.nameMenu;
-        rez+='</button>';
-
-        // 
-
-        rez+=`<ul 
-                class="dropdown-menu" 
-                aria-labelledby="btnGroupDrop1${this.seedMenu}" 
-              >`;
-        
-        rez+=menuItem();
-        // // перебрать массив с названиями пунктов для меню
-        // rez += this.nameButtons.map((element, index) => {
-        //     // The method returns the location of a specific item. LevelDataModel.mapNameMenu()
-        //     this.numberMenuLocal = LevelDataModel.mapNameMenu(index);
-        //     if (this.numberMenuLocal !== this.numberMenu) {
-        //         return;
-        //     }
-
-        //     return `<li><a class="dropdown-item ${this.addClass()}" id="level${index+1}">${element}</a></li>`;
-        // }).join(''); 
-
-        // rez+='</ul>';
-
-
-        rez+='</div></div>';
-        return rez;
-    }
-
-    // Этот метод возвращает список пунктов для меню выбора теста
-    menuItem()
-    {
-        let rez = '';
-        // перебрать массив с названиями пунктов для меню
-        // перебирается весь список всех пунктов всех категорий
-        rez += this.nameButtons.map((element, index) => {
-            
-            // получить номер-принадлежность конкретного пункта, в какой категории должен быть текущий пункт
-            this.numberMenuLocal = LevelDataModel.mapNameMenu(index);
-            
-            //Если конкретный пункт не подходит к текущему меню то выйти.
-            // this.numberMenu при наследовании этого класса изменяется, таким образом происходит
-            // передача конкретного пункта меню в свою категорию.
-            if (this.numberMenuLocal !== this.numberMenu) {
-                return;
-            }
-
-            // если дошли до этого места то пункт меню подходит для текущей категории и оформляем его
-            return `<li><a class="dropdown-item ${this.addClass()}" id="level${index+1}">${element}</a></li>`;
-        }).join(''); 
-
-        rez+='</ul>';
-        return rez;
-    }
 
     // Этот метод возвращает список пунктов для меню выбора теста
     menuItem2()
@@ -131,7 +59,6 @@ class MenuRight
           <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal${this.seedMenu}">
             ${this.nameMenu}
           </button>
-
           <!-- Modal -->
           <div class="modal fade" id="exampleModal${this.seedMenu}" tabindex="-1" aria-labelledby="exampleModalLabel${this.seedMenu}" aria-hidden="true">
             <div class="modal-dialog">
