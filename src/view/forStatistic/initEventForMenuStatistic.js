@@ -1,5 +1,5 @@
-import { instanceStatistic } from '../Statistic.js';
 import { getTranslate } from '../../models/forFactoryRegistr/getTranslate.js';
+import { DataOk } from '../../services/data/DataOk.js';
 
 export function initEventForMenuStatistic()
 {
@@ -14,21 +14,21 @@ export function initEventForMenuStatistic()
        if (!level24) {
            test = false;
        } else {
-           level24.innerHTML = translate.translate('Собрано алмазов:') + Math.trunc(instanceStatistic.ok);
+           level24.innerHTML = translate.translate('Собрано алмазов:') + Math.trunc(DataOk.ok);
        }
 
        const level25 = document.getElementById('level25');
        if (!level25) {
            test = false;
        } else {
-           level25.innerHTML = translate.translate('Ошибок:') + instanceStatistic.error;
+           level25.innerHTML = translate.translate('Ошибок:') + DataOk.error;
        }
        
        const level26 = document.getElementById('level26');
        if (!level26) {
            test = false;
        } else {
-           level26.innerHTML = translate.translate('Успех:') + Math.floor(instanceStatistic.rez)+'%';;
+           level26.innerHTML = translate.translate('Успех:') + Math.floor(DataOk.rezult)+'%';;
        }
        
        const level27 = document.getElementById('level27');
@@ -46,7 +46,7 @@ export function initEventForMenuStatistic()
        if (!level28) {
            test = false;
        } else {
-           level28.innerHTML = translate.translate('Переводов:')+instanceStatistic.count;
+           level28.innerHTML = translate.translate('Переводов:')+DataOk.countInt;
        }
            
        

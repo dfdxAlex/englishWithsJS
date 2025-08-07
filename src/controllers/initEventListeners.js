@@ -23,9 +23,10 @@ const id = setInterval(()=>{
     if (!initEventForMenuStatistic()) test = false;
 
     // Если не удалось менюшке Burger или Word - выбор теста или учить слова, добавить событие обновления 
-    // статистики то вернуть false
+    // статистики то вернуть false statistic
     if (!hundleUpdateBurgerOrWord('burger')) test = false;
     if (!hundleUpdateBurgerOrWord('word')) test = false;
+    if (!hundleUpdateBurgerOrWord('statistic')) test = false;
 
 
     if (test) {

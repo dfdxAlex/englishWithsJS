@@ -4,6 +4,7 @@
 // сам класс не експортируется
 
 import { notNull } from '../library/notNull.js';
+import { DataOk } from '../services/data/DataOk.js';
 
 class Statistic
 {
@@ -19,22 +20,27 @@ class Statistic
     init(okInput, errorInput)
     {
        // Проверяются значения правильных и не правильных ответов
-       this.ok = parseFloat(okInput);
-       this.ok = notNull(this.ok);
+    //    this.ok = parseFloat(okInput);
+    //    this.ok = notNull(this.ok);
 
-       this.error = parseFloat(errorInput);
-       this.error = notNull(this.error);
+    //    this.ok = parseFloat(okInput);
+       this.ok = DataOk.ok;
+
+    //    this.error = parseFloat(errorInput);
+       this.error = DataOk.error;
 
        // считаются проценты только если сумма балов отлична от нуля
-       let allPunkt = this.ok + this.error;
+    //    let allPunkt = this.ok + this.error;
+       let allPunkt = DataOk.ok + DataOk.error;
        if (allPunkt !== 0) {
-           this.rez = (this.ok/(allPunkt))*100;
+           this.rez = (DataOk.ok/(allPunkt))*100;
        }
 
-       this.level = notNull(localStorage.getItem('level'));
+       this.level = DataOk.level.int;
        
        this.count = notNull(localStorage.getItem('intTranslate_'+this.level));
        if (!this.count) this.count = 0;
+
     }
 }
 
