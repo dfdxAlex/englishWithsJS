@@ -23,6 +23,7 @@ class EventController {
             let optionsThreeString = optionsThree.innerText.replaceAll(' ','');
             let optionsFourString = optionsFour.innerText.replaceAll(' ','');
 
+
             // Всегда правильный вариант ответа, по определению.
             optionsOne.onclick = handleOkErr.bind(null,'Ok');
 
@@ -83,13 +84,6 @@ class EventController {
             }
         }
         
-        // Добавить обработчик события по кнопке с переводом.
-        // Перевод должен появиться только после клика на кнопку
-        let translate = document.getElementById('translate');
-        if (translate) {
-            translate.onclick = handleTranslateQuestion.bind(null, FactoryRegistr.getObject('WorkingField'));
-        }
-
         // обработчик события клика по кнопке логов
         document.getElementById('log').onclick = handleLog;
     }

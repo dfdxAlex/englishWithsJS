@@ -12,7 +12,8 @@ class WorkingField {
   // пропущенное слово
   trueSentences = true;
   // Вызвать из регистра объект переводчика
-  transL = FactoryRegistr.getObject("LanguageController");
+  // transL = FactoryRegistr.getObject("LanguageController");
+  transL = window.getTranslate;
   // Постоянная часть разметки компонента
   cardStart = `<div class="card fieldSetWorkField" style="width: 100%; margin: auto; border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0 8px 16px rgba(0,0,0,0.2);"><div class="card-body">`;
 
@@ -26,15 +27,27 @@ class WorkingField {
     
         // Начальный текст для кнопки перевода вопроса
         const translateFromArray = this.transL.translate('Перевести вопрос');
-        this.translate = `<div class='row mb-2'><div class='col-12'><button style='width: 100%; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button' id='translate'>${translateFromArray}</button></div></div>`;
+        this.translate = `<div class='row mb-2'>
+                            <div class='col-12'>
+                              <button 
+                                style="
+                                  width: 100%; 
+                                  border: 1px solid rgba(0, 0, 0, 0.2); 
+                                  box-shadow: 0 4px 8px rgba(0,0,0,0.2);" 
+                                type="button" 
+                                id="translate">${translateFromArray}
+                              </button>
+                            </div>
+                          </div>`;
 
         this.cardFinish = "</div></div>";
+
+
   }
 
   init(arrayBD, nameLeson = false) 
   {
           this.getArrayQuestions(arrayBD);
-          this.workingWihtOkAndError();
           let legend = this.cardStartAndLegend(nameLeson);
           let buttonOption = [];
 
@@ -63,7 +76,6 @@ class WorkingField {
     localStorage.setItem('light_normal_hard', 'light');
     const strStart = `<div class='row mb-2'><div class='col-12'><button style='border-radius: 10px; margin-left: 5px; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button'`;
         this.getArrayQuestions(arrayBD);
-        this.workingWihtOkAndError();
         let legend = this.cardStartAndLegend(nameLeson);
 
         // Создание кнопок
@@ -107,7 +119,6 @@ class WorkingField {
   {
     const strStart = `<div class='row mb-2'><div class='col-12'><button style='border-radius: 10px; margin-left: 5px; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button'`;
         this.getArrayQuestions(arrayBD);
-        this.workingWihtOkAndError();
         let legend = this.cardStartAndLegend(nameLeson);
 
         // Создание кнопок
@@ -332,12 +343,12 @@ class WorkingField {
   // Метод вызывает метод другого класса и передает ему данные для 
   // обработки. Данные касаются статистики правильных и не правильных 
   // ответов.
-  workingWihtOkAndError()
-  {
-    // const statistic = FactoryRegistr.getObject('Statistic');
-    const statistic = window.instanceStatistic;
-    statistic.init(DataOk.ok, DataOk.error);    
-  }
+  // workingWihtOkAndError()
+  // {
+  //   // const statistic = FactoryRegistr.getObject('Statistic');
+  //   // const statistic = window.instanceStatistic;
+  //   // statistic.init(DataOk.ok, DataOk.error);    
+  // }
 
   // Функция создает разметку для кнопки "Проверить" 
   // во втором и третьем тесте
