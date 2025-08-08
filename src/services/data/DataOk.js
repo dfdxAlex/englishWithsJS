@@ -4,7 +4,7 @@ const levelStr = ()=>{
     return localStorage.getItem('level') || '9';
 }
 const countStr = ()=>{
-    localStorage.getItem('intTranslate_'+levelStr()) || '0'
+    return localStorage.getItem('intTranslate_'+levelStr()) || '0'
 }
 
 
@@ -41,7 +41,13 @@ DataOk = {
         return this.ok/(this.ok + this.error)*100;
     },
     get countInt() {
-        return this.count.int;
+        return parseInt(countStr());
+    },
+    get countStr() {
+        return countStr();
+    },
+    set countInt(count) {
+        localStorage.setItem('intTranslate_'+levelStr(), count);
     },
     // Сеттер для levelX_Ok'; (для имени ячейки, в которой хранится число с OK)
     // Вместе с этим меняет и значение переменной level

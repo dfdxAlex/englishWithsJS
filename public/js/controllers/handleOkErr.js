@@ -54,6 +54,7 @@ function handleOkErr(str, event) {
     let rezult  = event.target.innerText;
 
     if (str === 'Ok') {
+        window.DataOk.translateStop = false;
         // Если ответ правильный, то в поле clicked_element вывести
         // результат работы последней функции в массиве, если там 
         // есть функция, иначе вывести элемент, на который нажали

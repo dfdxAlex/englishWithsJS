@@ -3,8 +3,8 @@
 // при первой загрузке создается объект, дальше експортируется только ссылка на него
 // сам класс не експортируется
 
-import { notNull } from '../library/notNull.js';
-import { DataOk } from '../services/data/DataOk.js';
+import { notNull } from '../../library/notNull.js';
+import { DataOk } from '../../services/data/DataOk.js';
 
 class Statistic
 {
@@ -19,18 +19,11 @@ class Statistic
 
     init(okInput, errorInput)
     {
-       // Проверяются значения правильных и не правильных ответов
-    //    this.ok = parseFloat(okInput);
-    //    this.ok = notNull(this.ok);
-
-    //    this.ok = parseFloat(okInput);
        this.ok = DataOk.ok;
 
-    //    this.error = parseFloat(errorInput);
        this.error = DataOk.error;
 
        // считаются проценты только если сумма балов отлична от нуля
-    //    let allPunkt = this.ok + this.error;
        let allPunkt = DataOk.ok + DataOk.error;
        if (allPunkt !== 0) {
            this.rez = (DataOk.ok/(allPunkt))*100;
@@ -44,8 +37,8 @@ class Statistic
     }
 }
 
-const instanceStatistic = new Statistic();
+// const instanceStatistic = new Statistic();
 
-export { instanceStatistic }
+// export { instanceStatistic }
 
 

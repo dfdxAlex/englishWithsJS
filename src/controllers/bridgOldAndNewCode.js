@@ -8,7 +8,9 @@ import { handleLog } from './../../src/controllers/handleLog.js';
 import { Thoury } from './Thoury.js';
 import { Exercise } from '../view/Exercise.js';
 import { hundleHelpPrime } from './forInitEventListeners/hundleHelpPrime.js';
-import { instanceStatistic } from '../view/Statistic.js';
+// import { instanceStatistic } from '../view/Statistic.js';
+import { getTranslate } from '../models/forFactoryRegistr/getTranslate.js';
+import { DataOk } from '../services/data/DataOk.js';
 
 window.languageSelectorView = new LanguageSelectorView();
 window.BDTranslate = exportBDTranslate();
@@ -21,6 +23,10 @@ window.handleLog = handleLog;
 window.Thoury = Thoury;
 window.Exercise = Exercise;
 window.hundleHelpPrime = hundleHelpPrime;
-window.instanceStatistic = instanceStatistic;
+// window.instanceStatistic = instanceStatistic;
+window.DataOk = DataOk;
+
+// костыль для регистратора объектов
+window.getTranslate = getTranslate();
 
 
