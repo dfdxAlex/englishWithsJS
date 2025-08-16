@@ -6,6 +6,8 @@
 
 import { returnStringHelpForLanguage } from './returnStringHelpForLanguage.js';
 import { ThouryH2 } from '../../../view/thouryNew/forThouryPattern/ThouryH2.js';
+import { ThouryH3 } from '../../../view/thouryNew/forThouryPattern/ThouryH3.js';
+import { ThouryH4 } from '../../../view/thouryNew/forThouryPattern/ThouryH4.js';
 import { ThouryP } from '../../../view/thouryNew/forThouryPattern/ThouryP.js';
 import { ThouryUl } from '../../../view/thouryNew/forThouryPattern/ThouryUl.js';
 import { ThouryLi } from '../../../view/thouryNew/forThouryPattern/ThouryLi.js';
@@ -15,6 +17,7 @@ import '../../styles/thouryNew.scss';
 export function returnBodyHelpForLanguage(id)
 {
     let str = returnStringHelpForLanguage(id);
+    if (str == '') return '';
 
     let strToArray = str.split('\n');
 
@@ -40,6 +43,14 @@ export function returnBodyHelpForLanguage(id)
                 textBlockRightNow = ThouryUl('start', index) + textBlockRightNow + ThouryUl('');
                 strRez = strRez + textBlockRightNow;
             }
+            if (findedBlock == 'h3' && textBlockRightNow !== '') {
+                textBlockRightNow = ThouryH3('start', index) + textBlockRightNow + ThouryH3('');
+                strRez = strRez + textBlockRightNow;
+            }
+            if (findedBlock == 'h4' && textBlockRightNow !== '') {
+                textBlockRightNow = ThouryH4('start', index) + textBlockRightNow + ThouryH4('');
+                strRez = strRez + textBlockRightNow;
+            }
             findedBlock = '';
             textBlockRightNow = '';
             continue;
@@ -47,6 +58,16 @@ export function returnBodyHelpForLanguage(id)
         // если нашли h2 то записываем признак того что нашли
         if (value.includes('h2')) {
             findedBlock = 'h2';
+            continue;
+        }
+
+        if (value.includes('h3')) {
+            findedBlock = 'h3';
+            continue;
+        }
+
+        if (value.includes('h4')) {
+            findedBlock = 'h4';
             continue;
         }
 
@@ -60,8 +81,8 @@ export function returnBodyHelpForLanguage(id)
             continue;
         }
 
-        if (findedBlock == 'h2' || findedBlock == 'P' || findedBlock == 'ul') {
-            if (findedBlock == 'h2' || findedBlock == 'P')
+        if (findedBlock == 'h4' || findedBlock == 'h3' || findedBlock == 'h2' || findedBlock == 'P' || findedBlock == 'ul') {
+            if (findedBlock == 'h4' || findedBlock == 'h3' || findedBlock == 'h2' || findedBlock == 'P')
                 textBlockRightNow += value;
             if (findedBlock == 'ul') {
                 textBlockRightNow += ThouryLi('start', index) + value + ThouryLi('');

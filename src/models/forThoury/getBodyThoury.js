@@ -79,7 +79,7 @@ export function getBodyThoury(thisS)
         return thisS.translate.translate(returnLevel13());
       default:
         let rez = returnBodyHelpForLanguage(thisS.level-8);
-        if (rez == undefined) return thisS.translate.translate('Просто учим слова');
+        if (rez == '') return thisS.translate.translate('Просто учим слова');
 
         return rez;
      }

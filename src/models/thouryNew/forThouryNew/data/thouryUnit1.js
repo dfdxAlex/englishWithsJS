@@ -17,7 +17,7 @@ export function thouryUnit1()
     h2
     Краткая форма глагола to be
 
-    P
+    h4
     Краткая форма глагола to be (сокращённая форма) образуется за счет соединения глагола с подлежащим (местоимением) с помощью апострофа. Вот основные правила:
     
     ul
@@ -29,14 +29,14 @@ export function thouryUnit1()
     We are → We're
     They are → They're
 
-    p    
+    h4    
     Сокращённая форма часто используется в разговорной речи и неформальной письменной речи.
 
     en
     h2
     Short Form of the Verb "to be"
 
-    p
+    h4
     The short form of the verb "to be" (contraction) is created by combining the verb with the subject (pronoun) using an apostrophe. Here are the main rules:
 
     ul
@@ -48,14 +48,14 @@ export function thouryUnit1()
     We are → We're
     They are → They're
 
-    p
+    h4
     The contraction is commonly used in spoken language and informal writing.
 
     pl
     h2
     Skrócona forma czasownika to be
 
-    p
+    h4
     Skrócona forma czasownika to be (forma skrócona) powstaje przez połączenie czasownika z podmiotem (zaimkiem) za pomocą apostrofu. Oto podstawowe zasady:
     
     ul
@@ -67,14 +67,14 @@ export function thouryUnit1()
     We are → We're
     They are → They're
 
-    p
+    h4
     Forma skrócona często jest używana w mowie potocznej i nieformalnym piśmie.
 
     ua
     h2
     Скорочена форма дієслова to be
 
-    p
+    h4
     Скорочена форма дієслова to be (скорочена форма) утворюється за рахунок з'єднання дієслова з підлеглим (займенником) за допомогою апострофа. Ось основні правила:
 
     ul
@@ -86,7 +86,7 @@ export function thouryUnit1()
     We are → We're
     They are → They're
 
-    p
+    h4
     Скорочена форма часто використовується в розмовній мові та неформальній письмовій мові.
 `;
 }
