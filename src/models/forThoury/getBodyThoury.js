@@ -19,7 +19,6 @@ import { returnInfoUnit22RU,
          returnLevel16,
          returnLevel15,
          returnLevel14,
-         returnLevel10,
          returnLevel11,
          returnLevel13 } from '../../controllers/forThoury/indexForThoury.js';
 
@@ -70,9 +69,6 @@ export function getBodyThoury(thisS)
         return thisS.translate.translate(returnLevel15());
       case 14:
         return thisS.translate.translate(returnLevel14());
-      // case 9:
-      // case 10: 
-      //   return thisS.translate.translate(returnLevel10());
       case 11:
         return thisS.translate.translate(returnLevel11());
       case 13:

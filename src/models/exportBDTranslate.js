@@ -119,11 +119,6 @@ import { returnLevel14EN } from './../view/thoury/returnLevel14EN.js';
 import { returnLevel14PL } from './../view/thoury/returnLevel14PL.js';
 import { returnLevel14UA } from './../view/thoury/returnLevel14UA.js';
 
-import { returnLevel10 } from './../view/thoury/returnLevel10.js';
-import { returnLevel10EN } from './../view/thoury/returnLevel10EN.js';
-import { returnLevel10PL } from './../view/thoury/returnLevel10PL.js';
-import { returnLevel10UA } from './../view/thoury/returnLevel10UA.js';
-
 import { helpForProgramRU } from './../view/help/helpForProgramRU.js';
 import { helpForProgramPL } from './../view/help/helpForProgramPL.js';
 import { helpForProgramUA } from './../view/help/helpForProgramUA.js';
@@ -440,11 +435,6 @@ BDTranslate.push(
     `Створення питань у Present Simple та Past Simple`, 
     `Tworzenie pytań w czasie Present Simple i Past Simple`,
     `Forming questions in Present Simple and Past Simple`]);
-BDTranslate.push(
-    [returnLevel10(), 
-     returnLevel10UA(), 
-     returnLevel10PL(),
-     returnLevel10EN()]);
 BDTranslate.push(
     ['Понятно', 
      'Зрозуміло', 
