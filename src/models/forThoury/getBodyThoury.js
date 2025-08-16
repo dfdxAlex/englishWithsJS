@@ -23,6 +23,8 @@ import { returnInfoUnit22RU,
          returnLevel11,
          returnLevel13 } from '../../controllers/forThoury/indexForThoury.js';
 
+import { returnBodyHelpForLanguage } from '../../models/thouryNew/forThouryNew/returnBodyHelpForLanguage.js';
+
 export function getBodyThoury(thisS)
 {
     switch (thisS.level) {
@@ -68,14 +70,17 @@ export function getBodyThoury(thisS)
         return thisS.translate.translate(returnLevel15());
       case 14:
         return thisS.translate.translate(returnLevel14());
-      case 9:
-      case 10: 
-        return thisS.translate.translate(returnLevel10());
+      // case 9:
+      // case 10: 
+      //   return thisS.translate.translate(returnLevel10());
       case 11:
         return thisS.translate.translate(returnLevel11());
       case 13:
         return thisS.translate.translate(returnLevel13());
       default:
-        return thisS.translate.translate('Просто учим слова');
+        let rez = returnBodyHelpForLanguage(thisS.level-8);
+        if (rez == undefined) return thisS.translate.translate('Просто учим слова');
+
+        return rez;
      }
 }
