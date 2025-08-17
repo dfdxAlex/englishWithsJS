@@ -11,7 +11,7 @@ import { arrayDataThoury } from './data/arrayDataThoury.js';
 export function returnDataArrayForStr(id)
 {
     let numberUnit = '';
-    if (Number.isFinite(id)) numberUnit = 'unit'+id;
+    if (Number.isFinite(id)) numberUnit = 'file'+id;
     else numberUnit = id;
 
     numberUnit = arrayDataThoury.find(value => value.includes(numberUnit));
