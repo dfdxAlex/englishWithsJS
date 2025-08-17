@@ -1,4 +1,4 @@
-const irregularVerbsV3 = [
+export const irregularVerbsV3 = [
     ["be", "been", "was", "wer", "ben", "быть", "бути", "być"],
     ["break", "broken", "broke", "braek", "brocken", "ломать", "ламати", "łamać"],
     ["buy", "bought", "buoght", "bey", "baut", "покупать", "купувати", "kupować"],

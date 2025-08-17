@@ -1,4 +1,4 @@
-const presentSimpleHeSheIt = [
+export const presentSimpleHeSheIt = [
 [
     "eat",            // Индекс 0
     "eats",           // Индекс 1

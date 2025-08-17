@@ -1,4 +1,4 @@
-let textA1Begginer = [
+export const textA1Begginer = [
     [
       "My name is Anna. I am 20 years old. I live in a small town with my parents. Every day, I go to school. I like studying math and history. In my free time, I like to play the piano or go for a walk in the park. On weekends, I visit my friends or watch movies.",
       "The text is about Anna, a 20-year-old who goes to school and enjoys playing the piano and spending time with friends on weekends.",

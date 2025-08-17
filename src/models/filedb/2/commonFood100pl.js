@@ -1,4 +1,4 @@
-const commonFood100pl = [
+export const commonFood100pl = [
     ['appetizer', 'przystawka', 'deser', 'danie główne', 'napój', 'zakuska', 'zakuska', 'przystawka'],
     ['beverage', 'napój', 'jedzenie', 'zakuska', 'deser', 'napój', 'napój', 'napój'],
     ['buffet', 'bufet', 'obsługa', 'menu', 'a la carte', 'szwedzki stół', 'szwedzki stół', 'bufet'],

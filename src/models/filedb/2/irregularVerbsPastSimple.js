@@ -1,4 +1,4 @@
-const irregularVerbsPastSimple = [
+export const irregularVerbsPastSimple = [
     ['...be', 'was/were', 'is', 'are', 'been', 'быть', 'бути', 'być'],
     ['...become', 'became', 'become', 'begun', 'begin', 'становиться', 'ставати', 'stać się'],
     ['...begin', 'began', 'begin', 'begun', 'began', 'начинать', 'починати', 'zacząć'],

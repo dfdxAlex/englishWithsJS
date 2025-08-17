@@ -1,4 +1,4 @@
-const commonSport100pl = [
+export const commonSport100pl = [
         ['athlete', 'atleta', 'sportowiec', 'kulturysta', 'uczestnik', 'atleta', '', ''], 
         ['training', 'trening', 'przygotowanie', 'ćwiczenia', 'nauka', 'trening', '', ''], 
         ['exercise', 'ćwiczenie', 'fizykultura', 'trening', 'zajęcie', 'ćwiczenie', '', ''], 

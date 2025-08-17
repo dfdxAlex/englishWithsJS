@@ -40,7 +40,8 @@ function calculateBonusMultiplier(propertyForBonus)
     log.error = error;
 
     // Узнать число существующих тестов
-    const levelDataModel = FactoryRegistr.getObject("LevelDataModel", [DataOk.level.int]);
+    // const levelDataModel = FactoryRegistr.getObject("LevelDataModel", [DataOk.level.int]);
+    const levelDataModel = new window.LevelDataModel([DataOk.level.int]);
     const numberTest = levelDataModel.getArrayNameButton().length;
     log.numberTest = numberTest;
 

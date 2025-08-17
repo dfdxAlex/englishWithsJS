@@ -20,7 +20,7 @@ const handleLevelX = (dataObj, constIndexArray = false) =>
         // Блокировка работы с форматом word-assembly если 
         // выбрано изучение слов, там нет предложений, 
         // которые можно собирать по словам
-        if (LevelDataModel.mapNameMenu(dataObj.getLevel()-1) === 2) {
+        if (window.LevelDataModel.mapNameMenu(dataObj.getLevel()-1) === 2) {
             localStorage.setItem('user_select','simple');
         }
     

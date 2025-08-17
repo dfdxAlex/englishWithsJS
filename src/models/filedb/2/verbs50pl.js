@@ -1,4 +1,4 @@
-const verbs50pl = [
+export const verbs50pl = [
   ["run", "biegać", "latać", "pływać", "skakać", "biegać", "", ""],
   ["eat", "jeść", "spać", "czytać", "pracować", "jeść", "jeść", ""],
   ["write", "pisać", "chodzić", "tańczyć", "grać", "pisać", "", ""],

@@ -1,6 +1,6 @@
 // Массив для задания Вставить правильное слово.
 
-whereThat = [
+export const whereThat = [
     ["... is the library?", "where", "what", "who", "how", "Где находится библиотека?", "Де знаходиться бібліотека?", "Gdzie jest biblioteka?"],
     ["... are you doing?", "what", "who", "where", "why", "Что ты делаешь?", "Що ти робиш?", "Co robisz?"],
     ["... is that?", "who", "where", "what", "how", "Кто это?", "Хто це?", "Kim jest?"],
