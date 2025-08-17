@@ -3,11 +3,6 @@ export * from '../../view/thoury/returnInfoUnit22PL.js';
 export * from '../../view/thoury/returnInfoUnit22RU.js';
 export * from '../../view/thoury/returnInfoUnit22UA.js';
 
-export * from '../../view/thoury/returnLevel13.js';
-export * from '../../view/thoury/returnLevel13EN.js';
-export * from '../../view/thoury/returnLevel13PL.js';
-export * from '../../view/thoury/returnLevel13UA.js';
-
 export * from '../../view/thoury/returnLevel14.js';
 export * from '../../view/thoury/returnLevel14EN.js';
 export * from '../../view/thoury/returnLevel14PL.js';

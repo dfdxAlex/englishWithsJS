@@ -9,11 +9,6 @@ import { returnInfoForDiamantEN } from './../view/thoury/returnInfoForDiamantEN.
 import { returnInfoForDiamantPL } from './../view/thoury/returnInfoForDiamantPL.js';
 import { returnInfoForDiamantUA } from './../view/thoury/returnInfoForDiamantUA.js';
 
-import { returnLevel13 } from './../view/thoury/returnLevel13.js';
-import { returnLevel13EN } from './../view/thoury/returnLevel13EN.js';
-import { returnLevel13PL } from './../view/thoury/returnLevel13PL.js';
-import { returnLevel13UA } from './../view/thoury/returnLevel13UA.js';
-
 import { returnLevel38 } from './../view/thoury/returnLevel38.js';
 import { returnLevel38EN } from './../view/thoury/returnLevel38EN.js';
 import { returnLevel38PL } from './../view/thoury/returnLevel38PL.js';
@@ -410,11 +405,6 @@ BDTranslate.push(
      `Утворення питань у поточному продовженому часі P.C.`, 
      `Tworzenie pytań w czasie teraźniejszym ciągłym P.C.`,
      `Formation of questions in the present continuous tense P.C.`]);
-BDTranslate.push(
-    [returnLevel13(), 
-     returnLevel13UA(), 
-     returnLevel13PL(),
-     returnLevel13EN()]);
 BDTranslate.push(
     [`Правило для настоящего продолженного времени (Present Continuous)`, 
      `Правило для поточного часу (Present Continuous)`, 

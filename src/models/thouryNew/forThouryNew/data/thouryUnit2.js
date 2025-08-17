@@ -23,11 +23,14 @@ export function thouryUnit2()
     Вопрос с to be:
 
     h3
-    Вопрос с to be: переставь to be (am, is, are, was, were) перед подлежащим.
+    Вопрос с to be: 
+
+    h4
+    Переставь to be (am, is, are, was, were) перед подлежащим.
     Краткая форма в вопросах не используется — пишем полную (Is, Are, Was…), даже если в утвердительном предложении было сокращение (She's tired → Is she tired?).
+    Примеры:
 
     ul
-    Примеры:
     She is tired. (She's tired) → Is she tired?
     They are ready. (They're ready) → Are they ready?
     I am late. (I'm late) → Am I late?

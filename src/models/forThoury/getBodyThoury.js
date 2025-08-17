@@ -18,8 +18,7 @@ import { returnInfoUnit22RU,
          returnLevel17,
          returnLevel16,
          returnLevel15,
-         returnLevel14,
-         returnLevel13 } from '../../controllers/forThoury/indexForThoury.js';
+         returnLevel14 } from '../../controllers/forThoury/indexForThoury.js';
 
 import { returnBodyHelpForLanguage } from '../../models/thouryNew/forThouryNew/returnBodyHelpForLanguage.js';
 
@@ -68,19 +67,10 @@ export function getBodyThoury(thisS)
         return thisS.translate.translate(returnLevel15());
       case 14:
         return thisS.translate.translate(returnLevel14());
-      case 13:
-        return thisS.translate.translate(returnLevel13());
       default:
-        // Костыль для старых файлов
-        // нижние уровни находятся в виде старых файлов и для их замены нужно отнимать 
-        // цифру 8 пока не появится между ними уровень для изучения слов.
-        // let id=thisS.level-8;
-        // Уровень 11 не существует в книге поэтому емё присвоен уникальный id
-        // if (thisS.level == 11) id = "unit2-2";
-        // Новые хелпы, начиная с 44 - разница между левлом в книге и файлов 21
-        // Пока не будет сделан дополнительный уровень
-        // if (thisS.level > 43) id = thisS.level - 21;
+        // Новая система 
         let rez = returnBodyHelpForLanguage(thisS.level);
+        // Ответ для тестов с обучением слов
         if (rez == '') return thisS.translate.translate('Просто учим слова');
 
         return rez;

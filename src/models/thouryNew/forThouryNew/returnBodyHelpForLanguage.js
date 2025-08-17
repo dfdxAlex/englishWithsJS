@@ -73,7 +73,7 @@ export function returnBodyHelpForLanguage(id)
         }
         if (findedBlock == 'h4' || findedBlock == 'h3' || findedBlock == 'h2' || findedBlock == 'ul') {
             if (findedBlock == 'h4' || findedBlock == 'h3' || findedBlock == 'h2' || findedBlock == 'P')
-                textBlockRightNow += value;
+                textBlockRightNow += value + '<br>';
             if (findedBlock == 'ul') {
                 textBlockRightNow += ThouryLi('start', index) + value + ThouryLi('');
             }
