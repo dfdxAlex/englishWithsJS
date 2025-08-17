@@ -34,7 +34,7 @@ class MenuRight
         rez += this.nameButtons.map((element, index) => {
             
             // получить номер-принадлежность конкретного пункта, в какой категории должен быть текущий пункт
-            this.numberMenuLocal = LevelDataModel.mapNameMenu(index);
+            this.numberMenuLocal = window.LevelDataModel.mapNameMenu(index);
             
             //Если конкретный пункт не подходит к текущему меню то выйти.
             // this.numberMenu при наследовании этого класса изменяется, таким образом происходит
@@ -44,7 +44,7 @@ class MenuRight
             }
 
             // если дошли до этого места то пункт меню подходит для текущей категории и оформляем его
-            return `<li><a  data-bs-dismiss="modal" class="btn ${this.addClass()}" id="level${index+1}">${element}</a></li>`;
+            return `<li class='li-menu-${this.numberMenu} li-menu-count-${index+1}'><a  data-bs-dismiss="modal" class="btn ${this.addClass()}" id="level${index+1}">${element}</a></li>`;
         }).join(''); 
 
         rez+='</ul>';

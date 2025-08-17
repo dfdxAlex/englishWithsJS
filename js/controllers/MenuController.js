@@ -4,7 +4,7 @@ class MenuController
 {
     constructor ()
     {
-        this.levelDataModel = new LevelDataModel(DataOk.level.int);
+        this.levelDataModel = new window.LevelDataModel(DataOk.level.int);
     }
 
     init() 
@@ -18,10 +18,10 @@ class MenuController
         // создать объект второго правого меню
         const menu2 = new MenuLearnWord(this.levelDataModel.getArrayNameButton());
 
-        // создать объект второго правого меню
+        // создать объект третьего правого меню
         const menu3 = new MenuHelp(this.levelDataModel.getArrayNameButton());
 
-        // создать объект третьего правого меню
+        // создать объект четвертого правого меню
         const menu4 = new MenuStatictic(this.levelDataModel.getArrayNameButton());
 
         // найти точку для публикации правого меню
@@ -49,22 +49,20 @@ class MenuController
 
         const unit = [];
         for (let i=1; i<=this.levelDataModel.getTic(); i++) {
-            let numberMenu = LevelDataModel.mapNameMenu(i - 1);
+            let numberMenu = window.LevelDataModel.mapNameMenu(i - 1);
             if (numberMenu == 4
               || numberMenu == 3
                 || numberMenu == 5) {
                     continue;
             } 
             unit[i] = document.getElementById('level'+i);
-            unit[i].onclick = handleLevelX.bind(null, new LevelDataModel(i));
+            unit[i].onclick = handleLevelX.bind(null, new window.LevelDataModel(i));
         }
         
         // Функция находит все элементы с атрибутом data-bs-dismiss="modal" во всех модальных окнах
         // и навешивает на них обработчик, который убирает фокус с активного элемента после закрытия модалки
         fixModalFocus();
     }
-
-
 }
 
 

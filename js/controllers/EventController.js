@@ -55,7 +55,7 @@ class EventController {
                 containerForRezult.onclick = (el) => {
                     el.stopPropagation();
                     const i = localStorage.getItem('level');
-                    const obj = new LevelDataModel(i);
+                    const obj = new window.LevelDataModel(i);
                     // перерисовать рабочее поле.
                     // параметр true отключает генерацию нового вопросса
                     handleLevelX(obj, true);
@@ -76,7 +76,7 @@ class EventController {
                 containerForRezult.onclick = (el) => {
                     el.stopPropagation();
                     //const i = localStorage.getItem('level');
-                    const obj = new LevelDataModel(DataOk.level.int);
+                    const obj = new window.LevelDataModel(DataOk.level.int);
                     // перерисовать рабочее поле.
                     // параметр true отключает генерацию нового вопросса
                     handleLevelX(obj, true);
