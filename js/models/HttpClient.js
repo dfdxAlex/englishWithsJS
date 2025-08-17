@@ -50,7 +50,7 @@ HttpClient.prototype._fetchData = function() {
         this._isLoading = false; // Сбрасываем флаг загрузки
         if (xhr.status >= 200 && xhr.status < 300) {
             setTimeout(function() {
-                const translate = new LanguageController();
+                const translate = window.getTranslate;
                 // console.log(JSON.parse(xhr.responseText));
                 responseObj = JSON.parse(xhr.responseText);
                 if (!responseObj.zapros) {
