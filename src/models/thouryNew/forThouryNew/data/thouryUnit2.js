@@ -17,7 +17,7 @@ export function thouryUnit2()
     h2
     Вопрос с to be:
 
-    P
+    h3
     Вопрос с to be: переставь to be (am, is, are, was, were) перед подлежащим.
     Краткая форма в вопросах не используется — пишем полную (Is, Are, Was…), даже если в утвердительном предложении было сокращение (She's tired → Is she tired?).
 
@@ -29,7 +29,7 @@ export function thouryUnit2()
     He was at home. (He was at home) → Was he at home?
     We were happy. (We were happy) → Were we happy?
 
-    P
+    h3
     Отрицательные вопросы: not можно писать полностью (is not) или сокращать (isn't, aren't, wasn't, weren't) — оба варианта верные.    
     
     ul
@@ -37,7 +37,7 @@ export function thouryUnit2()
     They are ready. → Are they not ready? или Aren't they ready?    
     He was at home. → Was he not at home? или Wasn't he at home?    
 
-    P
+    h3
     С вопросительными словами (What, Where, Why, How и др.) — ставим их в начало, перед to be: 
     
     ul
@@ -62,7 +62,7 @@ export function thouryUnit2()
     He was at home. (He was at home) → Was he at home?
     We were happy. (We were happy) → Were we happy?    
 
-    P
+    h3
     Заперечні питання: not можна писати повністю (is not) або скорочувати (isn't, aren't, wasn't, weren't) — обидва варіанти правильні.        
 
     ul
@@ -70,7 +70,7 @@ export function thouryUnit2()
     They are ready. → Are they not ready? або Aren't they ready?    
     He was at home. → Was he not at home? або Wasn't he at home?    
     
-    P
+    h3
     З питальними словами (What, Where, Why, How тощо) — ставимо їх на початок, перед to be: 
 
     ul
@@ -83,7 +83,7 @@ pl
 h2
 Pytanie z to be:
 
-P
+h3
 Pytanie z to be: przestaw to be (am, is, are, was, were) przed podmiotem.
 Forma skrócona w pytaniach nie jest używana — piszemy pełną (Is, Are, Was…), nawet jeśli w zdaniu twierdzącym było skrócenie (She's tired → Is she tired?).
 
@@ -95,7 +95,7 @@ I am late. (I'm late) → Am I late?
 He was at home. (He was at home) → Was he at home?
 We were happy. (We were happy) → Were we happy?
 
-P
+h3
 Pytania przeczące: not można zapisać w pełnej formie (is not) lub skróconej (isn't, aren't, wasn't, weren't) — obie formy są poprawne.    
 
 ul
@@ -103,7 +103,7 @@ She is tired. → Is she not tired? lub Isn't she tired?
 They are ready. → Are they not ready? lub Aren't they ready?    
 He was at home. → Was he not at home? lub Wasn't he at home?    
 
-P
+h3
 Z zaimkami pytającymi (What, Where, Why, How itp.) — stawiamy je na początku, przed to be: 
 
 ul
@@ -116,7 +116,7 @@ en
 h2
 Question with to be:
 
-P
+h3
 Question with to be: move the verb to be (am, is, are, was, were) before the subject.
 The short form is not used in questions — write the full form (Is, Are, Was…), even if the affirmative sentence had a contraction (She's tired → Is she tired?).
 
@@ -128,7 +128,7 @@ I am late. (I'm late) → Am I late?
 He was at home. (He was at home) → Was he at home?
 We were happy. (We were happy) → Were we happy?
 
-P
+h3
 Negative questions: not can be written in full (is not) or contracted (isn't, aren't, wasn't, weren't) — both forms are correct.    
 
 ul
@@ -136,7 +136,7 @@ She is tired. → Is she not tired? or Isn't she tired?
 They are ready. → Are they not ready? or Aren't they ready?    
 He was at home. → Was he not at home? or Wasn't he at home?    
 
-P
+h3
 With question words (What, Where, Why, How, etc.) — place them at the beginning, before to be: 
 
 ul
@@ -144,7 +144,6 @@ She is here. → Where is she?
 They are happy. → Why are they happy?    
 He was tired. → Why was he tired?
 She's not ready. → Why isn't she ready?
-
 
 `;
 }

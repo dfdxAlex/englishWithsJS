@@ -54,7 +54,6 @@ export function returnBodyHelpForLanguage(id)
         // если нашли h2 то записываем признак того что нашли
         if (value.includes('h2')) {
             findedBlock = 'h2';
-            
             continue;
         }
 
