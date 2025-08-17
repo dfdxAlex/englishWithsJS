@@ -1,16 +1,12 @@
 import '../../controllers/styles/thoury.scss';
-import { returnHeaderHelpForLanguage } from '../thouryNew/forThouryNew/returnHeaderHelpForLanguage.js';
+// import { returnHeaderHelpForLanguage } from '../thouryNew/forThouryNew/returnHeaderHelpForLanguage.js';
 
 // Функция возвращает нужную разметку для заголовка окна теории
 // В параметре передается this, поэтому доступны ресурсы вызываемого класса.
 export function getHeaderWindow(thisS) 
 {  
-    let selectId = 0;
     let rez = "";
     switch (thisS.level) {
-            case 11:
-                rez = `${thisS.translate.translate('Создание вопросов в Present Simple и Past Simple')}`;
-                break;
             case 13: 
                 rez = `${thisS.translate.translate('Правило для настоящего продолженного времени (Present Continuous)')}`;
                 break;
@@ -72,9 +68,6 @@ export function getHeaderWindow(thisS)
                 rez = `Present Continuous Passive, Present Perfect Passive`; 
                 break;   
             default:
-                // Новый метод получения инфы помощи, если он не вернет ничего, то вставить Учим слова
-                rez = returnHeaderHelpForLanguage(thisS.level-8);
-                if (rez) break;
                 rez = `${thisS.translate.translate('Просто учим слова')}`;
         }
 

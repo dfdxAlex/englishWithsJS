@@ -8,7 +8,6 @@ import { returnStringHelpForLanguage } from './returnStringHelpForLanguage.js';
 import { ThouryH2 } from '../../../view/thouryNew/forThouryPattern/ThouryH2.js';
 import { ThouryH3 } from '../../../view/thouryNew/forThouryPattern/ThouryH3.js';
 import { ThouryH4 } from '../../../view/thouryNew/forThouryPattern/ThouryH4.js';
-import { ThouryP } from '../../../view/thouryNew/forThouryPattern/ThouryP.js';
 import { ThouryUl } from '../../../view/thouryNew/forThouryPattern/ThouryUl.js';
 import { ThouryLi } from '../../../view/thouryNew/forThouryPattern/ThouryLi.js';
 import { ThouryDiv } from '../../../view/thouryNew/forThouryPattern/ThouryDiv.js';
@@ -18,7 +17,7 @@ export function returnBodyHelpForLanguage(id)
 {
     let str = returnStringHelpForLanguage(id);
     if (str == '') return '';
-
+    
     let strToArray = str.split('\n');
 
     let strRez = '';
@@ -30,24 +29,21 @@ export function returnBodyHelpForLanguage(id)
     for (let value of strToArray) {
         index++;
         // если нашли пустую строку то заканчиваем обработку блока
-        if (value.trim() == '') {
-            if (findedBlock == 'h2' && textBlockRightNow !== '') {
+        if (value.trim() == '' && textBlockRightNow !== '') {
+            if (findedBlock == 'h2') {
                 textBlockRightNow = ThouryH2('start', index) + textBlockRightNow + ThouryH2('');
                 strRez = strRez + textBlockRightNow + '<hr>';
             }
-            if (findedBlock == 'P' && textBlockRightNow !== '') {
-                textBlockRightNow = ThouryP('start', index) + textBlockRightNow + ThouryP('');
-                strRez = strRez + textBlockRightNow;
-            }
-            if (findedBlock == 'ul' && textBlockRightNow !== '') {
+
+            if (findedBlock == 'ul') {
                 textBlockRightNow = ThouryUl('start', index) + textBlockRightNow + ThouryUl('');
                 strRez = strRez + textBlockRightNow;
             }
-            if (findedBlock == 'h3' && textBlockRightNow !== '') {
+            if (findedBlock == 'h3') {
                 textBlockRightNow = ThouryH3('start', index) + textBlockRightNow + ThouryH3('');
                 strRez = strRez + textBlockRightNow;
             }
-            if (findedBlock == 'h4' && textBlockRightNow !== '') {
+            if (findedBlock == 'h4') {
                 textBlockRightNow = ThouryH4('start', index) + textBlockRightNow + ThouryH4('');
                 strRez = strRez + textBlockRightNow;
             }
@@ -58,6 +54,7 @@ export function returnBodyHelpForLanguage(id)
         // если нашли h2 то записываем признак того что нашли
         if (value.includes('h2')) {
             findedBlock = 'h2';
+            
             continue;
         }
 
@@ -71,17 +68,11 @@ export function returnBodyHelpForLanguage(id)
             continue;
         }
 
-        if (value.includes('P')) {
-            findedBlock = 'P';
-            continue;
-        }
-
         if (value.includes('ul')) {
             findedBlock = 'ul';
             continue;
         }
-
-        if (findedBlock == 'h4' || findedBlock == 'h3' || findedBlock == 'h2' || findedBlock == 'P' || findedBlock == 'ul') {
+        if (findedBlock == 'h4' || findedBlock == 'h3' || findedBlock == 'h2' || findedBlock == 'ul') {
             if (findedBlock == 'h4' || findedBlock == 'h3' || findedBlock == 'h2' || findedBlock == 'P')
                 textBlockRightNow += value;
             if (findedBlock == 'ul') {
