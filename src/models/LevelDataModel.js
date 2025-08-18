@@ -41,15 +41,15 @@ export class LevelDataModel
         this.propertyArrayNameButton.push(' '); // 100 слов о еде  // пункт 2
         this.propertyArrayNameButton.push(' '); // 100 слов про спорт  // пункт 2
         this.propertyArrayNameButton.push(' '); // 100 слов про путешествия // пункт 2
-        this.propertyArrayNameButton.push(this.translate.translate('100 слов'));              // пункт 2
-        this.propertyArrayNameButton.push(this.translate.translate('300 слов'));              // пункт 2
-        this.propertyArrayNameButton.push(this.translate.translate('500 слов'));              // пункт 2
-        this.propertyArrayNameButton.push(this.translate.translate('50 глаголов'));           // пункт 2
-        this.propertyArrayNameButton.push(this.translate.translate('300 глаголов'));          // пункт 2
+        this.propertyArrayNameButton.push(' '); // 100 слов // пункт 2
+        this.propertyArrayNameButton.push(' '); // 300 слов // пункт 2
+        this.propertyArrayNameButton.push(' '); // 500 слов // пункт 2
+        this.propertyArrayNameButton.push(' '); // 50 глаголов  // пункт 2
+        this.propertyArrayNameButton.push(' '); // 300 глаголов // пункт 2
         this.propertyArrayNameButton.push(this.translate.translate('To Be, краткая форма'));  // пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('To Be, вопрос/ответ'));   // пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('To Be, ответь на вопрос'));// пункт 1
-        this.propertyArrayNameButton.push(this.translate.translate('Where/Who...'));           // пункт 2
+        this.propertyArrayNameButton.push(' ');  // Вопросительные слова // пункт 2
         this.propertyArrayNameButton.push(this.translate.translate('Настоящее продолженное')); // пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('Настоящее продолженное - вопрос'));  // пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('Настоящее простое'));                // пункт 1
@@ -57,9 +57,9 @@ export class LevelDataModel
         this.propertyArrayNameButton.push(this.translate.translate('Настоящее простое негативное'));     // пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('Настоящее простое вопросы'));        // пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('Выбрать правильное время PS or PC'));// пункт 1
-        this.propertyArrayNameButton.push(this.translate.translate('Вторая форма неправильных глаголов'));// пункт 1
+        this.propertyArrayNameButton.push(' '); // Вторая группа неправильных глаголов // пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('I Have or I Have got'));// пункт 1
-        this.propertyArrayNameButton.push(this.translate.translate('A1 Beginer text'));// пункт 2
+        this.propertyArrayNameButton.push(' ');// A1 Beginer text пункт 2
         this.propertyArrayNameButton.push(this.translate.translate('Was Or Were'));// пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('Собрано алмазов:'));// пункт 4
         this.propertyArrayNameButton.push(this.translate.translate('Ошибок:'));// пункт 4
@@ -70,15 +70,15 @@ export class LevelDataModel
         this.propertyArrayNameButton.push(this.translate.translate('Теория:'));// пункт 3
         this.propertyArrayNameButton.push(this.translate.translate('Прошедшее простое'));// пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('Past Simple отрицательные и вопросы'));// пункт 1
-        this.propertyArrayNameButton.push('Present Simple He, She, It');// пункт 2
+        this.propertyArrayNameButton.push(' ');// Present Simple He, She, It пункт 2
         this.propertyArrayNameButton.push(this.translate.translate('Past Continuous'));// пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('Past Continuous Or Simple'));// пункт 1
-        this.propertyArrayNameButton.push(this.translate.translate('Irregular Verbs V3'));// пункт 2
+        this.propertyArrayNameButton.push(' '); // нерегулярные глаголы 3 // пункт 2
         this.propertyArrayNameButton.push(this.translate.translate('Present Perfect'));// пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('PrPerf, PrCont, PsSimpl'));// пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('for, since, ago'));// пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('PrPerf or PsSimpl'));// пункт 1
-        this.propertyArrayNameButton.push(this.translate.translate('Animals 100 (RU)'));// пункт 2
+        this.propertyArrayNameButton.push(' ');// Animals 100 (RU) пункт 2
         this.propertyArrayNameButton.push(this.translate.translate('Is Done Was Done (passive 1)'));// пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('Is Being Done Has Been Done (passive 2)'));// пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('be/have/do in present and past tenses'));// пункт 1

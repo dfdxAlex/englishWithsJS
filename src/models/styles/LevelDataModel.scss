@@ -30,14 +30,16 @@
     }
 }
 
-.li-menu-count-1, .li-menu-count-2, .li-menu-count-3, .li-menu-count-4,
-.li-menu-count-5, .li-menu-count-6, .li-menu-count-7, .li-menu-count-8
-{
+
+.ul-for-menu li{
+    list-style: none; 
     border-radius: 10px 100px / 120px;
+    border: 2px solid black;
     background-size: cover; /* картинка растягивается на весь экран */
     background-repeat: no-repeat; /* не повторяется */
     background-position: center; /* по центру */
 }
+
 .li-menu-count-1 {
       background-image: url('images/food100.jpg'); /* путь к картинке */
 }
@@ -47,4 +49,36 @@
 .li-menu-count-3 {
       background-image: url('images/travel100.jpg'); /* путь к картинке */
 }
-
+.li-menu-count-4 {
+      background-image: url('images/words100.jpg'); /* путь к картинке */
+}
+.li-menu-count-5 {
+      background-image: url('images/words300.jpg'); /* путь к картинке */
+}
+.li-menu-count-6 {
+      background-image: url('images/words500.jpg'); /* путь к картинке */
+}
+.li-menu-count-7 {
+      background-image: url('images/verbs50.jpg'); /* путь к картинке */
+}
+.li-menu-count-8 {
+      background-image: url('images/verbs300.jpg'); /* путь к картинке */
+}
+.li-menu-count-12 {
+      background-image: url('images/questionsWords.jpg'); /* путь к картинке */
+}
+.li-menu-count-20 {
+      background-image: url('images/irregular2.jpg'); /* путь к картинке */
+}
+.li-menu-count-22 {
+      background-image: url('images/textBeginnerA1.jpg'); /* путь к картинке */
+}
+.li-menu-count-33 {
+      background-image: url('images/presentSimpleHeSheIt.jpg'); /* путь к картинке */
+}
+.li-menu-count-36 {
+      background-image: url('images/irregular3.jpg'); /* путь к картинке */
+}
+.li-menu-count-41 {
+      background-image: url('images/animals100.jpg'); /* путь к картинке */
+}
