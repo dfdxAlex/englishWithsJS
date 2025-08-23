@@ -55,13 +55,13 @@ export class LevelDataModel
         this.propertyArrayNameButton.push(setStatisticForButton(10));   // пункт 1
         this.propertyArrayNameButton.push(setStatisticForButton(11));// пункт 1
         this.propertyArrayNameButton.push(setStatisticForButton(12));  // Вопросительные слова // пункт 2
-        this.propertyArrayNameButton.push(this.translate.translate('Настоящее продолженное')); // пункт 1
-        this.propertyArrayNameButton.push(this.translate.translate('Настоящее продолженное - вопрос'));  // пункт 1
-        this.propertyArrayNameButton.push(this.translate.translate('Настоящее простое'));                // пункт 1
-        this.propertyArrayNameButton.push(this.translate.translate('Настоящее простое + периодичность'));// пункт 1
-        this.propertyArrayNameButton.push(this.translate.translate('Настоящее простое негативное'));     // пункт 1
-        this.propertyArrayNameButton.push(this.translate.translate('Настоящее простое вопросы'));        // пункт 1
-        this.propertyArrayNameButton.push(this.translate.translate('Выбрать правильное время PS or PC'));// пункт 1
+        this.propertyArrayNameButton.push(setStatisticForButton(13)); // пункт 1
+        this.propertyArrayNameButton.push(setStatisticForButton(14));  // пункт 1
+        this.propertyArrayNameButton.push(setStatisticForButton(15));                // пункт 1
+        this.propertyArrayNameButton.push(setStatisticForButton(16));// пункт 1
+        this.propertyArrayNameButton.push(setStatisticForButton(17));     // пункт 1
+        this.propertyArrayNameButton.push(setStatisticForButton(18));        // пункт 1
+        this.propertyArrayNameButton.push(setStatisticForButton(19));// пункт 1
         this.propertyArrayNameButton.push(setStatisticForButton(20)); // Вторая группа неправильных глаголов // пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('I Have or I Have got'));// пункт 1
         this.propertyArrayNameButton.push(setStatisticForButton(22));// A1 Beginer text пункт 2
