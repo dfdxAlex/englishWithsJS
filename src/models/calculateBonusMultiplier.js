@@ -1,7 +1,9 @@
 // функция должна подсчитать коэффициент коррекции стоимости балла
 // за правильный ответ.
 
-function calculateBonusMultiplier(propertyForBonus)
+// import { DataOk } from '../services/data/DataOk.js';
+
+export function calculateBonusMultiplier(propertyForBonus)
 {
     // Если была использована помощь, то обнулить балл
     if (localStorage.getItem('was_click_help') === 'true') 

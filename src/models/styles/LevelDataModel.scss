@@ -3,9 +3,9 @@
 //     width: 380px;
 // }
 
-.li-menu-2 {
+.li-menu-2, .li-menu-1 {
     width: 80%;
-    height: 100px;
+    height: 130px;
     margin-top: 10px;
     .style-for-item-one {
         width: 100%;
@@ -32,6 +32,7 @@
 
 
 .ul-for-menu li{
+    position: relative;
     list-style: none; 
     border-radius: 10px 100px / 120px;
     border: 2px solid black;
@@ -64,6 +65,15 @@
 .li-menu-count-8 {
       background-image: url('images/verbs300.jpg'); /* путь к картинке */
 }
+.li-menu-count-9 {
+      background-image: url('images/toBe.jpg'); /* путь к картинке */
+}
+.li-menu-count-10 {
+      background-image: url('images/toBeQuestions.jpg'); /* путь к картинке */
+}
+.li-menu-count-11 {
+      background-image: url('images/toBeAnswer.jpg'); /* путь к картинке */
+}
 .li-menu-count-12 {
       background-image: url('images/questionsWords.jpg'); /* путь к картинке */
 }
@@ -82,3 +92,17 @@
 .li-menu-count-41 {
       background-image: url('images/animals100.jpg'); /* путь к картинке */
 }
+
+.for-h4-header-button{
+      position: absolute;
+      top: -10px;           /* смещение вверх (можно +, можно -) */
+      left: 10px;           /* смещение от левого края */
+      margin: 0;
+      padding: 5px 10px;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      border-radius: 6px;
+      font-size: 15px;
+}
+
+

@@ -25,9 +25,10 @@ function handleOkErr(str, event) {
     // входной параметр функции (str)
     const level = localStorage.getItem('level');
     
-    const levexW = 'level'+level+'_'+str;
+    // готовое место для хранения текущей инфа
+    // const levexW = 'level'+level+'_'+str;
     
-    let ticTime = parseFloat(localStorage.getItem(levexW));
+    let ticTime = parseFloat(localStorage.getItem('level'+level+'_'+str));
     if (!Number.isFinite(ticTime)) ticTime = 0;
     let tic = ticTime;
 
@@ -36,14 +37,14 @@ function handleOkErr(str, event) {
         tic,
         str,
         log:false, // Если true, то calculateBonusMultiplier() пишет логи
-        levexW,
+        // levexW,
         level,
     };
     // Увеличить число ответов
     // функция calculateBonusMultiplier() берет число текущих балов
     // и увеличивает его. Правила смотреть внутри функции
-    let ticResult = tic+calculateBonusMultiplier(propertyForBonus);
-    localStorage.setItem(levexW,ticResult);
+    let ticResult = tic+window.calculateBonusMultiplier(propertyForBonus);
+    localStorage.setItem('level'+level+'_'+str,ticResult);
     // Сброс состояния кнопки
     resetBottonError();
     // Выбрать html тег, который покажет выбранный неправильный вариант

@@ -16,12 +16,4 @@ export function diamentView(diament, emodzi, smile)
         </div>
     </div>`;
 
-    // // const diamantView = document.querySelector('#diament');
-    // const diamantView = document.querySelector('#diament');
-    // diamantView.innerHTML = strHeader;
-    // diamantView.addEventListener('click', (event)=>{
-    //     event.stopPropagation();
-    //     Help.viewhandleHelpToTranslate(helpForProgramRU(),'RwzDBkaEwjI');
-    // });
-
 }
