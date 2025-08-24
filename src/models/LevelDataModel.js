@@ -63,7 +63,7 @@ export class LevelDataModel
         this.propertyArrayNameButton.push(setStatisticForButton(18));        // пункт 1
         this.propertyArrayNameButton.push(setStatisticForButton(19));// пункт 1
         this.propertyArrayNameButton.push(setStatisticForButton(20)); // Вторая группа неправильных глаголов // пункт 1
-        this.propertyArrayNameButton.push(this.translate.translate('I Have or I Have got'));// пункт 1
+        this.propertyArrayNameButton.push(setStatisticForButton(21));// пункт 1
         this.propertyArrayNameButton.push(setStatisticForButton(22));// A1 Beginer text пункт 2
         this.propertyArrayNameButton.push(this.translate.translate('Was Or Were'));// пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('Собрано алмазов:'));// пункт 4
