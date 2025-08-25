@@ -65,28 +65,28 @@ export class LevelDataModel
         this.propertyArrayNameButton.push(setStatisticForButton(20)); // Вторая группа неправильных глаголов // пункт 1
         this.propertyArrayNameButton.push(setStatisticForButton(21));// пункт 1
         this.propertyArrayNameButton.push(setStatisticForButton(22));// A1 Beginer text пункт 2
-        this.propertyArrayNameButton.push(this.translate.translate('Was Or Were'));// пункт 1
+        this.propertyArrayNameButton.push(setStatisticForButton(23));// пункт 1
         this.propertyArrayNameButton.push(this.translate.translate('Собрано алмазов:'));// пункт 4
         this.propertyArrayNameButton.push(this.translate.translate('Ошибок:'));// пункт 4
         this.propertyArrayNameButton.push(this.translate.translate('Успех:'));// пункт 4
         this.propertyArrayNameButton.push(this.translate.translate('Сброс'));// пункт 4
         this.propertyArrayNameButton.push(this.translate.translate('Переводов:'));// пункт 4
-        this.propertyArrayNameButton.push(this.translate.translate('Задание теста:'));// пункт 3
-        this.propertyArrayNameButton.push(this.translate.translate('Теория:'));// пункт 3
-        this.propertyArrayNameButton.push(this.translate.translate('Прошедшее простое'));// пункт 1
-        this.propertyArrayNameButton.push(this.translate.translate('Past Simple отрицательные и вопросы'));// пункт 1
+        this.propertyArrayNameButton.push(setStatisticForButton(29));//Задание теста:'));// пункт 3
+        this.propertyArrayNameButton.push(setStatisticForButton(30));/// пункт 3
+        this.propertyArrayNameButton.push(setStatisticForButton(31));//'Прошедшее простое'));// пункт 1
+        this.propertyArrayNameButton.push(setStatisticForButton(32));  //Past Simple отрицательные и вопросы  пункт 1
         this.propertyArrayNameButton.push(setStatisticForButton(33));// Present Simple He, She, It пункт 2
-        this.propertyArrayNameButton.push(this.translate.translate('Past Continuous'));// пункт 1
-        this.propertyArrayNameButton.push(this.translate.translate('Past Continuous Or Simple'));// пункт 1
+        this.propertyArrayNameButton.push(setStatisticForButton(34));//'Past Continuous' пункт 1
+        this.propertyArrayNameButton.push(setStatisticForButton(35)); // Past Continuous Or Simple // пункт 1
         this.propertyArrayNameButton.push(setStatisticForButton(36)); // нерегулярные глаголы 3 // пункт 2
-        this.propertyArrayNameButton.push(this.translate.translate('Present Perfect'));// пункт 1
-        this.propertyArrayNameButton.push(this.translate.translate('PrPerf, PrCont, PsSimpl'));// пункт 1
-        this.propertyArrayNameButton.push(this.translate.translate('for, since, ago'));// пункт 1
-        this.propertyArrayNameButton.push(this.translate.translate('PrPerf or PsSimpl'));// пункт 1
+        this.propertyArrayNameButton.push(setStatisticForButton(37)); //Present Perfect пункт 1
+        this.propertyArrayNameButton.push(setStatisticForButton(38)); //PrPerf, PrCont, PsSimpl пункт 1
+        this.propertyArrayNameButton.push(setStatisticForButton(39)); //for, since, ago пункт 1
+        this.propertyArrayNameButton.push(setStatisticForButton(40)); //PrPerf or PsSimpl пункт 1
         this.propertyArrayNameButton.push(setStatisticForButton(41));// Animals 100 (RU) пункт 2
-        this.propertyArrayNameButton.push(this.translate.translate('Is Done Was Done (passive 1)'));// пункт 1
-        this.propertyArrayNameButton.push(this.translate.translate('Is Being Done Has Been Done (passive 2)'));// пункт 1
-        this.propertyArrayNameButton.push(this.translate.translate('be/have/do in present and past tenses'));// пункт 1
+        this.propertyArrayNameButton.push(setStatisticForButton(42));//Is Done Was Done (passive 1)'));// пункт 1
+        this.propertyArrayNameButton.push(setStatisticForButton(43)); //Is Being Done Has Been Done (passive 2)'));// пункт 1
+        this.propertyArrayNameButton.push(setStatisticForButton(44)); //be/have/do in present and past tenses'));// пункт 1
         this.tic = this.propertyArrayNameButton.length;
     }
 
