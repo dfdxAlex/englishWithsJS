@@ -1,7 +1,4 @@
-// .menu2 {
-//     height: 100px;
-//     width: 380px;
-// }
+
 
 .li-menu-2, .li-menu-1, .li-menu-3 {
     width: 80%;
@@ -26,10 +23,29 @@
         font-family: sans-serif;
         color:rgb(5, 48, 85);
         font-size: 25px;
-        
     }
 }
 
+.li-menu-4 {
+    width: 100%;
+    /* Нечётные (1, 3, 5...) */
+    &:nth-child(odd) {
+      background-color: #bbe6f9;
+    }    
+
+    /* Чётные (2, 4, 6...) */
+    &:nth-child(even) {
+      background-color: #75b8f0;
+    }
+    .style-for-item-start {
+        border-radius: 10px 100px / 120px;
+        border: 0px;
+        width: 100%;
+        font-family: sans-serif;
+        font-size: 25px;
+        text-align: left;
+    }
+}
 
 .ul-for-menu li{
     position: relative;
