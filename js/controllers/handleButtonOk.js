@@ -37,10 +37,10 @@ function handleButtonOk(ev)
     document.querySelector('#button-ok').innerText = rezultString;
     // Если ответ правильный
     if (testRezult) {
-        handleOkErr('Ok',ev);
+        window.handleOkErr('Ok',ev);
         outputTranslateForTest();
     } else {
-        handleOkErr('Error',ev);
+        window.handleOkErr('Error',ev);
     }
 }
 

@@ -25,22 +25,22 @@ class EventController {
 
 
             // Всегда правильный вариант ответа, по определению.
-            optionsOne.onclick = handleOkErr.bind(null,'Ok');
+            optionsOne.onclick = window.handleOkErr.bind(null,'Ok');
 
             if (optionsOneString !== optionsTwoString)
-                optionsTwo.onclick = handleOkErr.bind(null,'Error');
+                optionsTwo.onclick = window.handleOkErr.bind(null,'Error');
             else 
-                optionsTwo.onclick = handleOkErr.bind(null,'Ok');
+                optionsTwo.onclick = window.handleOkErr.bind(null,'Ok');
 
             if (optionsOneString !== optionsThreeString)
-                optionsThree.onclick = handleOkErr.bind(null,'Error');
+                optionsThree.onclick = window.handleOkErr.bind(null,'Error');
             else
-                optionsThree.onclick = handleOkErr.bind(null,'Ok');
+                optionsThree.onclick = window.handleOkErr.bind(null,'Ok');
 
             if (optionsOneString !== optionsFourString)
-                optionsFour.onclick = handleOkErr.bind(null,'Error');
+                optionsFour.onclick = window.handleOkErr.bind(null,'Error');
             else
-                optionsFour.onclick = handleOkErr.bind(null,'Ok');
+                optionsFour.onclick = window.handleOkErr.bind(null,'Ok');
         }
 
         // Оригинальные обработчики событий для второго варианта теста
