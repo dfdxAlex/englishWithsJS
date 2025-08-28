@@ -1,4 +1,4 @@
-const presentContinuous = [
+export const presentContinuous = [
         ["She is ... to music.", "listening", "listenning", "listens", "listened", "Она слушает музыку.", "Вона слухає музику.", "Ona słucha muzyki."],
         ["They are ... football.", "playing", "play", "played", "plays", "Они играют в футбол.", "Вони грають у футбол.", "Oni grają w piłkę nożną."],
         ["I am ... a letter.", "writing", "write", "writes", "written", "Я пишу письмо.", "Я пишу листа.", "Piszę list."],

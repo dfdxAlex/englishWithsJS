@@ -1,4 +1,4 @@
-const questionsWithAnswers = [
+export const questionsWithAnswers = [
     ['Are the doors closed?', "Yes, they are.", "Yes, theyre.", "Yes, they ar.", "Yes, it is.", 'Двери закрыты?', 'Двері закриті?', 'Czy drzwi są zamknięte?'],
     ['Is the window open?', "Yes, it is.", "Yes, its.", "Yes, it open.", "Yes, it are.", 'Окно открыто?', 'Вікно відкрите?', 'Czy okno jest otwarte?'],
     ['Is the car clean?', "Yes, it is.", "Yes, its.", "Yes, it clean.", "Yes, it are.", 'Машина чистая?', 'Машина чиста?', 'Czy samochód jest czysty?'],

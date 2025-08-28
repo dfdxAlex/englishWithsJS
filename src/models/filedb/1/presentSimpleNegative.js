@@ -1,4 +1,4 @@
-const presentSimpleNegative = [
+export const presentSimpleNegative = [
     ["He does not ... coffee.", "drink", "drinks", "drank", "drinking", "Он не пьет кофе.", "Він не п'є каву.", "On nie pije kawy."],
     ["They do not ... in the park.", "play", "plays", "played", "playing", "Они не играют в парке.", "Вони не грають у парку.", "Oni nie grają w parku."],
     ["She does not ... to music.", "listen", "listens", "listened", "listening", "Она не слушает музыку.", "Вона не слухає музику.", "Ona nie słucha muzyki."],

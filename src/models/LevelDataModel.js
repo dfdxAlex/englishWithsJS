@@ -12,11 +12,17 @@
 // В этот массив arrayForButton добавить цифру для определения куда попадает соответствующий пункт
 // И заполнить getArrayDB().
 
+// При добавлении нового файла с тестом, файл нужно прописать в индексном файле
+// ../models/filedb/indexForFileDB.js
+
 import './styles/LevelDataModel.scss';
 import { DataOk } from '../services/data/DataOk.js';
 import { Exercise } from '../view/Exercise.js';
 import { getTranslate } from '../models/forFactoryRegistr/getTranslate.js';
 import { setStatisticForButton } from '../view/forLevelDataModel/setStatisticForButton.js';
+
+// import { commonFood100 } from './filedb/indexForFileDB.js';
+import * as fileDB from './filedb/indexForFileDB.js';
 
 export class LevelDataModel
 {
@@ -112,6 +118,9 @@ export class LevelDataModel
             this.ex.init(this.translate.translate(exercise));
             localStorage.setItem('nameArrayDb',nameArray);
             window.Thoury.handleThoury(level);
+            // поместить в this.rez нужный массив с данными. getArrayDB() запускает данный метод
+            // и потом возвращает переменную this.rez
+            nameArray = 'fileDB.'+nameArray;
             this.rez = eval(nameArray);
         }
     }

@@ -1,4 +1,4 @@
-const presentSimpleOrContinius = [
+export const presentSimpleOrContinius = [
 [
     "I ___ books every day.",
     "read",

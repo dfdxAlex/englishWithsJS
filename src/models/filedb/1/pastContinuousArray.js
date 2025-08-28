@@ -1,4 +1,4 @@
-const pastContinuousArray = [
+export const pastContinuousArray = [
     [
         "I was ... a book when the lights went out.",
         "reading",

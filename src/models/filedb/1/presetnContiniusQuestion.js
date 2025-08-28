@@ -1,4 +1,4 @@
-const presetnContiniusQuestion = [
+export const presetnContiniusQuestion = [
     [
         "Yes, she is studying now.",
         "Is she studying now?",

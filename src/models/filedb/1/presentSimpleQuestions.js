@@ -1,4 +1,4 @@
-const presentSimpleQuestions = [
+export const presentSimpleQuestions = [
     ["... you like coffee?", "Do", "Does", "", "", "Ты любишь кофе?", "Ти любиш каву?", "Czy lubisz kawę?"],
     ["... she play the piano every day?", "Does", "Do", "", "", "Она играет на пианино каждый день?", "Вона грає на піаніно кожного дня?", "Czy ona gra na pianinie codziennie?"],
     ["... they go to school by bus?", "Do", "Does", "", "", "Они ездят в школу на автобусе?", "Вони їздять до школи автобусом?", "Czy oni jeżdżą do szkoły autobusem?"],

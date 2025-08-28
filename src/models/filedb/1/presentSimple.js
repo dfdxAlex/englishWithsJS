@@ -1,4 +1,4 @@
-const presentSimple = [
+export const presentSimple = [
     [
       "She is ... to music.",
       "listens",

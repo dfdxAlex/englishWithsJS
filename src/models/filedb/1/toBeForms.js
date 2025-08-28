@@ -1,4 +1,4 @@
-const toBeForms = [
+export const toBeForms = [
     ['I am', "I'm", 'Im', 'Iam', 'I am', 'Я есть', 'Я є', 'Jestem'],
     ['I am not', "I'm not", 'Im not', 'Iamnot', 'I amnot', 'Я не есть', 'Я не є', 'Nie jestem'],
     ['You are', "You're", 'Your', 'Youre', 'You ar', 'Ты есть', 'Ти є', 'Ty jesteś'],

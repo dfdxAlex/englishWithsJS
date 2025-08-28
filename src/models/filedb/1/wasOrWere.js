@@ -1,4 +1,4 @@
-const wasOrWere = [
+export const wasOrWere = [
     [
       "was/yesterday/late/I", // перемешанные слова с разделением слешем
       "I was late yesterday", // правильное предложение

@@ -1,4 +1,4 @@
-const presentSimpleNever = [
+export const presentSimpleNever = [
     ["...", "I always play.", "I play always.", "I always plays.", "I always played.", "Я всегда играю.", "Я завжди граю.", "Zawsze gram."],
     ["...", "I never read.", "I read never.", "I never reads.", "I never reading.", "Я никогда не читаю.", "Я ніколи не читаю.", "Nigdy nie czytam."],
     ["...", "I often watch.", "I watch often.", "I often watches.", "I often watched.", "Я часто смотрю.", "Я часто дивлюся.", "Często oglądam."],

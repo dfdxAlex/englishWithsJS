@@ -1,4 +1,4 @@
-const unit23 = [
+export const unit23 = [
     ["Are you eating?", "Yes, I am eating.", "Did you eat?", "You eat every day.", "You had eaten.", "Ты ешь?", "Ти їси?", "Czy jesz?"],
     ["She is reading.", "Is she reading?", "She read a book.", "She reads a lot.", "She had read it.", "Она читает.", "Вона читає.", "Ona czyta."],
     ["Are they going?", "Yes, they are going.", "They went home.", "They go often.", "They had gone already.", "Они идут?", "Вони йдуть?", "Czy oni idą?"],

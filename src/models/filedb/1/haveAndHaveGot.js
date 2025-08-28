@@ -1,4 +1,4 @@
-const haveAndHaveGot = [
+export const haveAndHaveGot = [
     [
         "I have a book", 
         "I have got a book", 

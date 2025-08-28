@@ -1,4 +1,4 @@
-const presentPerfectIHaveDone = [
+export const presentPerfectIHaveDone = [
     [
         "I have … my homework.", 
         "done", 

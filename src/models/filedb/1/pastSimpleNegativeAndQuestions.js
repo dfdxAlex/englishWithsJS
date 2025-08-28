@@ -1,4 +1,4 @@
-const pastSimpleNegativeAndQuestions = [
+export const pastSimpleNegativeAndQuestions = [
     [
         "She did not ... any mistakes in the report.",
         "make",

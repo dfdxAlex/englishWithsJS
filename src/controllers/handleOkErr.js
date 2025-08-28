@@ -11,7 +11,14 @@
 // Данные о колличестве правильных и не правильных ответов хранятся
 // в локальном хранилище, и у каждого теста есть свои два ключа в хранилище.
 
-function handleOkErr(str, event) {
+// import { commonFood100 } from '../models/filedb/indexForFileDB.js';
+import * as fileDB from '../models/filedb/indexForFileDB.js';
+import { calculateBonusMultiplier } from '../models/calculateBonusMultiplier.js';
+import { DataOk } from '../services/data/DataOk.js';
+import { LevelDataModel } from '../models/LevelDataModel.js';
+import { hundleHelpPrime } from '../controllers/forInitEventListeners/hundleHelpPrime.js';
+
+export function handleOkErr(str, event) {
     // Сохранить координаты места клика по кнопке Проверить
     SettingForProgram.buttonCheckX = event.pageX;
     SettingForProgram.buttonCheckY = event.pageY;
@@ -37,13 +44,12 @@ function handleOkErr(str, event) {
         tic,
         str,
         log:false, // Если true, то calculateBonusMultiplier() пишет логи
-        // levexW,
         level,
     };
     // Увеличить число ответов
     // функция calculateBonusMultiplier() берет число текущих балов
     // и увеличивает его. Правила смотреть внутри функции
-    let ticResult = tic+window.calculateBonusMultiplier(propertyForBonus);
+    let ticResult = tic+calculateBonusMultiplier(propertyForBonus);
     localStorage.setItem('level'+level+'_'+str,ticResult);
     // Сброс состояния кнопки
     resetBottonError();
@@ -55,11 +61,12 @@ function handleOkErr(str, event) {
     let rezult  = event.target.innerText;
 
     if (str === 'Ok') {
-        window.DataOk.translateStop = false;
+        DataOk.translateStop = false;
         // Если ответ правильный, то в поле clicked_element вывести
         // результат работы последней функции в массиве, если там 
         // есть функция, иначе вывести элемент, на который нажали
-        const nameArray = localStorage.getItem('nameArrayDb');
+        let nameArray = localStorage.getItem('nameArrayDb');
+        nameArray = 'fileDB.'+nameArray;
         const workingArray = eval(nameArray);
         const indexArray = localStorage.getItem('randomEl');
         if (typeof workingArray[workingArray.length-1] === "function")
@@ -98,7 +105,7 @@ function handleOkErr(str, event) {
     // Изменить вопрос только если есть правильный ответ на предыдущий
     if (str === 'Ok') {
         colorErrorOrOk('bg-danger', "bg-success");
-        handleLevelX(new window.LevelDataModel(localStorage.getItem('level')));
+        handleLevelX(new LevelDataModel(localStorage.getItem('level')));
     }
     else {
         colorErrorOrOk("bg-success",'bg-danger');
@@ -107,8 +114,7 @@ function handleOkErr(str, event) {
     // пересчитать статистику и записать в хранилище
     resetStatistic(false);
     // перерисовать статус диамантов
-    // diament();
-    window.hundleHelpPrime();
+    hundleHelpPrime();
 }
 
 // служебная функция удаляет из элементов question_old и clicked_element

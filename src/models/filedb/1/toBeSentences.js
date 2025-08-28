@@ -1,4 +1,4 @@
-const toBeSentences = [
+export const toBeSentences = [
     ['I ... happy.', "I'm", 'Im', 'Iam', 'I am', 'Я счастлив.', 'Я щасливий.', 'Jestem szczęśliwy.'],
     ['I ... not happy.', "I'm not", 'Im not', 'Iamnot', 'I amnot', 'Я не счастлив.', 'Я не щасливий.', 'Nie jestem szczęśliwy.'],
     ['You ... a student.', "You're", 'Your', 'Youre', 'You ar', 'Ты студент.', 'Ти студент.', 'Jesteś studentem.'],

@@ -11,6 +11,7 @@ import { getTranslate } from '../models/forFactoryRegistr/getTranslate.js';
 import { DataOk } from '../services/data/DataOk.js';
 import { LevelDataModel } from '../models/LevelDataModel.js';
 import { calculateBonusMultiplier } from '../models/calculateBonusMultiplier.js';
+import { handleOkErr } from './handleOkErr.js';
 
 window.languageSelectorView = new LanguageSelectorView();
 window.BDTranslate = exportBDTranslate();
@@ -24,6 +25,7 @@ window.Thoury = Thoury;
 window.hundleHelpPrime = hundleHelpPrime;
 window.DataOk = DataOk;
 window.calculateBonusMultiplier = calculateBonusMultiplier;
+window.handleOkErr = handleOkErr;
 
 // костыль для регистратора объектов
 window.getTranslate = getTranslate();

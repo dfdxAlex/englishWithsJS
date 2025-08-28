@@ -1,4 +1,4 @@
-const passiveIsDoneWasDone = [
+export const passiveIsDoneWasDone = [
     ["The dog chases the ball.", "The ball is chased by the dog.", "The dog is chasing the ball.", "The ball will be chased by the dog.", "The dog has chased the ball.", "Собака гоняется за мячом.", "Собака бігає за м'ячем.", "Pies goni piłkę."],
     ["She reads books.", "Books are read by her.", "She is reading a book.", "Books will be read by her.", "She had read many books.", "Она читает книги.", "Вона читає книги.", "Ona czyta książki."],
     ["They paint the house.", "The house is painted by them.", "They are painting the house.", "The house will be painted by them.", "They have been painting the house.", "Они красят дом.", "Вони фарбують будинок.", "Oni malują dom."],

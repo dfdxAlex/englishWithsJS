@@ -1,4 +1,4 @@
-const prContiniusPerfectPassive = [
+export const prContiniusPerfectPassive = [
     ["Why is the road being repaired?", "The road is being repaired because of the damage.", "The road was repaired last year.", "The road has been repaired recently.", "The road is repaired every year.", "Почему дорогу ремонтируют?", "Чому дорогу ремонтують?", "Dlaczego droga jest naprawiana?"],  
     ["Why is the house being painted?", "The house is being painted to refresh its look.", "The house was painted last summer.", "The house has been painted this week.", "The house is painted every five years.", "Почему дом красят?", "Чому будинок фарбують?", "Dlaczego dom jest malowany?"],  
     ["Why are the documents being checked?", "The documents are being checked for errors.", "The documents were checked yesterday.", "The documents have been checked already.", "The documents are checked every month.", "Почему документы проверяют?", "Чому документи перевіряють?", "Dlaczego dokumenty są sprawdzane?"],  

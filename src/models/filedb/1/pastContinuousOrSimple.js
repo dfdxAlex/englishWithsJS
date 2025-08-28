@@ -1,4 +1,4 @@
-const pastContinuousOrSimple = [
+export const pastContinuousOrSimple = [
     [
       "She ... dinner when the phone rang.",
       "was cooking",

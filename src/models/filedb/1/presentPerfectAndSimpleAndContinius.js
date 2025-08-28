@@ -1,4 +1,4 @@
-const presentPerfectAndSimpleAndContinius = [
+export const presentPerfectAndSimpleAndContinius = [
     [
         "Has she completed the report, or is it still in progress?", 
         "Yes, she has completed it, so it’s ready for review.", 

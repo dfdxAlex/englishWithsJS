@@ -1,4 +1,4 @@
-const pastSimpleSentences = [
+export const pastSimpleSentences = [
     [
         "They ... the new movie last night.",
         "watched",
