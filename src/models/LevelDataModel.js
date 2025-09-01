@@ -77,8 +77,8 @@ export class LevelDataModel
         this.propertyArrayNameButton.push(this.translate.translate('Успех:'));// пункт 4
         this.propertyArrayNameButton.push(this.translate.translate('Сброс'));// пункт 4
         this.propertyArrayNameButton.push(this.translate.translate('Переводов:'));// пункт 4
-        this.propertyArrayNameButton.push(setStatisticForButton(29));//Задание теста:'));// пункт 3
-        this.propertyArrayNameButton.push(setStatisticForButton(30));/// пункт 3
+        this.propertyArrayNameButton.push('');//Задание теста:'));// пункт 3
+        this.propertyArrayNameButton.push('');/// пункт 3
         this.propertyArrayNameButton.push(setStatisticForButton(31));//'Прошедшее простое'));// пункт 1
         this.propertyArrayNameButton.push(setStatisticForButton(32));  //Past Simple отрицательные и вопросы  пункт 1
         this.propertyArrayNameButton.push(setStatisticForButton(33));// Present Simple He, She, It пункт 2

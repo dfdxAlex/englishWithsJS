@@ -11,6 +11,7 @@
 // Сама информация на нужном языке должна попасть в функцию getBodyThoury()
 
 // каждый новый файл нужно прописать arrayDataThoury.js
+// подключить новый файл тут indexForThoury
 // если нужен кастыль, то тут getBodyThoury
 
 export function thouryUnit1()
