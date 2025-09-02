@@ -484,7 +484,7 @@ export const presentPerfectAndSimpleAndContinius = [
         "Ми щойно орендували нову квартиру, але нам потрібно заїхати.",
         "Właśnie wynajęliśmy nowe mieszkanie, ale musimy się wprowadzić."
        ],
-       ["I have already ... the dishes, so we can eat now.", "hwashed", "washes", "was", "washing", 
+       ["I have already ... the dishes, so we can eat now.", "washed", "washes", "was", "washing", 
         "Я уже помыл посуду, так что теперь мы можем поесть.",
         "Я вже помив посуд, тож тепер ми можемо поїсти.",
         "Już umyłem naczynia, więc możemy teraz zjeść."

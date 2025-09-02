@@ -2414,7 +2414,7 @@ export const haveAndHaveGot = [
         "Haven't they got a house?", 
         "They've not got a house, have they?", 
         "Got they not a house?", 
-        "Haven't they got a house?", 
+        "Haven't they got a house right now?", 
         "У них нет дома", 
         "В них немає будинку", 
         "Nie mają domu"                      
@@ -2774,7 +2774,7 @@ export const haveAndHaveGot = [
         "Do they have a vacation?", 
         "Have they got a vacation, do they?", 
         "They have a vacation, don't they?", 
-        "Do they have a vacation?", 
+        "Are they on vacation right now?", 
         "У них есть отпуск", 
         "В них є відпустка", 
         "Oni mają wakacje"
