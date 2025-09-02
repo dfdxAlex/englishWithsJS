@@ -1,6 +1,6 @@
 import { LanguageController } from './../controllers/LanguageController.js';
 
-export let Help = {
+export const Help = {
     translate: new LanguageController(),
     
     // Метод принимает функцию, которая возвращает текстовую инфу для помощи
