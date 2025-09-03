@@ -23,7 +23,7 @@ import { setStatisticForButton } from '../view/forLevelDataModel/setStatisticFor
 
 // import { commonFood100 } from './filedb/indexForFileDB.js';
 import  fileDB  from './filedb/indexForFileDB.js';
-
+console.log(fileDB);
 export class LevelDataModel
 {
     constructor(level = 1)
