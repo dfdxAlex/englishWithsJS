@@ -5,27 +5,19 @@
 // ключи → пути к файлам (относительно текущей папки)
 // значения → объекты с экспортами этих файлов (поскольку { eager: true })
 let modules = import.meta.glob('./1/*.js', { eager: true });
+let modulesTwo = import.meta.glob('./2/*.js', { eager: true });
 
 // Создать результирующий объект
-const fileDBOne = {};
+const fileDB = {};
 
 // Добавить в результирующий объект все экспорты, где 
 // поле - это имя массива, а значение - это сам массив с тестами
 for (const module of Object.values(modules)) {
-  Object.assign(fileDBOne, module); // добавляем все экспорты из модуля
+  Object.assign(fileDB, module); // добавляем все экспорты из модуля
 }
-
-// получить аналогичный объект из папки 2
-modules = import.meta.glob('./2/*.js', { eager: true });
-
-// добавить в результирующий объект все имена массивов с тестами и сами массивы
-for (const module of Object.values(modules)) {
-  Object.assign(fileDBOne, module); // добавляем все экспорты из модуля
+for (const module of Object.values(modulesTwo)) {
+  Object.assign(fileDB, module); // добавляем все экспорты из модуля
 }
-
-// Так как всё завязано на fileDB то приравнять ссылки на объекты
-// Потом просто заменить fileDBOne на fileDB а старое закоментированное удалить
-const fileDB = fileDBOne;
 
 // костыль для старого импорта
 window.fileDB = fileDB;
