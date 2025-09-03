@@ -239,7 +239,7 @@ class WorkingField {
   // созданных предложений
   countValidOptions()
   {
-    const nameArray = localStorage.getItem('nameArrayDb');
+    const nameArray = 'window.fileDB.'+localStorage.getItem('nameArrayDb');
     const workingArray = eval(nameArray);
 
     if (workingArray.lengthTrue === undefined) {

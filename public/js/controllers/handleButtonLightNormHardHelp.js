@@ -75,7 +75,7 @@ function handleHelp()
 
 function returnWorkArray()
 {
-    const nameArray = localStorage.getItem('nameArrayDb');
+    const nameArray = 'window.fileDB.'+localStorage.getItem('nameArrayDb');
     const workingArray = eval(nameArray);
     return workingArray;
 }
