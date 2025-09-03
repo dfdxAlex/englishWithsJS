@@ -3,27 +3,20 @@
 // Информация добавляется в метод getArrayDB()
 // Добавляется уровень здесь и в контроллере MenuController.
 
-// Новая итерация класса, появился сеттер для уровня теста.
-// Старый вариант класса остался работать, плюс уровень в конструкторе
-// теперь можно не указывать, главное вовремя установить нужный.
-
 // Чтобы добавить новый тест необходимо создать массив, пример 
 // Добавить запись в arrayNameButton() по аналогии с предыдущими
 // В этот массив arrayForButton добавить цифру для определения куда попадает соответствующий пункт
 // И заполнить getArrayDB().
-
-// При добавлении нового файла с тестом, файл нужно прописать в индексном файле
-// ../models/filedb/indexForFileDB.js
+// Массив с данными достаточно положить в папку 1 или 2
 
 import './styles/LevelDataModel.scss';
 import { DataOk } from '../services/data/DataOk.js';
 import { Exercise } from '../view/Exercise.js';
 import { getTranslate } from '../models/forFactoryRegistr/getTranslate.js';
 import { setStatisticForButton } from '../view/forLevelDataModel/setStatisticForButton.js';
-
-// import { commonFood100 } from './filedb/indexForFileDB.js';
+// Не УДАЛЯТЬ!!!
 import  fileDB  from './filedb/indexForFileDB.js';
-// console.log(fileDB);
+
 export class LevelDataModel
 {
     constructor(level = 1)
