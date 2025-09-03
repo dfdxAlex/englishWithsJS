@@ -42,7 +42,7 @@ import { toBeSentences } from './1/toBeSentences.js';
 import { unit23 } from './1/unit23.js';
 import { wasOrWere } from './1/wasOrWere.js';
 
-export const fileDB = {
+const fileDB = {
   commonFood100,
   animals100,
   commonFood100pl,
@@ -85,4 +85,6 @@ export const fileDB = {
   toBeSentences,
   unit23,
   wasOrWere,
-}
+};
+
+export default fileDB;

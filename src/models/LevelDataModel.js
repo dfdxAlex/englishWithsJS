@@ -22,7 +22,7 @@ import { getTranslate } from '../models/forFactoryRegistr/getTranslate.js';
 import { setStatisticForButton } from '../view/forLevelDataModel/setStatisticForButton.js';
 
 // import { commonFood100 } from './filedb/indexForFileDB.js';
-import { fileDB } from './filedb/indexForFileDB.js';
+import  fileDB  from './filedb/indexForFileDB.js';
 
 export class LevelDataModel
 {
