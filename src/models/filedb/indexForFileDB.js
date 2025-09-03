@@ -1,43 +1,88 @@
 
-export { commonFood100 } from './2/commonFood100.js';
-export { animals100 } from './2/animals100.js';
-export { commonFood100pl } from './2/commonFood100pl.js';
-export { commonFood100ua } from './2/commonFood100ua.js';
-export { commonSport100 } from './2/commonSport100.js';
-export { commonSport100pl } from './2/commonSport100pl.js';
-export { commonWalk100 } from './2/commonWalk100.js';
-export { commonWalk100pl } from './2/commonWalk100pl.js';
-export { commonWords100 } from './2/commonWords100.js';
-export { commonWords300 } from './2/commonWords300.js';
-export { commonWords500 } from './2/commonWords500.js';
-export { irregularVerbsPastSimple } from './2/irregularVerbsPastSimple.js';
-export { irregularVerbsV3 } from './2/irregularVerbsV3.js';
-export { presentSimpleHeSheIt } from './2/presentSimpleHeSheIt.js';
-export { textA1Begginer } from './2/textA1Begginer.js';
-export { verbs50 } from './2/verbs50.js';
-export { verbs50pl } from './2/verbs50pl.js';
-export { verbs300 } from './2/verbs300.js';
-export { whereThat } from './2/whereThat.js';
-export { forSinceAgoPrPerfPastSimple } from './1/forSinceAgoPrPerfPastSimple.js';
-export { haveAndHaveGot } from './1/haveAndHaveGot.js';
-export { passiveIsDoneWasDone } from './1/passiveIsDoneWasDone.js';
-export { pastContinuousArray } from './1/pastContinuousArray.js';
-export { pastContinuousOrSimple } from './1/pastContinuousOrSimple.js';
-export { pastSimpleNegativeAndQuestions } from './1/pastSimpleNegativeAndQuestions.js';
-export { pastSimpleSentences } from './1/pastSimpleSentences.js';
-export { prContiniusPerfectPassive } from './1/prContiniusPerfectPassive.js';
-export { presentContinuous } from './1/presentContinuous.js';
-export { presentPerfectAndSimpleAndContinius } from './1/presentPerfectAndSimpleAndContinius.js';
-export { presentPerfectIHaveDone } from './1/presentPerfectIHaveDone.js';
-export { presentPerfectOrPastSimple } from './1/presentPerfectOrPastSimple.js';
-export { presentSimple } from './1/presentSimple.js';
-export { presentSimpleNegative } from './1/presentSimpleNegative.js';
-export { presentSimpleNever } from './1/presentSimpleNever.js';
-export { presentSimpleOrContinius } from './1/presentSimpleOrContinius.js';
-export { presentSimpleQuestions } from './1/presentSimpleQuestions.js';
-export { presetnContiniusQuestion } from './1/presetnContiniusQuestion.js';
-export { questionsWithAnswers } from './1/questionsWithAnswers.js';
-export { toBeForms } from './1/toBeForms.js';
-export { toBeSentences } from './1/toBeSentences.js';
-export { unit23 } from './1/unit23.js';
-export { wasOrWere } from './1/wasOrWere.js';
+import { commonFood100 } from './2/commonFood100.js';
+import { animals100 } from './2/animals100.js';
+import { commonFood100pl } from './2/commonFood100pl.js';
+import { commonFood100ua } from './2/commonFood100ua.js';
+import { commonSport100 } from './2/commonSport100.js';
+import { commonSport100pl } from './2/commonSport100pl.js';
+import { commonWalk100 } from './2/commonWalk100.js';
+import { commonWalk100pl } from './2/commonWalk100pl.js';
+import { commonWords100 } from './2/commonWords100.js';
+import { commonWords300 } from './2/commonWords300.js';
+import { commonWords500 } from './2/commonWords500.js';
+import { irregularVerbsPastSimple } from './2/irregularVerbsPastSimple.js';
+import { irregularVerbsV3 } from './2/irregularVerbsV3.js';
+import { presentSimpleHeSheIt } from './2/presentSimpleHeSheIt.js';
+import { textA1Begginer } from './2/textA1Begginer.js';
+import { verbs50 } from './2/verbs50.js';
+import { verbs50pl } from './2/verbs50pl.js';
+import { verbs300 } from './2/verbs300.js';
+import { whereThat } from './2/whereThat.js';
+import { forSinceAgoPrPerfPastSimple } from './1/forSinceAgoPrPerfPastSimple.js';
+import { haveAndHaveGot } from './1/haveAndHaveGot.js';
+import { passiveIsDoneWasDone } from './1/passiveIsDoneWasDone.js';
+import { pastContinuousArray } from './1/pastContinuousArray.js';
+import { pastContinuousOrSimple } from './1/pastContinuousOrSimple.js';
+import { pastSimpleNegativeAndQuestions } from './1/pastSimpleNegativeAndQuestions.js';
+import { pastSimpleSentences } from './1/pastSimpleSentences.js';
+import { prContiniusPerfectPassive } from './1/prContiniusPerfectPassive.js';
+import { presentContinuous } from './1/presentContinuous.js';
+import { presentPerfectAndSimpleAndContinius } from './1/presentPerfectAndSimpleAndContinius.js';
+import { presentPerfectIHaveDone } from './1/presentPerfectIHaveDone.js';
+import { presentPerfectOrPastSimple } from './1/presentPerfectOrPastSimple.js';
+import { presentSimple } from './1/presentSimple.js';
+import { presentSimpleNegative } from './1/presentSimpleNegative.js';
+import { presentSimpleNever } from './1/presentSimpleNever.js';
+import { presentSimpleOrContinius } from './1/presentSimpleOrContinius.js';
+import { presentSimpleQuestions } from './1/presentSimpleQuestions.js';
+import { presetnContiniusQuestion } from './1/presetnContiniusQuestion.js';
+import { questionsWithAnswers } from './1/questionsWithAnswers.js';
+import { toBeForms } from './1/toBeForms.js';
+import { toBeSentences } from './1/toBeSentences.js';
+import { unit23 } from './1/unit23.js';
+import { wasOrWere } from './1/wasOrWere.js';
+
+export const fileDB = {
+  commonFood100,
+  animals100,
+  commonFood100pl,
+  commonFood100ua,
+  commonSport100,
+  commonSport100pl,
+  commonWalk100,
+  commonWalk100pl,
+  commonWords100,
+  commonWords300,
+  commonWords500,
+  irregularVerbsPastSimple,
+  irregularVerbsV3,
+  presentSimpleHeSheIt,
+  textA1Begginer,
+  verbs50,
+  verbs50pl,
+  verbs300,
+  whereThat,
+  forSinceAgoPrPerfPastSimple,
+  haveAndHaveGot,
+  passiveIsDoneWasDone,
+  pastContinuousArray,
+  pastContinuousOrSimple,
+  pastSimpleNegativeAndQuestions,
+  pastSimpleSentences,
+  prContiniusPerfectPassive,
+  presentContinuous,
+  presentPerfectAndSimpleAndContinius,
+  presentPerfectIHaveDone,
+  presentPerfectOrPastSimple,
+  presentSimple,
+  presentSimpleNegative,
+  presentSimpleNever,
+  presentSimpleOrContinius,
+  presentSimpleQuestions,
+  presetnContiniusQuestion,
+  questionsWithAnswers,
+  toBeForms,
+  toBeSentences,
+  unit23,
+  wasOrWere,
+}

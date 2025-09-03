@@ -22,7 +22,7 @@ import { getTranslate } from '../models/forFactoryRegistr/getTranslate.js';
 import { setStatisticForButton } from '../view/forLevelDataModel/setStatisticForButton.js';
 
 // import { commonFood100 } from './filedb/indexForFileDB.js';
-import * as fileDB from './filedb/indexForFileDB.js';
+import { fileDB } from './filedb/indexForFileDB.js';
 
 export class LevelDataModel
 {
@@ -121,7 +121,9 @@ export class LevelDataModel
             // поместить в this.rez нужный массив с данными. getArrayDB() запускает данный метод
             // и потом возвращает переменную this.rez
             nameArray = 'fileDB.'+nameArray;
+            // console.log(nameArray);
             this.rez = eval(nameArray);
+            // console.log(this.rez);
         }
     }
     getArrayDB()
