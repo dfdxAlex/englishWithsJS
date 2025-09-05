@@ -1,128 +1,131 @@
 // This code is written inefficiently.
-import { returnInfoUnit22EN } from './../view/thoury/returnInfoUnit22EN.js';
-import { returnInfoUnit22RU } from './../view/thoury/returnInfoUnit22RU.js';
-import { returnInfoUnit22PL } from './../view/thoury/returnInfoUnit22PL.js';
-import { returnInfoUnit22UA } from './../view/thoury/returnInfoUnit22UA.js';
 
-import { returnInfoForDiamant } from './../view/thoury/returnInfoForDiamant.js';
-import { returnInfoForDiamantEN } from './../view/thoury/returnInfoForDiamantEN.js';
-import { returnInfoForDiamantPL } from './../view/thoury/returnInfoForDiamantPL.js';
-import { returnInfoForDiamantUA } from './../view/thoury/returnInfoForDiamantUA.js';
+import returnInfoUnit from '../controllers/forThoury/indexForThoury.js';
 
-import { returnLevel38 } from './../view/thoury/returnLevel38.js';
-import { returnLevel38EN } from './../view/thoury/returnLevel38EN.js';
-import { returnLevel38PL } from './../view/thoury/returnLevel38PL.js';
-import { returnLevel38UA } from './../view/thoury/returnLevel38UA.js';
+// import { returnInfoUnit22EN } from './../view/thoury/returnInfoUnit22EN.js';
+// import { returnInfoUnit22RU } from './../view/thoury/returnInfoUnit22RU.js';
+// import { returnInfoUnit22PL } from './../view/thoury/returnInfoUnit22PL.js';
+// import { returnInfoUnit22UA } from './../view/thoury/returnInfoUnit22UA.js';
 
-import { returnLevel20 } from './../view/thoury/returnLevel20.js';
-import { returnLevel20EN } from './../view/thoury/returnLevel20EN.js';
-import { returnLevel20PL } from './../view/thoury/returnLevel20PL.js';
-import { returnLevel20UA } from './../view/thoury/returnLevel20UA.js';
+// import { returnInfoForDiamant } from './../view/thoury/returnInfoForDiamant.js';
+// import { returnInfoForDiamantEN } from './../view/thoury/returnInfoForDiamantEN.js';
+// import { returnInfoForDiamantPL } from './../view/thoury/returnInfoForDiamantPL.js';
+// import { returnInfoForDiamantUA } from './../view/thoury/returnInfoForDiamantUA.js';
 
-import { returnLevel42 } from './../view/thoury/returnLevel42.js';
-import { returnLevel42EN } from './../view/thoury/returnLevel42EN.js';
-import { returnLevel42PL } from './../view/thoury/returnLevel42PL.js';
-import { returnLevel42UA } from './../view/thoury/returnLevel42UA.js';
+// import { returnLevel38 } from './../view/thoury/returnLevel38.js';
+// import { returnLevel38EN } from './../view/thoury/returnLevel38EN.js';
+// import { returnLevel38PL } from './../view/thoury/returnLevel38PL.js';
+// import { returnLevel38UA } from './../view/thoury/returnLevel38UA.js';
 
-import { returnLevel39 } from './../view/thoury/returnLevel39.js';
-import { returnLevel39EN } from './../view/thoury/returnLevel39EN.js';
-import { returnLevel39PL } from './../view/thoury/returnLevel39PL.js';
-import { returnLevel39UA } from './../view/thoury/returnLevel39UA.js';
+// import { returnLevel20 } from './../view/thoury/returnLevel20.js';
+// import { returnLevel20EN } from './../view/thoury/returnLevel20EN.js';
+// import { returnLevel20PL } from './../view/thoury/returnLevel20PL.js';
+// import { returnLevel20UA } from './../view/thoury/returnLevel20UA.js';
 
-import { returnLevel37 } from './../view/thoury/returnLevel37.js';
-import { returnLevel37EN } from './../view/thoury/returnLevel37EN.js';
-import { returnLevel37PL } from './../view/thoury/returnLevel37PL.js';
-import { returnLevel37UA } from './../view/thoury/returnLevel37UA.js';
+// import { returnLevel42 } from './../view/thoury/returnLevel42.js';
+// import { returnLevel42EN } from './../view/thoury/returnLevel42EN.js';
+// import { returnLevel42PL } from './../view/thoury/returnLevel42PL.js';
+// import { returnLevel42UA } from './../view/thoury/returnLevel42UA.js';
 
-import { returnLevel36 } from './../view/thoury/returnLevel36.js';
-import { returnLevel36EN } from './../view/thoury/returnLevel36EN.js';
-import { returnLevel36PL } from './../view/thoury/returnLevel36PL.js';
-import { returnLevel36UA } from './../view/thoury/returnLevel36UA.js';
+// import { returnLevel39 } from './../view/thoury/returnLevel39.js';
+// import { returnLevel39EN } from './../view/thoury/returnLevel39EN.js';
+// import { returnLevel39PL } from './../view/thoury/returnLevel39PL.js';
+// import { returnLevel39UA } from './../view/thoury/returnLevel39UA.js';
 
-import { returnLevel35 } from './../view/thoury/returnLevel35.js';
-import { returnLevel35EN } from './../view/thoury/returnLevel35EN.js';
-import { returnLevel35PL } from './../view/thoury/returnLevel35PL.js';
-import { returnLevel35UA } from './../view/thoury/returnLevel35UA.js';
+// import { returnLevel37 } from './../view/thoury/returnLevel37.js';
+// import { returnLevel37EN } from './../view/thoury/returnLevel37EN.js';
+// import { returnLevel37PL } from './../view/thoury/returnLevel37PL.js';
+// import { returnLevel37UA } from './../view/thoury/returnLevel37UA.js';
 
-import { returnLevel40 } from './../view/thoury/returnLevel40.js';
-import { returnLevel40EN } from './../view/thoury/returnLevel40EN.js';
-import { returnLevel40PL } from './../view/thoury/returnLevel40PL.js';
-import { returnLevel40UA } from './../view/thoury/returnLevel40UA.js';
+// import { returnLevel36 } from './../view/thoury/returnLevel36.js';
+// import { returnLevel36EN } from './../view/thoury/returnLevel36EN.js';
+// import { returnLevel36PL } from './../view/thoury/returnLevel36PL.js';
+// import { returnLevel36UA } from './../view/thoury/returnLevel36UA.js';
 
-import { returnLevel34 } from './../view/thoury/returnLevel34.js';
-import { returnLevel34EN } from './../view/thoury/returnLevel34EN.js';
-import { returnLevel34PL } from './../view/thoury/returnLevel34PL.js';
-import { returnLevel34UA } from './../view/thoury/returnLevel34UA.js';
+// import { returnLevel35 } from './../view/thoury/returnLevel35.js';
+// import { returnLevel35EN } from './../view/thoury/returnLevel35EN.js';
+// import { returnLevel35PL } from './../view/thoury/returnLevel35PL.js';
+// import { returnLevel35UA } from './../view/thoury/returnLevel35UA.js';
 
-import { returnLevel33 } from './../view/thoury/returnLevel33.js';
-import { returnLevel33EN } from './../view/thoury/returnLevel33EN.js';
-import { returnLevel33PL } from './../view/thoury/returnLevel33PL.js';
-import { returnLevel33UA } from './../view/thoury/returnLevel33UA.js';
+// import { returnLevel40 } from './../view/thoury/returnLevel40.js';
+// import { returnLevel40EN } from './../view/thoury/returnLevel40EN.js';
+// import { returnLevel40PL } from './../view/thoury/returnLevel40PL.js';
+// import { returnLevel40UA } from './../view/thoury/returnLevel40UA.js';
 
-import { returnLevel32 } from './../view/thoury/returnLevel32.js';
-import { returnLevel32EN } from './../view/thoury/returnLevel32EN.js';
-import { returnLevel32PL } from './../view/thoury/returnLevel32PL.js';
-import { returnLevel32UA } from './../view/thoury/returnLevel32UA.js';
+// import { returnLevel34 } from './../view/thoury/returnLevel34.js';
+// import { returnLevel34EN } from './../view/thoury/returnLevel34EN.js';
+// import { returnLevel34PL } from './../view/thoury/returnLevel34PL.js';
+// import { returnLevel34UA } from './../view/thoury/returnLevel34UA.js';
 
-import { returnLevel31 } from './../view/thoury/returnLevel31.js';
-import { returnLevel31EN } from './../view/thoury/returnLevel31EN.js';
-import { returnLevel31PL } from './../view/thoury/returnLevel31PL.js';
-import { returnLevel31UA } from './../view/thoury/returnLevel31UA.js';
+// import { returnLevel33 } from './../view/thoury/returnLevel33.js';
+// import { returnLevel33EN } from './../view/thoury/returnLevel33EN.js';
+// import { returnLevel33PL } from './../view/thoury/returnLevel33PL.js';
+// import { returnLevel33UA } from './../view/thoury/returnLevel33UA.js';
 
-import { returnLevel23 } from './../view/thoury/returnLevel23.js';
-import { returnLevel23EN } from './../view/thoury/returnLevel23EN.js';
-import { returnLevel23PL } from './../view/thoury/returnLevel23PL.js';
-import { returnLevel23UA } from './../view/thoury/returnLevel23UA.js';
+// import { returnLevel32 } from './../view/thoury/returnLevel32.js';
+// import { returnLevel32EN } from './../view/thoury/returnLevel32EN.js';
+// import { returnLevel32PL } from './../view/thoury/returnLevel32PL.js';
+// import { returnLevel32UA } from './../view/thoury/returnLevel32UA.js';
 
-import { returnLevel21 } from './../view/thoury/returnLevel21.js';
-import { returnLevel21EN } from './../view/thoury/returnLevel21EN.js';
-import { returnLevel21PL } from './../view/thoury/returnLevel21PL.js';
-import { returnLevel21UA } from './../view/thoury/returnLevel21UA.js';
+// import { returnLevel31 } from './../view/thoury/returnLevel31.js';
+// import { returnLevel31EN } from './../view/thoury/returnLevel31EN.js';
+// import { returnLevel31PL } from './../view/thoury/returnLevel31PL.js';
+// import { returnLevel31UA } from './../view/thoury/returnLevel31UA.js';
 
-import { returnLevel19 } from './../view/thoury/returnLevel19.js';
-import { returnLevel19EN } from './../view/thoury/returnLevel19EN.js';
-import { returnLevel19PL } from './../view/thoury/returnLevel19PL.js';
-import { returnLevel19UA } from './../view/thoury/returnLevel19UA.js';
+// import { returnLevel23 } from './../view/thoury/returnLevel23.js';
+// import { returnLevel23EN } from './../view/thoury/returnLevel23EN.js';
+// import { returnLevel23PL } from './../view/thoury/returnLevel23PL.js';
+// import { returnLevel23UA } from './../view/thoury/returnLevel23UA.js';
 
-import { returnLevel18 } from './../view/thoury/returnLevel18.js';
-import { returnLevel18EN } from './../view/thoury/returnLevel18EN.js';
-import { returnLevel18PL } from './../view/thoury/returnLevel18PL.js';
-import { returnLevel18UA } from './../view/thoury/returnLevel18UA.js';
+// import { returnLevel21 } from './../view/thoury/returnLevel21.js';
+// import { returnLevel21EN } from './../view/thoury/returnLevel21EN.js';
+// import { returnLevel21PL } from './../view/thoury/returnLevel21PL.js';
+// import { returnLevel21UA } from './../view/thoury/returnLevel21UA.js';
 
-import { returnLevel17 } from './../view/thoury/returnLevel17.js';
-import { returnLevel17EN } from './../view/thoury/returnLevel17EN.js';
-import { returnLevel17PL } from './../view/thoury/returnLevel17PL.js';
-import { returnLevel17UA } from './../view/thoury/returnLevel17UA.js';
+// import { returnLevel19 } from './../view/thoury/returnLevel19.js';
+// import { returnLevel19EN } from './../view/thoury/returnLevel19EN.js';
+// import { returnLevel19PL } from './../view/thoury/returnLevel19PL.js';
+// import { returnLevel19UA } from './../view/thoury/returnLevel19UA.js';
 
-import { returnLevel16 } from './../view/thoury/returnLevel16.js';
-import { returnLevel16EN } from './../view/thoury/returnLevel16EN.js';
-import { returnLevel16PL } from './../view/thoury/returnLevel16PL.js';
-import { returnLevel16UA } from './../view/thoury/returnLevel16UA.js';
+// import { returnLevel18 } from './../view/thoury/returnLevel18.js';
+// import { returnLevel18EN } from './../view/thoury/returnLevel18EN.js';
+// import { returnLevel18PL } from './../view/thoury/returnLevel18PL.js';
+// import { returnLevel18UA } from './../view/thoury/returnLevel18UA.js';
 
-import { returnLevel15 } from './../view/thoury/returnLevel15.js';
-import { returnLevel15EN } from './../view/thoury/returnLevel15EN.js';
-import { returnLevel15PL } from './../view/thoury/returnLevel15PL.js';
-import { returnLevel15UA } from './../view/thoury/returnLevel15UA.js';
+// import { returnLevel17 } from './../view/thoury/returnLevel17.js';
+// import { returnLevel17EN } from './../view/thoury/returnLevel17EN.js';
+// import { returnLevel17PL } from './../view/thoury/returnLevel17PL.js';
+// import { returnLevel17UA } from './../view/thoury/returnLevel17UA.js';
 
-import { returnLevel14 } from './../view/thoury/returnLevel14.js';
-import { returnLevel14EN } from './../view/thoury/returnLevel14EN.js';
-import { returnLevel14PL } from './../view/thoury/returnLevel14PL.js';
-import { returnLevel14UA } from './../view/thoury/returnLevel14UA.js';
+// import { returnLevel16 } from './../view/thoury/returnLevel16.js';
+// import { returnLevel16EN } from './../view/thoury/returnLevel16EN.js';
+// import { returnLevel16PL } from './../view/thoury/returnLevel16PL.js';
+// import { returnLevel16UA } from './../view/thoury/returnLevel16UA.js';
 
-import { helpForProgramRU } from './../view/help/helpForProgramRU.js';
-import { helpForProgramPL } from './../view/help/helpForProgramPL.js';
-import { helpForProgramUA } from './../view/help/helpForProgramUA.js';
-import { helpForProgramEN } from './../view/help/helpForProgramEN.js';
+// import { returnLevel15 } from './../view/thoury/returnLevel15.js';
+// import { returnLevel15EN } from './../view/thoury/returnLevel15EN.js';
+// import { returnLevel15PL } from './../view/thoury/returnLevel15PL.js';
+// import { returnLevel15UA } from './../view/thoury/returnLevel15UA.js';
 
-import { helpForHomeMenuRU } from './../view/help/helpForHomeMenuRU.js';
-import { helpForHomeMenuUA } from './../view/help/helpForHomeMenuUA.js';
-import { helpForHomeMenuPL } from './../view/help/helpForHomeMenuPL.js';
-import { helpForHomeMenuEN } from './../view/help/helpForHomeMenuEN.js';
+// import { returnLevel14 } from './../view/thoury/returnLevel14.js';
+// import { returnLevel14EN } from './../view/thoury/returnLevel14EN.js';
+// import { returnLevel14PL } from './../view/thoury/returnLevel14PL.js';
+// import { returnLevel14UA } from './../view/thoury/returnLevel14UA.js';
 
-import { helpForGreenPoleOneUA } from './../view/help/helpForGreenPoleOneUA.js';
-import { helpForGreenPoleOneRU } from './../view/help/helpForGreenPoleOneRU.js';
-import { helpForGreenPoleOnePL } from './../view/help/helpForGreenPoleOnePL.js';
-import { helpForGreenPoleOneEN } from './../view/help/helpForGreenPoleOneEN.js';
+// import { helpForProgramRU } from './../view/help/helpForProgramRU.js';
+// import { helpForProgramPL } from './../view/help/helpForProgramPL.js';
+// import { helpForProgramUA } from './../view/help/helpForProgramUA.js';
+// import { helpForProgramEN } from './../view/help/helpForProgramEN.js';
+
+// import { helpForHomeMenuRU } from './../view/help/helpForHomeMenuRU.js';
+// import { helpForHomeMenuUA } from './../view/help/helpForHomeMenuUA.js';
+// import { helpForHomeMenuPL } from './../view/help/helpForHomeMenuPL.js';
+// import { helpForHomeMenuEN } from './../view/help/helpForHomeMenuEN.js';
+
+// import { helpForGreenPoleOneUA } from './../view/help/helpForGreenPoleOneUA.js';
+// import { helpForGreenPoleOneRU } from './../view/help/helpForGreenPoleOneRU.js';
+// import { helpForGreenPoleOnePL } from './../view/help/helpForGreenPoleOnePL.js';
+// import { helpForGreenPoleOneEN } from './../view/help/helpForGreenPoleOneEN.js';
 
 export function exportBDTranslate()
 {
@@ -141,40 +144,40 @@ BDTranslate.push(
   `be/have/do in present and past tenses`, 
   `be/have/do in present and past tenses`]);
 BDTranslate.push(
-  [returnInfoUnit22RU(),
-   returnInfoUnit22UA(), 
-   returnInfoUnit22PL(),
-   returnInfoUnit22EN()]);
+  [returnInfoUnit.returnInfoUnit22RU(),
+   returnInfoUnit.returnInfoUnit22UA(), 
+   returnInfoUnit.returnInfoUnit22PL(),
+   returnInfoUnit.returnInfoUnit22EN()]);
 BDTranslate.push(
-  [helpForProgramRU(), 
-   helpForProgramUA(), 
-   helpForProgramPL(),
-   helpForProgramEN()]);
+  [returnInfoUnit.helpForProgramRU(), 
+   returnInfoUnit.helpForProgramUA(), 
+   returnInfoUnit.helpForProgramPL(),
+   returnInfoUnit.helpForProgramEN()]);
 BDTranslate.push(
-  [helpForHomeMenuRU(), 
-   helpForHomeMenuUA(), 
-   helpForHomeMenuPL(),
-   helpForHomeMenuEN()]);
+  [returnInfoUnit.helpForHomeMenuRU(), 
+   returnInfoUnit.helpForHomeMenuUA(), 
+   returnInfoUnit.helpForHomeMenuPL(),
+   returnInfoUnit.helpForHomeMenuEN()]);
 BDTranslate.push(
-  [helpForGreenPoleOneRU(), 
-   helpForGreenPoleOneUA(), 
-   helpForGreenPoleOnePL(),
-   helpForGreenPoleOneEN()]);
+  [returnInfoUnit.helpForGreenPoleOneRU(), 
+   returnInfoUnit.helpForGreenPoleOneUA(), 
+   returnInfoUnit.helpForGreenPoleOnePL(),
+   returnInfoUnit.helpForGreenPoleOneEN()]);
 BDTranslate.push(
-  [returnLevel42(), 
-   returnLevel42UA(), 
-   returnLevel42PL(),
-   returnLevel42EN()]);
+  [returnInfoUnit.returnLevel42(), 
+   returnInfoUnit.returnLevel42UA(), 
+   returnInfoUnit.returnLevel42PL(),
+   returnInfoUnit.returnLevel42EN()]);
 BDTranslate.push(
   [`Речь примерно о:`, 
    `Мова приблизно про:`, 
    `Mówimy o:`,
    `We are talking approximately about:`]);
 BDTranslate.push(
-  [returnLevel40(), 
-   returnLevel40UA(), 
-   returnLevel40PL(),
-   returnLevel40EN()]);
+  [returnInfoUnit.returnLevel40(), 
+   returnInfoUnit.returnLevel40UA(), 
+   returnInfoUnit.returnLevel40PL(),
+   returnInfoUnit.returnLevel40EN()]);
 BDTranslate.push(
   [`Последний ответ здесь`, 
    `Остання відповідь тут`, 
@@ -186,20 +189,20 @@ BDTranslate.push(
    `Poprzednie pytanie tutaj`,
    `Previous question here`]);
 BDTranslate.push(
-  [returnLevel39(), 
-   returnLevel39UA(), 
-   returnLevel39PL(),
-   returnLevel39EN()]);
+  [returnInfoUnit.returnLevel39(), 
+   returnInfoUnit.returnLevel39UA(), 
+   returnInfoUnit.returnLevel39PL(),
+   returnInfoUnit.returnLevel39EN()]);
 BDTranslate.push(
-  [returnLevel38(), 
-   returnLevel38UA(), 
-   returnLevel38PL(),
-   returnLevel38EN()]);
+  [returnInfoUnit.returnLevel38(), 
+   returnInfoUnit.returnLevel38UA(), 
+   returnInfoUnit.returnLevel38PL(),
+   returnInfoUnit.returnLevel38EN()]);
 BDTranslate.push(
-  [returnLevel37(), 
-   returnLevel37UA(), 
-   returnLevel37PL(),
-   returnLevel37EN()]);
+  [returnInfoUnit.returnLevel37(), 
+   returnInfoUnit.returnLevel37UA(), 
+   returnInfoUnit.returnLevel37PL(),
+   returnInfoUnit.returnLevel37EN()]);
 BDTranslate.push(
   [`В этом тесте нужно собрать предложение из предложенных слов. Имейте в виду, что иногда собранное предложение может не совпадать с общей темой теста.`, 
    `У цьому тесті потрібно зібрати пропозицію із запропонованих слів. Майте на увазі, що інколи зібрана пропозиція може не співпадати із загальною темою тесту.`, 
@@ -211,45 +214,45 @@ BDTranslate.push(
    `(może się różnić)`,
    `(may differ)`]);
 BDTranslate.push(
-  [returnLevel20(), 
-   returnLevel20UA(), 
-   returnLevel20PL(),
-   returnLevel20EN()]);
+  [returnInfoUnit.returnLevel20(), 
+   returnInfoUnit.returnLevel20UA(), 
+   returnInfoUnit.returnLevel20PL(),
+   returnInfoUnit.returnLevel20EN()]);
 BDTranslate.push(
-  [returnLevel36(), 
-   returnLevel36UA(), 
-   returnLevel36PL(),
-   returnLevel36EN()]);
+  [returnInfoUnit.returnLevel36(), 
+   returnInfoUnit.returnLevel36UA(), 
+   returnInfoUnit.returnLevel36PL(),
+   returnInfoUnit.returnLevel36EN()]);
 BDTranslate.push(
-  [returnInfoForDiamant(), 
-   returnInfoForDiamantUA(), 
-   returnInfoForDiamantPL(),
-   returnInfoForDiamantEN()]);
+  [returnInfoUnit.returnInfoForDiamant(), 
+   returnInfoUnit.returnInfoForDiamantUA(), 
+   returnInfoUnit.returnInfoForDiamantPL(),
+   returnInfoUnit.returnInfoForDiamantEN()]);
 BDTranslate.push(
-   [returnLevel35(), 
-    returnLevel35UA(), 
-    returnLevel35PL(),
-    returnLevel35EN()]);
+   [returnInfoUnit.returnLevel35(), 
+    returnInfoUnit.returnLevel35UA(), 
+    returnInfoUnit.returnLevel35PL(),
+    returnInfoUnit.returnLevel35EN()]);
 BDTranslate.push(
-   [returnLevel34(), 
-    returnLevel34UA(), 
-    returnLevel34PL(),
-    returnLevel34EN()]);
+   [returnInfoUnit.returnLevel34(), 
+    returnInfoUnit.returnLevel34UA(), 
+    returnInfoUnit.returnLevel34PL(),
+    returnInfoUnit.returnLevel34EN()]);
 BDTranslate.push(
    [`Вставьте глагол вместо троеточия или подберите правильное предложение в продолженном прошедшем времени.`, 
     `Вставте дієслово замість три крапки або підберіть правильну пропозицію в минулому часі.`, 
     `Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym ciągłym.`,
     `Insert a verb instead of the ellipsis or choose the correct sentence in the past continuous tense.`]);
 BDTranslate.push(
-   [returnLevel33(), 
-    returnLevel33UA(), 
-    returnLevel33PL(),
-    returnLevel33EN()]);
+   [returnInfoUnit.returnLevel33(), 
+    returnInfoUnit.returnLevel33UA(), 
+    returnInfoUnit.returnLevel33PL(),
+    returnInfoUnit.returnLevel33EN()]);
 BDTranslate.push(
-    [returnLevel32(), 
-     returnLevel32UA(), 
-     returnLevel32PL(),
-     returnLevel32EN()]);
+    [returnInfoUnit.returnLevel32(), 
+     returnInfoUnit.returnLevel32UA(), 
+     returnInfoUnit.returnLevel32PL(),
+     returnInfoUnit.returnLevel32EN()]);
 BDTranslate.push(
    [`Past Simple отрицательные и вопросы`, 
     `Past Simple негативні та питання`, 
@@ -261,10 +264,10 @@ BDTranslate.push(
      `Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym prostym.`,
      `Insert a verb instead of the ellipsis or choose the correct sentence in the simple past tense.`]);
 BDTranslate.push(
-   [returnLevel31(), 
-    returnLevel31UA(), 
-    returnLevel31PL(),
-    returnLevel31EN()]);
+   [returnInfoUnit.returnLevel31(), 
+    returnInfoUnit.returnLevel31UA(), 
+    returnInfoUnit.returnLevel31PL(),
+    returnInfoUnit.returnLevel31EN()]);
 BDTranslate.push(
     [`Подобрать пару правильный - неправильный глагол. Тест разбавлен небольшим числом правильных глаголов.`, 
      `Підібрати пару правильне - неправильне дієслово. Тест розбавлений невеликою кількістю правильних дієслів.`, 
@@ -321,10 +324,10 @@ BDTranslate.push(
      `Czasowniki Was i Were`,
      `Verbs Was and Were`]);
 BDTranslate.push(
-    [returnLevel23(), 
-     returnLevel23UA(), 
-     returnLevel23PL(),
-     returnLevel23EN()]);
+    [returnInfoUnit.returnLevel23(), 
+     returnInfoUnit.returnLevel23UA(), 
+     returnInfoUnit.returnLevel23PL(),
+     returnInfoUnit.returnLevel23EN()]);
 BDTranslate.push(
     [`Упс. Кто-то уже сообщил об этой ошибке.`, 
      `Упс. Хтось уже повідомив про цю помилку.`, 
@@ -336,70 +339,70 @@ BDTranslate.push(
      `Zapisano błąd`,
      `Error recorded`]);
 BDTranslate.push(
-    [returnLevel21(), 
-     returnLevel21UA(), 
-     returnLevel21PL(),
-     returnLevel21EN()]);
+    [returnInfoUnit.returnLevel21(), 
+     returnInfoUnit.returnLevel21UA(), 
+     returnInfoUnit.returnLevel21PL(),
+     returnInfoUnit.returnLevel21EN()]);
 BDTranslate.push(
     [`Глаголы Have и Have Got`, 
      `Дієслова Have та Have Got`, 
      `Czasowniki Have i Have Got`,
      `The verbs Have and Have Got`]);
 BDTranslate.push(
-    [returnLevel19(), 
-     returnLevel19UA(), 
-     returnLevel19PL(),
-     returnLevel19EN()]);
+    [returnInfoUnit.returnLevel19(), 
+     returnInfoUnit.returnLevel19UA(), 
+     returnInfoUnit.returnLevel19PL(),
+     returnInfoUnit.returnLevel19EN()]);
 BDTranslate.push(
     [`Выбор между P.S. и настоящим продолженным P.C.`, 
      `Вибір між P.S. та справжнім продовженим P.C.`, 
      `Wybór pomiędzy P.S. i niniejszym kontynuuje P.C.`,
      `The choice between P.S. and the present continuation P.C.`]);
 BDTranslate.push(
-    [returnLevel18(), 
-     returnLevel18UA(), 
-     returnLevel18PL(),
-     returnLevel18EN()]);
+    [returnInfoUnit.returnLevel18(), 
+     returnInfoUnit.returnLevel18UA(), 
+     returnInfoUnit.returnLevel18PL(),
+     returnInfoUnit.returnLevel18EN()]);
 BDTranslate.push(
     [`Простое настоящее  P.S. вопросы`, 
      `Просте справжнє P.S. питання`, 
      `Prosty prezent P.S. pytania`,
      `Simple present P.S. questions`]);
 BDTranslate.push(
-    [returnLevel17(), 
-      returnLevel17UA(), 
-      returnLevel17PL(),
-      returnLevel17EN()]);
+    [returnInfoUnit.returnLevel17(), 
+      returnInfoUnit.returnLevel17UA(), 
+      returnInfoUnit.returnLevel17PL(),
+      returnInfoUnit.returnLevel17EN()]);
 BDTranslate.push(
     [`Простое настоящее  P.S. негативное`, 
      `Просте справжнє P.S. негативне`, 
      `Prosty prezent P.S. negatywny`,
      `Simple present P.S. negative`]);
 BDTranslate.push(
-    [returnLevel16(), 
-     returnLevel16UA(), 
-     returnLevel16PL(),
-     returnLevel16EN()]);
+    [returnInfoUnit.returnLevel16(), 
+     returnInfoUnit.returnLevel16UA(), 
+     returnInfoUnit.returnLevel16PL(),
+     returnInfoUnit.returnLevel16EN()]);
 BDTranslate.push(
     [`Простое настоящее  P.S. плюс периодичность`, 
      `Просте справжнє P.S. плюс періодичність`, 
      `Prosty prezent P.S. plus częstotliwość`,
      `Simple present P.S. plus periodicity`]);
 BDTranslate.push(
-    [returnLevel15(), 
-     returnLevel15UA(), 
-     returnLevel15PL(),
-     returnLevel15EN()]);
+    [returnInfoUnit.returnLevel15(), 
+     returnInfoUnit.returnLevel15UA(), 
+     returnInfoUnit.returnLevel15PL(),
+     returnInfoUnit.returnLevel15EN()]);
 BDTranslate.push(
     [`Простое настоящее P.S.`, 
      `Просте справжнє P.S.`, 
      `Prosty prezent P.S.`,
      `Simple present P.S.`]);
 BDTranslate.push(
-    [returnLevel14(), 
-     returnLevel14UA(), 
-     returnLevel14PL(),
-     returnLevel14EN()]);
+    [returnInfoUnit.returnLevel14(), 
+     returnInfoUnit.returnLevel14UA(), 
+     returnInfoUnit.returnLevel14PL(),
+     returnInfoUnit.returnLevel14EN()]);
 BDTranslate.push(
     [`Образования вопросов в настоящем продолженном времени P.C.`, 
      `Утворення питань у поточному продовженому часі P.C.`, 

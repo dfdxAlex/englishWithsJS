@@ -1,13 +1,26 @@
 // Класс содержит информацию о том, на каком уровне 
 // используется какой массив.
 // Информация добавляется в метод getArrayDB()
-// Добавляется уровень здесь и в контроллере MenuController.
+// Добавляется уровень здесь
 
 // Чтобы добавить новый тест необходимо создать массив, пример 
 // Добавить запись в arrayNameButton() по аналогии с предыдущими
 // В этот массив arrayForButton добавить цифру для определения куда попадает соответствующий пункт
 // И заполнить getArrayDB().
 // Массив с данными достаточно положить в папку 1 или 2
+
+// Дополнительные данные в массиве с тестами
+// --Если это свойство есть, то оно попадает в заголовок теста
+// ----haveAndHaveGot.nameLeson = "Have and Have Got";
+// --Свойство показывает сколько индексов содержат правильные предложения
+// --Если его нет, то будет считаться, что правильные предложения 
+// --только индекс 0 и 1. Если 5 - это индексы 0,1,2,3,4 с правильно
+// --созданными предложениями.
+// ----unit23.lengthTrue = 5;
+// Заменяет многоточие словом
+// function (id) {
+//    return replaceEllipsisWithWord(id, presentSimple);
+// }
 
 import './styles/LevelDataModel.scss';
 import { DataOk } from '../services/data/DataOk.js';
@@ -21,6 +34,7 @@ export class LevelDataModel
 {
     constructor(level = 1)
     {
+        
         // setLevel делает число числом, записывает его в объект
         // и возвращает это число. 
         this.level = DataOk.setLevel(level);
@@ -33,9 +47,6 @@ export class LevelDataModel
         // опережающий запуск формирования массива для меню верхнего
         this.arrayNameButton();
 
-        //Костыль, поместить длину массива в объект  DataSet для использования в 
-        // функции setStatisticForButton, для избежания рекурсивного запуска
-        // DataSet.LevelDataModal.arrayNameButtonLength = this.tic;
     }
 
     // Здесь заполняется вариант надписи название теста
@@ -86,6 +97,7 @@ export class LevelDataModel
         this.propertyArrayNameButton.push(setStatisticForButton(42));//Is Done Was Done (passive 1)'));// пункт 1
         this.propertyArrayNameButton.push(setStatisticForButton(43)); //Is Being Done Has Been Done (passive 2)'));// пункт 1
         this.propertyArrayNameButton.push(setStatisticForButton(44)); //be/have/do in present and past tenses'));// пункт 1
+        this.propertyArrayNameButton.push(setStatisticForButton(45) + 'Unit 24'); // unit 24 пункт 1
         this.tic = this.propertyArrayNameButton.length;
     }
 
@@ -98,7 +110,7 @@ export class LevelDataModel
                                 1,2,1,1,1,1,1,1,1,2,
                                 1,2,1,4,4,4,4,4,3,3,
                                 1,1,2,1,1,2,1,1,1,1,
-                                2,1,1,1];
+                                2,1,1,1,1];
 
         return arrayForButton[test];
     }
@@ -114,9 +126,7 @@ export class LevelDataModel
             // поместить в this.rez нужный массив с данными. getArrayDB() запускает данный метод
             // и потом возвращает переменную this.rez
             nameArray = 'fileDB.'+nameArray;
-            // console.log(nameArray);
             this.rez = eval(nameArray);
-            // console.log(this.rez);
         }
     }
     getArrayDB()
@@ -166,6 +176,7 @@ export class LevelDataModel
         this.selectLevel('Выбрать правильную пару.','passiveIsDoneWasDone',42);
         this.selectLevel('Выбрать правильную пару.','prContiniusPerfectPassive',43);
         this.selectLevel('Выбрать правильную пару.','unit23',44);
+        this.selectLevel('Выбрать правильную пару.','unit24',45);
         return this.rez;
     }
 

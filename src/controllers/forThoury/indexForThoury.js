@@ -105,7 +105,43 @@ import * as returnLevel42UA from '../../view/thoury/returnLevel42UA.js';
 import * as returnLevel42PL from '../../view/thoury/returnLevel42PL.js';
 import * as returnLevel42EN from '../../view/thoury/returnLevel42EN.js';
 
+import * as  returnInfoForDiamant  from '../../view/thoury/returnInfoForDiamant.js';
+import * as  returnInfoForDiamantEN  from '../../view/thoury/returnInfoForDiamantEN.js';
+import * as  returnInfoForDiamantPL  from '../../view/thoury/returnInfoForDiamantPL.js';
+import * as  returnInfoForDiamantUA  from '../../view/thoury/returnInfoForDiamantUA.js';
+
+import * as helpForProgramRU  from '../../view/help/helpForProgramRU.js';
+import * as helpForProgramPL  from '../../view/help/helpForProgramPL.js';
+import * as helpForProgramUA  from '../../view/help/helpForProgramUA.js';
+import * as helpForProgramEN  from '../../view/help/helpForProgramEN.js';
+
+import * as helpForHomeMenuRU  from '../../view/help/helpForHomeMenuRU.js';
+import * as helpForHomeMenuUA  from '../../view/help/helpForHomeMenuUA.js';
+import * as helpForHomeMenuPL  from '../../view/help/helpForHomeMenuPL.js';
+import * as helpForHomeMenuEN  from '../../view/help/helpForHomeMenuEN.js';
+
+import * as helpForGreenPoleOneUA  from '../../view/help/helpForGreenPoleOneUA.js';
+import * as helpForGreenPoleOneRU  from '../../view/help/helpForGreenPoleOneRU.js';
+import * as helpForGreenPoleOnePL  from '../../view/help/helpForGreenPoleOnePL.js';
+import * as helpForGreenPoleOneEN  from '../../view/help/helpForGreenPoleOneEN.js';
+
 export default  { 
+         helpForProgramRU,
+         helpForProgramPL,
+         helpForProgramUA,
+         helpForProgramEN,
+         helpForHomeMenuRU,
+         helpForHomeMenuUA,
+         helpForHomeMenuPL,
+         helpForHomeMenuEN,
+         helpForGreenPoleOneUA,
+         helpForGreenPoleOneRU,
+         helpForGreenPoleOnePL,
+         helpForGreenPoleOneEN,
+         returnInfoForDiamant,
+         returnInfoForDiamantEN,
+         returnInfoForDiamantPL,
+         returnInfoForDiamantUA,
          returnInfoUnit22RU, 
          returnInfoUnit22PL, 
          returnInfoUnit22EN, 

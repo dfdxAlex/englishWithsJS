@@ -6,6 +6,7 @@ import { returnBodyHelpForLanguage } from '../../models/thouryNew/forThouryNew/r
 export function getBodyThoury(thisS)
 {
     switch (thisS.level) {
+      // Старая часть проекта под этой строкой
       case 43: 
         return thisS.translate.translate(indexForThoury.returnInfoUnit22RU());
       case 42: 
@@ -48,6 +49,7 @@ export function getBodyThoury(thisS)
         return thisS.translate.translate(indexForThoury.returnLevel15());
       case 14:
         return thisS.translate.translate(indexForThoury.returnLevel14());
+        // Старая часть проекта над этой строкой
       default:
         // Новая система 
         let rez = returnBodyHelpForLanguage(thisS.level);

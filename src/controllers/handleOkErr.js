@@ -104,6 +104,7 @@ export function handleOkErr(str, event) {
     // Изменить вопрос только если есть правильный ответ на предыдущий
     if (str === 'Ok') {
         colorErrorOrOk('bg-danger', "bg-success");
+        // console.log('re re');
         handleLevelX(new LevelDataModel(localStorage.getItem('level')));
     }
     else {
