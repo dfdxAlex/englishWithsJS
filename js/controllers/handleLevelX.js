@@ -9,6 +9,7 @@
 
 const handleLevelX = (dataObj, constIndexArray = false) =>
     {
+        // console.log();
         // Сменили тест
         if (DataOk.level.int !== dataObj.getLevel()) {
             // Записать в хранилище что работаем на неком уровне
