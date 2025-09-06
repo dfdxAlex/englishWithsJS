@@ -5,36 +5,6 @@
     border-radius: 50px;
 }
 
-// .dropdown {
-//   position: relative;
-//   display: inline-block;
-// }
-
-// .dropdown-content {
-//   display: none;
-//   position: absolute;
-//   background: white;
-//   min-width: 150px;
-//   border: 1px solid #ccc;
-//   z-index: 1000;
-// }
-
-// .dropdown-content a {
-//   display: block;
-//   padding: 8px;
-//   text-decoration: none;
-//   color: black;
-// }
-
-// .dropdown-content a:hover {
-//   background: #f1f1f1;
-// }
-
-// .dropdown-content.show {
-//   display: block; /* показываем только когда есть класс .show */
-// }
-
-
     .dropdown {
       position: relative;
       display: inline-block;
@@ -67,7 +37,7 @@
       display: block;
     }
 
-    .dropdown-content a:hover {
+    .dropdown-content {
       background-color: #f1f1f1;
     }
 

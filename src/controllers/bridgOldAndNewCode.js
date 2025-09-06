@@ -10,10 +10,11 @@ import { DataOk } from '../services/data/DataOk.js';
 import { LevelDataModel } from '../models/LevelDataModel.js';
 import { calculateBonusMultiplier } from '../models/calculateBonusMultiplier.js';
 import { handleOkErr } from './handleOkErr.js';
-import { MenuRight } from '../view/MenuRight.js';
-import { MenuLearnWord } from '../view/MenuLearnWord.js';
-import { MenuHelp } from '../view/MenuHelp.js';
-import { MenuStatictic } from '../view/MenuStatistic.js';
+// import { MenuRight } from '../view/MenuRight.js';
+// import { MenuLearnWord } from '../view/MenuLearnWord.js';
+// import { MenuHelp } from '../view/MenuHelp.js';
+// import { MenuStatictic } from '../view/MenuStatistic.js';
+import { MenuController } from './MenuController.js';
 
 window.LanguageController = new LanguageController();
 window.FactoryRegistr = FactoryRegistr;
@@ -26,10 +27,11 @@ window.hundleHelpPrime = hundleHelpPrime;
 window.DataOk = DataOk;
 window.calculateBonusMultiplier = calculateBonusMultiplier;
 window.handleOkErr = handleOkErr;
-window.MenuRight = MenuRight;
-window.MenuLearnWord = MenuLearnWord;
-window.MenuHelp = MenuHelp;
-window.MenuStatictic = MenuStatictic;
+// window.MenuRight = MenuRight;
+// window.MenuLearnWord = MenuLearnWord;
+// window.MenuHelp = MenuHelp;
+// window.MenuStatictic = MenuStatictic;
+window.MenuController = MenuController;
 
 // костыль для регистратора объектов
 window.getTranslate = getTranslate();
