@@ -1,11 +1,13 @@
 // класс создает меню с тестами обучения слов
+import { MenuRight } from './MenuRight.js';
 
-class MenuLearnWord extends MenuRight
+export class MenuLearnWord extends MenuRight
 {
     constructor(nameButtons)
     {
         super(nameButtons);
-        this.nameMenu = FactoryRegistr.getObject("LanguageController").translate('Учить слова');
+        
+        this.nameMenu = this.translate.translate('Учить слова');
         // Это свойство содержит место, куда нужно припарковать 
         // меню. Вводится id того елемента, который примет меню.
         // используется как внутрри класса, так и за его пределами.

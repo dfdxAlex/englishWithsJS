@@ -2,10 +2,14 @@
 // данный класс насследуется другими классами, поэтому проверяются категории 1 и 2, хотя
 // в самом конструкторе фигурирует категория 1 this.numberMenu = 1;
 
-class MenuRight
+import { LevelDataModel } from '../models/LevelDataModel.js';
+import { LanguageController } from '../controllers/LanguageController.js';
+
+export class MenuRight
 {
     constructor(nameButtons)
     {
+        this.translate = new LanguageController();
         // Массив со всеми пунктами меню
         this.nameButtons = nameButtons;
 
@@ -36,7 +40,7 @@ class MenuRight
             
             // получить номер-принадлежность конкретного пункта, в какой категории должен 
             // быть текущий пункт
-            this.numberMenuLocal = window.LevelDataModel.mapNameMenu(index);
+            this.numberMenuLocal = LevelDataModel.mapNameMenu(index);
             
             //Если конкретный пункт не подходит к текущему меню то выйти.
             // this.numberMenu при наследовании этого класса изменяется, таким образом происходит
@@ -60,39 +64,15 @@ class MenuRight
         return rez;
     }
 
-    // удалить когда забуду зачем этот метод
-    menuDropdown5() 
-    {
-      return `
-        <div class="accordion" id="accordion${this.seedMenu}">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="heading${this.seedMenu}">
-              <button class="accordion-button collapsed" type="button" 
-                      data-bs-toggle="collapse" 
-                      data-bs-target="#collapse${this.seedMenu}" 
-                      aria-expanded="false" 
-                      aria-controls="collapse${this.seedMenu}">
-                ${this.nameMenu}
-              </button>
-            </h2>
-            <div id="collapse${this.seedMenu}" 
-                 class="accordion-collapse collapse" 
-                 aria-labelledby="heading${this.seedMenu}" 
-                 data-bs-parent="#accordion${this.seedMenu}">
-              <div class="accordion-body">
-                ${this.menuItem2()}
-              </div>
-            </div>
-          </div>
-        </div>
-      `;
-    }
-
-
     menuDropdown2() {
       return `
         <div class="dropdown">
-          <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenu${this.seedMenu}" data-bs-toggle="dropdown" aria-expanded="false">
+          <button class="btn btn-light dropdown-toggle" 
+                  type="button" 
+                  id="dropdownMenu${this.seedMenu}" 
+                  data-bs-toggle="dropdown" 
+                  aria-expanded="false"
+          >
             ${this.nameMenu}
           </button>
           <ul class="dropdown-menu" aria-labelledby="dropdownMenu${this.seedMenu}">
@@ -103,25 +83,10 @@ class MenuRight
     }    
 
     // удалить когда забуду зачем этот метод
-    menuDropdown3() { 
-      return `
-        <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${this.seedMenu}" aria-expanded="false" aria-controls="collapse${this.seedMenu}">
-          ${this.nameMenu}
-        </button>    
-
-        <div class="collapse mt-2" id="collapse${this.seedMenu}">
-          <div class="card card-body">
-            ${this.menuItem2()}
-          </div>
-        </div>
-      `;
-    }
-
-
-    // удалить когда забуду зачем этот метод
+    // Этот метод переименовать в menuDropdown2 если верну одноуровневые пункты в меню
+    // для тестов
     menuDropdownOld()
     { 
-        
         return `
           <!-- Button trigger modal -->
           <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal${this.seedMenu}">

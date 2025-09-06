@@ -1,7 +1,7 @@
 // Стили для меню выбора теста или настроек
 
 .li-menu-2, .li-menu-1, .li-menu-3 {
-    width: 80%;
+    width: 90%;
     height: 130px;
     margin-top: 10px;
     .style-for-item-one {
@@ -29,7 +29,7 @@
 .li-menu-4 {
     
     margin-top: 10px;
-    width: 100%;
+    width: 90%;
     /* Нечётные (1, 3, 5...) */
     &:nth-child(odd) {
       background-color: #bbe6f9;

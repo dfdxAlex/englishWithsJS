@@ -1,5 +1,3 @@
-// import { LanguageSelectorView } from '../view/languageSelectorView/LanguageSelectorView.js';
-// import { exportBDTranslate } from '../models/exportBDTranslate.js';
 import { LanguageController } from './LanguageController.js';
 import { FactoryRegistr } from '../models/FactoryRegistr.js';
 import { Help } from '../view/Help.js';
@@ -12,9 +10,10 @@ import { DataOk } from '../services/data/DataOk.js';
 import { LevelDataModel } from '../models/LevelDataModel.js';
 import { calculateBonusMultiplier } from '../models/calculateBonusMultiplier.js';
 import { handleOkErr } from './handleOkErr.js';
-
-// window.languageSelectorView = new LanguageSelectorView();
-// window.BDTranslate = exportBDTranslate();
+import { MenuRight } from '../view/MenuRight.js';
+import { MenuLearnWord } from '../view/MenuLearnWord.js';
+import { MenuHelp } from '../view/MenuHelp.js';
+import { MenuStatictic } from '../view/MenuStatistic.js';
 
 window.LanguageController = new LanguageController();
 window.FactoryRegistr = FactoryRegistr;
@@ -27,6 +26,10 @@ window.hundleHelpPrime = hundleHelpPrime;
 window.DataOk = DataOk;
 window.calculateBonusMultiplier = calculateBonusMultiplier;
 window.handleOkErr = handleOkErr;
+window.MenuRight = MenuRight;
+window.MenuLearnWord = MenuLearnWord;
+window.MenuHelp = MenuHelp;
+window.MenuStatictic = MenuStatictic;
 
 // костыль для регистратора объектов
 window.getTranslate = getTranslate();
