@@ -9,7 +9,8 @@ class MenuRight
         // Массив со всеми пунктами меню
         this.nameButtons = nameButtons;
 
-        this.nameMenu = FactoryRegistr.getObject("LanguageController").translate('Выбрать тест.');
+        // this.nameMenu = FactoryRegistr.getObject("LanguageController").translate('Выбрать тест.');
+        this.nameMenu = 'Units1-23';
         // Это свойство содержит место, куда нужно припарковать 
         // меню. Вводится id того елемента, который примет меню.
         // используется как внутрри класса, так и за его пределами.
