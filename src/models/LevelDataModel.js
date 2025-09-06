@@ -110,7 +110,7 @@ export class LevelDataModel
                                 1,2,1,1,1,1,1,1,1,2,
                                 1,2,1,4,4,4,4,4,3,3,
                                 1,1,2,1,1,2,1,1,1,1,
-                                2,1,1,1,1];
+                                2,1,1,1,5];
 
         return arrayForButton[test];
     }

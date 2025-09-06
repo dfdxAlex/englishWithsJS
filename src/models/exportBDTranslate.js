@@ -453,11 +453,11 @@ BDTranslate.push(
      'Питання з варіантами відповіді', 
      'Pytanie wielokrotnego wyboru',
      'Multiple choice question']);
-BDTranslate.push(
-    ['Выбрать тест.', 
-     'Вибрати тест.', 
-     'Wybierz test.',
-     'Select a test.']);
+// BDTranslate.push(
+//     ['Выбрать тест.', 
+//      'Вибрати тест.', 
+//      'Wybierz test.',
+//      'Select a test.']);
 BDTranslate.push(
     ['Where/Who...', 
      'Where/Who...', 
