@@ -5857,15 +5857,15 @@
           <li id="helpVideo">
             <button id="button-help-video" type="button" class="fs-6 text-primary mb-3 button-help">&#10067;</button>
           </li>
+
+          <!--Потестировать первый вложенный пункт меню-->
           <li class="nav-item dropdown">
-              <button class="dropbtn bg-light">Menu</button>
+              <button class="dropbtn bg-light">Units</button>
               <div class="dropdown-content">
                 <div class="nav-link" id="burger"></div>
               </div>
           </li>
-          <li class="" id="nav-item-burger">
-            
-          </li>
+
           <li class="nav-item">
             <div class="nav-link" id="word"></div>
           </li>

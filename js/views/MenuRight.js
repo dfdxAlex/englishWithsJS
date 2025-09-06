@@ -59,6 +59,35 @@ class MenuRight
         return rez;
     }
 
+    // удалить когда забуду зачем этот метод
+    menuDropdown5() 
+    {
+      return `
+        <div class="accordion" id="accordion${this.seedMenu}">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading${this.seedMenu}">
+              <button class="accordion-button collapsed" type="button" 
+                      data-bs-toggle="collapse" 
+                      data-bs-target="#collapse${this.seedMenu}" 
+                      aria-expanded="false" 
+                      aria-controls="collapse${this.seedMenu}">
+                ${this.nameMenu}
+              </button>
+            </h2>
+            <div id="collapse${this.seedMenu}" 
+                 class="accordion-collapse collapse" 
+                 aria-labelledby="heading${this.seedMenu}" 
+                 data-bs-parent="#accordion${this.seedMenu}">
+              <div class="accordion-body">
+                ${this.menuItem2()}
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+
     menuDropdown2() {
       return `
         <div class="dropdown">
@@ -72,6 +101,7 @@ class MenuRight
       `;
     }    
 
+    // удалить когда забуду зачем этот метод
     menuDropdown3() { 
       return `
         <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse${this.seedMenu}" aria-expanded="false" aria-controls="collapse${this.seedMenu}">
@@ -87,6 +117,7 @@ class MenuRight
     }
 
 
+    // удалить когда забуду зачем этот метод
     menuDropdownOld()
     { 
         
