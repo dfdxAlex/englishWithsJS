@@ -24,7 +24,10 @@ window.addEventListener('load', () => {
     
     // обработчил для клика по одному из вариантов выбора теста 
     // присвоив свойство true принудительно обновляет вопрос
-    document.getElementById('exampleModalburger').onclick = () => {
+    // document.getElementById('exampleModalburger').onclick = () => {
+    //     FactoryRegistr.getObject('WorkingField').resetQuestion = true;
+    // }
+    document.getElementById('dropdownMenuburger').onclick = () => {
         FactoryRegistr.getObject('WorkingField').resetQuestion = true;
     }
     // принудительное изменение тестового вопосса при первом пуске или обновлении
