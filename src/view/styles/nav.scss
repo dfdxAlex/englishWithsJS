@@ -5,6 +5,35 @@
     border-radius: 50px;
 }
 
+// .dropdown {
+//   position: relative;
+//   display: inline-block;
+// }
+
+// .dropdown-content {
+//   display: none;
+//   position: absolute;
+//   background: white;
+//   min-width: 150px;
+//   border: 1px solid #ccc;
+//   z-index: 1000;
+// }
+
+// .dropdown-content a {
+//   display: block;
+//   padding: 8px;
+//   text-decoration: none;
+//   color: black;
+// }
+
+// .dropdown-content a:hover {
+//   background: #f1f1f1;
+// }
+
+// .dropdown-content.show {
+//   display: block; /* показываем только когда есть класс .show */
+// }
+
     .dropdown {
       position: relative;
       display: inline-block;
@@ -30,21 +59,21 @@
       z-index: 1;
     }
 
-    // .dropdown-content a {
-    //   color: black;
-    //   padding: 10px 14px;
-    //   text-decoration: none;
-    //   display: block;
-    // }
+    .dropdown-content a {
+      color: black;
+      padding: 10px 14px;
+      text-decoration: none;
+      display: block;
+    }
 
-    // .dropdown-content a:hover {
-    //   background-color: #f1f1f1;
-    // }
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
 
     .dropdown:hover .dropdown-content {
       display: block;
     }
 
-    // .dropdown:hover .dropbtn {
-    //   background-color: #3e8e41;
-    // }
+    .dropdown:hover .dropbtn {
+      background-color: #3e8e41;
+    }
