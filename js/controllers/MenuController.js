@@ -13,16 +13,16 @@ class MenuController
         // menu.getSeedForMenu() - выбирает нужный контейнер для кнопок
 
         // создать объект правого меню
-        const menu = new MenuRight(this.levelDataModel.getArrayNameButton());
+        const menu = new window.MenuRight(this.levelDataModel.getArrayNameButton());
 
         // создать объект второго правого меню
-        const menu2 = new MenuLearnWord(this.levelDataModel.getArrayNameButton());
+        const menu2 = new window.MenuLearnWord(this.levelDataModel.getArrayNameButton());
 
         // создать объект третьего правого меню
-        const menu3 = new MenuHelp(this.levelDataModel.getArrayNameButton());
+        const menu3 = new window.MenuHelp(this.levelDataModel.getArrayNameButton());
 
         // создать объект четвертого правого меню
-        const menu4 = new MenuStatictic(this.levelDataModel.getArrayNameButton());
+        const menu4 = new window.MenuStatictic(this.levelDataModel.getArrayNameButton());
 
         // найти точку для публикации правого меню
         // само место парковки задаётся внутри класса MenuRight

@@ -7,7 +7,7 @@ window.addEventListener('load', () => {
     buttonSound();
 
     // Запуск контроллера языковых настроек
-    FactoryRegistr.getObject("LanguageController").init();
+    window.FactoryRegistr.getObject("LanguageController").init();
     
     FactoryRegistr.getObject('MenuController').init();
 
