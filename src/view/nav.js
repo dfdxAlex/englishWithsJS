@@ -29,6 +29,7 @@ export function nav()
               <button class="dropbtn bg-light">Units</button>
               <div class="dropdown-content">
                 <div class="nav-link" id="burger"></div>
+                <div class="nav-link" id="burger2"></div>
               </div>
           </li>
 
