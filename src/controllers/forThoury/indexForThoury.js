@@ -1,3 +1,7 @@
+// Использование старых файлов помощи и теории для тестов и не только.
+// Файл не развивается, если будет время, что врядли, можно легко перевести
+// на новый тип файлов помощи
+
 import * as returnInfoUnit22EN from '../../view/thoury/returnInfoUnit22EN.js';
 import * as returnInfoUnit22PL from '../../view/thoury/returnInfoUnit22PL.js';
 import * as returnInfoUnit22RU from '../../view/thoury/returnInfoUnit22RU.js';
