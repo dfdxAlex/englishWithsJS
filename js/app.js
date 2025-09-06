@@ -7,9 +7,11 @@ window.addEventListener('load', () => {
     buttonSound();
 
     // Запуск контроллера языковых настроек
-    window.FactoryRegistr.getObject("LanguageController").init();
+    // const translate = 
+    // window.FactoryRegistr.getObject("LanguageController").init();
     
-    FactoryRegistr.getObject('MenuController').init();
+    const menuC = new window.MenuController();
+    menuC.init();
 
     // событие на кнопку "Сообщить об ошибке"
     handleSearchError();
