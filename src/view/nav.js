@@ -13,20 +13,20 @@ export function nav()
     }, 0);
 
     document.getElementById('nav').innerHTML = `
-     <nav class="navbar navbar-expand-sm navbar-light bg-light" id="first-teg-nav-for-nav">
+     <nav class="navbar navbar-expand-sm navbar-light" id="first-teg-nav-for-nav">
     <div class="container-fluid" id="nav-first-div">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav ms-auto nav-bar-ul">
           <li id="helpVideo">
-            <button id="button-help-video" type="button" class="fs-6 text-primary mb-3 button-help">&#10067;</button>
+            <button id="button-help-video" type="button" class="fs-6 text-primary mb-3 button-help-nav">&#10067;</button>
           </li>
 
           <!--Потестировать первый вложенный пункт меню-->
           <li class="nav-item dropdown">
-              <button class="dropbtn bg-light">Units</button>
+              <button class="dropbtn">Units</button>
               <div class="dropdown-content">
                 <div class="nav-link" id="burger"></div>
                 <div class="nav-link" id="burger2"></div>
