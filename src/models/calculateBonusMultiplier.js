@@ -1,7 +1,7 @@
 // функция должна подсчитать коэффициент коррекции стоимости балла
 // за правильный ответ.
 
-// import { DataOk } from '../services/data/DataOk.js';
+import { LevelDataModel } from './LevelDataModel.js';
 
 export function calculateBonusMultiplier(propertyForBonus)
 {
@@ -42,8 +42,7 @@ export function calculateBonusMultiplier(propertyForBonus)
     log.error = error;
 
     // Узнать число существующих тестов
-    // const levelDataModel = FactoryRegistr.getObject("LevelDataModel", [DataOk.level.int]);
-    const levelDataModel = new window.LevelDataModel([DataOk.level.int]);
+    const levelDataModel = new LevelDataModel([DataOk.level.int]);
     const numberTest = levelDataModel.getArrayNameButton().length;
     log.numberTest = numberTest;
 
