@@ -15,6 +15,7 @@
 import fileDB from '../models/filedb/indexForFileDB.js';
 
 import { Log } from '../models/Log.js';
+import { Logs } from '../models/Logs.js';
 
 import { calculateBonusMultiplier } from '../models/calculateBonusMultiplier.js';
 import { DataOk } from '../services/data/DataOk.js';
