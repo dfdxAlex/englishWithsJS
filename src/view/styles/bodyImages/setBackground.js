@@ -26,7 +26,7 @@
 export function setBackground()
 {
     console.log('Выбрать случайный фон');
-    const path = 'public/css/images/';
+    const path = 'css/images/';
 
     // Случайное число от 1 до 24
     const numberImg = Math.floor(Math.random() * 24) + 1;;
