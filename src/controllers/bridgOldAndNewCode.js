@@ -11,6 +11,7 @@ import { LevelDataModel } from '../models/LevelDataModel.js';
 import { calculateBonusMultiplier } from '../models/calculateBonusMultiplier.js';
 import { handleOkErr } from './handleOkErr.js';
 import { MenuController } from './MenuController.js';
+import { hundleHelpPrime } from './forInitEventListeners/hundleHelpPrime.js';
 
 window.LanguageController = new LanguageController();
 window.FactoryRegistr = FactoryRegistr;
@@ -19,7 +20,7 @@ window.nav = nav();
 window.diament = diament;
 window.handleLog = handleLog;
 window.Thoury = Thoury;
-window.hundleHelpPrime = indexForThoury.hundleHelpPrime;
+window.hundleHelpPrime = hundleHelpPrime;
 window.DataOk = DataOk;
 window.calculateBonusMultiplier = calculateBonusMultiplier;
 window.handleOkErr = handleOkErr;

@@ -16,6 +16,7 @@ import { calculateBonusMultiplier } from '../models/calculateBonusMultiplier.js'
 import { DataOk } from '../services/data/DataOk.js';
 import { LevelDataModel } from '../models/LevelDataModel.js';
 import indexForThoury from '../controllers/forThoury/indexForThoury.js';
+import { hundleHelpPrime } from './forInitEventListeners/hundleHelpPrime.js';
 
 export function handleOkErr(str, event) {
     // Сохранить координаты места клика по кнопке Проверить
@@ -113,7 +114,7 @@ export function handleOkErr(str, event) {
     // пересчитать статистику и записать в хранилище
     resetStatistic(false);
     // перерисовать статус диамантов
-    indexForThoury.hundleHelpPrime();
+    hundleHelpPrime();
 }
 
 // служебная функция удаляет из элементов question_old и clicked_element

@@ -20,7 +20,8 @@ const resetStatistic = (reset = true) => {
         DataOk.error = numberError;
         DataOk.ok = numberOk;
     }
-    const translate = FactoryRegistr.getObject("LanguageController");
+    // const translate = FactoryRegistr.getObject("LanguageController");
+    const translate = window.LanguageController;
     let resultSucces = numberOk+numberError;
     if (resultSucces !== 0) {
         resultSucces = Math.floor(numberOk/(numberOk+numberError)*100);
