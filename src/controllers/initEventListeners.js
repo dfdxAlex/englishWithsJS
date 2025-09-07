@@ -4,7 +4,6 @@ import { hundleUpdateBurgerOrWord } from './forInitEventListeners/hundleUpdateBu
 
 // Здесь функции, которые должны отработать когда загрузится статическая страница
 window.addEventListener('load', () => {
-    // hundleHelpPrime();
 });
 
 // интервал проверяет все элементы и накладывает на них обработчики событий.

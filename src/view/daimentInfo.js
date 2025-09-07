@@ -6,14 +6,14 @@
 
 // все нужные элементы и помещает Бутстрап компонент
 
-import { returnInfoForDiamant } from '../view/thoury/returnInfoForDiamant.js';
+import  indexForThoury  from '../controllers/forThoury/indexForThoury.js';
 import { getTranslate } from '../models/forFactoryRegistr/getTranslate.js';
 
 export function daimentInfo()
 {
     const translate = getTranslate();
 
-    const result = translate.translate(returnInfoForDiamant());
+    const result = translate.translate(indexForThoury.returnInfoForDiamant());
 
     // Вставить разметку для помощи по диамантам в конец body
     document.body.insertAdjacentHTML("beforeend", result);

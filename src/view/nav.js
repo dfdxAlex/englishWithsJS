@@ -1,4 +1,4 @@
-import { helpForHomeMenuRU } from './help/helpForHomeMenuRU.js';
+import indexForThoury from '../controllers/forThoury/indexForThoury.js';
 import { Help } from './Help.js';
 import './styles/nav.scss';
 
@@ -7,7 +7,7 @@ export function nav()
     setTimeout(() => {
       document.getElementById('button-help-video').addEventListener('click', (event) => { 
         event.stopPropagation();
-        Help.viewhandleHelpToTranslate(helpForHomeMenuRU(),'vkQYDmiTlmQ');
+        Help.viewhandleHelpToTranslate(indexForThoury.helpForHomeMenuRU(),'vkQYDmiTlmQ');
       });
       
     }, 0);

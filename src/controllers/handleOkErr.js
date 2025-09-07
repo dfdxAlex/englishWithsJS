@@ -15,7 +15,7 @@ import fileDB from '../models/filedb/indexForFileDB.js';
 import { calculateBonusMultiplier } from '../models/calculateBonusMultiplier.js';
 import { DataOk } from '../services/data/DataOk.js';
 import { LevelDataModel } from '../models/LevelDataModel.js';
-import { hundleHelpPrime } from '../controllers/forInitEventListeners/hundleHelpPrime.js';
+import indexForThoury from '../controllers/forThoury/indexForThoury.js';
 
 export function handleOkErr(str, event) {
     // Сохранить координаты места клика по кнопке Проверить
@@ -104,7 +104,6 @@ export function handleOkErr(str, event) {
     // Изменить вопрос только если есть правильный ответ на предыдущий
     if (str === 'Ok') {
         colorErrorOrOk('bg-danger', "bg-success");
-        // console.log('re re');
         handleLevelX(new LevelDataModel(localStorage.getItem('level')));
     }
     else {
@@ -114,7 +113,7 @@ export function handleOkErr(str, event) {
     // пересчитать статистику и записать в хранилище
     resetStatistic(false);
     // перерисовать статус диамантов
-    hundleHelpPrime();
+    indexForThoury.hundleHelpPrime();
 }
 
 // служебная функция удаляет из элементов question_old и clicked_element

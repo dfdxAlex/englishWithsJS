@@ -1,5 +1,5 @@
 import { Help } from '../../view/Help.js';
-import { helpForProgramRU } from '../../view/help/helpForProgramRU.js';
+import  indexForThoury  from '../../controllers/forThoury/indexForThoury.js';
 import { diamentView } from '../../view/diamentView.js';
 
 export function hundleHelpPrime()
@@ -15,7 +15,7 @@ export function hundleHelpPrime()
     if (!diamantView) test = false;
     diamantView.addEventListener('click', (event)=>{
         event.stopPropagation();
-        Help.viewhandleHelpToTranslate(helpForProgramRU(),'RwzDBkaEwjI');
+        Help.viewhandleHelpToTranslate(indexForThoury.helpForProgramRU(),'RwzDBkaEwjI');
     });
 
     return test;
