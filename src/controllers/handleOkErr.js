@@ -11,11 +11,12 @@
 // Данные о колличестве правильных и не правильных ответов хранятся
 // в локальном хранилище, и у каждого теста есть свои два ключа в хранилище.
 
+//Не удалять!!
 import fileDB from '../models/filedb/indexForFileDB.js';
+
 import { calculateBonusMultiplier } from '../models/calculateBonusMultiplier.js';
 import { DataOk } from '../services/data/DataOk.js';
 import { LevelDataModel } from '../models/LevelDataModel.js';
-import indexForThoury from '../controllers/forThoury/indexForThoury.js';
 import { hundleHelpPrime } from './forInitEventListeners/hundleHelpPrime.js';
 
 export function handleOkErr(str, event) {
