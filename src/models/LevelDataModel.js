@@ -98,20 +98,22 @@ export class LevelDataModel
         this.propertyArrayNameButton.push(setStatisticForButton(42));//Is Done Was Done (passive 1)'));// пункт 1
         this.propertyArrayNameButton.push(setStatisticForButton(43)); //Is Being Done Has Been Done (passive 2)'));// пункт 1
         this.propertyArrayNameButton.push(setStatisticForButton(44)); //be/have/do in present and past tenses'));// пункт 1
-        this.propertyArrayNameButton.push(setStatisticForButton(45) + 'Unit 24'); // unit 24 пункт 1
+        this.propertyArrayNameButton.push(setStatisticForButton(45) + 'Unit 24'); // unit 24 пункт 1-6
+        this.propertyArrayNameButton.push(setStatisticForButton(46) + 'Unit 25'); // unit 25 пункт 1-6
         this.tic = this.propertyArrayNameButton.length;
     }
 
     // Это массив с набором цифр, каждая цифра - это пункт в меню.
     // Каждая цифра в массиве - это расположение соответствующего 
     // пункта. Первый элемент находится в меню 2, второй тоже и т.д.
+    // Номер 6 - это второе подменю первого меню.
     static mapNameMenu(test) 
     {
         const arrayForButton = [2,2,2,2,2,2,2,2,1,1,
                                 1,2,1,1,1,1,1,1,1,2,
                                 1,2,1,4,4,4,4,4,3,3,
                                 1,1,2,1,1,2,1,1,1,1,
-                                2,1,1,1,6];
+                                2,1,1,1,6,6];
 
         return arrayForButton[test];
     }
@@ -178,6 +180,7 @@ export class LevelDataModel
         this.selectLevel('Выбрать правильную пару.','prContiniusPerfectPassive',43);
         this.selectLevel('Выбрать правильную пару.','unit23',44);
         this.selectLevel('Выбрать правильную пару.','unit24',45);
+        this.selectLevel('Выбрать правильную пару.','unit25',46);
         return this.rez;
     }
 
