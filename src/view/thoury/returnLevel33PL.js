@@ -1,4 +1,6 @@
-export function returnLevel33PL()
+export default returnLevel33PL;
+
+function returnLevel33PL()
 {
     return `<div class="container">
   <div class="row">

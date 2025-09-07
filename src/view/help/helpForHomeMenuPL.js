@@ -1,6 +1,8 @@
 import './styles/helpForHomeMenuRU.scss';
 
-export function helpForHomeMenuPL()
+export default helpForHomeMenuPL;
+
+function helpForHomeMenuPL()
 {
     return `
     <div class="modal modal-container" tabindex="-1">

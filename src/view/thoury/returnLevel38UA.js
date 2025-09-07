@@ -1,4 +1,6 @@
-export function returnLevel38UA()
+export default returnLevel38UA;
+
+function returnLevel38UA()
 {
     return `<div class="accordion" id="presentPerfectAccordion">
   <!-- Визначення Present Perfect -->

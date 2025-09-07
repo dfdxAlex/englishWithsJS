@@ -1,4 +1,6 @@
-export function returnLevel33EN()
+export default returnLevel33EN;
+
+function returnLevel33EN()
 {
     return `<div class="container">
   <div class="row">

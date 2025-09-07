@@ -1,4 +1,6 @@
-export function returnLevel32EN()
+export default returnLevel32EN;
+
+function returnLevel32EN()
 {
     return `<div class="container mt-4">
   <h2 class="text-center mb-4">Past Simple: Negative Sentences and Questions</h2>

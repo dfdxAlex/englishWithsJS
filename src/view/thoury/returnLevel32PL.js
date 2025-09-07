@@ -1,4 +1,6 @@
-export function returnLevel32PL()
+export default returnLevel32PL;
+
+function returnLevel32PL()
 {
     return `<div class="container mt-4">
   <h2 class="text-center mb-4">Past Simple: Negatywne zdania i pytania</h2>

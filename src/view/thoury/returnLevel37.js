@@ -1,4 +1,6 @@
-export function returnLevel37()
+export default returnLevel37;
+
+function returnLevel37()
 {
     return `<div class="accordion" id="presentPerfectAccordion">
     <div class="accordion-item">

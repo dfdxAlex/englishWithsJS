@@ -1,4 +1,6 @@
-export function returnLevel23PL()
+export default returnLevel23PL;
+
+function returnLevel23PL()
 {
     return `<div class="container" style="margin-top: 20px;">
     <h1 style="text-align: center; color: #333;">Informacje o czasownikach "was" i "were"</h1>

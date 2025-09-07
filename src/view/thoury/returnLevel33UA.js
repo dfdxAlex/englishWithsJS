@@ -1,4 +1,6 @@
-export function returnLevel33UA()
+export default returnLevel33UA;
+
+function returnLevel33UA()
 {
     return `<div class="container">
   <div class="row">

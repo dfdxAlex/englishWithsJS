@@ -1,4 +1,6 @@
-export function returnLevel40UA()
+export default returnLevel40UA;
+
+function returnLevel40UA()
 {
     return `<div class="accordion" id="grammarAccordion">
   <div class="accordion-item">

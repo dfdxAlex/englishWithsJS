@@ -1,4 +1,6 @@
-export function returnLevel20EN()
+export default returnLevel20EN;
+
+function returnLevel20EN()
 {
     return `<div class="container mt-5">
   <div class="row">

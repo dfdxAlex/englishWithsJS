@@ -1,4 +1,6 @@
-export function returnLevel39UA()
+export default returnLevel39UA;
+
+function returnLevel39UA()
 {
     return `<div class="container mt-5">
     <h2>Present Perfect: Правила використання <code>For</code>, <code>Since</code> та <code>Ago</code></h2>

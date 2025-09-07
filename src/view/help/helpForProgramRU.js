@@ -1,6 +1,8 @@
 import './styles/helpForProgramRU.scss';
 
-export function helpForProgramRU()
+export default helpForProgramRU;
+
+function helpForProgramRU()
 {
     return `
     <div class="modal help-for-program-ru" tabindex="-1" id="infoModal">

@@ -1,4 +1,6 @@
-export function returnLevel35UA()
+export default returnLevel35UA;
+
+function returnLevel35UA()
 {
     return `<div class="card border-success">
   <div class="card-header bg-success text-white">

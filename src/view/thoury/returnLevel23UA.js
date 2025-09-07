@@ -1,4 +1,6 @@
-export function returnLevel23UA()
+export default returnLevel23UA;
+
+function returnLevel23UA()
 {
     return `<div class="container" style="margin-top: 20px;">
     <h1 style="text-align: center; color: #333;">Довідка по дієсловам "was" і "were"</h1>

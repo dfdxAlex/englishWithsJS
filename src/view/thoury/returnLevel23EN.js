@@ -1,4 +1,6 @@
-export function returnLevel23EN()
+export default returnLevel23EN;
+
+function returnLevel23EN()
 {
     return `<div class="container" style="margin-top: 20px;">
     <h1 style="text-align: center; color: #333;">Reference for the verbs "was" and "were"</h1>

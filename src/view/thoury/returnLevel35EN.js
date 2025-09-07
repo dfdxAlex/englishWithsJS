@@ -1,4 +1,6 @@
-export function returnLevel35EN()
+export default returnLevel35EN;
+
+function returnLevel35EN()
 {
     return `<div class="card mt-3">
   <div class="card-header bg-success text-white">

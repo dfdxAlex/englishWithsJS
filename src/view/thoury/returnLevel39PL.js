@@ -1,4 +1,6 @@
-export function returnLevel39PL()
+export default returnLevel39PL;
+
+function returnLevel39PL()
 {
     return `<div class="container mt-5">
     <h2>Present Perfect: Zasady użycia <code>For</code>, <code>Since</code> i <code>Ago</code></h2>

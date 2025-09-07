@@ -1,4 +1,6 @@
-export function returnLevel32UA()
+export default returnLevel32UA;
+
+function returnLevel32UA()
 {
     return `<div class="container mt-4">
   <h2 class="text-center mb-4">Past Simple: Негативні речення та питання</h2>

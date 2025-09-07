@@ -1,4 +1,6 @@
-export function returnLevel40PL()
+export default returnLevel40PL;
+
+function returnLevel40PL()
 {
     return `<div class="accordion" id="grammarAccordion">
   <div class="accordion-item">

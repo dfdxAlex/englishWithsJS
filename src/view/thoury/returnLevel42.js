@@ -1,4 +1,6 @@
-export function returnLevel42()
+export default returnLevel42;
+
+function returnLevel42()
 {
     return `<div class="container mt-5">
             <h1>Правило: Present Simple Passive и Past Simple Passive</h1>

@@ -1,4 +1,6 @@
-export function returnLevel19PL()
+export default returnLevel19PL;
+
+function returnLevel19PL()
 {
     return `<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
     <h2 style="color: #333;">Czas Present Simple vs. Present Continuous</h2>

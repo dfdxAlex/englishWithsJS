@@ -1,4 +1,6 @@
-export function returnLevel35PL()
+export default returnLevel35PL;
+
+function returnLevel35PL()
 {
     return `<div class="card mt-3">
   <div class="card-header bg-success text-white">

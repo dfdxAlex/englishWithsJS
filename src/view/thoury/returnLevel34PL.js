@@ -1,4 +1,6 @@
-export function returnLevel34PL()
+export default returnLevel34PL;
+
+function returnLevel34PL()
 {
     return `<div class="card" style="width: 100%; border: 1px solid #28a745; border-radius: 5px; background-color: #e9f7ec;">
   <div class="card-body">

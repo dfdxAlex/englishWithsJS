@@ -1,4 +1,6 @@
-export function returnInfoForDiamantPL()
+export default returnInfoForDiamantPL;
+
+function returnInfoForDiamantPL()
 {
     return `<div class="modal fade" id="diamondsModal" tabindex="-1" aria-labelledby="diamondsModalLabel" aria-hidden="true">
   <div class="modal-dialog">

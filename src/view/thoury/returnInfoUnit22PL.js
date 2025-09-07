@@ -1,4 +1,6 @@
-export function returnInfoUnit22PL()
+export default returnInfoUnit22PL;
+
+function returnInfoUnit22PL()
 {
     return `
       <div class="modal-body" style="color: #333; font-family: sans-serif; padding: 24px;">

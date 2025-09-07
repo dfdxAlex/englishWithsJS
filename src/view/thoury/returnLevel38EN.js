@@ -1,4 +1,6 @@
-export function returnLevel38EN()
+export default returnLevel38EN;
+
+function returnLevel38EN()
 {
     return `<div class="accordion" id="presentPerfectAccordion">
   <!-- Definition of Present Perfect -->

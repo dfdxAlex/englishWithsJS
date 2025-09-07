@@ -1,4 +1,7 @@
-export function returnLevel31PL()
+
+
+export default returnLevel31PL;
+function returnLevel31PL()
 {
     return`<div class="container" style="margin: 20px;">
     <div class="border border-primary rounded p-4 bg-light">

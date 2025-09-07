@@ -2,134 +2,134 @@
 // Файл не развивается, если будет время, что врядли, можно легко перевести
 // на новый тип файлов помощи
 
-import * as returnInfoUnit22EN from '../../view/thoury/returnInfoUnit22EN.js';
-import * as returnInfoUnit22PL from '../../view/thoury/returnInfoUnit22PL.js';
-import * as returnInfoUnit22RU from '../../view/thoury/returnInfoUnit22RU.js';
-import * as returnInfoUnit22UA from '../../view/thoury/returnInfoUnit22UA.js';
+import returnInfoUnit22EN from '../../view/thoury/returnInfoUnit22EN.js';
+import returnInfoUnit22PL from '../../view/thoury/returnInfoUnit22PL.js';
+import returnInfoUnit22RU from '../../view/thoury/returnInfoUnit22RU.js';
+import returnInfoUnit22UA from '../../view/thoury/returnInfoUnit22UA.js';
 
-import * as returnLevel14 from '../../view/thoury/returnLevel14.js';
-import * as returnLevel14EN from '../../view/thoury/returnLevel14EN.js';
-import * as returnLevel14PL from '../../view/thoury/returnLevel14PL.js';
-import * as returnLevel14UA from '../../view/thoury/returnLevel14UA.js';
+import returnLevel14 from '../../view/thoury/returnLevel14.js';
+import returnLevel14EN from '../../view/thoury/returnLevel14EN.js';
+import returnLevel14PL from '../../view/thoury/returnLevel14PL.js';
+import returnLevel14UA from '../../view/thoury/returnLevel14UA.js';
 
-import * as returnLevel15 from '../../view/thoury/returnLevel15.js';
-import * as returnLevel15EN from '../../view/thoury/returnLevel15EN.js';
-import * as returnLevel15PL from '../../view/thoury/returnLevel15PL.js';
-import * as returnLevel15UA from '../../view/thoury/returnLevel15UA.js';
+import returnLevel15 from '../../view/thoury/returnLevel15.js';
+import returnLevel15EN from '../../view/thoury/returnLevel15EN.js';
+import returnLevel15PL from '../../view/thoury/returnLevel15PL.js';
+import returnLevel15UA from '../../view/thoury/returnLevel15UA.js';
 
-import * as returnLevel16 from '../../view/thoury/returnLevel16.js';
-import * as returnLevel16EN from '../../view/thoury/returnLevel16EN.js';
-import * as returnLevel16PL from '../../view/thoury/returnLevel16PL.js';
-import * as returnLevel16UA from '../../view/thoury/returnLevel16UA.js';
+import returnLevel16 from '../../view/thoury/returnLevel16.js';
+import returnLevel16EN from '../../view/thoury/returnLevel16EN.js';
+import returnLevel16PL from '../../view/thoury/returnLevel16PL.js';
+import returnLevel16UA from '../../view/thoury/returnLevel16UA.js';
 
-import * as returnLevel17 from '../../view/thoury/returnLevel17.js';
-import * as returnLevel17EN from '../../view/thoury/returnLevel17EN.js';
-import * as returnLevel17PL from '../../view/thoury/returnLevel17PL.js';
-import * as returnLevel17UA from '../../view/thoury/returnLevel17UA.js';
+import returnLevel17 from '../../view/thoury/returnLevel17.js';
+import returnLevel17EN from '../../view/thoury/returnLevel17EN.js';
+import returnLevel17PL from '../../view/thoury/returnLevel17PL.js';
+import returnLevel17UA from '../../view/thoury/returnLevel17UA.js';
 
-import * as returnLevel18 from '../../view/thoury/returnLevel18.js';
-import * as returnLevel18EN from '../../view/thoury/returnLevel18EN.js';
-import * as returnLevel18PL from '../../view/thoury/returnLevel18PL.js';
-import * as returnLevel18UA from '../../view/thoury/returnLevel18UA.js';
+import returnLevel18 from '../../view/thoury/returnLevel18.js';
+import returnLevel18EN from '../../view/thoury/returnLevel18EN.js';
+import returnLevel18PL from '../../view/thoury/returnLevel18PL.js';
+import returnLevel18UA from '../../view/thoury/returnLevel18UA.js';
 
-import * as returnLevel19 from '../../view/thoury/returnLevel19.js';
-import * as returnLevel19EN from '../../view/thoury/returnLevel19EN.js';
-import * as returnLevel19PL from '../../view/thoury/returnLevel19PL.js';
-import * as returnLevel19UA from '../../view/thoury/returnLevel19UA.js';
+import returnLevel19 from '../../view/thoury/returnLevel19.js';
+import returnLevel19EN from '../../view/thoury/returnLevel19EN.js';
+import returnLevel19PL from '../../view/thoury/returnLevel19PL.js';
+import returnLevel19UA from '../../view/thoury/returnLevel19UA.js';
 
-import * as returnLevel20 from '../../view/thoury/returnLevel20.js';
-import * as returnLevel20EN from '../../view/thoury/returnLevel20EN.js';
-import * as returnLevel20PL from '../../view/thoury/returnLevel20PL.js';
-import * as returnLevel20UA from '../../view/thoury/returnLevel20UA.js';
-
-
-import * as returnLevel21 from '../../view/thoury/returnLevel21.js';
-import * as returnLevel21EN from '../../view/thoury/returnLevel21EN.js';
-import * as returnLevel21PL from '../../view/thoury/returnLevel21PL.js';
-import * as returnLevel21UA from '../../view/thoury/returnLevel21UA.js';
+import returnLevel20 from '../../view/thoury/returnLevel20.js';
+import returnLevel20EN from '../../view/thoury/returnLevel20EN.js';
+import returnLevel20PL from '../../view/thoury/returnLevel20PL.js';
+import returnLevel20UA from '../../view/thoury/returnLevel20UA.js';
 
 
-import * as returnLevel23 from  '../../view/thoury/returnLevel23.js';
-import * as returnLevel23EN from '../../view/thoury/returnLevel23EN.js';
-import * as returnLevel23PL from '../../view/thoury/returnLevel23PL.js';
-import * as returnLevel23UA from '../../view/thoury/returnLevel23UA.js';
+import returnLevel21 from '../../view/thoury/returnLevel21.js';
+import returnLevel21EN from '../../view/thoury/returnLevel21EN.js';
+import returnLevel21PL from '../../view/thoury/returnLevel21PL.js';
+import returnLevel21UA from '../../view/thoury/returnLevel21UA.js';
 
-import * as returnLevel31 from '../../view/thoury/returnLevel31.js';
-import * as returnLevel31EN from '../../view/thoury/returnLevel31EN.js';
-import * as returnLevel31PL from '../../view/thoury/returnLevel31PL.js';
-import * as returnLevel31UA from '../../view/thoury/returnLevel31UA.js';
 
-import * as returnLevel32 from '../../view/thoury/returnLevel32.js';
-import * as returnLevel32EN from '../../view/thoury/returnLevel32EN.js';
-import * as returnLevel32PL from '../../view/thoury/returnLevel32PL.js';
-import * as returnLevel32UA from '../../view/thoury/returnLevel32UA.js';
+import returnLevel23 from  '../../view/thoury/returnLevel23.js';
+import returnLevel23EN from '../../view/thoury/returnLevel23EN.js';
+import returnLevel23PL from '../../view/thoury/returnLevel23PL.js';
+import returnLevel23UA from '../../view/thoury/returnLevel23UA.js';
 
-import * as returnLevel33 from '../../view/thoury/returnLevel33.js';
-import * as returnLevel33EN from '../../view/thoury/returnLevel33EN.js';
-import * as returnLevel33PL from '../../view/thoury/returnLevel33PL.js';
-import * as returnLevel33UA from '../../view/thoury/returnLevel33UA.js';
+import returnLevel31 from '../../view/thoury/returnLevel31.js';
+import returnLevel31EN from '../../view/thoury/returnLevel31EN.js';
+import returnLevel31PL from '../../view/thoury/returnLevel31PL.js';
+import returnLevel31UA from '../../view/thoury/returnLevel31UA.js';
 
-import * as returnLevel34 from '../../view/thoury/returnLevel34.js';
-import * as returnLevel34EN from '../../view/thoury/returnLevel34EN.js';
-import * as returnLevel34PL from '../../view/thoury/returnLevel34PL.js';
-import * as returnLevel34UA from '../../view/thoury/returnLevel34UA.js';
+import returnLevel32 from '../../view/thoury/returnLevel32.js';
+import returnLevel32EN from '../../view/thoury/returnLevel32EN.js';
+import returnLevel32PL from '../../view/thoury/returnLevel32PL.js';
+import returnLevel32UA from '../../view/thoury/returnLevel32UA.js';
 
-import * as returnLevel35 from '../../view/thoury/returnLevel35.js';
-import * as returnLevel35EN from '../../view/thoury/returnLevel35EN.js';
-import * as returnLevel35PL from '../../view/thoury/returnLevel35PL.js';
-import * as returnLevel35UA from '../../view/thoury/returnLevel35UA.js';
+import returnLevel33 from '../../view/thoury/returnLevel33.js';
+import returnLevel33EN from '../../view/thoury/returnLevel33EN.js';
+import returnLevel33PL from '../../view/thoury/returnLevel33PL.js';
+import returnLevel33UA from '../../view/thoury/returnLevel33UA.js';
 
-import * as returnLevel36 from '../../view/thoury/returnLevel36.js';
-import * as returnLevel36EN from '../../view/thoury/returnLevel36EN.js';
-import * as returnLevel36PL from '../../view/thoury/returnLevel36PL.js';
-import * as returnLevel36UA from '../../view/thoury/returnLevel36UA.js';
+import returnLevel34 from '../../view/thoury/returnLevel34.js';
+import returnLevel34EN from '../../view/thoury/returnLevel34EN.js';
+import returnLevel34PL from '../../view/thoury/returnLevel34PL.js';
+import returnLevel34UA from '../../view/thoury/returnLevel34UA.js';
 
-import * as returnLevel37 from '../../view/thoury/returnLevel37.js';
-import * as returnLevel37EN from '../../view/thoury/returnLevel37EN.js';
-import * as returnLevel37PL from '../../view/thoury/returnLevel37PL.js';
-import * as returnLevel37UA from '../../view/thoury/returnLevel37UA.js';
+import returnLevel35 from '../../view/thoury/returnLevel35.js';
+import returnLevel35EN from '../../view/thoury/returnLevel35EN.js';
+import returnLevel35PL from '../../view/thoury/returnLevel35PL.js';
+import returnLevel35UA from '../../view/thoury/returnLevel35UA.js';
 
-import * as returnLevel38 from '../../view/thoury/returnLevel38.js';
-import * as returnLevel38EN from '../../view/thoury/returnLevel38EN.js';
-import * as returnLevel38PL from '../../view/thoury/returnLevel38PL.js';
-import * as returnLevel38UA from '../../view/thoury/returnLevel38UA.js';
+import returnLevel36 from '../../view/thoury/returnLevel36.js';
+import returnLevel36EN from '../../view/thoury/returnLevel36EN.js';
+import returnLevel36PL from '../../view/thoury/returnLevel36PL.js';
+import returnLevel36UA from '../../view/thoury/returnLevel36UA.js';
 
-import * as returnLevel39 from '../../view/thoury/returnLevel39.js';
-import * as returnLevel39EN from '../../view/thoury/returnLevel39EN.js';
-import * as returnLevel39PL from '../../view/thoury/returnLevel39PL.js';
-import * as returnLevel39UA from '../../view/thoury/returnLevel39UA.js';
+import returnLevel37 from '../../view/thoury/returnLevel37.js';
+import returnLevel37EN from '../../view/thoury/returnLevel37EN.js';
+import returnLevel37PL from '../../view/thoury/returnLevel37PL.js';
+import returnLevel37UA from '../../view/thoury/returnLevel37UA.js';
 
-import * as returnLevel40 from '../../view/thoury/returnLevel40.js';
-import * as returnLevel40EN from '../../view/thoury/returnLevel40EN.js';
-import * as returnLevel40PL from '../../view/thoury/returnLevel40PL.js';
-import * as returnLevel40UA from '../../view/thoury/returnLevel40UA.js';
+import returnLevel38 from '../../view/thoury/returnLevel38.js';
+import returnLevel38EN from '../../view/thoury/returnLevel38EN.js';
+import returnLevel38PL from '../../view/thoury/returnLevel38PL.js';
+import returnLevel38UA from '../../view/thoury/returnLevel38UA.js';
 
-import * as returnLevel42 from '../../view/thoury/returnLevel42.js';
-import * as returnLevel42UA from '../../view/thoury/returnLevel42UA.js';
-import * as returnLevel42PL from '../../view/thoury/returnLevel42PL.js';
-import * as returnLevel42EN from '../../view/thoury/returnLevel42EN.js';
+import returnLevel39 from '../../view/thoury/returnLevel39.js';
+import returnLevel39EN from '../../view/thoury/returnLevel39EN.js';
+import returnLevel39PL from '../../view/thoury/returnLevel39PL.js';
+import returnLevel39UA from '../../view/thoury/returnLevel39UA.js';
 
-import * as  returnInfoForDiamant  from '../../view/thoury/returnInfoForDiamant.js';
-import * as  returnInfoForDiamantEN  from '../../view/thoury/returnInfoForDiamantEN.js';
-import * as  returnInfoForDiamantPL  from '../../view/thoury/returnInfoForDiamantPL.js';
-import * as  returnInfoForDiamantUA  from '../../view/thoury/returnInfoForDiamantUA.js';
+import returnLevel40 from '../../view/thoury/returnLevel40.js';
+import returnLevel40EN from '../../view/thoury/returnLevel40EN.js';
+import returnLevel40PL from '../../view/thoury/returnLevel40PL.js';
+import returnLevel40UA from '../../view/thoury/returnLevel40UA.js';
 
-import * as helpForProgramRU  from '../../view/help/helpForProgramRU.js';
-import * as helpForProgramPL  from '../../view/help/helpForProgramPL.js';
-import * as helpForProgramUA  from '../../view/help/helpForProgramUA.js';
-import * as helpForProgramEN  from '../../view/help/helpForProgramEN.js';
+import returnLevel42 from '../../view/thoury/returnLevel42.js';
+import returnLevel42UA from '../../view/thoury/returnLevel42UA.js';
+import returnLevel42PL from '../../view/thoury/returnLevel42PL.js';
+import returnLevel42EN from '../../view/thoury/returnLevel42EN.js';
 
-import * as helpForHomeMenuRU  from '../../view/help/helpForHomeMenuRU.js';
-import * as helpForHomeMenuUA  from '../../view/help/helpForHomeMenuUA.js';
-import * as helpForHomeMenuPL  from '../../view/help/helpForHomeMenuPL.js';
-import * as helpForHomeMenuEN  from '../../view/help/helpForHomeMenuEN.js';
+import returnInfoForDiamant  from '../../view/thoury/returnInfoForDiamant.js';
+import returnInfoForDiamantEN  from '../../view/thoury/returnInfoForDiamantEN.js';
+import returnInfoForDiamantPL  from '../../view/thoury/returnInfoForDiamantPL.js';
+import returnInfoForDiamantUA  from '../../view/thoury/returnInfoForDiamantUA.js';
 
-import * as helpForGreenPoleOneUA  from '../../view/help/helpForGreenPoleOneUA.js';
-import * as helpForGreenPoleOneRU  from '../../view/help/helpForGreenPoleOneRU.js';
-import * as helpForGreenPoleOnePL  from '../../view/help/helpForGreenPoleOnePL.js';
-import * as helpForGreenPoleOneEN  from '../../view/help/helpForGreenPoleOneEN.js';
+import helpForProgramRU  from '../../view/help/helpForProgramRU.js';
+import helpForProgramPL  from '../../view/help/helpForProgramPL.js';
+import helpForProgramUA  from '../../view/help/helpForProgramUA.js';
+import helpForProgramEN  from '../../view/help/helpForProgramEN.js';
 
-export default  { 
+import helpForHomeMenuRU  from '../../view/help/helpForHomeMenuRU.js';
+import helpForHomeMenuUA  from '../../view/help/helpForHomeMenuUA.js';
+import helpForHomeMenuPL  from '../../view/help/helpForHomeMenuPL.js';
+import helpForHomeMenuEN  from '../../view/help/helpForHomeMenuEN.js';
+
+import helpForGreenPoleOneUA  from '../../view/help/helpForGreenPoleOneUA.js';
+import helpForGreenPoleOneRU  from '../../view/help/helpForGreenPoleOneRU.js';
+import helpForGreenPoleOnePL  from '../../view/help/helpForGreenPoleOnePL.js';
+import helpForGreenPoleOneEN  from '../../view/help/helpForGreenPoleOneEN.js';
+
+const indexForThoury = { 
          helpForProgramRU,
          helpForProgramPL,
          helpForProgramUA,
@@ -231,3 +231,5 @@ export default  {
          returnLevel14UA,
          returnLevel14,
          };
+
+export default indexForThoury;

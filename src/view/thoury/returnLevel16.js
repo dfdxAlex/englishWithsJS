@@ -1,4 +1,6 @@
-export function returnLevel16()
+export default returnLevel16;
+
+function returnLevel16()
 {
     return `<div style="font-family: Arial, sans-serif; line-height: 1.6; background-color: #f4f4f4; margin: 20px; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
     <h1 style="color: #333;">Простое Настоящее Время с Периодичностью</h1>

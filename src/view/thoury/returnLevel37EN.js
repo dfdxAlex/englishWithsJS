@@ -1,4 +1,6 @@
-export function returnLevel37EN()
+export default returnLevel37EN;
+
+function returnLevel37EN()
 {
     return `<div class="accordion" id="presentPerfectAccordion">
     <div class="accordion-item">

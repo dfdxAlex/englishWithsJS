@@ -1,4 +1,6 @@
-export function returnLevel36UA()
+export default returnLevel36UA;
+
+function returnLevel36UA()
 {
     return `<div class="container mt-5">
   <div class="row">

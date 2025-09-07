@@ -1,4 +1,6 @@
-export function returnLevel36EN()
+export default returnLevel36EN;
+
+function returnLevel36EN()
 {
     return `<div class="container mt-5">
   <div class="row">

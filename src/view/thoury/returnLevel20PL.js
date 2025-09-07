@@ -1,4 +1,6 @@
-export function returnLevel20PL()
+export default returnLevel20PL;
+
+function returnLevel20PL()
 {
     return `<div class="container mt-5">
   <div class="row">

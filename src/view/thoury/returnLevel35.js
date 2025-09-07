@@ -1,4 +1,6 @@
-export function returnLevel35()
+export default returnLevel35;
+
+function returnLevel35()
 {
     return `<div class="card border-success">
   <div class="card-header bg-success text-white">

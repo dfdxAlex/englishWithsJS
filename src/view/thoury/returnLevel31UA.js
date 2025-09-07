@@ -1,4 +1,6 @@
-export function returnLevel31UA()
+export default returnLevel31UA;
+
+function returnLevel31UA()
 {
     return`<div class="container" style="margin: 20px;">
     <div class="border border-primary rounded p-4 bg-light">

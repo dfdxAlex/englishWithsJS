@@ -1,4 +1,6 @@
-export function returnLevel23()
+export default returnLevel23;
+
+function returnLevel23()
 {
     return `<div class="container" style="margin-top: 20px;">
     <h1 style="text-align: center; color: #333;">Справка по глаголам "was" и "were"</h1>

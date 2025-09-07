@@ -1,6 +1,8 @@
 import './styles/helpForGreenPoleOneRU.scss';
 
-export function helpForGreenPoleOneEN()
+export default helpForGreenPoleOneEN;
+
+function helpForGreenPoleOneEN()
 {
     return `
         <div class = "help-for-green-pole-one" id='modalBox'>
