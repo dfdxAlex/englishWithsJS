@@ -69,7 +69,7 @@ const handleLevelX = (dataObj, constIndexArray = false) =>
         if (SettingForProgram.selectTypeTest === 'simple') {
             document.getElementById('working_field')
                     .innerHTML = FactoryRegistr.getObject('WorkingField').init(mas, nameLeson);
-
+        window.setBackground();
         hundleForTranslate();
         }
         
@@ -77,9 +77,10 @@ const handleLevelX = (dataObj, constIndexArray = false) =>
         // создать рабочее поле с вопроссом и вариантами ответа
         // поместить форму в соответствующий div
         if (SettingForProgram.selectTypeTest === 'word-assembly') {
-            document.getElementById('working_field')
-                    .innerHTML = FactoryRegistr.getObject('WorkingField').initWordAssembly(mas, nameLeson);
+            const workingField = document.getElementById('working_field');
+            workingField.innerHTML = FactoryRegistr.getObject('WorkingField').initWordAssembly(mas, nameLeson);
         hundleForTranslate();
+        // workingField.addEventListener('click', window.setBackground);
         }
 
         // Тест уровня Word-assembly-not-translate
@@ -89,8 +90,9 @@ const handleLevelX = (dataObj, constIndexArray = false) =>
             constIndexArray
         };
         if (SettingForProgram.selectTypeTest === 'word-assembly-not-translate') {
-            document.getElementById('working_field')
-                    .innerHTML = FactoryRegistr.getObject('WorkingField').initWordAssemblyNotTranslate(mas, nameLeson, property);
+            const workingField = document.getElementById('working_field');
+            workingField.innerHTML = FactoryRegistr.getObject('WorkingField').initWordAssemblyNotTranslate(mas, nameLeson, property);
+            
         selectLightNormalHard();
         }
         
