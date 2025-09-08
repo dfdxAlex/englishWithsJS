@@ -10,6 +10,7 @@ import { LevelDataModel } from '../models/LevelDataModel.js';
 import { handleOkErr } from './handleOkErr.js';
 import { MenuController } from './MenuController.js';
 import { hundleHelpPrime } from './forInitEventListeners/hundleHelpPrime.js';
+import { setBackground } from '../view/styles/bodyImages/setBackground.js';
 
 window.LanguageController = new LanguageController();
 window.FactoryRegistr = FactoryRegistr;
@@ -21,6 +22,7 @@ window.hundleHelpPrime = hundleHelpPrime;
 window.DataOk = DataOk;
 window.handleOkErr = handleOkErr;
 window.MenuController = MenuController;
+window.setBackground = setBackground;
 
 // костыль для регистратора объектов
 window.getTranslate = getTranslate();
