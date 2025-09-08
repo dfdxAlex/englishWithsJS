@@ -4,6 +4,9 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    background-size: cover; /* растягиваем картинку */
+    background-repeat: no-repeat; /* чтобы не дублировалась */
+    background-position: center; /* по центру */
     /* background-image: url('images/learningBackground.jpg'); Нормальный фон */
     /* background-size: cover;
     background-position: center; */
