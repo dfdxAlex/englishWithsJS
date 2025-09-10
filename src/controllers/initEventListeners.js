@@ -1,18 +1,17 @@
 import { hundleHelpPrime } from './forInitEventListeners/hundleHelpPrime.js';
 import { initEventForMenuStatistic } from '../view/forStatistic/initEventForMenuStatistic.js';
 import { hundleUpdateBurgerOrWord } from './forInitEventListeners/hundleUpdateBurgerOrWord.js';
-import { blockMenu } from '../services/blockMenu.js';
+import { hundleBlockMenu } from '../services/hundleBlockMenu.js';
 
 // Здесь функции, которые должны отработать когда загрузится статическая страница
 window.addEventListener('load', () => {
+    hundleBlockMenu();
 });
 
 // интервал проверяет все элементы и накладывает на них обработчики событий.
 // если за один проход удалось зарегить все обработчики, то выходим
 const id = setInterval(()=>{
     let test = true;
-
-    if (!blockMenu('.dropdown-content','click')) test = false;
 
     // Событие клик для показа инфы про алмазы
     // если функция сделает всё что должна, то вернет true
