@@ -3,6 +3,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    background-attachment: fixed; /* фон закреплён при прокрутке */
 }
 
 .nav-transparent, .html-old-questions-transparent {

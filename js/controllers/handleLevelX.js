@@ -9,6 +9,7 @@
 
 const handleLevelX = (dataObj, constIndexArray = false) =>
     {
+        window.noonMenu('.dropdown-content');
         // console.log();
         // Сменили тест
         if (DataOk.level.int !== dataObj.getLevel()) {
