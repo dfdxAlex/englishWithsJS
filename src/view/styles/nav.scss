@@ -31,11 +31,11 @@
     }
 
     .dropbtn {
-    //   background-color: #4CAF50;
+      // background-color: #4CAF50;
       color: rgb(8, 0, 0);
       padding: 10px 16px;
       // font-size: 16px;
-      border: none;
+      border: 1px solid white;
       cursor: pointer;
       border-radius: 6px;
     }
@@ -65,3 +65,7 @@
    .dropdown-content {
       display: block;
     }
+
+.dropdown-toggle::after {
+  display: none !important; /* полностью скрыть стрелку */
+}

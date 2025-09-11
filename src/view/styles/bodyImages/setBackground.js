@@ -15,5 +15,7 @@ export function setBackground()
     tegBody.style.backgroundPosition = "center";
     tegBody.style.backgroundImage = `url('${path}background${numberImg}.jpg')`;
 
+    // const foColor = document.querySelector('.nav-item');
+    // foColor.style.color = 'white';
 };
 

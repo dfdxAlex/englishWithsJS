@@ -9,10 +9,8 @@ export function hundleBlockMenu() {
 
             if (elM.style.display === 'none' || elM.style.display === '') {
                 elM.style.display = 'block';
-                console.log('показали');
             } else {
                 elM.style.display = 'none';
-                console.log('спрятали');
             }
         });
 
@@ -28,6 +26,4 @@ export function hundleBlockMenu() {
 
         return true;
     }
-
-    return false;
 }
