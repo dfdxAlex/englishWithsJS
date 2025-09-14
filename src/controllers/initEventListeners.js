@@ -2,10 +2,23 @@ import { hundleHelpPrime } from './forInitEventListeners/hundleHelpPrime.js';
 import { initEventForMenuStatistic } from '../view/forStatistic/initEventForMenuStatistic.js';
 import { hundleUpdateBurgerOrWord } from './forInitEventListeners/hundleUpdateBurgerOrWord.js';
 import { hundleBlockMenu } from '../services/hundleBlockMenu.js';
+import { setBackground } from '../view/styles/bodyImages/setBackground.js';
+import { DataSet } from '../services/data/DataSet.js';
+import { setColorMenu } from '../view/styles/bodyImages/setColorMenu.js';
 
 // Здесь функции, которые должны отработать когда загрузится статическая страница
 window.addEventListener('load', () => {
     hundleBlockMenu();
+
+    // После рендеринга накинуть событие для изменения фона на группы менюшек.
+    // Группы берутся из классов MenuRight и потомков
+    document.getElementById('pullItem1').addEventListener('click', setBackground);
+    document.getElementById('pullItem2').addEventListener('click', setBackground);
+    document.getElementById('pullItem6').addEventListener('click', setBackground);
+
+    // C Цветом текста и фона работаем для менюшек
+    setColorMenu();
+
 });
 
 // интервал проверяет все элементы и накладывает на них обработчики событий.

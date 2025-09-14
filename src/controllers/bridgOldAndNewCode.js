@@ -10,7 +10,6 @@ import { LevelDataModel } from '../models/LevelDataModel.js';
 import { handleOkErr } from './handleOkErr.js';
 import { MenuController } from './MenuController.js';
 import { hundleHelpPrime } from './forInitEventListeners/hundleHelpPrime.js';
-import { setBackground } from '../view/styles/bodyImages/setBackground.js';
 import { noonMenu } from '../services/noonMenu.js';
 
 window.LanguageController = new LanguageController();
@@ -23,7 +22,6 @@ window.hundleHelpPrime = hundleHelpPrime;
 window.DataOk = DataOk;
 window.handleOkErr = handleOkErr;
 window.MenuController = MenuController;
-window.setBackground = setBackground;
 window.noonMenu = noonMenu;
 
 // костыль для регистратора объектов

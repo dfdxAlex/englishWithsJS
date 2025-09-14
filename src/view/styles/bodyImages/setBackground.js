@@ -1,5 +1,6 @@
 // функция помещает случайный фон на страницу
-
+import { DataSet } from '../../../services/data/DataSet.js';
+import { setColorMenu } from './setColorMenu.js';
 
 export function setBackground()
 {
@@ -15,7 +16,10 @@ export function setBackground()
     tegBody.style.backgroundPosition = "center";
     tegBody.style.backgroundImage = `url('${path}background${numberImg}.jpg')`;
 
-    // const foColor = document.querySelector('.nav-item');
-    // foColor.style.color = 'white';
+    // Запомнить номер последнего выбранного фона
+    DataSet.numberBackground = numberImg;
+
+    setColorMenu();
+
 };
 

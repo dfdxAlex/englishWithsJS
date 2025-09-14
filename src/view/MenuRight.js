@@ -13,7 +13,6 @@ export class MenuRight
         // Массив со всеми пунктами меню
         this.nameButtons = nameButtons;
 
-        // this.nameMenu = FactoryRegistr.getObject("LanguageController").translate('Выбрать тест.');
         this.nameMenu = 'Units1-23';
         // Это свойство содержит место, куда нужно припарковать 
         // меню. Вводится id того елемента, который примет меню.
@@ -33,7 +32,7 @@ export class MenuRight
     // Этот метод возвращает список пунктов для меню выбора теста
     menuItem2()
     {
-        let rez = '<ul id="pullItem" class="ul-for-menu">';
+        let rez = `<ul id="pullItem${this.numberMenu}" class="ul-for-menu">`;
         // перебрать массив с названиями пунктов для меню
         // перебирается весь список всех пунктов всех категорий
         rez += this.nameButtons.map((element, index) => {
@@ -55,7 +54,9 @@ export class MenuRight
                       <a 
                         data-bs-dismiss="modal"
                         class="btn ${this.addClass()}" 
-                        id="level${index+1}">${element}
+                        id="level${index+1}"
+                      >
+                        ${element}
                       </a>
                     </li>`;
         }).join(''); 
@@ -67,7 +68,7 @@ export class MenuRight
     menuDropdown2() {
       return `
         <div class="dropdown">
-          <button class="btn btn-light dropdown-toggle" 
+          <button class="btn dropdown-toggle" 
                   type="button" 
                   id="dropdownMenu${this.seedMenu}" 
                   data-bs-toggle="dropdown" 
@@ -81,36 +82,6 @@ export class MenuRight
         </div>
       `;
     }    
-
-    // удалить когда забуду зачем этот метод
-    // Этот метод переименовать в menuDropdown2 если верну одноуровневые пункты в меню
-    // для тестов
-    menuDropdownOld()
-    { 
-        return `
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal${this.seedMenu}">
-            ${this.nameMenu}
-          </button>
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal${this.seedMenu}" tabindex="-1" aria-labelledby="exampleModalLabel${this.seedMenu}" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel${this.seedMenu}">${this.nameMenu}</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  ${this.menuItem2()}
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          `;
-    }
 
     // Функция проанализирует какой категории принадлежит элемент меню. Это тесты или Учить слова
     // После этого функция вернет один из двух возможных классов, в зависимости от чётной или 
