@@ -57,12 +57,8 @@ const handleLevelX = (dataObj, constIndexArray = false) =>
         // Блок проверяет есть ли в рабочем массиве свойство nameLeson
         // Если есть, то через одноимённую переменную оно передается в WorkingField
         // Где используется для установки в заголовок теста названия теста.
-        // let nameLeson = false;
-        // if ('nameLeson' in dataObj.getArrayDB())
-        //     nameLeson = dataObj.getArrayDB().nameLeson;
         const db = dataObj.getArrayDB();
         const nameLeson = db?.nameLeson ?? false;
-        //console.log(db);
 
         // Тест уровня Simple
         // создать рабочее поле с вопроссом и вариантами ответа
@@ -70,7 +66,7 @@ const handleLevelX = (dataObj, constIndexArray = false) =>
         if (SettingForProgram.selectTypeTest === 'simple') {
             document.getElementById('working_field')
                     .innerHTML = FactoryRegistr.getObject('WorkingField').init(mas, nameLeson);
-        window.setBackground();
+        // window.setBackground();
         hundleForTranslate();
         }
         
@@ -81,7 +77,6 @@ const handleLevelX = (dataObj, constIndexArray = false) =>
             const workingField = document.getElementById('working_field');
             workingField.innerHTML = FactoryRegistr.getObject('WorkingField').initWordAssembly(mas, nameLeson);
         hundleForTranslate();
-        // workingField.addEventListener('click', window.setBackground);
         }
 
         // Тест уровня Word-assembly-not-translate
