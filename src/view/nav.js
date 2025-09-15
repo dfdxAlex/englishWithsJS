@@ -24,15 +24,13 @@ export function nav()
             <button id="button-help-video" type="button" class="fs-6 text-primary mb-3 button-help-nav">&#10067;</button>
           </li>
 
-          <!--Потестировать первый вложенный пункт меню-->
-          <li class="nav-item dropdown">
-              <button class="dropbtn">Units</button>
-              <div class="dropdown-content">
-                <div class="nav-link" id="burger"></div>
-                <div class="nav-link" id="burger2"></div>
-              </div>
+          <li class="nav-item">
+            <div class="nav-link" id="burger"></div>
           </li>
-
+          <li class="nav-item">
+            <div class="nav-link" id="burger2"></div>
+          </li>
+          
           <li class="nav-item">
             <div class="nav-link" id="word"></div>
           </li>

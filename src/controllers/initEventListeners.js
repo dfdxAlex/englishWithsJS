@@ -18,6 +18,8 @@ window.addEventListener('load', () => {
 
     // C Цветом текста и фона работаем для менюшек
     setColorMenu();
+    // menuNone();
+    // menuWordsBlock();
 
 });
 
