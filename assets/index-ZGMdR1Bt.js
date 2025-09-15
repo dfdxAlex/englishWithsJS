@@ -5846,7 +5846,7 @@
         <div class="embed-responsive embed-responsive-16by9">
           <iframe showinfo=1 class="embed-responsive-item" src="https://www.youtube.com/embed/${e}" allowfullscreen></iframe>
         </div>
-        `}};function htmlOldQuestionsCntr(){document.getElementById("html_old_questions").innerHTML=htmlOldQuestionsView(htmlOldQuestions()),document.getElementById("button-help").addEventListener("click",()=>{Help.viewhandleHelpToTranslate(indexForThoury.helpForGreenPoleOneRU(),"VuUKoWdyu6Y")})}const DataSet={};function setColorMenu(){const e=document.getElementById("dropdownMenuburger"),a=document.getElementById("dropdownMenuburger2");e&&(e.style.background="rgba(0,0,255,0.01)",DataSet.numberBackground>16&&DataSet.numberBackground<21?(e.style.color="black",a.style.color="black"):(e.style.color="white",a.style.color="white"))}function setBackground(){const e="css/images/",a=Math.floor(Math.random()*24)+1,t=document.querySelector("body");t.style.height="100%",t.style.margin="0",t.style.backgroundSize="cover",t.style.backgroundRepeat="no-repeat",t.style.backgroundPosition="center",t.style.backgroundImage=`url('${e}background${a}.jpg')`,DataSet.numberBackground=a,setColorMenu()}daimentInfo();htmlOldQuestionsCntr();setBackground();function nav(){setTimeout(()=>{document.getElementById("button-help-video").addEventListener("click",e=>{e.stopPropagation(),Help.viewhandleHelpToTranslate(indexForThoury.helpForHomeMenuRU(),"vkQYDmiTlmQ")})},0),document.getElementById("nav").innerHTML=`
+        `}};function htmlOldQuestionsCntr(){document.getElementById("html_old_questions").innerHTML=htmlOldQuestionsView(htmlOldQuestions()),document.getElementById("button-help").addEventListener("click",()=>{Help.viewhandleHelpToTranslate(indexForThoury.helpForGreenPoleOneRU(),"VuUKoWdyu6Y")})}const DataSet={};function setColorMenu(){const e=document.getElementById("dropdownMenuburger"),a=document.getElementById("dropdownMenuburger2"),t=document.getElementById("dropdownMenuword"),i=document.getElementById("dropdownMenuhelp"),o=document.getElementById("dropdownMenustatistic"),n=document.getElementById("setting");e&&(e.style.background="rgba(0,0,255,0.01)",DataSet.numberBackground>16&&DataSet.numberBackground<21?(e.style.color="black",a.style.color="black",t.style.color="black",i.style.color="black",o.style.color="black",n.style.color="black"):(e.style.color="white",a.style.color="white",t.style.color="white",i.style.color="white",o.style.color="white",n.style.color="white"))}function setBackground(){const e="css/images/",a=Math.floor(Math.random()*24)+1,t=document.querySelector("body");t.style.height="100%",t.style.margin="0",t.style.backgroundSize="cover",t.style.backgroundRepeat="no-repeat",t.style.backgroundPosition="center",t.style.backgroundImage=`url('${e}background${a}.jpg')`,DataSet.numberBackground=a,setColorMenu()}daimentInfo();htmlOldQuestionsCntr();setBackground();function nav(){setTimeout(()=>{document.getElementById("button-help-video").addEventListener("click",e=>{e.stopPropagation(),Help.viewhandleHelpToTranslate(indexForThoury.helpForHomeMenuRU(),"vkQYDmiTlmQ")})},0),document.getElementById("nav").innerHTML=`
      <nav class="navbar navbar-expand-sm navbar-light" id="first-teg-nav-for-nav">
     <div class="container-fluid" id="nav-first-div">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -5858,15 +5858,13 @@
             <button id="button-help-video" type="button" class="fs-6 text-primary mb-3 button-help-nav">&#10067;</button>
           </li>
 
-          <!--Потестировать первый вложенный пункт меню-->
-          <li class="nav-item dropdown">
-              <button class="dropbtn">Units</button>
-              <div class="dropdown-content">
-                <div class="nav-link" id="burger"></div>
-                <div class="nav-link" id="burger2"></div>
-              </div>
+          <li class="nav-item">
+            <div class="nav-link" id="burger"></div>
           </li>
-
+          <li class="nav-item">
+            <div class="nav-link" id="burger2"></div>
+          </li>
+          
           <li class="nav-item">
             <div class="nav-link" id="word"></div>
           </li>
