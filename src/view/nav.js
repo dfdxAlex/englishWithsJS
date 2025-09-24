@@ -44,10 +44,27 @@ export function nav()
             <div class="nav-link" id="setting">Setting</div>
           </li>
           <li class="nav-item">
-            <div class="nav-link" id="button_lang_selected"></div>
+            <div class="nav-link" id="button_lang_selected">${langView()}</div>
           </li>
         </ul>
       </div>
     </div>
   </nav>`;
+}
+
+
+import { LanguageSelectorView } from '../view/languageSelectorView/LanguageSelectorView.js';
+import { LanguageController } from '../controllers/LanguageController.js';
+function langView()
+{
+          // --создать объект меню выбора языка
+          const langSelector = new LanguageSelectorView();
+
+          // Создать объект переводчика
+          const translate = new LanguageController();
+  
+          // Вернуть разметку для менюшки выбора языка
+          // langSelector.init - вернуть разметку менюшки с текущим значением выбранного языка
+          // translate.langStr - содержит значение выбранного языка.
+          return langSelector.init(translate.langStr);
 }

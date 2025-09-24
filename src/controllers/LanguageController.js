@@ -62,6 +62,7 @@ export class LanguageController
         // --поместить меню, в метод передается значение 
         // --по умолчанию положения меню выбора языка
         rez.innerHTML = langSelector.init(this.langStr);
+        // rez.innerHTML = '---';
 
         // Добавить событие изменения выбора
         document.getElementById("languageSelect").onchange = function(event) {
