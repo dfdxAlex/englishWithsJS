@@ -5878,12 +5878,12 @@
             <div class="nav-link" id="setting">Setting</div>
           </li>
           <li class="nav-item">
-            <div class="nav-link" id="button_lang_selected"></div>
+            <div class="nav-link" id="button_lang_selected">${langView()}</div>
           </li>
         </ul>
       </div>
     </div>
-  </nav>`}const sellect=()=>[document.getElementById("search_error"),document.getElementById("log"),document.getElementById("working_field"),document.getElementById("log_for_div")];function viewLogOff(){let e=sellect();e[0].style.display="none",e[1].style.display="none",e[2].style.display="none",e[3].style.display="block"}function viewLogOn(){let e;e=sellect(),e[0].style.display="block",e[1].style.display="block",e[2].style.display="block",e[3].style.display="none"}function activatingLogs(e=!1,a=null){if(a!==null&&a.target.className!=="button_return_log")return null;new Promise((i,o)=>{e?i():o()}).then(()=>{viewLogOff()},()=>{viewLogOn()})}const Logs={logSize:100,logs:[],set addLog(e){this.logs.unshift(e),this.logs.length>this.logSize&&this.logs.pop()}};function handleLog(){activatingLogs(!0);const e=document.getElementById("log_for_div"),a=new LogField(Logs);e.innerHTML=a.getField(),e.onclick=t=>{activatingLogs(!1,t)}}function thouryUnit1(){return`
+  </nav>`}function langView(){const e=new LanguageSelectorView,a=new LanguageController;return e.init(a.langStr)}const sellect=()=>[document.getElementById("search_error"),document.getElementById("log"),document.getElementById("working_field"),document.getElementById("log_for_div")];function viewLogOff(){let e=sellect();e[0].style.display="none",e[1].style.display="none",e[2].style.display="none",e[3].style.display="block"}function viewLogOn(){let e;e=sellect(),e[0].style.display="block",e[1].style.display="block",e[2].style.display="block",e[3].style.display="none"}function activatingLogs(e=!1,a=null){if(a!==null&&a.target.className!=="button_return_log")return null;new Promise((i,o)=>{e?i():o()}).then(()=>{viewLogOff()},()=>{viewLogOn()})}const Logs={logSize:100,logs:[],set addLog(e){this.logs.unshift(e),this.logs.length>this.logSize&&this.logs.pop()}};function handleLog(){activatingLogs(!0);const e=document.getElementById("log_for_div"),a=new LogField(Logs);e.innerHTML=a.getField(),e.onclick=t=>{activatingLogs(!1,t)}}function thouryUnit1(){return`
     file9
     unit-1
     ru
