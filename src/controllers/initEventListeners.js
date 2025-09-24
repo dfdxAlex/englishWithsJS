@@ -3,8 +3,9 @@ import { initEventForMenuStatistic } from '../view/forStatistic/initEventForMenu
 import { hundleUpdateBurgerOrWord } from './forInitEventListeners/hundleUpdateBurgerOrWord.js';
 import { hundleBlockMenu } from '../services/hundleBlockMenu.js';
 import { setBackground } from '../view/styles/bodyImages/setBackground.js';
-import { DataSet } from '../services/data/DataSet.js';
+// import { DataSet } from '../services/data/DataSet.js';
 import { setColorMenu } from '../view/styles/bodyImages/setColorMenu.js';
+import { handleForSelectLangauge } from './forInitEventListeners/handleForSelectLangauge.js';
 
 // Здесь функции, которые должны отработать когда загрузится статическая страница
 window.addEventListener('load', () => {
@@ -18,8 +19,9 @@ window.addEventListener('load', () => {
 
     // C Цветом текста и фона работаем для менюшек
     setColorMenu();
-    // menuNone();
-    // menuWordsBlock();
+
+    // Накидывает обработчик события для изменения языка
+    handleForSelectLangauge();
 
 });
 

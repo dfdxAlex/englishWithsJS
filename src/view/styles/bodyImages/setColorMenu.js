@@ -12,6 +12,11 @@ export function setColorMenu()
     const searchMenuHelp = document.getElementById('dropdownMenuhelp');
     const searchMenuStatistic = document.getElementById('dropdownMenustatistic');
     const searchMenuSetting = document.getElementById('setting');
+    const buttonLangSelected = document.getElementById('languageSelect');
+    const selectUa = document.getElementById('selectUa');
+    const selectRu = document.getElementById('selectRu');
+    const selectPl = document.getElementById('selectPl');
+    const selectEn = document.getElementById('selectEn');
 
 
     if (searchMenu) {
@@ -23,6 +28,11 @@ export function setColorMenu()
             searchMenuHelp.style.color = "black";
             searchMenuStatistic.style.color = "black";
             searchMenuSetting.style.color = "black";
+            buttonLangSelected.style.color = "black";
+            selectUa.style.background = "white";
+            selectRu.style.background = "white";
+            selectPl.style.background = "white";
+            selectEn.style.background = "white";
         }
         else {
             searchMenu.style.color = "white";
@@ -31,6 +41,11 @@ export function setColorMenu()
             searchMenuHelp.style.color = "white";
             searchMenuStatistic.style.color = "white";
             searchMenuSetting.style.color = "white";
+            buttonLangSelected.style.color = "white";
+            selectUa.style.background = "black";
+            selectRu.style.background = "black";
+            selectPl.style.background = "black";
+            selectEn.style.background = "black";
         }
     }
 }

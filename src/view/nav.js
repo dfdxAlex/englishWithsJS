@@ -62,9 +62,13 @@ function langView()
 
           // Создать объект переводчика
           const translate = new LanguageController();
+
+
   
           // Вернуть разметку для менюшки выбора языка
           // langSelector.init - вернуть разметку менюшки с текущим значением выбранного языка
           // translate.langStr - содержит значение выбранного языка.
           return langSelector.init(translate.langStr);
+
+
 }
