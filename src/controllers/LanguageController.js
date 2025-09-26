@@ -11,7 +11,6 @@
 // в качестве аргумента передается русский аналог фразы
 
 import { exportBDTranslate } from '../models/exportBDTranslate.js';
-// import { LanguageSelectorView } from '../view/languageSelectorView/LanguageSelectorView.js';
 
 export class LanguageController
 {
@@ -51,27 +50,4 @@ export class LanguageController
         return returnTranslate;
     }
 
-    init() 
-    {
-        // Поставить кнопки выбора языка
-        // --создать объект меню выбора языка
-        // const langSelector = new LanguageSelectorView();
-        // --выбрать место на странице, куда поместить меню
-        // const rez = document.getElementById("button_lang_selected");
-
-        // --поместить меню, в метод передается значение 
-        // --по умолчанию положения меню выбора языка
-        // rez.innerHTML = langSelector.init(this.langStr);
-        // rez.innerHTML = '---';
-
-        // Добавить событие изменения выбора
-        // document.getElementById("languageSelect").onchange = function(event) {
-
-        //     // получить данные о выбранном языке из формы
-        //     const selectedValue = event.target.value;
-
-        //     // запомнить выбор языка
-        //     localStorage.setItem('EnglishWithJs_lang',selectedValue);
-        // };
-    }
 }
