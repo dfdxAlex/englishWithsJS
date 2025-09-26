@@ -11,7 +11,7 @@
 // в качестве аргумента передается русский аналог фразы
 
 import { exportBDTranslate } from '../models/exportBDTranslate.js';
-import { LanguageSelectorView } from '../view/languageSelectorView/LanguageSelectorView.js';
+// import { LanguageSelectorView } from '../view/languageSelectorView/LanguageSelectorView.js';
 
 export class LanguageController
 {
