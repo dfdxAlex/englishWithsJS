@@ -436,7 +436,7 @@ export const unit24 = [
     "planted",
     "plant",
     "planting",
-    "planted",
+    "plantes",
     "Я посадил цветы в саду.",
     "Я посадив квіти у саду.",
     "Posadziłem kwiaty w ogrodzie."

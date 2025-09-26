@@ -440,8 +440,8 @@ export const unit25 = [
     "Czego się uczysz na test jutro?"
   ],
   [
-    "What are you drinking at the café tomorrow?",
-    "I am drinking coffee at the café tomorrow.",
+    "What are you drinking at the cafe tomorrow?",
+    "I am drinking coffee at the cafe tomorrow.",
     "I drink coffee every morning.",
     "I drank coffee yesterday.",
     "I will drink coffee next week.",
@@ -740,11 +740,11 @@ export const unit25 = [
     "Jadę na wieś jutro."
   ],
   [
-    "I am reading a novel in the café tomorrow.",
-    "What are you reading in the café tomorrow?",
-    "What do you read in the café every week?",
-    "What did you read in the café last month?",
-    "What will you read in the café next week?",
+    "I am reading a novel in the cafe tomorrow.",
+    "What are you reading in the cafe tomorrow?",
+    "What do you read in the cafe every week?",
+    "What did you read in the cafe last month?",
+    "What will you read in the cafe next week?",
     "Я читаю роман в кафе завтра.",
     "Я читаю роман у кафе завтра.",
     "Czytam powieść w kawiarni jutro."
@@ -900,11 +900,11 @@ export const unit25 = [
     "Kupuję buty w centrum handlowym jutro."
   ],
   [
-    "I am eating cake at the café tomorrow.",
-    "What are you eating at the café tomorrow?",
-    "What do you eat at the café every week?",
-    "What did you eat at the café last week?",
-    "What will you eat at the café next month?",
+    "I am eating cake at the cafe tomorrow.",
+    "What are you eating at the cafe tomorrow?",
+    "What do you eat at the cafe every week?",
+    "What did you eat at the cafe last week?",
+    "What will you eat at the cafe next month?",
     "Я ем торт в кафе завтра.",
     "Я їм торт у кафе завтра.",
     "Jem ciasto w kawiarni jutro."
@@ -930,11 +930,11 @@ export const unit25 = [
     "Uczę się fizyki na test jutro."
   ],
   [
-    "I am drinking coffee at the café tomorrow.",
-    "What are you drinking at the café tomorrow?",
-    "What do you drink at the café every morning?",
-    "What did you drink at the café yesterday?",
-    "What will you drink at the café next week?",
+    "I am drinking coffee at the cafe tomorrow.",
+    "What are you drinking at the cafe tomorrow?",
+    "What do you drink at the cafe every morning?",
+    "What did you drink at the cafe yesterday?",
+    "What will you drink at the cafe next week?",
     "Я пью кофе в кафе завтра.",
     "Я п’ю каву в кафе завтра.",
     "Piję kawę w kawiarni jutro."
