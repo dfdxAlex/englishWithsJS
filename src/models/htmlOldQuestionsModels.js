@@ -1,9 +1,8 @@
-import { FactoryRegistr } from './FactoryRegistr.js';
+import { LanguageController } from '../controllers/LanguageController.js';
 
-
-export function htmlOldQuestions()
+export function htmlOldQuestionsModels()
 {
-  const translate = FactoryRegistr.getObject('LanguageController');
+  const translate = new LanguageController();
   const obj = {
       yourQuestion:translate.translate('Предыдущий вопрос/ответ'),
       questionOld:translate.translate('Предыдущий вопрос здесь'),

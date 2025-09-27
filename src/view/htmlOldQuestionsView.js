@@ -1,21 +1,47 @@
 import './styles/htmlOldQuestionsView.scss';
 
 export function htmlOldQuestionsView(obj) {
+  
   return `
       <div class="card shadow-lg mb-3 mx-auto position-relative html-old-questions-view">
       <div class="card-body">
         <fieldset class="border-0">
-          <legend class="fs-4 text-primary mb-3" id="fieldset-legend-old">${obj.yourQuestion}<button type='button' id='button-help' class='button-help'>&#10067;</button></legend>
+          <legend 
+            class="fs-3 mb-3 your-question" 
+            id="fieldset-legend-old"
+          >
+            ${obj.yourQuestion}
+            <button 
+              type='button' 
+              id='button-help' 
+              class='button-help'
+            >
+              &#10067;
+            </button>
+          </legend>
           
           <div class="row mb-3">
             <div class="col-12">
-              <div class="p-2 border rounded text-white bg-warning" id="question_old">${obj.questionOld}</div>
+              <div 
+                class="p-2 
+                       border 
+                       rounded
+                       question-old" 
+                id="question_old"
+              >
+                ${obj.questionOld}
+              </div>
             </div>
           </div>
 
           <div class="row mb-3">
             <div class="col-12">
-              <div class="p-2 border rounded text-white bg-warning" id="clicked_element">${obj.clickedElement}</div>
+              <div class="
+                     p-2 
+                     border 
+                     rounded 
+                     question-old" 
+                   id="clicked_element">${obj.clickedElement}</div>
             </div>
           </div>
 
