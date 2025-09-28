@@ -45,7 +45,13 @@ export function htmlOldQuestionsView(obj) {
 
           <div class="row">
             <div class="col-8">
-              <button type="button" id="search_error" class="btn btn-warning w-100">${obj.searchError}</button>
+              <button 
+                type="button" 
+                id="search_error" 
+                class="btn btn-warning w-100"
+              >
+                ${obj.searchError}
+              </button>
             </div>
             <div class="col-2">
               <button type="button" id="log" class="btn btn-light w-100" name="log">&#x1F4DC;</button>

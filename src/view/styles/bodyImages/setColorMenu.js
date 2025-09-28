@@ -20,6 +20,7 @@ export function setColorMenu()
     const fieldsetLegendOld = document.getElementById('fieldset-legend-old');
     const questionOld = document.getElementById('question_old');
     const clickedElement = document.getElementById('clicked_element');
+    const searchError = document.getElementById('search_error');
 
     // случайный размер шрифта
     const randomeNumber = getRandomNumber(10,20);
@@ -28,8 +29,9 @@ export function setColorMenu()
     clickedElement.style.fontSize = fontSize;
 
     // случайный радиус
-    questionOld.style.borderRadius = `${getRandomNumber(10,150)}% / ${getRandomNumber(10,150)}% ${getRandomNumber(10,150)}% ${getRandomNumber(10,150)}%`;  
-    clickedElement.style.borderRadius = `${getRandomNumber(10,150)}% / ${getRandomNumber(10,150)}% ${getRandomNumber(10,150)}% ${getRandomNumber(10,150)}%`;  
+    questionOld.style.borderRadius = returnBorderRadius(10, 150);  
+    clickedElement.style.borderRadius = returnBorderRadius(10, 150); 
+    searchError.style.borderRadius = returnBorderRadius(10, 150);  
  
 
     if (searchMenu) {
@@ -73,4 +75,9 @@ export function setColorMenu()
 
 function getRandomNumber(x, y) {
   return Math.floor(Math.random() * (y - x + 1)) + x;
+}
+
+function returnBorderRadius(x, y)
+{
+    return `${getRandomNumber(x,y)}% / ${getRandomNumber(x,y)}% ${getRandomNumber(x,y)}% ${getRandomNumber(x,y)}%`;
 }
