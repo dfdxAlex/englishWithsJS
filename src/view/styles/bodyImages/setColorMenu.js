@@ -21,9 +21,16 @@ export function setColorMenu()
     const questionOld = document.getElementById('question_old');
     const clickedElement = document.getElementById('clicked_element');
 
-    const fontSize = `${20/getRandomNumber(10,20)}em`;
+    // случайный размер шрифта
+    const randomeNumber = getRandomNumber(10,20);
+    const fontSize = `${20/randomeNumber}em`;
     questionOld.style.fontSize = fontSize;
     clickedElement.style.fontSize = fontSize;
+
+    // случайный радиус
+    questionOld.style.borderRadius = `${getRandomNumber(10,150)}% / ${getRandomNumber(10,150)}% ${getRandomNumber(10,150)}% ${getRandomNumber(10,150)}%`;  
+    clickedElement.style.borderRadius = `${getRandomNumber(10,150)}% / ${getRandomNumber(10,150)}% ${getRandomNumber(10,150)}% ${getRandomNumber(10,150)}%`;  
+ 
 
     if (searchMenu) {
         searchMenu.style.background = "rgba(0,0,255,0.01)";

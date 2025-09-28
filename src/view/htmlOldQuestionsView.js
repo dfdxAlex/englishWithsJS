@@ -25,7 +25,6 @@ export function htmlOldQuestionsView(obj) {
               <div 
                 class="p-2 
                        border 
-                       rounded
                        question-old" 
                 id="question_old"
               >
@@ -39,7 +38,6 @@ export function htmlOldQuestionsView(obj) {
               <div class="
                      p-2 
                      border 
-                     rounded 
                      question-old" 
                    id="clicked_element">${obj.clickedElement}</div>
             </div>
