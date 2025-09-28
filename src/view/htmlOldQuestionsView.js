@@ -54,10 +54,24 @@ export function htmlOldQuestionsView(obj) {
               </button>
             </div>
             <div class="col-2">
-              <button type="button" id="log" class="btn btn-light w-100" name="log">&#x1F4DC;</button>
+              <button 
+                type="button" 
+                id="log" 
+                class="btn" 
+                name="log"
+              >
+                &#x1F4DC;
+              </button>
             </div>
             <div class="col-2">
-              <button type="button" id="sound" class="btn btn-light w-100" name="sound">&#x1F50A;</button>
+              <button 
+                type="button" 
+                id="sound" 
+                class="btn" 
+                name="sound"
+              >
+                &#x1F50A;
+              </button>
             </div>
           </div>
         </fieldset>

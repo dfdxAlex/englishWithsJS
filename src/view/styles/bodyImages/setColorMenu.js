@@ -21,17 +21,22 @@ export function setColorMenu()
     const questionOld = document.getElementById('question_old');
     const clickedElement = document.getElementById('clicked_element');
     const searchError = document.getElementById('search_error');
+    const log = document.getElementById('log');
+    const sound = document.getElementById('sound');
 
     // случайный размер шрифта
     const randomeNumber = getRandomNumber(10,20);
     const fontSize = `${20/randomeNumber}em`;
     questionOld.style.fontSize = fontSize;
     clickedElement.style.fontSize = fontSize;
+    log.style.fontSize = `${20/randomeNumber*2}em`;
+    sound.style.fontSize = log.style.fontSize;
 
     // случайный радиус
     questionOld.style.borderRadius = returnBorderRadius(10, 150);  
     clickedElement.style.borderRadius = returnBorderRadius(10, 150); 
-    searchError.style.borderRadius = returnBorderRadius(10, 150);  
+    searchError.style.borderRadius = returnBorderRadius(10, 150); 
+    log.style.borderRadius = returnBorderRadius(10, 150); 
  
 
     if (searchMenu) {
