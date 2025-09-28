@@ -41,7 +41,7 @@ export function setColorMenu()
     // смещение картинок логирования и динамика
     log.style.top = `${30/randomeNumber*0.2}em`;
     log.style.right = `${30/randomeNumber*0.2}em`;
-    sound.style.bottom = `${30/randomeNumber*0.2}em`;
+    sound.style.bottom = `${50/randomeNumber*0.2}em`;
     sound.style.right = `${50/randomeNumber*0.2}em`;
  
 
