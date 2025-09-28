@@ -53,21 +53,21 @@ export function htmlOldQuestionsView(obj) {
                 ${obj.searchError}
               </button>
             </div>
-            <div class="col-2">
+            <div class="col-2 button-block">
               <button 
                 type="button" 
                 id="log" 
-                class="btn" 
+                class="btn log" 
                 name="log"
               >
                 &#x1F4DC;
               </button>
             </div>
-            <div class="col-2">
+            <div class="col-2 button-block">
               <button 
                 type="button" 
                 id="sound" 
-                class="btn" 
+                class="btn sound" 
                 name="sound"
               >
                 &#x1F50A;

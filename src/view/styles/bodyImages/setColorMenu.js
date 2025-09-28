@@ -37,6 +37,12 @@ export function setColorMenu()
     clickedElement.style.borderRadius = returnBorderRadius(10, 150); 
     searchError.style.borderRadius = returnBorderRadius(10, 150); 
     log.style.borderRadius = returnBorderRadius(10, 150); 
+
+    // смещение картинок логирования и динамика
+    log.style.top = `${30/randomeNumber*0.2}em`;
+    log.style.right = `${30/randomeNumber*0.2}em`;
+    sound.style.bottom = `${30/randomeNumber*0.2}em`;
+    sound.style.right = `${50/randomeNumber*0.2}em`;
  
 
     if (searchMenu) {
