@@ -4,7 +4,7 @@
 //предложение для разборки на слова. Создавалась переменная
 //для использования другими объектами готового значения.
 
-class WorkingField {
+export class WorkingField {
   // постоянная часть разметок кнопок с вариантами ответов
   strStart = `<div class='row mb-2'><div class='col-12'><button style='width: 100%; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button'`;
   strFinish = `</button></div></div>`;

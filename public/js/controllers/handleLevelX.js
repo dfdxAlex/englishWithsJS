@@ -65,7 +65,7 @@ const handleLevelX = (dataObj, constIndexArray = false) =>
         // поместить форму в соответствующий div
         if (SettingForProgram.selectTypeTest === 'simple') {
             document.getElementById('working_field')
-                    .innerHTML = FactoryRegistr.getObject('WorkingField').init(mas, nameLeson);
+                    .innerHTML = window.FactoryRegistr.getObject('WorkingField').init(mas, nameLeson);
         // window.setBackground();
         hundleForTranslate();
         }
@@ -75,7 +75,7 @@ const handleLevelX = (dataObj, constIndexArray = false) =>
         // поместить форму в соответствующий div
         if (SettingForProgram.selectTypeTest === 'word-assembly') {
             const workingField = document.getElementById('working_field');
-            workingField.innerHTML = FactoryRegistr.getObject('WorkingField').initWordAssembly(mas, nameLeson);
+            workingField.innerHTML = window.FactoryRegistr.getObject('WorkingField').initWordAssembly(mas, nameLeson);
         hundleForTranslate();
         }
 
@@ -87,14 +87,14 @@ const handleLevelX = (dataObj, constIndexArray = false) =>
         };
         if (SettingForProgram.selectTypeTest === 'word-assembly-not-translate') {
             const workingField = document.getElementById('working_field');
-            workingField.innerHTML = FactoryRegistr.getObject('WorkingField').initWordAssemblyNotTranslate(mas, nameLeson, property);
+            workingField.innerHTML = window.FactoryRegistr.getObject('WorkingField').initWordAssemblyNotTranslate(mas, nameLeson, property);
             
         selectLightNormalHard();
         }
         
         // Объект накидывает на кнопки обработчики 
         // соответствующих событий, ответ правильный или нет
-        FactoryRegistr.getObject('EventController').init();
+        window.FactoryRegistr.getObject('EventController').init();
     };
 
 
@@ -113,7 +113,7 @@ function hundleForTranslate()
                 console.log('навешиваю обработчик на translate');
                 translate.addEventListener('click', (event)=>{
                     // поместить перевод на кнопку
-                    handleTranslateQuestion(FactoryRegistr.getObject('WorkingField'), event);
+                    handleTranslateQuestion(window.FactoryRegistr.getObject('WorkingField'), event);
                     // увеличиь счётчик на 1
                     if (!window.DataOk.translateStop) {
                         window.DataOk.countInt+=1;

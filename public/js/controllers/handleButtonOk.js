@@ -24,7 +24,7 @@ function handleButtonOk(ev)
     //с одинаковыми двумя словами.
 
     // Достать образец текущего задания в тесте из другого объекта
-    let testState = FactoryRegistr.getObject('WorkingField').questionDB;
+    let testState = window.FactoryRegistr.getObject('WorkingField').questionDB;
     testState = testState.replace(/\s+/g, '');
     let testForButton = rezultString.replace(/\s+/g, '');
 
@@ -48,7 +48,7 @@ function outputTranslateForTest()
 {
     let commentPlus = '';
     if (localStorage.getItem('randomNumber') !== "1") {
-        let transL = FactoryRegistr.getObject("LanguageController");
+        let transL = window.FactoryRegistr.getObject("LanguageController");
         commentPlus = transL.translate('Речь примерно о:');
         SettingForProgram.commentPlus.push(commentPlus);
     } else {

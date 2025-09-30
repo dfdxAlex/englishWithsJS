@@ -4,6 +4,7 @@
 // FactoryRegistr.getObject('name class')
 
 import { LanguageController } from '../controllers/LanguageController.js';
+import { WorkingField } from '../view/WorkingField.js';
 
 export class FactoryRegistr
 {
