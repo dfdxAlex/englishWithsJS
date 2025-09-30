@@ -6,10 +6,7 @@ window.addEventListener('load', () => {
     htmlHelp();
     buttonSound();
 
-    // Запуск контроллера языковых настроек
-    // const translate = 
-    // window.FactoryRegistr.getObject("LanguageController").init();
-    
+   
     const menuC = new window.MenuController();
     menuC.init();
 
@@ -24,17 +21,18 @@ window.addEventListener('load', () => {
     // спрятать все ненужные блоки и показать меню Настроек
     document.querySelector('#setting').onclick = activationMenuSetting;
     
-    // обработчил для клика по одному из вариантов выбора теста 
-    // присвоив свойство true принудительно обновляет вопрос
-    // document.getElementById('exampleModalburger').onclick = () => {
+    // // обработчил для клика по одному из вариантов выбора теста 
+    // // присвоив свойство true принудительно обновляет вопрос
+    // // document.getElementById('exampleModalburger').onclick = () => {
+    // //     FactoryRegistr.getObject('WorkingField').resetQuestion = true;
+    // // }
+    // document.getElementById('dropdownMenuburger').onclick = () => {
     //     FactoryRegistr.getObject('WorkingField').resetQuestion = true;
+
     // }
-    document.getElementById('dropdownMenuburger').onclick = () => {
-        FactoryRegistr.getObject('WorkingField').resetQuestion = true;
-    }
-    // принудительное изменение тестового вопосса при первом пуске или обновлении
-    // срабатывает один раз.
-    FactoryRegistr.getObject('WorkingField').resetQuestion = true;
+    // // принудительное изменение тестового вопосса при первом пуске или обновлении
+    // // срабатывает один раз.
+    // FactoryRegistr.getObject('WorkingField').resetQuestion = true;
     
     // функция отслеживает инфу по ответам и запускает процесс
     // всплытия кристала, шапки или черепа
