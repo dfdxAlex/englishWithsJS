@@ -12,35 +12,13 @@ body {
     margin: auto;
     width: 90vw;
     max-width: 800px;
-    /* background: rgba(255, 255, 255, 0.2);  */
     border-radius: 10px;
-    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); Лёгкая тень */
 }
-
-/* .html-old-questions-transparent {
-    max-width: 100%;
-} */
 
 select{
     all: unset;
     padding: 10px;
     font-size: 16px;
-}
-
-.fieldSetWorkField {
-    margin: 5px;
-    font-size: 25px;
-    line-height: 30px;
-    border: 2px solid black;
-    border-radius: 10px;
-}
-
-.fieldSetWorkField legend{
-    border: 1px solid black;
-    border-top-left-radius:8px;
-    border-top-right-radius:8px;
-    font-size: 15px;
-    line-height: 20px;
 }
 
 /* Адаптивный текст */

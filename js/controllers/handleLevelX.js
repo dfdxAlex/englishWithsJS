@@ -10,11 +10,9 @@
 const handleLevelX = (dataObj, constIndexArray = false) =>
     {
         window.noonMenu('.dropdown-content');
-        // console.log();
         // Сменили тест
         if (DataOk.level.int !== dataObj.getLevel()) {
             // Записать в хранилище что работаем на неком уровне
-            //localStorage.setItem('level',dataObj.getLevel());
             DataOk.setLevel(dataObj.getLevel());
             SettingForProgram.dataElevator.shift();
         }
@@ -66,7 +64,6 @@ const handleLevelX = (dataObj, constIndexArray = false) =>
         if (SettingForProgram.selectTypeTest === 'simple') {
             document.getElementById('working_field')
                     .innerHTML = window.FactoryRegistr.getObject('WorkingField').init(mas, nameLeson);
-        // window.setBackground();
         hundleForTranslate();
         }
         
