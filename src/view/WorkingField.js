@@ -4,18 +4,25 @@
 //предложение для разборки на слова. Создавалась переменная
 //для использования другими объектами готового значения.
 
+import './styles/WorkingField.scss';
+
 export class WorkingField {
   // постоянная часть разметок кнопок с вариантами ответов
-  strStart = `<div class='row mb-2'><div class='col-12'><button style='width: 100%; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button'`;
+  strStart = `<div class='row mb-2'>
+                <div class='col-12'>
+                  <button class="working-field" type='button'`;
   strFinish = `</button></div></div>`;
   // признак того, что правильный ответ есть предложение, а не 
   // пропущенное слово
   trueSentences = true;
+
   // Вызвать из регистра объект переводчика
-  // transL = FactoryRegistr.getObject("LanguageController");
   transL = window.getTranslate;
+
   // Постоянная часть разметки компонента
-  cardStart = `<div class="card fieldSetWorkField" style="width: 100%; margin: auto; border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0 8px 16px rgba(0,0,0,0.2);"><div class="card-body">`;
+  cardStart = `<div class="card fieldSetWorkField" 
+               >
+               <div class="card-body">`;
 
   // принудительное изменение вопроса.
   // труе назначается в функции app(), событие на клик по кнопке
@@ -340,15 +347,6 @@ export class WorkingField {
         return question;
   }
 
-  // Метод вызывает метод другого класса и передает ему данные для 
-  // обработки. Данные касаются статистики правильных и не правильных 
-  // ответов.
-  // workingWihtOkAndError()
-  // {
-  //   // const statistic = FactoryRegistr.getObject('Statistic');
-  //   // const statistic = window.instanceStatistic;
-  //   // statistic.init(DataOk.ok, DataOk.error);    
-  // }
 
   // Функция создает разметку для кнопки "Проверить" 
   // во втором и третьем тесте

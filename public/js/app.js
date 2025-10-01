@@ -5,7 +5,6 @@ window.addEventListener('load', () => {
     window.nav;
     htmlHelp();
     buttonSound();
-
    
     const menuC = new window.MenuController();
     menuC.init();
@@ -20,20 +19,7 @@ window.addEventListener('load', () => {
     menuSettingView();
     // спрятать все ненужные блоки и показать меню Настроек
     document.querySelector('#setting').onclick = activationMenuSetting;
-    
-    // // обработчил для клика по одному из вариантов выбора теста 
-    // // присвоив свойство true принудительно обновляет вопрос
-    // // document.getElementById('exampleModalburger').onclick = () => {
-    // //     FactoryRegistr.getObject('WorkingField').resetQuestion = true;
-    // // }
-    // document.getElementById('dropdownMenuburger').onclick = () => {
-    //     FactoryRegistr.getObject('WorkingField').resetQuestion = true;
-
-    // }
-    // // принудительное изменение тестового вопосса при первом пуске или обновлении
-    // // срабатывает один раз.
-    // FactoryRegistr.getObject('WorkingField').resetQuestion = true;
-    
+   
     // функция отслеживает инфу по ответам и запускает процесс
     // всплытия кристала, шапки или черепа
     boobleUp();

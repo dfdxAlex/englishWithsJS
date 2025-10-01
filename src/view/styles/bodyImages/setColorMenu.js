@@ -23,6 +23,7 @@ export function setColorMenu()
     const searchError = document.getElementById('search_error');
     const log = document.getElementById('log');
     const sound = document.getElementById('sound');
+    const gamburgerMenuOpen = document.getElementById('gamburger-menu-open');
 
     // случайный размер шрифта
     const randomeNumber = getRandomNumber(10,20);
@@ -61,8 +62,8 @@ export function setColorMenu()
             selectEn.style.background = "white";
             fieldsetLegendOld.style.color = "black";
             questionOld.style.color = "black";
-            
-            
+            if (gamburgerMenuOpen)
+                gamburgerMenuOpen.style.color = "black";
             clickedElement.style.color = "black";
         }
         else {
@@ -80,6 +81,8 @@ export function setColorMenu()
             fieldsetLegendOld.style.color = "white";
             questionOld.style.color = "white";
             clickedElement.style.color = "white";
+            if (gamburgerMenuOpen)
+                gamburgerMenuOpen.style.color = "white";
         }
     }
 }
