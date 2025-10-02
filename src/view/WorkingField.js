@@ -37,10 +37,7 @@ export class WorkingField {
         this.translate = `<div class='row mb-2'>
                             <div class='col-12'>
                               <button 
-                                style="
-                                  width: 100%; 
-                                  border: 1px solid rgba(0, 0, 0, 0.2); 
-                                  box-shadow: 0 4px 8px rgba(0,0,0,0.2);" 
+                                class="working-field-button-translate"
                                 type="button" 
                                 id="translate">${translateFromArray}
                               </button>
@@ -48,8 +45,6 @@ export class WorkingField {
                           </div>`;
 
         this.cardFinish = "</div></div>";
-
-
   }
 
   init(arrayBD, nameLeson = false) 
@@ -62,7 +57,16 @@ export class WorkingField {
           buttonOption[1] = this.strStart+' id="option2"> '+this.option2+this.strFinish;
           buttonOption[2] = this.strStart+' id="option3"> '+this.option3+this.strFinish;
           buttonOption[3] = this.strStart+' id="option4"> '+this.option4+this.strFinish;
-          const buttonQuestion = `<br><div class='row mb-2'><div class='col-12'><button style='width: 100%; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button' id='question'>${this.question}</button></div></div><br>`;
+          const buttonQuestion = `<br><div class='row mb-2'>
+                                        <div class='col-12'>
+                                          <button 
+                                            class="working-field-button-translate"
+                                            type='button' 
+                                            id='question'>${this.question}
+                                          </button>
+                                        </div>
+                                      </div>
+                                   <br>`;
           buttonOption = shuffleArray(buttonOption);
           
           return this.cardStart +
@@ -81,7 +85,12 @@ export class WorkingField {
   {
     // в этой функции всегда лежим light
     localStorage.setItem('light_normal_hard', 'light');
-    const strStart = `<div class='row mb-2'><div class='col-12'><button style='border-radius: 10px; margin-left: 5px; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button'`;
+    const strStart = `<div 
+                        class='row mb-2'>
+                        <div class='col-12'>
+                          <button 
+                            class="init-word-assembly-str-start"
+                            type='button'`;
         this.getArrayQuestions(arrayBD);
         let legend = this.cardStartAndLegend(nameLeson);
 
@@ -106,7 +115,11 @@ export class WorkingField {
         });
         localStorage.setItem('indexMax', indexMax);
 
-        const containerForRezzult = `<div class='row mb-2'><div id="container-for-rezult" class='col-12'></div></div>`;
+        const containerForRezzult = `<div class='row mb-2'>
+                                       <div id="container-for-rezult" 
+                                            class='col-12'>
+                                       </div>
+                                     </div>`;
 
         buttonOption = shuffleArray(buttonOption);
 
@@ -124,7 +137,11 @@ export class WorkingField {
   // property = false служит для отмены создания нового теста, на случай предыдущего ошибочного ответа
   initWordAssemblyNotTranslate(arrayBD, nameLeson = false, property = false) 
   {
-    const strStart = `<div class='row mb-2'><div class='col-12'><button style='border-radius: 10px; margin-left: 5px; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 4px 8px rgba(0,0,0,0.2);' type='button'`;
+    const strStart = `<div class='row mb-2'>
+                        <div class='col-12'>
+                          <button 
+                            class="init-word-assembly-str-start"
+                            type='button'`;
         this.getArrayQuestions(arrayBD);
         let legend = this.cardStartAndLegend(nameLeson);
 

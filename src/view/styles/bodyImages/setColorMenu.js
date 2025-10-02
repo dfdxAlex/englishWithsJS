@@ -2,6 +2,10 @@
 // Данные о картинке берутся из объекта DataSet
 
 import { DataSet } from '../../../services/data/DataSet.js';
+import { setBorderRadiusForWorkingField } from '../../../services/setColorMenu/setBorderRadiusForWorkingField.js';
+import { getRandomNumber } from '../../../services/setColorMenu/getRandomNumber.js';
+import { returnBorderRadius } from '../../../services/setColorMenu/returnBorderRadius.js';
+
 
 export function setColorMenu()
 {
@@ -24,6 +28,11 @@ export function setColorMenu()
     const log = document.getElementById('log');
     const sound = document.getElementById('sound');
     const gamburgerMenuOpen = document.getElementById('gamburger-menu-open');
+
+    // Функция находит нужные элементы, если они есть, и изменяет для них border-radius
+    setBorderRadiusForWorkingField(['question', 'translate', 'option1',
+        'option2', 'option3', 'option4'
+    ]);
 
     // случайный размер шрифта
     const randomeNumber = getRandomNumber(10,20);
@@ -87,11 +96,6 @@ export function setColorMenu()
     }
 }
 
-function getRandomNumber(x, y) {
-  return Math.floor(Math.random() * (y - x + 1)) + x;
-}
 
-function returnBorderRadius(x, y)
-{
-    return `${getRandomNumber(x,y)}% / ${getRandomNumber(x,y)}% ${getRandomNumber(x,y)}% ${getRandomNumber(x,y)}%`;
-}
+
+

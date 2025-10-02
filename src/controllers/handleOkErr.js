@@ -21,6 +21,7 @@ import { calculateBonusMultiplier } from '../models/calculateBonusMultiplier.js'
 import { DataOk } from '../services/data/DataOk.js';
 import { LevelDataModel } from '../models/LevelDataModel.js';
 import { hundleHelpPrime } from './forInitEventListeners/hundleHelpPrime.js';
+import { setBorderRadiusForWorkingField } from '../services/setColorMenu/setBorderRadiusForWorkingField.js';
 
 export function handleOkErr(str, event) {
     // Сохранить координаты места клика по кнопке Проверить
@@ -119,6 +120,11 @@ export function handleOkErr(str, event) {
     resetStatistic(false);
     // перерисовать статус диамантов
     hundleHelpPrime();
+
+    // Функция находит нужные элементы, если они есть, и изменяет для них border-radius
+    setBorderRadiusForWorkingField(['question', 'translate', 'option1',
+        'option2', 'option3', 'option4'
+    ]);
 }
 
 // служебная функция удаляет из элементов question_old и clicked_element

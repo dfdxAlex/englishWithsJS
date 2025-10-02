@@ -28,3 +28,15 @@
             width: 100%; 
         }
     }
+
+    .working-field-button-translate, .init-word-assembly-str-start {
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .init-word-assembly-str-start {
+        width: auto;
+        border-radius: 10px;
+        margin-left: 5px;
+    }
