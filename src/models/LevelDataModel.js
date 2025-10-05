@@ -98,8 +98,8 @@ export class LevelDataModel
         this.propertyArrayNameButton.push(setStatisticForButton(42));//Is Done Was Done (passive 1)'));// пункт 1
         this.propertyArrayNameButton.push(setStatisticForButton(43)); //Is Being Done Has Been Done (passive 2)'));// пункт 1
         this.propertyArrayNameButton.push(setStatisticForButton(44)); //be/have/do in present and past tenses'));// пункт 1
-        this.propertyArrayNameButton.push(setStatisticForButton(45) + 'Unit 24'); // unit 24 пункт 1-6
-        this.propertyArrayNameButton.push(setStatisticForButton(46) + 'Unit 25'); // unit 25 пункт 1-6
+        this.propertyArrayNameButton.push(setStatisticForButton(45)); // unit 24 пункт 1-6
+        this.propertyArrayNameButton.push(setStatisticForButton(46)); // unit 25 пункт 1-6
         this.tic = this.propertyArrayNameButton.length;
     }
 

@@ -1,6 +1,11 @@
 // Стили для меню выбора теста или настроек
 
-.li-menu-2, .li-menu-1, .li-menu-3 {
+// Изменить фон встроенного в бутстрап класса
+.dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.li-menu-2, .li-menu-1, .li-menu-3, .li-menu-6 {
     width: 90%;
     height: 130px;
     margin-top: 10px;
@@ -26,6 +31,7 @@
     }
 }
 
+// Меню статистики
 .li-menu-4 {
     
     margin-top: 10px;
@@ -181,6 +187,26 @@
 .li-menu-count-44 {
       background-image: url('images/behavedoPr.jpg'); /* путь к картинке */
 }
+.li-menu-count-45 {
+      background-image: url('images/regularandirregularverbs.jpg'); /* путь к картинке */
+}
+.li-menu-count-46 {
+      background-image: url('images/whatareyoudoingtomorrow.jpg'); /* путь к картинке */
+}
+.li-menu-count-47 {
+      background-image: url('images/iamgoingto.jpg'); /* путь к картинке */
+}
+.li-menu-count-48 {
+      background-image: url('images/willshallone.jpg'); /* путь к картинке */
+}
+.li-menu-count-49 {
+      background-image: url('images/willshalltwo.jpg'); /* путь к картинке */
+}
+.li-menu-count-50 {
+      background-image: url('images/might.jpg'); /* путь к картинке */
+}
+
+
 
 .for-h4-header-button{
       position: absolute;

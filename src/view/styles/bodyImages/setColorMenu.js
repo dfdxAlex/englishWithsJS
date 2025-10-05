@@ -58,7 +58,9 @@ export function setColorMenu()
 
     if (searchMenu) {
         searchMenu.style.background = "rgba(0,0,255,0.01)";
-        if (DataSet.numberBackground>16 && DataSet.numberBackground < 21) {
+        if (DataSet.numberBackground>16 && DataSet.numberBackground < 21
+            || (DataSet.numberBackground>24 && DataSet.numberBackground < 49)
+        ) {
             searchMenu.style.color = "black";
             searchMenuTwo.style.color = "black";
             searchMenuWord.style.color = "black";
