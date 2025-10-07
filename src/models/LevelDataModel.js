@@ -100,6 +100,7 @@ export class LevelDataModel
         this.propertyArrayNameButton.push(setStatisticForButton(44)); //be/have/do in present and past tenses'));// пункт 1
         this.propertyArrayNameButton.push(setStatisticForButton(45)); // unit 24 пункт 1-6
         this.propertyArrayNameButton.push(setStatisticForButton(46)); // unit 25 пункт 1-6
+        this.propertyArrayNameButton.push(setStatisticForButton(47)); // unit 26 пункт 1-6
         this.tic = this.propertyArrayNameButton.length;
     }
 
@@ -113,7 +114,7 @@ export class LevelDataModel
                                 1,2,1,1,1,1,1,1,1,2,
                                 1,2,1,4,4,4,4,4,3,3,
                                 1,1,2,1,1,2,1,1,1,1,
-                                2,1,1,1,6,6];
+                                2,1,1,1,6,6,6];
 
         return arrayForButton[test];
     }
@@ -181,6 +182,7 @@ export class LevelDataModel
         this.selectLevel('Выбрать правильную пару.','unit23',44);
         this.selectLevel('Выбрать правильную пару.','unit24',45);
         this.selectLevel('Выбрать правильную пару.','unit25',46);
+        this.selectLevel('Выбрать правильную пару.','unit26',47);
         return this.rez;
     }
 
