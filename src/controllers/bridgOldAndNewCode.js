@@ -12,6 +12,8 @@ import { MenuController } from './MenuController.js';
 import { hundleHelpPrime } from './forInitEventListeners/hundleHelpPrime.js';
 import { noonMenu } from '../services/noonMenu.js';
 import { WorkingField } from '../view/WorkingField.js';
+import { borderRadiusForLevelTwoAndThree } from './forHundleLevelX/borderRadiusForLevelTwoAndThree.js';
+import { hundleForTranslate } from './forHundleLevelX/hundleForTranslate.js';
 
 window.LanguageController = new LanguageController();
 window.FactoryRegistr = FactoryRegistr;
@@ -25,6 +27,8 @@ window.handleOkErr = handleOkErr;
 window.MenuController = MenuController;
 window.noonMenu = noonMenu;
 window.WorkingField = WorkingField;
+window.borderRadiusForLevelTwoAndThree = borderRadiusForLevelTwoAndThree;
+window.hundleForTranslate = hundleForTranslate;
 
 // костыль для регистратора объектов
 window.getTranslate = getTranslate();
