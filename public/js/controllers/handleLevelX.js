@@ -89,6 +89,8 @@ const handleLevelX = (dataObj, constIndexArray = false) =>
             workingField.innerHTML = window.FactoryRegistr.getObject('WorkingField').initWordAssemblyNotTranslate(mas, nameLeson, property);
             
         selectLightNormalHard();
+        window.borderRadiusForLevelTwoAndThree();
+        window.setColorForLevelToAndThree();
         }
         
         // Объект накидывает на кнопки обработчики 
