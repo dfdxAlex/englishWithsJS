@@ -85,9 +85,8 @@ export class WorkingField {
   {
     // в этой функции всегда лежим light
     localStorage.setItem('light_normal_hard', 'light');
-    const strStart = `<div 
-                        class='row mb-2'>
-                        <div class='col-12'>
+    const strStart = `<div>
+                        <div class="button-word">
                           <button 
                             class="init-word-assembly-str-start"
                             type='button'`;

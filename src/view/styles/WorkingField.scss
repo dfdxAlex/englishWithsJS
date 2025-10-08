@@ -31,15 +31,24 @@
         }
     }
 
-    .working-field-button-translate, .init-word-assembly-str-start {
+    .working-field-button-translate{
         width: 100%;
-        border: 1px solid rgba(0, 0, 0, 0.2);
+        border: 1px solid;
         box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         padding: 10px 10px;
     }
 
     .init-word-assembly-str-start {
         width: auto;
-        border-radius: 10px;
+        // border-radius: 10px;
+        // float:left;
         margin-left: 5px;
+        // float:left;
+        padding: 10px 10px;
+        margin: 10px 10px;
+    }
+
+    .button-word {
+        display:block;
+        width: auto;
     }
