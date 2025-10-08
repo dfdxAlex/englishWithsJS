@@ -75,6 +75,7 @@ const handleLevelX = (dataObj, constIndexArray = false) =>
             workingField.innerHTML = window.FactoryRegistr.getObject('WorkingField').initWordAssembly(mas, nameLeson);
         window.hundleForTranslate();
         window.borderRadiusForLevelTwoAndThree();
+        window.setColorForLevelToAndThree();
         }
 
         // Тест уровня Word-assembly-not-translate

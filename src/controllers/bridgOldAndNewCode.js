@@ -14,6 +14,7 @@ import { noonMenu } from '../services/noonMenu.js';
 import { WorkingField } from '../view/WorkingField.js';
 import { borderRadiusForLevelTwoAndThree } from './forHundleLevelX/borderRadiusForLevelTwoAndThree.js';
 import { hundleForTranslate } from './forHundleLevelX/hundleForTranslate.js';
+import { setColorForLevelToAndThree } from './forHundleLevelX/setColorForLevelToAndThree.js';
 
 window.LanguageController = new LanguageController();
 window.FactoryRegistr = FactoryRegistr;
@@ -29,6 +30,7 @@ window.noonMenu = noonMenu;
 window.WorkingField = WorkingField;
 window.borderRadiusForLevelTwoAndThree = borderRadiusForLevelTwoAndThree;
 window.hundleForTranslate = hundleForTranslate;
+window.setColorForLevelToAndThree = setColorForLevelToAndThree;
 
 // костыль для регистратора объектов
 window.getTranslate = getTranslate();

@@ -1,9 +1,9 @@
 import { returnBorderRadius } from '../../services/setColorMenu/returnBorderRadius.js';
+import { arrayButtonForLevelTwoAndThree } from './arrayButtonForLevelTwoAndThree.js';
 
 export function borderRadiusForLevelTwoAndThree()
 {
-    const elements = Array.from(document.querySelectorAll('[id^="word"]'))
-                     .filter(el => /^\s*word\d/.test(el.id));
+    const elements = arrayButtonForLevelTwoAndThree();
     elements.forEach((el)=>{
         el.style.borderRadius = returnBorderRadius(10, 150);  
     });
