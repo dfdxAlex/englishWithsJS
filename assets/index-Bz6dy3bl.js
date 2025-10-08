@@ -5831,9 +5831,8 @@
                                           </button>
                                         </div>
                                       </div>
-                                   <br>`;return i=shuffleArray(i),this.cardStart+t+o+this.translate+"<hr>"+i[0]+i[1]+i[2]+i[3]+this.cardFinish}initWordAssembly(e,a=!1){localStorage.setItem("light_normal_hard","light");const t=`<div 
-                        class='row mb-2'>
-                        <div class='col-12'>
+                                   <br>`;return i=shuffleArray(i),this.cardStart+t+o+this.translate+"<hr>"+i[0]+i[1]+i[2]+i[3]+this.cardFinish}initWordAssembly(e,a=!1){localStorage.setItem("light_normal_hard","light");const t=`<div>
+                        <div class="button-word">
                           <button 
                             class="init-word-assembly-str-start"
                             type='button'`;this.getArrayQuestions(e);let i=this.cardStartAndLegend(a),o=[];this.question=this.clearNotToBeSentences(this.question),this.question=this.insertWord(this.question,this.option1);const n=this.question.split(" ");this.cleartoBeSentences(n),this.questionDB=n.join(" ");let s=0;n.forEach((y,c)=>{o.push(t+`" data-index="${c}" id="word${c}"> `+y+this.strFinish),s=c}),localStorage.setItem("indexMax",s);const r=`<div class='row mb-2'>
