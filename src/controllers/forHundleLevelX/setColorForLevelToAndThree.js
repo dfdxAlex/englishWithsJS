@@ -1,6 +1,7 @@
 
 import { arrayButtonForLevelTwoAndThree } from './arrayButtonForLevelTwoAndThree.js';
 import { generateColorPair } from './generateColorPair.js';
+import { getContrastColor } from './getContrastColor.js';
 
 export function setColorForLevelToAndThree()
 {
@@ -19,8 +20,3 @@ export function setColorForLevelToAndThree()
     translate.style.color = getContrastColor(generateColorPair().color1);
 }
 
-function getContrastColor(rgb) {
-  const [r, g, b] = rgb.match(/\d+/g).map(Number);
-  const brightness = (r * 299 + g * 587 + b * 114) / 1000;
-  return brightness > 128 ? 'black' : 'white';
-}

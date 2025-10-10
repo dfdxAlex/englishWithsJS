@@ -690,15 +690,15 @@ export const unit26 = [
     "Що він збирається викладати цього семестру?",
     "Co on zamierza nauczać w tym semestrze?"
   ],
-  [
-    "Where are we going to explore next weekend?",
-    "We are going to explore the forest.",
-    "We were going to explore the forest.",
-    "We will be going to explore the forest.",
-    "We have been going to explore the forest.",
-    "Куда мы собираемся исследовать на следующих выходных?",
-    "Куди ми збираємося досліджувати на наступних вихідних?",
-    "Gdzie zamierzamy eksplorować w przyszły weekend?"
+  [// коррект 10.10.2025
+  "Where are we going to explore next weekend?",
+  "We are going to explore the forest.",
+  "We were going to explore the forest.",
+  "We will be going to explore the forest.",
+  "We have been going to explore the forest.",
+  "Что мы собираемся исследовать на следующих выходных?",
+  "Що ми збираємося досліджувати на наступних вихідних?",
+  "Co zamierzamy odkrywać w przyszły weekend?"
   ],
   [
     "What is she going to compose this month?",
