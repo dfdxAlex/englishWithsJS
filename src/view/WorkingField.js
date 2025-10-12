@@ -5,6 +5,7 @@
 //для использования другими объектами готового значения.
 
 import './styles/WorkingField.scss';
+import { getRandom } from '../services/getRandom.js';
 
 export class WorkingField {
   // постоянная часть разметок кнопок с вариантами ответов
@@ -191,10 +192,6 @@ export class WorkingField {
   // Дальше служебные функции класса *****************************
   // *************************************************************
 
-  getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
-
   // Функция помещает с локальное хранилище и свойства класса
   // предложение, которое будет разобрано на кубики
   generateQuestion()
@@ -212,10 +209,10 @@ export class WorkingField {
               // если выбрана сложность light, то работаем только с индексом 0
               let randomNumber = 1;
               if (localStorage.getItem('light_normal_hard') === 'hard') {
-                  randomNumber = getRandomInt(1,this.countValidOptions());
+                  randomNumber = getRandom(1,this.countValidOptions());
               }   
               if (localStorage.getItem('light_normal_hard') === 'normal') {
-                  randomNumber = this.getRandomInt(1,2);
+                  randomNumber = getRandom(1,2);
               }   
               
               // Если false, то правильный ответ - это слово, не предложение,

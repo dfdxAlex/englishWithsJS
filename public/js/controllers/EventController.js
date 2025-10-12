@@ -58,7 +58,7 @@ class EventController {
                     const obj = new window.LevelDataModel(i);
                     // перерисовать рабочее поле.
                     // параметр true отключает генерацию нового вопросса
-                    handleLevelX(obj, true);
+                    window.handleLevelX(obj, true);
                 };
             }
         }
@@ -78,7 +78,7 @@ class EventController {
                     const obj = new window.LevelDataModel(DataOk.level.int);
                     // перерисовать рабочее поле.
                     // параметр true отключает генерацию нового вопросса
-                    handleLevelX(obj, true);
+                    window.handleLevelX(obj, true);
                 };
             }
         }

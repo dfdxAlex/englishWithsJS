@@ -6,6 +6,7 @@ import { MenuLearnWord } from '../view/MenuLearnWord.js';
 import { MenuHelp } from '../view/MenuHelp.js';
 import { MenuStatictic } from '../view/MenuStatistic.js';
 import { LevelDataModel } from '../models/LevelDataModel.js';
+import { handleLevelX } from './handleLevelX.js';
 
 export class MenuController
 {

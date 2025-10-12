@@ -22,6 +22,7 @@ import { DataOk } from '../services/data/DataOk.js';
 import { LevelDataModel } from '../models/LevelDataModel.js';
 import { hundleHelpPrime } from './forInitEventListeners/hundleHelpPrime.js';
 import { setBorderRadiusForWorkingField } from '../services/setColorMenu/setBorderRadiusForWorkingField.js';
+import { handleLevelX } from './handleLevelX.js';
 
 export function handleOkErr(str, event) {
     // Сохранить координаты места клика по кнопке Проверить

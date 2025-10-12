@@ -7,9 +7,18 @@
 // параметр dataObj - это екземпляр LevelDataModel(i)
 // c входящим парамером определяющим масив с данными.(масив теста)
 
-const handleLevelX = (dataObj, constIndexArray = false) =>
+import { noonMenu } from '../services/noonMenu.js';
+import { DataOk } from '../services/data/DataOk.js';
+import { LevelDataModel } from '../models/LevelDataModel.js';
+import { getRandomInt } from '../services/getRandomInt.js';
+import { hundleForTranslate } from './forHundleLevelX/hundleForTranslate.js';
+import { borderRadiusForLevelTwoAndThree } from './forHundleLevelX/borderRadiusForLevelTwoAndThree.js';
+import { setColorForLevelToAndThree } from './forHundleLevelX/setColorForLevelToAndThree.js';
+import { FactoryRegistr } from '../models/FactoryRegistr.js';
+
+export const handleLevelX = (dataObj, constIndexArray = false) =>
     {
-        window.noonMenu('.dropdown-content');
+        noonMenu('.dropdown-content');
         // Сменили тест
         if (DataOk.level.int !== dataObj.getLevel()) {
             // Записать в хранилище что работаем на неком уровне
@@ -20,7 +29,7 @@ const handleLevelX = (dataObj, constIndexArray = false) =>
         // Блокировка работы с форматом word-assembly если 
         // выбрано изучение слов, там нет предложений, 
         // которые можно собирать по словам
-        if (window.LevelDataModel.mapNameMenu(dataObj.getLevel()-1) === 2) {
+        if (LevelDataModel.mapNameMenu(dataObj.getLevel()-1) === 2) {
             localStorage.setItem('user_select','simple');
         }
     
@@ -63,8 +72,8 @@ const handleLevelX = (dataObj, constIndexArray = false) =>
         // поместить форму в соответствующий div
         if (SettingForProgram.selectTypeTest === 'simple') {
             document.getElementById('working_field')
-                    .innerHTML = window.FactoryRegistr.getObject('WorkingField').init(mas, nameLeson);
-        window.hundleForTranslate();
+                    .innerHTML = FactoryRegistr.getObject('WorkingField').init(mas, nameLeson);
+        hundleForTranslate();
         }
         
         // Тест уровня Word-assembly
@@ -72,10 +81,10 @@ const handleLevelX = (dataObj, constIndexArray = false) =>
         // поместить форму в соответствующий div
         if (SettingForProgram.selectTypeTest === 'word-assembly') {
             const workingField = document.getElementById('working_field');
-            workingField.innerHTML = window.FactoryRegistr.getObject('WorkingField').initWordAssembly(mas, nameLeson);
-        window.hundleForTranslate();
-        window.borderRadiusForLevelTwoAndThree();
-        window.setColorForLevelToAndThree();
+            workingField.innerHTML = FactoryRegistr.getObject('WorkingField').initWordAssembly(mas, nameLeson);
+        hundleForTranslate();
+        borderRadiusForLevelTwoAndThree();
+        setColorForLevelToAndThree();
         }
 
         // Тест уровня Word-assembly-not-translate
@@ -86,16 +95,16 @@ const handleLevelX = (dataObj, constIndexArray = false) =>
         };
         if (SettingForProgram.selectTypeTest === 'word-assembly-not-translate') {
             const workingField = document.getElementById('working_field');
-            workingField.innerHTML = window.FactoryRegistr.getObject('WorkingField').initWordAssemblyNotTranslate(mas, nameLeson, property);
+            workingField.innerHTML = FactoryRegistr.getObject('WorkingField').initWordAssemblyNotTranslate(mas, nameLeson, property);
             
         selectLightNormalHard();
-        window.borderRadiusForLevelTwoAndThree();
-        window.setColorForLevelToAndThree();
+        borderRadiusForLevelTwoAndThree();
+        setColorForLevelToAndThree();
         }
         
         // Объект накидывает на кнопки обработчики 
         // соответствующих событий, ответ правильный или нет
-        window.FactoryRegistr.getObject('EventController').init();
+        FactoryRegistr.getObject('EventController').init();
     };
 
 

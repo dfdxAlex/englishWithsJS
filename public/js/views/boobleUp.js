@@ -96,7 +96,9 @@ function boobleUp()
            bonusBox = false;
            randomOk = false;
            const signal = document.getElementById('fieldset-legend');
-           signal.style.backgroundColor = '#a4f1b9';
+           if (signal) {
+               signal.style.backgroundColor = '#a4f1b9';
+           }
            SettingForProgram.randomOk = false;
        }
    }, 10);

@@ -16,17 +16,21 @@ export function setColorForLevelToAndThree()
 
     // Отдельно разукрасть кнопку Проверить
     const buttonOk = document.getElementById('button-ok');
-    const colorButtonOk = generateColorPair();
-    buttonOk.style.backgroundColor = colorButtonOk;
-    buttonOk.style.color = getContrastColor(colorButtonOk);
-    buttonOk.style.borderRadius = returnBorderRadius(10, 150); 
-    buttonOk.style.boxShadow = getBoxShadow(colorButtonOk); 
-
+    if (buttonOk) {
+        const colorButtonOk = generateColorPair();
+        buttonOk.style.backgroundColor = colorButtonOk;
+        buttonOk.style.color = getContrastColor(colorButtonOk);
+        buttonOk.style.borderRadius = returnBorderRadius(10, 150); 
+        buttonOk.style.boxShadow = getBoxShadow(colorButtonOk); 
+    }
     // Отдельно разукрасть кнопку перевода
     const translate = document.getElementById('translate');
-    const colorTranslate = generateColorPair();
-    translate.style.backgroundColor = colorTranslate;
-    translate.style.color = getContrastColor(colorTranslate);
-    translate.style.boxShadow = getBoxShadow(colorTranslate);
+    if (translate) {
+        const colorTranslate = generateColorPair();
+        translate.style.backgroundColor = colorTranslate;
+        translate.style.color = getContrastColor(colorTranslate);
+        translate.style.boxShadow = getBoxShadow(colorTranslate);
+    }
+
 }
 
