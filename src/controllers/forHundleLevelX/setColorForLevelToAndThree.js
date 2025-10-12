@@ -11,20 +11,22 @@ export function setColorForLevelToAndThree()
         const color1 = generateColorPair();
         el.style.backgroundColor = color1;
         el.style.color = getContrastColor(color1);
-        el.style.boxShadow = getBoxShadow();
+        el.style.boxShadow = getBoxShadow(color1);
     });
 
     // Отдельно разукрасть кнопку Проверить
     const buttonOk = document.getElementById('button-ok');
-    buttonOk.style.backgroundColor = generateColorPair();
-    buttonOk.style.color = getContrastColor(generateColorPair());
+    const colorButtonOk = generateColorPair();
+    buttonOk.style.backgroundColor = colorButtonOk;
+    buttonOk.style.color = getContrastColor(colorButtonOk);
     buttonOk.style.borderRadius = returnBorderRadius(10, 150); 
-    buttonOk.style.boxShadow = getBoxShadow(); 
+    buttonOk.style.boxShadow = getBoxShadow(colorButtonOk); 
 
     // Отдельно разукрасть кнопку перевода
     const translate = document.getElementById('translate');
-    translate.style.backgroundColor = generateColorPair();
-    translate.style.color = getContrastColor(generateColorPair());
-    translate.style.boxShadow = getBoxShadow();
+    const colorTranslate = generateColorPair();
+    translate.style.backgroundColor = colorTranslate;
+    translate.style.color = getContrastColor(colorTranslate);
+    translate.style.boxShadow = getBoxShadow(colorTranslate);
 }
 
