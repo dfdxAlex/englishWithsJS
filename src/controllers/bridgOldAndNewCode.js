@@ -12,9 +12,6 @@ import { MenuController } from './MenuController.js';
 import { hundleHelpPrime } from './forInitEventListeners/hundleHelpPrime.js';
 import { noonMenu } from '../services/noonMenu.js';
 import { WorkingField } from '../view/WorkingField.js';
-// import { borderRadiusForLevelTwoAndThree } from './forHundleLevelX/borderRadiusForLevelTwoAndThree.js';
-// import { hundleForTranslate } from './forHundleLevelX/hundleForTranslate.js';
-// import { setColorForLevelToAndThree } from './forHundleLevelX/setColorForLevelToAndThree.js';
 import { handleLevelX } from './handleLevelX.js';
 
 window.LanguageController = new LanguageController();
@@ -29,9 +26,6 @@ window.handleOkErr = handleOkErr;
 window.MenuController = MenuController;
 window.noonMenu = noonMenu;
 window.WorkingField = WorkingField;
-// window.borderRadiusForLevelTwoAndThree = borderRadiusForLevelTwoAndThree;
-// window.hundleForTranslate = hundleForTranslate;
-// window.setColorForLevelToAndThree = setColorForLevelToAndThree;
 window.handleLevelX = handleLevelX;
 
 // костыль для регистратора объектов

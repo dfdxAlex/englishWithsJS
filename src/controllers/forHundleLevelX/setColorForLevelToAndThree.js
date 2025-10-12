@@ -30,6 +30,7 @@ export function setColorForLevelToAndThree()
         translate.style.backgroundColor = colorTranslate;
         translate.style.color = getContrastColor(colorTranslate);
         translate.style.boxShadow = getBoxShadow(colorTranslate);
+        translate.style.borderRadius = returnBorderRadius(10, 150); 
     }
 
 }
