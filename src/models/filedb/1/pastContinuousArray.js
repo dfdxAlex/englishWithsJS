@@ -290,7 +290,7 @@ export const pastContinuousArray = [
         "On nie oglądał wiadomości wczoraj."
       ],
       [
-        "We were ... the project at that time.",
+        "We were ... on the project at that time.",
         "working",
         "worked",
         "work",
