@@ -13,7 +13,7 @@ export function getContrastColor(rgb) {
 
   console.log(brightness);
   // если фон тёмный, текст белый, если светлый — динамический серый
-  if (brightness > 70 && brightness < 180) {
+  if (brightness > 50 && brightness < 200) {
     if (brightness < 128)
         return 'rgb(255,255,255)';  // текст виден на тёмном фоне
     if (brightness > 127)
