@@ -13,7 +13,9 @@ import { hundleHelpPrime } from './forInitEventListeners/hundleHelpPrime.js';
 import { noonMenu } from '../services/noonMenu.js';
 import { WorkingField } from '../view/WorkingField.js';
 import { handleLevelX } from './handleLevelX.js';
+import { SettingForProgram } from '../models/SettingForProgram.js';
 
+window.SettingForProgram = SettingForProgram;
 window.LanguageController = new LanguageController();
 window.FactoryRegistr = FactoryRegistr;
 window.Help = Help;

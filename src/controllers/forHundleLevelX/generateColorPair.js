@@ -8,6 +8,5 @@ export function generateColorPair() {
     getRandom(0, 255),
   ];
 
-  // возвращаем оба формата
   return `rgb(${rgb1.join(', ')})`;
 }

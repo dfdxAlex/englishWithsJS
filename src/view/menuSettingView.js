@@ -1,5 +1,6 @@
 import { activationMenuSetting } from '../controllers/activationMenuSetting.js';
 import './styles/menuSettingView.scss';
+import { SettingForProgram } from '../models/SettingForProgram.js';
 
 export function menuSettingView()
 {
@@ -46,4 +47,10 @@ export function menuSettingView()
         // Получить информацию о выборе и записать в хранилище
         SettingForProgram.selectTypeTest = document.querySelector('#testType').value;
     };
+}
+
+
+function setSelectForSimple() //selected 
+{
+  return 
 }

@@ -15,6 +15,7 @@ import { hundleForTranslate } from './forHundleLevelX/hundleForTranslate.js';
 import { borderRadiusForLevelTwoAndThree } from './forHundleLevelX/borderRadiusForLevelTwoAndThree.js';
 import { setColorForLevelToAndThree } from './forHundleLevelX/setColorForLevelToAndThree.js';
 import { FactoryRegistr } from '../models/FactoryRegistr.js';
+import { SettingForProgram } from '../models/SettingForProgram.js';
 
 export const handleLevelX = (dataObj, constIndexArray = false) =>
     {

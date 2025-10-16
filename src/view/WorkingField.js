@@ -6,6 +6,7 @@
 
 import './styles/WorkingField.scss';
 import { getRandom } from '../services/getRandom.js';
+import { SettingForProgram } from '../models/SettingForProgram.js';
 
 export class WorkingField {
   // постоянная часть разметок кнопок с вариантами ответов

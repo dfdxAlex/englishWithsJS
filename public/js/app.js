@@ -26,8 +26,8 @@ window.addEventListener('load', () => {
 });
 
 
-// инициализация переменных, хранящихся в классе данных
-SettingForProgram.initializeToProperty();
+// // инициализация переменных, хранящихся в классе данных
+// window.SettingForProgram.initializeToProperty();
 
 // Что можно узнать из локального хранилища localStorage.getItem
 // nameArrayDb - имя массива, который используется в текущем тесте

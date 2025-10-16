@@ -27,6 +27,7 @@ import { DataOk } from '../services/data/DataOk.js';
 import { Exercise } from '../view/Exercise.js';
 import { getTranslate } from '../models/forFactoryRegistr/getTranslate.js';
 import { setStatisticForButton } from '../view/forLevelDataModel/setStatisticForButton.js';
+import { SettingForProgram } from './SettingForProgram.js';
 
 // Не УДАЛЯТЬ!!!
 import  fileDB  from './filedb/indexForFileDB.js';

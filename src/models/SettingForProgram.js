@@ -1,4 +1,4 @@
-class SettingForProgram
+export class SettingForProgram
 {
     // хранит тип теста, simple - это просто ответ на вопрос
     static selectTypeTestProperty = 'simple';

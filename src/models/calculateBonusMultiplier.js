@@ -2,6 +2,7 @@
 // за правильный ответ.
 
 import { LevelDataModel } from './LevelDataModel.js';
+import { SettingForProgram } from './SettingForProgram.js';
 
 export function calculateBonusMultiplier(propertyForBonus)
 {
