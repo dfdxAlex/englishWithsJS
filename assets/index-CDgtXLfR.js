@@ -5939,7 +5939,7 @@
         <div class="embed-responsive embed-responsive-16by9">
           <iframe showinfo=1 class="embed-responsive-item" src="https://www.youtube.com/embed/${e}" allowfullscreen></iframe>
         </div>
-        `}};function htmlOldQuestionsCntr(){document.getElementById("html_old_questions").innerHTML=htmlOldQuestionsView(htmlOldQuestionsModels()),document.getElementById("button-help").addEventListener("click",()=>{Help.viewhandleHelpToTranslate(indexForThoury.helpForGreenPoleOneRU(),"VuUKoWdyu6Y")})}const DataSet={};function getRandomNumber(e,a){return Math.floor(Math.random()*(a-e+1))+e}function returnBorderRadius(e,a){return`${getRandomNumber(e,a)}% / ${getRandomNumber(e,a)}% ${getRandomNumber(e,a)}% ${getRandomNumber(e,a)}%`}function generateColorPair(){return`rgb(${[getRandom(0,255),getRandom(0,255),getRandom(0,255)].join(", ")})`}function getContrastColor(e){console.log("фон:"+e);let a=0;const[t,o,i]=e.match(/\d+/g).map(Number);let n=255-t,s=255-o,r=255-i;return n<128&&a++,s<128&&a++,r<128&&a++,a>1?(n=0,s=0,r=0):(n=255,s=255,r=255),console.log(`текст:rgb(${n}, ${s}, ${r})`),`rgb(${n}, ${s}, ${r})`}function getBoxShadow(e="rgb(0,0,0)"){const a=getRandomNumber(1,9)/10,[t,o,i]=e.match(/\d+/g).map(Number),n=`rgba(${t}, ${o}, ${i}, ${a})`;return`${getRandomNumber(0,30)}px ${getRandomNumber(0,30)}px ${getRandomNumber(0,30)}px ${n}`}function setBorderRadiusForWorkingField(e){e.forEach(a=>{const t=document.getElementById(a);t&&(t.style.borderRadius=returnBorderRadius(10,150),t.style.backgroundColor=generateColorPair(),t.style.color=getContrastColor(generateColorPair()),t.style.boxShadow=getBoxShadow())})}function setColorMenu(){const e=document.getElementById("dropdownMenuburger"),a=document.getElementById("dropdownMenuburger2"),t=document.getElementById("dropdownMenuword"),o=document.getElementById("dropdownMenuhelp"),i=document.getElementById("dropdownMenustatistic"),n=document.getElementById("setting"),s=document.getElementById("languageSelect"),r=document.getElementById("selectUa"),l=document.getElementById("selectRu"),g=document.getElementById("selectPl"),y=document.getElementById("selectEn"),c=document.getElementById("fieldset-legend-old"),h=document.getElementById("question_old"),d=document.getElementById("clicked_element"),b=document.getElementById("search_error"),p=document.getElementById("log"),k=document.getElementById("sound"),u=document.getElementById("gamburger-menu-open"),m=document.getElementById("fieldset-legend");setBorderRadiusForWorkingField(["question","translate","option1","option2","option3","option4"]);const w=getRandomNumber(10,20),z=`${20/w}em`;h.style.fontSize=z,d.style.fontSize=z,p.style.fontSize=`${20/w*2}em`,k.style.fontSize=p.style.fontSize,h.style.borderRadius=returnBorderRadius(10,150),d.style.borderRadius=returnBorderRadius(10,150),b.style.borderRadius=returnBorderRadius(10,150),p.style.borderRadius=returnBorderRadius(10,150),p.style.top=`${30/w*.2}em`,p.style.right=`${30/w*.2}em`,k.style.bottom=`${50/w*.2}em`,k.style.right=`${50/w*.2}em`,e&&(e.style.background="rgba(0,0,255,0.01)",DataSet.numberBackground>16&&DataSet.numberBackground<21||DataSet.numberBackground>24&&DataSet.numberBackground<49?(e.style.color="black",a.style.color="black",t.style.color="black",o.style.color="black",i.style.color="black",n.style.color="black",s.style.color="black",r.style.background="white",l.style.background="white",g.style.background="white",y.style.background="white",c.style.color="black",h.style.color="black",m&&(m.style.color="black"),u&&(u.style.color="black"),d.style.color="black"):(e.style.color="white",a.style.color="white",t.style.color="white",o.style.color="white",i.style.color="white",n.style.color="white",s.style.color="white",r.style.background="black",l.style.background="black",g.style.background="black",y.style.background="black",c.style.color="white",h.style.color="white",d.style.color="white",m&&(m.style.color="white"),u&&(u.style.color="white")))}function setBackground(){const e="css/images/",a=Math.floor(Math.random()*48)+1,t=document.querySelector("body");t.style.height="100%",t.style.margin="0",t.style.backgroundSize="cover",t.style.backgroundRepeat="no-repeat",t.style.backgroundPosition="center",t.style.backgroundImage=`url('${e}background${a}.jpg')`,DataSet.numberBackground=a,setColorMenu()}daimentInfo();htmlOldQuestionsCntr();setBackground();class LanguageSelectorView{init(a){const t=a=="en"?"selected":"",o=a=="pl"?"selected":"",i=a=="ua"?"selected":"",n=a=="ru"?"selected":"";let s='<select id="languageSelect">';return s+=`<option ${t} id="selectEn"  value="en">EN</option>`,s+=`<option ${o} id="selectPl"  value="pl">PL</option>`,s+=`<option ${i} id="selectUa"  value="ua">UA</option>`,s+=`<option ${n} id="selectRu"  value="ru">RU</option>`,s+="</select>",s}}function nav(){setTimeout(()=>{document.getElementById("button-help-video").addEventListener("click",e=>{e.stopPropagation(),Help.viewhandleHelpToTranslate(indexForThoury.helpForHomeMenuRU(),"vkQYDmiTlmQ")})},0),document.getElementById("nav").innerHTML=`
+        `}};function htmlOldQuestionsCntr(){document.getElementById("html_old_questions").innerHTML=htmlOldQuestionsView(htmlOldQuestionsModels()),document.getElementById("button-help").addEventListener("click",()=>{Help.viewhandleHelpToTranslate(indexForThoury.helpForGreenPoleOneRU(),"VuUKoWdyu6Y")})}const DataSet={};function getRandomNumber(e,a){return Math.floor(Math.random()*(a-e+1))+e}function returnBorderRadius(e,a){return`${getRandomNumber(e,a)}% / ${getRandomNumber(e,a)}% ${getRandomNumber(e,a)}% ${getRandomNumber(e,a)}%`}function generateColorPair(){return`rgb(${[getRandom(0,255),getRandom(0,255),getRandom(0,255)].join(", ")})`}function getContrastColor(e){let a=0;const[t,o,i]=e.match(/\d+/g).map(Number);let n=255-t,s=255-o,r=255-i;return n<128&&a++,s<128&&a++,r<128&&a++,a>1?(n=0,s=0,r=0):(n=255,s=255,r=255),`rgb(${n}, ${s}, ${r})`}function getBoxShadow(e="rgb(0,0,0)"){const a=getRandomNumber(1,9)/10,[t,o,i]=e.match(/\d+/g).map(Number),n=`rgba(${t}, ${o}, ${i}, ${a})`;return`${getRandomNumber(0,30)}px ${getRandomNumber(0,30)}px ${getRandomNumber(0,30)}px ${n}`}function setBorderRadiusForWorkingField(e){e.forEach(a=>{const t=document.getElementById(a);t&&(t.style.borderRadius=returnBorderRadius(10,150),t.style.backgroundColor=generateColorPair(),t.style.color=getContrastColor(generateColorPair()),t.style.boxShadow=getBoxShadow())})}function setColorMenu(){const e=document.getElementById("dropdownMenuburger"),a=document.getElementById("dropdownMenuburger2"),t=document.getElementById("dropdownMenuword"),o=document.getElementById("dropdownMenuhelp"),i=document.getElementById("dropdownMenustatistic"),n=document.getElementById("setting"),s=document.getElementById("languageSelect"),r=document.getElementById("selectUa"),l=document.getElementById("selectRu"),g=document.getElementById("selectPl"),y=document.getElementById("selectEn"),c=document.getElementById("fieldset-legend-old"),h=document.getElementById("question_old"),d=document.getElementById("clicked_element"),b=document.getElementById("search_error"),p=document.getElementById("log"),k=document.getElementById("sound"),u=document.getElementById("gamburger-menu-open"),m=document.getElementById("fieldset-legend");setBorderRadiusForWorkingField(["question","translate","option1","option2","option3","option4"]);const w=getRandomNumber(10,20),z=`${20/w}em`;h.style.fontSize=z,d.style.fontSize=z,p.style.fontSize=`${20/w*2}em`,k.style.fontSize=p.style.fontSize,h.style.borderRadius=returnBorderRadius(10,150),d.style.borderRadius=returnBorderRadius(10,150),b.style.borderRadius=returnBorderRadius(10,150),p.style.borderRadius=returnBorderRadius(10,150),p.style.top=`${30/w*.2}em`,p.style.right=`${30/w*.2}em`,k.style.bottom=`${50/w*.2}em`,k.style.right=`${50/w*.2}em`,e&&(e.style.background="rgba(0,0,255,0.01)",DataSet.numberBackground>16&&DataSet.numberBackground<21||DataSet.numberBackground>24&&DataSet.numberBackground<49?(e.style.color="black",a.style.color="black",t.style.color="black",o.style.color="black",i.style.color="black",n.style.color="black",s.style.color="black",r.style.background="white",l.style.background="white",g.style.background="white",y.style.background="white",c.style.color="black",h.style.color="black",m&&(m.style.color="black"),u&&(u.style.color="black"),d.style.color="black"):(e.style.color="white",a.style.color="white",t.style.color="white",o.style.color="white",i.style.color="white",n.style.color="white",s.style.color="white",r.style.background="black",l.style.background="black",g.style.background="black",y.style.background="black",c.style.color="white",h.style.color="white",d.style.color="white",m&&(m.style.color="white"),u&&(u.style.color="white")))}function setBackground(){const e="css/images/",a=Math.floor(Math.random()*48)+1,t=document.querySelector("body");t.style.height="100%",t.style.margin="0",t.style.backgroundSize="cover",t.style.backgroundRepeat="no-repeat",t.style.backgroundPosition="center",t.style.backgroundImage=`url('${e}background${a}.jpg')`,DataSet.numberBackground=a,setColorMenu()}daimentInfo();htmlOldQuestionsCntr();setBackground();class LanguageSelectorView{init(a){const t=a=="en"?"selected":"",o=a=="pl"?"selected":"",i=a=="ua"?"selected":"",n=a=="ru"?"selected":"";let s='<select id="languageSelect">';return s+=`<option ${t} id="selectEn"  value="en">EN</option>`,s+=`<option ${o} id="selectPl"  value="pl">PL</option>`,s+=`<option ${i} id="selectUa"  value="ua">UA</option>`,s+=`<option ${n} id="selectRu"  value="ru">RU</option>`,s+="</select>",s}}function nav(){setTimeout(()=>{document.getElementById("button-help-video").addEventListener("click",e=>{e.stopPropagation(),Help.viewhandleHelpToTranslate(indexForThoury.helpForHomeMenuRU(),"vkQYDmiTlmQ")})},0),document.getElementById("nav").innerHTML=`
      <nav class="navbar navbar-expand-sm navbar-light" id="first-teg-nav-for-nav">
     <div class="container-fluid" id="nav-first-div">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -8130,7 +8130,299 @@ Present Continuous — already arranged, organized.
 Will — decision made right now.
 
 
-`}const arrayDataThoury=[];arrayDataThoury.push(thouryUnit1());arrayDataThoury.push(thouryUnit2());arrayDataThoury.push(thouryUnit2_2());arrayDataThoury.push(thouryUnit3());arrayDataThoury.push(thouryUnit23());arrayDataThoury.push(thouryUnit24());arrayDataThoury.push(thouryUnit25());arrayDataThoury.push(thouryUnit26());function returnDataArrayForStr(e){let a="";return Number.isFinite(e)?a="file"+e:a=e,a=arrayDataThoury.find(t=>t.includes(a)),a}function searchLabel(e,a){if(e==null)return"";a+=`
+`}function thouryUnit27(){return`
+    file47
+    unit-27
+    ru
+h2
+Will / Shall (1)
+
+h3
+Когда и где используется
+
+h4
+Will — это вспомогательный глагол, который используется для выражения:
+
+ul
+- решений, принятых в момент речи;
+- предсказаний, основанных на мнении, а не на фактах;
+- обещаний, предложений, просьб, отказов и угроз.
+
+h3
+Shall — используется в основном с “I” и “we” в более формальной или британской речи, особенно для предложений и вопросов (например, “Shall we go?”).
+
+h4
+Форма:
+
+ul
+will + V₁ (инфинитив без “to”)
+shall + V₁ (только для I / we)
+
+h3
+Примеры
+
+h4
+Решение в момент речи:
+
+ul
+I’m thirsty — I will get some water.
+(Я хочу пить — я возьму воды.)
+
+h4
+Don’t worry, I will help you.
+(Не переживай, я помогу тебе.)
+
+h4
+Предсказания (opinion-based):
+I think it will rain tomorrow.
+(Думаю, завтра будет дождь.)
+
+h4
+She will love this gift.
+(Ей понравится этот подарок.)
+
+h4
+Обещания, предложения, просьбы:
+
+ul
+I will call you tonight. (Я позвоню тебе вечером.)
+Will you open the window, please? (Открой, пожалуйста, окно.)
+Shall we go out tonight? (Пойдём сегодня вечером?)
+
+h4
+Когда не используем “will”:
+
+ul
+- Если решение принято заранее → используем be going to:
+  I’m going to start a new job. (Я собираюсь начать новую работу.)
+- Если действие запланировано и организовано → используем Present Continuous:
+  I’m meeting Tom tomorrow. (Я встречаюсь с Томом завтра.)
+
+h4
+Как запомнить:
+
+ul
+- Will — решение прямо сейчас.
+- Going to — есть намерение заранее.
+- Present Continuous — уже организовано.
+
+ua
+h2
+Will / Shall (1)
+
+h3
+Коли і де використовується
+
+h4
+Will — це допоміжне дієслово, яке використовується для вираження:
+
+ul
+- рішень, прийнятих у момент мовлення;
+- передбачень, заснованих на думці, а не на фактах;
+- обіцянок, пропозицій, прохань, відмов та погроз.
+
+h3
+Shall — використовується переважно з “I” та “we” у більш формальній або британській мові, особливо для пропозицій та запитань (наприклад, “Shall we go?”).
+
+h4
+Форма:
+
+ul
+will + V₁ (інфінітив без “to”)
+shall + V₁ (тільки для I / we)
+
+h3
+Приклади
+
+h4
+Рішення в момент мовлення:
+
+ul
+I’m thirsty — I will get some water.
+(Я хочу пити — я візьму води.)
+
+h4
+Don’t worry, I will help you.
+(Не хвилюйся, я допоможу тобі.)
+
+h4
+Передбачення (opinion-based):
+I think it will rain tomorrow.
+(Думаю, завтра буде дощ.)
+
+h4
+She will love this gift.
+(Їй сподобається цей подарунок.)
+
+h4
+Обіцянки, пропозиції, прохання:
+
+ul
+I will call you tonight. (Я зателефоную тобі ввечері.)
+Will you open the window, please? (Відкрий, будь ласка, вікно.)
+Shall we go out tonight? (Підемо сьогодні ввечері?)
+
+h4
+Коли не використовуємо “will”:
+
+ul
+- Якщо рішення прийнято заздалегідь → використовуємо be going to:
+  I’m going to start a new job. (Я збираюся почати нову роботу.)
+- Якщо дія запланована та організована → використовуємо Present Continuous:
+  I’m meeting Tom tomorrow. (Я зустрічаюся з Томом завтра.)
+
+h4
+Як запам’ятати:
+
+ul
+- Will — рішення прямо зараз.
+- Going to — є намір заздалегідь.
+- Present Continuous — уже організовано.
+
+pl
+h2
+Will / Shall (1)
+
+h3
+Kiedy i gdzie się używa
+
+h4
+Will — to czasownik posiłkowy, który używany jest do wyrażenia:
+
+ul
+- decyzji podjętych w momencie mówienia;
+- przewidywań opartych na opinii, a nie na faktach;
+- obietnic, propozycji, próśb, odmów i gróźb.
+
+h3
+Shall — używany głównie z “I” i “we” w bardziej formalnym lub brytyjskim języku, szczególnie w propozycjach i pytaniach (np. “Shall we go?”).
+
+h4
+Forma:
+
+ul
+will + V₁ (bezokolicznik bez “to”)
+shall + V₁ (tylko dla I / we)
+
+h3
+Przykłady
+
+h4
+Decyzja w momencie mówienia:
+
+ul
+I’m thirsty — I will get some water.
+(Chce mi się pić — wezmę trochę wody.)
+
+h4
+Don’t worry, I will help you.
+(Nie martw się, pomogę ci.)
+
+h4
+Przewidywania (opinion-based):
+I think it will rain tomorrow.
+(Myślę, że jutro będzie padać.)
+
+h4
+She will love this gift.
+(Spodoba jej się ten prezent.)
+
+h4
+Obietnice, propozycje, prośby:
+
+ul
+I will call you tonight. (Zadzwonię do ciebie wieczorem.)
+Will you open the window, please? (Czy otworzysz okno, proszę?)
+Shall we go out tonight? (Może wyjdziemy dziś wieczorem?)
+
+h4
+Kiedy nie używamy “will”:
+
+ul
+- Jeśli decyzja została podjęta wcześniej → używamy be going to:
+  I’m going to start a new job. (Zamierzam rozpocząć nową pracę.)
+- Jeśli działanie jest zaplanowane i zorganizowane → używamy Present Continuous:
+  I’m meeting Tom tomorrow. (Spotykam się z Tomem jutro.)
+
+h4
+Jak zapamiętać:
+
+ul
+- Will — decyzja podjęta teraz.
+- Going to — zamiar wcześniej ustalony.
+- Present Continuous — już zaplanowane.
+
+en
+h2
+Will / Shall (1)
+
+h3
+When and where it is used
+
+h4
+Will — an auxiliary verb used to express:
+
+ul
+- decisions made at the moment of speaking;
+- predictions based on opinion rather than fact;
+- promises, offers, requests, refusals, and threats.
+
+h3
+Shall — mainly used with “I” and “we” in more formal or British English, especially for suggestions and questions (e.g., “Shall we go?”).
+
+h4
+Form:
+
+ul
+will + V₁ (infinitive without “to”)
+shall + V₁ (only for I / we)
+
+h3
+Examples
+
+h4
+Decision made at the moment of speaking:
+
+ul
+I’m thirsty — I will get some water.
+
+h4
+Don’t worry, I will help you.
+
+h4
+Predictions (opinion-based):
+I think it will rain tomorrow.
+
+h4
+She will love this gift.
+
+h4
+Promises, offers, requests:
+
+ul
+I will call you tonight.
+Will you open the window, please?
+Shall we go out tonight?
+
+h4
+When not to use “will”:
+
+ul
+- If the decision was made before → use “be going to”:
+  I’m going to start a new job.
+- If the action is planned or arranged → use Present Continuous:
+  I’m meeting Tom tomorrow.
+
+h4
+How to remember:
+
+ul
+- Will — a decision made now.
+- Going to — an intention made earlier.
+- Present Continuous — already arranged.
+
+
+`}const arrayDataThoury=[];arrayDataThoury.push(thouryUnit1());arrayDataThoury.push(thouryUnit2());arrayDataThoury.push(thouryUnit2_2());arrayDataThoury.push(thouryUnit3());arrayDataThoury.push(thouryUnit23());arrayDataThoury.push(thouryUnit24());arrayDataThoury.push(thouryUnit25());arrayDataThoury.push(thouryUnit26());arrayDataThoury.push(thouryUnit27());function returnDataArrayForStr(e){let a="";return Number.isFinite(e)?a="file"+e:a=e,a=arrayDataThoury.find(t=>t.includes(a)),a}function searchLabel(e,a){if(e==null)return"";a+=`
 `;let t=e.indexOf(a);return t<0&&(t=e.indexOf(a.charAt(0).toUpperCase()+a.slice(1))),t<0&&e.indexOf(a.toUpperCase()),t<0&&(t=0,console.log("не удалось найти маркер "+a)),t}function returnStringHelpForLanguage(e){const a=returnDataArrayForStr(e);if(a==null)return"";let t={ru:searchLabel(a,"ru"),ua:searchLabel(a,"ua"),pl:searchLabel(a,"pl"),en:searchLabel(a,"en"),strLenght:a.length,get start(){return localStorage.getItem("EnglishWithJs_lang")==="ru"?this.ru:localStorage.getItem("EnglishWithJs_lang")==="ua"?this.ua:localStorage.getItem("EnglishWithJs_lang")==="pl"?this.pl:this.en},get finish(){const i=[this.ru,this.ua,this.pl,this.en];i.sort((s,r)=>s-r);let n=i.find(s=>s>this.start);return n==null&&(n=this.strLenght),n}};return a.slice(t.start,t.finish)}function ThouryH2(e="start",a=0){return e==="start"?`<h2 id="thoury-pattern-h2-${a}">`:"</h2>"}function ThouryH3(e="start",a=0){return e==="start"?`<h3 id="thoury-pattern-h3-${a}">`:"</h3>"}function ThouryH4(e="start",a=0){return e==="start"?`<h4 id="thoury-pattern-h4-${a}">`:"</h4>"}function ThouryUl(e="start",a=0){return e==="start"?`<ul id="thoury-pattern-ui-${a}">`:"</ul>"}function ThouryLi(e="start",a=0){return e==="start"?`<li id="thoury-pattern-li-${a}">`:"</li>"}function ThouryDiv(e="start"){return e==="start"?'<div class="thoury-pattern" id="thoury-pattern">':"</div>"}function returnBodyHelpForLanguage(e){let a=returnStringHelpForLanguage(e);if(a=="")return"";let t=a.split(`
 `),o="",i="",n="",s=0;for(let r of t){if(s++,r.trim()==""&&n!==""){i=="h2"&&(n=ThouryH2("start",s)+n+ThouryH2(""),o=o+n+"<hr>"),i=="ul"&&(n=ThouryUl("start",s)+n+ThouryUl(""),o=o+n),i=="h3"&&(n=ThouryH3("start",s)+n+ThouryH3(""),o=o+n),i=="h4"&&(n=ThouryH4("start",s)+n+ThouryH4(""),o=o+n),i="",n="";continue}if(r.includes("h2")){i="h2";continue}if(r.includes("h3")){i="h3";continue}if(r.includes("h4")){i="h4";continue}if(r.includes("ul")){i="ul";continue}(i=="h4"||i=="h3"||i=="h2"||i=="ul")&&((i=="h4"||i=="h3"||i=="h2"||i=="P")&&(n+=r+"<br>"),i=="ul"&&(n+=ThouryLi("start",s)+r+ThouryLi("")))}return ThouryDiv()+o+ThouryDiv("")}function getBodyThoury(e){switch(e.level){case 43:return e.translate.translate(indexForThoury.returnInfoUnit22RU());case 42:return e.translate.translate(indexForThoury.returnLevel42());case 40:return e.translate.translate(indexForThoury.returnLevel40());case 39:return e.translate.translate(indexForThoury.returnLevel39());case 38:return e.translate.translate(indexForThoury.returnLevel38());case 37:return e.translate.translate(indexForThoury.returnLevel37());case 20:return e.translate.translate(indexForThoury.returnLevel20());case 36:return e.translate.translate(indexForThoury.returnLevel36());case 35:return e.translate.translate(indexForThoury.returnLevel35());case 34:return e.translate.translate(indexForThoury.returnLevel34());case 33:return e.translate.translate(indexForThoury.returnLevel33());case 32:return e.translate.translate(indexForThoury.returnLevel32());case 31:return e.translate.translate(indexForThoury.returnLevel31());case 23:return e.translate.translate(indexForThoury.returnLevel23());case 21:return e.translate.translate(indexForThoury.returnLevel21());case 19:return e.translate.translate(indexForThoury.returnLevel19());case 18:return e.translate.translate(indexForThoury.returnLevel18());case 17:return e.translate.translate(indexForThoury.returnLevel17());case 16:return e.translate.translate(indexForThoury.returnLevel16());case 15:return e.translate.translate(indexForThoury.returnLevel15());case 14:return e.translate.translate(indexForThoury.returnLevel14());default:let a=returnBodyHelpForLanguage(e.level);return a==""?e.translate.translate("Просто учим слова"):a}}function getWorkPlace(e,a){return`
     <div class="card shadow-lg rounded-3 get-work-place">
@@ -8180,4 +8472,33 @@ Will — decision made right now.
             ${this.menuItem2()}
           </ul>
         </div>
-      `}addClass(){let a="";return this.numberMenuLocal===1&&(this.countItemOne++,this.countItemOne%2==1?a="style-for-item-one":a="style-for-item-two"),this.numberMenuLocal===2&&(this.countItemTwo++,this.countItemTwo%2==1?a="style-for-item-one":a="style-for-item-two")," style-for-item-start "+a}getSeedForMenu(){return document.getElementById(this.seedMenu)}}class MenuRight2 extends MenuRight{constructor(a){super(a),this.nameMenu="Units24",this.seedMenu="burger2",this.numberMenu=6}}class MenuLearnWord extends MenuRight{constructor(a){super(a),this.nameMenu=this.translate.translate("Учить слова"),this.seedMenu="word",this.numberMenu=2}}class MenuHelp extends MenuRight{constructor(a){super(a),this.nameMenu=this.translate.translate("Помощь"),this.seedMenu="help",this.numberMenu=3}}class MenuStatictic extends MenuRight{constructor(a){super(a),this.nameMenu=this.translate.translate("Статистика"),this.seedMenu="statistic",this.numberMenu=4}}class MenuController{constructor(){this.levelDataModel=new LevelDataModel(DataOk.level.int)}init(){const a=new MenuRight(this.levelDataModel.getArrayNameButton()),t=new MenuRight2(this.levelDataModel.getArrayNameButton()),o=new MenuLearnWord(this.levelDataModel.getArrayNameButton()),i=new MenuHelp(this.levelDataModel.getArrayNameButton()),n=new MenuStatictic(this.levelDataModel.getArrayNameButton()),s=a.getSeedForMenu(),r=o.getSeedForMenu(),l=i.getSeedForMenu(),g=n.getSeedForMenu(),y=t.getSeedForMenu();s.innerHTML=a.menuDropdown2(),r.innerHTML=o.menuDropdown2(),l.innerHTML=i.menuDropdown2(),g.innerHTML=n.menuDropdown2(),y.innerHTML=t.menuDropdown2();const c=[];for(let h=1;h<=this.levelDataModel.getTic();h++){let d=LevelDataModel.mapNameMenu(h-1);d==4||d==3||d==5||(c[h]=document.getElementById("level"+h),c[h].onclick=handleLevelX.bind(null,new LevelDataModel(h)))}fixModalFocus()}}window.LanguageController=new LanguageController;window.FactoryRegistr=FactoryRegistr;window.Help=Help;window.nav=nav();window.handleLog=handleLog;window.Thoury=Thoury;window.hundleHelpPrime=hundleHelpPrime;window.DataOk=DataOk$1;window.handleOkErr=handleOkErr;window.MenuController=MenuController;window.noonMenu=noonMenu;window.WorkingField=WorkingField;window.handleLevelX=handleLevelX;window.getTranslate=getTranslate();window.LevelDataModel=LevelDataModel;function initEventForMenuStatistic(){let e=!0;const a=getTranslate(),t=document.getElementById("level24");t?t.innerHTML=a.translate("Собрано алмазов:")+Math.trunc(DataOk$1.ok):e=!1;const o=document.getElementById("level25");o?o.innerHTML=a.translate("Ошибок:")+DataOk$1.error:e=!1;const i=document.getElementById("level26");i?i.innerHTML=a.translate("Успех:")+Math.floor(DataOk$1.rezult)+"%":e=!1;const n=document.getElementById("level27");n?(n.innerHTML=a.translate("Сброс"),n.addEventListener("click",()=>{resetStatistic()})):e=!1;const s=document.getElementById("level28");return s?s.innerHTML=a.translate("Переводов:")+DataOk$1.countInt:e=!1,e}function hundleUpdateBurgerOrWord(e){const a=document.getElementById(e);return a?(a.addEventListener("click",()=>{initEventForMenuStatistic()}),!0):!1}function hundleBlockMenu(){const e=document.querySelector(".nav-item"),a=e?.querySelector(".dropdown-content");if(e&&a)return e.addEventListener("click",t=>{t.stopPropagation(),a.style.display==="none"||a.style.display===""?a.style.display="block":a.style.display="none"}),a.addEventListener("click",t=>{t.stopPropagation()}),document.addEventListener("click",()=>{a.style.display="none"}),!0}function handleForSelectLangauge(){document.getElementById("languageSelect").onchange=function(e){const a=e.target.value;localStorage.setItem("EnglishWithJs_lang",a)}}window.addEventListener("load",()=>{hundleBlockMenu(),document.getElementById("pullItem1").addEventListener("click",setBackground),document.getElementById("pullItem2").addEventListener("click",setBackground),document.getElementById("pullItem6").addEventListener("click",setBackground),setColorMenu(),handleForSelectLangauge(),document.getElementById("dropdownMenuburger").onclick=()=>{FactoryRegistr.getObject("WorkingField").resetQuestion=!0},FactoryRegistr.getObject("WorkingField").resetQuestion=!0});const id=setInterval(()=>{let e=!0;hundleHelpPrime()||(e=!1),initEventForMenuStatistic()||(e=!1),hundleUpdateBurgerOrWord("burger")||(e=!1),hundleUpdateBurgerOrWord("burger2")||(e=!1),hundleUpdateBurgerOrWord("word")||(e=!1),hundleUpdateBurgerOrWord("statistic")||(e=!1),e&&(console.log("Все элементы получили свои события"),clearInterval(id))},300);
+      `}addClass(){let a="";return this.numberMenuLocal===1&&(this.countItemOne++,this.countItemOne%2==1?a="style-for-item-one":a="style-for-item-two"),this.numberMenuLocal===2&&(this.countItemTwo++,this.countItemTwo%2==1?a="style-for-item-one":a="style-for-item-two")," style-for-item-start "+a}getSeedForMenu(){return document.getElementById(this.seedMenu)}}class MenuRight2 extends MenuRight{constructor(a){super(a),this.nameMenu="Units24",this.seedMenu="burger2",this.numberMenu=6}}class MenuLearnWord extends MenuRight{constructor(a){super(a),this.nameMenu=this.translate.translate("Учить слова"),this.seedMenu="word",this.numberMenu=2}}class MenuHelp extends MenuRight{constructor(a){super(a),this.nameMenu=this.translate.translate("Помощь"),this.seedMenu="help",this.numberMenu=3}}class MenuStatictic extends MenuRight{constructor(a){super(a),this.nameMenu=this.translate.translate("Статистика"),this.seedMenu="statistic",this.numberMenu=4}}class MenuController{constructor(){this.levelDataModel=new LevelDataModel(DataOk.level.int)}init(){const a=new MenuRight(this.levelDataModel.getArrayNameButton()),t=new MenuRight2(this.levelDataModel.getArrayNameButton()),o=new MenuLearnWord(this.levelDataModel.getArrayNameButton()),i=new MenuHelp(this.levelDataModel.getArrayNameButton()),n=new MenuStatictic(this.levelDataModel.getArrayNameButton()),s=a.getSeedForMenu(),r=o.getSeedForMenu(),l=i.getSeedForMenu(),g=n.getSeedForMenu(),y=t.getSeedForMenu();s.innerHTML=a.menuDropdown2(),r.innerHTML=o.menuDropdown2(),l.innerHTML=i.menuDropdown2(),g.innerHTML=n.menuDropdown2(),y.innerHTML=t.menuDropdown2();const c=[];for(let h=1;h<=this.levelDataModel.getTic();h++){let d=LevelDataModel.mapNameMenu(h-1);d==4||d==3||d==5||(c[h]=document.getElementById("level"+h),c[h].onclick=handleLevelX.bind(null,new LevelDataModel(h)))}fixModalFocus()}}window.LanguageController=new LanguageController;window.FactoryRegistr=FactoryRegistr;window.Help=Help;window.nav=nav();window.handleLog=handleLog;window.Thoury=Thoury;window.hundleHelpPrime=hundleHelpPrime;window.DataOk=DataOk$1;window.handleOkErr=handleOkErr;window.MenuController=MenuController;window.noonMenu=noonMenu;window.WorkingField=WorkingField;window.handleLevelX=handleLevelX;window.getTranslate=getTranslate();window.LevelDataModel=LevelDataModel;function initEventForMenuStatistic(){let e=!0;const a=getTranslate(),t=document.getElementById("level24");t?t.innerHTML=a.translate("Собрано алмазов:")+Math.trunc(DataOk$1.ok):e=!1;const o=document.getElementById("level25");o?o.innerHTML=a.translate("Ошибок:")+DataOk$1.error:e=!1;const i=document.getElementById("level26");i?i.innerHTML=a.translate("Успех:")+Math.floor(DataOk$1.rezult)+"%":e=!1;const n=document.getElementById("level27");n?(n.innerHTML=a.translate("Сброс"),n.addEventListener("click",()=>{resetStatistic()})):e=!1;const s=document.getElementById("level28");return s?s.innerHTML=a.translate("Переводов:")+DataOk$1.countInt:e=!1,e}function hundleUpdateBurgerOrWord(e){const a=document.getElementById(e);return a?(a.addEventListener("click",()=>{initEventForMenuStatistic()}),!0):!1}function hundleBlockMenu(){const e=document.querySelector(".nav-item"),a=e?.querySelector(".dropdown-content");if(e&&a)return e.addEventListener("click",t=>{t.stopPropagation(),a.style.display==="none"||a.style.display===""?a.style.display="block":a.style.display="none"}),a.addEventListener("click",t=>{t.stopPropagation()}),document.addEventListener("click",()=>{a.style.display="none"}),!0}function handleForSelectLangauge(){document.getElementById("languageSelect").onchange=function(e){const a=e.target.value;localStorage.setItem("EnglishWithJs_lang",a)}}function activationMenuSetting(e=!0){let a=["none","none","none","block"];e||(a=["block","block","block","none"]),document.querySelector("#nav").style.display=a[0],document.querySelector("#container-all").style.display=a[1],document.querySelector("#html_old_questions").style.display=a[2],document.querySelector("#div-for-setting").style.display=a[3],document.querySelector("#working_field").innerHTML=""}function menuSettingView(){const e=`<div class="card menu-setting-view">
+  <div class="card-header">
+    Settings
+  </div>
+
+  <div class="card-body">
+    <form id="settingsForm">
+      <div class="mb-3">
+        <label for="testType" class="form-label">Test Type</label>
+        <select class="form-select" id="testType">
+          <option value="simple">Simple Test</option>
+          <option value="word-assembly">Word Assembly</option>
+          <option value="word-assembly-not-translate">Word Assembly (not translate)</option>
+        </select>
+
+        <label for="testType" class="form-label">Setting Color</label>
+        <select class="form-select" id="select-grafic">
+          <option value="simple">Simple Test</option>
+          <option value="word-assembly">Word Assembly</option>
+          <option value="word-assembly-not-translate">Word Assembly (not translate)</option>
+        </select>
+      </div>
+      
+      <button type="button" class="btn btn-success w-100" id="save-settings">
+        Save
+      </button>
+    </form>
+  </div>
+</div>
+`;document.querySelector("#div-for-setting").style.display="none",document.querySelector("#div-for-setting").innerHTML=e,document.querySelector("#save-settings").onclick=()=>{activationMenuSetting(!1),SettingForProgram.selectTypeTest=document.querySelector("#testType").value}}window.addEventListener("load",()=>{hundleBlockMenu(),document.getElementById("pullItem1").addEventListener("click",setBackground),document.getElementById("pullItem2").addEventListener("click",setBackground),document.getElementById("pullItem6").addEventListener("click",setBackground),setColorMenu(),handleForSelectLangauge(),document.getElementById("dropdownMenuburger").onclick=()=>{FactoryRegistr.getObject("WorkingField").resetQuestion=!0},FactoryRegistr.getObject("WorkingField").resetQuestion=!0,menuSettingView(),document.querySelector("#setting").onclick=activationMenuSetting});const id=setInterval(()=>{let e=!0;hundleHelpPrime()||(e=!1),initEventForMenuStatistic()||(e=!1),hundleUpdateBurgerOrWord("burger")||(e=!1),hundleUpdateBurgerOrWord("burger2")||(e=!1),hundleUpdateBurgerOrWord("word")||(e=!1),hundleUpdateBurgerOrWord("statistic")||(e=!1),e&&(console.log("Все элементы получили свои события"),clearInterval(id))},300);

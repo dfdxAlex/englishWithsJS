@@ -15,10 +15,10 @@ window.addEventListener('load', () => {
     // Достать из регистра объект переводчика
     resetBottonError();
 
-    // нарисовать невидимое меню Сеттинг
-    menuSettingView();
-    // спрятать все ненужные блоки и показать меню Настроек
-    document.querySelector('#setting').onclick = activationMenuSetting;
+    // // нарисовать невидимое меню Сеттинг
+    // menuSettingView();
+    // // спрятать все ненужные блоки и показать меню Настроек
+    // document.querySelector('#setting').onclick = activationMenuSetting;
    
     // функция отслеживает инфу по ответам и запускает процесс
     // всплытия кристала, шапки или черепа
