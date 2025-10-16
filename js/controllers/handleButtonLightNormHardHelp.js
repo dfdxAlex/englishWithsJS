@@ -27,21 +27,21 @@ function selectLightNormalHard(level = false)
 
     localStorage.setItem('light_normal_hard',level);
     if (level === "light") {
-        SettingForProgram.inputLightNormalHard = 'light';
+        window.SettingForProgram.inputLightNormalHard = 'light';
         buttonLight.classList.add('btn-custom-yellow-active');
         buttonNormal.classList.add('btn-custom-blue');
         if (setHard())
             buttonHard.classList.add('btn-custom-white');
     }
     if (level === "normal") {
-        SettingForProgram.inputLightNormalHard = 'normal';
+        window.SettingForProgram.inputLightNormalHard = 'normal';
         buttonLight.classList.add('btn-custom-yellow');
         buttonNormal.classList.add('btn-custom-blue-active');
         if (setHard())
             buttonHard.classList.add('btn-custom-white');
     }
     if (level === "hard" && setHard()) {
-        SettingForProgram.inputLightNormalHard = 'hard';
+        window.SettingForProgram.inputLightNormalHard = 'hard';
         buttonLight.classList.add('btn-custom-yellow');
         buttonNormal.classList.add('btn-custom-blue');
         buttonHard.classList.add('btn-custom-white-active');
@@ -63,7 +63,7 @@ function handleHelp()
     let randomNumber = parseFloat(localStorage.getItem('randomNumber'));
     const respons = document.getElementById('clicked_element');
     // Если работаем со вторым тестом, то там всегда выбирается только главный вопрос
-    if (SettingForProgram.selectTypeTest === "word-assembly") randomNumber = 1;
+    if (window.SettingForProgram.selectTypeTest === "word-assembly") randomNumber = 1;
     respons.innerText = indexQuestion()[randomNumber-1];
     respons.classList.remove('bg-success');
     respons.classList.remove('bg-warning');

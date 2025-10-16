@@ -7,7 +7,7 @@ class EventController {
     init() {
 
         // Оригинальные обработчики для первого варианта теста
-        if (SettingForProgram.selectTypeTest === "simple") {
+        if (window.SettingForProgram.selectTypeTest === "simple") {
             let optionsOne = document.getElementById('option1');
             let optionsTwo = document.getElementById('option2');
             let optionsThree = document.getElementById('option3');
@@ -44,7 +44,7 @@ class EventController {
         }
 
         // Оригинальные обработчики событий для второго варианта теста
-        if (SettingForProgram.selectTypeTest === "word-assembly") {
+        if (window.SettingForProgram.selectTypeTest === "word-assembly") {
             let setWorkField = document.querySelector('.fieldSetWorkField');
             if (setWorkField) {
                 setWorkField.onclick = handleClickTestTwo;
@@ -65,7 +65,7 @@ class EventController {
 
         // Оригинальные обработчики событий для третьего варианта теста
         // По возможности объеденить этот блок с предыдущим
-        if (SettingForProgram.selectTypeTest === "word-assembly-not-translate") {
+        if (window.SettingForProgram.selectTypeTest === "word-assembly-not-translate") {
             let setWorkField = document.querySelector('.fieldSetWorkField');
             if (setWorkField) {
                 setWorkField.onclick = handleClickTestTwo;

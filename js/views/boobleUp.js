@@ -19,10 +19,10 @@ function boobleUp()
 
    setInterval(() => {
        // Если координата Y всё ещё ниже потолка то работаем
-       if (SettingForProgram.buttonCheckY > 50) {
+       if (window.SettingForProgram.buttonCheckY > 50) {
            // Если ещё не запоминали стартовую координату Y, то запомнить
            if (!propertySrartXInitialise) {
-               SettingForProgram.buttonCheckYStart = SettingForProgram.buttonCheckY;
+               window.SettingForProgram.buttonCheckYStart = window.SettingForProgram.buttonCheckY;
                // признак того что уже запомнили стартовое значение
                propertySrartXInitialise = true;
            }
@@ -31,25 +31,25 @@ function boobleUp()
                numberRand = arrayTic();
                lag = 16;
                // если приближаемся к правой стороне то скорректировать тренд в левую
-               if (window.innerWidth - SettingForProgram.buttonCheckX < 100) {
+               if (window.innerWidth - window.SettingForProgram.buttonCheckX < 100) {
                    numberRand = -1;
                }
            }
            lag--;
 
            // Изменение координаты влево-вправо.
-           SettingForProgram.buttonCheckX+=numberRand;
-           divCreate.style.left = SettingForProgram.buttonCheckX + "px"; // Начальная позиция
-           divCreate.style.top = SettingForProgram.buttonCheckY + "px";
+           window.SettingForProgram.buttonCheckX+=numberRand;
+           divCreate.style.left = window.SettingForProgram.buttonCheckX + "px"; // Начальная позиция
+           divCreate.style.top = window.SettingForProgram.buttonCheckY + "px";
 
-           if (!putEl || propertyTest < SettingForProgram.buttonCheckY) {
+           if (!putEl || propertyTest < window.SettingForProgram.buttonCheckY) {
                let pre = '<span class="diamond">💎</span>';
-               let diamant = `<span class="score">${SettingForProgram.diamant}</span>`;
-               if (SettingForProgram.diamant === '-1') {
+               let diamant = `<span class="score">${window.SettingForProgram.diamant}</span>`;
+               if (window.SettingForProgram.diamant === '-1') {
                    pre = '<span class="diamond">💀</span>';
                    diamant = '';
                }
-               if (SettingForProgram.diamant === '0') {
+               if (window.SettingForProgram.diamant === '0') {
                    pre = '<span class="diamond">🎓</span>';
                    diamant = '';
                }
@@ -62,7 +62,7 @@ function boobleUp()
            }
 
            // сундук с сокровищами
-           if (SettingForProgram.buttonCheckYStart - SettingForProgram.buttonCheckY > 50 && !bonusBox) {
+           if (window.SettingForProgram.buttonCheckYStart - window.SettingForProgram.buttonCheckY > 50 && !bonusBox) {
                bonusBox = true;
                let randomInt = arrayTic(1,10);
                if (randomInt == 5) randomOk = true;
@@ -71,24 +71,24 @@ function boobleUp()
                    preBon = '<span onclick="scarbClick(2)" class="scarb">🎁</span>';
                    divCreateForBonusBox.innerHTML = preBon;
                    document.body.appendChild(divCreateForBonusBox);
-                   SettingForProgram.randomOk = true;
+                   window.SettingForProgram.randomOk = true;
                }
            }
 
            if (bonusBox && randomOk) {
             divCreateForBonusBox.style.position = "absolute";
-            SettingForProgram.buttonCheckX+=numberRand;
-            divCreateForBonusBox.style.left = SettingForProgram.buttonCheckX + "px"; // Начальная позиция
-            divCreateForBonusBox.style.top = SettingForProgram.buttonCheckYStart - SettingForProgram.buttonCheckY + "px";
+            window.SettingForProgram.buttonCheckX+=numberRand;
+            divCreateForBonusBox.style.left = window.SettingForProgram.buttonCheckX + "px"; // Начальная позиция
+            divCreateForBonusBox.style.top = window.SettingForProgram.buttonCheckYStart - window.SettingForProgram.buttonCheckY + "px";
            }
            // Скорость всплытия
-           SettingForProgram.buttonCheckY-=1;
+           window.SettingForProgram.buttonCheckY-=1;
 
            // Переменняя propertyTest нужна для контроля факта
            // необходимости нового пузыря до окончания всплытия старого
            // Выше в коде проверяется, если фактический Y стал снова больше
            // то прекращаем старое всплытие и начинаем новое.
-           propertyTest = SettingForProgram.buttonCheckY;
+           propertyTest = window.SettingForProgram.buttonCheckY;
        } else if (putEl) {
            divCreate.innerText = '';
            putEl = false;
@@ -99,7 +99,7 @@ function boobleUp()
            if (signal) {
                signal.style.backgroundColor = '#a4f1b9';
            }
-           SettingForProgram.randomOk = false;
+           window.SettingForProgram.randomOk = false;
        }
    }, 10);
 }
@@ -115,12 +115,12 @@ function scarbClick(xx=1)
     const bonusForScarb = document.createElement("div");
     document.body.appendChild(bonusForScarb);
     bonusForScarb.classList.add("bonus-for-scarb");
-    bonusForScarb.innerHTML = `<span class="text-about-scarb">${SettingForProgram.diamant*xx}</span>`;
+    bonusForScarb.innerHTML = `<span class="text-about-scarb">${window.SettingForProgram.diamant*xx}</span>`;
     
     bonusForScarb.style.left = x+'px';
     bonusForScarb.style.top = y+'px';
 
-    DataOk.addOk(SettingForProgram.diamant*xx);
+    DataOk.addOk(window.SettingForProgram.diamant*xx);
 
     setTimeout(()=>{
         document.querySelector('.text-about-scarb').remove();

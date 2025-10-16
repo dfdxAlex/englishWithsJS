@@ -13,8 +13,8 @@ function handleSearchError() {
         
     // Если падает ящик заблокировать отправку ошибки
     // чтобы не попасть случайно в отправку ошибок
-    if (SettingForProgram.buttonCheckY > 50)
-        if (SettingForProgram.randomOk) {
+    if (window.SettingForProgram.buttonCheckY > 50)
+        if (window.SettingForProgram.randomOk) {
             console.log('Ящик ещё падает');
             event.preventDefault(); // Не выполнять стандартное действие
             return;
