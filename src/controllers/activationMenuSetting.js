@@ -1,6 +1,6 @@
 // Функция переключает между режимом настроек и рабочим режимом
 // если входит true, то активировать режим настроек
-function activationMenuSetting(active = true)
+export function activationMenuSetting(active = true)
 {
     let setArray = ['none','none','none','block'];
     if (!active) {

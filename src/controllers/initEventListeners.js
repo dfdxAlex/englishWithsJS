@@ -6,6 +6,8 @@ import { setBackground } from '../view/styles/bodyImages/setBackground.js';
 import { setColorMenu } from '../view/styles/bodyImages/setColorMenu.js';
 import { handleForSelectLangauge } from './forInitEventListeners/handleForSelectLangauge.js';
 import { FactoryRegistr } from '../models/FactoryRegistr.js';
+import { menuSettingView } from '../view/menuSettingView.js';
+import { activationMenuSetting } from './activationMenuSetting.js';
 
 // Здесь функции, которые должны отработать когда загрузится статическая страница
 window.addEventListener('load', () => {
@@ -36,6 +38,11 @@ window.addEventListener('load', () => {
     // принудительное изменение тестового вопосса при первом пуске или обновлении
     // срабатывает один раз.
     FactoryRegistr.getObject('WorkingField').resetQuestion = true;
+
+    // нарисовать невидимое меню Сеттинг
+    menuSettingView();
+    // спрятать все ненужные блоки и показать меню Настроек
+    document.querySelector('#setting').onclick = activationMenuSetting;
 
 });
 

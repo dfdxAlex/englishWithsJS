@@ -1,26 +1,34 @@
-function menuSettingView()
+import { activationMenuSetting } from '../controllers/activationMenuSetting.js';
+import './styles/menuSettingView.scss';
+
+export function menuSettingView()
 {
-    const rez = `<div class="card" style="max-width: 400px; margin: auto; border: 2px solid #28a745; border-radius: 10px;">
-  <!-- Заголовок карточки -->
-  <div class="card-header" style="background-color: #e6f7e6; color: #28a745; font-weight: bold;">
+  let test1 = 
+    const rez = 
+`<div class="card menu-setting-view">
+  <div class="card-header">
     Settings
   </div>
 
-  <!-- Содержимое карточки -->
-  <div class="card-body" style="font-size: 1rem; line-height: 1.5; color: #333;">
+  <div class="card-body">
     <form id="settingsForm">
-      <!-- Заголовок списка -->
       <div class="mb-3">
-        <label for="testType" class="form-label" style="font-weight: bold;">Test Type</label>
-        <select class="form-select" id="testType" style="width: 95%; font-size: 1rem; padding: 0.375rem 0.75rem;">
+        <label for="testType" class="form-label">Test Type</label>
+        <select class="form-select" id="testType">
+          <option value="simple">Simple Test</option>
+          <option value="word-assembly">Word Assembly</option>
+          <option value="word-assembly-not-translate">Word Assembly (not translate)</option>
+        </select>
+
+        <label for="testType" class="form-label">Setting Color</label>
+        <select class="form-select" id="select-grafic">
           <option value="simple">Simple Test</option>
           <option value="word-assembly">Word Assembly</option>
           <option value="word-assembly-not-translate">Word Assembly (not translate)</option>
         </select>
       </div>
       
-      <!-- Кнопка сохранить -->
-      <button type="button" class="btn btn-success w-100" id="save-settings" style="font-size: 1rem; margin-top: 10px;">
+      <button type="button" class="btn btn-success w-100" id="save-settings">
         Save
       </button>
     </form>

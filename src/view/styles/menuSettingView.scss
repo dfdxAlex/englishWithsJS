@@ -1,0 +1,30 @@
+.menu-setting-view {
+    max-width: 400px; 
+    margin: auto; 
+    border: 2px solid #28a745; 
+    border-radius: 10px;
+    .card-header {
+        background-color: #e6f7e6; 
+        color: #28a745; 
+        font-weight: bold;
+        
+    }
+    .card-body {
+        font-size: 1rem; 
+        line-height: 1.5; 
+        color: #333;
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        select {
+            width: 95%; 
+            font-size: 1rem; 
+            padding: 0.375rem 0.75rem;
+        }
+        button {
+            font-size: 1rem; 
+            margin-top: 10px;
+        }
+    }
+}
