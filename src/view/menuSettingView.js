@@ -3,7 +3,7 @@ import './styles/menuSettingView.scss';
 
 export function menuSettingView()
 {
-  let test1 = 
+  // let test1 = 
     const rez = 
 `<div class="card menu-setting-view">
   <div class="card-header">
