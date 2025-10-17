@@ -1,25 +1,23 @@
 
 import { arrayButtonForLevelTwoAndThree } from './arrayButtonForLevelTwoAndThree.js';
 import { generateColorPair } from './generateColorPair.js';
-import { getContrastColor } from './getContrastColor.js';
 import { returnBorderRadius } from '../../services/setColorMenu/returnBorderRadius.js';
 import { getBoxShadow } from './getBoxShadow.js';
+import { getContrastColorTwo } from './getContrastColorTwo.js';
 
 export function setColorForLevelToAndThree()
 {
     arrayButtonForLevelTwoAndThree().forEach((el)=>{
         const color1 = generateColorPair();
-        el.style.backgroundColor = color1;
-        el.style.color = getContrastColor(color1);
         el.style.boxShadow = getBoxShadow(color1);
+        getContrastColorTwo(el);
     });
 
     // Отдельно разукрасть кнопку Проверить
     const buttonOk = document.getElementById('button-ok');
     if (buttonOk) {
         const colorButtonOk = generateColorPair();
-        buttonOk.style.backgroundColor = colorButtonOk;
-        buttonOk.style.color = getContrastColor(colorButtonOk);
+        getContrastColorTwo(buttonOk);
         buttonOk.style.borderRadius = returnBorderRadius(10, 150); 
         buttonOk.style.boxShadow = getBoxShadow(colorButtonOk); 
     }
@@ -27,8 +25,7 @@ export function setColorForLevelToAndThree()
     const translate = document.getElementById('translate');
     if (translate) {
         const colorTranslate = generateColorPair();
-        translate.style.backgroundColor = colorTranslate;
-        translate.style.color = getContrastColor(colorTranslate);
+        getContrastColorTwo(buttonOk);
         translate.style.boxShadow = getBoxShadow(colorTranslate);
         translate.style.borderRadius = returnBorderRadius(10, 150); 
     }
