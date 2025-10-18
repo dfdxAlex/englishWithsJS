@@ -1,6 +1,7 @@
 // Функция подбирает для определенного id цвет фона и контрастный цвет символов
 
 import { generateColorPair } from './generateColorPair.js';
+import { getBoxShadow } from './getBoxShadow.js';
 
 export function getContrastColorTwo(id) {
   
@@ -14,6 +15,7 @@ export function getContrastColorTwo(id) {
     if (colorDifferenceRGB(colorBack, colorText) > 320) {
       id.style.backgroundColor = colorBack;
       id.style.color = colorText;
+      id.style.boxShadow = getBoxShadow(colorBack);
       clearInterval(timerId);
     }
   }, 1);
