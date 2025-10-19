@@ -6,32 +6,24 @@ import { SettingForProgram } from '../../models/SettingForProgram.js';
 
 export function getContrastColorTwo(id) {
   
-  if (SettingForProgram.selectColorText !== 'color-randome' 
-      && (SettingForProgram.selectColorBackGround !== 'color-randome') 
-  ) return false;
-
   let colorBack = 0;
   let colorText = 0;
   
   const timerId = setInterval(() => {
+    // Придумать два цвета и получить их мнимую координату
     colorBack = generateColorPair();
+    if (SettingForProgram.selectColorBackGround == 'color-white') colorBack = 'rgb(255,255,255)';
+    if (SettingForProgram.selectColorBackGround == 'color-black') colorBack = 'rgb(0,0,0)';
+
     colorText = generateColorPair();
+    if (SettingForProgram.selectColorText == 'color-white') colorText = 'rgb(255,255,255)';
+    if (SettingForProgram.selectColorText == 'color-black') colorText = 'rgb(0,0,0)';  
 
-
+    // Если расстояние между ними больше 320, то покрасить объекты и закрыть цикл
     if (colorDifferenceRGB(colorBack, colorText) > 320) {
       
-      if (SettingForProgram.selectColorBackGround === 'color-white') {
-          colorBack = 'rgb(255,255,255)';
-      } else if (SettingForProgram.selectColorBackGround === 'color-black') {
-          colorBack = 'rgb(0,0,0)';
-      }
       id.style.backgroundColor = colorBack;
 
-      if (SettingForProgram.selectColorText === 'color-white') {
-          colorText = 'rgb(255,255,255)';
-      } else if (SettingForProgram.selectColorText === 'color-black') {
-          colorText = 'rgb(0,0,0)';
-      }
       id.style.color = colorText;
 
       if (SettingForProgram.shadow !== 'false')

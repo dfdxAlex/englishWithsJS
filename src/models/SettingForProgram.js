@@ -10,10 +10,12 @@ export class SettingForProgram
     static shadow = 'true';
 
     static {
-        this.selectColorText = localStorage.getItem('selectColorText');
-        this.selectColorBackGround = localStorage.getItem('selectColorBackGround');
-        this.borderRadius = localStorage.getItem('borderRadius');
-        this.shadow = localStorage.getItem('shadow');
+        SettingForProgram.selectColorText = localStorage.getItem('selectColorText');
+        console.log(localStorage.getItem('selectColorText'));
+        SettingForProgram.selectColorBackGround = localStorage.getItem('selectColorBackGround');
+        SettingForProgram.borderRadius = localStorage.getItem('borderRadius');
+        SettingForProgram.shadow = localStorage.getItem('shadow');
+        // console.log('Статик сработал');
     }
     
 
