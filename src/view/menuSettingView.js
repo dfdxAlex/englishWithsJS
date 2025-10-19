@@ -1,6 +1,12 @@
 import { activationMenuSetting } from '../controllers/activationMenuSetting.js';
 import './styles/menuSettingView.scss';
 import { SettingForProgram } from '../models/SettingForProgram.js';
+import { setSelectForSimple } from './menuSettingView/setSelectForSimple.js';
+import { setColorText } from './menuSettingView/setColorText.js';
+import { setColorBack } from './menuSettingView/setColorBack.js';
+import { setShadowBool } from './menuSettingView/setShadowBool.js';
+import { setRadiusBool } from './menuSettingView/setRadiusBool.js';
+import { setOpacity } from './menuSettingView/setOpacity.js';
 
 export function menuSettingView()
 {
@@ -20,9 +26,8 @@ export function menuSettingView()
           <option value="word-assembly-not-translate" ${setSelectForSimple("word-assembly-not-translate")}>Word Assembly (not translate)</option>
         </select>
 
-
         <p class="setting-color-p">Setting color work field</p>
-        <label for="color-for-working-field" class="form-label">Color Text</label>
+        <label for="color-text-for-working-field" class="form-label">Color Text</label>
         <select class="form-select" id="color-text-for-working-field">
           <option value="color-white" ${setColorText("color-white")}>White</option>
           <option value="color-black" ${setColorText("color-black")}>Black</option>
@@ -43,6 +48,19 @@ export function menuSettingView()
         <select class="form-select" id="border-radius-working-field">
           <option value="true" ${setRadiusBool("true")}>True</option>
           <option value="false" ${setRadiusBool("false")}>False</option>
+        </select>
+        <label for="opacity-working-field" class="form-label">Opacity</label>
+        <select class="form-select" id="opacity-working-field">
+          <option value="10" ${setOpacity("10")}>10%</option>
+          <option value="20" ${setOpacity("20")}>20%</option>
+          <option value="30" ${setOpacity("30")}>30%</option>
+          <option value="40" ${setOpacity("40")}>40%</option>
+          <option value="50" ${setOpacity("50")}>50%</option>
+          <option value="60" ${setOpacity("60")}>60%</option>
+          <option value="70" ${setOpacity("70")}>70%</option>
+          <option value="80" ${setOpacity("80")}>80%</option>
+          <option value="90" ${setOpacity("90")}>90%</option>
+          <option value="100" ${setOpacity("100")}>100%</option>
         </select>
       </div>
       
@@ -66,59 +84,17 @@ export function menuSettingView()
 
         SettingForProgram.selectColorText = document.querySelector('#color-text-for-working-field').value;
         localStorage.setItem('selectColorText', SettingForProgram.selectColorText);
-        // console.log(SettingForProgram.selectColorText);
 
         SettingForProgram.selectColorBackGround = document.querySelector('#color-for-back-working-field').value;
         localStorage.setItem('selectColorBackGround', SettingForProgram.selectColorBackGround);
 
         SettingForProgram.borderRadius = document.querySelector('#border-radius-working-field').value;
         localStorage.setItem('borderRadius', SettingForProgram.borderRadius);
-        console.log(SettingForProgram.borderRadius);
 
         SettingForProgram.shadow = document.querySelector('#shadow-working-field').value;
         localStorage.setItem('shadow', SettingForProgram.shadow);
+
+        SettingForProgram.opacity = document.querySelector('#opacity-working-field').value;
+        localStorage.setItem('opacity', SettingForProgram.opacity);
     };
-
-
-}
-
-
-// import { SettingForProgram } from '../models/SettingForProgram.js';
-// функция проверяет признак активности теста 
-function setSelectForSimple(nameTest) //selected 
-{
-    if (nameTest == SettingForProgram.selectTypeTest) return 'selected';
-    else return '';
-}
-
-// import { SettingForProgram } from '../models/SettingForProgram.js';
-// функция проверяет признак цвета текста
-function setColorText(nameTest) //selected 
-{
-    if (nameTest == SettingForProgram.selectColorText) return 'selected';
-    else return '';
-}
-
-// import { SettingForProgram } from '../models/SettingForProgram.js';
-// функция проверяет признак цвета текста
-function setColorBack(nameTest) //selected 
-{
-    if (nameTest == SettingForProgram.selectColorBackGround) return 'selected';
-    else return '';
-}
-
-// import { SettingForProgram } from '../models/SettingForProgram.js';
-// функция проверяет признак цвета текста
-function setShadowBool(nameTest) //selected 
-{
-    if (nameTest == SettingForProgram.shadow) return 'selected';
-    else return '';
-}
-
-// import { SettingForProgram } from '../models/SettingForProgram.js';
-// функция проверяет признак цвета текста
-function setRadiusBool(nameTest) //selected 
-{
-    if (nameTest == SettingForProgram.borderRadius) return 'selected';
-    else return '';
 }

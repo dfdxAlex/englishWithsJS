@@ -8,6 +8,7 @@ export function getContrastColorTwo(id) {
   
   let colorBack = 0;
   let colorText = 0;
+  id.style.opacity = SettingForProgram.opacity / 100;
   
   const timerId = setInterval(() => {
     // Придумать два цвета и получить их мнимую координату
@@ -29,13 +30,11 @@ export function getContrastColorTwo(id) {
       if (SettingForProgram.shadow !== 'false')
           id.style.boxShadow = getBoxShadow(colorBack);
 
-
       clearInterval(timerId);
     }
   }, 1);
 
 }
-
 
 function colorDifferenceRGB(color1, color2) {
   // Ожидаем цвета в формате "rgb(r,g,b)"

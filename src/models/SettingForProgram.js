@@ -8,14 +8,14 @@ export class SettingForProgram
     static selectColorBackGround = 'color-randome';
     static borderRadius = 'true';
     static shadow = 'true';
+    static opacity = '100';
 
     static {
         SettingForProgram.selectColorText = localStorage.getItem('selectColorText');
-        console.log(localStorage.getItem('selectColorText'));
         SettingForProgram.selectColorBackGround = localStorage.getItem('selectColorBackGround');
         SettingForProgram.borderRadius = localStorage.getItem('borderRadius');
         SettingForProgram.shadow = localStorage.getItem('shadow');
-        // console.log('Статик сработал');
+        SettingForProgram.opacity = localStorage.getItem('opacity');
     }
     
 
