@@ -15,7 +15,7 @@
         color: #333;
         label {
             font-weight: bold;
-            margin-top: 10px;
+            // margin-top: 10px;
         }
         select {
             width: 95%; 
@@ -25,6 +25,10 @@
         button {
             font-size: 1rem; 
             margin-top: 10px;
+        }
+        .setting-color-p {
+            margin-top: 30px;
+            font-weight: bold;
         }
     }
 }

@@ -3,6 +3,7 @@ import { arrayButtonForLevelTwoAndThree } from './arrayButtonForLevelTwoAndThree
 import { generateColorPair } from './generateColorPair.js';
 import { returnBorderRadius } from '../../services/setColorMenu/returnBorderRadius.js';
 import { getContrastColorTwo } from './getContrastColorTwo.js';
+// import { SettingForProgram } from '../../models/SettingForProgram.js';
 
 export function setColorForLevelToAndThree()
 {

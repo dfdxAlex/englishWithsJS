@@ -3,6 +3,20 @@ export class SettingForProgram
     // хранит тип теста, simple - это просто ответ на вопрос
     static selectTypeTestProperty = 'simple';
 
+    // Цветовые настройки рабочего поля
+    static selectColorText = 'color-randome';
+    static selectColorBackGround = 'color-randome';
+    static borderRadius = 'true';
+    static shadow = 'true';
+
+    static {
+        this.selectColorText = localStorage.getItem('selectColorText');
+        this.selectColorBackGround = localStorage.getItem('selectColorBackGround');
+        this.borderRadius = localStorage.getItem('borderRadius');
+        this.shadow = localStorage.getItem('shadow');
+    }
+    
+
     // инфа для цены баллов
     static inputLightNormalHard = 'light';
 
