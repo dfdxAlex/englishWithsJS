@@ -15,7 +15,8 @@ export class SettingForProgram
         SettingForProgram.selectColorBackGround = localStorage.getItem('selectColorBackGround');
         SettingForProgram.borderRadius = localStorage.getItem('borderRadius');
         SettingForProgram.shadow = localStorage.getItem('shadow');
-        SettingForProgram.opacity = localStorage.getItem('opacity');
+        if (localStorage.getItem('opacity'))
+            SettingForProgram.opacity = localStorage.getItem('opacity');
     }
     
 
