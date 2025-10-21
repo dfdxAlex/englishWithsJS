@@ -111,11 +111,11 @@ export function handleOkErr(str, event) {
     // Поле со старым или текущим вопроссом
     // Изменить вопрос только если есть правильный ответ на предыдущий
     if (str === 'Ok') {
-        colorErrorOrOk('bg-danger', "bg-success");
+        // colorErrorOrOk('bg-danger', "bg-success");
         handleLevelX(new LevelDataModel(localStorage.getItem('level')));
     }
     else {
-        colorErrorOrOk("bg-success",'bg-danger');
+        // colorErrorOrOk("bg-success",'bg-danger');
     }
     
     // пересчитать статистику и записать в хранилище

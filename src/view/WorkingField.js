@@ -243,10 +243,10 @@ export class WorkingField {
   createButtonHardNormalLight()
   {
     let button =`<div class="container text-center mt-5">
-                       <button id="button-light" class="btn btn-custom-yellow mx-2" onclick="selectLightNormalHard('light')">Light</button>
-                       <button id="button-normal" class="btn btn-custom-blue mx-2" onclick="selectLightNormalHard('normal')">Normal</button>`;
-    if (this.countValidOptions() > 2) button += `<button id="button-hard" class="btn btn-custom-white mx-2" onclick="selectLightNormalHard('hard')">Hard</button>`;
-    button += `<button id="button-help" class="btn btn-custom-help mx-2" onclick="handleHelp()">Help</button></div>`;
+                       <button id="button-light" class="btn mx-2" onclick="selectLightNormalHard('light')">Light</button>
+                       <button id="button-normal" class="btn mx-2" onclick="selectLightNormalHard('normal')">Normal</button>`;
+    if (this.countValidOptions() > 2) button += `<button id="button-hard" class="btn mx-2" onclick="selectLightNormalHard('hard')">Hard</button>`;
+    button += `<button id="button-help" class="btn mx-2" onclick="handleHelp()">Help</button></div>`;
 
        if (SettingForProgram.selectTypeTest === "word-assembly") {
            button =`<div class="container text-center mt-5">

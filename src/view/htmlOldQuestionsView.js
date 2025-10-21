@@ -13,7 +13,7 @@ export function htmlOldQuestionsView(obj) {
             ${obj.yourQuestion}
             <button 
               type='button' 
-              id='button-help' 
+              id='button-help-video-2' 
               class='button-help'
             >
               &#10067;
@@ -39,7 +39,10 @@ export function htmlOldQuestionsView(obj) {
                      p-2 
                      border 
                      question-old" 
-                   id="clicked_element">${obj.clickedElement}</div>
+                   id="clicked_element"
+              >
+                ${obj.clickedElement}
+              </div>
             </div>
           </div>
 
