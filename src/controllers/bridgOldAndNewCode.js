@@ -14,7 +14,12 @@ import { noonMenu } from '../services/noonMenu.js';
 import { WorkingField } from '../view/WorkingField.js';
 import { handleLevelX } from './handleLevelX.js';
 import { SettingForProgram } from '../models/SettingForProgram.js';
+import { indexQuestion } from './handleButtonLightNormHardHelp/indexQuestion.js';
+import { outputTranslateForTest } from './handleButtonOk/outputTranslateForTest.js';
 
+
+window.outputTranslateForTest = outputTranslateForTest;
+window.indexQuestion = indexQuestion;console.log('мост')
 window.SettingForProgram = SettingForProgram;
 window.LanguageController = new LanguageController();
 window.FactoryRegistr = FactoryRegistr;

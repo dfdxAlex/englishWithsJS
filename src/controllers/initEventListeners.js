@@ -11,6 +11,10 @@ import { activationMenuSetting } from './activationMenuSetting.js';
 
 // Здесь функции, которые должны отработать когда загрузится статическая страница
 window.addEventListener('load', () => {
+
+    // инициализация объекта
+    window.indexQuestion = {};
+
     hundleBlockMenu();
 
     // После рендеринга накинуть событие для изменения фона на группы менюшек.
@@ -43,6 +47,8 @@ window.addEventListener('load', () => {
 
     // инициализация переменных, хранящихся в классе данных
     window.SettingForProgram.initializeToProperty();
+
+
 
 });
 

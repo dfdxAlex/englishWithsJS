@@ -16,6 +16,8 @@ import { borderRadiusForLevelTwoAndThree } from './forHundleLevelX/borderRadiusF
 import { setColorForLevelToAndThree } from './forHundleLevelX/setColorForLevelToAndThree.js';
 import { FactoryRegistr } from '../models/FactoryRegistr.js';
 import { SettingForProgram } from '../models/SettingForProgram.js';
+import { selectLightNormalHard } from './handleButtonLightNormHardHelp.js';
+import { setClickForLightNormalHardHelp } from './forHundleLevelX/setClickForLightNormalHardHelp.js';
 
 export const handleLevelX = (dataObj, constIndexArray = false) =>
     {
@@ -83,6 +85,8 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
         if (SettingForProgram.selectTypeTest === 'word-assembly') {
             const workingField = document.getElementById('working_field');
             workingField.innerHTML = FactoryRegistr.getObject('WorkingField').initWordAssembly(mas, nameLeson);
+            setClickForLightNormalHardHelp();
+
         hundleForTranslate();
         borderRadiusForLevelTwoAndThree();
         setColorForLevelToAndThree();
@@ -97,7 +101,8 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
         if (SettingForProgram.selectTypeTest === 'word-assembly-not-translate') {
             const workingField = document.getElementById('working_field');
             workingField.innerHTML = FactoryRegistr.getObject('WorkingField').initWordAssemblyNotTranslate(mas, nameLeson, property);
-            
+            setClickForLightNormalHardHelp();       
+
         selectLightNormalHard();
         borderRadiusForLevelTwoAndThree();
         setColorForLevelToAndThree();

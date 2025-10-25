@@ -7,6 +7,8 @@
 import './styles/WorkingField.scss';
 import { getRandom } from '../services/getRandom.js';
 import { SettingForProgram } from '../models/SettingForProgram.js';
+// Не удалять
+import { selectLightNormalHard } from '../controllers/handleButtonLightNormHardHelp.js';
 
 export class WorkingField {
   // постоянная часть разметок кнопок с вариантами ответов
@@ -243,14 +245,14 @@ export class WorkingField {
   createButtonHardNormalLight()
   {
     let button =`<div class="container text-center mt-5">
-                       <button id="button-light" class="btn mx-2" onclick="selectLightNormalHard('light')">Light</button>
-                       <button id="button-normal" class="btn mx-2" onclick="selectLightNormalHard('normal')">Normal</button>`;
-    if (this.countValidOptions() > 2) button += `<button id="button-hard" class="btn mx-2" onclick="selectLightNormalHard('hard')">Hard</button>`;
-    button += `<button id="button-help" class="btn mx-2" onclick="handleHelp()">Help</button></div>`;
+                       <button id="button-light" class="btn mx-2">Light</button>
+                       <button id="button-normal" class="btn mx-2">Normal</button>`;
+    if (this.countValidOptions() > 2) button += `<button id="button-hard" class="btn mx-2">Hard</button>`;
+    button += `<button id="button-help" class="btn mx-2">Help</button></div>`;
 
        if (SettingForProgram.selectTypeTest === "word-assembly") {
            button =`<div class="container text-center mt-5">
-                        <button id="button-help" class="btn btn-custom-help-big mx-2" onclick="handleHelp()">Help</button>
+                        <button id="button-help" class="btn btn-custom-help-big mx-2">Help</button>
                     </div>`;
        }
        return button;

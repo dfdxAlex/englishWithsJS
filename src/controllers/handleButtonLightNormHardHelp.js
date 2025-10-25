@@ -1,6 +1,9 @@
 // Функции обрабатывающие кнопки Light, Normal, Hard, Help
 
-function selectLightNormalHard(level = false)
+import { returnWorkArray } from './handleButtonLightNormHardHelp/returnWorkArray.js';
+
+
+export function selectLightNormalHard(level = false)
 {
     if (!setHard()) 
         if (localStorage.getItem('light_normal_hard') === 'hard') 
@@ -62,33 +65,11 @@ function setHard()
     return false;
 }
 
-function handleHelp()
-{
-    let randomNumber = parseFloat(localStorage.getItem('randomNumber'));
-    const respons = document.getElementById('clicked_element');
-    // Если работаем со вторым тестом, то там всегда выбирается только главный вопрос
-    if (window.SettingForProgram.selectTypeTest === "word-assembly") randomNumber = 1;
-    respons.innerText = indexQuestion()[randomNumber-1];
-    respons.classList.remove('bg-success');
-    respons.classList.remove('bg-warning');
-    respons.classList.remove('bg-danger');
-    respons.style.backgroundColor = "#062654";
-    //признак того что был запрос на подсказку, блокирует добавление баллов
-    localStorage.setItem('was_click_help','true');
-}
 
-function returnWorkArray()
-{
-    const nameArray = 'window.fileDB.'+localStorage.getItem('nameArrayDb');
-    const workingArray = eval(nameArray);
-    return workingArray;
-}
 
-function indexQuestion()
-{
-    const index = localStorage.getItem('randomEl');
-    return returnWorkArray()[index];
-}
+
+
+
 
 // функция увеличивает нажатую кнопку из трёх, остальные две возвращает наза
 function selectButton(light, normal, hard)
@@ -130,6 +111,7 @@ function bigButton(id)
 
 function returnNormButton(id)
 {
+    if (!id) return false;
     let fonH = getComputedStyle(id).height;
     fonH = parseInt(fonH.match(/^\d+/)[0]);
     if (fonH > 39) {
@@ -137,3 +119,4 @@ function returnNormButton(id)
     id.style.height = "39px";
     }
 }
+
