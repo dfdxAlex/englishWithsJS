@@ -93,7 +93,6 @@ function indexQuestion()
 // функция увеличивает нажатую кнопку из трёх, остальные две возвращает наза
 function selectButton(light, normal, hard)
 {
-    console.log('клац');
     if (!window.indexQuestion.light)
         if (localStorage.getItem('light_normal_hard') === 'light') {
             bigButton(light);
@@ -121,7 +120,6 @@ function bigButton(id)
 {
     let fonH = getComputedStyle(id).height;
     fonH = parseInt(fonH.match(/^\d+/)[0]);
-    console.log(fonH);
     fonH = fonH * 1.4 + 'px';
     id.style.transition = 'height 0.3s ease';
     id.style.height = fonH;
