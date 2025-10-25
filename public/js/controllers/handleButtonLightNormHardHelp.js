@@ -5,6 +5,7 @@ function selectLightNormalHard(level = false)
     if (!setHard()) 
         if (localStorage.getItem('light_normal_hard') === 'hard') 
             localStorage.setItem('light_normal_hard', 'normal');
+
     // Условие позволяет функции работать обычным способом
     // без входящего параметра. Параметр тогда берется из
     // локального хранилища
@@ -12,7 +13,7 @@ function selectLightNormalHard(level = false)
         if (localStorage.getItem('light_normal_hard') !== null)
             level = localStorage.getItem('light_normal_hard');
         else {
-          level = 'light';
+            level = 'light';
         }
     }
 
@@ -46,6 +47,9 @@ function selectLightNormalHard(level = false)
         buttonNormal.classList.add('btn-custom-blue');
         buttonHard.classList.add('btn-custom-white-active');
     }
+
+        // Подсветить нажатую кнопку
+    selectButton(buttonLight, buttonNormal, buttonHard);
 }
 
 // Для повторного использования кода
@@ -84,4 +88,54 @@ function indexQuestion()
 {
     const index = localStorage.getItem('randomEl');
     return returnWorkArray()[index];
+}
+
+// функция увеличивает нажатую кнопку из трёх, остальные две возвращает наза
+function selectButton(light, normal, hard)
+{
+    console.log('клац');
+    if (!window.indexQuestion.light)
+        if (localStorage.getItem('light_normal_hard') === 'light') {
+            bigButton(light);
+            window.indexQuestion.light = true;
+            returnNormButton(normal);
+            returnNormButton(hard);
+        }
+    if (!window.indexQuestion.normal)
+        if (localStorage.getItem('light_normal_hard') === 'normal') {
+            bigButton(normal);
+            window.indexQuestion.normal = true;
+            returnNormButton(light);
+            returnNormButton(hard);
+        }
+    if (!window.indexQuestion.hard)
+        if (localStorage.getItem('light_normal_hard') === 'hard') {
+            bigButton(hard);
+            window.indexQuestion.hard = true;
+            returnNormButton(light);
+            returnNormButton(normal);
+        }
+}
+
+function bigButton(id)
+{
+    let fonH = getComputedStyle(id).height;
+    fonH = parseInt(fonH.match(/^\d+/)[0]);
+    console.log(fonH);
+    fonH = fonH * 1.4 + 'px';
+    id.style.transition = 'height 0.3s ease';
+    id.style.height = fonH;
+    window.indexQuestion.light = false;
+    window.indexQuestion.normal = false;
+    window.indexQuestion.hard = false;
+}
+
+function returnNormButton(id)
+{
+    let fonH = getComputedStyle(id).height;
+    fonH = parseInt(fonH.match(/^\d+/)[0]);
+    if (fonH > 39) {
+    id.style.transition = 'height 0.3s ease';
+    id.style.height = "39px";
+    }
 }

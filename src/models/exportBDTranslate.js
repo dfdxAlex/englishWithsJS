@@ -439,10 +439,10 @@ BDTranslate.push(
      'Teraźniejszość ciągła',
      'Present continuous']);
 BDTranslate.push(
-    ['Предыдущий вопрос/ответ', 
-     'Попереднє запитання/відповідь', 
-     'Poprzednie pytanie/odpowiedź',
-     'Previous question/answer']);
+    ['Последний тест', 
+     'Останній тест', 
+     'Ostatni test',
+     'The last test']);
 BDTranslate.push(
     ['Задание для теста', 
      'Завдання для тесту', 
