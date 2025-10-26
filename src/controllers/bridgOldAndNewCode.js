@@ -19,7 +19,7 @@ import { outputTranslateForTest } from './handleButtonOk/outputTranslateForTest.
 
 
 window.outputTranslateForTest = outputTranslateForTest;
-window.indexQuestion = indexQuestion;console.log('мост')
+window.indexQuestion = indexQuestion;
 window.SettingForProgram = SettingForProgram;
 window.LanguageController = new LanguageController();
 window.FactoryRegistr = FactoryRegistr;

@@ -51,7 +51,7 @@ export function selectLightNormalHard(level = false)
         buttonHard.classList.add('btn-custom-white-active');
     }
 
-        // Подсветить нажатую кнопку
+    // Подсветить нажатую кнопку
     selectButton(buttonLight, buttonNormal, buttonHard);
 }
 
@@ -65,31 +65,29 @@ function setHard()
     return false;
 }
 
-
-
-
-
-
-
 // функция увеличивает нажатую кнопку из трёх, остальные две возвращает наза
 function selectButton(light, normal, hard)
 {
-    if (!window.indexQuestion.light)
+    // scanButton(light, normal, hard);
+    // if (!window.indexQuestion.light)
         if (localStorage.getItem('light_normal_hard') === 'light') {
+            if (getHeightButton(light) > 39) return false;
             bigButton(light);
             window.indexQuestion.light = true;
             returnNormButton(normal);
             returnNormButton(hard);
         }
-    if (!window.indexQuestion.normal)
+    // if (!window.indexQuestion.normal)
         if (localStorage.getItem('light_normal_hard') === 'normal') {
+            if (getHeightButton(normal) > 39) return false;
             bigButton(normal);
             window.indexQuestion.normal = true;
             returnNormButton(light);
             returnNormButton(hard);
         }
-    if (!window.indexQuestion.hard)
+    // if (!window.indexQuestion.hard)
         if (localStorage.getItem('light_normal_hard') === 'hard') {
+            if (getHeightButton(hard) > 39) return false;
             bigButton(hard);
             window.indexQuestion.hard = true;
             returnNormButton(light);
@@ -101,7 +99,7 @@ function bigButton(id)
 {
     let fonH = getComputedStyle(id).height;
     fonH = parseInt(fonH.match(/^\d+/)[0]);
-    fonH = fonH * 1.4 + 'px';
+    fonH = fonH * 1.7 + 'px';
     id.style.transition = 'height 0.3s ease';
     id.style.height = fonH;
     window.indexQuestion.light = false;
@@ -112,11 +110,18 @@ function bigButton(id)
 function returnNormButton(id)
 {
     if (!id) return false;
-    let fonH = getComputedStyle(id).height;
-    fonH = parseInt(fonH.match(/^\d+/)[0]);
+    let fonH = getHeightButton(id);
     if (fonH > 39) {
     id.style.transition = 'height 0.3s ease';
     id.style.height = "39px";
     }
+}
+
+function getHeightButton(id)
+{
+    if (!id) return false;
+    let fonH = getComputedStyle(id).height;
+    fonH = parseInt(fonH.match(/^\d+/)[0]);
+    return fonH;
 }
 

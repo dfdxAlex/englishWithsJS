@@ -85,8 +85,8 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
         if (SettingForProgram.selectTypeTest === 'word-assembly') {
             const workingField = document.getElementById('working_field');
             workingField.innerHTML = FactoryRegistr.getObject('WorkingField').initWordAssembly(mas, nameLeson);
-            setClickForLightNormalHardHelp();
-
+        
+        setClickForLightNormalHardHelp();
         hundleForTranslate();
         borderRadiusForLevelTwoAndThree();
         setColorForLevelToAndThree();
@@ -101,8 +101,8 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
         if (SettingForProgram.selectTypeTest === 'word-assembly-not-translate') {
             const workingField = document.getElementById('working_field');
             workingField.innerHTML = FactoryRegistr.getObject('WorkingField').initWordAssemblyNotTranslate(mas, nameLeson, property);
-            setClickForLightNormalHardHelp();       
-
+            
+        setClickForLightNormalHardHelp();       
         selectLightNormalHard();
         borderRadiusForLevelTwoAndThree();
         setColorForLevelToAndThree();
