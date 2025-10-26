@@ -13,7 +13,7 @@ import { activationMenuSetting } from './activationMenuSetting.js';
 window.addEventListener('load', () => {
 
     // инициализация объекта
-    window.indexQuestion = {};
+    // window.indexQuestion = {};
 
     hundleBlockMenu();
 

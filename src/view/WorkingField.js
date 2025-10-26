@@ -8,7 +8,7 @@ import './styles/WorkingField.scss';
 import { getRandom } from '../services/getRandom.js';
 import { SettingForProgram } from '../models/SettingForProgram.js';
 // Не удалять
-import { selectLightNormalHard } from '../controllers/handleButtonLightNormHardHelp.js';
+import { selectLightNormalHard } from '../controllers/selectLightNormalHard.js';
 
 export class WorkingField {
   // постоянная часть разметок кнопок с вариантами ответов

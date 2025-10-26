@@ -16,7 +16,7 @@ import { borderRadiusForLevelTwoAndThree } from './forHundleLevelX/borderRadiusF
 import { setColorForLevelToAndThree } from './forHundleLevelX/setColorForLevelToAndThree.js';
 import { FactoryRegistr } from '../models/FactoryRegistr.js';
 import { SettingForProgram } from '../models/SettingForProgram.js';
-import { selectLightNormalHard } from './handleButtonLightNormHardHelp.js';
+import { selectLightNormalHard } from './selectLightNormalHard.js';
 import { setClickForLightNormalHardHelp } from './forHundleLevelX/setClickForLightNormalHardHelp.js';
 
 export const handleLevelX = (dataObj, constIndexArray = false) =>

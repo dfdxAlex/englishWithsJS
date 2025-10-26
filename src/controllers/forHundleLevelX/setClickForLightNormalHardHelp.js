@@ -1,4 +1,4 @@
-import { selectLightNormalHard } from '../handleButtonLightNormHardHelp.js';
+import { selectLightNormalHard } from '../selectLightNormalHard.js';
 import { handleHelp } from '../handleButtonLightNormHardHelp/handleHelp.js';
 
 export function setClickForLightNormalHardHelp()
