@@ -1182,7 +1182,7 @@ export const unit27 = [
   ],
   [
     "Where shall we stay during the trip?",
-    "You shall stay at a seaside hotel during the trip.",
+    "You will stay at a seaside hotel during the trip.",
     "You stayed at a seaside hotel during the trip.",
     "You are staying at a seaside hotel during the trip.",
     "You have stayed at a seaside hotel during the trip.",
@@ -1967,9 +1967,9 @@ export const unit27 = [
     "You shared a project update at the meeting.",
     "You are sharing a project update at the meeting.",
     "You have shared a project update at the meeting.",
-    "Что мне поделиться на встрече?",
-    "Що мені поділитися на зустрічі?",
-    "Co podzielę się na spotkaniu?"
+    "Чем мне поделиться на встрече?",
+    "Чим мені поділитися на зустрічі?",
+    "Czym mam się podzielić na spotkaniu?"
   ],
   [
     "Where will we meet for the reunion?",
