@@ -5,6 +5,7 @@
 
 import { LanguageController } from '../controllers/LanguageController.js';
 import { WorkingField } from '../view/WorkingField.js';
+import { EventController } from '../controllers/EventController.js';
 
 export class FactoryRegistr
 {

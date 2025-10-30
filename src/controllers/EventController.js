@@ -2,12 +2,16 @@
 // неправильного клика. Первый вариант всегда правильный
 // остальные три не правильные.
 
+import { handleOkErr } from './handleOkErr.js';
+import { SettingForProgram } from '../models/SettingForProgram.js';
+import { handleLevelX } from './handleLevelX.js';
+
 // объект достаточно просто создать в нужном месте
-class EventController {
+export class EventController {
     init() {
 
         // Оригинальные обработчики для первого варианта теста
-        if (window.SettingForProgram.selectTypeTest === "simple") {
+        if (SettingForProgram.selectTypeTest === "simple") {
             let optionsOne = document.getElementById('option1');
             let optionsTwo = document.getElementById('option2');
             let optionsThree = document.getElementById('option3');
@@ -25,26 +29,26 @@ class EventController {
 
 
             // Всегда правильный вариант ответа, по определению.
-            optionsOne.onclick = window.handleOkErr.bind(null,'Ok');
+            optionsOne.onclick = handleOkErr.bind(null,'Ok');
 
             if (optionsOneString !== optionsTwoString)
-                optionsTwo.onclick = window.handleOkErr.bind(null,'Error');
+                optionsTwo.onclick = handleOkErr.bind(null,'Error');
             else 
-                optionsTwo.onclick = window.handleOkErr.bind(null,'Ok');
+                optionsTwo.onclick = handleOkErr.bind(null,'Ok');
 
             if (optionsOneString !== optionsThreeString)
-                optionsThree.onclick = window.handleOkErr.bind(null,'Error');
+                optionsThree.onclick = handleOkErr.bind(null,'Error');
             else
-                optionsThree.onclick = window.handleOkErr.bind(null,'Ok');
+                optionsThree.onclick = handleOkErr.bind(null,'Ok');
 
             if (optionsOneString !== optionsFourString)
-                optionsFour.onclick = window.handleOkErr.bind(null,'Error');
+                optionsFour.onclick = handleOkErr.bind(null,'Error');
             else
-                optionsFour.onclick = window.handleOkErr.bind(null,'Ok');
+                optionsFour.onclick = handleOkErr.bind(null,'Ok');
         }
 
         // Оригинальные обработчики событий для второго варианта теста
-        if (window.SettingForProgram.selectTypeTest === "word-assembly") {
+        if (SettingForProgram.selectTypeTest === "word-assembly") {
             let setWorkField = document.querySelector('.fieldSetWorkField');
             if (setWorkField) {
                 setWorkField.onclick = handleClickTestTwo;
@@ -58,14 +62,14 @@ class EventController {
                     const obj = new window.LevelDataModel(i);
                     // перерисовать рабочее поле.
                     // параметр true отключает генерацию нового вопросса
-                    window.handleLevelX(obj, true);
+                    handleLevelX(obj, true);
                 };
             }
         }
 
         // Оригинальные обработчики событий для третьего варианта теста
         // По возможности объеденить этот блок с предыдущим
-        if (window.SettingForProgram.selectTypeTest === "word-assembly-not-translate") {
+        if (SettingForProgram.selectTypeTest === "word-assembly-not-translate") {
             let setWorkField = document.querySelector('.fieldSetWorkField');
             if (setWorkField) {
                 setWorkField.onclick = handleClickTestTwo;
@@ -78,7 +82,7 @@ class EventController {
                     const obj = new window.LevelDataModel(DataOk.level.int);
                     // перерисовать рабочее поле.
                     // параметр true отключает генерацию нового вопросса
-                    window.handleLevelX(obj, true);
+                    handleLevelX(obj, true);
                 };
             }
         }

@@ -2523,6 +2523,1006 @@ export const unit27 = [
     "Глина готова, і інструменти розставлені. Запланована сесія ліплення.",
     "Glina jest przygotowana, a narzędzia ustawione. Zaplanowana jest sesja rzeźbiarska."
   ],
+[
+    "What shall we cook for dinner tonight?",
+    "We shall cook pasta with tomato sauce.",
+    "We are cooking pasta with tomato sauce.",
+    "We cooked pasta with tomato sauce last night.",
+    "We have cooked pasta with tomato sauce many times.",
+    "Что нам приготовить на ужин сегодня вечером?",
+    "Що нам приготувати на вечерю сьогодні ввечері?",
+    "Co powinniśmy ugotować na kolację dzisiaj wieczorem?"
+  ],
+  [
+    "Where will you park the car tomorrow?",
+    "You will park the car in the underground garage.",
+    "You are parking the car in the underground garage.",
+    "You parked the car in the underground garage yesterday.",
+    "You have parked the car in the underground garage before.",
+    "Где ты припаркуешь машину завтра?",
+    "Де ти припаркуєш машину завтра?",
+    "Gdzie zaparkujesz samochód jutro?"
+  ],
+  [
+    "What shall I wear to the wedding?",
+    "I shall wear a long blue dress.",
+    "I am wearing a long blue dress.",
+    "I wore a long blue dress last year.",
+    "I have worn a long blue dress to many events.",
+    "Что мне надеть на свадьбу?",
+    "Що мені вдягнути на весілля?",
+    "Co powinienem założyć na wesele?"
+  ],
+  [
+    "When will she meet us for coffee?",
+    "She will meet us for coffee at 10 a.m.",
+    "She is meeting us for coffee at 10 a.m.",
+    "She met us for coffee at 10 a.m. yesterday.",
+    "She has met us for coffee at 10 a.m. many times.",
+    "Когда она встретится с нами за кофе?",
+    "Коли вона зустрінеться з нами за кавою?",
+    "Kiedy spotka się z nami na kawę?"
+  ],
+  [
+    "What shall we bring to the picnic?",
+    "We shall bring homemade sandwiches.",
+    "We are bringing homemade sandwiches.",
+    "We brought homemade sandwiches last time.",
+    "We have brought homemade sandwiches to every picnic.",
+    "Что нам принести на пикник?",
+    "Що нам принести на пікнік?",
+    "Co powinniśmy przynieść na piknik?"
+  ],
+  [
+    "Where will they stay during the trip?",
+    "They will stay at a cozy hotel by the lake.",
+    "They are staying at a cozy hotel by the lake.",
+    "They stayed at a cozy hotel by the lake last year.",
+    "They have stayed at a cozy hotel by the lake before.",
+    "Где они остановятся во время поездки?",
+    "Де вони зупиняться під час поїздки?",
+    "Gdzie zatrzymają się podczas podróży?"
+  ],
+  [
+    "What shall I study for the exam?",
+    "I shall study the last three chapters.",
+    "I am studying the last three chapters.",
+    "I studied the last three chapters last night.",
+    "I have studied the last three chapters already.",
+    "Что мне учить к экзамену?",
+    "Що мені вчити до іспиту?",
+    "Czego powinienem uczyć się na egzamin?"
+  ],
+  [
+    "How will he decorate the room?",
+    "He will decorate the room with balloons and lights.",
+    "He is decorating the room with balloons and lights.",
+    "He decorated the room with balloons and lights last party.",
+    "He has decorated the room with balloons and lights many times.",
+    "Как он украсит комнату?",
+    "Як він прикрасить кімнату?",
+    "Jak udekoruje pokój?"
+  ],
+  [
+    "What shall we write in the email?",
+    "We shall write a formal apology.",
+    "We are writing a formal apology.",
+    "We wrote a formal apology yesterday.",
+    "We have written a formal apology before.",
+    "Что нам написать в письме?",
+    "Що нам написати в листі?",
+    "Co powinniśmy napisać w e-mailu?"
+  ],
+  [
+    "Where will she go for vacation?",
+    "She will go to the mountains.",
+    "She is going to the mountains.",
+    "She went to the mountains last summer.",
+    "She has gone to the mountains several times.",
+    "Куда она поедет в отпуск?",
+    "Куди вона поїде у відпустку?",
+    "Gdzie pojedzie na wakacje?"
+  ],
+  [
+    "What shall I gift my friend?",
+    "I shall gift a handmade scarf.",
+    "I am gifting a handmade scarf.",
+    "I gifted a handmade scarf last birthday.",
+    "I have gifted a handmade scarf to many friends.",
+    "Что мне подарить другу?",
+    "Що мені подарувати другові?",
+    "Co powinienem podarować przyjacielowi?"
+  ],
+  [
+    "When will you call the doctor?",
+    "You will call the doctor tomorrow morning.",
+    "You are calling the doctor tomorrow morning.",
+    "You called the doctor last week.",
+    "You have called the doctor several times this year.",
+    "Когда ты позвонишь врачу?",
+    "Коли ти зателефонуєш лікарю?",
+    "Kiedy zadzwonisz do lekarza?"
+  ],
+  [
+    "What shall we watch tonight?",
+    "We shall watch a comedy movie.",
+    "We are watching a comedy movie.",
+    "We watched a comedy movie last night.",
+    "We have watched a comedy movie many times.",
+    "Что нам посмотреть сегодня вечером?",
+    "Що нам подивитися сьогодні ввечері?",
+    "Co powinniśmy obejrzeć dzisiaj wieczorem?"
+  ],
+  [
+    "Where will he apply for the job?",
+    "He will apply for the job online.",
+    "He is applying for the job online.",
+    "He applied for the job online last month.",
+    "He has applied for the job online before.",
+    "Где он подаст заявку на работу?",
+    "Де він подасть заявку на роботу?",
+    "Gdzie złoży podanie o pracę?"
+  ],
+  [
+    "What shall I clean first?",
+    "I shall clean the kitchen first.",
+    "I am cleaning the kitchen first.",
+    "I cleaned the kitchen first last time.",
+    "I have cleaned the kitchen first every weekend.",
+    "Что мне убрать первым?",
+    "Що мені прибрати першим?",
+    "Co powinienem posprzątać najpierw?"
+  ],
+  [
+    "How will they travel to the city?",
+    "They will travel to the city by train.",
+    "They are traveling to the city by train.",
+    "They traveled to the city by train last week.",
+    "They have traveled to the city by train many times.",
+    "Как они доберутся до города?",
+    "Як вони дістануться до міста?",
+    "Jak dostaną się do miasta?"
+  ],
+  [
+    "What shall we plant in the garden?",
+    "We shall plant roses and tulips.",
+    "We are planting roses and tulips.",
+    "We planted roses and tulips last spring.",
+    "We have planted roses and tulips every year.",
+    "Что нам посадить в саду?",
+    "Що нам посадити в саду?",
+    "Co powinniśmy posadzić w ogrodzie?"
+  ],
+  [
+    "Where will she hide the gift?",
+    "She will hide the gift in the closet.",
+    "She is hiding the gift in the closet.",
+    "She hid the gift in the closet last time.",
+    "She has hidden the gift in the closet before.",
+    "Где она спрячет подарок?",
+    "Де вона сховатиме подарунок?",
+    "Gdzie schowa prezent?"
+  ],
+  [
+    "What shall I order for lunch?",
+    "I shall order a salad and soup.",
+    "I am ordering a salad and soup.",
+    "I ordered a salad and soup yesterday.",
+    "I have ordered a salad and soup many times.",
+    "Что мне заказать на обед?",
+    "Що мені замовити на обід?",
+    "Co powinienem zamówić na obiad?"
+  ],
+  [
+    "When will he finish the report?",
+    "He will finish the report by Friday.",
+    "He is finishing the report by Friday.",
+    "He finished the report by Friday last time.",
+    "He has finished the report by Friday every month.",
+    "Когда он закончит отчёт?",
+    "Коли він закінчить звіт?",
+    "Kiedy skończy raport?"
+  ],
+  [
+    "What shall we discuss at the meeting?",
+    "We shall discuss the new project.",
+    "We are discussing the new project.",
+    "We discussed the new project last week.",
+    "We have discussed the new project several times.",
+    "Что нам обсудить на собрании?",
+    "Що нам обговорити на нараді?",
+    "Co powinniśmy omówić na spotkaniu?"
+  ],
+  [
+    "Where will you charge your phone?",
+    "You will charge your phone in the living room.",
+    "You are charging your phone in the living room.",
+    "You charged your phone in the living room yesterday.",
+    "You have charged your phone in the living room many times.",
+    "Где ты зарядишь телефон?",
+    "Де ти зарядиш телефон?",
+    "Gdzie naładujesz telefon?"
+  ],
+  [
+    "What shall I name the puppy?",
+    "I shall name the puppy Max.",
+    "I am naming the puppy Max.",
+    "I named the puppy Max last week.",
+    "I have named the puppy Max already.",
+    "Как мне назвать щенка?",
+    "Як мені назвати цуценя?",
+    "Jak powinienem nazwać szczeniaka?"
+  ],
+  [
+    "How will she prepare for the presentation?",
+    "She will prepare for the presentation with slides.",
+    "She is preparing for the presentation with slides.",
+    "She prepared for the presentation with slides last time.",
+    "She has prepared for the presentation with slides before.",
+    "Как она подготовится к презентации?",
+    "Як вона підготуватися до презентації?",
+    "Jak przygotuje się do prezentacji?"
+  ],
+  [
+    "What shall we fix in the house?",
+    "We shall fix the leaky faucet.",
+    "We are fixing the leaky faucet.",
+    "We fixed the leaky faucet last month.",
+    "We have fixed the leaky faucet before.",
+    "Что нам починить в доме?",
+    "Що нам полагодити в будинку?",
+    "Co powinniśmy naprawić w domu?"
+  ],
+  [
+    "Where will they celebrate the anniversary?",
+    "They will celebrate the anniversary at a restaurant.",
+    "They are celebrating the anniversary at a restaurant.",
+    "They celebrated the anniversary at a restaurant last year.",
+    "They have celebrated the anniversary at a restaurant many times.",
+    "Где они отпразднуют годовщину?",
+    "Де вони відсвяткують річницю?",
+    "Gdzie będą świętować rocznicę?"
+  ],
+  [
+    "What shall I read before sleep?",
+    "I shall read a short story.",
+    "I am reading a short story.",
+    "I read a short story last night.",
+    "I have read a short story every evening.",
+    "Что мне почитать перед сном?",
+    "Що мені почитати перед сном?",
+    "Co powinienem przeczytać przed snem?"
+  ],
+  [
+    "When will we arrive at the station?",
+    "We will arrive at the station at 7 p.m.",
+    "We are arriving at the station at 7 p.m.",
+    "We arrived at the station at 7 p.m. yesterday.",
+    "We have arrived at the station at 7 p.m. many times.",
+    "Когда мы прибудем на вокзал?",
+    "Коли ми прибудемо на вокзал?",
+    "Kiedy przybędziemy na dworzec?"
+  ],
+  [
+    "What shall I draw on the card?",
+    "I shall draw a heart and flowers.",
+    "I am drawing a heart and flowers.",
+    "I drew a heart and flowers last time.",
+    "I have drawn a heart and flowers on many cards.",
+    "Что мне нарисовать на открытке?",
+    "Що мені намалювати на листівці?",
+    "Co powinienem narysować na kartce?"
+  ],
+  [
+    "How will you save money this month?",
+    "You will save money by cooking at home.",
+    "You are saving money by cooking at home.",
+    "You saved money by cooking at home last month.",
+    "You have saved money by cooking at home before.",
+    "Как ты сэкономишь деньги в этом месяце?",
+    "Як ти заощадиш гроші цього місяця?",
+    "Jak zaoszczędzisz pieniądze w tym miesiącu?"
+  ],
+  [
+    "What shall we bake for the party?",
+    "We shall bake chocolate cookies.",
+    "We are baking chocolate cookies.",
+    "We baked chocolate cookies last party.",
+    "We have baked chocolate cookies for every party.",
+    "Что нам испечь для вечеринки?",
+    "Що нам спекти для вечірки?",
+    "Co powinniśmy upiec na imprezę?"
+  ],
+  [
+    "Where will he hang the picture?",
+    "He will hang the picture above the sofa.",
+    "He is hanging the picture above the sofa.",
+    "He hung the picture above the sofa last week.",
+    "He has hung the picture above the sofa before.",
+    "Где он повесит картину?",
+    "Де він повісить картину?",
+    "Gdzie powiesi obraz?"
+  ],
+  [
+    "What shall I buy at the store?",
+    "I shall buy milk and bread.",
+    "I am buying milk and bread.",
+    "I bought milk and bread yesterday.",
+    "I have bought milk and bread many times.",
+    "Что мне купить в магазине?",
+    "Що мені купити в магазині?",
+    "Co powinienem kupić w sklepie?"
+  ],
+  [
+    "When will she start the new job?",
+    "She will start the new job next Monday.",
+    "She is starting the new job next Monday.",
+    "She started the new job last Monday.",
+    "She has started the new job already.",
+    "Когда она начнёт новую работу?",
+    "Коли вона почне нову роботу?",
+    "Kiedy rozpocznie nową pracę?"
+  ],
+  [
+    "What shall we paint on the wall?",
+    "We shall paint a mural with flowers.",
+    "We are painting a mural with flowers.",
+    "We painted a mural with flowers last summer.",
+    "We have painted a mural with flowers before.",
+    "Что нам нарисовать на стене?",
+    "Що нам намалювати на стіні?",
+    "Co powinniśmy namalować na ścianie?"
+  ],
+  [
+    "Where will they rent an apartment?",
+    "They will rent an apartment downtown.",
+    "They are renting an apartment downtown.",
+    "They rented an apartment downtown last year.",
+    "They have rented an apartment downtown before.",
+    "Где они снимут квартиру?",
+    "Де вони орендують квартиру?",
+    "Gdzie wynajmą mieszkanie?"
+  ],
+  [
+    "What shall I learn this weekend?",
+    "I shall learn a new recipe.",
+    "I am learning a new recipe.",
+    "I learned a new recipe last weekend.",
+    "I have learned a new recipe many times.",
+    "Что мне выучить на этих выходных?",
+    "Що мені вивчити на цих вихідних?",
+    "Czego powinienem nauczyć się w ten weekend?"
+  ],
+  [
+    "How will he contact the client?",
+    "He will contact the client by email.",
+    "He is contacting the client by email.",
+    "He contacted the client by email yesterday.",
+    "He has contacted the client by email before.",
+    "Как он свяжется с клиентом?",
+    "Як він зв'яжеться з клієнтом?",
+    "Jak skontaktuje się z klientem?"
+  ],
+  [
+    "What shall we organize for the event?",
+    "We shall organize a photo booth.",
+    "We are organizing a photo booth.",
+    "We organized a photo booth last event.",
+    "We have organized a photo booth many times.",
+    "Что нам организовать для мероприятия?",
+    "Що нам організувати для заходу?",
+    "Co powinniśmy zorganizować na wydarzenie?"
+  ],
+  [
+    "Where will you store the documents?",
+    "You will store the documents in the cloud.",
+    "You are storing the documents in the cloud.",
+    "You stored the documents in the cloud yesterday.",
+    "You have stored the documents in the cloud before.",
+    "Где ты будешь хранить документы?",
+    "Де ти зберігатимеш документи?",
+    "Gdzie będziesz przechowywał dokumenty?"
+  ],
+  [
+    "What shall I photograph at the festival?",
+    "I shall photograph the fireworks.",
+    "I am photographing the fireworks.",
+    "I photographed the fireworks last year.",
+    "I have photographed the fireworks many times.",
+    "Что мне сфотографировать на фестивале?",
+    "Що мені сфотографувати на фестивалі?",
+    "Co powinienem sfotografować na festiwalu?"
+  ],
+  [
+    "When will she deliver the package?",
+    "She will deliver the package tomorrow.",
+    "She is delivering the package tomorrow.",
+    "She delivered the package yesterday.",
+    "She has delivered the package many times.",
+    "Когда она доставит посылку?",
+    "Коли вона доставить посилку?",
+    "Kiedy dostarczy paczkę?"
+  ],
+  [
+    "What shall we recycle this week?",
+    "We shall recycle plastic bottles.",
+    "We are recycling plastic bottles.",
+    "We recycled plastic bottles last week.",
+    "We have recycled plastic bottles every week.",
+    "Что нам переработать на этой неделе?",
+    "Що нам переробити на цьому тижні?",
+    "Co powinniśmy poddać recyklingowi w tym tygodniu?"
+  ],
+  [
+    "Where will he volunteer next month?",
+    "He will volunteer at the animal shelter.",
+    "He is volunteering at the animal shelter.",
+    "He volunteered at the animal shelter last month.",
+    "He has volunteered at the animal shelter before.",
+    "Где он будет волонтёрить в следующем месяце?",
+    "Де він волонтеритиме наступного місяця?",
+    "Gdzie będzie wolontariuszem w przyszłym miesiącu?"
+  ],
+  [
+    "What shall I pack for the trip?",
+    "I shall pack warm clothes.",
+    "I am packing warm clothes.",
+    "I packed warm clothes last trip.",
+    "I have packed warm clothes for every trip.",
+    "Что мне собрать в поездку?",
+    "Що мені зібрати в поїздку?",
+    "Co powinienem spakować na wyjazd?"
+  ],
+  [
+    "How will they promote the product?",
+    "They will promote the product on social media.",
+    "They are promoting the product on social media.",
+    "They promoted the product on social media last launch.",
+    "They have promoted the product on social media before.",
+    "Как они продвинут продукт?",
+    "Як вони просуватимуть продукт?",
+    "Jak będą promować produkt?"
+  ],
+  [
+    "What shall we donate to charity?",
+    "We shall donate old clothes.",
+    "We are donating old clothes.",
+    "We donated old clothes last year.",
+    "We have donated old clothes many times.",
+    "Что нам пожертвовать на благотворительность?",
+    "Що нам пожертвувати на благодійність?",
+    "Co powinniśmy przekazać na cele charytatywne?"
+  ],
+  [
+    "Where will you install the new software?",
+    "You will install the new software on the server.",
+    "You are installing the new software on the server.",
+    "You installed the new software on the server yesterday.",
+    "You have installed the new software on the server before.",
+    "Где ты установишь новое ПО?",
+    "Де ти встановиш нове ПЗ?",
+    "Gdzie zainstalujesz nowe oprogramowanie?"
+  ],
+  [
+    "What shall I reserve for the dinner?",
+    "I shall reserve a table for six.",
+    "I am reserving a table for six.",
+    "I reserved a table for six last time.",
+    "I have reserved a table for six many times.",
+    "Что мне забронировать на ужин?",
+    "Що мені забронювати на вечерю?",
+    "Co powinienem zarezerwować na kolację?"
+  ],
+  [
+    "When will he publish the article?",
+    "He will publish the article next week.",
+    "He is publishing the article next week.",
+    "He published the article last week.",
+    "He has published the article already.",
+    "Когда он опубликует статью?",
+    "Коли він опублікує статтю?",
+    "Kiedy opublikuje artykuł?"
+  ],
+[
+    "What are you cooking for dinner tonight?",
+    "I am cooking pasta with tomato sauce.",
+    "I will cook pasta with tomato sauce.",
+    "I cooked pasta with tomato sauce last night.",
+    "I have cooked pasta with tomato sauce many times.",
+    "Что ты готовишь на ужин сегодня вечером?",
+    "Що ти готуєш на вечерю сьогодні ввечері?",
+    "Co gotujesz na kolację dzisiaj wieczorem?"
+  ],
+  [
+    "Where are you parking the car right now?",
+    "I am parking the car in the underground garage.",
+    "I will park the car in the underground garage.",
+    "I parked the car in the underground garage yesterday.",
+    "I have parked the car in the underground garage before.",
+    "Где ты паркуешь машину прямо сейчас?",
+    "Де ти паркуєш машину прямо зараз?",
+    "Gdzie parkujesz samochód teraz?"
+  ],
+  [
+    "What am I wearing to the wedding?",
+    "You are wearing a long blue dress.",
+    "You will wear a long blue dress.",
+    "You wore a long blue dress last year.",
+    "You have worn a long blue dress to many events.",
+    "Что я надеваю на свадьбу?",
+    "Що я вдягаю на весілля?",
+    "Co zakładam na wesele?"
+  ],
+  [
+    "When are we meeting for coffee?",
+    "We are meeting for coffee at 10 a.m.",
+    "We shall meet for coffee at 10 a.m.",
+    "We met for coffee at 10 a.m. yesterday.",
+    "We have met for coffee at 10 a.m. many times.",
+    "Когда мы встречаемся за кофе?",
+    "Коли ми зустрічаємося за кавою?",
+    "Kiedy spotykamy się na kawę?"
+  ],
+  [
+    "What are you bringing to the picnic?",
+    "I am bringing homemade sandwiches.",
+    "I will bring homemade sandwiches.",
+    "I brought homemade sandwiches last time.",
+    "I have brought homemade sandwiches to every picnic.",
+    "Что ты приносишь на пикник?",
+    "Що ти приносиш на пікнік?",
+    "Co przynosisz na piknik?"
+  ],
+  [
+    "Where are they staying during the trip?",
+    "They are staying at a cozy hotel by the lake.",
+    "They will stay at a cozy hotel by the lake.",
+    "They stayed at a cozy hotel by the lake last year.",
+    "They have stayed at a cozy hotel by the lake before.",
+    "Где они останавливаются во время поездки?",
+    "Де вони зупиняються під час поїздки?",
+    "Gdzie zatrzymują się podczas podróży?"
+  ],
+  [
+    "What am I studying for the exam?",
+    "You are studying the last three chapters.",
+    "You will study the last three chapters.",
+    "You studied the last three chapters last night.",
+    "You have studied the last three chapters already.",
+    "Что я учу к экзамену?",
+    "Що я вчу до іспиту?",
+    "Czego uczę się na egzamin?"
+  ],
+  [
+    "How are you decorating the room?",
+    "I am decorating the room with balloons and lights.",
+    "I will decorate the room with balloons and lights.",
+    "I decorated the room with balloons and lights last party.",
+    "I have decorated the room with balloons and lights many times.",
+    "Как ты украшаешь комнату?",
+    "Як ти прикрашаєш кімнату?",
+    "Jak dekorujesz pokój?"
+  ],
+  [
+    "What are we writing in the email?",
+    "We are writing a formal apology.",
+    "We shall write a formal apology.",
+    "We wrote a formal apology yesterday.",
+    "We have written a formal apology before.",
+    "Что мы пишем в письме?",
+    "Що ми пишемо в листі?",
+    "Co piszemy w e-mailu?"
+  ],
+  [
+    "Where is she going for vacation?",
+    "She is going to the mountains.",
+    "She will go to the mountains.",
+    "She went to the mountains last summer.",
+    "She has gone to the mountains several times.",
+    "Куда она едет в отпуск?",
+    "Куди вона їде у відпустку?",
+    "Gdzie jedzie na wakacje?"
+  ],
+  [
+    "What am I gifting my friend?",
+    "You are gifting a handmade scarf.",
+    "You will gift a handmade scarf.",
+    "You gifted a handmade scarf last birthday.",
+    "You have gifted a handmade scarf to many friends.",
+    "Что я дарю другу?",
+    "Що я дарую другові?",
+    "Co daję w prezencie przyjacielowi?"
+  ],
+  [
+    "When are you calling the doctor?",
+    "I am calling the doctor right now.",
+    "I will call the doctor tomorrow morning.",
+    "I called the doctor last week.",
+    "I have called the doctor several times this year.",
+    "Когда ты звонишь врачу?",
+    "Коли ти дзвониш лікарю?",
+    "Kiedy dzwonisz do lekarza?"
+  ],
+  [
+    "What are we watching tonight?",
+    "We are watching a comedy movie.",
+    "We shall watch a comedy movie.",
+    "We watched a comedy movie last night.",
+    "We have watched a comedy movie many times.",
+    "Что мы смотрим сегодня вечером?",
+    "Що ми дивимося сьогодні ввечері?",
+    "Co oglądamy dzisiaj wieczorem?"
+  ],
+  [
+    "Where is he applying for the job?",
+    "He is applying for the job online.",
+    "He will apply for the job online.",
+    "He applied for the job online last month.",
+    "He has applied for the job online before.",
+    "Где он подаёт заявку на работу?",
+    "Де він подає заявку на роботу?",
+    "Gdzie składa podanie o pracę?"
+  ],
+  [
+    "What am I cleaning first?",
+    "You are cleaning the kitchen first.",
+    "You will clean the kitchen first.",
+    "You cleaned the kitchen first last time.",
+    "You have cleaned the kitchen first every weekend.",
+    "Что я убираю первым?",
+    "Що я прибираю першим?",
+    "Co sprzątam najpierw?"
+  ],
+  [
+    "How are they traveling to the city?",
+    "They are traveling to the city by train.",
+    "They will travel to the city by train.",
+    "They traveled to the city by train last week.",
+    "They have traveled to the city by train many times.",
+    "Как они добираются до города?",
+    "Як вони дістаються до міста?",
+    "Jak dojeżdżają do miasta?"
+  ],
+  [
+    "What are we planting in the garden?",
+    "We are planting roses and tulips.",
+    "We shall plant roses and tulips.",
+    "We planted roses and tulips last spring.",
+    "We have planted roses and tulips every year.",
+    "Что мы сажаем в саду?",
+    "Що ми садимо в саду?",
+    "Co sadzimy w ogrodzie?"
+  ],
+  [
+    "Where is she hiding the gift?",
+    "She is hiding the gift in the closet.",
+    "She will hide the gift in the closet.",
+    "She hid the gift in the closet last time.",
+    "She has hidden the gift in the closet before.",
+    "Где она прячет подарок?",
+    "Де вона ховає подарунок?",
+    "Gdzie chowa prezent?"
+  ],
+  [
+    "What am I ordering for lunch?",
+    "You are ordering a salad and soup.",
+    "You will order a salad and soup.",
+    "You ordered a salad and soup yesterday.",
+    "You have ordered a salad and soup many times.",
+    "Что я заказываю на обед?",
+    "Що я замовляю на обід?",
+    "Co zamawiam na obiad?"
+  ],
+  [
+    "When is he finishing the report?",
+    "He is finishing the report right now.",
+    "He will finish the report by Friday.",
+    "He finished the report by Friday last time.",
+    "He has finished the report by Friday every month.",
+    "Когда он заканчивает отчёт?",
+    "Коли він закінчує звіт?",
+    "Kiedy kończy raport?"
+  ],
+  [
+    "What are we discussing at the meeting?",
+    "We are discussing the new project.",
+    "We shall discuss the new project.",
+    "We discussed the new project last week.",
+    "We have discussed the new project several times.",
+    "Что мы обсуждаем на собрании?",
+    "Що ми обговорюємо на нараді?",
+    "Co omawiamy na spotkaniu?"
+  ],
+  [
+    "Where are you charging your phone?",
+    "I am charging my phone in the living room.",
+    "I will charge my phone in the living room.",
+    "I charged my phone in the living room yesterday.",
+    "I have charged my phone in the living room many times.",
+    "Где ты заряжаешь телефон?",
+    "Де ти заряджаєш телефон?",
+    "Gdzie ładujesz telefon?"
+  ],
+  [
+    "What am I naming the puppy?",
+    "You are naming the puppy Max.",
+    "You will name the puppy Max.",
+    "You named the puppy Max last week.",
+    "You have named the puppy Max already.",
+    "Как я называю щенка?",
+    "Як я називаю цуценя?",
+    "Jak nazywam szczeniaka?"
+  ],
+  [
+    "How is she preparing for the presentation?",
+    "She is preparing for the presentation with slides.",
+    "She will prepare for the presentation with slides.",
+    "She prepared for the presentation with slides last time.",
+    "She has prepared for the presentation with slides before.",
+    "Как она готовится к презентации?",
+    "Як вона готуєтьcя до презентації?",
+    "Jak przygotowuje się do prezentacji?"
+  ],
+  [
+    "What are we fixing in the house?",
+    "We are fixing the leaky faucet.",
+    "We shall fix the leaky faucet.",
+    "We fixed the leaky faucet last month.",
+    "We have fixed the leaky faucet before.",
+    "Что мы чиним в доме?",
+    "Що ми лагодимо в будинку?",
+    "Co naprawiamy w domu?"
+  ],
+  [
+    "Where are they celebrating the anniversary?",
+    "They are celebrating the anniversary at a restaurant.",
+    "They will celebrate the anniversary at a restaurant.",
+    "They celebrated the anniversary at a restaurant last year.",
+    "They have celebrated the anniversary at a restaurant many times.",
+    "Где они празднуют годовщину?",
+    "Де вони святкують річницю?",
+    "Gdzie świętują rocznicę?"
+  ],
+  [
+    "What am I reading before sleep?",
+    "You are reading a short story.",
+    "You will read a short story.",
+    "You read a short story last night.",
+    "You have read a short story every evening.",
+    "Что я читаю перед сном?",
+    "Що я читаю перед сном?",
+    "Co czytam przed snem?"
+  ],
+  [
+    "When are we arriving at the station?",
+    "We are arriving at the station at 7 p.m.",
+    "We shall arrive at the station at 7 p.m.",
+    "We arrived at the station at 7 p.m. yesterday.",
+    "We have arrived at the station at 7 p.m. many times.",
+    "Когда мы прибываем на вокзал?",
+    "Коли ми прибуваємо на вокзал?",
+    "Kiedy przyjeżdżamy na dworzec?"
+  ],
+  [
+    "What am I drawing on the card?",
+    "You are drawing a heart and flowers.",
+    "You will draw a heart and flowers.",
+    "You drew a heart and flowers last time.",
+    "You have drawn a heart and flowers on many cards.",
+    "Что я рисую на открытке?",
+    "Що я малюю на листівці?",
+    "Co rysuję na kartce?"
+  ],
+  [
+    "How are you saving money this month?",
+    "I am saving money by cooking at home.",
+    "I will save money by cooking at home.",
+    "I saved money by cooking at home last month.",
+    "I have saved money by cooking at home before.",
+    "Как ты экономишь деньги в этом месяце?",
+    "Як ти заощаджуєш гроші цього місяця?",
+    "Jak oszczędzasz pieniądze w tym miesiącu?"
+  ],
+  [
+    "What are we baking for the party?",
+    "We are baking chocolate cookies.",
+    "We shall bake chocolate cookies.",
+    "We baked chocolate cookies last party.",
+    "We have baked chocolate cookies for every party.",
+    "Что мы печём для вечеринки?",
+    "Що ми печемо для вечірки?",
+    "Co pieczemy na imprezę?"
+  ],
+  [
+    "Where is he hanging the picture?",
+    "He is hanging the picture above the sofa.",
+    "He will hang the picture above the sofa.",
+    "He hung the picture above the sofa last week.",
+    "He has hung the picture above the sofa before.",
+    "Где он вешает картину?",
+    "Де він вішає картину?",
+    "Gdzie wiesza obraz?"
+  ],
+  [
+    "What am I buying at the store?",
+    "You are buying milk and bread.",
+    "You will buy milk and bread.",
+    "You bought milk and bread yesterday.",
+    "You have bought milk and bread many times.",
+    "Что я покупаю в магазине?",
+    "Що я купую в магазині?",
+    "Co kupuję w sklepie?"
+  ],
+  [
+    "When is she starting the new job?",
+    "She is starting the new job right now.",
+    "She will start the new job next Monday.",
+    "She started the new job last Monday.",
+    "She has started the new job already.",
+    "Когда она начинает новую работу?",
+    "Коли вона починає нову роботу?",
+    "Kiedy zaczyna nową pracę?"
+  ],
+  [
+    "What are we painting on the wall?",
+    "We are painting a mural with flowers.",
+    "We shall paint a mural with flowers.",
+    "We painted a mural with flowers last summer.",
+    "We have painted a mural with flowers before.",
+    "Что мы рисуем на стене?",
+    "Що ми малюємо на стіні?",
+    "Co malujemy na ścianie?"
+  ],
+  [
+    "Where are they renting an apartment?",
+    "They are renting an apartment downtown.",
+    "They will rent an apartment downtown.",
+    "They rented an apartment downtown last year.",
+    "They have rented an apartment downtown before.",
+    "Где они снимают квартиру?",
+    "Де вони орендують квартиру?",
+    "Gdzie wynajmują mieszkanie?"
+  ],
+  [
+    "What am I learning this weekend?",
+    "You are learning a new recipe.",
+    "You will learn a new recipe.",
+    "You learned a new recipe last weekend.",
+    "You have learned a new recipe many times.",
+    "Что я учу на этих выходных?",
+    "Що я вчу на цих вихідних?",
+    "Czego uczę się w ten weekend?"
+  ],
+  [
+    "How is he contacting the client?",
+    "He is contacting the client by email.",
+    "He will contact the client by email.",
+    "He contacted the client by email yesterday.",
+    "He has contacted the client by email before.",
+    "Как он связывается с клиентом?",
+    "Як він зв'язується з клієнтом?",
+    "Jak kontaktuje się z klientem?"
+  ],
+  [
+    "What are we organizing for the event?",
+    "We are organizing a photo booth.",
+    "We shall organize a photo booth.",
+    "We organized a photo booth last event.",
+    "We have organized a photo booth many times.",
+    "Что мы организуем для мероприятия?",
+    "Що ми організовуємо для заходу?",
+    "Co organizujemy na wydarzenie?"
+  ],
+  [
+    "Where are you storing the documents?",
+    "I am storing the documents in the cloud.",
+    "I will store the documents in the cloud.",
+    "I stored the documents in the cloud yesterday.",
+    "I have stored the documents in the cloud before.",
+    "Где ты хранишь документы?",
+    "Де ти зберігаєш документи?",
+    "Gdzie przechowujesz dokumenty?"
+  ],
+  [
+    "What am I photographing at the festival?",
+    "You are photographing the fireworks.",
+    "You will photograph the fireworks.",
+    "You photographed the fireworks last year.",
+    "You have photographed the fireworks many times.",
+    "Что я фотографирую на фестивале?",
+    "Що я фотографую на фестивалі?",
+    "Co fotografuję na festiwalu?"
+  ],
+  [
+    "When is she delivering the package?",
+    "She is delivering the package right now.",
+    "She will deliver the package tomorrow.",
+    "She delivered the package yesterday.",
+    "She has delivered the package many times.",
+    "Когда она доставляет посылку?",
+    "Коли вона доставляє посилку?",
+    "Kiedy dostarcza paczkę?"
+  ],
+  [
+    "What are we recycling this week?",
+    "We are recycling plastic bottles.",
+    "We shall recycle plastic bottles.",
+    "We recycled plastic bottles last week.",
+    "We have recycled plastic bottles every week.",
+    "Что мы перерабатываем на этой неделе?",
+    "Що ми переробляємо на цьому тижні?",
+    "Co poddajemy recyklingowi w tym tygodniu?"
+  ],
+  [
+    "Where is he volunteering next month?",
+    "He is volunteering at the animal shelter.",
+    "He will volunteer at the animal shelter.",
+    "He volunteered at the animal shelter last month.",
+    "He has volunteered at the animal shelter before.",
+    "Где он волонтёрит в следующем месяце?",
+    "Де він волонтерить наступного місяця?",
+    "Gdzie będzie wolontariuszem w przyszłym miesiącu?"
+  ],
+  [
+    "What am I packing for the trip?",
+    "You are packing warm clothes.",
+    "You will pack warm clothes.",
+    "You packed warm clothes last trip.",
+    "You have packed warm clothes for every trip.",
+    "Что я собираю в поездку?",
+    "Що я збираю в поїздку?",
+    "Co pakuję na wyjazd?"
+  ],
+  [
+    "How are they promoting the product?",
+    "They are promoting the product on social media.",
+    "They will promote the product on social media.",
+    "They promoted the product on social media last launch.",
+    "They have promoted the product on social media before.",
+    "Как они продвигают продукт?",
+    "Як вони просувають продукт?",
+    "Jak promują produkt?"
+  ],
+  [
+    "What are we donating to charity?",
+    "We are donating old clothes.",
+    "We shall donate old clothes.",
+    "We donated old clothes last year.",
+    "We have donated old clothes many times.",
+    "Что мы жертвуем на благотворительность?",
+    "Що ми жертвуємо на благодійність?",
+    "Co przekazujemy na cele charytatywne?"
+  ],
+  [
+    "Where are you installing the new software?",
+    "I am installing the new software on the server.",
+    "I will install the new software on the server.",
+    "I installed the new software on the server yesterday.",
+    "I have installed the new software on the server before.",
+    "Где ты устанавливаешь новое ПО?",
+    "Де ти встановлюєш нове ПЗ?",
+    "Gdzie instalujesz nowe oprogramowanie?"
+  ],
+  [
+    "What am I reserving for the dinner?",
+    "You are reserving a table for six.",
+    "You will reserve a table for six.",
+    "You reserved a table for six last time.",
+    "You have reserved a table for six many times.",
+    "Что я бронирую на ужин?",
+    "Що я бронюю на вечерю?",
+    "Co rezerwuję na kolację?"
+  ],
+  [
+    "When is he publishing the article?",
+    "He is publishing the article right now.",
+    "He will publish the article next week.",
+    "He published the article last week.",
+    "He has published the article already.",
+    "Когда он публикует статью?",
+    "Коли він публікує статтю?",
+    "Kiedy publikuje artykuł?"
+  ]
 
 ];
 
