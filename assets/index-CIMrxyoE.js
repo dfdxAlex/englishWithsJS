@@ -5852,7 +5852,7 @@ HELP:returnNormButton(id)
                         <div class="button-word">
                           <button 
                             class="init-word-assembly-str-start"
-                            type='button'`;this.getArrayQuestions(e);let o=this.cardStartAndLegend(a),i=[];this.question=this.clearNotToBeSentences(this.question),this.question=this.insertWord(this.question,this.option1);const n=this.question.split(" ");this.cleartoBeSentences(n),this.questionDB=n.join(" ");let s=0;n.forEach((g,w)=>{i.push(t+`" data-index="${w}" id="word${w}"> `+g+this.strFinish),s=w}),localStorage.setItem("indexMax",s);const r=`<div class='row mb-2'>
+                            type='button'`;this.getArrayQuestions(e);let o=this.cardStartAndLegend(a),i=[];this.question=this.clearNotToBeSentences(this.question),this.question=this.insertWord(this.question,this.option1);const n=this.question.split(" ");this.cleartoBeSentences(n),this.questionDB=n.join(" ");let s=0;n.forEach((w,g)=>{i.push(t+`" data-index="${g}" id="word${g}"> `+w+this.strFinish),s=g}),localStorage.setItem("indexMax",s);const r=`<div class='row mb-2'>
                                        <div id="container-for-rezult" 
                                             class='col-12'>
                                        </div>
@@ -5860,7 +5860,7 @@ HELP:returnNormButton(id)
                         <div class='col-12'>
                           <button 
                             class="init-word-assembly-str-start"
-                            type='button'`;this.getArrayQuestions(e);let i=this.cardStartAndLegend(a),n=[];this.question=this.clearNotToBeSentences(this.question),this.question=this.insertWord(this.question,this.option1),this.generateQuestion(t);const s=this.question.split(" ");this.cleartoBeSentences(s),this.questionDB=s.join(" ");let r=0;s.forEach((w,d)=>{n.push(o+`" data-index="${d}" id="word${d}"> `+w+this.strFinish),r=d}),localStorage.setItem("indexMax",r);const y=`<div class='row mb-2'><div id="container-for-rezult" class='col-12'></div></div>`;n=shuffleArray(n);let p=this.cardStart+i+y;const g=n.join("");return p+="<hr>"+g+this.buttonOk()+this.cardFinish+this.createButtonHardNormalLight(),p}generateQuestion(){let[e]=arguments;if(e&&!e.constIndexArray||this.resetQuestion){this.resetQuestion=!1;let a=1;localStorage.getItem("light_normal_hard")==="hard"&&(a=getRandom(1,this.countValidOptions())),localStorage.getItem("light_normal_hard")==="normal"&&(a=getRandom(1,2)),this.trueSentences||(a=1),a===2&&(this.question=this.option1),a===3&&(this.question=this.option2),a===4&&(this.question=this.option3),a===5&&(this.question=this.option4),localStorage.setItem("randomNumber",a),this.question=this.insertWord(this.question,this.option1),localStorage.setItem("init_word_assembly_not_translate_question",this.question)}else this.question=localStorage.getItem("init_word_assembly_not_translate_question")}createButtonHardNormalLight(){let e=`<div class="container text-center mt-5">
+                            type='button'`;this.getArrayQuestions(e);let i=this.cardStartAndLegend(a),n=[];this.question=this.clearNotToBeSentences(this.question),this.question=this.insertWord(this.question,this.option1),this.generateQuestion(t);const s=this.question.split(" ");this.cleartoBeSentences(s),this.questionDB=s.join(" ");let r=0;s.forEach((g,d)=>{n.push(o+`" data-index="${d}" id="word${d}"> `+g+this.strFinish),r=d}),localStorage.setItem("indexMax",r);const y=`<div class='row mb-2'><div id="container-for-rezult" class='col-12'></div></div>`;n=shuffleArray(n);let p=this.cardStart+i+y;const w=n.join("");return p+="<hr>"+w+this.buttonOk()+this.cardFinish+this.createButtonHardNormalLight(),p}generateQuestion(){let[e]=arguments;if(e&&!e.constIndexArray||this.resetQuestion){this.resetQuestion=!1;let a=1;localStorage.getItem("light_normal_hard")==="hard"&&(a=getRandom(1,this.countValidOptions())),localStorage.getItem("light_normal_hard")==="normal"&&(a=getRandom(1,2)),this.trueSentences||(a=1),a===2&&(this.question=this.option1),a===3&&(this.question=this.option2),a===4&&(this.question=this.option3),a===5&&(this.question=this.option4),localStorage.setItem("randomNumber",a),this.question=this.insertWord(this.question,this.option1),localStorage.setItem("init_word_assembly_not_translate_question",this.question)}else this.question=localStorage.getItem("init_word_assembly_not_translate_question")}createButtonHardNormalLight(){let e=`<div class="container text-center mt-5">
                        <button id="button-light" class="btn mx-2">Light</button>
                        <button id="button-normal" class="btn mx-2">Normal</button>`;return this.countValidOptions()>2&&(e+='<button id="button-hard" class="btn mx-2">Hard</button>'),e+='<button id="button-help" class="btn mx-2">Help</button></div>',SettingForProgram.selectTypeTest==="word-assembly"&&(e=`<div class="container text-center mt-5">
                         <button id="button-help" class="btn btn-custom-help-big mx-2">Help</button>
@@ -5892,7 +5892,7 @@ HELP:returnNormButton(id)
             💎 ${Math.round(localStorage.getItem(`level${e}_Ok`))}
             💀 ${Math.round(localStorage.getItem(`level${e}_Error`))}
         </h4>
-    `}class LevelDataModel{constructor(e=1){this.level=DataOk$1.setLevel(e),this.rez=!1,this.ex=new Exercise,this.translate=getTranslate(),this.lang=localStorage.getItem("EnglishWithJs_lang"),this.propertyArrayNameButton=[],this.tic=0,this.arrayNameButton()}arrayNameButton(){for(let e=1;e<24;e++)this.propertyArrayNameButton.push(setStatisticForButton(e));this.propertyArrayNameButton.push(this.translate.translate("Собрано алмазов:")),this.propertyArrayNameButton.push(this.translate.translate("Ошибок:")),this.propertyArrayNameButton.push(this.translate.translate("Успех:")),this.propertyArrayNameButton.push(this.translate.translate("Сброс")),this.propertyArrayNameButton.push(this.translate.translate("Переводов:")),this.propertyArrayNameButton.push(""),this.propertyArrayNameButton.push("");for(let e=31;e<50;e++)this.propertyArrayNameButton.push(setStatisticForButton(e));this.tic=this.propertyArrayNameButton.length}static mapNameMenu(e){return[2,2,2,2,2,2,2,2,1,1,1,2,1,1,1,1,1,1,1,2,1,2,1,4,4,4,4,4,3,3,1,1,2,1,1,2,1,1,1,1,2,1,1,1,6,6,6,6,6][e]}selectLevel(exercise="Выбрать правильный перевод",nameArray,level,lang=!0){(SettingForProgram.selectTypeTest==="word-assembly"||SettingForProgram.selectTypeTest==="word-assembly-not-translate")&&(exercise="В этом тесте нужно собрать предложение из предложенных слов. Имейте в виду, что иногда собранное предложение может не совпадать с общей темой теста."),level==this.level&&(lang===!0||lang===this.lang)&&(this.ex.init(this.translate.translate(exercise)),localStorage.setItem("nameArrayDb",nameArray),window.Thoury.handleThoury(level),nameArray="fileDB."+nameArray,this.rez=eval(nameArray))}getArrayDB(){return this.selectLevel(void 0,"commonFood100",1,"ru"),this.selectLevel(void 0,"commonFood100ua",1,"ua"),this.selectLevel(void 0,"commonFood100pl",1,"pl"),this.selectLevel(void 0,"commonSport100",2,"ru"),this.selectLevel(void 0,"commonSport100pl",2,"pl"),this.selectLevel(void 0,"commonWalk100",3,"ru"),this.selectLevel(void 0,"commonWords100",4,"ru"),this.selectLevel(void 0,"commonWords300",5,"ru"),this.selectLevel(void 0,"commonWords500",6,"ru"),this.selectLevel(void 0,"verbs50",7,"ru"),this.selectLevel(void 0,"verbs50pl",7,"pl"),this.selectLevel(void 0,"verbs300",8,"ru"),this.selectLevel("Выбрать правильный вариант сокращенной формы глагола to Be","toBeForms",9),this.selectLevel("Выбрать правильный вариант сокращенной формы глагола to Be","toBeSentences",10),this.selectLevel("Выбрать правильный вариант ответа","questionsWithAnswers",11),this.selectLevel("Вставить правильное слово","whereThat",12),this.selectLevel("Вставить правильное слово","presentContinuous",13),this.selectLevel("Выбрать правильный вопрос","presetnContiniusQuestion",14),this.selectLevel("Вставить правильное слово","presentSimple",15),this.selectLevel("Выберите правильно составленное предложение.","presentSimpleNever",16),this.selectLevel("Вставить правильное слово","presentSimpleNegative",17),this.selectLevel("Подобрать правильно вопрос или ответ","presentSimpleQuestions",18),this.selectLevel("Выбрать правильное время PS or PC","presentSimpleOrContinius",19),this.selectLevel("Подобрать пару правильный - неправильный глагол. Тест разбавлен небольшим числом правильных глаголов.","irregularVerbsPastSimple",20),this.selectLevel("Выбрать правильную пару.","haveAndHaveGot",21),this.selectLevel("Text A1 Beginer.","textA1Begginer",22),this.selectLevel("Выбрать правильную пару.","wasOrWere",23),this.selectLevel("Вставьте глагол вместо троеточия или подберите правильное предложение в простом прошедшем времени.","pastSimpleSentences",31),this.selectLevel("Вставьте глагол вместо троеточия или подберите правильное предложение в простом прошедшем времени.","pastSimpleNegativeAndQuestions",32),this.selectLevel("Выбрать правильную пару.","presentSimpleHeSheIt",33),this.selectLevel("Вставьте глагол вместо троеточия или подберите правильное предложение в продолженном прошедшем времени.","pastContinuousArray",34),this.selectLevel("Выбрать правильную пару.","pastContinuousOrSimple",35),this.selectLevel("Выбрать правильную пару.","irregularVerbsV3",36),this.selectLevel("Выбрать правильную пару.","presentPerfectIHaveDone",37),this.selectLevel("Выбрать правильную пару.","presentPerfectAndSimpleAndContinius",38),this.selectLevel("Выбрать правильную пару.","forSinceAgoPrPerfPastSimple",39),this.selectLevel("Выбрать правильную пару.","presentPerfectOrPastSimple",40),this.selectLevel("Выбрать правильную пару.","animals100",41),this.selectLevel("Выбрать правильную пару.","passiveIsDoneWasDone",42),this.selectLevel("Выбрать правильную пару.","prContiniusPerfectPassive",43),this.selectLevel("Выбрать правильную пару.","unit23",44),this.selectLevel("Выбрать правильную пару.","unit24",45),this.selectLevel("Выбрать правильную пару.","unit25",46),this.selectLevel("Выбрать правильную пару.","unit26",47),this.selectLevel("Выбрать правильную пару.","unit27",48),this.selectLevel("Выбрать правильную пару.","unit28",49),this.rez}getArrayNameButton(){return this.propertyArrayNameButton}getLevel(){return this.level}getTic(){return this.tic}}function calculateBonusMultiplier(e){if(localStorage.getItem("was_click_help")==="true")return localStorage.setItem("was_click_help","false"),SettingForProgram.diamant="0",0;let{str:a,level:t,log:o}=e;const i={};if(i.propertyForBonus_input=e,i.levelTest=t,a==="Error")return SettingForProgram.diamant="-1",1;i.errorName=DataOk.levelNameError;const{ok:n,error:s}=DataOk;i.ok=n,i.error=s;const r=new LevelDataModel([DataOk.level.int]),y=r.getArrayNameButton().length;i.numberTest=y;const p=r.getArrayNameButton();i.arrayNumberTest=p;let g=1,w;(s>0||n>0)&&(w=n/(s+n)),s==0&&n==0&&(w=1),i.bonusOne=w;const d=t/y;i.bonusTwo=d;const l=[],f=[];p.forEach((T,j)=>{l.push(DataOk.getOkIndex(j)),f.push(DataOk.getErrorIndex(j))});const m=Math.max(...l);let b=Math.max(...f);b===m&&(b+=1),i.maxError=b,i.testsOk=l,SettingForProgram.testsOk=l,SettingForProgram.testsError=f,i.maxOk=m,i.testsError=f;let k=1-(n+s)/(m+b);isNaN(k)&&(k=1),i.bonusThree=k,i.calculateMedian=calculateMedian(l);let z;n==0&&calculateMedian(l)==0&&(z=1),n>calculateMedian(l)?z=calculateMedian(l)/n:n<calculateMedian(l)&&(z=n/calculateMedian(l));let u=z;isNaN(u)&&(u=1),i.bonusFour=u,g=(w+d+k+u)/4,i.ticLocalFull=g;let v=3;return localStorage.getItem("user_select")==="word-assembly"&&(v=6),localStorage.getItem("user_select")==="word-assembly-not-translate"&&(v=9),SettingForProgram.inputLightNormalHard=="normal"&&(v+=1),SettingForProgram.inputLightNormalHard=="hard"&&(v+=3),g*=v,g<.4&&(g=.4),i.ticLocalRezult=g,o&&(console.log("---calculateBonusMultiplier---"),console.log(i),console.log("***************************")),SettingForProgram.diamant=g.toFixed(2),g}function calculateMedian(e){const a=[...e].sort((o,i)=>o-i),t=Math.floor(a.length/2);return a.length%2===0?(a[t-1]+a[t])/2:a[t]}const Help={translate:new LanguageController,viewhandleHelpToTranslate:function(e,a){const t=document.createElement("div");t.id="container-for-video-help";let o=this.translate.translate(e);o=o.replace(/<div id='video-help'><\/div>/,this.addVideoHelp(a)),t.innerHTML=o,document.body.appendChild(t),document.getElementById("button-close-info-modal").addEventListener("click",()=>{document.getElementById("container-for-video-help").remove()})},addVideoHelp(e){return`
+    `}class LevelDataModel{constructor(e=1){this.level=DataOk$1.setLevel(e),this.rez=!1,this.ex=new Exercise,this.translate=getTranslate(),this.lang=localStorage.getItem("EnglishWithJs_lang"),this.propertyArrayNameButton=[],this.tic=0,this.arrayNameButton()}arrayNameButton(){for(let e=1;e<24;e++)this.propertyArrayNameButton.push(setStatisticForButton(e));this.propertyArrayNameButton.push(this.translate.translate("Собрано алмазов:")),this.propertyArrayNameButton.push(this.translate.translate("Ошибок:")),this.propertyArrayNameButton.push(this.translate.translate("Успех:")),this.propertyArrayNameButton.push(this.translate.translate("Сброс")),this.propertyArrayNameButton.push(this.translate.translate("Переводов:")),this.propertyArrayNameButton.push(""),this.propertyArrayNameButton.push("");for(let e=31;e<50;e++)this.propertyArrayNameButton.push(setStatisticForButton(e));this.tic=this.propertyArrayNameButton.length}static mapNameMenu(e){return[2,2,2,2,2,2,2,2,1,1,1,2,1,1,1,1,1,1,1,2,1,2,1,4,4,4,4,4,3,3,1,1,2,1,1,2,1,1,1,1,2,1,1,1,6,6,6,6,6][e]}selectLevel(exercise="Выбрать правильный перевод",nameArray,level,lang=!0){(SettingForProgram.selectTypeTest==="word-assembly"||SettingForProgram.selectTypeTest==="word-assembly-not-translate")&&(exercise="В этом тесте нужно собрать предложение из предложенных слов. Имейте в виду, что иногда собранное предложение может не совпадать с общей темой теста."),level==this.level&&(lang===!0||lang===this.lang)&&(this.ex.init(this.translate.translate(exercise)),localStorage.setItem("nameArrayDb",nameArray),window.Thoury.handleThoury(level),nameArray="fileDB."+nameArray,this.rez=eval(nameArray))}getArrayDB(){return this.selectLevel(void 0,"commonFood100",1,"ru"),this.selectLevel(void 0,"commonFood100ua",1,"ua"),this.selectLevel(void 0,"commonFood100pl",1,"pl"),this.selectLevel(void 0,"commonSport100",2,"ru"),this.selectLevel(void 0,"commonSport100pl",2,"pl"),this.selectLevel(void 0,"commonWalk100",3,"ru"),this.selectLevel(void 0,"commonWords100",4,"ru"),this.selectLevel(void 0,"commonWords300",5,"ru"),this.selectLevel(void 0,"commonWords500",6,"ru"),this.selectLevel(void 0,"verbs50",7,"ru"),this.selectLevel(void 0,"verbs50pl",7,"pl"),this.selectLevel(void 0,"verbs300",8,"ru"),this.selectLevel("Выбрать правильный вариант сокращенной формы глагола to Be","toBeForms",9),this.selectLevel("Выбрать правильный вариант сокращенной формы глагола to Be","toBeSentences",10),this.selectLevel("Выбрать правильный вариант ответа","questionsWithAnswers",11),this.selectLevel("Вставить правильное слово","whereThat",12),this.selectLevel("Вставить правильное слово","presentContinuous",13),this.selectLevel("Выбрать правильный вопрос","presetnContiniusQuestion",14),this.selectLevel("Вставить правильное слово","presentSimple",15),this.selectLevel("Выберите правильно составленное предложение.","presentSimpleNever",16),this.selectLevel("Вставить правильное слово","presentSimpleNegative",17),this.selectLevel("Подобрать правильно вопрос или ответ","presentSimpleQuestions",18),this.selectLevel("Выбрать правильное время PS or PC","presentSimpleOrContinius",19),this.selectLevel("Подобрать пару правильный - неправильный глагол. Тест разбавлен небольшим числом правильных глаголов.","irregularVerbsPastSimple",20),this.selectLevel("Выбрать правильную пару.","haveAndHaveGot",21),this.selectLevel("Text A1 Beginer.","textA1Begginer",22),this.selectLevel("Выбрать правильную пару.","wasOrWere",23),this.selectLevel("Вставьте глагол вместо троеточия или подберите правильное предложение в простом прошедшем времени.","pastSimpleSentences",31),this.selectLevel("Вставьте глагол вместо троеточия или подберите правильное предложение в простом прошедшем времени.","pastSimpleNegativeAndQuestions",32),this.selectLevel("Выбрать правильную пару.","presentSimpleHeSheIt",33),this.selectLevel("Вставьте глагол вместо троеточия или подберите правильное предложение в продолженном прошедшем времени.","pastContinuousArray",34),this.selectLevel("Выбрать правильную пару.","pastContinuousOrSimple",35),this.selectLevel("Выбрать правильную пару.","irregularVerbsV3",36),this.selectLevel("Выбрать правильную пару.","presentPerfectIHaveDone",37),this.selectLevel("Выбрать правильную пару.","presentPerfectAndSimpleAndContinius",38),this.selectLevel("Выбрать правильную пару.","forSinceAgoPrPerfPastSimple",39),this.selectLevel("Выбрать правильную пару.","presentPerfectOrPastSimple",40),this.selectLevel("Выбрать правильную пару.","animals100",41),this.selectLevel("Выбрать правильную пару.","passiveIsDoneWasDone",42),this.selectLevel("Выбрать правильную пару.","prContiniusPerfectPassive",43),this.selectLevel("Выбрать правильную пару.","unit23",44),this.selectLevel("Выбрать правильную пару.","unit24",45),this.selectLevel("Выбрать правильную пару.","unit25",46),this.selectLevel("Выбрать правильную пару.","unit26",47),this.selectLevel("Выбрать правильную пару.","unit27",48),this.selectLevel("Выбрать правильную пару.","unit28",49),this.rez}getArrayNameButton(){return this.propertyArrayNameButton}getLevel(){return this.level}getTic(){return this.tic}}function calculateBonusMultiplier(e){if(localStorage.getItem("was_click_help")==="true")return localStorage.setItem("was_click_help","false"),SettingForProgram.diamant="0",0;let{str:a,level:t,log:o}=e;const i={};if(i.propertyForBonus_input=e,i.levelTest=t,a==="Error")return SettingForProgram.diamant="-1",1;i.errorName=DataOk.levelNameError;const{ok:n,error:s}=DataOk;i.ok=n,i.error=s;const r=new LevelDataModel([DataOk.level.int]),y=r.getArrayNameButton().length;i.numberTest=y;const p=r.getArrayNameButton();i.arrayNumberTest=p;let w=1,g;(s>0||n>0)&&(g=n/(s+n)),s==0&&n==0&&(g=1),i.bonusOne=g;const d=t/y;i.bonusTwo=d;const l=[],f=[];p.forEach((T,j)=>{l.push(DataOk.getOkIndex(j)),f.push(DataOk.getErrorIndex(j))});const m=Math.max(...l);let b=Math.max(...f);b===m&&(b+=1),i.maxError=b,i.testsOk=l,SettingForProgram.testsOk=l,SettingForProgram.testsError=f,i.maxOk=m,i.testsError=f;let k=1-(n+s)/(m+b);isNaN(k)&&(k=1),i.bonusThree=k,i.calculateMedian=calculateMedian(l);let z;n==0&&calculateMedian(l)==0&&(z=1),n>calculateMedian(l)?z=calculateMedian(l)/n:n<calculateMedian(l)&&(z=n/calculateMedian(l));let u=z;isNaN(u)&&(u=1),i.bonusFour=u,w=(g+d+k+u)/4,i.ticLocalFull=w;let v=3;return localStorage.getItem("user_select")==="word-assembly"&&(v=6),localStorage.getItem("user_select")==="word-assembly-not-translate"&&(v=9),SettingForProgram.inputLightNormalHard=="normal"&&(v+=1),SettingForProgram.inputLightNormalHard=="hard"&&(v+=3),w*=v,w<.4&&(w=.4),i.ticLocalRezult=w,o&&(console.log("---calculateBonusMultiplier---"),console.log(i),console.log("***************************")),SettingForProgram.diamant=w.toFixed(2),w}function calculateMedian(e){const a=[...e].sort((o,i)=>o-i),t=Math.floor(a.length/2);return a.length%2===0?(a[t-1]+a[t])/2:a[t]}const Help={translate:new LanguageController,viewhandleHelpToTranslate:function(e,a){const t=document.createElement("div");t.id="container-for-video-help";let o=this.translate.translate(e);o=o.replace(/<div id='video-help'><\/div>/,this.addVideoHelp(a)),t.innerHTML=o,document.body.appendChild(t),document.getElementById("button-close-info-modal").addEventListener("click",()=>{document.getElementById("container-for-video-help").remove()})},addVideoHelp(e){return`
         <div class="embed-responsive embed-responsive-16by9">
           <iframe showinfo=1 class="embed-responsive-item" src="https://www.youtube.com/embed/${e}" allowfullscreen></iframe>
         </div>
@@ -8389,7 +8389,334 @@ ul
 - Present Continuous — already arranged.
 
 
-`}const arrayDataThoury=[];arrayDataThoury.push(thouryUnit1());arrayDataThoury.push(thouryUnit2());arrayDataThoury.push(thouryUnit2_2());arrayDataThoury.push(thouryUnit3());arrayDataThoury.push(thouryUnit23());arrayDataThoury.push(thouryUnit24());arrayDataThoury.push(thouryUnit25());arrayDataThoury.push(thouryUnit26());arrayDataThoury.push(thouryUnit27());function returnDataArrayForStr(e){let a="";return Number.isFinite(e)?a="file"+e:a=e,a=arrayDataThoury.find(t=>t.includes(a)),a}function searchLabel(e,a){if(e==null)return"";a+=`
+`}function thouryUnit28(){return`
+    file49
+    unit-28
+    ru
+    h2
+    Future Simple (will / shall)
+
+h3
+Значение:
+Время Future Simple используется, когда мы говорим о действиях, которые произойдут в будущем, но решение о них принимается в момент речи или когда мы выражаем обещание, просьбу, предложение, предположение или уверенность в будущем событии.
+
+h3
+Образование:
+
+ul
+will + V₁ (инфинитив без “to”)
+I will go, She will help, We will see.
+
+h3
+Сокращённые формы:
+
+ul
+I’ll, you’ll, he’ll, we’ll, they’ll, won’t (will not).
+
+h3
+Отрицательная форма:
+
+ul
+will not + V₁ → won’t + V₁
+I won’t go there.
+
+h3
+Вопросительная форма:
+
+ul
+Will + подлежащее + V₁ … ?
+Will you come tomorrow?
+What will you do?
+
+h3
+Употребление:
+
+h3
+Решение в момент речи:
+
+ul
+I’m cold. I’ll close the window.
+I think I’ll stay at home.
+
+h3
+Обещание, угроза, уверенность:
+
+ul
+I’ll help you.
+I won’t tell anyone.
+You’ll pass the exam.
+
+h3
+Просьба, предложение, приглашение:
+
+ul
+Will you help me?
+Will you join us for dinner?
+I’ll carry that for you.
+
+h3
+Предсказание (по мнению, ожиданию):
+
+ul
+I think it will rain tomorrow.
+You’ll like this movie.
+
+h3
+Shall
+Используется редко, в основном с I / we — для вежливых предложений или советов:
+
+ul
+Shall I open the window?
+Shall we go now?
+What shall we do?
+
+h4
+В современном английском (особенно американском) чаще употребляется will или should вместо shall.
+
+ua
+h2  
+Future Simple (will / shall)
+
+h3  
+Значення:  
+Час **Future Simple** використовується, коли ми говоримо про **дії, які відбудуться в майбутньому**, але рішення про них приймається **в момент мовлення**, або коли ми виражаємо **обіцянку, прохання, пропозицію, припущення** чи **впевненість** у майбутній події.
+
+h3  
+Утворення:
+
+ul  
+will + V₁ (інфінітив без “to”)  
+I will go, She will help, We will see.
+
+h3  
+Скорочені форми:
+
+ul  
+I’ll, you’ll, he’ll, we’ll, they’ll, won’t (will not).
+
+h3  
+Заперечна форма:
+
+ul  
+will not + V₁ → won’t + V₁  
+I won’t go there.
+
+h3  
+Питальна форма:
+
+ul  
+Will + підмет + V₁ … ?  
+Will you come tomorrow?  
+What will you do?
+
+h3  
+Вживання:
+
+h3  
+Рішення в момент мовлення:
+
+ul  
+I’m cold. I’ll close the window.  
+I think I’ll stay at home.
+
+h3  
+Обіцянка, загроза, впевненість:
+
+ul  
+I’ll help you.  
+I won’t tell anyone.  
+You’ll pass the exam.
+
+h3  
+Прохання, пропозиція, запрошення:
+
+ul  
+Will you help me?  
+Will you join us for dinner?  
+I’ll carry that for you.
+
+h3  
+Передбачення (на думку, очікування):
+
+ul  
+I think it will rain tomorrow.  
+You’ll like this movie.
+
+h3  
+Shall  
+Використовується рідко, переважно з I / we — для ввічливих пропозицій або порад:
+
+ul  
+Shall I open the window?  
+Shall we go now?  
+What shall we do?
+
+h4  
+У сучасній англійській мові (особливо американській) частіше вживається will або should замість shall.
+
+pl
+h2  
+Future Simple (will / shall)
+
+h3  
+Znaczenie:  
+Czas **Future Simple** używany jest, gdy mówimy o **czynnościach, które wydarzą się w przyszłości**, ale decyzja o nich jest podejmowana **w momencie mówienia**, albo gdy wyrażamy **obietnicę, prośbę, propozycję, przypuszczenie** lub **pewność** co do przyszłego zdarzenia.
+
+h3  
+Tworzenie:
+
+ul  
+will + V₁ (bezokolicznik bez “to”)  
+I will go, She will help, We will see.
+
+h3  
+Formy skrócone:
+
+ul  
+I’ll, you’ll, he’ll, we’ll, they’ll, won’t (will not).
+
+h3  
+Forma przecząca:
+
+ul  
+will not + V₁ → won’t + V₁  
+I won’t go there.
+
+h3  
+Forma pytająca:
+
+ul  
+Will + podmiot + V₁ … ?  
+Will you come tomorrow?  
+What will you do?
+
+h3  
+Użycie:
+
+h3  
+Decyzja w momencie mówienia:
+
+ul  
+I’m cold. I’ll close the window.  
+I think I’ll stay at home.
+
+h3  
+Obietnica, groźba, pewność:
+
+ul  
+I’ll help you.  
+I won’t tell anyone.  
+You’ll pass the exam.
+
+h3  
+Prośba, propozycja, zaproszenie:
+
+ul  
+Will you help me?  
+Will you join us for dinner?  
+I’ll carry that for you.
+
+h3  
+Przewidywanie (na podstawie opinii lub oczekiwań):
+
+ul  
+I think it will rain tomorrow.  
+You’ll like this movie.
+
+h3  
+Shall  
+Używany rzadko, głównie z I / we — dla uprzejmych propozycji lub porad:
+
+ul  
+Shall I open the window?  
+Shall we go now?  
+What shall we do?
+
+h4  
+We współczesnym języku angielskim (zwłaszcza amerykańskim) częściej używa się will lub should zamiast shall.
+
+en
+h2  
+Future Simple (will / shall)
+
+h3  
+Meaning:  
+The **Future Simple** tense is used to talk about **actions that will happen in the future**. It is often used when the decision is made **at the moment of speaking**, or when expressing **a promise, request, offer, prediction, or certainty** about a future event.
+
+h3  
+Formation:
+
+ul  
+will + V₁ (infinitive without “to”)  
+I will go, She will help, We will see.
+
+h3  
+Short forms:
+
+ul  
+I’ll, you’ll, he’ll, we’ll, they’ll, won’t (will not).
+
+h3  
+Negative form:
+
+ul  
+will not + V₁ → won’t + V₁  
+I won’t go there.
+
+h3  
+Question form:
+
+ul  
+Will + subject + V₁ … ?  
+Will you come tomorrow?  
+What will you do?
+
+h3  
+Usage:
+
+h3  
+Decision made at the moment of speaking:
+
+ul  
+I’m cold. I’ll close the window.  
+I think I’ll stay at home.
+
+h3  
+Promise, threat, certainty:
+
+ul  
+I’ll help you.  
+I won’t tell anyone.  
+You’ll pass the exam.
+
+h3  
+Request, offer, invitation:
+
+ul  
+Will you help me?  
+Will you join us for dinner?  
+I’ll carry that for you.
+
+h3  
+Prediction (based on opinion or belief):
+
+ul  
+I think it will rain tomorrow.  
+You’ll like this movie.
+
+h3  
+Shall  
+Used rarely, mainly with **I / we**, to make polite offers or suggestions:
+
+ul  
+Shall I open the window?  
+Shall we go now?  
+What shall we do?
+
+h4  
+In modern English (especially American), **will** or **should** is more commonly used instead of **shall**.
+
+`}const arrayDataThoury=[];arrayDataThoury.push(thouryUnit1());arrayDataThoury.push(thouryUnit2());arrayDataThoury.push(thouryUnit2_2());arrayDataThoury.push(thouryUnit3());arrayDataThoury.push(thouryUnit23());arrayDataThoury.push(thouryUnit24());arrayDataThoury.push(thouryUnit25());arrayDataThoury.push(thouryUnit26());arrayDataThoury.push(thouryUnit27());arrayDataThoury.push(thouryUnit28());function returnDataArrayForStr(e){let a="";return Number.isFinite(e)?a="file"+e:a=e,a=arrayDataThoury.find(t=>t.includes(a)),a}function searchLabel(e,a){if(e==null)return"";a+=`
 `;let t=e.indexOf(a);return t<0&&(t=e.indexOf(a.charAt(0).toUpperCase()+a.slice(1))),t<0&&e.indexOf(a.toUpperCase()),t<0&&(t=0,console.log("не удалось найти маркер "+a)),t}function returnStringHelpForLanguage(e){const a=returnDataArrayForStr(e);if(a==null)return"";let t={ru:searchLabel(a,"ru"),ua:searchLabel(a,"ua"),pl:searchLabel(a,"pl"),en:searchLabel(a,"en"),strLenght:a.length,get start(){return localStorage.getItem("EnglishWithJs_lang")==="ru"?this.ru:localStorage.getItem("EnglishWithJs_lang")==="ua"?this.ua:localStorage.getItem("EnglishWithJs_lang")==="pl"?this.pl:this.en},get finish(){const i=[this.ru,this.ua,this.pl,this.en];i.sort((s,r)=>s-r);let n=i.find(s=>s>this.start);return n==null&&(n=this.strLenght),n}};return a.slice(t.start,t.finish)}function ThouryH2(e="start",a=0){return e==="start"?`<h2 id="thoury-pattern-h2-${a}">`:"</h2>"}function ThouryH3(e="start",a=0){return e==="start"?`<h3 id="thoury-pattern-h3-${a}">`:"</h3>"}function ThouryH4(e="start",a=0){return e==="start"?`<h4 id="thoury-pattern-h4-${a}">`:"</h4>"}function ThouryUl(e="start",a=0){return e==="start"?`<ul id="thoury-pattern-ui-${a}">`:"</ul>"}function ThouryLi(e="start",a=0){return e==="start"?`<li id="thoury-pattern-li-${a}">`:"</li>"}function ThouryDiv(e="start"){return e==="start"?'<div class="thoury-pattern" id="thoury-pattern">':"</div>"}function returnBodyHelpForLanguage(e){let a=returnStringHelpForLanguage(e);if(a=="")return"";let t=a.split(`
 `),o="",i="",n="",s=0;for(let r of t){if(s++,r.trim()==""&&n!==""){i=="h2"&&(n=ThouryH2("start",s)+n+ThouryH2(""),o=o+n+"<hr>"),i=="ul"&&(n=ThouryUl("start",s)+n+ThouryUl(""),o=o+n),i=="h3"&&(n=ThouryH3("start",s)+n+ThouryH3(""),o=o+n),i=="h4"&&(n=ThouryH4("start",s)+n+ThouryH4(""),o=o+n),i="",n="";continue}if(r.includes("h2")){i="h2";continue}if(r.includes("h3")){i="h3";continue}if(r.includes("h4")){i="h4";continue}if(r.includes("ul")){i="ul";continue}(i=="h4"||i=="h3"||i=="h2"||i=="ul")&&((i=="h4"||i=="h3"||i=="h2"||i=="P")&&(n+=r+"<br>"),i=="ul"&&(n+=ThouryLi("start",s)+r+ThouryLi("")))}return ThouryDiv()+o+ThouryDiv("")}function getBodyThoury(e){switch(e.level){case 43:return e.translate.translate(indexForThoury.returnInfoUnit22RU());case 42:return e.translate.translate(indexForThoury.returnLevel42());case 40:return e.translate.translate(indexForThoury.returnLevel40());case 39:return e.translate.translate(indexForThoury.returnLevel39());case 38:return e.translate.translate(indexForThoury.returnLevel38());case 37:return e.translate.translate(indexForThoury.returnLevel37());case 20:return e.translate.translate(indexForThoury.returnLevel20());case 36:return e.translate.translate(indexForThoury.returnLevel36());case 35:return e.translate.translate(indexForThoury.returnLevel35());case 34:return e.translate.translate(indexForThoury.returnLevel34());case 33:return e.translate.translate(indexForThoury.returnLevel33());case 32:return e.translate.translate(indexForThoury.returnLevel32());case 31:return e.translate.translate(indexForThoury.returnLevel31());case 23:return e.translate.translate(indexForThoury.returnLevel23());case 21:return e.translate.translate(indexForThoury.returnLevel21());case 19:return e.translate.translate(indexForThoury.returnLevel19());case 18:return e.translate.translate(indexForThoury.returnLevel18());case 17:return e.translate.translate(indexForThoury.returnLevel17());case 16:return e.translate.translate(indexForThoury.returnLevel16());case 15:return e.translate.translate(indexForThoury.returnLevel15());case 14:return e.translate.translate(indexForThoury.returnLevel14());default:let a=returnBodyHelpForLanguage(e.level);return a==""?e.translate.translate("Просто учим слова"):a}}const DataSet={};class Thoury{static translate=getTranslate();static idForButtonClosed="button-for-get-work-place";static handleThoury(a){this.level=a;const t=this;this.strLocal=getWorkPlace(this.bodyThoury(),this.idForButtonClosed),DataSet.renderThoury||(document.getElementById("level30").addEventListener("click",function(){renderThoury.call(t)}),DataSet.renderThoury=!0)}static bodyThoury(){return getBodyThoury(this)}}class MenuRight{constructor(a){this.translate=new LanguageController,this.nameButtons=a,this.nameMenu="Units1-23",this.seedMenu="burger",this.numberMenu=1,this.countItemOne=0,this.countItemTwo=0,this.numberMenuLocal=0}menuItem2(){let a=`<ul id="pullItem${this.numberMenu}" class="ul-for-menu">`;return a+=this.nameButtons.map((t,o)=>{if(this.numberMenuLocal=LevelDataModel.mapNameMenu(o),this.numberMenuLocal===this.numberMenu)return`<li 
                       class='li-menu-${this.numberMenu} li-menu-count-${o+1}'>
@@ -8414,7 +8741,7 @@ ul
             ${this.menuItem2()}
           </ul>
         </div>
-      `}addClass(){let a="";return this.numberMenuLocal===1&&(this.countItemOne++,this.countItemOne%2==1?a="style-for-item-one":a="style-for-item-two"),this.numberMenuLocal===2&&(this.countItemTwo++,this.countItemTwo%2==1?a="style-for-item-one":a="style-for-item-two")," style-for-item-start "+a}getSeedForMenu(){return document.getElementById(this.seedMenu)}}class MenuRight2 extends MenuRight{constructor(a){super(a),this.nameMenu="Units24",this.seedMenu="burger2",this.numberMenu=6}}class MenuLearnWord extends MenuRight{constructor(a){super(a),this.nameMenu=this.translate.translate("Учить слова"),this.seedMenu="word",this.numberMenu=2}}class MenuHelp extends MenuRight{constructor(a){super(a),this.nameMenu=this.translate.translate("Помощь"),this.seedMenu="help",this.numberMenu=3}}class MenuStatictic extends MenuRight{constructor(a){super(a),this.nameMenu=this.translate.translate("Статистика"),this.seedMenu="statistic",this.numberMenu=4}}class MenuController{constructor(){this.levelDataModel=new LevelDataModel(DataOk.level.int)}init(){const a=new MenuRight(this.levelDataModel.getArrayNameButton()),t=new MenuRight2(this.levelDataModel.getArrayNameButton()),o=new MenuLearnWord(this.levelDataModel.getArrayNameButton()),i=new MenuHelp(this.levelDataModel.getArrayNameButton()),n=new MenuStatictic(this.levelDataModel.getArrayNameButton()),s=a.getSeedForMenu(),r=o.getSeedForMenu(),y=i.getSeedForMenu(),p=n.getSeedForMenu(),g=t.getSeedForMenu();s.innerHTML=a.menuDropdown2(),r.innerHTML=o.menuDropdown2(),y.innerHTML=i.menuDropdown2(),p.innerHTML=n.menuDropdown2(),g.innerHTML=t.menuDropdown2();const w=[];for(let d=1;d<=this.levelDataModel.getTic();d++){let l=LevelDataModel.mapNameMenu(d-1);l==4||l==3||l==5||(w[d]=document.getElementById("level"+d),w[d].onclick=handleLevelX.bind(null,new LevelDataModel(d)))}fixModalFocus()}}function outputTranslateForTest(){let e="";localStorage.getItem("randomNumber")!=="1"?(e=window.FactoryRegistr.getObject("LanguageController").translate("Речь примерно о:"),window.SettingForProgram.commentPlus.push(e)):window.SettingForProgram.commentPlus.push(""),window.SettingForProgram.dataElevator.push(indexQuestion()[5]);const a=document.getElementById("clicked_element");window.SettingForProgram.dataElevator.length>1&&(e=window.SettingForProgram.commentPlus.shift(),a.innerText=e+" "+window.SettingForProgram.dataElevator.shift())}window.outputTranslateForTest=outputTranslateForTest;window.indexQuestion=indexQuestion;window.SettingForProgram=SettingForProgram;window.LanguageController=new LanguageController;window.FactoryRegistr=FactoryRegistr;window.Help=Help;window.nav=nav();window.handleLog=handleLog;window.Thoury=Thoury;window.hundleHelpPrime=hundleHelpPrime;window.DataOk=DataOk$1;window.handleOkErr=handleOkErr;window.MenuController=MenuController;window.noonMenu=noonMenu;window.WorkingField=WorkingField;window.handleLevelX=handleLevelX;window.getTranslate=getTranslate();window.LevelDataModel=LevelDataModel;function daimentInfo(){const a=getTranslate().translate(indexForThoury.returnInfoForDiamant());document.body.insertAdjacentHTML("beforeend",a)}function htmlOldQuestionsView(e){return`
+      `}addClass(){let a="";return this.numberMenuLocal===1&&(this.countItemOne++,this.countItemOne%2==1?a="style-for-item-one":a="style-for-item-two"),this.numberMenuLocal===2&&(this.countItemTwo++,this.countItemTwo%2==1?a="style-for-item-one":a="style-for-item-two")," style-for-item-start "+a}getSeedForMenu(){return document.getElementById(this.seedMenu)}}class MenuRight2 extends MenuRight{constructor(a){super(a),this.nameMenu="Units24",this.seedMenu="burger2",this.numberMenu=6}}class MenuLearnWord extends MenuRight{constructor(a){super(a),this.nameMenu=this.translate.translate("Учить слова"),this.seedMenu="word",this.numberMenu=2}}class MenuHelp extends MenuRight{constructor(a){super(a),this.nameMenu=this.translate.translate("Помощь"),this.seedMenu="help",this.numberMenu=3}}class MenuStatictic extends MenuRight{constructor(a){super(a),this.nameMenu=this.translate.translate("Статистика"),this.seedMenu="statistic",this.numberMenu=4}}class MenuController{constructor(){this.levelDataModel=new LevelDataModel(DataOk.level.int)}init(){const a=new MenuRight(this.levelDataModel.getArrayNameButton()),t=new MenuRight2(this.levelDataModel.getArrayNameButton()),o=new MenuLearnWord(this.levelDataModel.getArrayNameButton()),i=new MenuHelp(this.levelDataModel.getArrayNameButton()),n=new MenuStatictic(this.levelDataModel.getArrayNameButton()),s=a.getSeedForMenu(),r=o.getSeedForMenu(),y=i.getSeedForMenu(),p=n.getSeedForMenu(),w=t.getSeedForMenu();s.innerHTML=a.menuDropdown2(),r.innerHTML=o.menuDropdown2(),y.innerHTML=i.menuDropdown2(),p.innerHTML=n.menuDropdown2(),w.innerHTML=t.menuDropdown2();const g=[];for(let d=1;d<=this.levelDataModel.getTic();d++){let l=LevelDataModel.mapNameMenu(d-1);l==4||l==3||l==5||(g[d]=document.getElementById("level"+d),g[d].onclick=handleLevelX.bind(null,new LevelDataModel(d)))}fixModalFocus()}}function outputTranslateForTest(){let e="";localStorage.getItem("randomNumber")!=="1"?(e=window.FactoryRegistr.getObject("LanguageController").translate("Речь примерно о:"),window.SettingForProgram.commentPlus.push(e)):window.SettingForProgram.commentPlus.push(""),window.SettingForProgram.dataElevator.push(indexQuestion()[5]);const a=document.getElementById("clicked_element");window.SettingForProgram.dataElevator.length>1&&(e=window.SettingForProgram.commentPlus.shift(),a.innerText=e+" "+window.SettingForProgram.dataElevator.shift())}window.outputTranslateForTest=outputTranslateForTest;window.indexQuestion=indexQuestion;window.SettingForProgram=SettingForProgram;window.LanguageController=new LanguageController;window.FactoryRegistr=FactoryRegistr;window.Help=Help;window.nav=nav();window.handleLog=handleLog;window.Thoury=Thoury;window.hundleHelpPrime=hundleHelpPrime;window.DataOk=DataOk$1;window.handleOkErr=handleOkErr;window.MenuController=MenuController;window.noonMenu=noonMenu;window.WorkingField=WorkingField;window.handleLevelX=handleLevelX;window.getTranslate=getTranslate();window.LevelDataModel=LevelDataModel;function daimentInfo(){const a=getTranslate().translate(indexForThoury.returnInfoForDiamant());document.body.insertAdjacentHTML("beforeend",a)}function htmlOldQuestionsView(e){return`
       <div class="card shadow-lg mb-3 mx-auto position-relative html-old-questions-view">
       <div class="card-body">
         <fieldset class="border-0">
@@ -8492,7 +8819,7 @@ ul
         </fieldset>
       </div>
     </div>
-    `}function htmlOldQuestionsModels(){const e=new LanguageController;return{yourQuestion:e.translate("Последний тест"),questionOld:e.translate("Предыдущий вопрос здесь"),clickedElement:e.translate("Последний ответ здесь"),searchError:e.translate("Сообщить об ошибке")}}function htmlOldQuestionsCntr(){document.getElementById("html_old_questions").innerHTML=htmlOldQuestionsView(htmlOldQuestionsModels()),document.getElementById("button-help-video-2").addEventListener("click",()=>{Help.viewhandleHelpToTranslate(indexForThoury.helpForGreenPoleOneRU(),"VuUKoWdyu6Y")})}function setColorMenu(){const e=document.getElementById("dropdownMenuburger"),a=document.getElementById("dropdownMenuburger2"),t=document.getElementById("dropdownMenuword"),o=document.getElementById("dropdownMenuhelp"),i=document.getElementById("dropdownMenustatistic"),n=document.getElementById("setting"),s=document.getElementById("languageSelect"),r=document.getElementById("selectUa"),y=document.getElementById("selectRu"),p=document.getElementById("selectPl"),g=document.getElementById("selectEn"),w=document.getElementById("fieldset-legend-old"),d=document.getElementById("question_old"),l=document.getElementById("clicked_element"),f=document.getElementById("search_error"),m=document.getElementById("log"),b=document.getElementById("sound"),k=document.getElementById("gamburger-menu-open"),z=document.getElementById("fieldset-legend");setBorderRadiusForWorkingField(["question","translate","option1","option2","option3","option4"]);const u=getRandomNumber(10,20),v=`${20/u}em`;d.style.fontSize=v,l.style.fontSize=v,m.style.fontSize=`${20/u*2}em`,b.style.fontSize=m.style.fontSize,d.style.borderRadius=returnBorderRadius(10,150),l.style.borderRadius=returnBorderRadius(10,150),f.style.borderRadius=returnBorderRadius(10,150),m.style.borderRadius=returnBorderRadius(10,150),m.style.top=`${30/u*.2}em`,m.style.right=`${30/u*.2}em`,b.style.bottom=`${50/u*.2}em`,b.style.right=`${50/u*.2}em`,e&&(e.style.background="rgba(0,0,255,0.01)",DataSet.numberBackground>16&&DataSet.numberBackground<21||DataSet.numberBackground>24&&DataSet.numberBackground<49?(e.style.color="black",a.style.color="black",t.style.color="black",o.style.color="black",i.style.color="black",n.style.color="black",s.style.color="black",r.style.background="white",y.style.background="white",p.style.background="white",g.style.background="white",w.style.color="black",d.style.color="black",z&&(z.style.color="black"),k&&(k.style.color="black"),l.style.color="black"):(e.style.color="white",a.style.color="white",t.style.color="white",o.style.color="white",i.style.color="white",n.style.color="white",s.style.color="white",r.style.background="black",y.style.background="black",p.style.background="black",g.style.background="black",w.style.color="white",d.style.color="white",l.style.color="white",z&&(z.style.color="white"),k&&(k.style.color="white")))}function setBackground(){const e="css/images/",a=Math.floor(Math.random()*48)+1,t=document.querySelector("body");t.style.height="100%",t.style.margin="0",t.style.backgroundSize="cover",t.style.backgroundRepeat="no-repeat",t.style.backgroundPosition="center",t.style.backgroundImage=`url('${e}background${a}.jpg')`,DataSet.numberBackground=a,setColorMenu()}daimentInfo();htmlOldQuestionsCntr();setBackground();function initEventForMenuStatistic(){let e=!0;const a=getTranslate(),t=document.getElementById("level24");t?t.innerHTML=a.translate("Собрано алмазов:")+Math.trunc(DataOk$1.ok):e=!1;const o=document.getElementById("level25");o?o.innerHTML=a.translate("Ошибок:")+DataOk$1.error:e=!1;const i=document.getElementById("level26");i?i.innerHTML=a.translate("Успех:")+Math.floor(DataOk$1.rezult)+"%":e=!1;const n=document.getElementById("level27");n?(n.innerHTML=a.translate("Сброс"),n.addEventListener("click",()=>{resetStatistic()})):e=!1;const s=document.getElementById("level28");return s?s.innerHTML=a.translate("Переводов:")+DataOk$1.countInt:e=!1,e}function hundleUpdateBurgerOrWord(e){const a=document.getElementById(e);return a?(a.addEventListener("click",()=>{initEventForMenuStatistic()}),!0):!1}function hundleBlockMenu(){const e=document.querySelector(".nav-item"),a=e?.querySelector(".dropdown-content");if(e&&a)return e.addEventListener("click",t=>{t.stopPropagation(),a.style.display==="none"||a.style.display===""?a.style.display="block":a.style.display="none"}),a.addEventListener("click",t=>{t.stopPropagation()}),document.addEventListener("click",()=>{a.style.display="none"}),!0}function handleForSelectLangauge(){document.getElementById("languageSelect").onchange=function(e){const a=e.target.value;localStorage.setItem("EnglishWithJs_lang",a)}}function activationMenuSetting(e=!0){let a=["none","none","none","block"];e||(a=["block","block","block","none"]),document.querySelector("#nav").style.display=a[0],document.querySelector("#container-all").style.display=a[1],document.querySelector("#html_old_questions").style.display=a[2],document.querySelector("#div-for-setting").style.display=a[3],document.querySelector("#working_field").innerHTML=""}function setSelectForSimple(e){return e==SettingForProgram.selectTypeTest?"selected":""}function setColorText(e){return e==SettingForProgram.selectColorText?"selected":""}function setColorBack(e){return e==SettingForProgram.selectColorBackGround?"selected":""}function setShadowBool(e){return e==SettingForProgram.shadow?"selected":""}function setRadiusBool(e){return e==SettingForProgram.borderRadius?"selected":""}function setOpacity(e){return e==SettingForProgram.opacity?"selected":""}function menuSettingView(){const e=`<div class="card menu-setting-view">
+    `}function htmlOldQuestionsModels(){const e=new LanguageController;return{yourQuestion:e.translate("Последний тест"),questionOld:e.translate("Предыдущий вопрос здесь"),clickedElement:e.translate("Последний ответ здесь"),searchError:e.translate("Сообщить об ошибке")}}function htmlOldQuestionsCntr(){document.getElementById("html_old_questions").innerHTML=htmlOldQuestionsView(htmlOldQuestionsModels()),document.getElementById("button-help-video-2").addEventListener("click",()=>{Help.viewhandleHelpToTranslate(indexForThoury.helpForGreenPoleOneRU(),"VuUKoWdyu6Y")})}function setColorMenu(){const e=document.getElementById("dropdownMenuburger"),a=document.getElementById("dropdownMenuburger2"),t=document.getElementById("dropdownMenuword"),o=document.getElementById("dropdownMenuhelp"),i=document.getElementById("dropdownMenustatistic"),n=document.getElementById("setting"),s=document.getElementById("languageSelect"),r=document.getElementById("selectUa"),y=document.getElementById("selectRu"),p=document.getElementById("selectPl"),w=document.getElementById("selectEn"),g=document.getElementById("fieldset-legend-old"),d=document.getElementById("question_old"),l=document.getElementById("clicked_element"),f=document.getElementById("search_error"),m=document.getElementById("log"),b=document.getElementById("sound"),k=document.getElementById("gamburger-menu-open"),z=document.getElementById("fieldset-legend");setBorderRadiusForWorkingField(["question","translate","option1","option2","option3","option4"]);const u=getRandomNumber(10,20),v=`${20/u}em`;d.style.fontSize=v,l.style.fontSize=v,m.style.fontSize=`${20/u*2}em`,b.style.fontSize=m.style.fontSize,d.style.borderRadius=returnBorderRadius(10,150),l.style.borderRadius=returnBorderRadius(10,150),f.style.borderRadius=returnBorderRadius(10,150),m.style.borderRadius=returnBorderRadius(10,150),m.style.top=`${30/u*.2}em`,m.style.right=`${30/u*.2}em`,b.style.bottom=`${50/u*.2}em`,b.style.right=`${50/u*.2}em`,e&&(e.style.background="rgba(0,0,255,0.01)",DataSet.numberBackground>16&&DataSet.numberBackground<21||DataSet.numberBackground>24&&DataSet.numberBackground<49?(e.style.color="black",a.style.color="black",t.style.color="black",o.style.color="black",i.style.color="black",n.style.color="black",s.style.color="black",r.style.background="white",y.style.background="white",p.style.background="white",w.style.background="white",g.style.color="black",d.style.color="black",z&&(z.style.color="black"),k&&(k.style.color="black"),l.style.color="black"):(e.style.color="white",a.style.color="white",t.style.color="white",o.style.color="white",i.style.color="white",n.style.color="white",s.style.color="white",r.style.background="black",y.style.background="black",p.style.background="black",w.style.background="black",g.style.color="white",d.style.color="white",l.style.color="white",z&&(z.style.color="white"),k&&(k.style.color="white")))}function setBackground(){const e="css/images/",a=Math.floor(Math.random()*48)+1,t=document.querySelector("body");t.style.height="100%",t.style.margin="0",t.style.backgroundSize="cover",t.style.backgroundRepeat="no-repeat",t.style.backgroundPosition="center",t.style.backgroundImage=`url('${e}background${a}.jpg')`,DataSet.numberBackground=a,setColorMenu()}daimentInfo();htmlOldQuestionsCntr();setBackground();function initEventForMenuStatistic(){let e=!0;const a=getTranslate(),t=document.getElementById("level24");t?t.innerHTML=a.translate("Собрано алмазов:")+Math.trunc(DataOk$1.ok):e=!1;const o=document.getElementById("level25");o?o.innerHTML=a.translate("Ошибок:")+DataOk$1.error:e=!1;const i=document.getElementById("level26");i?i.innerHTML=a.translate("Успех:")+Math.floor(DataOk$1.rezult)+"%":e=!1;const n=document.getElementById("level27");n?(n.innerHTML=a.translate("Сброс"),n.addEventListener("click",()=>{resetStatistic()})):e=!1;const s=document.getElementById("level28");return s?s.innerHTML=a.translate("Переводов:")+DataOk$1.countInt:e=!1,e}function hundleUpdateBurgerOrWord(e){const a=document.getElementById(e);return a?(a.addEventListener("click",()=>{initEventForMenuStatistic()}),!0):!1}function hundleBlockMenu(){const e=document.querySelector(".nav-item"),a=e?.querySelector(".dropdown-content");if(e&&a)return e.addEventListener("click",t=>{t.stopPropagation(),a.style.display==="none"||a.style.display===""?a.style.display="block":a.style.display="none"}),a.addEventListener("click",t=>{t.stopPropagation()}),document.addEventListener("click",()=>{a.style.display="none"}),!0}function handleForSelectLangauge(){document.getElementById("languageSelect").onchange=function(e){const a=e.target.value;localStorage.setItem("EnglishWithJs_lang",a)}}function activationMenuSetting(e=!0){let a=["none","none","none","block"];e||(a=["block","block","block","none"]),document.querySelector("#nav").style.display=a[0],document.querySelector("#container-all").style.display=a[1],document.querySelector("#html_old_questions").style.display=a[2],document.querySelector("#div-for-setting").style.display=a[3],document.querySelector("#working_field").innerHTML=""}function setSelectForSimple(e){return e==SettingForProgram.selectTypeTest?"selected":""}function setColorText(e){return e==SettingForProgram.selectColorText?"selected":""}function setColorBack(e){return e==SettingForProgram.selectColorBackGround?"selected":""}function setShadowBool(e){return e==SettingForProgram.shadow?"selected":""}function setRadiusBool(e){return e==SettingForProgram.borderRadius?"selected":""}function setOpacity(e){return e==SettingForProgram.opacity?"selected":""}function menuSettingView(){const e=`<div class="card menu-setting-view">
   <div class="card-header">
     Settings
   </div>
