@@ -18,6 +18,7 @@ import { FactoryRegistr } from '../models/FactoryRegistr.js';
 import { SettingForProgram } from '../models/SettingForProgram.js';
 import { selectLightNormalHard } from './selectLightNormalHard.js';
 import { setClickForLightNormalHardHelp } from './forHundleLevelX/setClickForLightNormalHardHelp.js';
+import { EventController } from './EventController.js';
 
 export const handleLevelX = (dataObj, constIndexArray = false) =>
     {
@@ -110,7 +111,8 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
         
         // Объект накидывает на кнопки обработчики 
         // соответствующих событий, ответ правильный или нет
-        FactoryRegistr.getObject('EventController').init();
+        new EventController().init();
+        // FactoryRegistr.getObject('EventController').init();
     };
 
 
