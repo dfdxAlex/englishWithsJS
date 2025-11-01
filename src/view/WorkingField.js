@@ -155,7 +155,7 @@ export class WorkingField {
     // в других модулях
     // на 1.11.2025 этот уровень без перевода, то есть в этом уровне данная информация не
     // используется
-    DataSet.arrayBD = arrayBD;
+    // DataSet.arrayBD = arrayBD;
 
     const strStart = `<div class='row mb-2'>
                         <div class='col-12'>
