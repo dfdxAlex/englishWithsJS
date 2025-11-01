@@ -1,11 +1,12 @@
 import { indexQuestion } from '../handleButtonLightNormHardHelp/indexQuestion.js';
+import { LanguageController } from '../LanguageController.js';
 
 export function outputTranslateForTest()
 {
     let commentPlus = '';
     if (localStorage.getItem('randomNumber') !== "1") {
-        let transL = window.FactoryRegistr.getObject("LanguageController");
-        commentPlus = transL.translate('Речь примерно о:');
+        let transL = new LanguageController;
+        commentPlus = transL.translate('Примерно о:');
         window.SettingForProgram.commentPlus.push(commentPlus);
     } else {
         window.SettingForProgram.commentPlus.push('');

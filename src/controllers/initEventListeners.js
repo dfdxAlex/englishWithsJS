@@ -5,15 +5,12 @@ import { hundleBlockMenu } from '../services/hundleBlockMenu.js';
 import { setBackground } from '../view/styles/bodyImages/setBackground.js';
 import { setColorMenu } from '../view/styles/bodyImages/setColorMenu.js';
 import { handleForSelectLangauge } from './forInitEventListeners/handleForSelectLangauge.js';
-import { FactoryRegistr } from '../models/FactoryRegistr.js';
 import { menuSettingView } from '../view/menuSettingView.js';
 import { activationMenuSetting } from './activationMenuSetting.js';
+import { WorkingField } from '../view/WorkingField.js';
 
 // Здесь функции, которые должны отработать когда загрузится статическая страница
 window.addEventListener('load', () => {
-
-    // инициализация объекта
-    // window.indexQuestion = {};
 
     hundleBlockMenu();
 
@@ -32,13 +29,13 @@ window.addEventListener('load', () => {
     // обработчил для клика по одному из вариантов выбора теста 
     // присвоив свойство true принудительно обновляет вопрос
     document.getElementById('dropdownMenuburger').onclick = () => {
-        FactoryRegistr.getObject('WorkingField').resetQuestion = true;
+        new WorkingField().resetQuestion = true;
 
     }
 
     // принудительное изменение тестового вопосса при первом пуске или обновлении
     // срабатывает один раз.
-    FactoryRegistr.getObject('WorkingField').resetQuestion = true;
+    new WorkingField().resetQuestion = true;
 
     // нарисовать невидимое меню Сеттинг
     menuSettingView();

@@ -4,22 +4,21 @@
 // на кнопку и ссылку на объект, в котором присутствуют 
 // данные для переводов
 
-function handleTranslateQuestion(thisButton, event) 
+export function handleTranslateQuestion(event) 
 {
         // Изменяет число запрошенных подсказок непосредственно на 
         // странице
         countHints();
-        
         let translateFromArray = '';
         // здесь подготавливается перевод для вопросса
         if (localStorage.getItem('EnglishWithJs_lang') === 'ru') {
-            translateFromArray = thisButton.translateRu;
+            translateFromArray = window.DataSet.arrayBD[5];
         }
         if (localStorage.getItem('EnglishWithJs_lang') === 'ua') {
-            translateFromArray = thisButton.translateUa;
+            translateFromArray = window.DataSet.arrayBD[6];
         }
         if (localStorage.getItem('EnglishWithJs_lang') === 'pl') {
-            translateFromArray = thisButton.translatePl;
+            translateFromArray = window.DataSet.arrayBD[7];
         }
         event.target.innerText = translateFromArray;
 }

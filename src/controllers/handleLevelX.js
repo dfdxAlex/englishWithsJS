@@ -14,11 +14,11 @@ import { getRandomInt } from '../services/getRandomInt.js';
 import { hundleForTranslate } from './forHundleLevelX/hundleForTranslate.js';
 import { borderRadiusForLevelTwoAndThree } from './forHundleLevelX/borderRadiusForLevelTwoAndThree.js';
 import { setColorForLevelToAndThree } from './forHundleLevelX/setColorForLevelToAndThree.js';
-import { FactoryRegistr } from '../models/FactoryRegistr.js';
 import { SettingForProgram } from '../models/SettingForProgram.js';
 import { selectLightNormalHard } from './selectLightNormalHard.js';
 import { setClickForLightNormalHardHelp } from './forHundleLevelX/setClickForLightNormalHardHelp.js';
 import { EventController } from './EventController.js';
+import { WorkingField } from '../view/WorkingField.js';
 
 export const handleLevelX = (dataObj, constIndexArray = false) =>
     {
@@ -66,7 +66,7 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
         let mas = dataObj.getArrayDB()[randomEl];
 
         // Блок проверяет есть ли в рабочем массиве свойство nameLeson
-        // Если есть, то через одноимённую переменную оно передается в WorkingField
+        // Если есть, то через одноимённую переменную оно передается
         // Где используется для установки в заголовок теста названия теста.
         const db = dataObj.getArrayDB();
         const nameLeson = db?.nameLeson ?? false;
@@ -76,7 +76,7 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
         // поместить форму в соответствующий div
         if (SettingForProgram.selectTypeTest === 'simple') {
             document.getElementById('working_field')
-                    .innerHTML = FactoryRegistr.getObject('WorkingField').init(mas, nameLeson);
+                    .innerHTML = new WorkingField().init(mas, nameLeson);
         hundleForTranslate();
         }
         
@@ -85,7 +85,7 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
         // поместить форму в соответствующий div
         if (SettingForProgram.selectTypeTest === 'word-assembly') {
             const workingField = document.getElementById('working_field');
-            workingField.innerHTML = FactoryRegistr.getObject('WorkingField').initWordAssembly(mas, nameLeson);
+            workingField.innerHTML = new WorkingField().initWordAssembly(mas, nameLeson);
         
         setClickForLightNormalHardHelp();
         hundleForTranslate();
@@ -101,7 +101,7 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
         };
         if (SettingForProgram.selectTypeTest === 'word-assembly-not-translate') {
             const workingField = document.getElementById('working_field');
-            workingField.innerHTML = FactoryRegistr.getObject('WorkingField').initWordAssemblyNotTranslate(mas, nameLeson, property);
+            workingField.innerHTML = new WorkingField().initWordAssemblyNotTranslate(mas, nameLeson, property);
             
         setClickForLightNormalHardHelp();       
         selectLightNormalHard();
@@ -112,7 +112,6 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
         // Объект накидывает на кнопки обработчики 
         // соответствующих событий, ответ правильный или нет
         new EventController().init();
-        // FactoryRegistr.getObject('EventController').init();
     };
 
 

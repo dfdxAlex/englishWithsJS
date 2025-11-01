@@ -1,10 +1,8 @@
 import { LanguageController } from './LanguageController.js';
-import { FactoryRegistr } from '../models/FactoryRegistr.js';
 import { Help } from '../view/Help.js';
 import { nav } from './../view/nav.js';
 import { handleLog } from './../../src/controllers/handleLog.js';
 import { Thoury } from './Thoury.js';
-import { getTranslate } from '../models/forFactoryRegistr/getTranslate.js';
 import { DataOk } from '../services/data/DataOk.js';
 import { LevelDataModel } from '../models/LevelDataModel.js';
 import { handleOkErr } from './handleOkErr.js';
@@ -16,13 +14,13 @@ import { handleLevelX } from './handleLevelX.js';
 import { SettingForProgram } from '../models/SettingForProgram.js';
 import { indexQuestion } from './handleButtonLightNormHardHelp/indexQuestion.js';
 import { outputTranslateForTest } from './handleButtonOk/outputTranslateForTest.js';
+import { DataSet } from '../services/data/DataSet.js';
 
 
 window.outputTranslateForTest = outputTranslateForTest;
 window.indexQuestion = indexQuestion;
 window.SettingForProgram = SettingForProgram;
 window.LanguageController = new LanguageController();
-window.FactoryRegistr = FactoryRegistr;
 window.Help = Help;
 window.nav = nav();
 window.handleLog = handleLog;
@@ -34,9 +32,8 @@ window.MenuController = MenuController;
 window.noonMenu = noonMenu;
 window.WorkingField = WorkingField;
 window.handleLevelX = handleLevelX;
+window.DataSet = DataSet;
 
-// костыль для регистратора объектов
-window.getTranslate = getTranslate();
 
 // костыль для LevelDataModel
 window.LevelDataModel = LevelDataModel;

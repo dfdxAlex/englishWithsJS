@@ -1,11 +1,12 @@
 import { getBodyThoury } from '../models/forThoury/getBodyThoury.js';
 import { getWorkPlace } from '../view/thoury/getWorkPlace.js';
-import { renderThoury, getTranslate } from './forThoury/renderThoury.js';
+import { renderThoury} from './forThoury/renderThoury.js';
 import { DataSet } from '../services/data/DataSet.js';
+import { LanguageController } from './LanguageController.js';
 
 export class Thoury
 {
-    static translate = getTranslate();
+    static translate = new LanguageController();
     static idForButtonClosed = 'button-for-get-work-place';
 
     // метод делает свойство класса Level, для доступа к нему из других методов имеющих контекст этого класса

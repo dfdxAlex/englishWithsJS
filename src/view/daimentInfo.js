@@ -7,11 +7,11 @@
 // все нужные элементы и помещает Бутстрап компонент
 
 import  indexForThoury  from '../controllers/forThoury/indexForThoury.js';
-import { getTranslate } from '../models/forFactoryRegistr/getTranslate.js';
+import { LanguageController } from '../controllers/LanguageController.js';
 
 export function daimentInfo()
 {
-    const translate = getTranslate();
+    const translate = new LanguageController();
 
     const result = translate.translate(indexForThoury.returnInfoForDiamant());
 

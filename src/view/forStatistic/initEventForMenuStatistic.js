@@ -1,11 +1,11 @@
-import { getTranslate } from '../../models/forFactoryRegistr/getTranslate.js';
 import { DataOk } from '../../services/data/DataOk.js';
+import { LanguageController } from '../../controllers/LanguageController.js';
 
 export function initEventForMenuStatistic()
 {
        let test = true;
 
-       const translate = getTranslate();
+       const translate = new LanguageController();
 
        // Проверка наличия одной из кнопок ответов, если она есть,
        // значит можно событие сброса ставить

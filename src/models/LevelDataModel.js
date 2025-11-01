@@ -25,9 +25,9 @@
 import './styles/LevelDataModel.scss';
 import { DataOk } from '../services/data/DataOk.js';
 import { Exercise } from '../view/Exercise.js';
-import { getTranslate } from '../models/forFactoryRegistr/getTranslate.js';
 import { setStatisticForButton } from '../view/forLevelDataModel/setStatisticForButton.js';
 import { SettingForProgram } from './SettingForProgram.js';
+import { LanguageController } from '../controllers/LanguageController.js';
 
 // Не УДАЛЯТЬ!!!
 import  fileDB  from './filedb/indexForFileDB.js';
@@ -42,7 +42,7 @@ export class LevelDataModel
         this.level = DataOk.setLevel(level);
         this.rez = false;
         this.ex = new Exercise();
-        this.translate = getTranslate();
+        this.translate = new LanguageController();
         this.lang = localStorage.getItem('EnglishWithJs_lang');
         this.propertyArrayNameButton = [];
         this.tic = 0;

@@ -4,7 +4,6 @@
 // Данная функция рендерит полученный из класса Thoury Хелп в id=exercise
 // так-же добавляет обработчик события для закрытия окна Хелп
 
-export * from '../../models/forFactoryRegistr/getTranslate.js';
 
 export function renderThoury()
 {

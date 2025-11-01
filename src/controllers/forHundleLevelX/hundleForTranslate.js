@@ -1,3 +1,5 @@
+import { handleTranslateQuestion } from './hundleForTranslate/handleTranslateQuestion.js';
+
 export function hundleForTranslate()
 {
             // Здесь можно накидывать на кнопки события, по мере появления кнопок
@@ -10,10 +12,11 @@ export function hundleForTranslate()
             // Перевод должен появиться только после клика на кнопку
             let translate = document.getElementById('translate');  // выбрать кнопку перевода
             if (translate) {
-                console.log('навешиваю обработчик на translate');
+                // console.log('навешиваю обработчик на translate');
                 translate.addEventListener('click', (event)=>{
                     // поместить перевод на кнопку
-                    handleTranslateQuestion(window.FactoryRegistr.getObject('WorkingField'), event);
+                    handleTranslateQuestion(event);
+
                     // увеличиь счётчик на 1
                     if (!window.DataOk.translateStop) {
                         window.DataOk.countInt+=1;
@@ -27,7 +30,6 @@ export function hundleForTranslate()
             }
 
             if (test) {
-                console.log('Все элементы WorkingField получили свои события');
                 clearInterval(id);
             }
         },300);

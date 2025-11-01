@@ -9,6 +9,8 @@ import { getRandom } from '../services/getRandom.js';
 import { SettingForProgram } from '../models/SettingForProgram.js';
 // Не удалять
 import { selectLightNormalHard } from '../controllers/selectLightNormalHard.js';
+import { DataSet } from '../services/data/DataSet.js';
+import { LanguageController } from '../controllers/LanguageController.js';
 
 export class WorkingField {
   // постоянная часть разметок кнопок с вариантами ответов
@@ -20,8 +22,7 @@ export class WorkingField {
   // пропущенное слово
   trueSentences = true;
 
-  // Вызвать из регистра объект переводчика
-  transL = window.getTranslate;
+  transL = new LanguageController();
 
   // Постоянная часть разметки компонента
   cardStart = `<div class="card fieldSetWorkField" 
@@ -35,7 +36,6 @@ export class WorkingField {
 
   constructor()
   {
-    
         // Начальный текст для кнопки перевода вопроса
         const translateFromArray = this.transL.translate('Перевести вопрос');
         this.translate = `<div class='row mb-2'>
@@ -53,6 +53,10 @@ export class WorkingField {
 
   init(arrayBD, nameLeson = false) 
   {
+          // Поместить текущий подмассив в глобальный объект для использования
+          // в других модулях
+          DataSet.arrayBD = arrayBD;
+
           this.getArrayQuestions(arrayBD);
           let legend = this.cardStartAndLegend(nameLeson);
           let buttonOption = [];
@@ -87,6 +91,10 @@ export class WorkingField {
 
   initWordAssembly(arrayBD, nameLeson = false) 
   {
+    // Поместить текущий подмассив в глобальный объект для использования
+    // в других модулях
+    DataSet.arrayBD = arrayBD;
+
     // в этой функции всегда лежим light
     localStorage.setItem('light_normal_hard', 'light');
     const strStart = `<div>
@@ -109,6 +117,9 @@ export class WorkingField {
 
         // Для внешнего использования. Переменная хранит предложение-вопрос
         this.questionDB = arrayButton.join(' ');
+        // попытка перейти от хранения данных в этов классе к специальному объекту DataSet
+        DataSet.questionDB = arrayButton.join(' ');
+        // console.log(DataSet.questionDB);
         
         // создание кнопок
         let indexMax = 0;
@@ -140,6 +151,12 @@ export class WorkingField {
   // property = false служит для отмены создания нового теста, на случай предыдущего ошибочного ответа
   initWordAssemblyNotTranslate(arrayBD, nameLeson = false, property = false) 
   {
+    // Поместить текущий подмассив в глобальный объект для использования
+    // в других модулях
+    // на 1.11.2025 этот уровень без перевода, то есть в этом уровне данная информация не
+    // используется
+    DataSet.arrayBD = arrayBD;
+
     const strStart = `<div class='row mb-2'>
                         <div class='col-12'>
                           <button 
@@ -168,6 +185,8 @@ export class WorkingField {
 
         // Для внешнего использования. Переменная хранит предложение-вопрос
         this.questionDB = arrayButton.join(' ');
+        // попытка перейти от хранения данных в этов классе к специальному объекту DataSet
+        DataSet.questionDB = arrayButton.join(' ');
 
         // создание кнопок
         let indexMax = 0;
