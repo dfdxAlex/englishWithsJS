@@ -24,7 +24,7 @@ function handleButtonOk(ev)
     //с одинаковыми двумя словами.
 
     // Достать образец текущего задания в тесте из другого объекта
-    let testState = window.FactoryRegistr.getObject('WorkingField').questionDB;
+    let testState = window.DataSet.questionDB;
     testState = testState.replace(/\s+/g, '');
     let testForButton = rezultString.replace(/\s+/g, '');
 
