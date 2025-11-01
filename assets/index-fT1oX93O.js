@@ -8697,7 +8697,7 @@ HELP:returnNormButton(id)
                                        <div id="container-for-rezult" 
                                             class='col-12'>
                                        </div>
-                                     </div>`;i=shuffleArray(i);let l=this.cardStart+o+this.translate+r;const p=i.join("");return l+="<hr>"+p+this.buttonOk()+this.cardFinish+this.createButtonHardNormalLight(),l}initWordAssemblyNotTranslate(e,a=!1,t=!1){DataSet.arrayBD=e;const o=`<div class='row mb-2'>
+                                     </div>`;i=shuffleArray(i);let l=this.cardStart+o+this.translate+r;const p=i.join("");return l+="<hr>"+p+this.buttonOk()+this.cardFinish+this.createButtonHardNormalLight(),l}initWordAssemblyNotTranslate(e,a=!1,t=!1){const o=`<div class='row mb-2'>
                         <div class='col-12'>
                           <button 
                             class="init-word-assembly-str-start"
