@@ -18,7 +18,7 @@ export function generateQuestion()
               // проверить число точек в строке. Если 2 или больше не разберать его на кубики
               // в этом уровне
               const count = (this.question.match(/\./g) || []).length;
-              const randomeStart = 1;
+              let randomeStart = 1;
               if (count>1) randomeStart = 2;
              
               // если выбрана сложность light, то работаем только с индексом 0
