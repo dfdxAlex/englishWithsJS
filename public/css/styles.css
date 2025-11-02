@@ -7,7 +7,7 @@ body {
     background-attachment: fixed; /* фон закреплён при прокрутке */
 }
 
-.nav-transparent, .html-old-questions-transparent {
+.nav-transparent {
     position: relative;
     margin: auto;
     width: 90vw;

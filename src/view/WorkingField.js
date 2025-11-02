@@ -4,7 +4,6 @@
 //для использования другими объектами готового значения.
 
 import './styles/WorkingField.scss';
-import { SettingForProgram } from '../models/SettingForProgram.js';
 // Не удалять
 import { selectLightNormalHard } from '../controllers/selectLightNormalHard.js';
 import { DataSet } from '../services/data/DataSet.js';
@@ -24,7 +23,6 @@ import { cleartoBeSentences } from './WorkingField/cleartoBeSentences.js';
 import { wordToHtmlButton } from './WorkingField/wordToHtmlButton.js';
 import { containerForRezzult } from './WorkingField/containerForRezzult.js';
 import { generateQuestion } from './WorkingField/generateQuestion.js';
-import { countValidOptions } from './WorkingField/countValidOptions.js';
 import { createButtonHardNormalLight } from './WorkingField/createButtonHardNormalLight.js';
 import { buttonOk } from './WorkingField/buttonOk.js';
 
@@ -52,7 +50,6 @@ class WorkingFieldClass {
 
         this.transL = new LanguageController();
 
-        // DataSet.resetQuestion = false;
   }
 
   init(arrayBD, nameLeson = false) 
