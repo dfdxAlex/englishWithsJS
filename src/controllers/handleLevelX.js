@@ -76,7 +76,7 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
         // поместить форму в соответствующий div
         if (SettingForProgram.selectTypeTest === 'simple') {
             document.getElementById('working_field')
-                    .innerHTML = new WorkingField().init(mas, nameLeson);
+                    .innerHTML = WorkingField.init(mas, nameLeson);
         hundleForTranslate();
         }
         
@@ -84,8 +84,8 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
         // создать рабочее поле с вопроссом и вариантами ответа
         // поместить форму в соответствующий div
         if (SettingForProgram.selectTypeTest === 'word-assembly') {
-            const workingField = document.getElementById('working_field');
-            workingField.innerHTML = new WorkingField().initWordAssembly(mas, nameLeson);
+            const workingFieldC = document.getElementById('working_field');
+            workingFieldC.innerHTML = WorkingField.initWordAssembly(mas, nameLeson);
         
         setClickForLightNormalHardHelp();
         hundleForTranslate();
@@ -100,8 +100,8 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
             constIndexArray
         };
         if (SettingForProgram.selectTypeTest === 'word-assembly-not-translate') {
-            const workingField = document.getElementById('working_field');
-            workingField.innerHTML = new WorkingField().initWordAssemblyNotTranslate(mas, nameLeson, property);
+            const workingFieldC = document.getElementById('working_field');
+            workingFieldC.innerHTML = WorkingField.initWordAssemblyNotTranslate(mas, nameLeson, property);
             
         setClickForLightNormalHardHelp();       
         selectLightNormalHard();

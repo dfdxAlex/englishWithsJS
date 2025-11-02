@@ -7,7 +7,7 @@ import { setColorMenu } from '../view/styles/bodyImages/setColorMenu.js';
 import { handleForSelectLangauge } from './forInitEventListeners/handleForSelectLangauge.js';
 import { menuSettingView } from '../view/menuSettingView.js';
 import { activationMenuSetting } from './activationMenuSetting.js';
-import { WorkingField } from '../view/WorkingField.js';
+import { DataSet } from '../services/data/DataSet.js';
 
 // Здесь функции, которые должны отработать когда загрузится статическая страница
 window.addEventListener('load', () => {
@@ -29,13 +29,15 @@ window.addEventListener('load', () => {
     // обработчил для клика по одному из вариантов выбора теста 
     // присвоив свойство true принудительно обновляет вопрос
     document.getElementById('dropdownMenuburger').onclick = () => {
-        new WorkingField().resetQuestion = true;
-
+        DataSet.resetQuestion = true;
+    }
+    document.getElementById('dropdownMenuburger2').onclick = () => {
+        DataSet.resetQuestion = true;
     }
 
     // принудительное изменение тестового вопосса при первом пуске или обновлении
     // срабатывает один раз.
-    new WorkingField().resetQuestion = true;
+    DataSet.resetQuestion = true;
 
     // нарисовать невидимое меню Сеттинг
     menuSettingView();

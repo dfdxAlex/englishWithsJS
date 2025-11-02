@@ -52,7 +52,6 @@ select{
 
 /* Стили для элементов с классами */
 .clicked_element,
-.question_old, 
 .search_error, .history {
     border: 2px solid black;
     border-radius: 20px;
