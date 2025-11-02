@@ -6,7 +6,7 @@ export function outputTranslateForTest()
     let commentPlus = '';
     if (localStorage.getItem('randomNumber') !== "1") {
         let transL = new LanguageController;
-        commentPlus = transL.translate('Примерно о:');
+        commentPlus = transL.translate('Примерно:');
         window.SettingForProgram.commentPlus.push(commentPlus);
     } else {
         window.SettingForProgram.commentPlus.push('');

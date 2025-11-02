@@ -49,8 +49,8 @@ BDTranslate.push(
    returnInfoUnit.returnLevel42PL(),
    returnInfoUnit.returnLevel42EN()]);
 BDTranslate.push(
-  [`Речь примерно о:`, 
-   `Мова приблизно про:`, 
+  [`Примерно:`, 
+   `Приблизно:`, 
    `Mówimy o:`,
    `We are talking approximately about:`]);
 BDTranslate.push(

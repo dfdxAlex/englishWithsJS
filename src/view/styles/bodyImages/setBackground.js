@@ -1,6 +1,7 @@
 // функция помещает случайный фон на страницу
 import { DataSet } from '../../../services/data/DataSet.js';
 import { setColorMenu } from './setColorMenu.js';
+import { closeNavbar } from './setBackground/closeNavbar.js';
 
 export function setBackground()
 {
@@ -26,13 +27,4 @@ export function setBackground()
 
 };
 
-function closeNavbar() {
-  const navbarCollapse = document.getElementById('navbarNav');
-  const toggler = document.querySelector('.navbar-toggler');
 
-  if (navbarCollapse.classList.contains('show')) {
-    navbarCollapse.classList.remove('show');
-    toggler.classList.add('collapsed');
-    toggler.setAttribute('aria-expanded', 'false');
-  }
-}
