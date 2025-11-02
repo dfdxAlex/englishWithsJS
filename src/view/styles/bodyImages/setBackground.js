@@ -21,5 +21,18 @@ export function setBackground()
 
     setColorMenu();
 
+    // Прикомандирована функция для закрытия пунктов гамбургер меню.
+    closeNavbar();
+
 };
 
+function closeNavbar() {
+  const navbarCollapse = document.getElementById('navbarNav');
+  const toggler = document.querySelector('.navbar-toggler');
+
+  if (navbarCollapse.classList.contains('show')) {
+    navbarCollapse.classList.remove('show');
+    toggler.classList.add('collapsed');
+    toggler.setAttribute('aria-expanded', 'false');
+  }
+}

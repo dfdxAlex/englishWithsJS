@@ -46,9 +46,6 @@ window.addEventListener('load', () => {
 
     // инициализация переменных, хранящихся в классе данных
     window.SettingForProgram.initializeToProperty();
-
-
-
 });
 
 // интервал проверяет все элементы и накладывает на них обработчики событий.

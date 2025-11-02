@@ -7,7 +7,7 @@ export class MenuRight2 extends MenuRight
     {
         super(nameButtons);
         
-        this.nameMenu = 'Units24';
+        this.nameMenu = 'Units24-';
         // Это свойство содержит место, куда нужно припарковать 
         // меню. Вводится id того елемента, который примет меню.
         // используется как внутрри класса, так и за его пределами.
