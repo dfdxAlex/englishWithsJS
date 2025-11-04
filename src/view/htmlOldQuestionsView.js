@@ -7,7 +7,7 @@ export function htmlOldQuestionsView(obj) {
       <div class="card-body">
         <fieldset class="border-0">
           <legend 
-            class="fs-3 mb-3 your-question" 
+            class="your-question" 
             id="fieldset-legend-old"
           >
             ${obj.yourQuestion}
