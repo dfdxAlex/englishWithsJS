@@ -12,7 +12,7 @@ import { randomeFontSize } from './setColorMenu/randomeFontSize.js';
 import { randomeLeftRightButton } from './setColorMenu/randomeLeftRightButton.js';
 import { setColorBlackOrWhite } from './setColorMenu/setColorBlackOrWhite.js';
 import { backgraundForLanguageSeect } from './setColorMenu/backgraundForLanguageSeect.js';
-
+import { setPaddingForSimple } from './setColorMenu/setPaddingForSimple.js';
 export function setColorMenu()
 {
     // C Цветом текста и фона работаем для менюшек
@@ -22,6 +22,11 @@ export function setColorMenu()
     // и контрастный фон и цвет шрифта делает
     setBorderRadiusForWorkingField(['question', 'translate', 'option1',
         'option2', 'option3', 'option4', 'question_old', 'clicked_element', 'search_error'
+    ]);
+
+    // дополнительный паддинг только для первого теста
+    setPaddingForSimple(['question', 'translate', 'option1',
+        'option2', 'option3', 'option4', 'question_old', 'clicked_element'
     ]);
 
     // случайный размер шрифта
@@ -64,6 +69,7 @@ setColorMenu.help = `
 setBorderRadiusForWorkingField() - меняет бордер-радиус, цвет фона и шрифта
 randomeFontSize() - ставит случайный размер шрифта
 randomeLeftRightButton() - небольшое смещение картинок логирования и динамика
+setPaddingForSimple() - устанавливает дополнительный Padding на первом тесте, уначе текст выходит за пределы контейнера
 `;
 
 

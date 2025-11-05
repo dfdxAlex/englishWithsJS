@@ -1,6 +1,8 @@
 import { returnBorderRadius } from './returnBorderRadius.js';
 import { getContrastColorTwo } from '../../controllers/forHundleLevelX/getContrastColorTwo.js';
-import { SettingForProgram } from '../../models/SettingForProgram.js';
+
+// По названию функция устанавливает бордер радиус, однако:
+// удобно было к этой функции припарковать установку цвета фона и цвета текста
 
 export function setBorderRadiusForWorkingField(list)
 {
@@ -9,9 +11,11 @@ export function setBorderRadiusForWorkingField(list)
         if (selectEl) {
             selectEl.style.borderRadius = returnBorderRadius(10, 150); 
             getContrastColorTwo(selectEl);
-            if (SettingForProgram.selectTypeTestProperty === 'simple') {
-                selectEl.style.padding = '15px';
-            }
         }
     });
 }
+
+setBorderRadiusForWorkingField.help = `
+По названию функция устанавливает бордер радиус, однако:
+удобно было к этой функции припарковать установку цвета фона и цвета текста
+`;
