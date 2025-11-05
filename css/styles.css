@@ -58,21 +58,21 @@ select{
     border-radius: 20px;
 }
 
-.search_error, .history {
+/* .search_error, .history {
     background-color: chocolate;
-}
+} */
 
-.search_error:hover, .history {
+/* .search_error:hover, .history {
     background-color: rgb(142, 17, 8);
-}
+} */
 
-.search_error:active, .history {
+/* .search_error:active, .history {
     background-color: gray;
-}
+} */
 
-.search_error:focus, .history {
+/* .search_error:focus, .history {
     background-color: yellow;
-}
+} */
 
 /* Стили для fieldset */
 .class_fieldset {
