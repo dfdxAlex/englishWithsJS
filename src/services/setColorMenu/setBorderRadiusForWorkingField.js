@@ -1,5 +1,6 @@
 import { returnBorderRadius } from './returnBorderRadius.js';
 import { getContrastColorTwo } from '../../controllers/forHundleLevelX/getContrastColorTwo.js';
+import { SettingForProgram } from '../../models/SettingForProgram.js';
 
 export function setBorderRadiusForWorkingField(list)
 {
@@ -8,6 +9,9 @@ export function setBorderRadiusForWorkingField(list)
         if (selectEl) {
             selectEl.style.borderRadius = returnBorderRadius(10, 150); 
             getContrastColorTwo(selectEl);
+            if (SettingForProgram.selectTypeTestProperty === 'simple') {
+                selectEl.style.padding = '15px';
+            }
         }
     });
 }

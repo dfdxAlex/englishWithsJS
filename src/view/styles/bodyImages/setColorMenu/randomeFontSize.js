@@ -12,3 +12,7 @@ export function randomeFontSize(array)
         }
     });
 }
+
+randomeFontSize.help = `
+Функция устанавливает случайный размер шрифта.
+`;
