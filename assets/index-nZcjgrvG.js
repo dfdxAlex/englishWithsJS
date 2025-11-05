@@ -5815,8 +5815,7 @@ var I=Object.defineProperty;var W=(e,a,t)=>a in e?I(e,a,{enumerable:!0,configura
           <iframe showinfo=1 class="embed-responsive-item" src="https://www.youtube.com/embed/${e}" allowfullscreen></iframe>
         </div>
         `}};class LanguageSelectorView{init(a){const t=a=="en"?"selected":"",o=a=="pl"?"selected":"",i=a=="ua"?"selected":"",n=a=="ru"?"selected":"";let s='<select id="languageSelect">';return s+=`<option ${t} id="selectEn"  value="en">EN</option>`,s+=`<option ${o} id="selectPl"  value="pl">PL</option>`,s+=`<option ${i} id="selectUa"  value="ua">UA</option>`,s+=`<option ${n} id="selectRu"  value="ru">RU</option>`,s+="</select>",s}}function nav(){setTimeout(()=>{document.getElementById("button-help-video").addEventListener("click",e=>{e.stopPropagation(),Help.viewhandleHelpToTranslate(indexForThoury.helpForHomeMenuRU(),"vkQYDmiTlmQ")})},0),document.getElementById("nav").innerHTML=`
-     <nav class="navbar navbar-expand-sm" id="first-teg-nav-for-nav">
-    <div class="container-fluid" id="nav-first-div">
+     <nav class="navbar navbar-expand-sm">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"
               id="gamburger-menu-open"></span>
@@ -5845,12 +5844,11 @@ var I=Object.defineProperty;var W=(e,a,t)=>a in e?I(e,a,{enumerable:!0,configura
             <div class="nav-link" id="button_lang_selected">${langView()}</div>
           </li>
           <li id="helpVideo">
-            <button id="button-help-video" type="button" class="fs-6 button-help-nav">&#10067;</button>
+            <button id="button-help-video" type="button" class="button-help-nav">&#10067;</button>
           </li>
         </ul>
       </div>
-    </div>
-  </nav>`}function langView(){const e=new LanguageSelectorView,a=new LanguageController;return e.init(a.langStr)}const sellect=()=>[document.getElementById("search_error"),document.getElementById("log"),document.getElementById("working_field"),document.getElementById("log_for_div")];function viewLogOff(){let e=sellect();e[0].style.display="none",e[1].style.display="none",e[2].style.display="none",e[3].style.display="block"}function viewLogOn(){let e;e=sellect(),e[0].style.display="block",e[1].style.display="block",e[2].style.display="block",e[3].style.display="none"}function activatingLogs(e=!1,a=null){if(a!==null&&a.target.className!=="button_return_log")return null;new Promise((o,i)=>{e?o():i()}).then(()=>{viewLogOff()},()=>{viewLogOn()})}const Logs={logSize:100,logs:[],set addLog(e){this.logs.unshift(e),this.logs.length>this.logSize&&this.logs.pop()}};function handleLog(){activatingLogs(!0);const e=document.getElementById("log_for_div"),a=new LogField(Logs);e.innerHTML=a.getField(),e.onclick=t=>{activatingLogs(!1,t)}}function thouryUnit1(){return`
+  </nav>`}const navbar=document.getElementById("navbarNav");navbar&&navbar.addEventListener("show.bs.collapse",()=>{console.log("📂 Меню открывается")});function langView(){const e=new LanguageSelectorView,a=new LanguageController;return e.init(a.langStr)}const sellect=()=>[document.getElementById("search_error"),document.getElementById("log"),document.getElementById("working_field"),document.getElementById("log_for_div")];function viewLogOff(){let e=sellect();e[0].style.display="none",e[1].style.display="none",e[2].style.display="none",e[3].style.display="block"}function viewLogOn(){let e;e=sellect(),e[0].style.display="block",e[1].style.display="block",e[2].style.display="block",e[3].style.display="none"}function activatingLogs(e=!1,a=null){if(a!==null&&a.target.className!=="button_return_log")return null;new Promise((o,i)=>{e?o():i()}).then(()=>{viewLogOff()},()=>{viewLogOn()})}const Logs={logSize:100,logs:[],set addLog(e){this.logs.unshift(e),this.logs.length>this.logSize&&this.logs.pop()}};function handleLog(){activatingLogs(!0);const e=document.getElementById("log_for_div"),a=new LogField(Logs);e.innerHTML=a.getField(),e.onclick=t=>{activatingLogs(!1,t)}}function thouryUnit1(){return`
     file9
     unit-1
     ru
