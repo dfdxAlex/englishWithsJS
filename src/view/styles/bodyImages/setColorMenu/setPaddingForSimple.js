@@ -10,3 +10,7 @@ export function setPaddingForSimple(list, padding = '15px')
         }
     });
 }
+
+setPaddingForSimple.help = `
+Добавляет Padding на контейнеры, которые работают с тестом simple
+`;

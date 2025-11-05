@@ -13,6 +13,7 @@ import { randomeLeftRightButton } from './setColorMenu/randomeLeftRightButton.js
 import { setColorBlackOrWhite } from './setColorMenu/setColorBlackOrWhite.js';
 import { backgraundForLanguageSeect } from './setColorMenu/backgraundForLanguageSeect.js';
 import { setPaddingForSimple } from './setColorMenu/setPaddingForSimple.js';
+
 export function setColorMenu()
 {
     // C Цветом текста и фона работаем для менюшек
@@ -52,10 +53,13 @@ export function setColorMenu()
                               'fieldset-legend-old', 'question_old', 'fieldset-legend',
                               'gamburger-menu-open', 'clicked_element'
                             ], setColorBlackOrWhiteProp);
+                            
         backgraundForLanguageSeect(['selectUa', 'selectRu', 'selectPl', 'selectEn'], backgraundForLanguageSeectProp);
         
-        if (setColorBlackOrWhiteProp === 'white') setColorBlackOrWhiteProp = 'black';
-        else setColorBlackOrWhiteProp = 'white'
+        if (setColorBlackOrWhiteProp === 'white') 
+            setColorBlackOrWhiteProp = 'black';
+        else 
+            setColorBlackOrWhiteProp = 'white'
         setColorBlackOrWhite(['selectUa', 'selectRu', 'selectPl', 'selectEn'], setColorBlackOrWhiteProp);
     }
 }
