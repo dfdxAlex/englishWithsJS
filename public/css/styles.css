@@ -12,8 +12,7 @@ html, body {
 .nav-transparent {
     position: relative;
     margin: auto;
-    width: 90vw;
-    max-width: 800px;
+    width: 100%;
     border-radius: 10px;
 }
 

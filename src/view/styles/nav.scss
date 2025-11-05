@@ -1,5 +1,4 @@
 nav {
-  // margin-top: 60px;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -7,75 +6,55 @@ nav {
   z-index: 999;
 }
 
-.btn {
-  padding: 0px;
+/* Когда меню закрыто */
+.navbar-nav .nav-link {
+  font-size: 1rem;
 }
 
+/* Когда меню открыто */
+#navbarNav.show .nav-link {
+  font-size: 2rem;
+}
+
+/* Элементы меню */
 .navbar-nav {
   flex-wrap: wrap;
   white-space: normal;
-}
-
-.button-help-nav {
-    font-size: 1em;
-    border: 2 solid rgb(0, 11, 0);
-    border-radius: 50px;
-    background: rgba(255, 255, 255, 0.2); 
-    float: left;
-}
-
-.nav-link {
-  color:black;
-  font-size: 16px;
-  padding: 0px;
-  margin: 0px;
-  margin-left: 5px;
+  gap: 6px; /* чуть воздуха */
+  justify-content: flex-end; /* эквивалент ms-auto */
 }
 
 .nav-item {
-  padding: 0px;
-  height:30px;
-  background: rgba(255, 255, 255, 0.2); 
-  border: 1 solid rgb(0, 11, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgb(0, 11, 0);
   border-radius: 50px;
-}
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-
-    .dropbtn {
-      color: rgb(8, 0, 0);
-      padding: 10px 16px;
-      border: 1px solid white;
-      cursor: pointer;
-      border-radius: 6px;
-    }
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-      border-radius: 6px;
-      z-index: 1;
-    }
-
-    .dropdown-content a {
-      padding: 10px 14px;
-      text-decoration: none;
-      display: block;
-    }
-
-   .dropdown-content {
-      display: block;
-    }
-
-.dropdown-toggle::after {
-  display: none !important; /* полностью скрыть стрелку */
+  transition: background 0.2s ease;
 }
 
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+}
+
+/* Кнопка вопроса */
+.button-help-nav {
+  font-size: 1em;
+  border: 2px solid rgb(0, 11, 0);
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Гамбургер */
 .navbar-toggler-icon {
-  background: rgba(255, 255, 255, 0.4); 
+  background: rgba(255, 255, 255, 0.4);
   border-radius: 5px;
 }
