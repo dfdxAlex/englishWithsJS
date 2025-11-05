@@ -5,7 +5,13 @@ nav {
   left: 0;
   width: 100%;
   z-index: 999;
+  .navbar .container-fluid {
+    margin: 0;
+    padding: 0;
+  }
 }
+
+
 
 .button-help-nav {
     font-size: 1em;

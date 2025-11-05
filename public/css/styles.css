@@ -1,11 +1,11 @@
 /* Основные стили */
-body {
+html, body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    height: 100dvh;
-    width: 100dvw;
-    background-attachment: fixed; /* фон закреплён при прокрутке */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .nav-transparent {
@@ -51,29 +51,6 @@ select{
     }
 }
 
-/* Стили для элементов с классами */
-.clicked_element,
-.search_error, .history {
-    border: 2px solid black;
-    border-radius: 20px;
-}
-
-/* .search_error, .history {
-    background-color: chocolate;
-} */
-
-/* .search_error:hover, .history {
-    background-color: rgb(142, 17, 8);
-} */
-
-/* .search_error:active, .history {
-    background-color: gray;
-} */
-
-/* .search_error:focus, .history {
-    background-color: yellow;
-} */
-
 /* Стили для fieldset */
 .class_fieldset {
     width: 100%;
@@ -109,48 +86,6 @@ select{
     margin-top: 15px;
 }
 
-/* .btn-custom-yellow {
-    background-color: #FFFFFF;
-    color: #e3db4e;
-    border: 2px solid #e3db4e;
-}
-.btn-custom-yellow-active {
-    background-color: #d0a935;
-    color: #121101;
-    border: 2px solid #070704;
-}
-.btn-custom-blue {
-    background-color: #FFFFFF;
-    color: #1E90FF;
-    border: 2px solid #1E90FF;
-}
-.btn-custom-blue-active {
-    background-color: #3d20cb;
-    color: #dcdedf;
-    border: 2px solid #aab1b8;
-}
-.btn-custom-white {
-    background-color: #FFFFFF;
-    color: #c00e1a;;
-    border: 2px solid #0e0b0b;
-}
-.btn-custom-white-active {
-    background-color: #8d0808;
-    color: #f0eeee;;
-    border: 2px solid #0c080a;
-}
-
-.btn-custom-help {
-    background-color: #9ce97b;
-    color: #1a1718;;
-    border: 2px solid #1dae80;
-}
-.btn-custom-help-big {
-    width: 70%;
-    background-color: #9ce97b;
-    color: #1a1718;;
-    border: 2px solid #1dae80;
-} */
 
 /*пузырь*/
 .diamond {
