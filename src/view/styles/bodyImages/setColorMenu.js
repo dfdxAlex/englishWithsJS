@@ -24,14 +24,14 @@ export function setColorMenu()
         'option2', 'option3', 'option4', 'question_old', 'clicked_element', 'search_error'
     ]);
 
+    // случайный размер шрифта
+    const randomSize = randomeFontSize(['question_old', 'clicked_element', 'log', 
+                                        'sound', 'search_error', 'fieldset-legend-old']);
+
     // дополнительный паддинг только для первого теста
     setPaddingForSimple(['question', 'translate', 'option1',
         'option2', 'option3', 'option4', 'question_old', 'clicked_element'
-    ]);
-
-    // случайный размер шрифта
-    randomeFontSize(['question_old', 'clicked_element', 'log', 
-                     'sound', 'search_error', 'fieldset-legend-old']);
+    ], randomSize);
 
     // смещение картинок логирования и динамика
     randomeLeftRightButton(['log', 'sound']);

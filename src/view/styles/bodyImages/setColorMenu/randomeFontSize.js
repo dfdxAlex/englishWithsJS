@@ -11,6 +11,7 @@ export function randomeFontSize(array)
             selected.style.fontSize = fontSize;
         }
     });
+    return fontSize;
 }
 
 randomeFontSize.help = `
