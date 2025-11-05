@@ -5815,7 +5815,7 @@ var I=Object.defineProperty;var W=(e,a,t)=>a in e?I(e,a,{enumerable:!0,configura
           <iframe showinfo=1 class="embed-responsive-item" src="https://www.youtube.com/embed/${e}" allowfullscreen></iframe>
         </div>
         `}};class LanguageSelectorView{init(a){const t=a=="en"?"selected":"",o=a=="pl"?"selected":"",i=a=="ua"?"selected":"",n=a=="ru"?"selected":"";let s='<select id="languageSelect">';return s+=`<option ${t} id="selectEn"  value="en">EN</option>`,s+=`<option ${o} id="selectPl"  value="pl">PL</option>`,s+=`<option ${i} id="selectUa"  value="ua">UA</option>`,s+=`<option ${n} id="selectRu"  value="ru">RU</option>`,s+="</select>",s}}function nav(){setTimeout(()=>{document.getElementById("button-help-video").addEventListener("click",e=>{e.stopPropagation(),Help.viewhandleHelpToTranslate(indexForThoury.helpForHomeMenuRU(),"vkQYDmiTlmQ")})},0),document.getElementById("nav").innerHTML=`
-     <nav class="navbar navbar-expand-sm navbar-light" id="first-teg-nav-for-nav">
+     <nav class="navbar navbar-expand-md navbar-light" id="first-teg-nav-for-nav">
     <div class="container-fluid" id="nav-first-div">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"
