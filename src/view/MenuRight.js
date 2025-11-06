@@ -65,23 +65,23 @@ export class MenuRight
         return rez;
     }
 
-    menuDropdown2() {
-      return `
-        <div class="dropdown">
-          <button class="btn dropdown-toggle" 
-                  type="button" 
-                  id="dropdownMenu${this.seedMenu}" 
-                  data-bs-toggle="dropdown" 
-                  aria-expanded="false"
-          >
-            ${this.nameMenu}
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenu${this.seedMenu}">
-            ${this.menuItem2()}
-          </ul>
-        </div>
-      `;
-    }    
+menuDropdown2() {
+  return `
+    <div class="dropdown">
+      <div 
+        class="dropdown-toggle" 
+        id="dropdownMenu${this.seedMenu}" 
+        data-bs-toggle="dropdown" 
+        aria-expanded="false"
+      >
+        ${this.nameMenu}
+      </div>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu${this.seedMenu}">
+        ${this.menuItem2()}
+      </ul>
+    </div>
+  `;
+}
 
     // Функция проанализирует какой категории принадлежит элемент меню. Это тесты или Учить слова
     // После этого функция вернет один из двух возможных классов, в зависимости от чётной или 
