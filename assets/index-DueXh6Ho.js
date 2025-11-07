@@ -5820,7 +5820,7 @@ var I=Object.defineProperty;var W=(e,a,t)=>a in e?I(e,a,{enumerable:!0,configura
         <span class="navbar-toggler-icon"
               id="gamburger-menu-open">&#9776;</span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse nav-collaps-my-style" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <div class="nav-link" id="burger"></div>
