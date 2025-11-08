@@ -1343,11 +1343,11 @@ export const unit24 = [
     "Co ja uczyłem się na test?"
   ],
   [
-    "What did we drink at the café?",
-    "We drank coffee at the café.",
-    "We drink coffee at the café.",
-    "We were drinking coffee at the café.",
-    "We drinked coffee at the café.",
+    "What did we drink at the cafe?",
+    "We drank coffee at the cafe.",
+    "We drink coffee at the cafe.",
+    "We were drinking coffee at the cafe.",
+    "We drinked coffee at the cafe.",
     "Что мы пили в кафе?",
     "Що ми пили в кафе?",
     "Co my piliśmy w kawiarni?"

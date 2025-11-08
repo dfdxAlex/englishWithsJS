@@ -240,7 +240,7 @@ export const unit27 = [
     "On namaluje mural w przyszłym miesiącu."
   ],
   [
-    "They will open a small café soon.",
+    "They will open a small cafe soon.",
     "What will they open soon?",
     "What did they open earlier?",
     "What are you opening soon?",
@@ -511,7 +511,7 @@ export const unit27 = [
   ],
   [
     "I shall prepare dinner tonight.",
-    "What shall you prepare tonight?",
+    "What will you prepare tonight?",
     "What did you prepare tonight?",
     "What are you preparing tonight?",
     "What have you prepared tonight?",
@@ -531,7 +531,7 @@ export const unit27 = [
   ],
   [
     "I shall call the doctor in the morning.",
-    "Who shall you call in the morning?",
+    "Who will you call in the morning?",
     "Who did you call this morning?",
     "Who are you calling in the morning?",
     "Who have you called recently?",
@@ -551,7 +551,7 @@ export const unit27 = [
   ],
   [
     "I shall finish the report by Friday.",
-    "What shall you finish by Friday?",
+    "What will you finish by Friday?",
     "What did you finish by Friday?",
     "What are you finishing by Friday?",
     "What have you finished recently?",
@@ -571,7 +571,7 @@ export const unit27 = [
   ],
   [
     "I shall send the email now.",
-    "What shall you send now?",
+    "What will you send now?",
     "What did you send earlier?",
     "What are you sending now?",
     "What have you sent recently?",
@@ -591,7 +591,7 @@ export const unit27 = [
   ],
   [
     "I shall read the book over the holiday.",
-    "What shall you read over the holiday?",
+    "What will you read over the holiday?",
     "What did you read during the holiday?",
     "What are you reading over the holiday?",
     "What have you read recently?",
@@ -611,7 +611,7 @@ export const unit27 = [
   ],
   [
     "I shall fix the broken chair today.",
-    "What shall you fix today?",
+    "What will you fix today?",
     "What did you fix today?",
     "What are you fixing today?",
     "What have you fixed recently?",
@@ -631,7 +631,7 @@ export const unit27 = [
   ],
   [
     "I shall book the hotel room tomorrow.",
-    "What shall you book tomorrow?",
+    "What will you book tomorrow?",
     "What did you book yesterday?",
     "What are you booking tomorrow?",
     "What have you booked recently?",
@@ -651,7 +651,7 @@ export const unit27 = [
   ],
   [
     "I shall water the plants this evening.",
-    "What shall you water this evening?",
+    "What will you water this evening?",
     "What did you water this evening?",
     "What are you watering this evening?",
     "What have you watered recently?",
@@ -671,7 +671,7 @@ export const unit27 = [
   ],
   [
     "I shall update the software soon.",
-    "What shall you update soon?",
+    "What will you update soon?",
     "What did you update earlier?",
     "What are you updating soon?",
     "What have you updated recently?",
@@ -691,7 +691,7 @@ export const unit27 = [
   ],
   [
     "I shall pack the luggage carefully.",
-    "What shall you pack carefully?",
+    "What will you pack carefully?",
     "What did you pack carefully?",
     "What are you packing carefully?",
     "What have you packed recently?",
@@ -711,7 +711,7 @@ export const unit27 = [
   ],
   [
     "I shall review the documents today.",
-    "What shall you review today?",
+    "What will you review today?",
     "What did you review today?",
     "What are you reviewing today?",
     "What have you reviewed recently?",
@@ -731,7 +731,7 @@ export const unit27 = [
   ],
   [
     "I shall answer the questions promptly.",
-    "What shall you answer promptly?",
+    "What will you answer promptly?",
     "What did you answer promptly?",
     "What are you answering promptly?",
     "What have you answered recently?",
@@ -751,7 +751,7 @@ export const unit27 = [
   ],
   [
     "I shall deliver the package tomorrow.",
-    "What shall you deliver tomorrow?",
+    "What will you deliver tomorrow?",
     "What did you deliver yesterday?",
     "What are you delivering tomorrow?",
     "What have you delivered recently?",
@@ -771,7 +771,7 @@ export const unit27 = [
   ],
   [
     "I shall charge the phone overnight.",
-    "What shall you charge overnight?",
+    "What will you charge overnight?",
     "What did you charge overnight?",
     "What are you charging overnight?",
     "What have you charged recently?",
@@ -791,7 +791,7 @@ export const unit27 = [
   ],
   [
     "I shall fold the laundry now.",
-    "What shall you fold now?",
+    "What will you fold now?",
     "What did you fold earlier?",
     "What are you folding now?",
     "What have you folded recently?",
@@ -811,7 +811,7 @@ export const unit27 = [
   ],
   [
     "I shall polish the shoes before the meeting.",
-    "What shall you polish before the meeting?",
+    "What will you polish before the meeting?",
     "What did you polish before the meeting?",
     "What are you polishing before the meeting?",
     "What have you polished recently?",
@@ -831,7 +831,7 @@ export const unit27 = [
   ],
   [
     "I shall attach the file to the email.",
-    "What shall you attach to the email?",
+    "What will you attach to the email?",
     "What did you attach to the email?",
     "What are you attaching to the email?",
     "What have you attached recently?",
@@ -851,7 +851,7 @@ export const unit27 = [
   ],
   [
     "I shall confirm the appointment later.",
-    "What shall you confirm later?",
+    "What will you confirm later?",
     "What did you confirm earlier?",
     "What are you confirming later?",
     "What have you confirmed recently?",
@@ -871,7 +871,7 @@ export const unit27 = [
   ],
   [
     "I shall label the boxes properly.",
-    "What shall you label properly?",
+    "What will you label properly?",
     "What did you label properly?",
     "What are you labeling properly?",
     "What have you labeled recently?",
@@ -891,7 +891,7 @@ export const unit27 = [
   ],
   [
     "I shall recharge the batteries tonight.",
-    "What shall you recharge tonight?",
+    "What will you recharge tonight?",
     "What did you recharge tonight?",
     "What are you recharging tonight?",
     "What have you recharged recently?",
@@ -911,7 +911,7 @@ export const unit27 = [
   ],
   [
     "I shall compose the message carefully.",
-    "What shall you compose carefully?",
+    "What will you compose carefully?",
     "What did you compose carefully?",
     "What are you composing carefully?",
     "What have you composed recently?",
@@ -931,7 +931,7 @@ export const unit27 = [
   ],
   [
     "I shall verify the information first.",
-    "What shall you verify first?",
+    "What will you verify first?",
     "What did you verify first?",
     "What are you verifying first?",
     "What have you verified recently?",
@@ -951,7 +951,7 @@ export const unit27 = [
   ],
   [
     "I shall customize the settings now.",
-    "What shall you customize now?",
+    "What will you customize now?",
     "What did you customize earlier?",
     "What are you customizing now?",
     "What have you customized recently?",
@@ -972,7 +972,7 @@ export const unit27 = [
 
     [
     "What shall I wear to the interview?",
-    "You shall wear a smart suit to the interview.",
+    "You will wear a smart suit to the interview.",
     "You wore a smart suit to the interview.",
     "You are wearing a smart suit to the interview.",
     "You have worn a smart suit to the interview.",
@@ -982,7 +982,7 @@ export const unit27 = [
   ],
   [
     "Where shall we go for a weekend getaway?",
-    "You shall go to a cozy mountain cabin for a weekend getaway.",
+    "You will go to a cozy mountain cabin for a weekend getaway.",
     "You went to a cozy mountain cabin for a weekend getaway.",
     "You are going to a cozy mountain cabin for a weekend getaway.",
     "You have gone to a cozy mountain cabin for a weekend getaway.",
@@ -992,7 +992,7 @@ export const unit27 = [
   ],
   [
     "What shall I gift her for the holiday?",
-    "You shall gift her a beautiful necklace for the holiday.",
+    "You will gift her a beautiful necklace for the holiday.",
     "You gifted her a beautiful necklace for the holiday.",
     "You are gifting her a beautiful necklace for the holiday.",
     "You have gifted her a beautiful necklace for the holiday.",
@@ -1002,7 +1002,7 @@ export const unit27 = [
   ],
   [
     "How shall we decorate the new apartment?",
-    "You shall decorate the new apartment with modern furniture.",
+    "You will decorate the new apartment with modern furniture.",
     "You decorated the new apartment with modern furniture.",
     "You are decorating the new apartment with modern furniture.",
     "You have decorated the new apartment with modern furniture.",
@@ -1012,7 +1012,7 @@ export const unit27 = [
   ],
   [
     "What shall I study for the exam?",
-    "You shall study the main chapters for the exam.",
+    "You will study the main chapters for the exam.",
     "You studied the main chapters for the exam.",
     "You are studying the main chapters for the exam.",
     "You have studied the main chapters for the exam.",
@@ -1022,7 +1022,7 @@ export const unit27 = [
   ],
   [
     "Where shall we hold the team meeting?",
-    "You shall hold the team meeting in the conference room.",
+    "You will hold the team meeting in the conference room.",
     "You held the team meeting in the conference room.",
     "You are holding the team meeting in the conference room.",
     "You have held the team meeting in the conference room.",
@@ -1032,7 +1032,7 @@ export const unit27 = [
   ],
   [
     "What shall I write in the journal?",
-    "You shall write your daily thoughts in the journal.",
+    "You will write your daily thoughts in the journal.",
     "You wrote your daily thoughts in the journal.",
     "You are writing your daily thoughts in the journal.",
     "You have written your daily thoughts in the journal.",
@@ -1042,7 +1042,7 @@ export const unit27 = [
   ],
   [
     "How shall we promote the event?",
-    "You shall promote the event through social media.",
+    "You will promote the event through social media.",
     "You promoted the event through social media.",
     "You are promoting the event through social media.",
     "You have promoted the event through social media.",
@@ -1052,7 +1052,7 @@ export const unit27 = [
   ],
   [
     "What shall I practice for the performance?",
-    "You shall practice your lines for the performance.",
+    "You will practice your lines for the performance.",
     "You practiced your lines for the performance.",
     "You are practicing your lines for the performance.",
     "You have practiced your lines for the performance.",
@@ -1062,7 +1062,7 @@ export const unit27 = [
   ],
   [
     "Where shall we park the car?",
-    "You shall park the car in the nearby lot.",
+    "You will park the car in the nearby lot.",
     "You parked the car in the nearby lot.",
     "You are parking the car in the nearby lot.",
     "You have parked the car in the nearby lot.",
@@ -1072,7 +1072,7 @@ export const unit27 = [
   ],
   [
     "What shall I bring to the picnic?",
-    "You shall bring homemade sandwiches to the picnic.",
+    "You will bring homemade sandwiches to the picnic.",
     "You brought homemade sandwiches to the picnic.",
     "You are bringing homemade sandwiches to the picnic.",
     "You have brought homemade sandwiches to the picnic.",
@@ -1082,7 +1082,7 @@ export const unit27 = [
   ],
   [
     "How shall we start the project?",
-    "You shall start the project with a brainstorming session.",
+    "You will start the project with a brainstorming session.",
     "You started the project with a brainstorming session.",
     "You are starting the project with a brainstorming session.",
     "You have started the project with a brainstorming session.",
@@ -1092,7 +1092,7 @@ export const unit27 = [
   ],
   [
     "What shall I paint on the canvas?",
-    "You shall paint a vibrant landscape on the canvas.",
+    "You will paint a vibrant landscape on the canvas.",
     "You painted a vibrant landscape on the canvas.",
     "You are painting a vibrant landscape on the canvas.",
     "You have painted a vibrant landscape on the canvas.",
@@ -1102,7 +1102,7 @@ export const unit27 = [
   ],
   [
     "Where shall we volunteer this month?",
-    "You shall volunteer at the local food bank this month.",
+    "You will volunteer at the local food bank this month.",
     "You volunteered at the local food bank this month.",
     "You are volunteering at the local food bank this month.",
     "You have volunteered at the local food bank this month.",
@@ -1112,7 +1112,7 @@ export const unit27 = [
   ],
   [
     "What shall I teach the students?",
-    "You shall teach the students basic algebra.",
+    "You will teach the students basic algebra.",
     "You taught the students basic algebra.",
     "You are teaching the students basic algebra.",
     "You have taught the students basic algebra.",
@@ -1122,7 +1122,7 @@ export const unit27 = [
   ],
   [
     "How shall we save for the trip?",
-    "You shall save for the trip by cutting extra expenses.",
+    "You will save for the trip by cutting extra expenses.",
     "You saved for the trip by cutting extra expenses.",
     "You are saving for the trip by cutting extra expenses.",
     "You have saved for the trip by cutting extra expenses.",
@@ -1132,7 +1132,7 @@ export const unit27 = [
   ],
   [
     "What shall I order for lunch?",
-    "You shall order a fresh salad for lunch.",
+    "You will order a fresh salad for lunch.",
     "You ordered a fresh salad for lunch.",
     "You are ordering a fresh salad for lunch.",
     "You have ordered a fresh salad for lunch.",
@@ -1142,7 +1142,7 @@ export const unit27 = [
   ],
   [
     "Where shall we hike this weekend?",
-    "You shall hike in the nearby forest this weekend.",
+    "You will hike in the nearby forest this weekend.",
     "You hiked in the nearby forest this weekend.",
     "You are hiking in the nearby forest this weekend.",
     "You have hiked in the nearby forest this weekend.",
@@ -1152,7 +1152,7 @@ export const unit27 = [
   ],
   [
     "What shall I design for the poster?",
-    "You shall design a bold graphic for the poster.",
+    "You will design a bold graphic for the poster.",
     "You designed a bold graphic for the poster.",
     "You are designing a bold graphic for the poster.",
     "You have designed a bold graphic for the poster.",
@@ -1162,7 +1162,7 @@ export const unit27 = [
   ],
   [
     "How shall we advertise the sale?",
-    "You shall advertise the sale with online banners.",
+    "You will advertise the sale with online banners.",
     "You advertised the sale with online banners.",
     "You are advertising the sale with online banners.",
     "You have advertised the sale with online banners.",
@@ -1172,7 +1172,7 @@ export const unit27 = [
   ],
   [
     "What shall I sing at the event?",
-    "You shall sing a classic ballad at the event.",
+    "You will sing a classic ballad at the event.",
     "You sang a classic ballad at the event.",
     "You are singing a classic ballad at the event.",
     "You have sung a classic ballad at the event.",
@@ -1192,7 +1192,7 @@ export const unit27 = [
   ],
   [
     "What shall I bake for the bake sale?",
-    "You shall bake chocolate cookies for the bake sale.",
+    "You will bake chocolate cookies for the bake sale.",
     "You baked chocolate cookies for the bake sale.",
     "You are baking chocolate cookies for the bake sale.",
     "You have baked chocolate cookies for the bake sale.",
@@ -1202,7 +1202,7 @@ export const unit27 = [
   ],
   [
     "How shall we organize the files?",
-    "You shall organize the files by category.",
+    "You will organize the files by category.",
     "You organized the files by category.",
     "You are organizing the files by category.",
     "You have organized the files by category.",
@@ -1212,7 +1212,7 @@ export const unit27 = [
   ],
   [
     "What shall I play at the party?",
-    "You shall play upbeat dance music at the party.",
+    "You will play upbeat dance music at the party.",
     "You played upbeat dance music at the party.",
     "You are playing upbeat dance music at the party.",
     "You have played upbeat dance music at the party.",
@@ -1222,7 +1222,7 @@ export const unit27 = [
   ],
   [
     "Where shall we eat dinner tonight?",
-    "You shall eat dinner at an Italian restaurant tonight.",
+    "You will eat dinner at an Italian restaurant tonight.",
     "You ate dinner at an Italian restaurant tonight.",
     "You are eating dinner at an Italian restaurant tonight.",
     "You have eaten dinner at an Italian restaurant tonight.",
@@ -1232,7 +1232,7 @@ export const unit27 = [
   ],
   [
     "What shall I draw for the art contest?",
-    "You shall draw a city skyline for the art contest.",
+    "You will draw a city skyline for the art contest.",
     "You drew a city skyline for the art contest.",
     "You are drawing a city skyline for the art contest.",
     "You have drawn a city skyline for the art contest.",
@@ -1242,7 +1242,7 @@ export const unit27 = [
   ],
   [
     "How shall we plan the vacation?",
-    "You shall plan the vacation with a detailed itinerary.",
+    "You will plan the vacation with a detailed itinerary.",
     "You planned the vacation with a detailed itinerary.",
     "You are planning the vacation with a detailed itinerary.",
     "You have planned the vacation with a detailed itinerary.",
@@ -1252,7 +1252,7 @@ export const unit27 = [
   ],
   [
     "What shall I wear for the costume party?",
-    "You shall wear a pirate costume for the costume party.",
+    "You will wear a pirate costume for the costume party.",
     "You wore a pirate costume for the costume party.",
     "You are wearing a pirate costume for the costume party.",
     "You have worn a pirate costume for the costume party.",
@@ -1262,7 +1262,7 @@ export const unit27 = [
   ],
   [
     "Where shall we donate the books?",
-    "You shall donate the books to the local library.",
+    "You will donate the books to the local library.",
     "You donated the books to the local library.",
     "You are donating the books to the local library.",
     "You have donated the books to the local library.",
@@ -1272,7 +1272,7 @@ export const unit27 = [
   ],
   [
     "What shall I present at the meeting?",
-    "You shall present a new marketing strategy at the meeting.",
+    "You will present a new marketing strategy at the meeting.",
     "You presented a new marketing strategy at the meeting.",
     "You are presenting a new marketing strategy at the meeting.",
     "You have presented a new marketing strategy at the meeting.",
@@ -1282,7 +1282,7 @@ export const unit27 = [
   ],
   [
     "How shall we train for the marathon?",
-    "You shall train for the marathon with a daily running schedule.",
+    "You will train for the marathon with a daily running schedule.",
     "You trained for the marathon with a daily running schedule.",
     "You are training for the marathon with a daily running schedule.",
     "You have trained for the marathon with a daily running schedule.",
@@ -1292,7 +1292,7 @@ export const unit27 = [
   ],
   [
     "What shall I build for the science fair?",
-    "You shall build a model volcano for the science fair.",
+    "You will build a model volcano for the science fair.",
     "You built a model volcano for the science fair.",
     "You are building a model volcano for the science fair.",
     "You have built a model volcano for the science fair.",
@@ -1302,7 +1302,7 @@ export const unit27 = [
   ],
   [
     "Where shall we camp this summer?",
-    "You shall camp by the lake this summer.",
+    "You will camp by the lake this summer.",
     "You camped by the lake this summer.",
     "You are camping by the lake this summer.",
     "You have camped by the lake this summer.",
@@ -1312,7 +1312,7 @@ export const unit27 = [
   ],
   [
     "What shall I knit for the winter?",
-    "You shall knit a warm scarf for the winter.",
+    "You will knit a warm scarf for the winter.",
     "You knitted a warm scarf for the winter.",
     "You are knitting a warm scarf for the winter.",
     "You have knitted a warm scarf for the winter.",
@@ -1322,7 +1322,7 @@ export const unit27 = [
   ],
   [
     "How shall we welcome the guests?",
-    "You shall welcome the guests with a warm greeting.",
+    "You will welcome the guests with a warm greeting.",
     "You welcomed the guests with a warm greeting.",
     "You are welcoming the guests with a warm greeting.",
     "You have welcomed the guests with a warm greeting.",
@@ -1332,7 +1332,7 @@ export const unit27 = [
   ],
   [
     "What shall I photograph at the festival?",
-    "You shall photograph the colorful parade at the festival.",
+    "You will photograph the colorful parade at the festival.",
     "You photographed the colorful parade at the festival.",
     "You are photographing the colorful parade at the festival.",
     "You have photographed the colorful parade at the festival.",
@@ -1342,7 +1342,7 @@ export const unit27 = [
   ],
   [
     "Where shall we shop for clothes?",
-    "You shall shop for clothes at the downtown boutique.",
+    "You will shop for clothes at the downtown boutique.",
     "You shopped for clothes at the downtown boutique.",
     "You are shopping for clothes at the downtown boutique.",
     "You have shopped for clothes at the downtown boutique.",
@@ -1352,7 +1352,7 @@ export const unit27 = [
   ],
   [
     "What shall I write for the blog?",
-    "You shall write a travel guide for the blog.",
+    "You will write a travel guide for the blog.",
     "You wrote a travel guide for the blog.",
     "You are writing a travel guide for the blog.",
     "You have written a travel guide for the blog.",
@@ -1362,7 +1362,7 @@ export const unit27 = [
   ],
   [
     "How shall we budget for the event?",
-    "You shall budget for the event with a detailed plan.",
+    "You will budget for the event with a detailed plan.",
     "You budgeted for the event with a detailed plan.",
     "You are budgeting for the event with a detailed plan.",
     "You have budgeted for the event with a detailed plan.",
@@ -1372,7 +1372,7 @@ export const unit27 = [
   ],
   [
     "What shall I learn for the workshop?",
-    "You shall learn digital editing for the workshop.",
+    "You will learn digital editing for the workshop.",
     "You learned digital editing for the workshop.",
     "You are learning digital editing for the workshop.",
     "You have learned digital editing for the workshop.",
@@ -1382,17 +1382,17 @@ export const unit27 = [
   ],
   [
     "Where shall we relax this evening?",
-    "You shall relax at the cozy café this evening.",
-    "You relaxed at the cozy café this evening.",
-    "You are relaxing at the cozy café this evening.",
-    "You have relaxed at the cozy café this evening.",
+    "You will relax at the cozy cafe this evening.",
+    "You relaxed at the cozy cafe this evening.",
+    "You are relaxing at the cozy cafe this evening.",
+    "You have relaxed at the cozy cafe this evening.",
     "Где нам расслабиться сегодня вечером?",
     "Де нам розслабитися сьогодні ввечері?",
     "Gdzie powinniśmy odpocząć dzisiejszego wieczoru?"
   ],
   [
     "What shall I repair in the house?",
-    "You shall repair the leaky faucet in the house.",
+    "You will repair the leaky faucet in the house.",
     "You repaired the leaky faucet in the house.",
     "You are repairing the leaky faucet in the house.",
     "You have repaired the leaky faucet in the house.",
@@ -1402,7 +1402,7 @@ export const unit27 = [
   ],
   [
     "How shall we celebrate the anniversary?",
-    "You shall celebrate the anniversary with a special dinner.",
+    "You will celebrate the anniversary with a special dinner.",
     "You celebrated the anniversary with a special dinner.",
     "You are celebrating the anniversary with a special dinner.",
     "You have celebrated the anniversary with a special dinner.",
@@ -1412,7 +1412,7 @@ export const unit27 = [
   ],
   [
     "What shall I sew for the costume?",
-    "You shall sew a superhero cape for the costume.",
+    "You will sew a superhero cape for the costume.",
     "You sewed a superhero cape for the costume.",
     "You are sewing a superhero cape for the costume.",
     "You have sewed a superhero cape for the costume.",
@@ -1422,7 +1422,7 @@ export const unit27 = [
   ],
   [
     "Where shall we walk this afternoon?",
-    "You shall walk along the riverbank this afternoon.",
+    "You will walk along the riverbank this afternoon.",
     "You walked along the riverbank this afternoon.",
     "You are walking along the riverbank this afternoon.",
     "You have walked along the riverbank this afternoon.",
@@ -1432,7 +1432,7 @@ export const unit27 = [
   ],
   [
     "What shall I create for the art show?",
-    "You shall create a sculpture for the art show.",
+    "You will create a sculpture for the art show.",
     "You created a sculpture for the art show.",
     "You are creating a sculpture for the art show.",
     "You have created a sculpture for the art show.",
@@ -1442,7 +1442,7 @@ export const unit27 = [
   ],
   [
     "How shall we pack for the trip?",
-    "You shall pack for the trip with lightweight luggage.",
+    "You will pack for the trip with lightweight luggage.",
     "You packed for the trip with lightweight luggage.",
     "You are packing for the trip with lightweight luggage.",
     "You have packed for the trip with lightweight luggage.",
@@ -1452,7 +1452,7 @@ export const unit27 = [
   ],
   [
     "What shall I share on social media?",
-    "You shall share a motivational quote on social media.",
+    "You will share a motivational quote on social media.",
     "You shared a motivational quote on social media.",
     "You are sharing a motivational quote on social media.",
     "You have shared a motivational quote on social media.",
@@ -1462,17 +1462,17 @@ export const unit27 = [
   ],
   [
     "Where shall we meet for coffee?",
-    "You shall meet for coffee at the corner café.",
-    "You met for coffee at the corner café.",
-    "You are meeting for coffee at the corner café.",
-    "You have met for coffee at the corner café.",
+    "You will meet for coffee at the corner cafe.",
+    "You met for coffee at the corner cafe.",
+    "You are meeting for coffee at the corner cafe.",
+    "You have met for coffee at the corner cafe.",
     "Где нам встретиться за кофе?",
     "Де нам зустрітися за кавою?",
     "Gdzie powinniśmy się spotkać na kawę?"
   ],
   [
     "What shall I perform at the talent show?",
-    "You shall perform a magic trick at the talent show.",
+    "You will perform a magic trick at the talent show.",
     "You performed a magic trick at the talent show.",
     "You are performing a magic trick at the talent show.",
     "You have performed a magic trick at the talent show.",

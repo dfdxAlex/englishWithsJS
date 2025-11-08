@@ -1680,10 +1680,10 @@ export const presentPerfectIHaveDone = [
     "Czy już obejrzałeś nowy film?"
 ],
 [
-    "Has she been to the new café yet?",
+    "Has she been to the new cafe yet?",
     "Yes, she has already been there.",
-    "No, she hasn't been to the café yet.",
-    "She has been to the café yet.",
+    "No, she hasn't been to the cafe yet.",
+    "She has been to the cafe yet.",
     "She hasn't been yet.",
     "Она уже была в новом кафе?",
     "Вона вже була в новому кафе?",

@@ -10,11 +10,11 @@ export const unit28 = [
     "Pomożesz mi nieść te ciężkie torby?"
   ],
   [
-    "Shall we meet at the café at 7 p.m.?",
-    "We shall meet at the café at 7 p.m., as planned.",
-    "We are meeting at the café at 7 p.m.",
-    "We met at the café at 7 p.m. last week.",
-    "We have met at the café at 7 p.m. several times.",
+    "Shall we meet at the cafe at 7 p.m.?",
+    "We shall meet at the cafe at 7 p.m., as planned.",
+    "We are meeting at the cafe at 7 p.m.",
+    "We met at the cafe at 7 p.m. last week.",
+    "We have met at the cafe at 7 p.m. several times.",
     "Встретимся ли мы в кафе в 19:00?",
     "Чи зустрінемося ми в кафе о 19:00?",
     "Spotkamy się w kawiarni o 19:00?"
@@ -31,7 +31,7 @@ export const unit28 = [
   ],
   [
     "Shall I open the window?",
-    "You shall open the window if it's too hot.",
+    "You will open the window if it's too hot.",
     "You are opening the window right now.",
     "You opened the window earlier.",
     "You have opened the window many times today.",
@@ -71,7 +71,7 @@ export const unit28 = [
   ],
   [
     "Shall I book the tickets now?",
-    "You shall book the tickets before they sell out.",
+    "You will book the tickets before they sell out.",
     "You are booking the tickets right now.",
     "You booked the tickets yesterday.",
     "You have booked the tickets early many times.",
@@ -111,7 +111,7 @@ export const unit28 = [
   ],
   [
     "Shall I turn off the lights?",
-    "You shall turn off the lights when you leave.",
+    "You will turn off the lights when you leave.",
     "You are turning off the lights now.",
     "You turned off the lights last night.",
     "You have turned off the lights every evening.",
@@ -191,7 +191,7 @@ export const unit28 = [
   ],
   [
     "Shall I close the door?",
-    "You shall close the door quietly.",
+    "You will close the door quietly.",
     "You are closing the door now.",
     "You closed the door earlier.",
     "You have closed the door every night.",
@@ -231,7 +231,7 @@ export const unit28 = [
   ],
   [
     "Shall I print the document?",
-    "You shall print two copies.",
+    "You will print two copies.",
     "You are printing the document now.",
     "You printed the document yesterday.",
     "You have printed the document many times.",
@@ -271,7 +271,7 @@ export const unit28 = [
   ],
   [
     "Shall I call a taxi?",
-    "You shall call a taxi if the bus is late.",
+    "You will call a taxi if the bus is late.",
     "You are calling a taxi now.",
     "You called a taxi last time.",
     "You have called a taxi many times.",
@@ -311,7 +311,7 @@ export const unit28 = [
   ],
   [
     "Shall I save you a seat?",
-    "You shall save me a seat in the front row.",
+    "You will save me a seat in the front row.",
     "You are saving me a seat now.",
     "You saved me a seat last time.",
     "You have saved me a seat before.",
@@ -351,7 +351,7 @@ export const unit28 = [
   ],
   [
     "Shall I lock the door?",
-    "You shall lock the door when you leave.",
+    "You will lock the door when you leave.",
     "You are locking the door now.",
     "You locked the door earlier.",
     "You have locked the door every evening.",
@@ -391,7 +391,7 @@ export const unit28 = [
   ],
   [
     "Shall I bring an umbrella?",
-    "You shall bring an umbrella, it might rain.",
+    "You will bring an umbrella, it might rain.",
     "You are bringing an umbrella now.",
     "You brought an umbrella last time.",
     "You have brought an umbrella every rainy day.",
@@ -431,7 +431,7 @@ export const unit28 = [
   ],
   [
     "Shall I translate this for you?",
-    "You shall translate it into English.",
+    "You will translate it into English.",
     "You are translating it now.",
     "You translated it yesterday.",
     "You have translated it many times.",
@@ -471,7 +471,7 @@ export const unit28 = [
   ],
   [
     "Shall I wake you up at 6?",
-    "You shall wake me up at 6 a.m. sharp.",
+    "You will wake me up at 6 a.m. sharp.",
     "You are waking me up now.",
     "You woke me up yesterday.",
     "You have woken me up early every day.",
@@ -500,11 +500,11 @@ export const unit28 = [
     "Czy uwierzyć w te wiadomości?"
   ],
 [
-    "We shall meet at the café at 7 p.m.",
-    "Shall we meet at the café at 7 p.m.?",
-    "Are we meeting at the café at 7 p.m.?",
-    "Did we meet at the café at 7 p.m.?",
-    "Have we met at the café at 7 p.m. before?",
+    "We shall meet at the cafe at 7 p.m.",
+    "Shall we meet at the cafe at 7 p.m.?",
+    "Are we meeting at the cafe at 7 p.m.?",
+    "Did we meet at the cafe at 7 p.m.?",
+    "Have we met at the cafe at 7 p.m. before?",
     "Мы встретимся в кафе в 19:00.",
     "Ми зустрінемося в кафе о 19:00.",
     "Spotkamy się w kawiarni o 19:00."
@@ -570,7 +570,7 @@ export const unit28 = [
     "Pożyczy ci swój parasol."
   ],
   [
-    "You shall open the window if it’s hot.",
+    "You will open the window if it’s hot.",
     "Shall I open the window if it’s hot?",
     "Am I opening the window right now?",
     "Did I open the window earlier?",
@@ -680,7 +680,7 @@ export const unit28 = [
     "Podwieziesz mnie na dworzec o 6 rano."
   ],
   [
-    "She shall close the door quietly.",
+    "She will close the door quietly.",
     "Shall I close the door quietly?",
     "Am I closing the door now?",
     "Did I close the door earlier?",
@@ -720,7 +720,7 @@ export const unit28 = [
     "Sprawdzę e-mail natychmiast."
   ],
   [
-    "You shall print two copies.",
+    "You will print two copies.",
     "Shall I print two copies?",
     "Am I printing the document now?",
     "Did I print the document yesterday?",
@@ -780,7 +780,7 @@ export const unit28 = [
     "Oddasz książkę jutro."
   ],
   [
-    "They shall split the bill equally.",
+    "They will split the bill equally.",
     "Shall we split the bill equally?",
     "Are we sharing the cost right now?",
     "Did we share the cost last time?",
@@ -840,7 +840,7 @@ export const unit28 = [
     "Naładujesz telefon na noc."
   ],
   [
-    "He shall lock the door when he leaves.",
+    "He will lock the door when he leaves.",
     "Shall I lock the door when I leave?",
     "Am I locking the door now?",
     "Did I lock the door earlier?",
@@ -860,7 +860,7 @@ export const unit28 = [
     "Podpiszesz umowę jutro."
   ],
   [
-    "They shall dance to this song.",
+    "They will dance to this song.",
     "Shall we dance to this song?",
     "Are we dancing right now?",
     "Did we dance last night?",
@@ -880,7 +880,7 @@ export const unit28 = [
     "Wybaczy ci i pójdzie dalej."
   ],
   [
-    "You shall bring an umbrella in case it rains.",
+    "You will bring an umbrella in case it rains.",
     "Shall I bring an umbrella in case it rains?",
     "Am I bringing an umbrella now?",
     "Did I bring an umbrella last time?",
@@ -920,7 +920,7 @@ export const unit28 = [
     "Pamiętasz, żeby zadzwonić o 20:00?"
   ],
   [
-    "You shall translate it into English.",
+    "You will translate it into English.",
     "Shall I translate it into English?",
     "Am I translating it now?",
     "Did I translate it yesterday?",
@@ -940,7 +940,7 @@ export const unit28 = [
     "Przyjmie ofertę do jutra."
   ],
   [
-    "They shall celebrate with champagne.",
+    "They will celebrate with champagne.",
     "Shall we celebrate with champagne?",
     "Are we celebrating right now?",
     "Did we celebrate last night?",
@@ -1062,7 +1062,7 @@ export const unit28 = [
   ],
   [
     "The movie starts at 8 p.m. and we haven’t bought tickets. The cinema is 10 minutes away by car.",
-    "You shall buy the tickets online and we will leave in 30 minutes.",
+    "You will buy the tickets online and we will leave in 30 minutes.",
     "You are buying the tickets online and we are leaving right now.",
     "You bought the tickets online and we left last week.",
     "You have bought the tickets online and we have left many times before.",
@@ -1102,7 +1102,7 @@ export const unit28 = [
   ],
   [
     "The restaurant reservation is at 7 p.m. and I’m still in casual clothes. The iron is in the bedroom.",
-    "You shall iron a shirt and be ready in 20 minutes.",
+    "You will iron a shirt and be ready in 20 minutes.",
     "You are ironing a shirt and getting ready right now.",
     "You ironed a shirt and got ready last time.",
     "You have ironed a shirt and gotten ready many times before.",
@@ -1142,7 +1142,7 @@ export const unit28 = [
   ],
   [
     "The birthday party is tomorrow and I forgot to buy a gift. The store is open until 9 p.m.",
-    "You shall go to the mall and pick a thoughtful gift tonight.",
+    "You will go to the mall and pick a thoughtful gift tonight.",
     "You are going to the mall and picking a gift right now.",
     "You went to the mall and picked a gift last year.",
     "You have gone to the mall and picked gifts many times before.",
@@ -1182,7 +1182,7 @@ export const unit28 = [
   ],
   [
     "The soup is boiling over and the kitchen is filling with steam. The lid is on the counter.",
-    "You shall lower the heat and put the lid on the pot immediately.",
+    "You will lower the heat and put the lid on the pot immediately.",
     "You are lowering the heat and putting the lid on right now.",
     "You lowered the heat and put the lid on yesterday.",
     "You have lowered the heat and put the lid on many times before.",
@@ -1222,7 +1222,7 @@ export const unit28 = [
   ],
   [
     "The rent is due tomorrow and I haven’t transferred the money. The bank app is open on my phone.",
-    "You shall transfer the rent now and confirm the payment.",
+    "You will transfer the rent now and confirm the payment.",
     "You are transferring the rent and confirming right now.",
     "You transferred the rent and confirmed last month.",
     "You have transferred the rent and confirmed many times before.",
@@ -1262,7 +1262,7 @@ export const unit28 = [
   ],
   [
     "The doctor’s appointment is at 11 a.m. and I haven’t confirmed it. The clinic number is saved.",
-    "You shall call the clinic now and confirm the appointment.",
+    "You will call the clinic now and confirm the appointment.",
     "You are calling the clinic and confirming right now.",
     "You called the clinic and confirmed last week.",
     "You have called the clinic and confirmed many times before.",
@@ -1302,7 +1302,7 @@ export const unit28 = [
   ],
   [
     "The bill is due in two days and I haven’t paid it online. The login details are saved.",
-    "You shall log in and pay the bill tonight to avoid fees.",
+    "You will log in and pay the bill tonight to avoid fees.",
     "You are logging in and paying the bill right now.",
     "You logged in and paid the bill last month.",
     "You have logged in and paid bills many times before.",
@@ -1342,7 +1342,7 @@ export const unit28 = [
   ],
   [
     "The shirt needs sewing and the event is tomorrow evening. The needle and thread are in the drawer.",
-    "You shall sew the button tonight and press the shirt.",
+    "You will sew the button tonight and press the shirt.",
     "You are sewing the button and pressing the shirt right now.",
     "You sewed the button and pressed the shirt last time.",
     "You have sewed buttons and pressed shirts many times before.",
@@ -1382,7 +1382,7 @@ export const unit28 = [
   ],
   [
     "The laptop is updating and the presentation is in 20 minutes. The old version is on USB.",
-    "You shall use the USB version and present from the stick.",
+    "You will use the USB version and present from the stick.",
     "You are using the USB version and presenting right now.",
     "You used the USB version and presented last time.",
     "You have used USB versions and presented many times before.",
@@ -1421,8 +1421,8 @@ export const unit28 = [
     "Kot utknął na dachu, a na dworze robi się zimno. Drabina w garażu."
   ],
   [
-    "The flight is delayed by two hours and we’re hungry. The café is still open.",
-    "You shall buy sandwiches and coffee while we wait.",
+    "The flight is delayed by two hours and we’re hungry. The cafe is still open.",
+    "You will buy sandwiches and coffee while we wait.",
     "You are buying sandwiches and coffee right now.",
     "You bought sandwiches and coffee last delay.",
     "You have bought sandwiches and coffee during delays many times before.",
@@ -1462,7 +1462,7 @@ export const unit28 = [
   ],
   [
     "The gift needs wrapping and the birthday is tomorrow. The paper and ribbon are in the drawer.",
-    "You shall wrap the gift beautifully tonight.",
+    "You will wrap the gift beautifully tonight.",
     "You are wrapping the gift beautifully right now.",
     "You wrapped the gift beautifully last birthday.",
     "You have wrapped gifts beautifully many times before.",
@@ -1551,7 +1551,7 @@ export const unit28 = [
     "Muzyka gra, a wszyscy na parkiecie. Światła są przyciemnione."
   ],
   [
-    "The rain just started pouring and we’re outside the café. The umbrella is in the bag.",
+    "The rain just started pouring and we’re outside the cafe. The umbrella is in the bag.",
     "I am opening the umbrella and covering us right now.",
     "I will open the umbrella and cover us later.",
     "I opened the umbrella and covered us yesterday.",
