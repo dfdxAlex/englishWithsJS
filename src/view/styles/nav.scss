@@ -1,5 +1,5 @@
-@import './nav/resetStylesForSelect.scss';
-@import './nav/fontSizeForContens.scss';
+@use './nav/resetStylesForSelect.scss';
+@use './nav/fontSizeForContens.scss';
 
 nav {
   width: 100%;
