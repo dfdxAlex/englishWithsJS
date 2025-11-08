@@ -1,6 +1,7 @@
 import indexForThoury from '../controllers/forThoury/indexForThoury.js';
 import { Help } from './Help.js';
 import './styles/nav.scss';
+import { langView } from './naw/langView.js';
 
 export function nav()
 {
@@ -49,30 +50,3 @@ export function nav()
   </nav>`;
 }
 
-const navbar = document.getElementById('navbarNav');
-
-if (navbar)
-    navbar.addEventListener('show.bs.collapse', () => {
-      console.log('📂 Меню открывается');
-    });
-
-
-import { LanguageSelectorView } from '../view/languageSelectorView/LanguageSelectorView.js';
-import { LanguageController } from '../controllers/LanguageController.js';
-function langView()
-{
-          // --создать объект меню выбора языка
-          const langSelector = new LanguageSelectorView();
-
-          // Создать объект переводчика
-          const translate = new LanguageController();
-
-
-  
-          // Вернуть разметку для менюшки выбора языка
-          // langSelector.init - вернуть разметку менюшки с текущим значением выбранного языка
-          // translate.langStr - содержит значение выбранного языка.
-          return langSelector.init(translate.langStr);
-
-
-}

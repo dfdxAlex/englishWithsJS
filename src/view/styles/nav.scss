@@ -1,9 +1,5 @@
 nav {
-  // position: fixed;
-  // bottom: 0;
-  // left: 0;
   width: 100%;
-  // z-index: 999;
 }
 
 /* Когда меню закрыто */
@@ -13,7 +9,14 @@ nav {
 
 /* Когда меню открыто */
 #navbarNav.show .nav-link {
+  font-size: 2rem;
+  font-weight: bold;
+  transition: font-size 0.5s ease;
+}
+#navbarNav .nav-link {
   font-size: 1rem;
+  font-weight: bold;
+  transition: font-size 0.5s ease;
 }
 
 /* Элементы меню */
