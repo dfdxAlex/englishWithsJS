@@ -1,0 +1,29 @@
+// Изменяет размер шрифта при переходе от широкого екрана к гамбургеру и наоборот.
+
+@media (max-width: 575px) {
+  #navbarNav.show .nav-link{
+    font-size: 2rem;
+    transition: font-size 0.5s ease;
+  }
+}
+
+@media (min-width: 576px) {
+  .navbar-nav .nav-link{
+    font-size: 1rem;
+    transition: font-size 0.5s ease;
+  }
+}
+
+@media (max-width: 575px) {
+  #navbarNav.show .nav-link select{
+    font-size: 2rem;
+    transition: font-size 0.5s ease;
+  }
+}
+
+@media (min-width: 576px) {
+  .navbar-nav .nav-link select{
+    font-size: 1rem;
+    transition: font-size 0.5s ease;
+  }
+}

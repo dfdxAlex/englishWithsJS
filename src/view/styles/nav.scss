@@ -1,66 +1,9 @@
+@import './nav/resetStylesForSelect.scss';
+@import './nav/fontSizeForContens.scss';
+
 nav {
   width: 100%;
 }
-
-/* Когда меню закрыто */
-// .navbar-nav .nav-link {
-//   font-size: 1rem;
-// }
-
-.nav-link > select {
-  appearance: none;           /* убирает нативный стиль (Chrome, Safari, Opera) */
-  -webkit-appearance: none;   /* для WebKit-браузеров */
-  -moz-appearance: none;      /* для Firefox */
-  
-  background: transparent;    /* убирает фон */
-  border: none;               /* убирает рамку */
-  outline: none;              /* убирает контур при фокусе */
-  
-  font: inherit;              /* наследует шрифт от родителя */
-  color: inherit;             /* наследует цвет текста */
-  
-  padding: 0;                 /* обнуляет внутренние отступы */
-  margin: 0;                  /* обнуляет внешние отступы */
-  
-  cursor: pointer;            /* делает курсор “рукой” */
-  line-height: normal;
-}
-
-@media (max-width: 575px) {
-  #navbarNav.show .nav-link{
-    font-size: 2rem;
-    transition: font-size 0.5s ease;
-  }
-}
-
-@media (min-width: 576px) {
-  .navbar-nav .nav-link{
-    font-size: 1rem;
-    transition: font-size 0.5s ease;
-  }
-}
-
-@media (max-width: 575px) {
-  #navbarNav.show .nav-link select{
-    font-size: 2rem;
-    transition: font-size 0.5s ease;
-  }
-}
-
-@media (min-width: 576px) {
-  .navbar-nav .nav-link select{
-    font-size: 1rem;
-    transition: font-size 0.5s ease;
-  }
-}
-
-
-/* Когда меню открыто */
-// #navbarNav.show .nav-link {
-//   font-size: 2rem;
-//   font-weight: bold;
-//   transition: font-size 0.5s ease;
-// }
 
 /* Элементы меню */
 .navbar-nav {
@@ -87,9 +30,7 @@ nav {
   pointer-events: auto; /* чтобы клики ловились именно модалкой */
 }
 
-
 .nav-link {
-  // color: black;
   text-decoration: none;
 }
 
@@ -105,4 +46,5 @@ nav {
 .navbar-toggler-icon {
   background: rgba(255, 255, 255, 0.4);
   border-radius: 5px;
+  padding: 5px;
 }
