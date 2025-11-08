@@ -73,3 +73,12 @@ const id = setInterval(()=>{
         console.log('Все элементы получили свои события');
         clearInterval(id);}
 },300);
+
+// window.addEventListener('resize', () => {
+//   const navbarCollapse = document.querySelector('#navbarNav');
+  
+//   if (window.innerWidth > 992 && navbarCollapse.classList.contains('show')) {
+//     navbarCollapse.classList.remove('show');
+//   }
+// });
+
