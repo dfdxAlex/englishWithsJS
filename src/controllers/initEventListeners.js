@@ -8,9 +8,14 @@ import { handleForSelectLangauge } from './forInitEventListeners/handleForSelect
 import { menuSettingView } from '../view/menuSettingView.js';
 import { activationMenuSetting } from './activationMenuSetting.js';
 import { DataSet } from '../services/data/DataSet.js';
+import { nav } from '../view/nav.js';
+import { MenuController } from './MenuController.js';
 
 // Здесь функции, которые должны отработать когда загрузится статическая страница
 window.addEventListener('load', () => {
+    nav();
+    const menuC = new MenuController();
+    menuC.init();
 
     hundleBlockMenu();
 
@@ -74,11 +79,5 @@ const id = setInterval(()=>{
         clearInterval(id);}
 },300);
 
-// window.addEventListener('resize', () => {
-//   const navbarCollapse = document.querySelector('#navbarNav');
-  
-//   if (window.innerWidth > 992 && navbarCollapse.classList.contains('show')) {
-//     navbarCollapse.classList.remove('show');
-//   }
-// });
+
 

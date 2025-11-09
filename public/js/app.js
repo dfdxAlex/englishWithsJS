@@ -2,12 +2,12 @@
 // Описывается событие загрузки документа
 
 window.addEventListener('load', () => {
-    window.nav;
+    // window.nav;
     htmlHelp();
     buttonSound();
    
-    const menuC = new window.MenuController();
-    menuC.init();
+    // const menuC = new window.MenuController();
+    // menuC.init();
 
     // событие на кнопку "Сообщить об ошибке"
     handleSearchError();
