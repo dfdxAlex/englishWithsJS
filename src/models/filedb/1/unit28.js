@@ -1,4 +1,4 @@
-export const unit28 = [
+const unit28Start = [
 [
     "Will you help me carry these heavy bags?",
     "I will help you carry the bags, don't worry.",
@@ -2012,9 +2012,77 @@ export const unit28 = [
   ]
 ];
 
+// Расширение массива за счёт вариаций с заменой will на shall и наоборот
+// Здесь найти в индексе 2 все will возле i или we и заменить на shall
+const unit28PartOne = unit28Start.filter(el => el[2].toLowerCase().includes('i will ') 
+                                         || el[2].toLowerCase().includes('we will ')).map((el) => {
+  // Создаём копию подмассива, чтобы не менять исходный
+  const newEl = [...el];
+  // Заменяем "might" на "may" в нужных строках
+  newEl[2] = newEl[2].replace(/will/g, "shall");
+  return newEl;
+});
+
+// Здесь найти в индексе 0 все will возле i или we и заменить на shall
+const unit28PartTwo = unit28Start.filter(el => el[0].toLowerCase().includes('i will ') 
+                                         || el[0].toLowerCase().includes('we will ')).map((el) => {
+  // Создаём копию подмассива, чтобы не менять исходный
+  const newEl = [...el];
+  // Заменяем "might" на "may" в нужных строках
+  newEl[0] = newEl[0].replace(/will/g, "shall");
+  return newEl;
+});
+
+// Здесь найти в индексе 1 все will возле i или we и заменить на shall
+const unit28PartThree = unit28Start.filter(el => el[1].toLowerCase().includes('i will ') 
+                                         || el[1].toLowerCase().includes('we will ')).map((el) => {
+  // Создаём копию подмассива, чтобы не менять исходный
+  const newEl = [...el];
+  // Заменяем "might" на "may" в нужных строках
+  newEl[1] = newEl[1].replace(/will/g, "shall");
+  return newEl;
+});
+
+// Здесь найти в индексе 0 все shall и заменить на will
+const unit28PartFour = unit28Start.filter(el => el[0].toLowerCase().includes('shall ')).map((el) => {
+  // Создаём копию подмассива, чтобы не менять исходный
+  const newEl = [...el];
+  // Заменяем "might" на "may" в нужных строках
+  newEl[0] = newEl[0].replace(/shall/g, "will");
+  newEl[0] = newEl[0].replace(/Shall/g, "Will");
+  return newEl;
+});
+
+// Здесь найти в индексе 1 все shall и заменить на will
+const unit28PartFive = unit28Start.filter(el => el[1].toLowerCase().includes('shall ')).map((el) => {
+  // Создаём копию подмассива, чтобы не менять исходный
+  const newEl = [...el];
+  // Заменяем "might" на "may" в нужных строках
+  newEl[1] = newEl[1].replace(/shall/g, "will");
+  newEl[1] = newEl[1].replace(/Shall/g, "Will");
+  return newEl;
+});
+
+// Здесь найти в индексе 1 все shall и заменить на will
+const unit28PartSex = unit28Start.filter(el => el[0].toLowerCase().includes('shall ')
+                                            && el[1].toLowerCase().includes('shall ')).map((el) => {
+  // Создаём копию подмассива, чтобы не менять исходный
+  const newEl = [...el];
+  // Заменяем "might" на "may" в нужных строках
+  newEl[1] = newEl[1].replace(/shall/g, "will");
+  newEl[1] = newEl[1].replace(/Shall/g, "Will");
+  newEl[0] = newEl[0].replace(/shall/g, "will");
+  newEl[0] = newEl[0].replace(/Shall/g, "Will");
+  return newEl;
+});
+
+const unit28 = [...unit28PartOne, ...unit28PartTwo, ...unit28PartThree, 
+                    ...unit28PartFour, ...unit28PartFive, ...unit28PartSex, ...unit28Start];
 
     // Если это свойство есть, то оно попадает в заголовок теста
     unit28.nameLeson = "Will / Shall Part Two";
 
     //--созданными предложениями.
     unit28.lengthTrue = 5;
+
+export { unit28 };

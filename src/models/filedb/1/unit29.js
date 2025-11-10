@@ -3131,18 +3131,60 @@ const unit29Migth = [
   ]
 ];
 
-const unit29May = unit29Migth.map((el) => {
+// Расширение массива за счёт вариаций замены might на may.
+// дублируется массив для подстановки вместо Migth слово May
+// Выбрать тесты где в индексах 0 и 1 есть слово might и заменить оба слова на may
+const unit29May = unit29Migth.filter(el => el[0].toLowerCase().includes('might') && el[1].toLowerCase().includes('might')
+).map((el) => {
   // Создаём копию подмассива, чтобы не менять исходный
   const newEl = [...el];
-
   // Заменяем "might" на "may" в нужных строках
   newEl[0] = newEl[0].replace(/might/g, "may");
   newEl[1] = newEl[1].replace(/might/g, "may");
-
   return newEl;
 });
 
-const unit29 = [...unit29Migth, ...unit29May];
+// выбрать те подмассивы где в индексах 0 и 1 есть слово might, однако заменить только в индексе 0
+const unit29MayOnlyIndexZero = unit29Migth.filter(el => el[0].toLowerCase().includes('might') && el[1].toLowerCase().includes('might')
+).map((el) => {
+  // Создаём копию подмассива, чтобы не менять исходный
+  const newEl = [...el];
+  // Заменяем "might" на "may" в нужных строках
+  newEl[0] = newEl[0].replace(/might/g, "may");
+  return newEl;
+});
+
+// выбрать те подмассивы где в индексах 0 и 1 есть слово might, однако заменить только в индексе 1
+const unit29MayOnlyIndexOne = unit29Migth.filter(el => el[0].toLowerCase().includes('might') && el[1].toLowerCase().includes('might')
+).map((el) => {
+  // Создаём копию подмассива, чтобы не менять исходный
+  const newEl = [...el];
+  // Заменяем "might" на "may" в нужных строках
+  newEl[1] = newEl[1].replace(/might/g, "may");
+  return newEl;
+});
+
+// Выбрать те подмассивы, где есть только в индексе 0 слово might и заменить его на may
+const unit29MayZero = unit29Migth.filter(el => el[0].toLowerCase().includes('might') && !el[1].toLowerCase().includes('might')
+).map((el) => {
+  // Создаём копию подмассива, чтобы не менять исходный
+  const newEl = [...el];
+  // Заменяем "might" на "may" в нужных строках
+  newEl[0] = newEl[0].replace(/might/g, "may");
+  return newEl;
+});
+
+// Выбрать только те подмассивы, где только в индексе 1 есть слово might и заменить его на may
+const unit29One = unit29Migth.filter(el => !el[0].toLowerCase().includes('might') && el[1].toLowerCase().includes('might')
+).map((el) => {
+  // Создаём копию подмассива, чтобы не менять исходный
+  const newEl = [...el];
+  // Заменяем "might" на "may" в нужных строках
+  newEl[1] = newEl[1].replace(/might/g, "may");
+  return newEl;
+});
+
+const unit29 = [...unit29MayOnlyIndexZero, ...unit29MayOnlyIndexOne, ...unit29Migth, ...unit29May, ...unit29MayZero, ...unit29One];
 
 // Если это свойство есть, то оно попадает в заголовок теста
 unit29.nameLeson = "Might / May";
