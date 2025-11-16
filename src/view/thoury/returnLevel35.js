@@ -1,37 +1,33 @@
 export default returnLevel35;
 
+import '../styles/thoury/returnLevel35.scss';
+
 function returnLevel35()
 {
-    return `<div class="card border-success">
-  <div class="card-header bg-success text-white">
-    <h5 class="mb-0">
-      <button class="btn btn-light text-success" type="button" data-bs-toggle="collapse" data-bs-target="#pastRule" aria-expanded="true" aria-controls="pastRule">
+    return `
+<div class="returnLevel35">
+    <h5>
         Сравнение Past Continuous и Past Simple
-      </button>
     </h5>
-  </div>
-  <div id="pastRule" class="collapse show">
-    <div class="card-body text-success">
-      <h6><strong>1. Основные правила:</strong></h6>
+
+      <h5><strong>1. Основные правила:</strong></h5>
       <p><strong>Past Simple:</strong> действия, которые завершились в прошлом в определенный момент.</p>
       <p><strong>Past Continuous:</strong> действия, которые были в процессе в определенный момент в прошлом.</p>
 
-      <h6><strong>2. Слова-маркеры:</strong></h6>
-      <button class="btn btn-success text-white mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#markers" aria-expanded="false" aria-controls="markers">
+      <h5><strong>2. Слова-маркеры:</strong></h5>
+      <p>
         Слова-маркеры
-      </button>
-      <div class="collapse" id="markers">
+      </p>
         <ul>
           <li><strong>Past Simple:</strong> yesterday, last week, last month, two days ago, in 2010.</li>
           <li><strong>Past Continuous:</strong> while, when, at 5 PM, all day yesterday.</li>
         </ul>
-      </div>
 
-      <h6><strong>3. Формулы:</strong></h6>
-      <button class="btn btn-success text-white mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#formulas" aria-expanded="false" aria-controls="formulas">
+      <h5><strong>3. Формулы:</strong></h5>
+      <p>
         Формулы
-      </button>
-      <div class="collapse" id="formulas">
+      </p>
+
         <ul>
           <li><strong>Past Simple:</strong>
             <ul>
@@ -48,13 +44,12 @@ function returnLevel35()
             </ul>
           </li>
         </ul>
-      </div>
 
-      <h6><strong>4. Примеры:</strong></h6>
-      <button class="btn btn-success text-white mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#examples" aria-expanded="false" aria-controls="examples">
+      <h5><strong>4. Примеры:</strong></h5>
+      <p>
         Примеры
-      </button>
-      <div class="collapse" id="examples">
+      </p>
+
         <p><strong>Past Simple:</strong></p>
         <ul>
           <li>Положительное: <em>I played football yesterday.</em></li>
@@ -67,20 +62,15 @@ function returnLevel35()
           <li>Отрицательное: <em>I wasn’t reading a book at 5 PM yesterday.</em></li>
           <li>Вопросительное: <em>Were you reading a book at 5 PM yesterday?</em></li>
         </ul>
-      </div>
 
-      <h6><strong>5. Сравнение:</strong></h6>
-      <button class="btn btn-success text-white mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#comparison" aria-expanded="false" aria-controls="comparison">
+      <h5><strong>5. Сравнение:</strong></h5>
+      <p>
         Сравнение
-      </button>
-      <div class="collapse" id="comparison">
+      </p>
         <ul>
           <li><strong>Past Simple:</strong> <em>I cleaned the house yesterday.</em></li>
           <li><strong>Past Continuous:</strong> <em>I was cleaning the house when she called.</em></li>
         </ul>
-      </div>
-    </div>
-  </div>
 </div>
 `;
 }
