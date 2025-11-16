@@ -3,22 +3,20 @@
     border: 1px solid #28a745; 
     border-radius: 5px; 
     background-color: #e9f7ec;
-        h4, h5 {
+        h4, h5, p, ul {
             font-size: 1.2rem; 
             margin-bottom: 10px; 
             color: #28a745;
+            padding-left: 10px;
+            text-align:left;
         }
         p {
-            font-size: 1rem; 
             color: #155724;
-            text-align:left;
         }
         ul {
             width: 100%; 
             margin-bottom: 10px;
-            text-align:left;
             list-style-type: none;
-            padding-left: 0;
             li {
               list-style: none;
               padding-left: 0;

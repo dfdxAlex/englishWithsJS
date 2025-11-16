@@ -1,46 +1,45 @@
 export default returnLevel34EN;
 
+import '../styles/thoury/returnLevel34.scss';
+
 function returnLevel34EN()
 {
-    return `<div class="card" style="width: 100%; border: 1px solid #28a745; border-radius: 5px; background-color: #e9f7ec;">
-  <div class="card-body">
-    <h4 class="card-title" style="font-size: 1.2rem; margin-bottom: 10px; color: #28a745;"><strong>Past Continuous Tense</strong></h4>
-    <p class="card-text" style="font-size: 1rem; color: #155724;">The Past Continuous tense describes actions that were happening at a particular moment in the past or actions that were ongoing for some time in the past. It is also used to express two actions happening at the same time in the past.</p>
+    return `<div class="returnLevel34">
+    <h4><strong>Past Continuous Tense</strong></h4>
+    <p>Past Continuous Tense describes actions that were in progress at a specific moment in the past or happening over a period of time. It is also used when two actions were happening at the same time.</p>
     <p><strong>Formula:</strong> [Subject] + was/were + [verb+ing]</p>
     
-    <h5 class="card-title" style="font-size: 1.1rem; margin-top: 15px; color: #28a745;">Examples:</h5>
-    <div class="example" style="margin-bottom: 10px;">
-      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#example1" aria-expanded="false" aria-controls="example1">
+    <h5><strong>Examples:</strong></h5>
+    <ul>
+      <li>
         Example 1
-      </button>
-      <div class="collapse" id="example1">
-        <p class="mt-2" style="color: #155724;">She was reading a book when I called her.</p>
-      </div>
-    </div>
-    <div class="example" style="margin-bottom: 10px;">
-      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#example2" aria-expanded="false" aria-controls="example2">
+      </li>
+        <li>She was reading a book when I called her. — This shows an action in progress (reading) when another action happened (calling).</li>
+    </ul>
+
+    <ul>
+      <li>
         Example 2
-      </button>
-      <div class="collapse" id="example2">
-        <p class="mt-2" style="color: #155724;">They were playing football all afternoon.</p>
-      </div>
-    </div>
-    <div class="example" style="margin-bottom: 10px;">
-      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#example3" aria-expanded="false" aria-controls="example3">
+      </li>
+      <li>
+        They were playing football all afternoon. — This describes an action that continued for a long period in the past.
+      </li>
+    </ul>
+
+    <ul>
+      <li>
         Example 3
-      </button>
-      <div class="collapse" id="example3">
-        <p class="mt-2" style="color: #155724;">I was cooking dinner when the phone rang.</p>
-      </div>
-    </div>
-    <div class="example" style="margin-bottom: 10px;">
-      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#example4" aria-expanded="false" aria-controls="example4">
+      </li>
+      <li>I was cooking dinner when the phone rang. — The continuous action (cooking) was interrupted by a shorter action (phone rang).</li>
+    </ul>
+
+    <ul>
+      <li>
         Example 4
-      </button>
-      <div class="collapse" id="example4">
-        <p class="mt-2" style="color: #155724;">We were talking about the movie when it started raining.</p>
-      </div>
-    </div>
-  </div>
-</div>`;
+      </li>
+        <li>We were talking about the movie when it started raining. — Two actions happened at the same time in the past.</li>
+    </ul>
+
+</div>
+`;
 }
