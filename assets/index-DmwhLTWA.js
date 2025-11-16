@@ -3262,7 +3262,7 @@ var I=Object.defineProperty;var T=(e,a,t)=>a in e?I(e,a,{enumerable:!0,configura
     <p>Past Continuous Tense описывает действия, которые происходили в определённый момент в прошлом или в течение определённого времени в прошлом. Он также используется для выражения двух действий, происходивших одновременно.</p>
     <p><strong>Формула:</strong> [Subject] + was/were + [verb+ing]</p>
     
-    <h5>Примеры:</h5>
+    <h5><strong>Примеры:</strong></h5>
     <ul>
       <li>
         Пример 1
@@ -3293,127 +3293,118 @@ var I=Object.defineProperty;var T=(e,a,t)=>a in e?I(e,a,{enumerable:!0,configura
         <li>We were talking about the movie when it started raining. (Мы говорили о фильме, когда начался дождь.)</li>
     </ul>
 
-</div>`}function returnLevel34EN(){return`<div class="card" style="width: 100%; border: 1px solid #28a745; border-radius: 5px; background-color: #e9f7ec;">
-  <div class="card-body">
-    <h4 class="card-title" style="font-size: 1.2rem; margin-bottom: 10px; color: #28a745;"><strong>Past Continuous Tense</strong></h4>
-    <p class="card-text" style="font-size: 1rem; color: #155724;">The Past Continuous tense describes actions that were happening at a particular moment in the past or actions that were ongoing for some time in the past. It is also used to express two actions happening at the same time in the past.</p>
+</div>`}function returnLevel34EN(){return`<div class="returnLevel34">
+    <h4><strong>Past Continuous Tense</strong></h4>
+    <p>Past Continuous Tense describes actions that were in progress at a specific moment in the past or happening over a period of time. It is also used when two actions were happening at the same time.</p>
     <p><strong>Formula:</strong> [Subject] + was/were + [verb+ing]</p>
     
-    <h5 class="card-title" style="font-size: 1.1rem; margin-top: 15px; color: #28a745;">Examples:</h5>
-    <div class="example" style="margin-bottom: 10px;">
-      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#example1" aria-expanded="false" aria-controls="example1">
+    <h5><strong>Examples:</strong></h5>
+    <ul>
+      <li>
         Example 1
-      </button>
-      <div class="collapse" id="example1">
-        <p class="mt-2" style="color: #155724;">She was reading a book when I called her.</p>
-      </div>
-    </div>
-    <div class="example" style="margin-bottom: 10px;">
-      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#example2" aria-expanded="false" aria-controls="example2">
+      </li>
+        <li>She was reading a book when I called her. — This shows an action in progress (reading) when another action happened (calling).</li>
+    </ul>
+
+    <ul>
+      <li>
         Example 2
-      </button>
-      <div class="collapse" id="example2">
-        <p class="mt-2" style="color: #155724;">They were playing football all afternoon.</p>
-      </div>
-    </div>
-    <div class="example" style="margin-bottom: 10px;">
-      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#example3" aria-expanded="false" aria-controls="example3">
+      </li>
+      <li>
+        They were playing football all afternoon. — This describes an action that continued for a long period in the past.
+      </li>
+    </ul>
+
+    <ul>
+      <li>
         Example 3
-      </button>
-      <div class="collapse" id="example3">
-        <p class="mt-2" style="color: #155724;">I was cooking dinner when the phone rang.</p>
-      </div>
-    </div>
-    <div class="example" style="margin-bottom: 10px;">
-      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#example4" aria-expanded="false" aria-controls="example4">
+      </li>
+      <li>I was cooking dinner when the phone rang. — The continuous action (cooking) was interrupted by a shorter action (phone rang).</li>
+    </ul>
+
+    <ul>
+      <li>
         Example 4
-      </button>
-      <div class="collapse" id="example4">
-        <p class="mt-2" style="color: #155724;">We were talking about the movie when it started raining.</p>
-      </div>
-    </div>
-  </div>
-</div>`}function returnLevel34PL(){return`<div class="card" style="width: 100%; border: 1px solid #28a745; border-radius: 5px; background-color: #e9f7ec;">
-  <div class="card-body">
-    <h4 class="card-title" style="font-size: 1.2rem; margin-bottom: 10px; color: #28a745;"><strong>Czas Past Continuous</strong></h4>
-    <p class="card-text" style="font-size: 1rem; color: #155724;">Czas Past Continuous opisuje działania, które miały miejsce w określonym momencie w przeszłości lub trwały przez jakiś czas w przeszłości. Używany jest również do wyrażenia dwóch działań, które miały miejsce jednocześnie.</p>
-    <p><strong>Wzór:</strong> [Podmiot] + was/were + [czasownik+ing]</p>
+      </li>
+        <li>We were talking about the movie when it started raining. — Two actions happened at the same time in the past.</li>
+    </ul>
+
+</div>
+`}function returnLevel34PL(){return`<div class="returnLevel34">
+    <h4><strong>Past Continuous Tense</strong></h4>
+    <p>Past Continuous Tense opisuje czynności, które trwały w określonym momencie w przeszłości lub przez pewien okres czasu w przeszłości. Używany jest także do wyrażenia dwóch działań odbywających się jednocześnie.</p>
+    <p><strong>Formuła:</strong> [Subject] + was/were + [verb+ing]</p>
     
-    <h5 class="card-title" style="font-size: 1.1rem; margin-top: 15px; color: #28a745;">Przykłady:</h5>
-    <div class="example" style="margin-bottom: 10px;">
-      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#example1" aria-expanded="false" aria-controls="example1">
+    <h5><strong>Przykłady:</strong></h5>
+    <ul>
+      <li>
         Przykład 1
-      </button>
-      <div class="collapse" id="example1">
-        <p class="mt-2" style="color: #155724;">She was reading a book when I called her. (Ona czytała książkę, kiedy zadzwoniłem do niej.)</p>
-      </div>
-    </div>
-    <div class="example" style="margin-bottom: 10px;">
-      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#example2" aria-expanded="false" aria-controls="example2">
+      </li>
+        <li>She was reading a book when I called her. (Ona czytała książkę, kiedy do niej zadzwoniłem.)</li>
+    </ul>
+
+    <ul>
+      <li>
         Przykład 2
-      </button>
-      <div class="collapse" id="example2">
-        <p class="mt-2" style="color: #155724;">They were playing football all afternoon. (Oni grali w piłkę nożną przez całe popołudnie.)</p>
-      </div>
-    </div>
-    <div class="example" style="margin-bottom: 10px;">
-      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#example3" aria-expanded="false" aria-controls="example3">
+      </li>
+      <li>
+        They were playing football all afternoon. (Oni grali w piłkę nożną przez całe popołudnie.)
+      </li>
+    </ul>
+
+    <ul>
+      <li>
         Przykład 3
-      </button>
-      <div class="collapse" id="example3">
-        <p class="mt-2" style="color: #155724;">I was cooking dinner when the phone rang. (Gotowałem obiad, kiedy zadzwonił telefon.)</p>
-      </div>
-    </div>
-    <div class="example" style="margin-bottom: 10px;">
-      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#example4" aria-expanded="false" aria-controls="example4">
+      </li>
+      <li>I was cooking dinner when the phone rang. (Gotowałem obiad, kiedy zadzwonił telefon.)</li>
+    </ul>
+
+    <ul>
+      <li>
         Przykład 4
-      </button>
-      <div class="collapse" id="example4">
-        <p class="mt-2" style="color: #155724;">We were talking about the movie when it started raining. (Rozmawialiśmy o filmie, kiedy zaczęło padać.)</p>
-      </div>
-    </div>
-  </div>
-</div>`}function returnLevel34UA(){return`<div class="card" style="width: 100%; border: 1px solid #28a745; border-radius: 5px; background-color: #e9f7ec;">
-  <div class="card-body">
-    <h4 class="card-title" style="font-size: 1.2rem; margin-bottom: 10px; color: #28a745;"><strong>Час Past Continuous</strong></h4>
-    <p class="card-text" style="font-size: 1rem; color: #155724;">Час Past Continuous описує дії, які відбувалися в певний момент у минулому або протягом певного часу в минулому. Він також використовується для вираження двох дій, що відбувалися одночасно.</p>
-    <p><strong>Формула:</strong> [Підмет] + was/were + [дієслово+ing]</p>
+      </li>
+        <li>We were talking about the movie when it started raining. (Rozmawialiśmy o filmie, kiedy zaczęło padać.)</li>
+    </ul>
+
+</div>
+`}function returnLevel34UA(){return`<div class="returnLevel34">
+    <h4><strong>Past Continuous Tense</strong></h4>
+    <p>Past Continuous Tense описує дії, які відбувалися в певний момент у минулому або протягом певного часу в минулому. Також використовується для вираження двох дій, що відбувалися одночасно.</p>
+    <p><strong>Формула:</strong> [Subject] + was/were + [verb+ing]</p>
     
-    <h5 class="card-title" style="font-size: 1.1rem; margin-top: 15px; color: #28a745;">Приклади:</h5>
-    <div class="example" style="margin-bottom: 10px;">
-      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#example1" aria-expanded="false" aria-controls="example1">
+    <h5><strong>Приклади:</strong></h5>
+    <ul>
+      <li>
         Приклад 1
-      </button>
-      <div class="collapse" id="example1">
-        <p class="mt-2" style="color: #155724;">She was reading a book when I called her. (Вона читала книгу, коли я зателефонував їй.)</p>
-      </div>
-    </div>
-    <div class="example" style="margin-bottom: 10px;">
-      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#example2" aria-expanded="false" aria-controls="example2">
+      </li>
+        <li>She was reading a book when I called her. (Вона читала книгу, коли я їй подзвонив.)</li>
+    </ul>
+
+    <ul>
+      <li>
         Приклад 2
-      </button>
-      <div class="collapse" id="example2">
-        <p class="mt-2" style="color: #155724;">They were playing football all afternoon. (Вони грали у футбол весь день.)</p>
-      </div>
-    </div>
-    <div class="example" style="margin-bottom: 10px;">
-      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#example3" aria-expanded="false" aria-controls="example3">
+      </li>
+      <li>
+        They were playing football all afternoon. (Вони грали у футбол увесь день.)
+      </li>
+    </ul>
+
+    <ul>
+      <li>
         Приклад 3
-      </button>
-      <div class="collapse" id="example3">
-        <p class="mt-2" style="color: #155724;">I was cooking dinner when the phone rang. (Я готував вечерю, коли задзвонив телефон.)</p>
-      </div>
-    </div>
-    <div class="example" style="margin-bottom: 10px;">
-      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#example4" aria-expanded="false" aria-controls="example4">
+      </li>
+      <li>I was cooking dinner when the phone rang. (Я готував вечерю, коли задзвонив телефон.)</li>
+    </ul>
+
+    <ul>
+      <li>
         Приклад 4
-      </button>
-      <div class="collapse" id="example4">
-        <p class="mt-2" style="color: #155724;">We were talking about the movie when it started raining. (Ми говорили про фільм, коли почався дощ.)</p>
-      </div>
-    </div>
-  </div>
-</div>`}function returnLevel35(){return`<div class="card border-success">
+      </li>
+        <li>We were talking about the movie when it started raining. (Ми говорили про фільм, коли почався дощ.)</li>
+    </ul>
+
+</div>
+`}function returnLevel35(){return`<div class="card border-success">
   <div class="card-header bg-success text-white">
     <h5 class="mb-0">
       <button class="btn btn-light text-success" type="button" data-bs-toggle="collapse" data-bs-target="#pastRule" aria-expanded="true" aria-controls="pastRule">
