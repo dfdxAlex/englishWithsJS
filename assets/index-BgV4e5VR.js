@@ -2408,73 +2408,64 @@ var I=Object.defineProperty;var T=(e,a,t)=>a in e?I(e,a,{enumerable:!0,configura
         </ul>
     </div>
 </div>
-`}function returnLevel31EN(){return`<div class="container" style="margin: 20px;">
+`}function returnLevel31EN(){return`<div class="container returnLevel31">
     <div class="border border-primary rounded p-4 bg-light">
-        <h3 class="text-primary text-center">Rule for Forming Sentences in Past Simple</h3>
+        <h3 class="text-primary text-center">Rules for Forming Sentences in the Past Simple</h3>
         
-        <h5 class="text-secondary">1. Positive Sentence:</h5>
-        <p>To create a positive sentence in Past Simple, the second form of the verb (the past tense) is used.</p>
+        <h5 class="text-secondary">1. Affirmative sentences:</h5>
+        <p>To form an affirmative sentence in the Past Simple, use the second form of the verb (the past tense form).</p>
         <p class="font-weight-bold">Examples:</p>
         <ul>
             <li>I <strong>visited</strong> my grandmother last week.</li>
             <li>They <strong>played</strong> soccer yesterday.</li>
         </ul>
 
-        <h5 class="text-secondary">2. Rules for Regular Verbs:</h5>
+        <h5 class="text-secondary">2. Rules for regular verbs:</h5>
         <p>Regular verbs form the Past Simple by adding the ending <strong>-ed</strong>.</p>
         
-        <table class="table table-bordered mt-2">
-            <thead>
-                <tr class="table-primary">
-                    <th>Base Form</th>
-                    <th>Regular Past Simple</th>
-                    <th>Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>walk</td>
-                    <td>walked</td>
-                    <td>The ending -ed is added.</td>
-                </tr>
-                <tr>
-                    <td>play</td>
-                    <td>played</td>
-                    <td>The ending -ed is added.</td>
-                </tr>
-                <tr>
-                    <td>try</td>
-                    <td>tried</td>
-                    <td>The 'y' changes to 'i' before adding -ed.</td>
-                </tr>
-                <tr>
-                    <td>stop</td>
-                    <td>stopped</td>
-                    <td>The final consonant is doubled.</td>
-                </tr>
-                <tr>
-                    <td>like</td>
-                    <td>liked</td>
-                    <td>The ending -ed is added.</td>
-                </tr>
-            </tbody>
-        </table>
+        <ul class="table table-bordered mt-2">
+                <h3>
+                    <p>Base Form – Regular Past Simple</p>
+                    <p>Explanation</p>
+                </h3>
+                <li>
+                    <p>walk – walked</p>
+                    <p>Add the ending -ed.</p>
+                </li>
+                <li>
+                    <p>play – played</p>
+                    <p>Add the ending -ed.</p>
+                </li>
+                <li>
+                    <p>try – tried</p>
+                    <p>The letter Y changes to I before adding -ed.</p>
+                </li>
+                <li>
+                    <p>stop – stopped</p>
+                    <p>The final consonant is doubled before adding -ed.</p>
+                </li>
+                <li>
+                    <p>like – liked</p>
+                    <p>Add the ending -ed.</p>
+                </li>
+        </ul>
 
-        <h5 class="text-secondary">3. Rules for Irregular Verbs:</h5>
-        <p>Irregular verbs have unique forms in the past tense that must be memorized.</p>
+        <h5 class="text-secondary">3. Rules for irregular verbs:</h5>
+        <p>Irregular verbs have unique past tense forms that must be memorized, as they do not follow standard spelling rules.</p>
         <ul>
-            <li>go → <strong>went</strong></li>
+            <li>go → <strong>wwent</strong></li>
             <li>have → <strong>had</strong></li>
             <li>see → <strong>saw</strong></li>
         </ul>
     </div>
 </div>
-`}function returnLevel31PL(){return`<div class="container" style="margin: 20px;">
+
+`}function returnLevel31PL(){return`<div class="container returnLevel31">
     <div class="border border-primary rounded p-4 bg-light">
         <h3 class="text-primary text-center">Zasada tworzenia zdań w Past Simple</h3>
         
-        <h5 class="text-secondary">1. Zdanie pozytywne:</h5>
-        <p>Aby utworzyć zdanie pozytywne w Past Simple, używa się drugiej formy czasownika (czasownik w czasie przeszłym).</p>
+        <h5 class="text-secondary">1. Zdanie twierdzące:</h5>
+        <p>Aby utworzyć zdanie twierdzące w Past Simple, używa się drugiej formy czasownika (czasownik w czasie przeszłym).</p>
         <p class="font-weight-bold">Przykłady:</p>
         <ul>
             <li>I <strong>visited</strong> my grandmother last week.</li>
@@ -2484,45 +2475,35 @@ var I=Object.defineProperty;var T=(e,a,t)=>a in e?I(e,a,{enumerable:!0,configura
         <h5 class="text-secondary">2. Zasady dla czasowników regularnych:</h5>
         <p>Czasowniki regularne tworzą Past Simple, dodając końcówkę <strong>-ed</strong>.</p>
         
-        <table class="table table-bordered mt-2">
-            <thead>
-                <tr class="table-primary">
-                    <th>Forma podstawowa</th>
-                    <th>Regularny Past Simple</th>
-                    <th>Uwagi</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>walk</td>
-                    <td>walked</td>
-                    <td>Dodaje się końcówkę -ed.</td>
-                </tr>
-                <tr>
-                    <td>play</td>
-                    <td>played</td>
-                    <td>Dodaje się końcówkę -ed.</td>
-                </tr>
-                <tr>
-                    <td>try</td>
-                    <td>tried</td>
-                    <td>Y zmienia się na I przed dodaniem -ed.</td>
-                </tr>
-                <tr>
-                    <td>stop</td>
-                    <td>stopped</td>
-                    <td>Podwaja się ostatnia spółgłoska.</td>
-                </tr>
-                <tr>
-                    <td>like</td>
-                    <td>liked</td>
-                    <td>Dodaje się końcówkę -ed.</td>
-                </tr>
-            </tbody>
-        </table>
+        <ul class="table table-bordered mt-2">
+                <h3>
+                    <p>Forma podstawowa - Regularny Past Simple</p>
+                    <p>Uwaga</p>
+                </h3>
+                <li>
+                    <p>walk - walked</p>
+                    <p>Dodaje się końcówkę -ed.</p>
+                </li>
+                <li>
+                    <p>play - played</p>
+                    <p>Dodaje się końcówkę -ed.</p>
+                </li>
+                <li>
+                    <p>try - tried</p>
+                    <p>Y zmienia się na I przed dodaniem -ed.</p>
+                </li>
+                <li>
+                    <p>stop - stopped</p>
+                    <p>Podwaja się końcową spółgłoskę.</p>
+                </li>
+                <li>
+                    <p>like - liked</p>
+                    <p>Dodaje się końcówkę -ed.</p>
+                </li>
+        </ul>
 
         <h5 class="text-secondary">3. Zasady dla czasowników nieregularnych:</h5>
-        <p>Czasowniki nieregularne mają unikalne formy w czasie przeszłym, które należy zapamiętać.</p>
+        <p>Czasowniki nieregularne mają unikalne formy w czasie przeszłym, które trzeba zapamiętać.</p>
         <ul>
             <li>go → <strong>went</strong></li>
             <li>have → <strong>had</strong></li>
@@ -2530,12 +2511,13 @@ var I=Object.defineProperty;var T=(e,a,t)=>a in e?I(e,a,{enumerable:!0,configura
         </ul>
     </div>
 </div>
-`}function returnLevel31UA(){return`<div class="container" style="margin: 20px;">
+
+`}function returnLevel31UA(){return`<div class="container returnLevel31">
     <div class="border border-primary rounded p-4 bg-light">
         <h3 class="text-primary text-center">Правило утворення речень у Past Simple</h3>
         
-        <h5 class="text-secondary">1. Позитивне речення:</h5>
-        <p>Для утворення позитивного речення в Past Simple використовується друга форма дієслова (дієслово в минулому часі).</p>
+        <h5 class="text-secondary">1. Стверджувальне речення:</h5>
+        <p>Для утворення стверджувального речення в Past Simple використовується друга форма дієслова (дієслово в минулому часі).</p>
         <p class="font-weight-bold">Приклади:</p>
         <ul>
             <li>I <strong>visited</strong> my grandmother last week.</li>
@@ -2545,45 +2527,35 @@ var I=Object.defineProperty;var T=(e,a,t)=>a in e?I(e,a,{enumerable:!0,configura
         <h5 class="text-secondary">2. Правила для правильних дієслів:</h5>
         <p>Правильні дієслова утворюють Past Simple, додаючи закінчення <strong>-ed</strong>.</p>
         
-        <table class="table table-bordered mt-2">
-            <thead>
-                <tr class="table-primary">
-                    <th>Основна форма</th>
-                    <th>Правильний Past Simple</th>
-                    <th>Примітка</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>walk</td>
-                    <td>walked</td>
-                    <td>Додається закінчення -ed.</td>
-                </tr>
-                <tr>
-                    <td>play</td>
-                    <td>played</td>
-                    <td>Додається закінчення -ed.</td>
-                </tr>
-                <tr>
-                    <td>try</td>
-                    <td>tried</td>
-                    <td>Y змінюється на I перед додаванням -ed.</td>
-                </tr>
-                <tr>
-                    <td>stop</td>
-                    <td>stopped</td>
-                    <td>Подвоюється кінцева приголосна.</td>
-                </tr>
-                <tr>
-                    <td>like</td>
-                    <td>liked</td>
-                    <td>Додається закінчення -ed.</td>
-                </tr>
-            </tbody>
-        </table>
+        <ul class="table table-bordered mt-2">
+                <h3>
+                    <p>Основна форма - Правильний Past Simple</p>
+                    <p>Примітка</p>
+                </h3>
+                <li>
+                    <p>walk - walked</p>
+                    <p>Додається закінчення -ed.</p>
+                </li>
+                <li>
+                    <p>play - played</p>
+                    <p>Додається закінчення -ed.</p>
+                </li>
+                <li>
+                    <p>try - tried</p>
+                    <p>Y змінюється на I перед додаванням -ed.</p>
+                </li>
+                <li>
+                    <p>stop - stopped</p>
+                    <p>Подвоюється кінцева приголосна.</p>
+                </li>
+                <li>
+                    <p>like - liked</p>
+                    <p>Додається закінчення -ed.</p>
+                </li>
+        </ul>
 
         <h5 class="text-secondary">3. Правила для неправильних дієслів:</h5>
-        <p>Неправильні дієслова мають унікальні форми в минулому часі, які потрібно запам'ятати.</p>
+        <p>Неправильні дієслова мають унікальні форми в минулому часі, які потрібно запам’ятати.</p>
         <ul>
             <li>go → <strong>went</strong></li>
             <li>have → <strong>had</strong></li>
@@ -2591,6 +2563,7 @@ var I=Object.defineProperty;var T=(e,a,t)=>a in e?I(e,a,{enumerable:!0,configura
         </ul>
     </div>
 </div>
+
 `}function returnLevel32(){return`<div class="container mt-4">
   <h2 class="text-center mb-4">Past Simple: Негативные предложения и вопросы</h2>
   <div class="row">
