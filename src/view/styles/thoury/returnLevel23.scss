@@ -1,0 +1,30 @@
+.return-level-23 {
+    margin-top: 20px;
+    h1 {
+        text-align: center; 
+        color: #333;
+        background: white;
+    }
+    h2 {
+        color: #444; 
+        margin-top: 20px;
+    }
+    h3 {
+         color: #555; 
+         font-weight: bold;
+    }
+    p {
+         background-color: #e9f7e1; 
+         padding: 10px; 
+         border-left: 3px solid #4CAF50;
+    }
+    ul {
+         list-style-type: none; 
+         padding-left: 0;
+         li {
+             background-color: #e9f7e1; 
+             padding: 10px; 
+             border-left: 3px solid #4CAF50;
+         }
+    }
+}

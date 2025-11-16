@@ -55,34 +55,9 @@ export class LevelDataModel
     // на кнопке навигационного меню
     arrayNameButton()
     {
-        // this.propertyArrayNameButton.push(setStatisticForButton(1)); // 100 слов о еде  // пункт 2
-        // this.propertyArrayNameButton.push(setStatisticForButton(2)); // 100 слов про спорт  // пункт 2
-        // this.propertyArrayNameButton.push(setStatisticForButton(3)); // 100 слов про путешествия // пункт 2
-        // this.propertyArrayNameButton.push(setStatisticForButton(4)); // 100 слов // пункт 2
-        // this.propertyArrayNameButton.push(setStatisticForButton(5)); // 300 слов // пункт 2
-        // this.propertyArrayNameButton.push(setStatisticForButton(6)); // 500 слов // пункт 2
-        // this.propertyArrayNameButton.push(setStatisticForButton(7)); // 50 глаголов  // пункт 2
-        // this.propertyArrayNameButton.push(setStatisticForButton(8)); // 300 глаголов // пункт 2
-        // this.propertyArrayNameButton.push(setStatisticForButton(9));  // пункт 1
-        // this.propertyArrayNameButton.push(setStatisticForButton(10));   // пункт 1
-        // this.propertyArrayNameButton.push(setStatisticForButton(11));// пункт 1
-        // this.propertyArrayNameButton.push(setStatisticForButton(12));  // Вопросительные слова // пункт 2
-        // this.propertyArrayNameButton.push(setStatisticForButton(13)); // пункт 1
-        // this.propertyArrayNameButton.push(setStatisticForButton(14));  // пункт 1
-        // this.propertyArrayNameButton.push(setStatisticForButton(15));                // пункт 1
-        // this.propertyArrayNameButton.push(setStatisticForButton(16));// пункт 1
-        // this.propertyArrayNameButton.push(setStatisticForButton(17));     // пункт 1
-        // this.propertyArrayNameButton.push(setStatisticForButton(18));        // пункт 1
-        // this.propertyArrayNameButton.push(setStatisticForButton(19));// пункт 1
-        // this.propertyArrayNameButton.push(setStatisticForButton(20)); // Вторая группа неправильных глаголов // пункт 1
-        // this.propertyArrayNameButton.push(setStatisticForButton(21));// пункт 1
-        // this.propertyArrayNameButton.push(setStatisticForButton(22));// A1 Beginer text пункт 2
-        // this.propertyArrayNameButton.push(setStatisticForButton(23));// пункт 1
-
         for (let i=1; i<24; i++) {
             this.propertyArrayNameButton.push(setStatisticForButton(i));
         }
-
 
         this.propertyArrayNameButton.push(this.translate.translate('Собрано алмазов:'));// пункт 4
         this.propertyArrayNameButton.push(this.translate.translate('Ошибок:'));// пункт 4
@@ -96,24 +71,6 @@ export class LevelDataModel
             this.propertyArrayNameButton.push(setStatisticForButton(i));
         }
 
-        // this.propertyArrayNameButton.push(setStatisticForButton(31));//'Прошедшее простое'));// пункт 1
-        // this.propertyArrayNameButton.push(setStatisticForButton(32));  //Past Simple отрицательные и вопросы  пункт 1
-        // this.propertyArrayNameButton.push(setStatisticForButton(33));// Present Simple He, She, It пункт 2
-        // this.propertyArrayNameButton.push(setStatisticForButton(34));//'Past Continuous' пункт 1
-        // this.propertyArrayNameButton.push(setStatisticForButton(35)); // Past Continuous Or Simple // пункт 1
-        // this.propertyArrayNameButton.push(setStatisticForButton(36)); // нерегулярные глаголы 3 // пункт 2
-        // this.propertyArrayNameButton.push(setStatisticForButton(37)); //Present Perfect пункт 1
-        // this.propertyArrayNameButton.push(setStatisticForButton(38)); //PrPerf, PrCont, PsSimpl пункт 1
-        // this.propertyArrayNameButton.push(setStatisticForButton(39)); //for, since, ago пункт 1
-        // this.propertyArrayNameButton.push(setStatisticForButton(40)); //PrPerf or PsSimpl пункт 1
-        // this.propertyArrayNameButton.push(setStatisticForButton(41));// Animals 100 (RU) пункт 2
-        // this.propertyArrayNameButton.push(setStatisticForButton(42));//Is Done Was Done (passive 1)'));// пункт 1
-        // this.propertyArrayNameButton.push(setStatisticForButton(43)); //Is Being Done Has Been Done (passive 2)'));// пункт 1
-        // this.propertyArrayNameButton.push(setStatisticForButton(44)); //be/have/do in present and past tenses'));// пункт 1
-        // this.propertyArrayNameButton.push(setStatisticForButton(45)); // unit 24 пункт 1-6
-        // this.propertyArrayNameButton.push(setStatisticForButton(46)); // unit 25 пункт 1-6
-        // this.propertyArrayNameButton.push(setStatisticForButton(47)); // unit 26 пункт 1-6
-        // this.propertyArrayNameButton.push(setStatisticForButton(48)); // unit 27 пункт 1-6
         this.tic = this.propertyArrayNameButton.length;
     }
 
