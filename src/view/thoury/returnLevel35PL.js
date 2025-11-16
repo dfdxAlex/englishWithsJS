@@ -2,35 +2,73 @@ export default returnLevel35PL;
 
 function returnLevel35PL()
 {
-    return `<div class="card mt-3">
-  <div class="card-header bg-success text-white">
-    <h5 class="mb-0">Porównanie Past Continuous i Past Simple</h5>
-  </div>
-  <div class="card-body">
-    <p><strong>Past Continuous</strong> opisuje czynność w toku w określonym momencie w przeszłości, często zakłóconą przez inną czynność w czasie <strong>Past Simple</strong>.</p>
-    <p><strong>Słowa kluczowe dla Past Continuous:</strong> while, at that moment, all day.</p>
-    <p><strong>Słowa kluczowe dla Past Simple:</strong> yesterday, last night, two days ago, in 2000.</p>
-    <h6>Tworzenie zdań:</h6>
-    <ul>
-      <li><strong>Zdania twierdzące (Past Continuous):</strong> Osoba + was/were + czasownik z końcówką -ing.</li>
-      <li><strong>Zdania twierdzące (Past Simple):</strong> Osoba + czasownik w formie przeszłej.</li>
-      <li><strong>Zdania przeczące (Past Continuous):</strong> Osoba + was/were not + czasownik z końcówką -ing.</li>
-      <li><strong>Zdania przeczące (Past Simple):</strong> Osoba + did not + czasownik w podstawowej formie.</li>
-      <li><strong>Pytania (Past Continuous):</strong> Was/Were + osoba + czasownik z końcówką -ing?</li>
-      <li><strong>Pytania (Past Simple):</strong> Did + osoba + czasownik w podstawowej formie?</li>
-    </ul>
-    <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#przyklady" aria-expanded="false" aria-controls="przyklady">
-      Przykłady
-    </button>
-    <div class="collapse mt-3" id="przyklady">
-      <ul>
-        <li>While I ... (read), my phone rang. ➡ <strong>was reading</strong></li>
-        <li>She ... (not watch) TV when the lights went out. ➡ <strong>wasn't watching</strong></li>
-        <li>Did you ... (play) the piano yesterday? ➡ <strong>play</strong></li>
-        <li>When we ... (walk) in the park, it started to rain. ➡ <strong>were walking</strong></li>
-      </ul>
-    </div>
-  </div>
+    return `<div class="returnLevel35">
+    <h5>
+        Porównanie Past Continuous i Past Simple
+    </h5>
+
+      <h5><strong>1. Główne zasady:</strong></h5>
+      <p><strong>Past Simple:</strong> czynności, które zakończyły się w przeszłości w określonym momencie.</p>
+      <p><strong>Past Continuous:</strong> czynności, które były w trakcie wykonywania w określonym momencie w przeszłości.</p>
+
+      <h5><strong>2. Określniki czasu:</strong></h5>
+      <p>
+        Określniki czasu
+      </p>
+        <ul>
+          <li><strong>Past Simple:</strong> yesterday, last week, last month, two days ago, in 2010.</li>
+          <li><strong>Past Continuous:</strong> while, when, at 5 PM, all day yesterday.</li>
+        </ul>
+
+      <h5><strong>3. Formuły:</strong></h5>
+      <p>
+        Formuły
+      </p>
+
+        <ul>
+          <li><strong>Past Simple:</strong>
+            <ul>
+              <li><strong>Twierdzące:</strong> Subject + Verb (V2/ed)</li>
+              <li><strong>Przeczące:</strong> Subject + did not + Verb (V1)</li>
+              <li><strong>Pytające:</strong> Did + Subject + Verb (V1)</li>
+            </ul>
+          </li>
+          <li><strong>Past Continuous:</strong>
+            <ul>
+              <li><strong>Twierdzące:</strong> Subject + was/were + Verb (-ing)</li>
+              <li><strong>Przeczące:</strong> Subject + was not/were not + Verb (-ing)</li>
+              <li><strong>Pytające:</strong> Was/Were + Subject + Verb (-ing)</li>
+            </ul>
+          </li>
+        </ul>
+
+      <h5><strong>4. Przykłady:</strong></h5>
+      <p>
+        Przykłady
+      </p>
+
+        <p><strong>Past Simple:</strong></p>
+        <ul>
+          <li>Twierdzące: <em>I played football yesterday.</em></li>
+          <li>Przeczące: <em>I didn’t play football yesterday.</em></li>
+          <li>Pytające: <em>Did you play football yesterday?</em></li>
+        </ul>
+        <p><strong>Past Continuous:</strong></p>
+        <ul>
+          <li>Twierdzące: <em>I was reading a book at 5 PM yesterday.</em></li>
+          <li>Przeczące: <em>I wasn’t reading a book at 5 PM yesterday.</em></li>
+          <li>Pytające: <em>Were you reading a book at 5 PM yesterday?</em></li>
+        </ul>
+
+      <h5><strong>5. Porównanie:</strong></h5>
+      <p>
+        Porównanie
+      </p>
+        <ul>
+          <li><strong>Past Simple:</strong> <em>I cleaned the house yesterday.</em></li>
+          <li><strong>Past Continuous:</strong> <em>I was cleaning the house when she called.</em></li>
+        </ul>
 </div>
+
 `;
 }
