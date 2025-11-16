@@ -2356,7 +2356,8 @@ var I=Object.defineProperty;var T=(e,a,t)=>a in e?I(e,a,{enumerable:!0,configura
         </li>
     </ul>
 </div>
-`}function returnLevel31(){return`<div class="container" style="margin: 20px;">
+`}function returnLevel31(){return`
+  <div class="container returnLevel31">
     <div class="border border-primary rounded p-4 bg-light">
         <h3 class="text-primary text-center">Правило образования предложений в Past Simple</h3>
         
@@ -2371,42 +2372,32 @@ var I=Object.defineProperty;var T=(e,a,t)=>a in e?I(e,a,{enumerable:!0,configura
         <h5 class="text-secondary">2. Правила для правильных глаголов:</h5>
         <p>Правильные глаголы образуют Past Simple, добавляя окончание <strong>-ed</strong>.</p>
         
-        <table class="table table-bordered mt-2">
-            <thead>
-                <tr class="table-primary">
-                    <th>Основная форма</th>
-                    <th>Правильный Past Simple</th>
-                    <th>Примечание</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>walk</td>
-                    <td>walked</td>
-                    <td>Добавляется окончание -ed.</td>
-                </tr>
-                <tr>
-                    <td>play</td>
-                    <td>played</td>
-                    <td>Добавляется окончание -ed.</td>
-                </tr>
-                <tr>
-                    <td>try</td>
-                    <td>tried</td>
-                    <td>Y меняется на I перед добавлением -ed.</td>
-                </tr>
-                <tr>
-                    <td>stop</td>
-                    <td>stopped</td>
-                    <td>Удваивается конечная согласная.</td>
-                </tr>
-                <tr>
-                    <td>like</td>
-                    <td>liked</td>
-                    <td>Добавляется окончание -ed.</td>
-                </tr>
-            </tbody>
-        </table>
+        <ul class="table table-bordered mt-2">
+                <h3>
+                    <p>Основная форма - Правильный Past Simple</p>
+                    <p>Примечание</p>
+                </h3>
+                <li>
+                    <p>walk - walked</p>
+                    <p>Добавляется окончание -ed.</p>
+                </li>
+                <li>
+                    <p>play - played</p>
+                    <p>Добавляется окончание -ed.</p>
+                </li>
+                <li>
+                    <p>try - tried</p>
+                    <p>Y меняется на I перед добавлением -ed.</p>
+                </li>
+                <li>
+                    <p>stop - stopped</p>
+                    <p>Удваивается конечная согласная.</p>
+                </li>
+                <li>
+                    <p>like - liked</p>
+                    <p>Добавляется окончание -ed.</p>
+                </li>
+        </ul>
 
         <h5 class="text-secondary">3. Правила для неправильных глаголов:</h5>
         <p>Неправильные глаголы имеют уникальные формы в прошедшем времени, которые нужно запомнить.</p>
