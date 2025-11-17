@@ -1,83 +1,46 @@
 export default returnLevel38PL;
 
+import '../styles/thoury/returnLevel38.scss';
+
 function returnLevel38PL()
 {
-    return `<div class="accordion" id="presentPerfectAccordion">
-  <!-- Definicja Present Perfect -->
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDefinition" aria-expanded="true">
-        Co to jest Present Perfect?
-      </button>
-    </h2>
-    <div id="collapseDefinition" class="accordion-collapse collapse show" data-bs-parent="#presentPerfectAccordion">
-      <div class="accordion-body">
-        <p><strong>Present Perfect</strong> (<code>have/has + V3 (Past Participle)</code>) jest używane, gdy czynność:</p>
-        <ul>
-          <li>✔ Została zakończona, ale ma związek z teraźniejszością (rezultat jest ważny teraz).</li>
-          <li>✔ Zaczęła się w przeszłości i trwa do teraz.</li>
-          <li>✔ Wydarzyła się w nieokreślonym czasie w przeszłości, ale ma znaczenie dla teraźniejszości.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <!-- Present Perfect + Present Simple -->
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrPerfPrSimp">
-        Kiedy używamy Present Perfect z Present Simple?
-      </button>
-    </h2>
-    <div id="collapsePrPerfPrSimp" class="accordion-collapse collapse" data-bs-parent="#presentPerfectAccordion">
-      <div class="accordion-body">
-        <p>Używamy, gdy <strong>Present Simple</strong> opisuje powtarzające się lub ogólne zjawisko, a <strong>Present Perfect</strong> podkreśla doświadczenie, zmiany lub ich wpływ.</p>
-        
-        <div class="p-3 border-start border-primary">
-          <p>✅ <strong>I've always loved how she cooks.</strong> (Zawsze kochałem, jak ona gotuje.)</p>
-          <p>✅ <strong>We have noticed that he talks too much.</strong> (Zauważyliśmy, że on mówi za dużo.)</p>
-          <p>✅ <strong>She has never understood why people like this movie.</strong> (Ona nigdy nie rozumiała, dlaczego ludziom podoba się ten film.)</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Present Perfect + Present Continuous -->
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrPerfPrCont">
-        Kiedy używamy Present Perfect z Present Continuous?
-      </button>
-    </h2>
-    <div id="collapsePrPerfPrCont" class="accordion-collapse collapse" data-bs-parent="#presentPerfectAccordion">
-      <div class="accordion-body">
-        <p>Używamy, gdy <strong>Present Continuous</strong> opisuje bieżącą czynność, a <strong>Present Perfect</strong> wyjaśnia jej przyczynę lub podsumowuje jej skutki.</p>
-
-        <div class="p-3 border-start border-primary">
-          <p>✅ <strong>I have noticed that she is talking to him again.</strong> (Zauważyłem, że ona znowu rozmawia z nim.)</p>
-          <p>✅ <strong>They have been surprised that he is learning a new language.</strong> (Byli zaskoczeni, że on uczy się nowego języka.)</p>
-          <p>✅ <strong>We have realized that she is working too hard.</strong> (Zrozumieliśmy, że ona pracuje za dużo.)</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Ogólne podsumowanie -->
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseConclusion">
-        Ogólne Podsumowanie
-      </button>
-    </h2>
-    <div id="collapseConclusion" class="accordion-collapse collapse" data-bs-parent="#presentPerfectAccordion">
-      <div class="accordion-body">
-        <ul>
-          <li>📌 <strong>PrPerf + PrSimp</strong> → akcent na fakt, doświadczenie, zmianę.</li>
-          <li>📌 <strong>PrPerf + PrCont</strong> → akcent na czynność, która trwa teraz.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+    return `
+    <div class="returnLevel38">
+  <h2>
+    Czym jest Present Perfect?
+  </h2>
+    <p><strong>Present Perfect</strong> (<code>have/has + V3 (Past Participle)</code>) jest używany, gdy działanie:</p>
+    <ul>
+      <li>✔ Zostało zakończone, ale ma związek z teraźniejszością (rezultat jest ważny teraz).</li>
+      <li>✔ Rozpoczęło się w przeszłości i trwa do chwili obecnej.</li>
+      <li>✔ Wydarzyło się w nieokreślonym momencie w przeszłości, ale ma znaczenie dla teraźniejszości.</li>
+    </ul>
+  <h3>
+    Kiedy Present Perfect jest używany razem z Present Simple?
+  </h3>
+  <p>Używany jest, gdy <strong>Present Simple</strong> opisuje powtarzające się lub ogólne zjawisko, a <strong>Present Perfect</strong> podkreśla doświadczenie, zmiany lub ich wpływ.</p>
+  <ul>
+    <li>✅ <strong>I've always loved how she cooks.</strong> (Zawsze kochałem, jak ona gotuje.)</li>
+    <li>✅ <strong>We have noticed that he talks too much.</strong> (Zauważyliśmy, że on mówi za dużo.)</li>
+    <li>✅ <strong>She has never understood why people like this movie.</strong> (Ona nigdy nie rozumiała, dlaczego ludziom podoba się ten film.)</li>
+  </ul>
+  <h3>
+    Kiedy Present Perfect jest używany razem z Present Continuous?
+  </h3>
+  <p>Używany jest, gdy <strong>Present Continuous</strong> opisuje działanie odbywające się teraz, a <strong>Present Perfect</strong> wyjaśnia jego przyczynę lub podsumowuje sytuację.</p>
+  <ul>
+    <li>✅ <strong>I have noticed that she is talking to him again.</strong> (Zauważyłem, że ona znowu z nim rozmawia.)</li>
+    <li>✅ <strong>They have been surprised that he is learning a new language.</strong> (Byli zaskoczeni, że on uczy się nowego języka.)</li>
+    <li>✅ <strong>We have realized that she is working too hard.</strong> (Zrozumieliśmy, że ona pracuje zbyt dużo.)</li>
+  </ul>
+  <h3>
+    Wniosek końcowy
+  </h3>
+  <ul>
+    <li>📌 <strong>PrPerf + PrSimp</strong> → nacisk na fakt, doświadczenie, zmianę.</li>
+    <li>📌 <strong>PrPerf + PrCont</strong> → nacisk na działanie, które trwa teraz.</li>
+  </ul>
 </div>
+
 `;
 }
