@@ -1,5 +1,7 @@
 export default returnLevel39PL;
 
+import '../styles/thoury/returnLevel39.scss';
+
 function returnLevel39PL()
 {
     return `

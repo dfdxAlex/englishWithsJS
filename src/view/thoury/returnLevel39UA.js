@@ -1,5 +1,7 @@
 export default returnLevel39UA;
 
+import '../styles/thoury/returnLevel39.scss';
+
 function returnLevel39UA()
 {
     return `
