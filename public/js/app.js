@@ -2,24 +2,15 @@
 // Описывается событие загрузки документа
 
 window.addEventListener('load', () => {
-    // window.nav;
     htmlHelp();
     buttonSound();
    
-    // const menuC = new window.MenuController();
-    // menuC.init();
-
     // событие на кнопку "Сообщить об ошибке"
     handleSearchError();
 
     // Достать из регистра объект переводчика
     resetBottonError();
-
-    // // нарисовать невидимое меню Сеттинг
-    // menuSettingView();
-    // // спрятать все ненужные блоки и показать меню Настроек
-    // document.querySelector('#setting').onclick = activationMenuSetting;
-   
+  
     // функция отслеживает инфу по ответам и запускает процесс
     // всплытия кристала, шапки или черепа
     boobleUp();

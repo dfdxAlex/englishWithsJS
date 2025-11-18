@@ -22,7 +22,9 @@ export function menuSettingView()
         <label for="testType" class="form-label">Test Type</label>
         <select class="form-select" id="testType">
           <option value="simple" ${setSelectForSimple("simple")}>Simple Test</option>
+          <option value="simple-translate" ${setSelectForSimple("simple-translate")}>Simple Test Translate</option>
           <option value="word-assembly" ${setSelectForSimple("word-assembly")}>Word Assembly</option>
+          <option value="word-assembly-translate" ${setSelectForSimple("word-assembly-translate")}>Word Assembly Translate</option>
           <option value="word-assembly-not-translate" ${setSelectForSimple("word-assembly-not-translate")}>Word Assembly (not translate)</option>
         </select>
 
