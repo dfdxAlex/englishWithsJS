@@ -22,8 +22,12 @@ import { WorkingField } from '../view/WorkingField.js';
 
 export const handleLevelX = (dataObj, constIndexArray = false) =>
     {
-        noonMenu('.dropdown-content');
-        // Сменили тест
+
+        // закоментировано 18.11.2025.
+        // noonMenu('.dropdown-content');
+
+        // Если Сменили тест, то запомнить номер нового теста и протолкнуть в массиве dataElevator[]
+        // дальше по массиву
         if (DataOk.level.int !== dataObj.getLevel()) {
             // Записать в хранилище что работаем на неком уровне
             DataOk.setLevel(dataObj.getLevel());
@@ -37,7 +41,7 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
             localStorage.setItem('user_select','simple');
         }
     
-        // Взять значение индекса из локального хранилища
+        // Взять значение индекса текущего вопросса из локального хранилища
         // Используется как дефолтное значение
         let randomEl = localStorage.getItem('randomEl');
         
@@ -45,10 +49,11 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
         // новый номер вопроса
         // Если нужно использовать старый вопрос, то останется
         // дефолтное значение
-        if (constIndexArray === false)
+        if (constIndexArray === false) {
             // выбрать случайную позицию из массива вопроссов
             // данный массив хранит в себе вопроссы и ответы.
             randomEl = getRandomInt(0, dataObj.getArrayDB().length-1);
+        }
 
         // Нужно проверить дополнительно входит ли старый
         // значение вопроса в рабочий массив. Если не входит, то пользователь
@@ -79,12 +84,36 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
                     .innerHTML = WorkingField.init(mas, nameLeson);
         hundleForTranslate();
         }
+
+        // Тест уровня Simple - Translate
+        // Новый тест, удалить коммент когда закончу
+        // создать рабочее поле с вопроссом и вариантами ответа
+        // поместить форму в соответствующий div
+        if (SettingForProgram.selectTypeTest === 'simple-translate') {
+            document.getElementById('working_field')
+                    .innerHTML = WorkingField.initTranslate(mas, nameLeson);
+        hundleForTranslate();
+        }
         
         // Тест уровня Word-assembly
         // создать рабочее поле с вопроссом и вариантами ответа
         // поместить форму в соответствующий div
         if (SettingForProgram.selectTypeTest === 'word-assembly') {
             const workingFieldC = document.getElementById('working_field');
+            workingFieldC.innerHTML = WorkingField.initWordAssembly(mas, nameLeson);
+        
+        setClickForLightNormalHardHelp();
+        hundleForTranslate();
+        borderRadiusForLevelTwoAndThree();
+        setColorForLevelToAndThree();
+        }
+
+        // Новый тест, удалить коммент когда закончу
+        // Тест уровня Word-assembly-translate
+        // создать рабочее поле с вопроссом и вариантами ответа
+        // поместить форму в соответствующий div
+        if (SettingForProgram.selectTypeTest === 'word-assembly') {
+            const workingFieldC = document.getElementById('working_field-translate');
             workingFieldC.innerHTML = WorkingField.initWordAssembly(mas, nameLeson);
         
         setClickForLightNormalHardHelp();

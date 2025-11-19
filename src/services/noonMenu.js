@@ -10,3 +10,7 @@ export function noonMenu(name)
         return false;
     }
 };
+
+noonMenu.help = `
+Функция находит элемент и прячет его. Входящий параметр - это селектор для querySelector();
+`;

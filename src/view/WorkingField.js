@@ -59,14 +59,45 @@ class WorkingFieldClass {
           DataSet.arrayBD = arrayBD;
 
           // Деструктуризация рабочего подмассива в свойства класса
+          // this.questions, this.option1 ...
           this.getArrayQuestions(arrayBD);
 
           let buttonOption = [];
 
+          // присвоить элементам массива соответствующие данные из массива с некоторой разметкой
           buttonOption[0] = this.getButtonOption("option1");
           buttonOption[1] = this.getButtonOption("option2");
           buttonOption[2] = this.getButtonOption("option3");
           buttonOption[3] = this.getButtonOption("option4");
+
+          buttonOption = shuffleArray(buttonOption).join('');
+          
+          return getCardStart() +
+              cardStartAndLegend(nameLeson) +
+              getButtonQuestion(this.question) +
+              setButtonTranslate() +
+              '<hr>'+
+              buttonOption +
+              getCardFinish();
+      }
+
+  initTranslate(arrayBD, nameLeson = false) 
+  {
+          // Поместить текущий подмассив в глобальный объект для использования
+          // в других модулях
+          DataSet.arrayBD = arrayBD;
+          // console.log(arrayBD);
+
+          // Деструктуризация рабочего подмассива в свойства класса
+          this.getArrayQuestions(arrayBD);
+
+          let buttonOption = [];
+
+          // присвоить элементам массива соответствующие данные из массива с некоторой разметкой
+          buttonOption[0] = this.getButtonOption("option5");
+          buttonOption[1] = this.getButtonOption("option6");
+          buttonOption[2] = this.getButtonOption("option7");
+          buttonOption[3] = this.getButtonOption("option8");
 
           buttonOption = shuffleArray(buttonOption).join('');
           
