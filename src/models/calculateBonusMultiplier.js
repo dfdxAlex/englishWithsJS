@@ -3,6 +3,7 @@
 
 import { LevelDataModel } from './LevelDataModel.js';
 import { SettingForProgram } from './SettingForProgram.js';
+import { isClickTranslate } from './calculateBonusMultiplier/isClickTranslate.js';
 
 export function calculateBonusMultiplier(propertyForBonus)
 {
@@ -15,6 +16,12 @@ export function calculateBonusMultiplier(propertyForBonus)
             SettingForProgram.diamant = "0";
             return 0;
         }
+
+    // Если в тесте Symple-Translate была нажата подсказка то обнулить бонус
+    if (isClickTranslate() && SettingForProgram.selectTypeTest === 'simple-translate') {
+        SettingForProgram.diamant = "0";
+        return 0;
+    }
 
     // пока просто дублирую - деструктуризирую объект для
     // упрощения кода

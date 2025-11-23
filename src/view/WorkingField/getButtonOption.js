@@ -1,6 +1,8 @@
 import { getStrStart } from './getStrStart.js';
 import { getStrFinish } from './getStrFinish.js';
 import { DataSet } from '../../services/data/DataSet.js';
+import { getTranslateForTest } from './getButtonOption/getTranslateForTest.js';
+import { getRandomeTranslateForTest } from './getButtonOption/getRandomeTranslateForTest.js';
 
 // Функция возвращает строку кнопки варианта в первом тесте.
 // Функция использует контекст объекта WorkingField
@@ -43,28 +45,3 @@ getButtonOption.help = `
 Функция возвращает строку кнопки варианта в первом тесте.
 Функция использует контекст объекта WorkingField
 `;
-
-// принимает подмассив и возвращает перевод согласно выбранному языку
-function getTranslateForTest(dataArray)
-{
-    if (localStorage.getItem('EnglishWithJs_lang') === 'ru') {
-        return dataArray[5];
-    } else if (localStorage.getItem('EnglishWithJs_lang') === 'ua') {
-        return dataArray[6];
-    } else if (localStorage.getItem('EnglishWithJs_lang') === 'pl') {
-        return dataArray[7];
-    }
-}
-
-// функция возвращает случайный подмассив из рабочего массива текущего теста 
-// и забирает из него элемент перевода в зависимости от выбранного языка
-// Цель: дать дополнительные варианты переводов для теста с выбором правильного перевода
-function getRandomeTranslateForTest()
-{
-    const i = localStorage.getItem('level');
-    const obj = new window.LevelDataModel(i);
-    const arrayWork = obj.getArrayDB();
-    const randomIndex = Math.floor(Math.random() * arrayWork.length);
-    
-    return getTranslateForTest(arrayWork[randomIndex]);
-}

@@ -5,6 +5,7 @@
 import { handleOkErr } from './handleOkErr.js';
 import { SettingForProgram } from '../models/SettingForProgram.js';
 import { handleLevelX } from './handleLevelX.js';
+import { LevelDataModel } from '../models/LevelDataModel.js';
 
 // объект достаточно просто создать в нужном месте
 export class EventController {
@@ -98,7 +99,7 @@ export class EventController {
                 containerForRezult.onclick = (el) => {
                     el.stopPropagation();
                     const i = localStorage.getItem('level');
-                    const obj = new window.LevelDataModel(i);
+                    const obj = new LevelDataModel(i);
                     // перерисовать рабочее поле.
                     // параметр true отключает генерацию нового вопросса
                     handleLevelX(obj, true);
@@ -118,7 +119,7 @@ export class EventController {
             if (containerForRezult) {
                 containerForRezult.onclick = (el) => {
                     el.stopPropagation();
-                    const obj = new window.LevelDataModel(DataOk.level.int);
+                    const obj = new LevelDataModel(DataOk.level.int);
                     // перерисовать рабочее поле.
                     // параметр true отключает генерацию нового вопросса
                     handleLevelX(obj, true);

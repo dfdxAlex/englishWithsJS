@@ -3,7 +3,6 @@ import { Help } from '../view/Help.js';
 import { handleLog } from './../../src/controllers/handleLog.js';
 import { Thoury } from './Thoury.js';
 import { DataOk } from '../services/data/DataOk.js';
-import { LevelDataModel } from '../models/LevelDataModel.js';
 import { handleOkErr } from './handleOkErr.js';
 import { hundleHelpPrime } from './forInitEventListeners/hundleHelpPrime.js';
 import { noonMenu } from '../services/noonMenu.js';
@@ -30,8 +29,5 @@ window.WorkingField = WorkingField;
 window.handleLevelX = handleLevelX;
 window.DataSet = DataSet;
 
-
-// костыль для LevelDataModel
-window.LevelDataModel = LevelDataModel;
 
 

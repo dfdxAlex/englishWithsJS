@@ -4,6 +4,8 @@
 // на кнопку и ссылку на объект, в котором присутствуют 
 // данные для переводов
 
+import { countHints } from '../../../view/countHints.js';
+
 export function handleTranslateQuestion(event) 
 {
         // Изменяет число запрошенных подсказок непосредственно на 
