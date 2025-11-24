@@ -119,6 +119,7 @@ export function handleOkErr(str, event) {
     // Функция находит нужные элементы, если они есть, и изменяет для них border-radius
     setBorderRadiusForWorkingField(['question', 'translate', 'option1',
         'option2', 'option3', 'option4', 'option5', 'option6', 'option7', 'option8'
+        , 'option9', 'option10', 'option11', 'option12'
     ]);
 }
 

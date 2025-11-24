@@ -11,7 +11,6 @@ export function getRandomeTranslateForTest()
     const obj = new LevelDataModel(i);
     const arrayWork = obj.getArrayDB();
     const randomIndex = Math.floor(Math.random() * arrayWork.length);
-    
     return getTranslateForTest(arrayWork[randomIndex]);
 }
 

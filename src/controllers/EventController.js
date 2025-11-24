@@ -50,10 +50,19 @@ export class EventController {
         }
 
         if (SettingForProgram.selectTypeTest === "simple-translate") {
+            // Первая часть теста, в качестве вопросса вытупает сам вопрос
             let optionsOne = document.getElementById('option5');
             let optionsTwo = document.getElementById('option6');
             let optionsThree = document.getElementById('option7');
             let optionsFour = document.getElementById('option8');
+
+            // Вторая часть теста, в качестве выступает работает перевод
+            if (!optionsOne) {
+                optionsOne = document.getElementById('option9');
+                optionsTwo = document.getElementById('option10');
+                optionsThree = document.getElementById('option11');
+                optionsFour = document.getElementById('option12');
+            }
 
             // Сделать образец правильной строки без пробелов. Нужен для:
             // иногда в тестах есть два одинаковых варианта ответов, чтобы они оба сработали, на 

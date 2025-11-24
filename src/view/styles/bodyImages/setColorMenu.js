@@ -23,7 +23,7 @@ export function setColorMenu()
     // и контрастный фон и цвет шрифта делает
     setBorderRadiusForWorkingField(['question', 'translate', 'option1',
         'option2', 'option3', 'option4', 'question_old', 'clicked_element', 'search_error',
-        , 'option5', 'option6', 'option7', 'option8'
+        , 'option5', 'option6', 'option7', 'option8', 'option9', 'option10', 'option11', 'option12'
     ]);
 
     // случайный размер шрифта
@@ -33,7 +33,7 @@ export function setColorMenu()
     // дополнительный паддинг только для первого теста
     setPaddingForSimple(['question', 'translate', 'option1',
         'option2', 'option3', 'option4', 'question_old', 'clicked_element', 
-        'option5', 'option6', 'option7', 'option8'
+        'option5', 'option6', 'option7', 'option8', 'option9', 'option10', 'option11', 'option12'
     ], randomSize);
 
     // смещение картинок логирования и динамика

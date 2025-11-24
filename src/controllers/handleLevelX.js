@@ -86,9 +86,6 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
         }
 
         // Тест уровня Simple - Translate
-        // Новый тест, удалить коммент когда закончу
-        // создать рабочее поле с вопроссом и вариантами ответа
-        // поместить форму в соответствующий div
         if (SettingForProgram.selectTypeTest === 'simple-translate') {
             document.getElementById('working_field')
                     .innerHTML = WorkingField.initTranslate(mas, nameLeson);

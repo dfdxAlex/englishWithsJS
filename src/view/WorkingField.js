@@ -16,6 +16,7 @@ import { getCardFinish } from './WorkingField/getCardFinish.js';
 import { setButtonTranslate } from './WorkingField/setButtonTranslate.js';
 import { getButtonOption } from './WorkingField/getButtonOption.js';
 import { getButtonQuestion } from './WorkingField/getButtonQuestion.js';
+import { getTranslateForTest } from './WorkingField/getButtonOption/getTranslateForTest.js';
 import { shuffleArray } from './WorkingField/shuffleArray.js';
 import { clearNotToBeSentences } from './WorkingField/clearNotToBeSentences.js';
 import { insertWord } from './WorkingField/insertWord.js';
@@ -86,24 +87,50 @@ class WorkingFieldClass {
           // Поместить текущий подмассив в глобальный объект для использования
           // в других модулях
           DataSet.arrayBD = arrayBD;
-          // console.log(arrayBD);
+          this.arrayBD = arrayBD;
 
           // Деструктуризация рабочего подмассива в свойства класса
-          this.getArrayQuestions(arrayBD);
+          this.getArrayQuestions(this.arrayBD);
 
           let buttonOption = [];
 
+          // очистить массив ToBeSentences от лишнего слова not, работает с контекстом класса
+          this.clearNotToBeSentences();
+          // вставить правильное слово если встретилось многоточие, работает с контекстом класса
+          this.insertWord();
+          // Почистить подмассив toBeSentences от дублирования слов
+          let arrayButton = this.question.split(' ');
+          arrayButton = cleartoBeSentences(arrayButton);
+          this.question = arrayButton.join(" ");
+
           // присвоить элементам массива соответствующие данные из массива с некоторой разметкой
+          // Первая часть теста, в качестве вопросса выступает сам вопрос, индекс 0
           buttonOption[0] = this.getButtonOption("option5");
           buttonOption[1] = this.getButtonOption("option6");
           buttonOption[2] = this.getButtonOption("option7");
           buttonOption[3] = this.getButtonOption("option8");
 
+          // функция оборачивает this.question в разметку кнопки
+          let question = getButtonQuestion(this.question);
+
+          // случйное число false или true для выбора одного из режимов для Sympl-Translate
+          const randomBool = Math.random() < 0.5;
+
+          // Вторая часть теста, в качестве вопросса выступает вариант перевода, индексы 5,6,7
+          if (randomBool) { 
+              question = getButtonQuestion(getTranslateForTest(arrayBD));
+              buttonOption[0] = this.getButtonOption("option9");
+              buttonOption[1] = this.getButtonOption("option10");
+              buttonOption[2] = this.getButtonOption("option11");
+              buttonOption[3] = this.getButtonOption("option12");
+          }
+          
+
           buttonOption = shuffleArray(buttonOption).join('');
           
           return getCardStart() +
               cardStartAndLegend(nameLeson) +
-              getButtonQuestion(this.question) +
+              question +
               setButtonTranslate() +
               '<hr>'+
               buttonOption +

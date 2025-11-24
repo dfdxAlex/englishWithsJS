@@ -24,6 +24,7 @@ export function insertWord()
             this.question = this.question.replace('___', this.option1);
             this.trueSentences = false;
         }
+        return this.question;
 }
 
 insertWord.help = `
