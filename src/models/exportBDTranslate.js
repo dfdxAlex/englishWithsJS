@@ -24,11 +24,6 @@ BDTranslate.push(
   `be/have/do in present and past tenses`, 
   `be/have/do in present and past tenses`]);
 BDTranslate.push(
-  [returnInfoUnit.returnInfoUnit22RU(),
-   returnInfoUnit.returnInfoUnit22UA(), 
-   returnInfoUnit.returnInfoUnit22PL(),
-   returnInfoUnit.returnInfoUnit22EN()]);
-BDTranslate.push(
   [returnInfoUnit.helpForProgramRU(), 
    returnInfoUnit.helpForProgramUA(), 
    returnInfoUnit.helpForProgramPL(),

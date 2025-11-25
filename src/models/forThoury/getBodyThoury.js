@@ -7,8 +7,6 @@ export function getBodyThoury(thisS)
 {
     switch (thisS.level) {
       // Старая часть проекта под этой строкой
-      case 43: 
-        return thisS.translate.translate(indexForThoury.returnInfoUnit22RU());
       case 42: 
         return thisS.translate.translate(indexForThoury.returnLevel42());
       case 40:
