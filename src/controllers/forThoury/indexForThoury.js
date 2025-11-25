@@ -2,11 +2,6 @@
 // Файл не развивается, если будет время, что врядли, можно легко перевести
 // на новый тип файлов помощи
 
-import returnInfoUnit22EN from '../../view/thoury/returnInfoUnit22EN.js';
-import returnInfoUnit22PL from '../../view/thoury/returnInfoUnit22PL.js';
-import returnInfoUnit22RU from '../../view/thoury/returnInfoUnit22RU.js';
-import returnInfoUnit22UA from '../../view/thoury/returnInfoUnit22UA.js';
-
 import returnLevel14 from '../../view/thoury/returnLevel14.js';
 import returnLevel14EN from '../../view/thoury/returnLevel14EN.js';
 import returnLevel14PL from '../../view/thoury/returnLevel14PL.js';
