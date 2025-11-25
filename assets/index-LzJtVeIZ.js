@@ -1,200 +1,4 @@
-var I=Object.defineProperty;var T=(e,t,a)=>t in e?I(e,t,{enumerable:!0,configurable:!0,writable:!0,value:a}):e[t]=a;var l=(e,t,a)=>T(e,typeof t!="symbol"?t+"":t,a);(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))o(i);new MutationObserver(i=>{for(const n of i)if(n.type==="childList")for(const s of n.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&o(s)}).observe(document,{childList:!0,subtree:!0});function a(i){const n={};return i.integrity&&(n.integrity=i.integrity),i.referrerPolicy&&(n.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?n.credentials="include":i.crossOrigin==="anonymous"?n.credentials="omit":n.credentials="same-origin",n}function o(i){if(i.ep)return;i.ep=!0;const n=a(i);fetch(i.href,n)}})();function returnInfoUnit22EN(){return`
-      <div class="modal-body" style="color: #333; font-family: sans-serif; padding: 24px;">
-        <h4 style="margin-bottom: 16px;">Passive Voice: <code>is being done</code> and <code>has been done</code></h4>
-
-        <h5 style="color: #007BFF;">1. <code>is being done</code></h5>
-        <p><strong>Tense:</strong> Present Continuous Passive</p>
-        <p><strong>Used when:</strong> the action <em>is happening right now</em>. The focus is on the process.</p>
-        <p><strong>Structure:</strong> Subject + is/are + <strong>being</strong> + past participle (V3)</p>
-
-        <ul style="padding-left: 20px;">
-          <li><strong>Statement:</strong> The car <code>is being repaired</code>. — The car is currently being repaired.</li>
-          <li><strong>Negative:</strong> The documents <code>aren’t being printed</code>. — The documents are not being printed.</li>
-          <li><strong>Question:</strong> Is the dinner <code>being prepared</code>? — Is someone preparing the dinner right now?</li>
-        </ul>
-
-        <hr style="margin: 20px 0;">
-
-        <h5 style="color: #28A745;">2. <code>has been done</code></h5>
-        <p><strong>Tense:</strong> Present Perfect Passive</p>
-        <p><strong>Used when:</strong> the action <em>has already been completed</em>. The result matters now.</p>
-        <p><strong>Structure:</strong> Subject + has/have + <strong>been</strong> + past participle (V3)</p>
-
-        <ul style="padding-left: 20px;">
-          <li><strong>Statement:</strong> The work <code>has been finished</code>. — The work is done.</li>
-          <li><strong>Negative:</strong> The homework <code>hasn’t been done</code>. — The homework is not done yet.</li>
-          <li><strong>Question:</strong> Has the house <code>been sold</code>? — Is the house already sold?</li>
-        </ul>
-
-        <hr style="margin: 20px 0;">
-
-        <p><strong>Comparison:</strong></p>
-        <table style="width: 100%; border-collapse: collapse;">
-          <tr>
-            <th style="border: 1px solid #ccc; padding: 8px;">Form</th>
-            <th style="border: 1px solid #ccc; padding: 8px;">When to use</th>
-            <th style="border: 1px solid #ccc; padding: 8px;">Example</th>
-          </tr>
-          <tr>
-            <td style="border: 1px solid #ccc; padding: 8px;">is being done</td>
-            <td style="border: 1px solid #ccc; padding: 8px;">action in progress</td>
-            <td style="border: 1px solid #ccc; padding: 8px;">The room is being cleaned.</td>
-          </tr>
-          <tr>
-            <td style="border: 1px solid #ccc; padding: 8px;">has been done</td>
-            <td style="border: 1px solid #ccc; padding: 8px;">action completed</td>
-            <td style="border: 1px solid #ccc; padding: 8px;">The room has been cleaned.</td>
-          </tr>
-        </table>
-      </div>
-    `}function returnInfoUnit22PL(){return`
-      <div class="modal-body" style="color: #333; font-family: sans-serif; padding: 24px;">
-        <h4 style="margin-bottom: 16px;">Пассивный залог: <code>is being done</code> и <code>has been done</code></h4>
-
-        <h5 style="color: #007BFF;">1. <code>is being done</code></h5>
-        <p><strong>Время:</strong> Present Continuous Passive (настоящее длительное пассивное)</p>
-        <p><strong>Когда используется:</strong> действие происходит <em>прямо сейчас</em>, важен сам процесс.</p>
-        <p><strong>Формула:</strong> Подлежащее + is/are + <strong>being</strong> + V3 (причастие прошедшего времени)</p>
-
-        <ul style="padding-left: 20px;">
-          <li><strong>Утвердительное:</strong> The car <code>is being repaired</code>. — Машину ремонтируют.</li>
-          <li><strong>Отрицательное:</strong> The documents <code>aren’t being printed</code>. — Документы не печатаются.</li>
-          <li><strong>Вопросительное:</strong> Is the dinner <code>being prepared</code>? — Ужин готовится?</li>
-        </ul>
-
-        <hr style="margin: 20px 0;">
-
-        <h5 style="color: #28A745;">2. <code>has been done</code></h5>
-        <p><strong>Время:</strong> Present Perfect Passive (настоящее совершенное пассивное)</p>
-        <p><strong>Когда используется:</strong> действие уже <em>завершено</em>, и важен его результат.</p>
-        <p><strong>Формула:</strong> Подлежащее + has/have + <strong>been</strong> + V3</p>
-
-        <ul style="padding-left: 20px;">
-          <li><strong>Утвердительное:</strong> The work <code>has been finished</code>. — Работа завершена.</li>
-          <li><strong>Отрицательное:</strong> The homework <code>hasn’t been done</code>. — Домашка не сделана.</li>
-          <li><strong>Вопросительное:</strong> Has the house <code>been sold</code>? — Дом продан?</li>
-        </ul>
-
-        <hr style="margin: 20px 0;">
-
-        <p><strong>Сравнение форм:</strong></p>
-        <table style="width: 100%; border-collapse: collapse;">
-          <tr>
-            <th style="border: 1px solid #ccc; padding: 8px;">Форма</th>
-            <th style="border: 1px solid #ccc; padding: 8px;">Когда используется</th>
-            <th style="border: 1px solid #ccc; padding: 8px;">Пример</th>
-          </tr>
-          <tr>
-            <td style="border: 1px solid #ccc; padding: 8px;">is being done</td>
-            <td style="border: 1px solid #ccc; padding: 8px;">действие в процессе</td>
-            <td style="border: 1px solid #ccc; padding: 8px;">The room is being cleaned.</td>
-          </tr>
-          <tr>
-            <td style="border: 1px solid #ccc; padding: 8px;">has been done</td>
-            <td style="border: 1px solid #ccc; padding: 8px;">действие завершено</td>
-            <td style="border: 1px solid #ccc; padding: 8px;">The room has been cleaned.</td>
-          </tr>
-        </table>
-      </div>
-    `}function returnInfoUnit22RU(){return`
-      <div class="modal-body" style="color: #333; font-family: sans-serif; padding: 24px;">
-        <h4 style="margin-bottom: 16px;">Пассивный залог: <code>is being done</code> и <code>has been done</code></h4>
-
-        <h5 style="color: #007BFF;">1. <code>is being done</code></h5>
-        <p><strong>Время:</strong> Present Continuous Passive (настоящее длительное пассивное)</p>
-        <p><strong>Когда используется:</strong> действие происходит <em>прямо сейчас</em>, важен сам процесс.</p>
-        <p><strong>Формула:</strong> Подлежащее + is/are + <strong>being</strong> + V3 (причастие прошедшего времени)</p>
-
-        <ul style="padding-left: 20px;">
-          <li><strong>Утвердительное:</strong> The car <code>is being repaired</code>. — Машину ремонтируют.</li>
-          <li><strong>Отрицательное:</strong> The documents <code>aren’t being printed</code>. — Документы не печатаются.</li>
-          <li><strong>Вопросительное:</strong> Is the dinner <code>being prepared</code>? — Ужин готовится?</li>
-        </ul>
-
-        <hr style="margin: 20px 0;">
-
-        <h5 style="color: #28A745;">2. <code>has been done</code></h5>
-        <p><strong>Время:</strong> Present Perfect Passive (настоящее совершенное пассивное)</p>
-        <p><strong>Когда используется:</strong> действие уже <em>завершено</em>, и важен его результат.</p>
-        <p><strong>Формула:</strong> Подлежащее + has/have + <strong>been</strong> + V3</p>
-
-        <ul style="padding-left: 20px;">
-          <li><strong>Утвердительное:</strong> The work <code>has been finished</code>. — Работа завершена.</li>
-          <li><strong>Отрицательное:</strong> The homework <code>hasn’t been done</code>. — Домашка не сделана.</li>
-          <li><strong>Вопросительное:</strong> Has the house <code>been sold</code>? — Дом продан?</li>
-        </ul>
-
-        <hr style="margin: 20px 0;">
-
-        <p><strong>Сравнение форм:</strong></p>
-        <table style="width: 100%; border-collapse: collapse;">
-          <tr>
-            <th style="border: 1px solid #ccc; padding: 8px;">Форма</th>
-            <th style="border: 1px solid #ccc; padding: 8px;">Когда используется</th>
-            <th style="border: 1px solid #ccc; padding: 8px;">Пример</th>
-          </tr>
-          <tr>
-            <td style="border: 1px solid #ccc; padding: 8px;">is being done</td>
-            <td style="border: 1px solid #ccc; padding: 8px;">действие в процессе</td>
-            <td style="border: 1px solid #ccc; padding: 8px;">The room is being cleaned.</td>
-          </tr>
-          <tr>
-            <td style="border: 1px solid #ccc; padding: 8px;">has been done</td>
-            <td style="border: 1px solid #ccc; padding: 8px;">действие завершено</td>
-            <td style="border: 1px solid #ccc; padding: 8px;">The room has been cleaned.</td>
-          </tr>
-        </table>
-      </div>
-    `}function returnInfoUnit22UA(){return`
-      <div class="modal-body" style="color: #333; font-family: sans-serif; padding: 24px;">
-        <h4 style="margin-bottom: 16px;">Strona bierna: <code>is being done</code> i <code>has been done</code></h4>
-
-        <h5 style="color: #007BFF;">1. <code>is being done</code></h5>
-        <p><strong>Czas:</strong> Present Continuous Passive (czas teraźniejszy ciągły w stronie biernej)</p>
-        <p><strong>Użycie:</strong> czynność <em>dzieje się teraz</em>, ważny jest sam proces.</p>
-        <p><strong>Budowa:</strong> Podmiot + is/are + <strong>being</strong> + czasownik w trzeciej formie (Past Participle)</p>
-
-        <ul style="padding-left: 20px;">
-          <li><strong>Zdanie twierdzące:</strong> The car <code>is being repaired</code>. — Samochód jest właśnie naprawiany.</li>
-          <li><strong>Zdanie przeczące:</strong> The documents <code>aren’t being printed</code>. — Dokumenty nie są drukowane.</li>
-          <li><strong>Pytanie:</strong> Is the dinner <code>being prepared</code>? — Czy obiad jest przygotowywany?</li>
-        </ul>
-
-        <hr style="margin: 20px 0;">
-
-        <h5 style="color: #28A745;">2. <code>has been done</code></h5>
-        <p><strong>Czas:</strong> Present Perfect Passive (czas teraźniejszy dokonany w stronie biernej)</p>
-        <p><strong>Użycie:</strong> czynność już się <em>zakończyła</em>, liczy się rezultat teraz.</p>
-        <p><strong>Budowa:</strong> Podmiot + has/have + <strong>been</strong> + czasownik w trzeciej formie</p>
-
-        <ul style="padding-left: 20px;">
-          <li><strong>Zdanie twierdzące:</strong> The work <code>has been finished</code>. — Praca została zakończona.</li>
-          <li><strong>Zdanie przeczące:</strong> The homework <code>hasn’t been done</code>. — Praca domowa nie została zrobiona.</li>
-          <li><strong>Pytanie:</strong> Has the house <code>been sold</code>? — Czy dom został sprzedany?</li>
-        </ul>
-
-        <hr style="margin: 20px 0;">
-
-        <p><strong>Porównanie form:</strong></p>
-        <table style="width: 100%; border-collapse: collapse;">
-          <tr>
-            <th style="border: 1px solid #ccc; padding: 8px;">Forma</th>
-            <th style="border: 1px solid #ccc; padding: 8px;">Kiedy używamy</th>
-            <th style="border: 1px solid #ccc; padding: 8px;">Przykład</th>
-          </tr>
-          <tr>
-            <td style="border: 1px solid #ccc; padding: 8px;">is being done</td>
-            <td style="border: 1px solid #ccc; padding: 8px;">czynność trwa</td>
-            <td style="border: 1px solid #ccc; padding: 8px;">The room is being cleaned.</td>
-          </tr>
-          <tr>
-            <td style="border: 1px solid #ccc; padding: 8px;">has been done</td>
-            <td style="border: 1px solid #ccc; padding: 8px;">czynność zakończona</td>
-            <td style="border: 1px solid #ccc; padding: 8px;">The room has been cleaned.</td>
-          </tr>
-        </table>
-      </div>
-    `}function returnLevel14(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
+var I=Object.defineProperty;var T=(e,t,a)=>t in e?I(e,t,{enumerable:!0,configurable:!0,writable:!0,value:a}):e[t]=a;var l=(e,t,a)=>T(e,typeof t!="symbol"?t+"":t,a);(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))o(i);new MutationObserver(i=>{for(const n of i)if(n.type==="childList")for(const s of n.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&o(s)}).observe(document,{childList:!0,subtree:!0});function a(i){const n={};return i.integrity&&(n.integrity=i.integrity),i.referrerPolicy&&(n.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?n.credentials="include":i.crossOrigin==="anonymous"?n.credentials="omit":n.credentials="same-origin",n}function o(i){if(i.ep)return;i.ep=!0;const n=a(i);fetch(i.href,n)}})();function returnLevel14(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
     <h2 style="color: #333;">Определение настоящего продолженного времени</h2>
     <p style="line-height: 1.6; color: #555;">
         Настоящее продолженное время используется для описания действий, происходящих в данный момент, или для обозначения временных ситуаций. Оно образуется при помощи вспомогательного глагола "to be" и основного глагола с окончанием -ing.
@@ -5321,7 +5125,7 @@ var I=Object.defineProperty;var T=(e,t,a)=>t in e?I(e,t,{enumerable:!0,configura
             </button>
           </div>
         </div>
-        `}const indexForThoury={helpForProgramRU,helpForProgramPL,helpForProgramUA,helpForProgramEN,helpForHomeMenuRU,helpForHomeMenuUA,helpForHomeMenuPL,helpForHomeMenuEN,helpForGreenPoleOneUA,helpForGreenPoleOneRU,helpForGreenPoleOnePL,helpForGreenPoleOneEN,returnInfoForDiamant,returnInfoForDiamantEN,returnInfoForDiamantPL,returnInfoForDiamantUA,returnInfoUnit22RU,returnInfoUnit22PL,returnInfoUnit22EN,returnInfoUnit22UA,returnLevel42PL,returnLevel42EN,returnLevel42UA,returnLevel42,returnLevel40PL,returnLevel40EN,returnLevel40UA,returnLevel40,returnLevel39EN,returnLevel39PL,returnLevel39UA,returnLevel39,returnLevel38EN,returnLevel38PL,returnLevel38UA,returnLevel38,returnLevel37EN,returnLevel37PL,returnLevel37UA,returnLevel37,returnLevel20EN,returnLevel20PL,returnLevel20UA,returnLevel20,returnLevel36EN,returnLevel36PL,returnLevel36UA,returnLevel36,returnLevel35EN,returnLevel35PL,returnLevel35UA,returnLevel35,returnLevel34EN,returnLevel34PL,returnLevel34UA,returnLevel34,returnLevel33EN,returnLevel33PL,returnLevel33UA,returnLevel33,returnLevel32EN,returnLevel32PL,returnLevel32UA,returnLevel32,returnLevel31EN,returnLevel31PL,returnLevel31UA,returnLevel31,returnLevel23EN,returnLevel23PL,returnLevel23UA,returnLevel23,returnLevel21EN,returnLevel21PL,returnLevel21UA,returnLevel21,returnLevel19EN,returnLevel19PL,returnLevel19UA,returnLevel19,returnLevel18EN,returnLevel18PL,returnLevel18UA,returnLevel18,returnLevel17EN,returnLevel17PL,returnLevel17UA,returnLevel17,returnLevel16EN,returnLevel16PL,returnLevel16UA,returnLevel16,returnLevel15EN,returnLevel15PL,returnLevel15UA,returnLevel15,returnLevel14EN,returnLevel14PL,returnLevel14UA,returnLevel14};function exportBDTranslate(){const e=[];return e.push(["","","",""]),e.push(["be/have/do in present and past tenses","be/have/do in present and past tenses","be/have/do in present and past tenses","be/have/do in present and past tenses"]),e.push([indexForThoury.returnInfoUnit22RU(),indexForThoury.returnInfoUnit22UA(),indexForThoury.returnInfoUnit22PL(),indexForThoury.returnInfoUnit22EN()]),e.push([indexForThoury.helpForProgramRU(),indexForThoury.helpForProgramUA(),indexForThoury.helpForProgramPL(),indexForThoury.helpForProgramEN()]),e.push([indexForThoury.helpForHomeMenuRU(),indexForThoury.helpForHomeMenuUA(),indexForThoury.helpForHomeMenuPL(),indexForThoury.helpForHomeMenuEN()]),e.push([indexForThoury.helpForGreenPoleOneRU(),indexForThoury.helpForGreenPoleOneUA(),indexForThoury.helpForGreenPoleOnePL(),indexForThoury.helpForGreenPoleOneEN()]),e.push([indexForThoury.returnLevel42(),indexForThoury.returnLevel42UA(),indexForThoury.returnLevel42PL(),indexForThoury.returnLevel42EN()]),e.push(["Примерно:","Приблизно:","Mówimy o:","We are talking approximately about:"]),e.push([indexForThoury.returnLevel40(),indexForThoury.returnLevel40UA(),indexForThoury.returnLevel40PL(),indexForThoury.returnLevel40EN()]),e.push(["Последний ответ здесь","Остання відповідь тут","Najnowsza odpowiedź tutaj","The last answer is here"]),e.push(["Предыдущий вопрос здесь","Попереднє питання тут","Poprzednie pytanie tutaj","Previous question here"]),e.push([indexForThoury.returnLevel39(),indexForThoury.returnLevel39UA(),indexForThoury.returnLevel39PL(),indexForThoury.returnLevel39EN()]),e.push([indexForThoury.returnLevel38(),indexForThoury.returnLevel38UA(),indexForThoury.returnLevel38PL(),indexForThoury.returnLevel38EN()]),e.push([indexForThoury.returnLevel37(),indexForThoury.returnLevel37UA(),indexForThoury.returnLevel37PL(),indexForThoury.returnLevel37EN()]),e.push(["В этом тесте нужно собрать предложение из предложенных слов. Имейте в виду, что иногда собранное предложение может не совпадать с общей темой теста.","У цьому тесті потрібно зібрати пропозицію із запропонованих слів. Майте на увазі, що інколи зібрана пропозиція може не співпадати із загальною темою тесту.","W tym teście musisz ułożyć zdanie z podanych słów. Pamiętaj, że czasami zebrane zdanie może nie pokrywać się z ogólnym tematem testu.","In this test you need to assemble a sentence from the given words. Keep in mind that sometimes the assembled sentence may not match the general topic of the test."]),e.push(["(может отличаться)","(може відрізнятися)","(może się różnić)","(may differ)"]),e.push([indexForThoury.returnLevel20(),indexForThoury.returnLevel20UA(),indexForThoury.returnLevel20PL(),indexForThoury.returnLevel20EN()]),e.push([indexForThoury.returnLevel36(),indexForThoury.returnLevel36UA(),indexForThoury.returnLevel36PL(),indexForThoury.returnLevel36EN()]),e.push([indexForThoury.returnInfoForDiamant(),indexForThoury.returnInfoForDiamantUA(),indexForThoury.returnInfoForDiamantPL(),indexForThoury.returnInfoForDiamantEN()]),e.push([indexForThoury.returnLevel35(),indexForThoury.returnLevel35UA(),indexForThoury.returnLevel35PL(),indexForThoury.returnLevel35EN()]),e.push([indexForThoury.returnLevel34(),indexForThoury.returnLevel34UA(),indexForThoury.returnLevel34PL(),indexForThoury.returnLevel34EN()]),e.push(["Вставьте глагол вместо троеточия или подберите правильное предложение в продолженном прошедшем времени.","Вставте дієслово замість три крапки або підберіть правильну пропозицію в минулому часі.","Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym ciągłym.","Insert a verb instead of the ellipsis or choose the correct sentence in the past continuous tense."]),e.push([indexForThoury.returnLevel33(),indexForThoury.returnLevel33UA(),indexForThoury.returnLevel33PL(),indexForThoury.returnLevel33EN()]),e.push([indexForThoury.returnLevel32(),indexForThoury.returnLevel32UA(),indexForThoury.returnLevel32PL(),indexForThoury.returnLevel32EN()]),e.push(["Past Simple отрицательные и вопросы","Past Simple негативні та питання","Past Simple przeczenia i pytania","Past Simple Negative and Questions"]),e.push(["Вставьте глагол вместо троеточия или подберите правильное предложение в простом прошедшем времени.","Вставте дієслово замість три крапки або підберіть правильну пропозицію в простому часі.","Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym prostym.","Insert a verb instead of the ellipsis or choose the correct sentence in the simple past tense."]),e.push([indexForThoury.returnLevel31(),indexForThoury.returnLevel31UA(),indexForThoury.returnLevel31PL(),indexForThoury.returnLevel31EN()]),e.push(["Подобрать пару правильный - неправильный глагол. Тест разбавлен небольшим числом правильных глаголов.","Підібрати пару правильне - неправильне дієслово. Тест розбавлений невеликою кількістю правильних дієслів.","Dopasuj właściwy czasownik nieregularny. Test jest rozcieńczany niewielką liczbą czasowników regularnych.","Match a pair of regular and irregular verbs. The test is diluted with a small number of regular verbs."]),e.push(["Прошедшее простое","Минуле просте","Przeszłość prosta","Past simple"]),e.push(["Помощь","Допомога","Pomoc","Help"]),e.push(["Теория:","Теорія:","Teoria:","Theory:"]),e.push(["Задание теста:","Завдання тесту:","Zadanie testowe:","Test task:"]),e.push(["Переводов:","Перекладів:","Tłumaczenia:","Translations:"]),e.push(["Успех:","Успіх:","Sukces:","Success:"]),e.push(["Ошибок:","Помилок:","Błędy:","Errors:"]),e.push(["Статистика","Статистика","Statystyka","Statistics"]),e.push(["Собрано алмазов:","Зібрано алмазів:","Zebrane diamenty:","Diamonds collected:"]),e.push(["Глаголы Was и Were","Глаголи Was і Were","Czasowniki Was i Were","Verbs Was and Were"]),e.push([indexForThoury.returnLevel23(),indexForThoury.returnLevel23UA(),indexForThoury.returnLevel23PL(),indexForThoury.returnLevel23EN()]),e.push(["Упс. Кто-то уже сообщил об этой ошибке.","Упс. Хтось уже повідомив про цю помилку.","Ups. Ktoś już zgłosił ten błąd.","Oops. Someone already reported this bug."]),e.push(["Ошибка зафиксирована","Помилка зафіксована","Zapisano błąd","Error recorded"]),e.push([indexForThoury.returnLevel21(),indexForThoury.returnLevel21UA(),indexForThoury.returnLevel21PL(),indexForThoury.returnLevel21EN()]),e.push(["Глаголы Have и Have Got","Дієслова Have та Have Got","Czasowniki Have i Have Got","The verbs Have and Have Got"]),e.push([indexForThoury.returnLevel19(),indexForThoury.returnLevel19UA(),indexForThoury.returnLevel19PL(),indexForThoury.returnLevel19EN()]),e.push(["Выбор между P.S. и настоящим продолженным P.C.","Вибір між P.S. та справжнім продовженим P.C.","Wybór pomiędzy P.S. i niniejszym kontynuuje P.C.","The choice between P.S. and the present continuation P.C."]),e.push([indexForThoury.returnLevel18(),indexForThoury.returnLevel18UA(),indexForThoury.returnLevel18PL(),indexForThoury.returnLevel18EN()]),e.push(["Простое настоящее  P.S. вопросы","Просте справжнє P.S. питання","Prosty prezent P.S. pytania","Simple present P.S. questions"]),e.push([indexForThoury.returnLevel17(),indexForThoury.returnLevel17UA(),indexForThoury.returnLevel17PL(),indexForThoury.returnLevel17EN()]),e.push(["Простое настоящее  P.S. негативное","Просте справжнє P.S. негативне","Prosty prezent P.S. negatywny","Simple present P.S. negative"]),e.push([indexForThoury.returnLevel16(),indexForThoury.returnLevel16UA(),indexForThoury.returnLevel16PL(),indexForThoury.returnLevel16EN()]),e.push(["Простое настоящее  P.S. плюс периодичность","Просте справжнє P.S. плюс періодичність","Prosty prezent P.S. plus częstotliwość","Simple present P.S. plus periodicity"]),e.push([indexForThoury.returnLevel15(),indexForThoury.returnLevel15UA(),indexForThoury.returnLevel15PL(),indexForThoury.returnLevel15EN()]),e.push(["Простое настоящее P.S.","Просте справжнє P.S.","Prosty prezent P.S.","Simple present P.S."]),e.push([indexForThoury.returnLevel14(),indexForThoury.returnLevel14UA(),indexForThoury.returnLevel14PL(),indexForThoury.returnLevel14EN()]),e.push(["Образования вопросов в настоящем продолженном времени P.C.","Утворення питань у поточному продовженому часі P.C.","Tworzenie pytań w czasie teraźniejszym ciągłym P.C.","Formation of questions in the present continuous tense P.C."]),e.push(["Правило для настоящего продолженного времени (Present Continuous)","Правило для поточного часу (Present Continuous)","Reguła czasu teraźniejszego ciągłego","Rule for the Present Continuous"]),e.push(["Создание вопросов в Present Simple и Past Simple","Створення питань у Present Simple та Past Simple","Tworzenie pytań w czasie Present Simple i Past Simple","Forming questions in Present Simple and Past Simple"]),e.push(["Понятно","Зрозуміло","To jasne","It's clear"]),e.push(["Просто учим слова","Просто вчимо слова","Dopiero uczę się słówek","Just learning words"]),e.push(["Сокращенная форма глагола to Be","Скорочена форма дієслова","Krótka forma czasownika być","Shortened form of the verb to be"]),e.push(["Выбрать правильную пару.","Вибрати правильну пару.","Wybierz odpowiednią parę.","Choose the right pair."]),e.push(["Выбери верную форму глагола","Вибери правильну форму дієслова","Wybierz poprawną formę czasownika","Choose the correct form of the verb"]),e.push(["Вторая форма неправильных глаголов","Друга форма неправильних дієслів","Druga forma czasowników nieregularnych","The second form of irregular verbs"]),e.push(["Выбрать правильное время PS or PC","Вибрати правильне час PS or PC","Wybierz odpowiedni czas PS or PC","Choose the right time PS or PC"]),e.push(["Учить слова","Вчити слова","Ucz się słów","Learn words"]),e.push(["Подобрать правильно вопрос или ответ","Підібрати правильно питання чи відповідь","Wybierz właściwe pytanie lub odpowiedź","Choose the right question or answer"]),e.push(["Настоящее простое вопросы","Справжнє просте питання","Przedstaw proste pytania","Present simple questions"]),e.push(["Настоящее простое негативное","Справжнє просте негативне","Przedstaw prosty negatyw","Present simple negative"]),e.push(["300 глаголов","300 дієслів (RU)","300 czasowników (RU)","300 verbs (RU)"]),e.push(["50 глаголов","50 дієслів (RU/PL)","50 czasowników (RU/PL)","50 verbs (RU/PL)"]),e.push(["100 слов про спорт","100 слів про спорт (RU/PL)","100 słów o sporcie (RU/PL)","100 words about sports(RU/PL)"]),e.push(["Выберите правильно составленное предложение.","Виберіть правильно складену пропозицію.","Wybierz właściwe zdanie.","Choose the correctly constructed sentence."]),e.push(["Настоящее простое + периодичность","Справжнє просте + періодичність","Czas teraźniejszy prosty + okresowość","Present Simple + Periodicity"]),e.push(["Настоящее простое","Справжнє просте","Prezent prosty","Present simple"]),e.push(["Настоящее продолженное - вопрос","Справжнє продовжене – питання","Czas teraźniejszy ciągły – pytanie","Choose the right question"]),e.push(["Выбрать правильный вопрос","Вибрати правильне питання","Wybierz właściwe pytanie","Choose the right question"]),e.push(["Сообщить об ошибке","Повідомити про помилку","Zgłoś błąd","Report a bug"]),e.push(["Перевести вопрос","Перекласти питання","Przetłumacz pytanie","Translate question"]),e.push(["Выбрать правильный перевод","Вибрати правильний переклад","Wybierz właściwe tłumaczenie","Choose the correct translation"]),e.push(["100 слов о еде","100 слів про їжу","100 słów o jedzeniu","100 words about food"]),e.push(["100 слов о путешествии","100 слів про подорож (RU)","100 słów o podróżach (RU)","100 words about travel (RU)"]),e.push(["100 слов","100 слів (RU)","100 słów (RU)","100 words (RU)"]),e.push(["300 слов","300 слів (RU)","300 słów (RU)","300 words (RU)"]),e.push(["500 слов","500 слів (RU)","500 słów (RU)","500 words (RU)"]),e.push(["Настоящее продолженное","Присутній безперервний","Teraźniejszość ciągła","Present continuous"]),e.push(["Последний тест","Останній тест","Ostatni test","The last test"]),e.push(["Задание для теста","Завдання для тесту","Zadanie testowe","Task for the test"]),e.push(["Вопрос с вариантами ответа","Питання з варіантами відповіді","Pytanie wielokrotnego wyboru","Multiple choice question"]),e.push(["Where/Who...","Where/Who...","Where/Who...","Where/Who..."]),e.push(["Вставить правильное слово","Вставити правильне слово","Wstaw właściwe słowo","Insert the correct word"]),e.push(["To Be, ответь на вопрос","To Be, дай відповідь на запитання","Być, odpowiedz na pytanie","To Be, answer the question"]),e.push(["To Be, вопрос/ответ","To Be, питання/відповідь","Być, pytanie/odpowiedź","To Be, Q&A"]),e.push(["To Be, краткая форма","To Be, коротка форма","Być, krótka forma","To Be, short form"]),e.push(["Выбрать правильный вариант ответа","Вибрати правильний варіант відповіді","Wybierz poprawną odpowiedź","Choose the correct answer"]),e.push(["Сброс","Скидання","Resetowanie","Reset"]),e.push(["Выбрать правильный вариант сокращенной формы глагола to Be","Вибрати правильний варіант скороченої форми дієслова to Be","Wybierz poprawną wersję skróconej formy czasownika to Be","Choose the correct version of the shortened form of the verb to Be"]),e}class LanguageController{constructor(){this.langStr=localStorage.getItem("EnglishWithJs_lang")||"ru"}translate(t){if(this.langStr==="ru")return t;let a="",o=3;switch(this.langStr){case"pl":o=2;break;case"ua":o=1;break}return a=t,exportBDTranslate().forEach(i=>{i[0]==t&&(a=i[o])}),a}}const Help={translate:new LanguageController,viewhandleHelpToTranslate:function(e,t){const a=document.createElement("div");a.id="container-for-video-help";let o=this.translate.translate(e);o=o.replace(/<div id='video-help'><\/div>/,this.addVideoHelp(t)),a.innerHTML=o,document.body.appendChild(a),document.getElementById("button-close-info-modal").addEventListener("click",()=>{document.getElementById("container-for-video-help").remove()})},addVideoHelp(e){return`
+        `}const indexForThoury={helpForProgramRU,helpForProgramPL,helpForProgramUA,helpForProgramEN,helpForHomeMenuRU,helpForHomeMenuUA,helpForHomeMenuPL,helpForHomeMenuEN,helpForGreenPoleOneUA,helpForGreenPoleOneRU,helpForGreenPoleOnePL,helpForGreenPoleOneEN,returnInfoForDiamant,returnInfoForDiamantEN,returnInfoForDiamantPL,returnInfoForDiamantUA,returnInfoUnit22RU,returnInfoUnit22PL,returnInfoUnit22EN,returnInfoUnit22UA,returnLevel42PL,returnLevel42EN,returnLevel42UA,returnLevel42,returnLevel40PL,returnLevel40EN,returnLevel40UA,returnLevel40,returnLevel39EN,returnLevel39PL,returnLevel39UA,returnLevel39,returnLevel38EN,returnLevel38PL,returnLevel38UA,returnLevel38,returnLevel37EN,returnLevel37PL,returnLevel37UA,returnLevel37,returnLevel20EN,returnLevel20PL,returnLevel20UA,returnLevel20,returnLevel36EN,returnLevel36PL,returnLevel36UA,returnLevel36,returnLevel35EN,returnLevel35PL,returnLevel35UA,returnLevel35,returnLevel34EN,returnLevel34PL,returnLevel34UA,returnLevel34,returnLevel33EN,returnLevel33PL,returnLevel33UA,returnLevel33,returnLevel32EN,returnLevel32PL,returnLevel32UA,returnLevel32,returnLevel31EN,returnLevel31PL,returnLevel31UA,returnLevel31,returnLevel23EN,returnLevel23PL,returnLevel23UA,returnLevel23,returnLevel21EN,returnLevel21PL,returnLevel21UA,returnLevel21,returnLevel19EN,returnLevel19PL,returnLevel19UA,returnLevel19,returnLevel18EN,returnLevel18PL,returnLevel18UA,returnLevel18,returnLevel17EN,returnLevel17PL,returnLevel17UA,returnLevel17,returnLevel16EN,returnLevel16PL,returnLevel16UA,returnLevel16,returnLevel15EN,returnLevel15PL,returnLevel15UA,returnLevel15,returnLevel14EN,returnLevel14PL,returnLevel14UA,returnLevel14};function exportBDTranslate(){const e=[];return e.push(["","","",""]),e.push(["be/have/do in present and past tenses","be/have/do in present and past tenses","be/have/do in present and past tenses","be/have/do in present and past tenses"]),e.push([indexForThoury.helpForProgramRU(),indexForThoury.helpForProgramUA(),indexForThoury.helpForProgramPL(),indexForThoury.helpForProgramEN()]),e.push([indexForThoury.helpForHomeMenuRU(),indexForThoury.helpForHomeMenuUA(),indexForThoury.helpForHomeMenuPL(),indexForThoury.helpForHomeMenuEN()]),e.push([indexForThoury.helpForGreenPoleOneRU(),indexForThoury.helpForGreenPoleOneUA(),indexForThoury.helpForGreenPoleOnePL(),indexForThoury.helpForGreenPoleOneEN()]),e.push([indexForThoury.returnLevel42(),indexForThoury.returnLevel42UA(),indexForThoury.returnLevel42PL(),indexForThoury.returnLevel42EN()]),e.push(["Примерно:","Приблизно:","Mówimy o:","We are talking approximately about:"]),e.push([indexForThoury.returnLevel40(),indexForThoury.returnLevel40UA(),indexForThoury.returnLevel40PL(),indexForThoury.returnLevel40EN()]),e.push(["Последний ответ здесь","Остання відповідь тут","Najnowsza odpowiedź tutaj","The last answer is here"]),e.push(["Предыдущий вопрос здесь","Попереднє питання тут","Poprzednie pytanie tutaj","Previous question here"]),e.push([indexForThoury.returnLevel39(),indexForThoury.returnLevel39UA(),indexForThoury.returnLevel39PL(),indexForThoury.returnLevel39EN()]),e.push([indexForThoury.returnLevel38(),indexForThoury.returnLevel38UA(),indexForThoury.returnLevel38PL(),indexForThoury.returnLevel38EN()]),e.push([indexForThoury.returnLevel37(),indexForThoury.returnLevel37UA(),indexForThoury.returnLevel37PL(),indexForThoury.returnLevel37EN()]),e.push(["В этом тесте нужно собрать предложение из предложенных слов. Имейте в виду, что иногда собранное предложение может не совпадать с общей темой теста.","У цьому тесті потрібно зібрати пропозицію із запропонованих слів. Майте на увазі, що інколи зібрана пропозиція може не співпадати із загальною темою тесту.","W tym teście musisz ułożyć zdanie z podanych słów. Pamiętaj, że czasami zebrane zdanie może nie pokrywać się z ogólnym tematem testu.","In this test you need to assemble a sentence from the given words. Keep in mind that sometimes the assembled sentence may not match the general topic of the test."]),e.push(["(может отличаться)","(може відрізнятися)","(może się różnić)","(may differ)"]),e.push([indexForThoury.returnLevel20(),indexForThoury.returnLevel20UA(),indexForThoury.returnLevel20PL(),indexForThoury.returnLevel20EN()]),e.push([indexForThoury.returnLevel36(),indexForThoury.returnLevel36UA(),indexForThoury.returnLevel36PL(),indexForThoury.returnLevel36EN()]),e.push([indexForThoury.returnInfoForDiamant(),indexForThoury.returnInfoForDiamantUA(),indexForThoury.returnInfoForDiamantPL(),indexForThoury.returnInfoForDiamantEN()]),e.push([indexForThoury.returnLevel35(),indexForThoury.returnLevel35UA(),indexForThoury.returnLevel35PL(),indexForThoury.returnLevel35EN()]),e.push([indexForThoury.returnLevel34(),indexForThoury.returnLevel34UA(),indexForThoury.returnLevel34PL(),indexForThoury.returnLevel34EN()]),e.push(["Вставьте глагол вместо троеточия или подберите правильное предложение в продолженном прошедшем времени.","Вставте дієслово замість три крапки або підберіть правильну пропозицію в минулому часі.","Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym ciągłym.","Insert a verb instead of the ellipsis or choose the correct sentence in the past continuous tense."]),e.push([indexForThoury.returnLevel33(),indexForThoury.returnLevel33UA(),indexForThoury.returnLevel33PL(),indexForThoury.returnLevel33EN()]),e.push([indexForThoury.returnLevel32(),indexForThoury.returnLevel32UA(),indexForThoury.returnLevel32PL(),indexForThoury.returnLevel32EN()]),e.push(["Past Simple отрицательные и вопросы","Past Simple негативні та питання","Past Simple przeczenia i pytania","Past Simple Negative and Questions"]),e.push(["Вставьте глагол вместо троеточия или подберите правильное предложение в простом прошедшем времени.","Вставте дієслово замість три крапки або підберіть правильну пропозицію в простому часі.","Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym prostym.","Insert a verb instead of the ellipsis or choose the correct sentence in the simple past tense."]),e.push([indexForThoury.returnLevel31(),indexForThoury.returnLevel31UA(),indexForThoury.returnLevel31PL(),indexForThoury.returnLevel31EN()]),e.push(["Подобрать пару правильный - неправильный глагол. Тест разбавлен небольшим числом правильных глаголов.","Підібрати пару правильне - неправильне дієслово. Тест розбавлений невеликою кількістю правильних дієслів.","Dopasuj właściwy czasownik nieregularny. Test jest rozcieńczany niewielką liczbą czasowników regularnych.","Match a pair of regular and irregular verbs. The test is diluted with a small number of regular verbs."]),e.push(["Прошедшее простое","Минуле просте","Przeszłość prosta","Past simple"]),e.push(["Помощь","Допомога","Pomoc","Help"]),e.push(["Теория:","Теорія:","Teoria:","Theory:"]),e.push(["Задание теста:","Завдання тесту:","Zadanie testowe:","Test task:"]),e.push(["Переводов:","Перекладів:","Tłumaczenia:","Translations:"]),e.push(["Успех:","Успіх:","Sukces:","Success:"]),e.push(["Ошибок:","Помилок:","Błędy:","Errors:"]),e.push(["Статистика","Статистика","Statystyka","Statistics"]),e.push(["Собрано алмазов:","Зібрано алмазів:","Zebrane diamenty:","Diamonds collected:"]),e.push(["Глаголы Was и Were","Глаголи Was і Were","Czasowniki Was i Were","Verbs Was and Were"]),e.push([indexForThoury.returnLevel23(),indexForThoury.returnLevel23UA(),indexForThoury.returnLevel23PL(),indexForThoury.returnLevel23EN()]),e.push(["Упс. Кто-то уже сообщил об этой ошибке.","Упс. Хтось уже повідомив про цю помилку.","Ups. Ktoś już zgłosił ten błąd.","Oops. Someone already reported this bug."]),e.push(["Ошибка зафиксирована","Помилка зафіксована","Zapisano błąd","Error recorded"]),e.push([indexForThoury.returnLevel21(),indexForThoury.returnLevel21UA(),indexForThoury.returnLevel21PL(),indexForThoury.returnLevel21EN()]),e.push(["Глаголы Have и Have Got","Дієслова Have та Have Got","Czasowniki Have i Have Got","The verbs Have and Have Got"]),e.push([indexForThoury.returnLevel19(),indexForThoury.returnLevel19UA(),indexForThoury.returnLevel19PL(),indexForThoury.returnLevel19EN()]),e.push(["Выбор между P.S. и настоящим продолженным P.C.","Вибір між P.S. та справжнім продовженим P.C.","Wybór pomiędzy P.S. i niniejszym kontynuuje P.C.","The choice between P.S. and the present continuation P.C."]),e.push([indexForThoury.returnLevel18(),indexForThoury.returnLevel18UA(),indexForThoury.returnLevel18PL(),indexForThoury.returnLevel18EN()]),e.push(["Простое настоящее  P.S. вопросы","Просте справжнє P.S. питання","Prosty prezent P.S. pytania","Simple present P.S. questions"]),e.push([indexForThoury.returnLevel17(),indexForThoury.returnLevel17UA(),indexForThoury.returnLevel17PL(),indexForThoury.returnLevel17EN()]),e.push(["Простое настоящее  P.S. негативное","Просте справжнє P.S. негативне","Prosty prezent P.S. negatywny","Simple present P.S. negative"]),e.push([indexForThoury.returnLevel16(),indexForThoury.returnLevel16UA(),indexForThoury.returnLevel16PL(),indexForThoury.returnLevel16EN()]),e.push(["Простое настоящее  P.S. плюс периодичность","Просте справжнє P.S. плюс періодичність","Prosty prezent P.S. plus częstotliwość","Simple present P.S. plus periodicity"]),e.push([indexForThoury.returnLevel15(),indexForThoury.returnLevel15UA(),indexForThoury.returnLevel15PL(),indexForThoury.returnLevel15EN()]),e.push(["Простое настоящее P.S.","Просте справжнє P.S.","Prosty prezent P.S.","Simple present P.S."]),e.push([indexForThoury.returnLevel14(),indexForThoury.returnLevel14UA(),indexForThoury.returnLevel14PL(),indexForThoury.returnLevel14EN()]),e.push(["Образования вопросов в настоящем продолженном времени P.C.","Утворення питань у поточному продовженому часі P.C.","Tworzenie pytań w czasie teraźniejszym ciągłym P.C.","Formation of questions in the present continuous tense P.C."]),e.push(["Правило для настоящего продолженного времени (Present Continuous)","Правило для поточного часу (Present Continuous)","Reguła czasu teraźniejszego ciągłego","Rule for the Present Continuous"]),e.push(["Создание вопросов в Present Simple и Past Simple","Створення питань у Present Simple та Past Simple","Tworzenie pytań w czasie Present Simple i Past Simple","Forming questions in Present Simple and Past Simple"]),e.push(["Понятно","Зрозуміло","To jasne","It's clear"]),e.push(["Просто учим слова","Просто вчимо слова","Dopiero uczę się słówek","Just learning words"]),e.push(["Сокращенная форма глагола to Be","Скорочена форма дієслова","Krótka forma czasownika być","Shortened form of the verb to be"]),e.push(["Выбрать правильную пару.","Вибрати правильну пару.","Wybierz odpowiednią parę.","Choose the right pair."]),e.push(["Выбери верную форму глагола","Вибери правильну форму дієслова","Wybierz poprawną formę czasownika","Choose the correct form of the verb"]),e.push(["Вторая форма неправильных глаголов","Друга форма неправильних дієслів","Druga forma czasowników nieregularnych","The second form of irregular verbs"]),e.push(["Выбрать правильное время PS or PC","Вибрати правильне час PS or PC","Wybierz odpowiedni czas PS or PC","Choose the right time PS or PC"]),e.push(["Учить слова","Вчити слова","Ucz się słów","Learn words"]),e.push(["Подобрать правильно вопрос или ответ","Підібрати правильно питання чи відповідь","Wybierz właściwe pytanie lub odpowiedź","Choose the right question or answer"]),e.push(["Настоящее простое вопросы","Справжнє просте питання","Przedstaw proste pytania","Present simple questions"]),e.push(["Настоящее простое негативное","Справжнє просте негативне","Przedstaw prosty negatyw","Present simple negative"]),e.push(["300 глаголов","300 дієслів (RU)","300 czasowników (RU)","300 verbs (RU)"]),e.push(["50 глаголов","50 дієслів (RU/PL)","50 czasowników (RU/PL)","50 verbs (RU/PL)"]),e.push(["100 слов про спорт","100 слів про спорт (RU/PL)","100 słów o sporcie (RU/PL)","100 words about sports(RU/PL)"]),e.push(["Выберите правильно составленное предложение.","Виберіть правильно складену пропозицію.","Wybierz właściwe zdanie.","Choose the correctly constructed sentence."]),e.push(["Настоящее простое + периодичность","Справжнє просте + періодичність","Czas teraźniejszy prosty + okresowość","Present Simple + Periodicity"]),e.push(["Настоящее простое","Справжнє просте","Prezent prosty","Present simple"]),e.push(["Настоящее продолженное - вопрос","Справжнє продовжене – питання","Czas teraźniejszy ciągły – pytanie","Choose the right question"]),e.push(["Выбрать правильный вопрос","Вибрати правильне питання","Wybierz właściwe pytanie","Choose the right question"]),e.push(["Сообщить об ошибке","Повідомити про помилку","Zgłoś błąd","Report a bug"]),e.push(["Перевести вопрос","Перекласти питання","Przetłumacz pytanie","Translate question"]),e.push(["Выбрать правильный перевод","Вибрати правильний переклад","Wybierz właściwe tłumaczenie","Choose the correct translation"]),e.push(["100 слов о еде","100 слів про їжу","100 słów o jedzeniu","100 words about food"]),e.push(["100 слов о путешествии","100 слів про подорож (RU)","100 słów o podróżach (RU)","100 words about travel (RU)"]),e.push(["100 слов","100 слів (RU)","100 słów (RU)","100 words (RU)"]),e.push(["300 слов","300 слів (RU)","300 słów (RU)","300 words (RU)"]),e.push(["500 слов","500 слів (RU)","500 słów (RU)","500 words (RU)"]),e.push(["Настоящее продолженное","Присутній безперервний","Teraźniejszość ciągła","Present continuous"]),e.push(["Последний тест","Останній тест","Ostatni test","The last test"]),e.push(["Задание для теста","Завдання для тесту","Zadanie testowe","Task for the test"]),e.push(["Вопрос с вариантами ответа","Питання з варіантами відповіді","Pytanie wielokrotnego wyboru","Multiple choice question"]),e.push(["Where/Who...","Where/Who...","Where/Who...","Where/Who..."]),e.push(["Вставить правильное слово","Вставити правильне слово","Wstaw właściwe słowo","Insert the correct word"]),e.push(["To Be, ответь на вопрос","To Be, дай відповідь на запитання","Być, odpowiedz na pytanie","To Be, answer the question"]),e.push(["To Be, вопрос/ответ","To Be, питання/відповідь","Być, pytanie/odpowiedź","To Be, Q&A"]),e.push(["To Be, краткая форма","To Be, коротка форма","Być, krótka forma","To Be, short form"]),e.push(["Выбрать правильный вариант ответа","Вибрати правильний варіант відповіді","Wybierz poprawną odpowiedź","Choose the correct answer"]),e.push(["Сброс","Скидання","Resetowanie","Reset"]),e.push(["Выбрать правильный вариант сокращенной формы глагола to Be","Вибрати правильний варіант скороченої форми дієслова to Be","Wybierz poprawną wersję skróconej formy czasownika to Be","Choose the correct version of the shortened form of the verb to Be"]),e}class LanguageController{constructor(){this.langStr=localStorage.getItem("EnglishWithJs_lang")||"ru"}translate(t){if(this.langStr==="ru")return t;let a="",o=3;switch(this.langStr){case"pl":o=2;break;case"ua":o=1;break}return a=t,exportBDTranslate().forEach(i=>{i[0]==t&&(a=i[o])}),a}}const Help={translate:new LanguageController,viewhandleHelpToTranslate:function(e,t){const a=document.createElement("div");a.id="container-for-video-help";let o=this.translate.translate(e);o=o.replace(/<div id='video-help'><\/div>/,this.addVideoHelp(t)),a.innerHTML=o,document.body.appendChild(a),document.getElementById("button-close-info-modal").addEventListener("click",()=>{document.getElementById("container-for-video-help").remove()})},addVideoHelp(e){return`
         <div class="embed-responsive embed-responsive-16by9">
           <iframe showinfo=1 class="embed-responsive-item" src="https://www.youtube.com/embed/${e}" allowfullscreen></iframe>
         </div>
@@ -5831,7 +5635,191 @@ Examples:
 ul
 I am not working.
 They are not sleeping.
-`}function thouryUnit23(){return`
+`}function thouryUnit22(){return`
+    file43
+    unit-22
+    ru
+h2
+Пассивный залог: is being done и has been done
+
+h3
+1. is being done
+
+ul
+Время: Present Continuous Passive (настоящее длительное пассивное
+Когда исполь действие происходит прямо сейчас, важен сам процесс
+Формула: Подлежащее + is/are + V3 (причастие прошедшего времени)
+
+ul
+Утвердит The car is being repaired. — Машину ремонтируют.
+Отрицат The documents aren’t being printed. — Документы не печатаются.
+Вопросит Is the dinner being prepared? — Ужин готовится?
+
+h3
+2. has been done
+
+ul
+Время: Present Perfect Passive (настоящее совершенное пассивное)
+Когда исполь действие уже завершено, и важен его результат
+Подлежащее + has/have + been + V
+
+ul
+Утвердит The work has been finished. — Работа завершена.
+Отрицат The homework hasn’t been done. — Домашка не сделана.
+Вопросит Has the house been sold? — Дом продан?
+
+h3
+Сравнение форм:
+  
+h4
+Когда используется
+
+ul
+Пример
+is being done
+действие в процессе
+The room is being cleaned.
+has been done
+действие завершено
+The room has been cleaned.
+
+ua
+h2
+Пасивний стан: is being done і has been done
+
+h3
+1. is being done
+
+ul
+Час: Present Continuous Passive (теперішній тривалий пасивний)
+Коли дія відбувається саме зараз, важливий сам процес
+Формула: Підмет + is/are + V3 (дієприкметник минулого часу)
+
+ul
+Утвердит The car is being repaired. — Машину ремонтують.
+Отрицат The documents aren’t being printed. — Документи не друкуються.
+Вопросит Is the dinner being prepared? — Вечеря готується?
+
+h3
+2. has been done
+
+ul
+Час: Present Perfect Passive (теперішній доконаний пасивний)
+Коли дія вже завершена, і важливий її результат
+Формула: Підмет + has/have + been + V
+
+ul
+Утвердит The work has been finished. — Роботу завершено.
+Отрицат The homework hasn’t been done. — Домашнє завдання не зроблено.
+Вопросит Has the house been sold? — Будинок продано?
+
+h3
+Порівняння форм:
+
+h4
+Коли використовується
+
+ul
+Приклад
+is being done
+дія в процесі
+The room is being cleaned.
+has been done
+дію завершено
+The room has been cleaned.
+
+pl
+h2
+Strona bierna: is being done i has been done
+
+h3
+1. is being done
+
+ul
+Czas: Present Continuous Passive (teraźniejszy ciągły w stronie biernej)
+Gdy czynność odbywa się właśnie teraz, ważny jest sam proces
+Formuła: Podmiot + is/are + V3 (imiesłów czasu przeszłego)
+
+ul
+Utwierdzające The car is being repaired. — Samochód jest naprawiany.
+Przeczące The documents aren’t being printed. — Dokumenty nie są drukowane.
+Pytające Is the dinner being prepared? — Czy kolacja jest przygotowywana?
+
+h3
+2. has been done
+
+ul
+Czas: Present Perfect Passive (teraźniejszy dokonany w stronie biernej)
+Gdy czynność została już zakończona i ważny jest jej rezultat
+Formuła: Podmiot + has/have + been + V
+
+ul
+Utwierdzające The work has been finished. — Praca została zakończona.
+Przeczące The homework hasn’t been done. — Zadanie domowe nie zostało zrobione.
+Pytające Has the house been sold? — Czy dom został sprzedany?
+
+h3
+Porównanie form:
+
+h4
+Kiedy używamy
+
+ul
+Przykład
+is being done
+czynność w trakcie
+The room is being cleaned.
+has been done
+czynność zakończona
+The room has been cleaned.
+
+en
+h2
+Passive Voice: is being done and has been done
+
+h3
+1. is being done
+
+ul
+Tense: Present Continuous Passive
+Used when an action is happening right now and the process is important
+Formula: Subject + is/are + V3 (past participle)
+
+ul
+Uтвердит The car is being repaired.
+Отрицат The documents aren’t being printed.
+Вопросит Is the dinner being prepared?
+
+h3
+2. has been done
+
+ul
+Tense: Present Perfect Passive
+Used when an action is already completed and the result is important
+Formula: Subject + has/have + been + V
+
+ul
+Утвердит The work has been finished.
+Отрицат The homework hasn’t been done.
+Вопросит Has the house been sold?
+
+h3
+Comparison:
+
+h4
+When it is used
+
+ul
+Example
+is being done
+an action in progress
+The room is being cleaned.
+has been done
+a completed action
+The room has been cleaned.
+
+
+    `}function thouryUnit23(){return`
     file44
     unit-23
     ru
@@ -8525,9 +8513,9 @@ ul
 - questions: may — normal, might — formal
 
 
-`}const arrayDataThoury=[];arrayDataThoury.push(thouryUnit1());arrayDataThoury.push(thouryUnit2());arrayDataThoury.push(thouryUnit2_2());arrayDataThoury.push(thouryUnit3());arrayDataThoury.push(thouryUnit23());arrayDataThoury.push(thouryUnit24());arrayDataThoury.push(thouryUnit25());arrayDataThoury.push(thouryUnit26());arrayDataThoury.push(thouryUnit27());arrayDataThoury.push(thouryUnit28());arrayDataThoury.push(thouryUnit29());function returnDataArrayForStr(e){let t="";return Number.isFinite(e)?t="file"+e:t=e,t=arrayDataThoury.find(a=>a.includes(t)),t}function searchLabel(e,t){if(e==null)return"";t+=`
+`}const arrayDataThoury=[];arrayDataThoury.push(thouryUnit1());arrayDataThoury.push(thouryUnit2());arrayDataThoury.push(thouryUnit2_2());arrayDataThoury.push(thouryUnit3());arrayDataThoury.push(thouryUnit22());arrayDataThoury.push(thouryUnit23());arrayDataThoury.push(thouryUnit24());arrayDataThoury.push(thouryUnit25());arrayDataThoury.push(thouryUnit26());arrayDataThoury.push(thouryUnit27());arrayDataThoury.push(thouryUnit28());arrayDataThoury.push(thouryUnit29());function returnDataArrayForStr(e){let t="";return Number.isFinite(e)?t="file"+e:t=e,t=arrayDataThoury.find(a=>a.includes(t)),t}function searchLabel(e,t){if(e==null)return"";t+=`
 `;let a=e.indexOf(t);return a<0&&(a=e.indexOf(t.charAt(0).toUpperCase()+t.slice(1))),a<0&&e.indexOf(t.toUpperCase()),a<0&&(a=0,console.log("не удалось найти маркер "+t)),a}function returnStringHelpForLanguage(e){const t=returnDataArrayForStr(e);if(t==null)return"";let a={ru:searchLabel(t,"ru"),ua:searchLabel(t,"ua"),pl:searchLabel(t,"pl"),en:searchLabel(t,"en"),strLenght:t.length,get start(){return localStorage.getItem("EnglishWithJs_lang")==="ru"?this.ru:localStorage.getItem("EnglishWithJs_lang")==="ua"?this.ua:localStorage.getItem("EnglishWithJs_lang")==="pl"?this.pl:this.en},get finish(){const i=[this.ru,this.ua,this.pl,this.en];i.sort((s,r)=>s-r);let n=i.find(s=>s>this.start);return n==null&&(n=this.strLenght),n}};return t.slice(a.start,a.finish)}function ThouryH2(e="start",t=0){return e==="start"?`<h2 id="thoury-pattern-h2-${t}">`:"</h2>"}function ThouryH3(e="start",t=0){return e==="start"?`<h3 id="thoury-pattern-h3-${t}">`:"</h3>"}function ThouryH4(e="start",t=0){return e==="start"?`<h4 id="thoury-pattern-h4-${t}">`:"</h4>"}function ThouryUl(e="start",t=0){return e==="start"?`<ul id="thoury-pattern-ui-${t}">`:"</ul>"}function ThouryLi(e="start",t=0){return e==="start"?`<li id="thoury-pattern-li-${t}">`:"</li>"}function ThouryDiv(e="start"){return e==="start"?'<div class="thoury-pattern" id="thoury-pattern">':"</div>"}function returnBodyHelpForLanguage(e){let t=returnStringHelpForLanguage(e);if(t=="")return"";let a=t.split(`
-`),o="",i="",n="",s=0;for(let r of a){if(s++,r.trim()==""&&n!==""){i=="h2"&&(n=ThouryH2("start",s)+n+ThouryH2(""),o=o+n+"<hr>"),i=="ul"&&(n=ThouryUl("start",s)+n+ThouryUl(""),o=o+n),i=="h3"&&(n=ThouryH3("start",s)+n+ThouryH3(""),o=o+n),i=="h4"&&(n=ThouryH4("start",s)+n+ThouryH4(""),o=o+n),i="",n="";continue}if(r.includes("h2")){i="h2";continue}if(r.includes("h3")){i="h3";continue}if(r.includes("h4")){i="h4";continue}if(r.includes("ul")){i="ul";continue}(i=="h4"||i=="h3"||i=="h2"||i=="ul")&&((i=="h4"||i=="h3"||i=="h2"||i=="P")&&(n+=r+"<br>"),i=="ul"&&(n+=ThouryLi("start",s)+r+ThouryLi("")))}return ThouryDiv()+o+ThouryDiv("")}function getBodyThoury(e){switch(e.level){case 43:return e.translate.translate(indexForThoury.returnInfoUnit22RU());case 42:return e.translate.translate(indexForThoury.returnLevel42());case 40:return e.translate.translate(indexForThoury.returnLevel40());case 39:return e.translate.translate(indexForThoury.returnLevel39());case 38:return e.translate.translate(indexForThoury.returnLevel38());case 37:return e.translate.translate(indexForThoury.returnLevel37());case 20:return e.translate.translate(indexForThoury.returnLevel20());case 36:return e.translate.translate(indexForThoury.returnLevel36());case 35:return e.translate.translate(indexForThoury.returnLevel35());case 34:return e.translate.translate(indexForThoury.returnLevel34());case 33:return e.translate.translate(indexForThoury.returnLevel33());case 32:return e.translate.translate(indexForThoury.returnLevel32());case 31:return e.translate.translate(indexForThoury.returnLevel31());case 23:return e.translate.translate(indexForThoury.returnLevel23());case 21:return e.translate.translate(indexForThoury.returnLevel21());case 19:return e.translate.translate(indexForThoury.returnLevel19());case 18:return e.translate.translate(indexForThoury.returnLevel18());case 17:return e.translate.translate(indexForThoury.returnLevel17());case 16:return e.translate.translate(indexForThoury.returnLevel16());case 15:return e.translate.translate(indexForThoury.returnLevel15());case 14:return e.translate.translate(indexForThoury.returnLevel14());default:let t=returnBodyHelpForLanguage(e.level);return t==""?e.translate.translate("Просто учим слова"):t}}function getWorkPlace(e,t){return`
+`),o="",i="",n="",s=0;for(let r of a){if(s++,r.trim()==""&&n!==""){i=="h2"&&(n=ThouryH2("start",s)+n+ThouryH2(""),o=o+n+"<hr>"),i=="ul"&&(n=ThouryUl("start",s)+n+ThouryUl(""),o=o+n),i=="h3"&&(n=ThouryH3("start",s)+n+ThouryH3(""),o=o+n),i=="h4"&&(n=ThouryH4("start",s)+n+ThouryH4(""),o=o+n),i="",n="";continue}if(r.includes("h2")){i="h2";continue}if(r.includes("h3")){i="h3";continue}if(r.includes("h4")){i="h4";continue}if(r.includes("ul")){i="ul";continue}(i=="h4"||i=="h3"||i=="h2"||i=="ul")&&((i=="h4"||i=="h3"||i=="h2"||i=="P")&&(n+=r+"<br>"),i=="ul"&&(n+=ThouryLi("start",s)+r+ThouryLi("")))}return ThouryDiv()+o+ThouryDiv("")}function getBodyThoury(e){switch(e.level){case 42:return e.translate.translate(indexForThoury.returnLevel42());case 40:return e.translate.translate(indexForThoury.returnLevel40());case 39:return e.translate.translate(indexForThoury.returnLevel39());case 38:return e.translate.translate(indexForThoury.returnLevel38());case 37:return e.translate.translate(indexForThoury.returnLevel37());case 20:return e.translate.translate(indexForThoury.returnLevel20());case 36:return e.translate.translate(indexForThoury.returnLevel36());case 35:return e.translate.translate(indexForThoury.returnLevel35());case 34:return e.translate.translate(indexForThoury.returnLevel34());case 33:return e.translate.translate(indexForThoury.returnLevel33());case 32:return e.translate.translate(indexForThoury.returnLevel32());case 31:return e.translate.translate(indexForThoury.returnLevel31());case 23:return e.translate.translate(indexForThoury.returnLevel23());case 21:return e.translate.translate(indexForThoury.returnLevel21());case 19:return e.translate.translate(indexForThoury.returnLevel19());case 18:return e.translate.translate(indexForThoury.returnLevel18());case 17:return e.translate.translate(indexForThoury.returnLevel17());case 16:return e.translate.translate(indexForThoury.returnLevel16());case 15:return e.translate.translate(indexForThoury.returnLevel15());case 14:return e.translate.translate(indexForThoury.returnLevel14());default:let t=returnBodyHelpForLanguage(e.level);return t==""?e.translate.translate("Просто учим слова"):t}}function getWorkPlace(e,t){return`
     <div class="card shadow-lg rounded-3 get-work-place">
      <button id="${t}"
          type="button" class="btn-close" aria-label="Close" 
@@ -8545,7 +8533,7 @@ ul
     `}var h;let SettingForProgram$1=(h=class{static get selectTypeTest(){return this.initializeToProperty(),this.selectTypeTestProperty}static set selectTypeTest(t){this.selectTypeTestProperty=t,localStorage.setItem("user_select",t)}static initializeToProperty(){localStorage.getItem("user_select")!==null&&(this.selectTypeTestProperty=localStorage.getItem("user_select"))}},l(h,"selectTypeTestProperty","simple"),l(h,"selectColorText","color-randome"),l(h,"selectColorBackGround","color-randome"),l(h,"borderRadius","true"),l(h,"shadow","true"),l(h,"opacity","100"),h.selectColorText=localStorage.getItem("selectColorText"),h.selectColorBackGround=localStorage.getItem("selectColorBackGround"),h.borderRadius=localStorage.getItem("borderRadius"),h.shadow=localStorage.getItem("shadow"),localStorage.getItem("opacity")&&(h.opacity=localStorage.getItem("opacity")),l(h,"inputLightNormalHard","light"),l(h,"buttonCheckX"),l(h,"buttonCheckY"),l(h,"diamant"),l(h,"buttonCheckXStart"),l(h,"buttonCheckYStart"),l(h,"randomOk",!1),l(h,"testsOk"),l(h,"testsError"),l(h,"dataElevator",[]),l(h,"commentPlus",[]),h);class LevelDataModel{constructor(e=1){this.level=DataOk$1.setLevel(e),this.rez=!1,this.ex=new Exercise,this.translate=new LanguageController,this.lang=localStorage.getItem("EnglishWithJs_lang"),this.propertyArrayNameButton=[],this.tic=0,this.arrayNameButton()}arrayNameButton(){for(let e=1;e<24;e++)this.propertyArrayNameButton.push(setStatisticForButton(e));this.propertyArrayNameButton.push(this.translate.translate("Собрано алмазов:")),this.propertyArrayNameButton.push(this.translate.translate("Ошибок:")),this.propertyArrayNameButton.push(this.translate.translate("Успех:")),this.propertyArrayNameButton.push(this.translate.translate("Сброс")),this.propertyArrayNameButton.push(this.translate.translate("Переводов:")),this.propertyArrayNameButton.push(""),this.propertyArrayNameButton.push("");for(let e=31;e<51;e++)this.propertyArrayNameButton.push(setStatisticForButton(e));this.tic=this.propertyArrayNameButton.length}static mapNameMenu(e){return[2,2,2,2,2,2,2,2,1,1,1,2,1,1,1,1,1,1,1,2,1,2,1,4,4,4,4,4,3,3,1,1,2,1,1,2,1,1,1,1,2,1,1,1,6,6,6,6,6,6][e]}selectLevel(exercise="Выбрать правильный перевод",nameArray,level,lang=!0){(SettingForProgram$1.selectTypeTest==="word-assembly"||SettingForProgram$1.selectTypeTest==="word-assembly-not-translate")&&(exercise="В этом тесте нужно собрать предложение из предложенных слов. Имейте в виду, что иногда собранное предложение может не совпадать с общей темой теста."),level==this.level&&(lang===!0||lang===this.lang)&&(this.ex.init(this.translate.translate(exercise)),localStorage.setItem("nameArrayDb",nameArray),window.Thoury.handleThoury(level),nameArray="fileDB."+nameArray,this.rez=eval(nameArray))}getArrayDB(){return this.selectLevel(void 0,"commonFood100",1,"ru"),this.selectLevel(void 0,"commonFood100ua",1,"ua"),this.selectLevel(void 0,"commonFood100pl",1,"pl"),this.selectLevel(void 0,"commonSport100",2,"ru"),this.selectLevel(void 0,"commonSport100pl",2,"pl"),this.selectLevel(void 0,"commonWalk100",3,"ru"),this.selectLevel(void 0,"commonWords100",4,"ru"),this.selectLevel(void 0,"commonWords300",5,"ru"),this.selectLevel(void 0,"commonWords500",6,"ru"),this.selectLevel(void 0,"verbs50",7,"ru"),this.selectLevel(void 0,"verbs50pl",7,"pl"),this.selectLevel(void 0,"verbs300",8,"ru"),this.selectLevel("Выбрать правильный вариант сокращенной формы глагола to Be","toBeForms",9),this.selectLevel("Выбрать правильный вариант сокращенной формы глагола to Be","toBeSentences",10),this.selectLevel("Выбрать правильный вариант ответа","questionsWithAnswers",11),this.selectLevel("Вставить правильное слово","whereThat",12),this.selectLevel("Вставить правильное слово","presentContinuous",13),this.selectLevel("Выбрать правильный вопрос","presetnContiniusQuestion",14),this.selectLevel("Вставить правильное слово","presentSimple",15),this.selectLevel("Выберите правильно составленное предложение.","presentSimpleNever",16),this.selectLevel("Вставить правильное слово","presentSimpleNegative",17),this.selectLevel("Подобрать правильно вопрос или ответ","presentSimpleQuestions",18),this.selectLevel("Выбрать правильное время PS or PC","presentSimpleOrContinius",19),this.selectLevel("Подобрать пару правильный - неправильный глагол. Тест разбавлен небольшим числом правильных глаголов.","irregularVerbsPastSimple",20),this.selectLevel("Выбрать правильную пару.","haveAndHaveGot",21),this.selectLevel("Text A1 Beginer.","textA1Begginer",22),this.selectLevel("Выбрать правильную пару.","wasOrWere",23),this.selectLevel("Вставьте глагол вместо троеточия или подберите правильное предложение в простом прошедшем времени.","pastSimpleSentences",31),this.selectLevel("Вставьте глагол вместо троеточия или подберите правильное предложение в простом прошедшем времени.","pastSimpleNegativeAndQuestions",32),this.selectLevel("Выбрать правильную пару.","presentSimpleHeSheIt",33),this.selectLevel("Вставьте глагол вместо троеточия или подберите правильное предложение в продолженном прошедшем времени.","pastContinuousArray",34),this.selectLevel("Выбрать правильную пару.","pastContinuousOrSimple",35),this.selectLevel("Выбрать правильную пару.","irregularVerbsV3",36),this.selectLevel("Выбрать правильную пару.","presentPerfectIHaveDone",37),this.selectLevel("Выбрать правильную пару.","presentPerfectAndSimpleAndContinius",38),this.selectLevel("Выбрать правильную пару.","forSinceAgoPrPerfPastSimple",39),this.selectLevel("Выбрать правильную пару.","presentPerfectOrPastSimple",40),this.selectLevel("Выбрать правильную пару.","animals100",41),this.selectLevel("Выбрать правильную пару.","passiveIsDoneWasDone",42),this.selectLevel("Выбрать правильную пару.","prContiniusPerfectPassive",43),this.selectLevel("Выбрать правильную пару.","unit23",44),this.selectLevel("Выбрать правильную пару.","unit24",45),this.selectLevel("Выбрать правильную пару.","unit25",46),this.selectLevel("Выбрать правильную пару.","unit26",47),this.selectLevel("Выбрать правильную пару.","unit27",48),this.selectLevel("Выбрать правильную пару.","unit28",49),this.selectLevel("Выбрать правильную пару.","unit29",50),this.rez}getArrayNameButton(){return this.propertyArrayNameButton}getLevel(){return this.level}getTic(){return this.tic}}function isClickTranslate(){const e=document.getElementById("translate").innerText;return e!=="Перевести вопрос"&&e!=="Перекласти питання"&&e!=="Przetłumacz pytanie"&&e!=="Translate question"}isClickTranslate.help=`
 функция проверяет что написано на кнопке заказа перевода, если не написан стартовый текст
 значит перевод был заказан.
-`;function calculateBonusMultiplier(e){if(localStorage.getItem("was_click_help")==="true")return localStorage.setItem("was_click_help","false"),SettingForProgram$1.diamant="0",0;if(isClickTranslate()&&SettingForProgram$1.selectTypeTest==="simple-translate")return SettingForProgram$1.diamant="0",0;let{str:t,level:a,log:o}=e;const i={};if(i.propertyForBonus_input=e,i.levelTest=a,t==="Error")return SettingForProgram$1.diamant="-1",1;i.errorName=DataOk.levelNameError;const{ok:n,error:s}=DataOk;i.ok=n,i.error=s;const r=new LevelDataModel([DataOk.level.int]),d=r.getArrayNameButton().length;i.numberTest=d;const u=r.getArrayNameButton();i.arrayNumberTest=u;let c=1,w;(s>0||n>0)&&(w=n/(s+n)),s==0&&n==0&&(w=1),i.bonusOne=w;const g=a/d;i.bonusTwo=g;const y=[],p=[];u.forEach((W,j)=>{y.push(DataOk.getOkIndex(j)),p.push(DataOk.getErrorIndex(j))});const v=Math.max(...y);let k=Math.max(...p);k===v&&(k+=1),i.maxError=k,i.testsOk=y,SettingForProgram$1.testsOk=y,SettingForProgram$1.testsError=p,i.maxOk=v,i.testsError=p;let z=1-(n+s)/(v+k);isNaN(z)&&(z=1),i.bonusThree=z,i.calculateMedian=calculateMedian(y);let b;n==0&&calculateMedian(y)==0&&(b=1),n>calculateMedian(y)?b=calculateMedian(y)/n:n<calculateMedian(y)&&(b=n/calculateMedian(y));let f=b;isNaN(f)&&(f=1),i.bonusFour=f,c=(w+g+z+f)/4,i.ticLocalFull=c;let m=3;return localStorage.getItem("user_select")==="word-assembly"&&(m=6),localStorage.getItem("user_select")==="word-assembly-not-translate"&&(m=9),SettingForProgram$1.inputLightNormalHard=="normal"&&(m+=1),SettingForProgram$1.inputLightNormalHard=="hard"&&(m+=3),c*=m,c<.4&&(c=.4),i.ticLocalRezult=c,o&&(console.log("---calculateBonusMultiplier---"),console.log(i),console.log("***************************")),SettingForProgram$1.diamant=c.toFixed(2),c}function calculateMedian(e){const t=[...e].sort((o,i)=>o-i),a=Math.floor(t.length/2);return t.length%2===0?(t[a-1]+t[a])/2:t[a]}function diamentReturnStr(){let e=0,t=0,a=0,o=0;for(let d in localStorage)o=parseInt(localStorage.getItem(d)),!(isNaN(o)||o=="")&&(d.includes("_Ok")&&(e+=o),d.includes("_Error")&&(t+=o),d.includes("intTranslate")&&(a+=o));const i=e-t*3-a/2;let n=parseInt(i),s="💎";n<0&&(s="💀");let r="<span>😊</span>";return t/e<=.5&&t/e>0&&(r="<span>😔</span>"),t/e<=.8&&t/e>.5&&(r='<span">😭</span>'),[s,r,n]}function diamentView(e,t,a){return[t,a,e]=diamentReturnStr(),`
+`;function calculateBonusMultiplier(e){if(localStorage.getItem("was_click_help")==="true")return localStorage.setItem("was_click_help","false"),SettingForProgram$1.diamant="0",0;if(isClickTranslate()&&SettingForProgram$1.selectTypeTest==="simple-translate")return SettingForProgram$1.diamant="0",0;let{str:t,level:a,log:o}=e;const i={};if(i.propertyForBonus_input=e,i.levelTest=a,t==="Error")return SettingForProgram$1.diamant="-1",1;i.errorName=DataOk.levelNameError;const{ok:n,error:s}=DataOk;i.ok=n,i.error=s;const r=new LevelDataModel([DataOk.level.int]),d=r.getArrayNameButton().length;i.numberTest=d;const m=r.getArrayNameButton();i.arrayNumberTest=m;let c=1,w;(s>0||n>0)&&(w=n/(s+n)),s==0&&n==0&&(w=1),i.bonusOne=w;const g=a/d;i.bonusTwo=g;const y=[],p=[];m.forEach((W,j)=>{y.push(DataOk.getOkIndex(j)),p.push(DataOk.getErrorIndex(j))});const v=Math.max(...y);let k=Math.max(...p);k===v&&(k+=1),i.maxError=k,i.testsOk=y,SettingForProgram$1.testsOk=y,SettingForProgram$1.testsError=p,i.maxOk=v,i.testsError=p;let z=1-(n+s)/(v+k);isNaN(z)&&(z=1),i.bonusThree=z,i.calculateMedian=calculateMedian(y);let b;n==0&&calculateMedian(y)==0&&(b=1),n>calculateMedian(y)?b=calculateMedian(y)/n:n<calculateMedian(y)&&(b=n/calculateMedian(y));let f=b;isNaN(f)&&(f=1),i.bonusFour=f,c=(w+g+z+f)/4,i.ticLocalFull=c;let u=3;return localStorage.getItem("user_select")==="word-assembly"&&(u=6),localStorage.getItem("user_select")==="word-assembly-not-translate"&&(u=9),SettingForProgram$1.inputLightNormalHard=="normal"&&(u+=1),SettingForProgram$1.inputLightNormalHard=="hard"&&(u+=3),c*=u,c<.4&&(c=.4),i.ticLocalRezult=c,o&&(console.log("---calculateBonusMultiplier---"),console.log(i),console.log("***************************")),SettingForProgram$1.diamant=c.toFixed(2),c}function calculateMedian(e){const t=[...e].sort((o,i)=>o-i),a=Math.floor(t.length/2);return t.length%2===0?(t[a-1]+t[a])/2:t[a]}function diamentReturnStr(){let e=0,t=0,a=0,o=0;for(let d in localStorage)o=parseInt(localStorage.getItem(d)),!(isNaN(o)||o=="")&&(d.includes("_Ok")&&(e+=o),d.includes("_Error")&&(t+=o),d.includes("intTranslate")&&(a+=o));const i=e-t*3-a/2;let n=parseInt(i),s="💎";n<0&&(s="💀");let r="<span>😊</span>";return t/e<=.5&&t/e>0&&(r="<span>😔</span>"),t/e<=.8&&t/e>.5&&(r='<span">😭</span>'),[s,r,n]}function diamentView(e,t,a){return[t,a,e]=diamentReturnStr(),`
     <div class="diament-view">
         <div>
             <span>${e}</span>
@@ -8890,4 +8878,4 @@ setPaddingForSimple() - устанавливает дополнительный 
         ${this.menuItem2()}
       </ul>
     </div>
-  `}addClass(){let t="";return this.numberMenuLocal===1&&(this.countItemOne++,this.countItemOne%2==1?t="style-for-item-one":t="style-for-item-two"),this.numberMenuLocal===2&&(this.countItemTwo++,this.countItemTwo%2==1?t="style-for-item-one":t="style-for-item-two")," style-for-item-start "+t}getSeedForMenu(){return document.getElementById(this.seedMenu)}}class MenuRight2 extends MenuRight{constructor(t){super(t),this.nameMenu="Units24-",this.seedMenu="burger2",this.numberMenu=6}}class MenuLearnWord extends MenuRight{constructor(t){super(t),this.nameMenu=this.translate.translate("Учить слова"),this.seedMenu="word",this.numberMenu=2}}class MenuHelp extends MenuRight{constructor(t){super(t),this.nameMenu=this.translate.translate("Помощь"),this.seedMenu="help",this.numberMenu=3}}class MenuStatictic extends MenuRight{constructor(t){super(t),this.nameMenu=this.translate.translate("Статистика"),this.seedMenu="statistic",this.numberMenu=4}}class MenuController{constructor(){this.levelDataModel=new LevelDataModel(DataOk.level.int)}init(){const t=new MenuRight(this.levelDataModel.getArrayNameButton()),a=new MenuRight2(this.levelDataModel.getArrayNameButton()),o=new MenuLearnWord(this.levelDataModel.getArrayNameButton()),i=new MenuHelp(this.levelDataModel.getArrayNameButton()),n=new MenuStatictic(this.levelDataModel.getArrayNameButton()),s=t.getSeedForMenu(),r=o.getSeedForMenu(),d=i.getSeedForMenu(),u=n.getSeedForMenu(),c=a.getSeedForMenu();s.innerHTML=t.menuDropdown2(),r.innerHTML=o.menuDropdown2(),d.innerHTML=i.menuDropdown2(),u.innerHTML=n.menuDropdown2(),c.innerHTML=a.menuDropdown2();const w=[];for(let g=1;g<=this.levelDataModel.getTic();g++){let y=LevelDataModel.mapNameMenu(g-1);y==4||y==3||y==5||(w[g]=document.getElementById("level"+g),w[g].onclick=handleLevelX.bind(null,new LevelDataModel(g)))}fixModalFocus()}}window.addEventListener("load",()=>{nav(),new MenuController().init(),document.getElementById("pullItem1").addEventListener("click",setBackground),document.getElementById("pullItem2").addEventListener("click",setBackground),document.getElementById("pullItem6").addEventListener("click",setBackground),setColorMenu(),handleForSelectLangauge(),document.getElementById("dropdownMenuburger").onclick=()=>{DataSet.resetQuestion=!0},document.getElementById("dropdownMenuburger2").onclick=()=>{DataSet.resetQuestion=!0},DataSet.resetQuestion=!0,menuSettingView(),document.querySelector("#setting").onclick=activationMenuSetting,window.SettingForProgram.initializeToProperty()});const id=setInterval(()=>{let e=!0;hundleHelpPrime()||(e=!1),initEventForMenuStatistic()||(e=!1),hundleUpdateBurgerOrWord("burger")||(e=!1),hundleUpdateBurgerOrWord("burger2")||(e=!1),hundleUpdateBurgerOrWord("word")||(e=!1),hundleUpdateBurgerOrWord("statistic")||(e=!1),e&&(console.log("Все элементы получили свои события"),clearInterval(id))},300);
+  `}addClass(){let t="";return this.numberMenuLocal===1&&(this.countItemOne++,this.countItemOne%2==1?t="style-for-item-one":t="style-for-item-two"),this.numberMenuLocal===2&&(this.countItemTwo++,this.countItemTwo%2==1?t="style-for-item-one":t="style-for-item-two")," style-for-item-start "+t}getSeedForMenu(){return document.getElementById(this.seedMenu)}}class MenuRight2 extends MenuRight{constructor(t){super(t),this.nameMenu="Units24-",this.seedMenu="burger2",this.numberMenu=6}}class MenuLearnWord extends MenuRight{constructor(t){super(t),this.nameMenu=this.translate.translate("Учить слова"),this.seedMenu="word",this.numberMenu=2}}class MenuHelp extends MenuRight{constructor(t){super(t),this.nameMenu=this.translate.translate("Помощь"),this.seedMenu="help",this.numberMenu=3}}class MenuStatictic extends MenuRight{constructor(t){super(t),this.nameMenu=this.translate.translate("Статистика"),this.seedMenu="statistic",this.numberMenu=4}}class MenuController{constructor(){this.levelDataModel=new LevelDataModel(DataOk.level.int)}init(){const t=new MenuRight(this.levelDataModel.getArrayNameButton()),a=new MenuRight2(this.levelDataModel.getArrayNameButton()),o=new MenuLearnWord(this.levelDataModel.getArrayNameButton()),i=new MenuHelp(this.levelDataModel.getArrayNameButton()),n=new MenuStatictic(this.levelDataModel.getArrayNameButton()),s=t.getSeedForMenu(),r=o.getSeedForMenu(),d=i.getSeedForMenu(),m=n.getSeedForMenu(),c=a.getSeedForMenu();s.innerHTML=t.menuDropdown2(),r.innerHTML=o.menuDropdown2(),d.innerHTML=i.menuDropdown2(),m.innerHTML=n.menuDropdown2(),c.innerHTML=a.menuDropdown2();const w=[];for(let g=1;g<=this.levelDataModel.getTic();g++){let y=LevelDataModel.mapNameMenu(g-1);y==4||y==3||y==5||(w[g]=document.getElementById("level"+g),w[g].onclick=handleLevelX.bind(null,new LevelDataModel(g)))}fixModalFocus()}}window.addEventListener("load",()=>{nav(),new MenuController().init(),document.getElementById("pullItem1").addEventListener("click",setBackground),document.getElementById("pullItem2").addEventListener("click",setBackground),document.getElementById("pullItem6").addEventListener("click",setBackground),setColorMenu(),handleForSelectLangauge(),document.getElementById("dropdownMenuburger").onclick=()=>{DataSet.resetQuestion=!0},document.getElementById("dropdownMenuburger2").onclick=()=>{DataSet.resetQuestion=!0},DataSet.resetQuestion=!0,menuSettingView(),document.querySelector("#setting").onclick=activationMenuSetting,window.SettingForProgram.initializeToProperty()});const id=setInterval(()=>{let e=!0;hundleHelpPrime()||(e=!1),initEventForMenuStatistic()||(e=!1),hundleUpdateBurgerOrWord("burger")||(e=!1),hundleUpdateBurgerOrWord("burger2")||(e=!1),hundleUpdateBurgerOrWord("word")||(e=!1),hundleUpdateBurgerOrWord("statistic")||(e=!1),e&&(console.log("Все элементы получили свои события"),clearInterval(id))},300);
