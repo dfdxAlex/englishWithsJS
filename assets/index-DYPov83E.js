@@ -3472,448 +3472,6 @@ var I=Object.defineProperty;var T=(e,a,t)=>a in e?I(e,a,{enumerable:!0,configura
         </ul>
 </div>
 
-`}function returnLevel36(){return`<div class="container mt-5">
-  <div class="row">
-    <div class="col-12 col-md-8 offset-md-2">
-      <div class="card">
-        <div class="card-header">
-          <h3 class="card-title">Глаголы из третьей группы (Неправильные глаголы)</h3>
-        </div>
-        <div class="card-body">
-          <p class="lead">
-            Глаголы из третьей группы (irregular verbs) не следуют стандартным правилам образования форм прошедшего времени и причастия прошедшего времени. Эти глаголы имеют уникальные формы, которые необходимо запоминать, так как их нельзя предсказать по правилам.
-          </p>
-
-          <h5>Основные характеристики:</h5>
-          <ul>
-            <li><strong>Неизменяемый инфинитив:</strong> Например, глагол <em>read</em> сохраняет одинаковое написание во всех формах, но произношение различается:
-              <ul>
-                <li><strong>Present:</strong> [riːd]</li>
-                <li><strong>Past:</strong> [rɛd]</li>
-              </ul>
-            </li>
-            <li><strong>Различие форм:</strong> Формы неправильных глаголов могут быть уникальными для каждой из их временных форм. Пример:
-              <ul>
-                <li><strong>Base Form (инфинитив):</strong> <em>begin</em> — <strong>Past Simple:</strong> <em>began</em> — <strong>Past Participle:</strong> <em>begun</em></li>
-              </ul>
-            </li>
-          </ul>
-
-          <h5>Где используются:</h5>
-          <p>Неправильные глаголы широко используются в английском языке и встречаются как в разговорной речи, так и в письменной. Они необходимы для правильного построения различных временных конструкций и используются в следующих случаях:</p>
-          <ul>
-            <li><strong>Действия в прошлом:</strong> Например, в предложении <em>"She went to the store."</em> (Она пошла в магазин), где глагол <em>went</em> является неправильной формой от <em>go</em>.</li>
-            <li><strong>Перфектные времена:</strong> В предложении <em>"He has written a letter."</em> (Он написал письмо) используется форма <em>written</em> от глагола <em>write</em> для образования Present Perfect.</li>
-            <li><strong>Пассивный залог:</strong> В предложении <em>"The book was written by an unknown author."</em> (Книга была написана неизвестным автором) используется форма <em>written</em> от <em>write</em>.</li>
-          </ul>
-
-          <h5>Роль в изучении:</h5>
-          <p>Изучение неправильных глаголов очень важно для правильного формирования предложений в английском языке, особенно в прошедшем времени и перфектных конструкциях. Они составляют значительную часть повседневной речи и письменного общения. В учебниках, таких как <em>Essential Grammar in Use</em> Рэймонда Мерфи, неправильным глаголам уделяется особое внимание, включая таблицы для заучивания.</p>
-
-          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#examples" aria-expanded="false" aria-controls="examples">
-            Пример
-          </button>
-
-          <div class="collapse mt-3" id="examples">
-            <div class="card card-body">
-              <ul>
-                <li><strong>Base Form</strong>: begin — <strong>Past Simple</strong>: began — <strong>Past Participle</strong>: begun</li>
-                <li><strong>Base Form</strong>: read — <strong>Past Simple</strong>: read — <strong>Past Participle</strong>: read</li>
-                <li><strong>Base Form</strong>: go — <strong>Past Simple</strong>: went — <strong>Past Participle</strong>: gone</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>`}function returnLevel36EN(){return`<div class="container mt-5">
-  <div class="row">
-    <div class="col-12 col-md-8 offset-md-2">
-      <div class="card">
-        <div class="card-header">
-          <h3 class="card-title">Third Group Verbs (Irregular Verbs)</h3>
-        </div>
-        <div class="card-body">
-          <p class="lead">
-            Third group verbs (irregular verbs) do not follow the standard rules for forming the past tense and past participle. These verbs have unique forms that need to be memorized, as they cannot be predicted based on rules.
-          </p>
-
-          <!-- Main features -->
-          <h5>Main Features:</h5>
-          <ul>
-            <li><strong>Unchanged base form:</strong> For example, the verb <em>read</em> keeps the same spelling in all forms, but the pronunciation differs:
-              <ul>
-                <li><strong>Present:</strong> [riːd]</li>
-                <li><strong>Past:</strong> [rɛd]</li>
-              </ul>
-            </li>
-            <li><strong>Form Differences:</strong> The forms of irregular verbs can be unique for each of their tenses. Example:
-              <ul>
-                <li><strong>Base Form:</strong> <em>begin</em> — <strong>Past Simple:</strong> <em>began</em> — <strong>Past Participle:</strong> <em>begun</em></li>
-              </ul>
-            </li>
-          </ul>
-
-          <!-- Where are they used -->
-          <h5>Where are they used:</h5>
-          <p>Irregular verbs are widely used in English and appear in both spoken and written language. They are essential for correct formation of various tense constructions and are used in the following contexts:</p>
-          <ul>
-            <li><strong>Actions in the past:</strong> For example, in the sentence <em>"She went to the store."</em>, where the verb <em>went</em> is the irregular form of <em>go</em>.</li>
-            <li><strong>Present Perfect tense:</strong> In the sentence <em>"He has written a letter."</em>, the form <em>written</em> of the verb <em>write</em> is used to create Present Perfect.</li>
-            <li><strong>Passive voice:</strong> In the sentence <em>"The book was written by an unknown author."</em>, the form <em>written</em> of <em>write</em> is used.</li>
-          </ul>
-
-          <!-- Role of learning -->
-          <h5>Role of Learning:</h5>
-          <p>Learning irregular verbs is crucial for correctly forming sentences in English, especially in the past tense and in perfect constructions. These verbs are an important part of everyday speech and writing. In textbooks like <em>Essential Grammar in Use</em> by Raymond Murphy, irregular verbs are given special attention, including tables for memorization.</p>
-
-          <!-- Button for examples -->
-          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#examples" aria-expanded="false" aria-controls="examples">
-            Example
-          </button>
-
-          <!-- Examples of verbs -->
-          <div class="collapse mt-3" id="examples">
-            <div class="card card-body">
-              <ul>
-                <li><strong>Base Form</strong>: begin — <strong>Past Simple</strong>: began — <strong>Past Participle</strong>: begun</li>
-                <li><strong>Base Form</strong>: read — <strong>Past Simple</strong>: read — <strong>Past Participle</strong>: read</li>
-                <li><strong>Base Form</strong>: go — <strong>Past Simple</strong>: went — <strong>Past Participle</strong>: gone</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>`}function returnLevel36PL(){return`<div class="container mt-5">
-  <div class="row">
-    <div class="col-12 col-md-8 offset-md-2">
-      <div class="card">
-        <div class="card-header">
-          <h3 class="card-title">Czasowniki trzeciej grupy (Nieregularne czasowniki)</h3>
-        </div>
-        <div class="card-body">
-          <p class="lead">
-            Czasowniki trzeciej grupy (irregular verbs) nie przestrzegają standardowych zasad tworzenia formy czasu przeszłego i formy czasownika przeszłego (Past Participle). Te czasowniki mają unikalne formy, które należy zapamiętać, ponieważ nie można ich przewidzieć na podstawie zasad.
-          </p>
-
-          <!-- Główne cechy -->
-          <h5>Główne cechy:</h5>
-          <ul>
-            <li><strong>Niezmienny bezokolicznik:</strong> Na przykład, czasownik <em>read</em> zachowuje takie samo pisownię we wszystkich formach, ale wymowa różni się:
-              <ul>
-                <li><strong>Present:</strong> [riːd]</li>
-                <li><strong>Past:</strong> [rɛd]</li>
-              </ul>
-            </li>
-            <li><strong>Różnica form:</strong> Formy nieregularnych czasowników mogą być unikalne dla każdego z ich form czasowych. Przykład:
-              <ul>
-                <li><strong>Base Form (bezokolicznik):</strong> <em>begin</em> — <strong>Past Simple:</strong> <em>began</em> — <strong>Past Participle:</strong> <em>begun</em></li>
-              </ul>
-            </li>
-          </ul>
-
-          <!-- Gdzie używane -->
-          <h5>Gdzie używane:</h5>
-          <p>Czasowniki nieregularne są szeroko stosowane w języku angielskim i można je znaleźć zarówno w mowie, jak i w piśmie. Są one niezbędne do prawidłowego formułowania różnych konstrukcji czasowych i wykorzystywane są w następujących przypadkach:</p>
-          <ul>
-            <li><strong>Działania w przeszłości:</strong> Przykładowo, w zdaniu <em>"She went to the store."</em> (Ona poszła do sklepu), czasownik <em>went</em> jest formą nieregularną od <em>go</em>.</li>
-            <li><strong>Perfect tenses:</strong> W zdaniu <em>"He has written a letter."</em> (On napisał list) używana jest forma <em>written</em> od <em>write</em> do utworzenia Present Perfect.</li>
-            <li><strong>Strona bierna:</strong> W zdaniu <em>"The book was written by an unknown author."</em> (Książka została napisana przez nieznanego autora) używana jest forma <em>written</em> od <em>write</em>.</li>
-          </ul>
-
-          <!-- Rola nauki -->
-          <h5>Rola nauki:</h5>
-          <p>Uczenie się nieregularnych czasowników jest bardzo ważne dla prawidłowego formułowania zdań w języku angielskim, zwłaszcza w czasie przeszłym i konstrukcjach perfektywnych. Stanowią one dużą część codziennej mowy i pisania. W podręcznikach, takich jak <em>Essential Grammar in Use</em> R. Murphy'ego, poświęca się im szczególną uwagę, w tym tabelki do zapamiętywania.</p>
-
-          <!-- Przycisk do przykładów -->
-          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#examples" aria-expanded="false" aria-controls="examples">
-            Przykład
-          </button>
-
-          <!-- Przykłady czasowników -->
-          <div class="collapse mt-3" id="examples">
-            <div class="card card-body">
-              <ul>
-                <li><strong>Base Form</strong>: begin — <strong>Past Simple</strong>: began — <strong>Past Participle</strong>: begun</li>
-                <li><strong>Base Form</strong>: read — <strong>Past Simple</strong>: read — <strong>Past Participle</strong>: read</li>
-                <li><strong>Base Form</strong>: go — <strong>Past Simple</strong>: went — <strong>Past Participle</strong>: gone</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>`}function returnLevel36UA(){return`<div class="container mt-5">
-  <div class="row">
-    <div class="col-12 col-md-8 offset-md-2">
-      <div class="card">
-        <div class="card-header">
-          <h3 class="card-title">Дієслова з третьої групи (Неправильні дієслова)</h3>
-        </div>
-        <div class="card-body">
-          <p class="lead">
-            Дієслова з третьої групи (irregular verbs) не слідують стандартним правилам утворення форм минулого часу та дієприкметника минулого часу. Ці дієслова мають унікальні форми, які необхідно запам'ятовувати, оскільки їх неможливо передбачити за правилами.
-          </p>
-
-          <!-- Основні характеристики -->
-          <h5>Основні характеристики:</h5>
-          <ul>
-            <li><strong>Незмінний інфінітив:</strong> Наприклад, дієслово <em>read</em> зберігає однакове написання у всіх формах, але вимова різниться:
-              <ul>
-                <li><strong>Present:</strong> [riːd]</li>
-                <li><strong>Past:</strong> [rɛd]</li>
-              </ul>
-            </li>
-            <li><strong>Різниця форм:</strong> Форми неправильних дієслів можуть бути унікальними для кожної з їхніх тимчасових форм. Приклад:
-              <ul>
-                <li><strong>Base Form (інфінітив):</strong> <em>begin</em> — <strong>Past Simple:</strong> <em>began</em> — <strong>Past Participle:</strong> <em>begun</em></li>
-              </ul>
-            </li>
-          </ul>
-
-          <!-- Де використовуються -->
-          <h5>Де використовуються:</h5>
-          <p>Неправильні дієслова широко використовуються в англійській мові і зустрічаються як у розмовній мові, так і в письмовій. Вони необхідні для правильного побудови різних часових конструкцій і використовуються в наступних випадках:</p>
-          <ul>
-            <li><strong>Дії в минулому:</strong> Наприклад, у реченні <em>"She went to the store."</em> (Вона пішла до магазину), де дієслово <em>went</em> є неправильною формою від <em>go</em>.</li>
-            <li><strong>Перфектні часи:</strong> У реченні <em>"He has written a letter."</em> (Він написав листа) використовується форма <em>written</em> від дієслова <em>write</em> для утворення Present Perfect.</li>
-            <li><strong>Пасивний стан:</strong> У реченні <em>"The book was written by an unknown author."</em> (Книга була написана невідомим автором) використовується форма <em>written</em> від <em>write</em>.</li>
-          </ul>
-
-          <!-- Роль вивчення -->
-          <h5>Роль вивчення:</h5>
-          <p>Вивчення неправильних дієслів є дуже важливим для правильного формулювання речень в англійській мові, особливо в минулому часі та перфектних конструкціях. Вони складають значну частину повсякденної мови та письмового спілкування. У підручниках, таких як <em>Essential Grammar in Use</em> Реймона Мерфі, неправильним дієслів приділяється особлива увага, зокрема таблиці для запам'ятовування.</p>
-
-          <!-- Кнопка для прикладів -->
-          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#examples" aria-expanded="false" aria-controls="examples">
-            Приклад
-          </button>
-
-          <!-- Приклади дієслів -->
-          <div class="collapse mt-3" id="examples">
-            <div class="card card-body">
-              <ul>
-                <li><strong>Base Form</strong>: begin — <strong>Past Simple</strong>: began — <strong>Past Participle</strong>: begun</li>
-                <li><strong>Base Form</strong>: read — <strong>Past Simple</strong>: read — <strong>Past Participle</strong>: read</li>
-                <li><strong>Base Form</strong>: go — <strong>Past Simple</strong>: went — <strong>Past Participle</strong>: gone</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>`}function returnLevel37(){return`
-<div class="returnLevel37">
-            <h2>
-                <strong>Определение времени Present Perfect</strong>
-            </h2>
-            <h3>
-                <strong>Present Perfect</strong> — это время, которое используется для описания действий, имеющих связь с настоящим моментом. Оно подчеркивает результат действия, который имеет значение в текущем времени, или действия, произошедшие в неопределённый момент в прошлом. Это время формируется с помощью вспомогательного глагола <em>have</em> (или <em>has</em> для третьего лица) и причастия прошедшего времени основного глагола.
-            </h3>
-
-        <h3>
-                <strong>I have done</strong>
-        </h3>
-            <h4>
-                I have done my homework. — Я сделал домашку. Это пример использования Present Perfect, когда результат действия важен для текущего момента.
-            </h4>
-
-        <h3>
-                <strong>I have just</strong>
-        </h3>
-            <h4>
-                I have just finished my lunch. — Я только что закончил обедать. Здесь "just" указывает на недавность действия.
-            </h4>
-
-        <h3>
-                <strong>I have already</strong>
-        </h3>
-            <h4>
-                I have already seen that movie. — Я уже видел этот фильм. Используется для выражения действий, которые произошли раньше, чем ожидалось.
-            </h4>
-
-        <h3>
-                <strong>I have not... yet</strong>
-        </h3>
-            <h4>
-                I have not finished my project yet. — Я ещё не закончил мой проект. Здесь "yet" подчеркивает, что действие ещё не завершено.
-            </h4>
-
-        <h3>
-                <strong>Have you ever...?</strong>
-        </h3>
-            <h4>
-                Have you ever been to Paris? — Ты когда-нибудь был в Париже? Это вопрос о прошлом опыте, не привязанном к конкретному времени.
-            </h4>
-
-        <h3>
-                <strong>I have never...</strong>
-        </h3>
-            <h4>
-                I have never tried sushi. — Я никогда не пробовал суши. Здесь "never" указывает на отсутствие опыта.
-            </h4>
-    
-</div>`}function returnLevel37EN(){return`<div class="returnLevel37">
-            <h2>
-                <strong>Definition of Present Perfect</strong>
-            </h2>
-            <h3>
-                <strong>Present Perfect</strong> — This tense is used to describe actions that are connected to the present moment. It emphasizes the result of an action that is relevant now, or actions that occurred at an unspecified time in the past. Formed with the auxiliary verb <em>have</em> (or <em>has</em> for third person singular) and the past participle of the main verb.
-            </h3>
-
-        <h3>
-                <strong>I have done</strong>
-        </h3>
-            <h4>
-                I have done my homework. — Shows a completed action where the result is important for the present.
-            </h4>
-
-        <h3>
-                <strong>I have just</strong>
-        </h3>
-            <h4>
-                I have just finished my lunch. — "Just" indicates a very recent action.
-            </h4>
-
-        <h3>
-                <strong>I have already</strong>
-        </h3>
-            <h4>
-                I have already seen that movie. — "Already" emphasizes that the action happened earlier than expected.
-            </h4>
-
-        <h3>
-                <strong>I have not... yet</strong>
-        </h3>
-            <h4>
-                I have not finished my project yet. — "Yet" highlights that the action is not completed up to the present moment.
-            </h4>
-
-        <h3>
-                <strong>Have you ever...?</strong>
-        </h3>
-            <h4>
-                Have you ever been to Paris? — Asks about past experiences at an unspecified time, not linked to a specific moment.
-            </h4>
-
-        <h3>
-                <strong>I have never...</strong>
-        </h3>
-            <h4>
-                I have never tried sushi. — "Never" indicates the absence of experience in the past.
-            </h4>
-    
-</div>
-
-`}function returnLevel37PL(){return`<div class="returnLevel37">
-            <h2>
-                <strong>Definicja czasu Present Perfect</strong>
-            </h2>
-            <h3>
-                <strong>Present Perfect</strong> — to czas używany do opisywania czynności, które mają związek z teraźniejszością. Podkreśla rezultat czynności, który ma znaczenie w obecnym momencie, lub czynności, które miały miejsce w nieokreślonym momencie w przeszłości. Czas ten tworzy się za pomocą czasownika posiłkowego <em>have</em> (lub <em>has</em> dla trzeciej osoby) i imiesłowu czasu przeszłego głównego czasownika.
-            </h3>
-
-        <h3>
-                <strong>I have done</strong>
-        </h3>
-            <h4>
-                I have done my homework. — Zrobiłem pracę domową. To przykład użycia Present Perfect, gdy rezultat czynności jest ważny dla teraźniejszości.
-            </h4>
-
-        <h3>
-                <strong>I have just</strong>
-        </h3>
-            <h4>
-                I have just finished my lunch. — Właśnie skończyłem obiad. Tutaj "just" wskazuje na niedawne zakończenie czynności.
-            </h4>
-
-        <h3>
-                <strong>I have already</strong>
-        </h3>
-            <h4>
-                I have already seen that movie. — Już widziałem ten film. Używane do wyrażenia czynności, które miały miejsce wcześniej niż oczekiwano.
-            </h4>
-
-        <h3>
-                <strong>I have not... yet</strong>
-        </h3>
-            <h4>
-                I have not finished my project yet. — Jeszcze nie skończyłem mojego projektu. Tutaj "yet" podkreśla, że czynność jeszcze się nie zakończyła.
-            </h4>
-
-        <h3>
-                <strong>Have you ever...?</strong>
-        </h3>
-            <h4>
-                Have you ever been to Paris? — Czy kiedykolwiek byłeś w Paryżu? To pytanie o doświadczenie z przeszłości, niezwiązane z konkretnym momentem.
-            </h4>
-
-        <h3>
-                <strong>I have never...</strong>
-        </h3>
-            <h4>
-                I have never tried sushi. — Nigdy nie próbowałem sushi. Tutaj "never" wskazuje na brak doświadczenia.
-            </h4>
-    
-</div>
-
-`}function returnLevel37UA(){return`<div class="returnLevel37">
-            <h2>
-                <strong>Визначення часу Present Perfect</strong>
-            </h2>
-            <h3>
-                <strong>Present Perfect</strong> — це час, який використовується для опису дій, що мають зв’язок з теперішнім моментом. Він підкреслює результат дії, що має значення у поточний час, або дії, що відбулися у невизначений момент у минулому. Цей час утворюється за допомогою допоміжного дієслова <em>have</em> (або <em>has</em> для третьої особи) та дієприкметника минулого часу основного дієслова.
-            </h3>
-
-        <h3>
-                <strong>I have done</strong>
-        </h3>
-            <h4>
-                I have done my homework. — Я зробив домашнє завдання. Це приклад використання Present Perfect, коли результат дії важливий для поточного моменту.
-            </h4>
-
-        <h3>
-                <strong>I have just</strong>
-        </h3>
-            <h4>
-                I have just finished my lunch. — Я щойно закінчив обідати. Тут "just" вказує на недавність дії.
-            </h4>
-
-        <h3>
-                <strong>I have already</strong>
-        </h3>
-            <h4>
-                I have already seen that movie. — Я вже бачив цей фільм. Використовується для вираження дій, що відбулися раніше, ніж очікувалося.
-            </h4>
-
-        <h3>
-                <strong>I have not... yet</strong>
-        </h3>
-            <h4>
-                I have not finished my project yet. — Я ще не закінчив свій проєкт. Тут "yet" підкреслює, що дія ще не завершена.
-            </h4>
-
-        <h3>
-                <strong>Have you ever...?</strong>
-        </h3>
-            <h4>
-                Have you ever been to Paris? — Ти коли-небудь був у Парижі? Це питання про минулий досвід, не прив’язаний до конкретного часу.
-            </h4>
-
-        <h3>
-                <strong>I have never...</strong>
-        </h3>
-            <h4>
-                I have never tried sushi. — Я ніколи не пробував суші. Тут "never" вказує на відсутність досвіду.
-            </h4>
-    
-</div>
-
 `}function returnInfoForDiamant(){return`<div class="modal fade" id="diamondsModal" tabindex="-1" aria-labelledby="diamondsModalLabel" aria-hidden="true">
   <div class="modal-dialog return-info-for-diamant">
     <div class="modal-content">
@@ -4278,7 +3836,7 @@ var I=Object.defineProperty;var T=(e,a,t)=>a in e?I(e,a,{enumerable:!0,configura
             </button>
           </div>
         </div>
-        `}const indexForThoury={helpForProgramRU,helpForProgramPL,helpForProgramUA,helpForProgramEN,helpForHomeMenuRU,helpForHomeMenuUA,helpForHomeMenuPL,helpForHomeMenuEN,helpForGreenPoleOneUA,helpForGreenPoleOneRU,helpForGreenPoleOnePL,helpForGreenPoleOneEN,returnInfoForDiamant,returnInfoForDiamantEN,returnInfoForDiamantPL,returnInfoForDiamantUA,returnLevel37EN,returnLevel37PL,returnLevel37UA,returnLevel37,returnLevel20EN,returnLevel20PL,returnLevel20UA,returnLevel20,returnLevel36EN,returnLevel36PL,returnLevel36UA,returnLevel36,returnLevel35EN,returnLevel35PL,returnLevel35UA,returnLevel35,returnLevel34EN,returnLevel34PL,returnLevel34UA,returnLevel34,returnLevel33EN,returnLevel33PL,returnLevel33UA,returnLevel33,returnLevel32EN,returnLevel32PL,returnLevel32UA,returnLevel32,returnLevel31EN,returnLevel31PL,returnLevel31UA,returnLevel31,returnLevel23EN,returnLevel23PL,returnLevel23UA,returnLevel23,returnLevel21EN,returnLevel21PL,returnLevel21UA,returnLevel21,returnLevel19EN,returnLevel19PL,returnLevel19UA,returnLevel19,returnLevel18EN,returnLevel18PL,returnLevel18UA,returnLevel18,returnLevel17EN,returnLevel17PL,returnLevel17UA,returnLevel17,returnLevel16EN,returnLevel16PL,returnLevel16UA,returnLevel16,returnLevel15EN,returnLevel15PL,returnLevel15UA,returnLevel15,returnLevel14EN,returnLevel14PL,returnLevel14UA,returnLevel14};function exportBDTranslate(){const e=[];return e.push(["","","",""]),e.push(["be/have/do in present and past tenses","be/have/do in present and past tenses","be/have/do in present and past tenses","be/have/do in present and past tenses"]),e.push([indexForThoury.helpForProgramRU(),indexForThoury.helpForProgramUA(),indexForThoury.helpForProgramPL(),indexForThoury.helpForProgramEN()]),e.push([indexForThoury.helpForHomeMenuRU(),indexForThoury.helpForHomeMenuUA(),indexForThoury.helpForHomeMenuPL(),indexForThoury.helpForHomeMenuEN()]),e.push([indexForThoury.helpForGreenPoleOneRU(),indexForThoury.helpForGreenPoleOneUA(),indexForThoury.helpForGreenPoleOnePL(),indexForThoury.helpForGreenPoleOneEN()]),e.push(["Примерно:","Приблизно:","Mówimy o:","We are talking approximately about:"]),e.push(["Последний ответ здесь","Остання відповідь тут","Najnowsza odpowiedź tutaj","The last answer is here"]),e.push(["Предыдущий вопрос здесь","Попереднє питання тут","Poprzednie pytanie tutaj","Previous question here"]),e.push([indexForThoury.returnLevel37(),indexForThoury.returnLevel37UA(),indexForThoury.returnLevel37PL(),indexForThoury.returnLevel37EN()]),e.push(["В этом тесте нужно собрать предложение из предложенных слов. Имейте в виду, что иногда собранное предложение может не совпадать с общей темой теста.","У цьому тесті потрібно зібрати пропозицію із запропонованих слів. Майте на увазі, що інколи зібрана пропозиція може не співпадати із загальною темою тесту.","W tym teście musisz ułożyć zdanie z podanych słów. Pamiętaj, że czasami zebrane zdanie może nie pokrywać się z ogólnym tematem testu.","In this test you need to assemble a sentence from the given words. Keep in mind that sometimes the assembled sentence may not match the general topic of the test."]),e.push(["(может отличаться)","(може відрізнятися)","(może się różnić)","(may differ)"]),e.push([indexForThoury.returnLevel20(),indexForThoury.returnLevel20UA(),indexForThoury.returnLevel20PL(),indexForThoury.returnLevel20EN()]),e.push([indexForThoury.returnLevel36(),indexForThoury.returnLevel36UA(),indexForThoury.returnLevel36PL(),indexForThoury.returnLevel36EN()]),e.push([indexForThoury.returnInfoForDiamant(),indexForThoury.returnInfoForDiamantUA(),indexForThoury.returnInfoForDiamantPL(),indexForThoury.returnInfoForDiamantEN()]),e.push([indexForThoury.returnLevel35(),indexForThoury.returnLevel35UA(),indexForThoury.returnLevel35PL(),indexForThoury.returnLevel35EN()]),e.push([indexForThoury.returnLevel34(),indexForThoury.returnLevel34UA(),indexForThoury.returnLevel34PL(),indexForThoury.returnLevel34EN()]),e.push(["Вставьте глагол вместо троеточия или подберите правильное предложение в продолженном прошедшем времени.","Вставте дієслово замість три крапки або підберіть правильну пропозицію в минулому часі.","Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym ciągłym.","Insert a verb instead of the ellipsis or choose the correct sentence in the past continuous tense."]),e.push([indexForThoury.returnLevel33(),indexForThoury.returnLevel33UA(),indexForThoury.returnLevel33PL(),indexForThoury.returnLevel33EN()]),e.push([indexForThoury.returnLevel32(),indexForThoury.returnLevel32UA(),indexForThoury.returnLevel32PL(),indexForThoury.returnLevel32EN()]),e.push(["Past Simple отрицательные и вопросы","Past Simple негативні та питання","Past Simple przeczenia i pytania","Past Simple Negative and Questions"]),e.push(["Вставьте глагол вместо троеточия или подберите правильное предложение в простом прошедшем времени.","Вставте дієслово замість три крапки або підберіть правильну пропозицію в простому часі.","Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym prostym.","Insert a verb instead of the ellipsis or choose the correct sentence in the simple past tense."]),e.push([indexForThoury.returnLevel31(),indexForThoury.returnLevel31UA(),indexForThoury.returnLevel31PL(),indexForThoury.returnLevel31EN()]),e.push(["Подобрать пару правильный - неправильный глагол. Тест разбавлен небольшим числом правильных глаголов.","Підібрати пару правильне - неправильне дієслово. Тест розбавлений невеликою кількістю правильних дієслів.","Dopasuj właściwy czasownik nieregularny. Test jest rozcieńczany niewielką liczbą czasowników regularnych.","Match a pair of regular and irregular verbs. The test is diluted with a small number of regular verbs."]),e.push(["Прошедшее простое","Минуле просте","Przeszłość prosta","Past simple"]),e.push(["Помощь","Допомога","Pomoc","Help"]),e.push(["Теория:","Теорія:","Teoria:","Theory:"]),e.push(["Задание теста:","Завдання тесту:","Zadanie testowe:","Test task:"]),e.push(["Переводов:","Перекладів:","Tłumaczenia:","Translations:"]),e.push(["Успех:","Успіх:","Sukces:","Success:"]),e.push(["Ошибок:","Помилок:","Błędy:","Errors:"]),e.push(["Статистика","Статистика","Statystyka","Statistics"]),e.push(["Собрано алмазов:","Зібрано алмазів:","Zebrane diamenty:","Diamonds collected:"]),e.push(["Глаголы Was и Were","Глаголи Was і Were","Czasowniki Was i Were","Verbs Was and Were"]),e.push([indexForThoury.returnLevel23(),indexForThoury.returnLevel23UA(),indexForThoury.returnLevel23PL(),indexForThoury.returnLevel23EN()]),e.push(["Упс. Кто-то уже сообщил об этой ошибке.","Упс. Хтось уже повідомив про цю помилку.","Ups. Ktoś już zgłosił ten błąd.","Oops. Someone already reported this bug."]),e.push(["Ошибка зафиксирована","Помилка зафіксована","Zapisano błąd","Error recorded"]),e.push([indexForThoury.returnLevel21(),indexForThoury.returnLevel21UA(),indexForThoury.returnLevel21PL(),indexForThoury.returnLevel21EN()]),e.push(["Глаголы Have и Have Got","Дієслова Have та Have Got","Czasowniki Have i Have Got","The verbs Have and Have Got"]),e.push([indexForThoury.returnLevel19(),indexForThoury.returnLevel19UA(),indexForThoury.returnLevel19PL(),indexForThoury.returnLevel19EN()]),e.push(["Выбор между P.S. и настоящим продолженным P.C.","Вибір між P.S. та справжнім продовженим P.C.","Wybór pomiędzy P.S. i niniejszym kontynuuje P.C.","The choice between P.S. and the present continuation P.C."]),e.push([indexForThoury.returnLevel18(),indexForThoury.returnLevel18UA(),indexForThoury.returnLevel18PL(),indexForThoury.returnLevel18EN()]),e.push(["Простое настоящее  P.S. вопросы","Просте справжнє P.S. питання","Prosty prezent P.S. pytania","Simple present P.S. questions"]),e.push([indexForThoury.returnLevel17(),indexForThoury.returnLevel17UA(),indexForThoury.returnLevel17PL(),indexForThoury.returnLevel17EN()]),e.push(["Простое настоящее  P.S. негативное","Просте справжнє P.S. негативне","Prosty prezent P.S. negatywny","Simple present P.S. negative"]),e.push([indexForThoury.returnLevel16(),indexForThoury.returnLevel16UA(),indexForThoury.returnLevel16PL(),indexForThoury.returnLevel16EN()]),e.push(["Простое настоящее  P.S. плюс периодичность","Просте справжнє P.S. плюс періодичність","Prosty prezent P.S. plus częstotliwość","Simple present P.S. plus periodicity"]),e.push([indexForThoury.returnLevel15(),indexForThoury.returnLevel15UA(),indexForThoury.returnLevel15PL(),indexForThoury.returnLevel15EN()]),e.push(["Простое настоящее P.S.","Просте справжнє P.S.","Prosty prezent P.S.","Simple present P.S."]),e.push([indexForThoury.returnLevel14(),indexForThoury.returnLevel14UA(),indexForThoury.returnLevel14PL(),indexForThoury.returnLevel14EN()]),e.push(["Образования вопросов в настоящем продолженном времени P.C.","Утворення питань у поточному продовженому часі P.C.","Tworzenie pytań w czasie teraźniejszym ciągłym P.C.","Formation of questions in the present continuous tense P.C."]),e.push(["Правило для настоящего продолженного времени (Present Continuous)","Правило для поточного часу (Present Continuous)","Reguła czasu teraźniejszego ciągłego","Rule for the Present Continuous"]),e.push(["Создание вопросов в Present Simple и Past Simple","Створення питань у Present Simple та Past Simple","Tworzenie pytań w czasie Present Simple i Past Simple","Forming questions in Present Simple and Past Simple"]),e.push(["Понятно","Зрозуміло","To jasne","It's clear"]),e.push(["Просто учим слова","Просто вчимо слова","Dopiero uczę się słówek","Just learning words"]),e.push(["Сокращенная форма глагола to Be","Скорочена форма дієслова","Krótka forma czasownika być","Shortened form of the verb to be"]),e.push(["Выбрать правильную пару.","Вибрати правильну пару.","Wybierz odpowiednią parę.","Choose the right pair."]),e.push(["Выбери верную форму глагола","Вибери правильну форму дієслова","Wybierz poprawną formę czasownika","Choose the correct form of the verb"]),e.push(["Вторая форма неправильных глаголов","Друга форма неправильних дієслів","Druga forma czasowników nieregularnych","The second form of irregular verbs"]),e.push(["Выбрать правильное время PS or PC","Вибрати правильне час PS or PC","Wybierz odpowiedni czas PS or PC","Choose the right time PS or PC"]),e.push(["Учить слова","Вчити слова","Ucz się słów","Learn words"]),e.push(["Подобрать правильно вопрос или ответ","Підібрати правильно питання чи відповідь","Wybierz właściwe pytanie lub odpowiedź","Choose the right question or answer"]),e.push(["Настоящее простое вопросы","Справжнє просте питання","Przedstaw proste pytania","Present simple questions"]),e.push(["Настоящее простое негативное","Справжнє просте негативне","Przedstaw prosty negatyw","Present simple negative"]),e.push(["300 глаголов","300 дієслів (RU)","300 czasowników (RU)","300 verbs (RU)"]),e.push(["50 глаголов","50 дієслів (RU/PL)","50 czasowników (RU/PL)","50 verbs (RU/PL)"]),e.push(["100 слов про спорт","100 слів про спорт (RU/PL)","100 słów o sporcie (RU/PL)","100 words about sports(RU/PL)"]),e.push(["Выберите правильно составленное предложение.","Виберіть правильно складену пропозицію.","Wybierz właściwe zdanie.","Choose the correctly constructed sentence."]),e.push(["Настоящее простое + периодичность","Справжнє просте + періодичність","Czas teraźniejszy prosty + okresowość","Present Simple + Periodicity"]),e.push(["Настоящее простое","Справжнє просте","Prezent prosty","Present simple"]),e.push(["Настоящее продолженное - вопрос","Справжнє продовжене – питання","Czas teraźniejszy ciągły – pytanie","Choose the right question"]),e.push(["Выбрать правильный вопрос","Вибрати правильне питання","Wybierz właściwe pytanie","Choose the right question"]),e.push(["Сообщить об ошибке","Повідомити про помилку","Zgłoś błąd","Report a bug"]),e.push(["Перевести вопрос","Перекласти питання","Przetłumacz pytanie","Translate question"]),e.push(["Выбрать правильный перевод","Вибрати правильний переклад","Wybierz właściwe tłumaczenie","Choose the correct translation"]),e.push(["100 слов о еде","100 слів про їжу","100 słów o jedzeniu","100 words about food"]),e.push(["100 слов о путешествии","100 слів про подорож (RU)","100 słów o podróżach (RU)","100 words about travel (RU)"]),e.push(["100 слов","100 слів (RU)","100 słów (RU)","100 words (RU)"]),e.push(["300 слов","300 слів (RU)","300 słów (RU)","300 words (RU)"]),e.push(["500 слов","500 слів (RU)","500 słów (RU)","500 words (RU)"]),e.push(["Настоящее продолженное","Присутній безперервний","Teraźniejszość ciągła","Present continuous"]),e.push(["Последний тест","Останній тест","Ostatni test","The last test"]),e.push(["Задание для теста","Завдання для тесту","Zadanie testowe","Task for the test"]),e.push(["Вопрос с вариантами ответа","Питання з варіантами відповіді","Pytanie wielokrotnego wyboru","Multiple choice question"]),e.push(["Where/Who...","Where/Who...","Where/Who...","Where/Who..."]),e.push(["Вставить правильное слово","Вставити правильне слово","Wstaw właściwe słowo","Insert the correct word"]),e.push(["To Be, ответь на вопрос","To Be, дай відповідь на запитання","Być, odpowiedz na pytanie","To Be, answer the question"]),e.push(["To Be, вопрос/ответ","To Be, питання/відповідь","Być, pytanie/odpowiedź","To Be, Q&A"]),e.push(["To Be, краткая форма","To Be, коротка форма","Być, krótka forma","To Be, short form"]),e.push(["Выбрать правильный вариант ответа","Вибрати правильний варіант відповіді","Wybierz poprawną odpowiedź","Choose the correct answer"]),e.push(["Сброс","Скидання","Resetowanie","Reset"]),e.push(["Выбрать правильный вариант сокращенной формы глагола to Be","Вибрати правильний варіант скороченої форми дієслова to Be","Wybierz poprawną wersję skróconej formy czasownika to Be","Choose the correct version of the shortened form of the verb to Be"]),e}class LanguageController{constructor(){this.langStr=localStorage.getItem("EnglishWithJs_lang")||"ru"}translate(a){if(this.langStr==="ru")return a;let t="",o=3;switch(this.langStr){case"pl":o=2;break;case"ua":o=1;break}return t=a,exportBDTranslate().forEach(i=>{i[0]==a&&(t=i[o])}),t}}const Help={translate:new LanguageController,viewhandleHelpToTranslate:function(e,a){const t=document.createElement("div");t.id="container-for-video-help";let o=this.translate.translate(e);o=o.replace(/<div id='video-help'><\/div>/,this.addVideoHelp(a)),t.innerHTML=o,document.body.appendChild(t),document.getElementById("button-close-info-modal").addEventListener("click",()=>{document.getElementById("container-for-video-help").remove()})},addVideoHelp(e){return`
+        `}const indexForThoury={helpForProgramRU,helpForProgramPL,helpForProgramUA,helpForProgramEN,helpForHomeMenuRU,helpForHomeMenuUA,helpForHomeMenuPL,helpForHomeMenuEN,helpForGreenPoleOneUA,helpForGreenPoleOneRU,helpForGreenPoleOnePL,helpForGreenPoleOneEN,returnInfoForDiamant,returnInfoForDiamantEN,returnInfoForDiamantPL,returnInfoForDiamantUA,returnLevel20EN,returnLevel20PL,returnLevel20UA,returnLevel20,returnLevel35EN,returnLevel35PL,returnLevel35UA,returnLevel35,returnLevel34EN,returnLevel34PL,returnLevel34UA,returnLevel34,returnLevel33EN,returnLevel33PL,returnLevel33UA,returnLevel33,returnLevel32EN,returnLevel32PL,returnLevel32UA,returnLevel32,returnLevel31EN,returnLevel31PL,returnLevel31UA,returnLevel31,returnLevel23EN,returnLevel23PL,returnLevel23UA,returnLevel23,returnLevel21EN,returnLevel21PL,returnLevel21UA,returnLevel21,returnLevel19EN,returnLevel19PL,returnLevel19UA,returnLevel19,returnLevel18EN,returnLevel18PL,returnLevel18UA,returnLevel18,returnLevel17EN,returnLevel17PL,returnLevel17UA,returnLevel17,returnLevel16EN,returnLevel16PL,returnLevel16UA,returnLevel16,returnLevel15EN,returnLevel15PL,returnLevel15UA,returnLevel15,returnLevel14EN,returnLevel14PL,returnLevel14UA,returnLevel14};function exportBDTranslate(){const e=[];return e.push(["","","",""]),e.push(["be/have/do in present and past tenses","be/have/do in present and past tenses","be/have/do in present and past tenses","be/have/do in present and past tenses"]),e.push([indexForThoury.helpForProgramRU(),indexForThoury.helpForProgramUA(),indexForThoury.helpForProgramPL(),indexForThoury.helpForProgramEN()]),e.push([indexForThoury.helpForHomeMenuRU(),indexForThoury.helpForHomeMenuUA(),indexForThoury.helpForHomeMenuPL(),indexForThoury.helpForHomeMenuEN()]),e.push([indexForThoury.helpForGreenPoleOneRU(),indexForThoury.helpForGreenPoleOneUA(),indexForThoury.helpForGreenPoleOnePL(),indexForThoury.helpForGreenPoleOneEN()]),e.push(["Примерно:","Приблизно:","Mówimy o:","We are talking approximately about:"]),e.push(["Последний ответ здесь","Остання відповідь тут","Najnowsza odpowiedź tutaj","The last answer is here"]),e.push(["Предыдущий вопрос здесь","Попереднє питання тут","Poprzednie pytanie tutaj","Previous question here"]),e.push(["В этом тесте нужно собрать предложение из предложенных слов. Имейте в виду, что иногда собранное предложение может не совпадать с общей темой теста.","У цьому тесті потрібно зібрати пропозицію із запропонованих слів. Майте на увазі, що інколи зібрана пропозиція може не співпадати із загальною темою тесту.","W tym teście musisz ułożyć zdanie z podanych słów. Pamiętaj, że czasami zebrane zdanie może nie pokrywać się z ogólnym tematem testu.","In this test you need to assemble a sentence from the given words. Keep in mind that sometimes the assembled sentence may not match the general topic of the test."]),e.push(["(может отличаться)","(може відрізнятися)","(może się różnić)","(may differ)"]),e.push([indexForThoury.returnLevel20(),indexForThoury.returnLevel20UA(),indexForThoury.returnLevel20PL(),indexForThoury.returnLevel20EN()]),e.push([indexForThoury.returnInfoForDiamant(),indexForThoury.returnInfoForDiamantUA(),indexForThoury.returnInfoForDiamantPL(),indexForThoury.returnInfoForDiamantEN()]),e.push([indexForThoury.returnLevel35(),indexForThoury.returnLevel35UA(),indexForThoury.returnLevel35PL(),indexForThoury.returnLevel35EN()]),e.push([indexForThoury.returnLevel34(),indexForThoury.returnLevel34UA(),indexForThoury.returnLevel34PL(),indexForThoury.returnLevel34EN()]),e.push(["Вставьте глагол вместо троеточия или подберите правильное предложение в продолженном прошедшем времени.","Вставте дієслово замість три крапки або підберіть правильну пропозицію в минулому часі.","Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym ciągłym.","Insert a verb instead of the ellipsis or choose the correct sentence in the past continuous tense."]),e.push([indexForThoury.returnLevel33(),indexForThoury.returnLevel33UA(),indexForThoury.returnLevel33PL(),indexForThoury.returnLevel33EN()]),e.push([indexForThoury.returnLevel32(),indexForThoury.returnLevel32UA(),indexForThoury.returnLevel32PL(),indexForThoury.returnLevel32EN()]),e.push(["Past Simple отрицательные и вопросы","Past Simple негативні та питання","Past Simple przeczenia i pytania","Past Simple Negative and Questions"]),e.push(["Вставьте глагол вместо троеточия или подберите правильное предложение в простом прошедшем времени.","Вставте дієслово замість три крапки або підберіть правильну пропозицію в простому часі.","Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym prostym.","Insert a verb instead of the ellipsis or choose the correct sentence in the simple past tense."]),e.push([indexForThoury.returnLevel31(),indexForThoury.returnLevel31UA(),indexForThoury.returnLevel31PL(),indexForThoury.returnLevel31EN()]),e.push(["Подобрать пару правильный - неправильный глагол. Тест разбавлен небольшим числом правильных глаголов.","Підібрати пару правильне - неправильне дієслово. Тест розбавлений невеликою кількістю правильних дієслів.","Dopasuj właściwy czasownik nieregularny. Test jest rozcieńczany niewielką liczbą czasowników regularnych.","Match a pair of regular and irregular verbs. The test is diluted with a small number of regular verbs."]),e.push(["Прошедшее простое","Минуле просте","Przeszłość prosta","Past simple"]),e.push(["Помощь","Допомога","Pomoc","Help"]),e.push(["Теория:","Теорія:","Teoria:","Theory:"]),e.push(["Задание теста:","Завдання тесту:","Zadanie testowe:","Test task:"]),e.push(["Переводов:","Перекладів:","Tłumaczenia:","Translations:"]),e.push(["Успех:","Успіх:","Sukces:","Success:"]),e.push(["Ошибок:","Помилок:","Błędy:","Errors:"]),e.push(["Статистика","Статистика","Statystyka","Statistics"]),e.push(["Собрано алмазов:","Зібрано алмазів:","Zebrane diamenty:","Diamonds collected:"]),e.push(["Глаголы Was и Were","Глаголи Was і Were","Czasowniki Was i Were","Verbs Was and Were"]),e.push([indexForThoury.returnLevel23(),indexForThoury.returnLevel23UA(),indexForThoury.returnLevel23PL(),indexForThoury.returnLevel23EN()]),e.push(["Упс. Кто-то уже сообщил об этой ошибке.","Упс. Хтось уже повідомив про цю помилку.","Ups. Ktoś już zgłosił ten błąd.","Oops. Someone already reported this bug."]),e.push(["Ошибка зафиксирована","Помилка зафіксована","Zapisano błąd","Error recorded"]),e.push([indexForThoury.returnLevel21(),indexForThoury.returnLevel21UA(),indexForThoury.returnLevel21PL(),indexForThoury.returnLevel21EN()]),e.push(["Глаголы Have и Have Got","Дієслова Have та Have Got","Czasowniki Have i Have Got","The verbs Have and Have Got"]),e.push([indexForThoury.returnLevel19(),indexForThoury.returnLevel19UA(),indexForThoury.returnLevel19PL(),indexForThoury.returnLevel19EN()]),e.push(["Выбор между P.S. и настоящим продолженным P.C.","Вибір між P.S. та справжнім продовженим P.C.","Wybór pomiędzy P.S. i niniejszym kontynuuje P.C.","The choice between P.S. and the present continuation P.C."]),e.push([indexForThoury.returnLevel18(),indexForThoury.returnLevel18UA(),indexForThoury.returnLevel18PL(),indexForThoury.returnLevel18EN()]),e.push(["Простое настоящее  P.S. вопросы","Просте справжнє P.S. питання","Prosty prezent P.S. pytania","Simple present P.S. questions"]),e.push([indexForThoury.returnLevel17(),indexForThoury.returnLevel17UA(),indexForThoury.returnLevel17PL(),indexForThoury.returnLevel17EN()]),e.push(["Простое настоящее  P.S. негативное","Просте справжнє P.S. негативне","Prosty prezent P.S. negatywny","Simple present P.S. negative"]),e.push([indexForThoury.returnLevel16(),indexForThoury.returnLevel16UA(),indexForThoury.returnLevel16PL(),indexForThoury.returnLevel16EN()]),e.push(["Простое настоящее  P.S. плюс периодичность","Просте справжнє P.S. плюс періодичність","Prosty prezent P.S. plus częstotliwość","Simple present P.S. plus periodicity"]),e.push([indexForThoury.returnLevel15(),indexForThoury.returnLevel15UA(),indexForThoury.returnLevel15PL(),indexForThoury.returnLevel15EN()]),e.push(["Простое настоящее P.S.","Просте справжнє P.S.","Prosty prezent P.S.","Simple present P.S."]),e.push([indexForThoury.returnLevel14(),indexForThoury.returnLevel14UA(),indexForThoury.returnLevel14PL(),indexForThoury.returnLevel14EN()]),e.push(["Образования вопросов в настоящем продолженном времени P.C.","Утворення питань у поточному продовженому часі P.C.","Tworzenie pytań w czasie teraźniejszym ciągłym P.C.","Formation of questions in the present continuous tense P.C."]),e.push(["Правило для настоящего продолженного времени (Present Continuous)","Правило для поточного часу (Present Continuous)","Reguła czasu teraźniejszego ciągłego","Rule for the Present Continuous"]),e.push(["Создание вопросов в Present Simple и Past Simple","Створення питань у Present Simple та Past Simple","Tworzenie pytań w czasie Present Simple i Past Simple","Forming questions in Present Simple and Past Simple"]),e.push(["Понятно","Зрозуміло","To jasne","It's clear"]),e.push(["Просто учим слова","Просто вчимо слова","Dopiero uczę się słówek","Just learning words"]),e.push(["Сокращенная форма глагола to Be","Скорочена форма дієслова","Krótka forma czasownika być","Shortened form of the verb to be"]),e.push(["Выбрать правильную пару.","Вибрати правильну пару.","Wybierz odpowiednią parę.","Choose the right pair."]),e.push(["Выбери верную форму глагола","Вибери правильну форму дієслова","Wybierz poprawną formę czasownika","Choose the correct form of the verb"]),e.push(["Вторая форма неправильных глаголов","Друга форма неправильних дієслів","Druga forma czasowników nieregularnych","The second form of irregular verbs"]),e.push(["Выбрать правильное время PS or PC","Вибрати правильне час PS or PC","Wybierz odpowiedni czas PS or PC","Choose the right time PS or PC"]),e.push(["Учить слова","Вчити слова","Ucz się słów","Learn words"]),e.push(["Подобрать правильно вопрос или ответ","Підібрати правильно питання чи відповідь","Wybierz właściwe pytanie lub odpowiedź","Choose the right question or answer"]),e.push(["Настоящее простое вопросы","Справжнє просте питання","Przedstaw proste pytania","Present simple questions"]),e.push(["Настоящее простое негативное","Справжнє просте негативне","Przedstaw prosty negatyw","Present simple negative"]),e.push(["300 глаголов","300 дієслів (RU)","300 czasowników (RU)","300 verbs (RU)"]),e.push(["50 глаголов","50 дієслів (RU/PL)","50 czasowników (RU/PL)","50 verbs (RU/PL)"]),e.push(["100 слов про спорт","100 слів про спорт (RU/PL)","100 słów o sporcie (RU/PL)","100 words about sports(RU/PL)"]),e.push(["Выберите правильно составленное предложение.","Виберіть правильно складену пропозицію.","Wybierz właściwe zdanie.","Choose the correctly constructed sentence."]),e.push(["Настоящее простое + периодичность","Справжнє просте + періодичність","Czas teraźniejszy prosty + okresowość","Present Simple + Periodicity"]),e.push(["Настоящее простое","Справжнє просте","Prezent prosty","Present simple"]),e.push(["Настоящее продолженное - вопрос","Справжнє продовжене – питання","Czas teraźniejszy ciągły – pytanie","Choose the right question"]),e.push(["Выбрать правильный вопрос","Вибрати правильне питання","Wybierz właściwe pytanie","Choose the right question"]),e.push(["Сообщить об ошибке","Повідомити про помилку","Zgłoś błąd","Report a bug"]),e.push(["Перевести вопрос","Перекласти питання","Przetłumacz pytanie","Translate question"]),e.push(["Выбрать правильный перевод","Вибрати правильний переклад","Wybierz właściwe tłumaczenie","Choose the correct translation"]),e.push(["100 слов о еде","100 слів про їжу","100 słów o jedzeniu","100 words about food"]),e.push(["100 слов о путешествии","100 слів про подорож (RU)","100 słów o podróżach (RU)","100 words about travel (RU)"]),e.push(["100 слов","100 слів (RU)","100 słów (RU)","100 words (RU)"]),e.push(["300 слов","300 слів (RU)","300 słów (RU)","300 words (RU)"]),e.push(["500 слов","500 слів (RU)","500 słów (RU)","500 words (RU)"]),e.push(["Настоящее продолженное","Присутній безперервний","Teraźniejszość ciągła","Present continuous"]),e.push(["Последний тест","Останній тест","Ostatni test","The last test"]),e.push(["Задание для теста","Завдання для тесту","Zadanie testowe","Task for the test"]),e.push(["Вопрос с вариантами ответа","Питання з варіантами відповіді","Pytanie wielokrotnego wyboru","Multiple choice question"]),e.push(["Where/Who...","Where/Who...","Where/Who...","Where/Who..."]),e.push(["Вставить правильное слово","Вставити правильне слово","Wstaw właściwe słowo","Insert the correct word"]),e.push(["To Be, ответь на вопрос","To Be, дай відповідь на запитання","Być, odpowiedz na pytanie","To Be, answer the question"]),e.push(["To Be, вопрос/ответ","To Be, питання/відповідь","Być, pytanie/odpowiedź","To Be, Q&A"]),e.push(["To Be, краткая форма","To Be, коротка форма","Być, krótka forma","To Be, short form"]),e.push(["Выбрать правильный вариант ответа","Вибрати правильний варіант відповіді","Wybierz poprawną odpowiedź","Choose the correct answer"]),e.push(["Сброс","Скидання","Resetowanie","Reset"]),e.push(["Выбрать правильный вариант сокращенной формы глагола to Be","Вибрати правильний варіант скороченої форми дієслова to Be","Wybierz poprawną wersję skróconej formy czasownika to Be","Choose the correct version of the shortened form of the verb to Be"]),e}class LanguageController{constructor(){this.langStr=localStorage.getItem("EnglishWithJs_lang")||"ru"}translate(a){if(this.langStr==="ru")return a;let t="",o=3;switch(this.langStr){case"pl":o=2;break;case"ua":o=1;break}return t=a,exportBDTranslate().forEach(i=>{i[0]==a&&(t=i[o])}),t}}const Help={translate:new LanguageController,viewhandleHelpToTranslate:function(e,a){const t=document.createElement("div");t.id="container-for-video-help";let o=this.translate.translate(e);o=o.replace(/<div id='video-help'><\/div>/,this.addVideoHelp(a)),t.innerHTML=o,document.body.appendChild(t),document.getElementById("button-close-info-modal").addEventListener("click",()=>{document.getElementById("container-for-video-help").remove()})},addVideoHelp(e){return`
         <div class="embed-responsive embed-responsive-16by9">
           <iframe showinfo=1 class="embed-responsive-item" src="https://www.youtube.com/embed/${e}" allowfullscreen></iframe>
         </div>
@@ -4788,6 +4346,400 @@ Examples:
 ul
 I am not working.
 They are not sleeping.
+`}function thouryUnit16(){return`
+    file36
+    unit-16
+    ru
+h2
+Глаголы из третьей группы (Неправильные глаголы)
+
+ul
+Irregular verbs не следуют стандартным правилам образования форм прошедшего времени и причастия прошедшего времени. 
+Эти глаголы имеют уникальные формы, которые необходимо запоминать, так как их нельзя предсказать по правилам.
+
+h3
+Основные характеристики:
+
+h3
+Неизменяемый инфинитив: 
+
+h4
+Например, глагол read сохраняет одинаковое написание во всех формах, но произношение различается:
+
+ul
+Present: [riːd]
+Past: [rɛd]
+
+h3
+Различие форм: 
+
+h4
+Формы неправильных глаголов могут быть уникальными для каждой из их временных форм. Пример:
+
+ul
+Base Form (инфинитив): begin — Past Simple: began — Past Participle: begun
+
+h3
+Где используются:
+
+ul
+Неправильные глаголы широко используются в английском языке и встречаются как в разговорной речи, так и в письменной. Они необходимы для правильного построения различных временных конструкций и используются в следующих случаях:
+Действия в прошлом: Например, в предложении "She went to the store." (Она пошла в магазин), где глагол went является неправильной формой от go.
+Перфектные времена: В предложении "He has written a letter." (Он написал письмо) используется форма written от глагола write для образования Present Perfect.
+Пассивный залог: В предложении "The book was written by an unknown author." (Книга была написана неизвестным автором) используется форма written от write.
+
+h3
+Роль в изучении:
+
+h4
+Изучение неправильных глаголов очень важно для правильного формирования предложений в английском языке, особенно в прошедшем времени и перфектных конструкциях. Они составляют значительную часть повседневной речи и письменного общения. В учебниках, таких как Essential Grammar in Use Рэймонда Мерфи, неправильным глаголам уделяется особое внимание, включая таблицы для заучивания.
+
+h3
+Пример:
+
+ul
+Base Form: begin — Past Simple: began — Past Participle: begun
+Base Form: read — Past Simple: read — Past Participle: read
+Base Form: go — Past Simple: went — Past Participle: gone
+
+
+
+
+ua
+h2
+Дієслова третьої групи (Неправильні дієслова)
+
+ul
+Irregular verbs не дотримуються стандартних правил утворення форм минулого часу та дієприкметника минулого часу. 
+Ці дієслова мають унікальні форми, які необхідно запам'ятовувати, оскільки їх не можна передбачити за правилами.
+
+h3
+Основні характеристики:
+
+h3
+Незмінюваний інфінітив: 
+
+h4
+Наприклад, дієслово read зберігає однакове написання у всіх формах, але вимова відрізняється:
+
+ul
+Present: [riːd]
+Past: [rɛd]
+
+h3
+Відмінності форм: 
+
+h4
+Форми неправильних дієслів можуть бути унікальними для кожної їх часової форми. Приклад:
+
+ul
+Base Form (інфінітив): begin — Past Simple: began — Past Participle: begun
+
+h3
+Де використовуються:
+
+ul
+Неправильні дієслова широко використовуються в англійській мові і зустрічаються як у розмовній мові, так і в письмовій. Вони необхідні для правильного побудови різних часових конструкцій і використовуються у наступних випадках:
+Дії в минулому: Наприклад, у реченні "She went to the store." (Вона пішла до магазину), де дієслово went є неправильною формою від go.
+Перфектні часи: У реченні "He has written a letter." (Він написав лист) використовується форма written від дієслова write для утворення Present Perfect.
+Пасивний стан: У реченні "The book was written by an unknown author." (Книга була написана невідомим автором) використовується форма written від write.
+
+h3
+Роль у вивченні:
+
+h4
+Вивчення неправильних дієслів дуже важливе для правильного формування речень в англійській мові, особливо в минулому часі та перфектних конструкціях. Вони складають значну частину повсякденної мови та письмового спілкування. У підручниках, таких як Essential Grammar in Use Реймонда Мерфі, неправильним дієсловам приділяється особлива увага, включаючи таблиці для заучування.
+
+h3
+Приклад:
+
+ul
+Base Form: begin — Past Simple: began — Past Participle: begun
+Base Form: read — Past Simple: read — Past Participle: read
+Base Form: go — Past Simple: went — Past Participle: gone
+
+
+
+
+pl
+h2
+Czasowniki trzeciej grupy (Czasowniki nieregularne)
+
+ul
+Czasowniki nieregularne (Irregular verbs) nie stosują się do standardowych zasad tworzenia form czasu przeszłego i imiesłowu przeszłego. 
+Te czasowniki mają unikalne formy, które należy zapamiętać, ponieważ nie można ich przewidzieć według zasad.
+
+h3
+Główne cechy:
+
+h3
+Nieodmienny infinitiv: 
+
+h4
+Na przykład, czasownik read zachowuje takie samo pisownię we wszystkich formach, ale wymowa różni się:
+
+ul
+Present: [riːd]
+Past: [rɛd]
+
+h3
+Różnice form: 
+
+h4
+Formy czasowników nieregularnych mogą być unikalne dla każdej ich formy czasowej. Przykład:
+
+ul
+Base Form (infinitiv): begin — Past Simple: began — Past Participle: begun
+
+h3
+Gdzie są używane:
+
+ul
+Czasowniki nieregularne są szeroko stosowane w języku angielskim i występują zarówno w mowie, jak i w piśmie. Są potrzebne do prawidłowego tworzenia różnych konstrukcji czasowych i stosowane w następujących przypadkach:
+Czynności w przeszłości: Na przykład w zdaniu "She went to the store." (Ona poszła do sklepu), gdzie czasownik went jest nieregularną formą od go.
+Czasy perfektywne: W zdaniu "He has written a letter." (On napisał list) używana jest forma written od czasownika write do tworzenia Present Perfect.
+Strona bierna: W zdaniu "The book was written by an unknown author." (Książka została napisana przez nieznanego autora) używana jest forma written od write.
+
+h3
+Rola w nauce:
+
+h4
+Nauka czasowników nieregularnych jest bardzo ważna dla prawidłowego tworzenia zdań w języku angielskim, szczególnie w czasie przeszłym i konstrukcjach perfektywnych. Stanowią one znaczną część codziennej mowy i komunikacji pisemnej. W podręcznikach, takich jak Essential Grammar in Use Raymonda Murphy'ego, czasownikom nieregularnym poświęca się szczególną uwagę, w tym tabele do nauki na pamięć.
+
+h3
+Przykład:
+
+ul
+Base Form: begin — Past Simple: began — Past Participle: begun
+Base Form: read — Past Simple: read — Past Participle: read
+Base Form: go — Past Simple: went — Past Participle: gone
+
+
+
+en
+h2
+Third Group Verbs (Irregular Verbs)
+
+ul
+Irregular verbs do not follow the standard rules for forming the past tense and past participle. 
+These verbs have unique forms that must be memorized, as they cannot be predicted by rules.
+
+h3
+Main Characteristics:
+
+h3
+Unchanging Infinitive: 
+
+h4
+For example, the verb read keeps the same spelling in all forms, but the pronunciation differs:
+
+ul
+Present: [riːd]
+Past: [rɛd]
+
+h3
+Form Differences: 
+
+h4
+The forms of irregular verbs can be unique for each of their tense forms. Example:
+
+ul
+Base Form (infinitive): begin — Past Simple: began — Past Participle: begun
+
+h3
+Where They Are Used:
+
+ul
+Irregular verbs are widely used in English and appear both in spoken and written language. They are necessary for correctly forming various tense constructions and are used in the following cases:
+Actions in the past: For example, in the sentence "She went to the store," where the verb went is the irregular form of go.
+Perfect tenses: In the sentence "He has written a letter," the form written of the verb write is used to form the Present Perfect.
+Passive voice: In the sentence "The book was written by an unknown author," the form written of write is used.
+
+h3
+Role in Learning:
+
+h4
+Learning irregular verbs is very important for correctly forming sentences in English, especially in the past tense and perfect constructions. They make up a significant part of everyday speech and written communication. In textbooks such as Raymond Murphy's *Essential Grammar in Use*, irregular verbs receive special attention, including tables for memorization.
+
+h3
+Example:
+
+ul
+Base Form: begin — Past Simple: began — Past Participle: begun
+Base Form: read — Past Simple: read — Past Participle: read
+Base Form: go — Past Simple: went — Past Participle: gone
+
+
+`}function thouryUnit17(){return`
+    file37
+    unit-17
+    ru
+h2
+Определение времени Present Perfect
+
+h3
+Present Perfect — это время, которое используется для описания действий, имеющих связь с настоящим моментом. Оно подчеркивает результат действия, который имеет значение в текущем времени, или действия, произошедшие в неопределённый момент в прошлом. Это время формируется с помощью вспомогательного глагола have (или has для третьего лица) и причастия прошедшего времени основного глагола.
+
+ul
+I have done
+I have done my homework. — Я сделал домашку. Это пример использования Present Perfect, когда результат действия важен для текущего момента.
+
+h3
+I have just
+
+ul
+I have just finished my lunch. — Я только что закончил обедать. Здесь "just" указывает на недавность действия.
+
+h3
+I have already
+
+ul
+I have already seen that movie. — Я уже видел этот фильм. Используется для выражения действий, которые произошли раньше, чем ожидалось.
+
+h3
+I have not... yet
+
+ul
+I have not finished my project yet. — Я ещё не закончил мой проект. Здесь "yet" подчеркивает, что действие ещё не завершено.
+
+h3
+Have you ever...?
+
+ul
+Have you ever been to Paris? — Ты когда-нибудь был в Париже? Это вопрос о прошлом опыте, не привязанном к конкретному времени.
+
+h3
+I have never...
+
+ul
+I have never tried sushi. — Я никогда не пробовал суши. Здесь "never" указывает на отсутствие опыта.
+
+ua
+h2
+Визначення часу Present Perfect
+
+h3
+Present Perfect — це час, який використовується для опису дій, що мають зв'язок з теперішнім моментом. Він підкреслює результат дії, який має значення в поточний час, або дії, що сталися в невизначений момент у минулому. Цей час формується за допомогою допоміжного дієслова have (або has для третьої особи) та дієприкметника минулого часу основного дієслова.
+
+ul
+I have done
+I have done my homework. — Я зробив домашнє завдання. Це приклад використання Present Perfect, коли результат дії важливий для поточного моменту.
+
+h3
+I have just
+
+ul
+I have just finished my lunch. — Я щойно закінчив обідати. Тут "just" вказує на недавність дії.
+
+h3
+I have already
+
+ul
+I have already seen that movie. — Я вже бачив цей фільм. Використовується для вираження дій, що сталися раніше, ніж очікувалося.
+
+h3
+I have not... yet
+
+ul
+I have not finished my project yet. — Я ще не закінчив свій проєкт. Тут "yet" підкреслює, що дія ще не завершена.
+
+h3
+Have you ever...?
+
+ul
+Have you ever been to Paris? — Ти коли-небудь був у Парижі? Це питання про минулий досвід, не прив'язане до конкретного часу.
+
+h3
+I have never...
+
+ul
+I have never tried sushi. — Я ніколи не пробував суші. Тут "never" вказує на відсутність досвіду.
+
+
+pl
+h2
+Definicja czasu Present Perfect
+
+h3
+Present Perfect — to czas używany do opisywania czynności mających związek z teraźniejszością. Podkreśla wynik czynności, który jest istotny w obecnym momencie, lub czynności, które miały miejsce w nieokreślonym momencie w przeszłości. Ten czas tworzy się za pomocą czasownika posiłkowego have (lub has dla trzeciej osoby) oraz imiesłowu czasu przeszłego głównego czasownika.
+
+ul
+I have done
+I have done my homework. — Zrobiłem pracę domową. To przykład użycia Present Perfect, gdy wynik czynności jest ważny w danym momencie.
+
+h3
+I have just
+
+ul
+I have just finished my lunch. — Właśnie skończyłem obiad. Tutaj "just" wskazuje na niedawne wykonanie czynności.
+
+h3
+I have already
+
+ul
+I have already seen that movie. — Już widziałem ten film. Używane do opisania czynności, które miały miejsce wcześniej, niż oczekiwano.
+
+h3
+I have not... yet
+
+ul
+I have not finished my project yet. — Jeszcze nie skończyłem mojego projektu. Tutaj "yet" podkreśla, że czynność jeszcze się nie zakończyła.
+
+h3
+Have you ever...?
+
+ul
+Have you ever been to Paris? — Czy kiedykolwiek byłeś w Paryżu? To pytanie o przeszłe doświadczenie, niepowiązane z konkretnym czasem.
+
+h3
+I have never...
+
+ul
+I have never tried sushi. — Nigdy nie próbowałem sushi. Tutaj "never" wskazuje na brak doświadczenia.
+
+
+en
+h2
+Definition of the Present Perfect
+
+h3
+Present Perfect is a tense used to describe actions that are connected to the present moment. It emphasizes the result of an action that matters now, or actions that happened at an indefinite time in the past. This tense is formed using the auxiliary verb have (or has for third person) and the past participle of the main verb.
+
+ul
+I have done
+I have done my homework. — This is an example of using the Present Perfect when the result of the action is important for the present moment.
+
+h3
+I have just
+
+ul
+I have just finished my lunch. — "Just" indicates that the action happened recently.
+
+h3
+I have already
+
+ul
+I have already seen that movie. — Used to describe actions that occurred earlier than expected.
+
+h3
+I have not... yet
+
+ul
+I have not finished my project yet. — "Yet" emphasizes that the action has not been completed.
+
+h3
+Have you ever...?
+
+ul
+Have you ever been to Paris? — This is a question about past experience, not tied to a specific time.
+
+h3
+I have never...
+
+ul
+I have never tried sushi. — "Never" indicates the absence of experience.
+
+
 `}function thouryUnit18(){return`
     file38
     unit-18
@@ -8815,9 +8767,9 @@ ul
 - questions: may — normal, might — formal
 
 
-`}const arrayDataThoury=[];arrayDataThoury.push(thouryUnit1());arrayDataThoury.push(thouryUnit2());arrayDataThoury.push(thouryUnit2_2());arrayDataThoury.push(thouryUnit3());arrayDataThoury.push(thouryUnit18());arrayDataThoury.push(thouryUnit19());arrayDataThoury.push(thouryUnit20());arrayDataThoury.push(thouryUnit21());arrayDataThoury.push(thouryUnit22());arrayDataThoury.push(thouryUnit23());arrayDataThoury.push(thouryUnit24());arrayDataThoury.push(thouryUnit25());arrayDataThoury.push(thouryUnit26());arrayDataThoury.push(thouryUnit27());arrayDataThoury.push(thouryUnit28());arrayDataThoury.push(thouryUnit29());function returnDataArrayForStr(e){let a="";return Number.isFinite(e)?a="file"+e:a=e,a=arrayDataThoury.find(t=>t.includes(a)),a}function searchLabel(e,a){if(e==null)return"";a+=`
+`}const arrayDataThoury=[];arrayDataThoury.push(thouryUnit1());arrayDataThoury.push(thouryUnit2());arrayDataThoury.push(thouryUnit2_2());arrayDataThoury.push(thouryUnit3());arrayDataThoury.push(thouryUnit16());arrayDataThoury.push(thouryUnit17());arrayDataThoury.push(thouryUnit18());arrayDataThoury.push(thouryUnit19());arrayDataThoury.push(thouryUnit20());arrayDataThoury.push(thouryUnit21());arrayDataThoury.push(thouryUnit22());arrayDataThoury.push(thouryUnit23());arrayDataThoury.push(thouryUnit24());arrayDataThoury.push(thouryUnit25());arrayDataThoury.push(thouryUnit26());arrayDataThoury.push(thouryUnit27());arrayDataThoury.push(thouryUnit28());arrayDataThoury.push(thouryUnit29());function returnDataArrayForStr(e){let a="";return Number.isFinite(e)?a="file"+e:a=e,a=arrayDataThoury.find(t=>t.includes(a)),a}function searchLabel(e,a){if(e==null)return"";a+=`
 `;let t=e.indexOf(a);return t<0&&(t=e.indexOf(a.charAt(0).toUpperCase()+a.slice(1))),t<0&&e.indexOf(a.toUpperCase()),t<0&&(t=0,console.log("не удалось найти маркер "+a)),t}function returnStringHelpForLanguage(e){const a=returnDataArrayForStr(e);if(a==null)return"";let t={ru:searchLabel(a,"ru"),ua:searchLabel(a,"ua"),pl:searchLabel(a,"pl"),en:searchLabel(a,"en"),strLenght:a.length,get start(){return localStorage.getItem("EnglishWithJs_lang")==="ru"?this.ru:localStorage.getItem("EnglishWithJs_lang")==="ua"?this.ua:localStorage.getItem("EnglishWithJs_lang")==="pl"?this.pl:this.en},get finish(){const i=[this.ru,this.ua,this.pl,this.en];i.sort((s,r)=>s-r);let n=i.find(s=>s>this.start);return n==null&&(n=this.strLenght),n}};return a.slice(t.start,t.finish)}function ThouryH2(e="start",a=0){return e==="start"?`<h2 id="thoury-pattern-h2-${a}">`:"</h2>"}function ThouryH3(e="start",a=0){return e==="start"?`<h3 id="thoury-pattern-h3-${a}">`:"</h3>"}function ThouryH4(e="start",a=0){return e==="start"?`<h4 id="thoury-pattern-h4-${a}">`:"</h4>"}function ThouryUl(e="start",a=0){return e==="start"?`<ul id="thoury-pattern-ui-${a}">`:"</ul>"}function ThouryLi(e="start",a=0){return e==="start"?`<li id="thoury-pattern-li-${a}">`:"</li>"}function ThouryDiv(e="start"){return e==="start"?'<div class="thoury-pattern" id="thoury-pattern">':"</div>"}function returnBodyHelpForLanguage(e){let a=returnStringHelpForLanguage(e);if(a=="")return"";let t=a.split(`
-`),o="",i="",n="",s=0;for(let r of t){if(s++,r.trim()==""&&n!==""){i=="h2"&&(n=ThouryH2("start",s)+n+ThouryH2(""),o=o+n+"<hr>"),i=="ul"&&(n=ThouryUl("start",s)+n+ThouryUl(""),o=o+n),i=="h3"&&(n=ThouryH3("start",s)+n+ThouryH3(""),o=o+n),i=="h4"&&(n=ThouryH4("start",s)+n+ThouryH4(""),o=o+n),i="",n="";continue}if(r.trim().split(/\s+/).includes("h2")){i="h2";continue}if(r.trim().split(/\s+/).includes("h3")){i="h3";continue}if(r.trim().split(/\s+/).includes("h4")){i="h4";continue}if(r.trim().split(/\s+/).includes("ul")){i="ul";continue}(i=="h4"||i=="h3"||i=="h2"||i=="ul")&&((i=="h4"||i=="h3"||i=="h2"||i=="P")&&(n+=r+"<br>"),i=="ul"&&(n+=ThouryLi("start",s)+r+ThouryLi("")))}return ThouryDiv()+o+ThouryDiv("")}function getBodyThoury(e){switch(e.level){case 37:return e.translate.translate(indexForThoury.returnLevel37());case 20:return e.translate.translate(indexForThoury.returnLevel20());case 36:return e.translate.translate(indexForThoury.returnLevel36());case 35:return e.translate.translate(indexForThoury.returnLevel35());case 34:return e.translate.translate(indexForThoury.returnLevel34());case 33:return e.translate.translate(indexForThoury.returnLevel33());case 32:return e.translate.translate(indexForThoury.returnLevel32());case 31:return e.translate.translate(indexForThoury.returnLevel31());case 23:return e.translate.translate(indexForThoury.returnLevel23());case 21:return e.translate.translate(indexForThoury.returnLevel21());case 19:return e.translate.translate(indexForThoury.returnLevel19());case 18:return e.translate.translate(indexForThoury.returnLevel18());case 17:return e.translate.translate(indexForThoury.returnLevel17());case 16:return e.translate.translate(indexForThoury.returnLevel16());case 15:return e.translate.translate(indexForThoury.returnLevel15());case 14:return e.translate.translate(indexForThoury.returnLevel14());default:let a=returnBodyHelpForLanguage(e.level);return a==""?e.translate.translate("Просто учим слова"):a}}function getWorkPlace(e,a){return`
+`),o="",i="",n="",s=0;for(let r of t){if(s++,r.trim()==""&&n!==""){i=="h2"&&(n=ThouryH2("start",s)+n+ThouryH2(""),o=o+n+"<hr>"),i=="ul"&&(n=ThouryUl("start",s)+n+ThouryUl(""),o=o+n),i=="h3"&&(n=ThouryH3("start",s)+n+ThouryH3(""),o=o+n),i=="h4"&&(n=ThouryH4("start",s)+n+ThouryH4(""),o=o+n),i="",n="";continue}if(r.trim().split(/\s+/).includes("h2")){i="h2";continue}if(r.trim().split(/\s+/).includes("h3")){i="h3";continue}if(r.trim().split(/\s+/).includes("h4")){i="h4";continue}if(r.trim().split(/\s+/).includes("ul")){i="ul";continue}(i=="h4"||i=="h3"||i=="h2"||i=="ul")&&((i=="h4"||i=="h3"||i=="h2"||i=="P")&&(n+=r+"<br>"),i=="ul"&&(n+=ThouryLi("start",s)+r+ThouryLi("")))}return ThouryDiv()+o+ThouryDiv("")}function getBodyThoury(e){switch(e.level){case 20:return e.translate.translate(indexForThoury.returnLevel20());case 35:return e.translate.translate(indexForThoury.returnLevel35());case 34:return e.translate.translate(indexForThoury.returnLevel34());case 33:return e.translate.translate(indexForThoury.returnLevel33());case 32:return e.translate.translate(indexForThoury.returnLevel32());case 31:return e.translate.translate(indexForThoury.returnLevel31());case 23:return e.translate.translate(indexForThoury.returnLevel23());case 21:return e.translate.translate(indexForThoury.returnLevel21());case 19:return e.translate.translate(indexForThoury.returnLevel19());case 18:return e.translate.translate(indexForThoury.returnLevel18());case 17:return e.translate.translate(indexForThoury.returnLevel17());case 16:return e.translate.translate(indexForThoury.returnLevel16());case 15:return e.translate.translate(indexForThoury.returnLevel15());case 14:return e.translate.translate(indexForThoury.returnLevel14());default:let a=returnBodyHelpForLanguage(e.level);return a==""?e.translate.translate("Просто учим слова"):a}}function getWorkPlace(e,a){return`
     <div class="card shadow-lg rounded-3 get-work-place">
      <button id="${a}"
          type="button" class="btn-close" aria-label="Close" 
@@ -8835,7 +8787,7 @@ ul
     `}var h;let SettingForProgram$1=(h=class{static get selectTypeTest(){return this.initializeToProperty(),this.selectTypeTestProperty}static set selectTypeTest(a){this.selectTypeTestProperty=a,localStorage.setItem("user_select",a)}static initializeToProperty(){localStorage.getItem("user_select")!==null&&(this.selectTypeTestProperty=localStorage.getItem("user_select"))}},d(h,"selectTypeTestProperty","simple"),d(h,"selectColorText","color-randome"),d(h,"selectColorBackGround","color-randome"),d(h,"borderRadius","true"),d(h,"shadow","true"),d(h,"opacity","100"),h.selectColorText=localStorage.getItem("selectColorText"),h.selectColorBackGround=localStorage.getItem("selectColorBackGround"),h.borderRadius=localStorage.getItem("borderRadius"),h.shadow=localStorage.getItem("shadow"),localStorage.getItem("opacity")&&(h.opacity=localStorage.getItem("opacity")),d(h,"inputLightNormalHard","light"),d(h,"buttonCheckX"),d(h,"buttonCheckY"),d(h,"diamant"),d(h,"buttonCheckXStart"),d(h,"buttonCheckYStart"),d(h,"randomOk",!1),d(h,"testsOk"),d(h,"testsError"),d(h,"dataElevator",[]),d(h,"commentPlus",[]),h);class LevelDataModel{constructor(e=1){this.level=DataOk$1.setLevel(e),this.rez=!1,this.ex=new Exercise,this.translate=new LanguageController,this.lang=localStorage.getItem("EnglishWithJs_lang"),this.propertyArrayNameButton=[],this.tic=0,this.arrayNameButton()}arrayNameButton(){for(let e=1;e<24;e++)this.propertyArrayNameButton.push(setStatisticForButton(e));this.propertyArrayNameButton.push(this.translate.translate("Собрано алмазов:")),this.propertyArrayNameButton.push(this.translate.translate("Ошибок:")),this.propertyArrayNameButton.push(this.translate.translate("Успех:")),this.propertyArrayNameButton.push(this.translate.translate("Сброс")),this.propertyArrayNameButton.push(this.translate.translate("Переводов:")),this.propertyArrayNameButton.push(""),this.propertyArrayNameButton.push("");for(let e=31;e<51;e++)this.propertyArrayNameButton.push(setStatisticForButton(e));this.tic=this.propertyArrayNameButton.length}static mapNameMenu(e){return[2,2,2,2,2,2,2,2,1,1,1,2,1,1,1,1,1,1,1,2,1,2,1,4,4,4,4,4,3,3,1,1,2,1,1,2,1,1,1,1,2,1,1,1,6,6,6,6,6,6][e]}selectLevel(exercise="Выбрать правильный перевод",nameArray,level,lang=!0){(SettingForProgram$1.selectTypeTest==="word-assembly"||SettingForProgram$1.selectTypeTest==="word-assembly-not-translate")&&(exercise="В этом тесте нужно собрать предложение из предложенных слов. Имейте в виду, что иногда собранное предложение может не совпадать с общей темой теста."),level==this.level&&(lang===!0||lang===this.lang)&&(this.ex.init(this.translate.translate(exercise)),localStorage.setItem("nameArrayDb",nameArray),window.Thoury.handleThoury(level),nameArray="fileDB."+nameArray,this.rez=eval(nameArray))}getArrayDB(){return this.selectLevel(void 0,"commonFood100",1,"ru"),this.selectLevel(void 0,"commonFood100ua",1,"ua"),this.selectLevel(void 0,"commonFood100pl",1,"pl"),this.selectLevel(void 0,"commonSport100",2,"ru"),this.selectLevel(void 0,"commonSport100pl",2,"pl"),this.selectLevel(void 0,"commonWalk100",3,"ru"),this.selectLevel(void 0,"commonWords100",4,"ru"),this.selectLevel(void 0,"commonWords300",5,"ru"),this.selectLevel(void 0,"commonWords500",6,"ru"),this.selectLevel(void 0,"verbs50",7,"ru"),this.selectLevel(void 0,"verbs50pl",7,"pl"),this.selectLevel(void 0,"verbs300",8,"ru"),this.selectLevel("Выбрать правильный вариант сокращенной формы глагола to Be","toBeForms",9),this.selectLevel("Выбрать правильный вариант сокращенной формы глагола to Be","toBeSentences",10),this.selectLevel("Выбрать правильный вариант ответа","questionsWithAnswers",11),this.selectLevel("Вставить правильное слово","whereThat",12),this.selectLevel("Вставить правильное слово","presentContinuous",13),this.selectLevel("Выбрать правильный вопрос","presetnContiniusQuestion",14),this.selectLevel("Вставить правильное слово","presentSimple",15),this.selectLevel("Выберите правильно составленное предложение.","presentSimpleNever",16),this.selectLevel("Вставить правильное слово","presentSimpleNegative",17),this.selectLevel("Подобрать правильно вопрос или ответ","presentSimpleQuestions",18),this.selectLevel("Выбрать правильное время PS or PC","presentSimpleOrContinius",19),this.selectLevel("Подобрать пару правильный - неправильный глагол. Тест разбавлен небольшим числом правильных глаголов.","irregularVerbsPastSimple",20),this.selectLevel("Выбрать правильную пару.","haveAndHaveGot",21),this.selectLevel("Text A1 Beginer.","textA1Begginer",22),this.selectLevel("Выбрать правильную пару.","wasOrWere",23),this.selectLevel("Вставьте глагол вместо троеточия или подберите правильное предложение в простом прошедшем времени.","pastSimpleSentences",31),this.selectLevel("Вставьте глагол вместо троеточия или подберите правильное предложение в простом прошедшем времени.","pastSimpleNegativeAndQuestions",32),this.selectLevel("Выбрать правильную пару.","presentSimpleHeSheIt",33),this.selectLevel("Вставьте глагол вместо троеточия или подберите правильное предложение в продолженном прошедшем времени.","pastContinuousArray",34),this.selectLevel("Выбрать правильную пару.","pastContinuousOrSimple",35),this.selectLevel("Выбрать правильную пару.","irregularVerbsV3",36),this.selectLevel("Выбрать правильную пару.","presentPerfectIHaveDone",37),this.selectLevel("Выбрать правильную пару.","presentPerfectAndSimpleAndContinius",38),this.selectLevel("Выбрать правильную пару.","forSinceAgoPrPerfPastSimple",39),this.selectLevel("Выбрать правильную пару.","presentPerfectOrPastSimple",40),this.selectLevel("Выбрать правильную пару.","animals100",41),this.selectLevel("Выбрать правильную пару.","passiveIsDoneWasDone",42),this.selectLevel("Выбрать правильную пару.","prContiniusPerfectPassive",43),this.selectLevel("Выбрать правильную пару.","unit23",44),this.selectLevel("Выбрать правильную пару.","unit24",45),this.selectLevel("Выбрать правильную пару.","unit25",46),this.selectLevel("Выбрать правильную пару.","unit26",47),this.selectLevel("Выбрать правильную пару.","unit27",48),this.selectLevel("Выбрать правильную пару.","unit28",49),this.selectLevel("Выбрать правильную пару.","unit29",50),this.rez}getArrayNameButton(){return this.propertyArrayNameButton}getLevel(){return this.level}getTic(){return this.tic}}function isClickTranslate(){const e=document.getElementById("translate").innerText;return e!=="Перевести вопрос"&&e!=="Перекласти питання"&&e!=="Przetłumacz pytanie"&&e!=="Translate question"}isClickTranslate.help=`
 функция проверяет что написано на кнопке заказа перевода, если не написан стартовый текст
 значит перевод был заказан.
-`;function calculateBonusMultiplier(e){if(localStorage.getItem("was_click_help")==="true")return localStorage.setItem("was_click_help","false"),SettingForProgram$1.diamant="0",0;if(isClickTranslate()&&SettingForProgram$1.selectTypeTest==="simple-translate")return SettingForProgram$1.diamant="0",0;let{str:a,level:t,log:o}=e;const i={};if(i.propertyForBonus_input=e,i.levelTest=t,a==="Error")return SettingForProgram$1.diamant="-1",1;i.errorName=DataOk.levelNameError;const{ok:n,error:s}=DataOk;i.ok=n,i.error=s;const r=new LevelDataModel([DataOk.level.int]),l=r.getArrayNameButton().length;i.numberTest=l;const u=r.getArrayNameButton();i.arrayNumberTest=u;let c=1,g;(s>0||n>0)&&(g=n/(s+n)),s==0&&n==0&&(g=1),i.bonusOne=g;const w=t/l;i.bonusTwo=w;const y=[],p=[];u.forEach((W,j)=>{y.push(DataOk.getOkIndex(j)),p.push(DataOk.getErrorIndex(j))});const v=Math.max(...y);let k=Math.max(...p);k===v&&(k+=1),i.maxError=k,i.testsOk=y,SettingForProgram$1.testsOk=y,SettingForProgram$1.testsError=p,i.maxOk=v,i.testsError=p;let z=1-(n+s)/(v+k);isNaN(z)&&(z=1),i.bonusThree=z,i.calculateMedian=calculateMedian(y);let b;n==0&&calculateMedian(y)==0&&(b=1),n>calculateMedian(y)?b=calculateMedian(y)/n:n<calculateMedian(y)&&(b=n/calculateMedian(y));let f=b;isNaN(f)&&(f=1),i.bonusFour=f,c=(g+w+z+f)/4,i.ticLocalFull=c;let m=3;return localStorage.getItem("user_select")==="word-assembly"&&(m=6),localStorage.getItem("user_select")==="word-assembly-not-translate"&&(m=9),SettingForProgram$1.inputLightNormalHard=="normal"&&(m+=1),SettingForProgram$1.inputLightNormalHard=="hard"&&(m+=3),c*=m,c<.4&&(c=.4),i.ticLocalRezult=c,o&&(console.log("---calculateBonusMultiplier---"),console.log(i),console.log("***************************")),SettingForProgram$1.diamant=c.toFixed(2),c}function calculateMedian(e){const a=[...e].sort((o,i)=>o-i),t=Math.floor(a.length/2);return a.length%2===0?(a[t-1]+a[t])/2:a[t]}function diamentReturnStr(){let e=0,a=0,t=0,o=0;for(let l in localStorage)o=parseInt(localStorage.getItem(l)),!(isNaN(o)||o=="")&&(l.includes("_Ok")&&(e+=o),l.includes("_Error")&&(a+=o),l.includes("intTranslate")&&(t+=o));const i=e-a*3-t/2;let n=parseInt(i),s="💎";n<0&&(s="💀");let r="<span>😊</span>";return a/e<=.5&&a/e>0&&(r="<span>😔</span>"),a/e<=.8&&a/e>.5&&(r='<span">😭</span>'),[s,r,n]}function diamentView(e,a,t){return[a,t,e]=diamentReturnStr(),`
+`;function calculateBonusMultiplier(e){if(localStorage.getItem("was_click_help")==="true")return localStorage.setItem("was_click_help","false"),SettingForProgram$1.diamant="0",0;if(isClickTranslate()&&SettingForProgram$1.selectTypeTest==="simple-translate")return SettingForProgram$1.diamant="0",0;let{str:a,level:t,log:o}=e;const i={};if(i.propertyForBonus_input=e,i.levelTest=t,a==="Error")return SettingForProgram$1.diamant="-1",1;i.errorName=DataOk.levelNameError;const{ok:n,error:s}=DataOk;i.ok=n,i.error=s;const r=new LevelDataModel([DataOk.level.int]),l=r.getArrayNameButton().length;i.numberTest=l;const m=r.getArrayNameButton();i.arrayNumberTest=m;let c=1,g;(s>0||n>0)&&(g=n/(s+n)),s==0&&n==0&&(g=1),i.bonusOne=g;const w=t/l;i.bonusTwo=w;const y=[],p=[];m.forEach((W,j)=>{y.push(DataOk.getOkIndex(j)),p.push(DataOk.getErrorIndex(j))});const v=Math.max(...y);let k=Math.max(...p);k===v&&(k+=1),i.maxError=k,i.testsOk=y,SettingForProgram$1.testsOk=y,SettingForProgram$1.testsError=p,i.maxOk=v,i.testsError=p;let z=1-(n+s)/(v+k);isNaN(z)&&(z=1),i.bonusThree=z,i.calculateMedian=calculateMedian(y);let b;n==0&&calculateMedian(y)==0&&(b=1),n>calculateMedian(y)?b=calculateMedian(y)/n:n<calculateMedian(y)&&(b=n/calculateMedian(y));let f=b;isNaN(f)&&(f=1),i.bonusFour=f,c=(g+w+z+f)/4,i.ticLocalFull=c;let u=3;return localStorage.getItem("user_select")==="word-assembly"&&(u=6),localStorage.getItem("user_select")==="word-assembly-not-translate"&&(u=9),SettingForProgram$1.inputLightNormalHard=="normal"&&(u+=1),SettingForProgram$1.inputLightNormalHard=="hard"&&(u+=3),c*=u,c<.4&&(c=.4),i.ticLocalRezult=c,o&&(console.log("---calculateBonusMultiplier---"),console.log(i),console.log("***************************")),SettingForProgram$1.diamant=c.toFixed(2),c}function calculateMedian(e){const a=[...e].sort((o,i)=>o-i),t=Math.floor(a.length/2);return a.length%2===0?(a[t-1]+a[t])/2:a[t]}function diamentReturnStr(){let e=0,a=0,t=0,o=0;for(let l in localStorage)o=parseInt(localStorage.getItem(l)),!(isNaN(o)||o=="")&&(l.includes("_Ok")&&(e+=o),l.includes("_Error")&&(a+=o),l.includes("intTranslate")&&(t+=o));const i=e-a*3-t/2;let n=parseInt(i),s="💎";n<0&&(s="💀");let r="<span>😊</span>";return a/e<=.5&&a/e>0&&(r="<span>😔</span>"),a/e<=.8&&a/e>.5&&(r='<span">😭</span>'),[s,r,n]}function diamentView(e,a,t){return[a,t,e]=diamentReturnStr(),`
     <div class="diament-view">
         <div>
             <span>${e}</span>
@@ -9180,4 +9132,4 @@ setPaddingForSimple() - устанавливает дополнительный 
         ${this.menuItem2()}
       </ul>
     </div>
-  `}addClass(){let a="";return this.numberMenuLocal===1&&(this.countItemOne++,this.countItemOne%2==1?a="style-for-item-one":a="style-for-item-two"),this.numberMenuLocal===2&&(this.countItemTwo++,this.countItemTwo%2==1?a="style-for-item-one":a="style-for-item-two")," style-for-item-start "+a}getSeedForMenu(){return document.getElementById(this.seedMenu)}}class MenuRight2 extends MenuRight{constructor(a){super(a),this.nameMenu="Units24-",this.seedMenu="burger2",this.numberMenu=6}}class MenuLearnWord extends MenuRight{constructor(a){super(a),this.nameMenu=this.translate.translate("Учить слова"),this.seedMenu="word",this.numberMenu=2}}class MenuHelp extends MenuRight{constructor(a){super(a),this.nameMenu=this.translate.translate("Помощь"),this.seedMenu="help",this.numberMenu=3}}class MenuStatictic extends MenuRight{constructor(a){super(a),this.nameMenu=this.translate.translate("Статистика"),this.seedMenu="statistic",this.numberMenu=4}}class MenuController{constructor(){this.levelDataModel=new LevelDataModel(DataOk.level.int)}init(){const a=new MenuRight(this.levelDataModel.getArrayNameButton()),t=new MenuRight2(this.levelDataModel.getArrayNameButton()),o=new MenuLearnWord(this.levelDataModel.getArrayNameButton()),i=new MenuHelp(this.levelDataModel.getArrayNameButton()),n=new MenuStatictic(this.levelDataModel.getArrayNameButton()),s=a.getSeedForMenu(),r=o.getSeedForMenu(),l=i.getSeedForMenu(),u=n.getSeedForMenu(),c=t.getSeedForMenu();s.innerHTML=a.menuDropdown2(),r.innerHTML=o.menuDropdown2(),l.innerHTML=i.menuDropdown2(),u.innerHTML=n.menuDropdown2(),c.innerHTML=t.menuDropdown2();const g=[];for(let w=1;w<=this.levelDataModel.getTic();w++){let y=LevelDataModel.mapNameMenu(w-1);y==4||y==3||y==5||(g[w]=document.getElementById("level"+w),g[w].onclick=handleLevelX.bind(null,new LevelDataModel(w)))}fixModalFocus()}}window.addEventListener("load",()=>{nav(),new MenuController().init(),document.getElementById("pullItem1").addEventListener("click",setBackground),document.getElementById("pullItem2").addEventListener("click",setBackground),document.getElementById("pullItem6").addEventListener("click",setBackground),setColorMenu(),handleForSelectLangauge(),document.getElementById("dropdownMenuburger").onclick=()=>{DataSet.resetQuestion=!0},document.getElementById("dropdownMenuburger2").onclick=()=>{DataSet.resetQuestion=!0},DataSet.resetQuestion=!0,menuSettingView(),document.querySelector("#setting").onclick=activationMenuSetting,window.SettingForProgram.initializeToProperty()});const id=setInterval(()=>{let e=!0;hundleHelpPrime()||(e=!1),initEventForMenuStatistic()||(e=!1),hundleUpdateBurgerOrWord("burger")||(e=!1),hundleUpdateBurgerOrWord("burger2")||(e=!1),hundleUpdateBurgerOrWord("word")||(e=!1),hundleUpdateBurgerOrWord("statistic")||(e=!1),e&&(console.log("Все элементы получили свои события"),clearInterval(id))},300);
+  `}addClass(){let a="";return this.numberMenuLocal===1&&(this.countItemOne++,this.countItemOne%2==1?a="style-for-item-one":a="style-for-item-two"),this.numberMenuLocal===2&&(this.countItemTwo++,this.countItemTwo%2==1?a="style-for-item-one":a="style-for-item-two")," style-for-item-start "+a}getSeedForMenu(){return document.getElementById(this.seedMenu)}}class MenuRight2 extends MenuRight{constructor(a){super(a),this.nameMenu="Units24-",this.seedMenu="burger2",this.numberMenu=6}}class MenuLearnWord extends MenuRight{constructor(a){super(a),this.nameMenu=this.translate.translate("Учить слова"),this.seedMenu="word",this.numberMenu=2}}class MenuHelp extends MenuRight{constructor(a){super(a),this.nameMenu=this.translate.translate("Помощь"),this.seedMenu="help",this.numberMenu=3}}class MenuStatictic extends MenuRight{constructor(a){super(a),this.nameMenu=this.translate.translate("Статистика"),this.seedMenu="statistic",this.numberMenu=4}}class MenuController{constructor(){this.levelDataModel=new LevelDataModel(DataOk.level.int)}init(){const a=new MenuRight(this.levelDataModel.getArrayNameButton()),t=new MenuRight2(this.levelDataModel.getArrayNameButton()),o=new MenuLearnWord(this.levelDataModel.getArrayNameButton()),i=new MenuHelp(this.levelDataModel.getArrayNameButton()),n=new MenuStatictic(this.levelDataModel.getArrayNameButton()),s=a.getSeedForMenu(),r=o.getSeedForMenu(),l=i.getSeedForMenu(),m=n.getSeedForMenu(),c=t.getSeedForMenu();s.innerHTML=a.menuDropdown2(),r.innerHTML=o.menuDropdown2(),l.innerHTML=i.menuDropdown2(),m.innerHTML=n.menuDropdown2(),c.innerHTML=t.menuDropdown2();const g=[];for(let w=1;w<=this.levelDataModel.getTic();w++){let y=LevelDataModel.mapNameMenu(w-1);y==4||y==3||y==5||(g[w]=document.getElementById("level"+w),g[w].onclick=handleLevelX.bind(null,new LevelDataModel(w)))}fixModalFocus()}}window.addEventListener("load",()=>{nav(),new MenuController().init(),document.getElementById("pullItem1").addEventListener("click",setBackground),document.getElementById("pullItem2").addEventListener("click",setBackground),document.getElementById("pullItem6").addEventListener("click",setBackground),setColorMenu(),handleForSelectLangauge(),document.getElementById("dropdownMenuburger").onclick=()=>{DataSet.resetQuestion=!0},document.getElementById("dropdownMenuburger2").onclick=()=>{DataSet.resetQuestion=!0},DataSet.resetQuestion=!0,menuSettingView(),document.querySelector("#setting").onclick=activationMenuSetting,window.SettingForProgram.initializeToProperty()});const id=setInterval(()=>{let e=!0;hundleHelpPrime()||(e=!1),initEventForMenuStatistic()||(e=!1),hundleUpdateBurgerOrWord("burger")||(e=!1),hundleUpdateBurgerOrWord("burger2")||(e=!1),hundleUpdateBurgerOrWord("word")||(e=!1),hundleUpdateBurgerOrWord("statistic")||(e=!1),e&&(console.log("Все элементы получили свои события"),clearInterval(id))},300);
