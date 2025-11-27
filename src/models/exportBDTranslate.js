@@ -159,20 +159,10 @@ BDTranslate.push(
      `Wybór pomiędzy P.S. i niniejszym kontynuuje P.C.`,
      `The choice between P.S. and the present continuation P.C.`]);
 BDTranslate.push(
-    [returnInfoUnit.returnLevel18(), 
-     returnInfoUnit.returnLevel18UA(), 
-     returnInfoUnit.returnLevel18PL(),
-     returnInfoUnit.returnLevel18EN()]);
-BDTranslate.push(
     [`Простое настоящее  P.S. вопросы`, 
      `Просте справжнє P.S. питання`, 
      `Prosty prezent P.S. pytania`,
      `Simple present P.S. questions`]);
-BDTranslate.push(
-    [returnInfoUnit.returnLevel17(), 
-      returnInfoUnit.returnLevel17UA(), 
-      returnInfoUnit.returnLevel17PL(),
-      returnInfoUnit.returnLevel17EN()]);
 BDTranslate.push(
     [`Простое настоящее  P.S. негативное`, 
      `Просте справжнє P.S. негативне`, 
