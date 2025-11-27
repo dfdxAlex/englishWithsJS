@@ -74,11 +74,6 @@ BDTranslate.push(
    returnInfoUnit.returnInfoForDiamantPL(),
    returnInfoUnit.returnInfoForDiamantEN()]);
 BDTranslate.push(
-   [returnInfoUnit.returnLevel35(), 
-    returnInfoUnit.returnLevel35UA(), 
-    returnInfoUnit.returnLevel35PL(),
-    returnInfoUnit.returnLevel35EN()]);
-BDTranslate.push(
    [returnInfoUnit.returnLevel34(), 
     returnInfoUnit.returnLevel34UA(), 
     returnInfoUnit.returnLevel34PL(),
