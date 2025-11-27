@@ -74,11 +74,6 @@ BDTranslate.push(
    returnInfoUnit.returnInfoForDiamantPL(),
    returnInfoUnit.returnInfoForDiamantEN()]);
 BDTranslate.push(
-   [returnInfoUnit.returnLevel34(), 
-    returnInfoUnit.returnLevel34UA(), 
-    returnInfoUnit.returnLevel34PL(),
-    returnInfoUnit.returnLevel34EN()]);
-BDTranslate.push(
    [`Вставьте глагол вместо троеточия или подберите правильное предложение в продолженном прошедшем времени.`, 
     `Вставте дієслово замість три крапки або підберіть правильну пропозицію в минулому часі.`, 
     `Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym ciągłym.`,
