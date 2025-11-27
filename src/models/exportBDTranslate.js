@@ -89,11 +89,6 @@ BDTranslate.push(
      `Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym prostym.`,
      `Insert a verb instead of the ellipsis or choose the correct sentence in the simple past tense.`]);
 BDTranslate.push(
-   [returnInfoUnit.returnLevel31(), 
-    returnInfoUnit.returnLevel31UA(), 
-    returnInfoUnit.returnLevel31PL(),
-    returnInfoUnit.returnLevel31EN()]);
-BDTranslate.push(
     [`Подобрать пару правильный - неправильный глагол. Тест разбавлен небольшим числом правильных глаголов.`, 
      `Підібрати пару правильне - неправильне дієслово. Тест розбавлений невеликою кількістю правильних дієслів.`, 
      `Dopasuj właściwy czasownik nieregularny. Test jest rozcieńczany niewielką liczbą czasowników regularnych.`,
@@ -148,11 +143,6 @@ BDTranslate.push(
      `Глаголи Was і Were`, 
      `Czasowniki Was i Were`,
      `Verbs Was and Were`]);
-BDTranslate.push(
-    [returnInfoUnit.returnLevel23(), 
-     returnInfoUnit.returnLevel23UA(), 
-     returnInfoUnit.returnLevel23PL(),
-     returnInfoUnit.returnLevel23EN()]);
 BDTranslate.push(
     [`Упс. Кто-то уже сообщил об этой ошибке.`, 
      `Упс. Хтось уже повідомив про цю помилку.`, 
