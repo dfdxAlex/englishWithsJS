@@ -154,11 +154,6 @@ BDTranslate.push(
      `Zapisano błąd`,
      `Error recorded`]);
 BDTranslate.push(
-    [returnInfoUnit.returnLevel21(), 
-     returnInfoUnit.returnLevel21UA(), 
-     returnInfoUnit.returnLevel21PL(),
-     returnInfoUnit.returnLevel21EN()]);
-BDTranslate.push(
     [`Глаголы Have и Have Got`, 
      `Дієслова Have та Have Got`, 
      `Czasowniki Have i Have Got`,
