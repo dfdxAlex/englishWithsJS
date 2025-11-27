@@ -52,25 +52,43 @@ export function returnBodyHelpForLanguage(id)
             continue;
         }
         // если нашли h2 то записываем признак того что нашли
-        if (value.includes('h2')) {
+        // if (value.includes('h2')) {
+        //     findedBlock = 'h2';
+        //     continue;
+        // }
+
+        if (value.trim().split(/\s+/).includes('h2')) {
             findedBlock = 'h2';
             continue;
         }
 
-        if (value.includes('h3')) {
+        // if (value.includes('h3')) {
+        //     findedBlock = 'h3';
+        //     continue;
+        // }
+        if (value.trim().split(/\s+/).includes('h3')) {
             findedBlock = 'h3';
             continue;
         }
 
-        if (value.includes('h4')) {
+        // if (value.includes('h4')) {
+        //     findedBlock = 'h4';
+        //     continue;
+        // }
+        if (value.trim().split(/\s+/).includes('h4')) {
             findedBlock = 'h4';
             continue;
         }
 
-        if (value.includes('ul')) {
+        // if (value.includes('ul')) {
+        //     findedBlock = 'ul';
+        //     continue;
+        // }
+        if (value.trim().split(/\s+/).includes('ul')) {
             findedBlock = 'ul';
             continue;
         }
+
         if (findedBlock == 'h4' || findedBlock == 'h3' || findedBlock == 'h2' || findedBlock == 'ul') {
             if (findedBlock == 'h4' || findedBlock == 'h3' || findedBlock == 'h2' || findedBlock == 'P')
                 textBlockRightNow += value + '<br>';

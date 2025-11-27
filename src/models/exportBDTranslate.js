@@ -39,20 +39,10 @@ BDTranslate.push(
    returnInfoUnit.helpForGreenPoleOnePL(),
    returnInfoUnit.helpForGreenPoleOneEN()]);
 BDTranslate.push(
-  [returnInfoUnit.returnLevel42(), 
-   returnInfoUnit.returnLevel42UA(), 
-   returnInfoUnit.returnLevel42PL(),
-   returnInfoUnit.returnLevel42EN()]);
-BDTranslate.push(
   [`Примерно:`, 
    `Приблизно:`, 
    `Mówimy o:`,
    `We are talking approximately about:`]);
-BDTranslate.push(
-  [returnInfoUnit.returnLevel40(), 
-   returnInfoUnit.returnLevel40UA(), 
-   returnInfoUnit.returnLevel40PL(),
-   returnInfoUnit.returnLevel40EN()]);
 BDTranslate.push(
   [`Последний ответ здесь`, 
    `Остання відповідь тут`, 
@@ -63,11 +53,6 @@ BDTranslate.push(
    `Попереднє питання тут`, 
    `Poprzednie pytanie tutaj`,
    `Previous question here`]);
-BDTranslate.push(
-  [returnInfoUnit.returnLevel39(), 
-   returnInfoUnit.returnLevel39UA(), 
-   returnInfoUnit.returnLevel39PL(),
-   returnInfoUnit.returnLevel39EN()]);
 BDTranslate.push(
   [returnInfoUnit.returnLevel38(), 
    returnInfoUnit.returnLevel38UA(), 
