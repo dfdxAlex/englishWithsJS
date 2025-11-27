@@ -54,11 +54,6 @@ BDTranslate.push(
    `Poprzednie pytanie tutaj`,
    `Previous question here`]);
 BDTranslate.push(
-  [returnInfoUnit.returnLevel37(), 
-   returnInfoUnit.returnLevel37UA(), 
-   returnInfoUnit.returnLevel37PL(),
-   returnInfoUnit.returnLevel37EN()]);
-BDTranslate.push(
   [`В этом тесте нужно собрать предложение из предложенных слов. Имейте в виду, что иногда собранное предложение может не совпадать с общей темой теста.`, 
    `У цьому тесті потрібно зібрати пропозицію із запропонованих слів. Майте на увазі, що інколи зібрана пропозиція може не співпадати із загальною темою тесту.`, 
    `W tym teście musisz ułożyć zdanie z podanych słów. Pamiętaj, że czasami zebrane zdanie może nie pokrywać się z ogólnym tematem testu.`,
@@ -73,11 +68,6 @@ BDTranslate.push(
    returnInfoUnit.returnLevel20UA(), 
    returnInfoUnit.returnLevel20PL(),
    returnInfoUnit.returnLevel20EN()]);
-BDTranslate.push(
-  [returnInfoUnit.returnLevel36(), 
-   returnInfoUnit.returnLevel36UA(), 
-   returnInfoUnit.returnLevel36PL(),
-   returnInfoUnit.returnLevel36EN()]);
 BDTranslate.push(
   [returnInfoUnit.returnInfoForDiamant(), 
    returnInfoUnit.returnInfoForDiamantUA(), 

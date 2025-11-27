@@ -6,12 +6,8 @@ import { returnBodyHelpForLanguage } from '../../models/thouryNew/forThouryNew/r
 export function getBodyThoury(thisS)
 {
     switch (thisS.level) {
-      case 37:
-        return thisS.translate.translate(indexForThoury.returnLevel37());
       case 20: 
         return thisS.translate.translate(indexForThoury.returnLevel20());
-      case 36:
-        return thisS.translate.translate(indexForThoury.returnLevel36());
       case 35:
         return thisS.translate.translate(indexForThoury.returnLevel35());
       case 34:
