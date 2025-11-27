@@ -8,10 +8,6 @@ export function getBodyThoury(thisS)
     switch (thisS.level) {
       case 20: 
         return thisS.translate.translate(indexForThoury.returnLevel20());
-      case 33:
-        return thisS.translate.translate(indexForThoury.returnLevel33());
-      case 32:
-        return thisS.translate.translate(indexForThoury.returnLevel32());
       case 31:
         return thisS.translate.translate(indexForThoury.returnLevel31());
       case 23:

@@ -79,16 +79,6 @@ BDTranslate.push(
     `Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym ciągłym.`,
     `Insert a verb instead of the ellipsis or choose the correct sentence in the past continuous tense.`]);
 BDTranslate.push(
-   [returnInfoUnit.returnLevel33(), 
-    returnInfoUnit.returnLevel33UA(), 
-    returnInfoUnit.returnLevel33PL(),
-    returnInfoUnit.returnLevel33EN()]);
-BDTranslate.push(
-    [returnInfoUnit.returnLevel32(), 
-     returnInfoUnit.returnLevel32UA(), 
-     returnInfoUnit.returnLevel32PL(),
-     returnInfoUnit.returnLevel32EN()]);
-BDTranslate.push(
    [`Past Simple отрицательные и вопросы`, 
     `Past Simple негативні та питання`, 
     `Past Simple przeczenia i pytania`,
