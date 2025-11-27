@@ -1940,434 +1940,6 @@ var I=Object.defineProperty;var T=(e,a,t)=>a in e?I(e,a,{enumerable:!0,configura
         </tbody>
     </table>
 </div>
-`}function returnLevel23(){return`
-<div class="container return-level-23">
-    <h1>Справка по глаголам "was" и "were"</h1>
-    <h2>1. Правила использования</h2>
-    <p><strong>"Was"</strong> используется с местоимениями <strong>I, he, she, it</strong> (единичными подлежащими).</p>
-    <p>
-        Пример: <em>I was at home.</em> (Я был дома)
-    </p>
-    <p><strong>"Were"</strong> используется с местоимениями <strong>you, we, they</strong> (множественными подлежащими).</p>
-    <p>
-        Пример: <em>They were happy.</em> (Они были счастливы)
-    </p>
-
-    <h2>2. Образование предложений</h2>
-    
-    <h3>Положительные утверждения (Statements)</h3>
-    <ul>
-        <li>
-            I was tired after work. (Я был уставшим после работы)
-        </li>
-        <li>
-            They were in the park yesterday. (Они были в парке вчера)
-        </li>
-    </ul>
-
-    <h3>Отрицательные утверждения (Negative Statements)</h3>
-    <ul>
-        <li>
-            I wasn’t tired after work. (Я не был уставшим после работы)
-        </li>
-        <li>
-            They weren’t in the park yesterday. (Они не были в парке вчера)
-        </li>
-    </ul>
-
-    <h3>Вопросительные предложения (Questions)</h3>
-    <ul>
-        <li>
-            Was she at school? (Она была в школе?)
-        </li>
-        <li>
-            Were you at the party last night? (Ты был на вечеринке вчера?)
-        </li>
-    </ul>
-
-    <h3>Отрицательные вопросительные предложения (Negative Questions)</h3>
-    <ul>
-        <li>
-            Wasn’t he at work yesterday? (Разве он не был на работе вчера?)
-        </li>
-        <li>
-            Weren’t they ready for the trip? (Разве они не были готовы к поездке?)
-        </li>
-    </ul>
-</div>
-`}function returnLevel23EN(){return`<div class="container return-level-23">
-    <h1>Reference for the verbs "was" and "were"</h1>
-
-    <h2>1. Rules of Usage</h2>
-    <p><strong>"Was"</strong> is used with the pronouns <strong>I, he, she, it</strong> (singular).</p>
-    <p>
-        Example: <em>I was at home.</em>
-    </p>
-    <p><strong>"Were"</strong> is used with the pronouns <strong>you, we, they</strong> (plural).</p>
-    <p>
-        Example: <em>They were happy.</em>
-    </p>
-
-    <h2>2. Forming Sentences</h2>
-    
-    <h3>Positive Statements</h3>
-    <ul>
-        <li>
-            I was tired after work.
-        </li>
-        <li>
-            They were in the park yesterday.
-        </li>
-    </ul>
-
-    <h3>Negative Statements</h3>
-    <ul>
-        <li>
-            I wasn’t tired after work.
-        </li>
-        <li>
-            They weren’t in the park yesterday.
-        </li>
-    </ul>
-
-    <h3>Questions</h3>
-    <ul>
-        <li>
-            Was she at school?
-        </li>
-        <li>
-            Were you at the party last night?
-        </li>
-    </ul>
-
-    <h3>Negative Questions</h3>
-    <ul>
-        <li>
-            Wasn’t he at work yesterday?
-        </li>
-        <li>
-            Weren’t they ready for the trip?
-        </li>
-    </ul>
-</div>
-`}function returnLevel23PL(){return`<div class="container return-level-23">
-    <h1>Informacje o czasownikach "was" i "were"</h1>
-
-    <h2>1. Zasady użycia</h2>
-    <p><strong>"Was"</strong> używa się z zaimkami <strong>I, he, she, it</strong> (liczba pojedyncza).</p>
-    <p>
-        Przykład: <em>I was at home.</em> (Byłem w domu)
-    </p>
-    <p><strong>"Were"</strong> używa się z zaimkami <strong>you, we, they</strong> (liczba mnoga).</p>
-    <p>
-        Przykład: <em>They were happy.</em> (Oni byli szczęśliwi)
-    </p>
-
-    <h2>2. Tworzenie zdań</h2>
-    
-    <h3>Pozytywne stwierdzenia (Statements)</h3>
-    <ul>
-        <li">
-            I was tired after work. (Byłem zmęczony po pracy)
-        </li>
-        <li>
-            They were in the park yesterday. (Oni byli w parku wczoraj)
-        </li>
-    </ul>
-
-    <h3>Przeczące stwierdzenia (Negative Statements)</h3>
-    <ul>
-        <li>
-            I wasn’t tired after work. (Nie byłem zmęczony po pracy)
-        </li>
-        <li>
-            They weren’t in the park yesterday. (Oni nie byli w parku wczoraj)
-        </li>
-    </ul>
-
-    <h3>Pytania (Questions)</h3>
-    <ul>
-        <li>
-            Was she at school? (Czy ona była w szkole?)
-        </li>
-        <li>
-            Were you at the party last night? (Czy byłeś na imprezie wczoraj?)
-        </li>
-    </ul>
-
-    <h3>Przeczące pytania (Negative Questions)</h3>
-    <ul>
-        <li>
-            Wasn’t he at work yesterday? (Czy on nie był w pracy wczoraj?)
-        </li>
-        <li>
-            Weren’t they ready for the trip? (Czy oni nie byli gotowi do podróży?)
-        </li>
-    </ul>
-</div>
-`}function returnLevel23UA(){return`<div class="container return-level-23">
-    <h1>Довідка по дієсловам "was" і "were"</h1>
-
-    <h2>1. Правила використання</h2>
-    <p><strong>"Was"</strong> використовується з займенниками <strong>I, he, she, it</strong> (однина).</p>
-    <p>
-        Приклад: <em>I was at home.</em> (Я був вдома)
-    </p>
-    <p><strong>"Were"</strong> використовується з займенниками <strong>you, we, they</strong> (множина).</p>
-    <p>
-        Приклад: <em>They were happy.</em> (Вони були щасливі)
-    </p>
-
-    <h2>2. Утворення речень</h2>
-    
-    <h3>Позитивні твердження (Statements)</h3>
-    <ul>
-        <li>
-            I was tired after work. (Я був втомленим після роботи)
-        </li>
-        <li>
-            They were in the park yesterday. (Вони були в парку вчора)
-        </li>
-    </ul>
-
-    <h3>Заперечні твердження (Negative Statements)</h3>
-    <ul>
-        <li>
-            I wasn’t tired after work. (Я не був втомленим після роботи)
-        </li>
-        <li>
-            They weren’t in the park yesterday. (Вони не були в парку вчора)
-        </li>
-    </ul>
-
-    <h3>Питальні речення (Questions)</h3>
-    <ul>
-        <li>
-            Was she at school? (Вона була в школі?)
-        </li>
-        <li>
-            Were you at the party last night? (Ти був на вечірці вчора?)
-        </li>
-    </ul>
-
-    <h3>Заперечні питальні речення (Negative Questions)</h3>
-    <ul>
-        <li>
-            Wasn’t he at work yesterday? (Хіба він не був на роботі вчора?)
-        </li>
-        <li>
-            Weren’t they ready for the trip? (Хіба вони не були готові до поїздки?)
-        </li>
-    </ul>
-</div>
-`}function returnLevel31(){return`
-  <div class="container returnLevel31">
-    <div class="border border-primary rounded p-4 bg-light">
-        <h3 class="text-primary text-center">Правило образования предложений в Past Simple</h3>
-        
-        <h5 class="text-secondary">1. Утвердительное предложение:</h5>
-        <p>Для образования утвердительного предложения в Past Simple используется вторая форма глагола (глагол в прошедшем времени).</p>
-        <p class="font-weight-bold">Примеры:</p>
-        <ul>
-            <li>I <strong>visited</strong> my grandmother last week.</li>
-            <li>They <strong>played</strong> soccer yesterday.</li>
-        </ul>
-
-        <h5 class="text-secondary">2. Правила для правильных глаголов:</h5>
-        <p>Правильные глаголы образуют Past Simple, добавляя окончание <strong>-ed</strong>.</p>
-        
-        <ul class="table table-bordered mt-2">
-                <h3>
-                    <p>Основная форма - Правильный Past Simple</p>
-                    <p>Примечание</p>
-                </h3>
-                <li>
-                    <p>walk - walked</p>
-                    <p>Добавляется окончание -ed.</p>
-                </li>
-                <li>
-                    <p>play - played</p>
-                    <p>Добавляется окончание -ed.</p>
-                </li>
-                <li>
-                    <p>try - tried</p>
-                    <p>Y меняется на I перед добавлением -ed.</p>
-                </li>
-                <li>
-                    <p>stop - stopped</p>
-                    <p>Удваивается конечная согласная.</p>
-                </li>
-                <li>
-                    <p>like - liked</p>
-                    <p>Добавляется окончание -ed.</p>
-                </li>
-        </ul>
-
-        <h5 class="text-secondary">3. Правила для неправильных глаголов:</h5>
-        <p>Неправильные глаголы имеют уникальные формы в прошедшем времени, которые нужно запомнить.</p>
-        <ul>
-            <li>go → <strong>went</strong></li>
-            <li>have → <strong>had</strong></li>
-            <li>see → <strong>saw</strong></li>
-        </ul>
-    </div>
-</div>
-`}function returnLevel31EN(){return`<div class="container returnLevel31">
-    <div class="border border-primary rounded p-4 bg-light">
-        <h3 class="text-primary text-center">Rules for Forming Sentences in the Past Simple</h3>
-        
-        <h5 class="text-secondary">1. Affirmative sentences:</h5>
-        <p>To form an affirmative sentence in the Past Simple, use the second form of the verb (the past tense form).</p>
-        <p class="font-weight-bold">Examples:</p>
-        <ul>
-            <li>I <strong>visited</strong> my grandmother last week.</li>
-            <li>They <strong>played</strong> soccer yesterday.</li>
-        </ul>
-
-        <h5 class="text-secondary">2. Rules for regular verbs:</h5>
-        <p>Regular verbs form the Past Simple by adding the ending <strong>-ed</strong>.</p>
-        
-        <ul class="table table-bordered mt-2">
-                <h3>
-                    <p>Base Form – Regular Past Simple</p>
-                    <p>Explanation</p>
-                </h3>
-                <li>
-                    <p>walk – walked</p>
-                    <p>Add the ending -ed.</p>
-                </li>
-                <li>
-                    <p>play – played</p>
-                    <p>Add the ending -ed.</p>
-                </li>
-                <li>
-                    <p>try – tried</p>
-                    <p>The letter Y changes to I before adding -ed.</p>
-                </li>
-                <li>
-                    <p>stop – stopped</p>
-                    <p>The final consonant is doubled before adding -ed.</p>
-                </li>
-                <li>
-                    <p>like – liked</p>
-                    <p>Add the ending -ed.</p>
-                </li>
-        </ul>
-
-        <h5 class="text-secondary">3. Rules for irregular verbs:</h5>
-        <p>Irregular verbs have unique past tense forms that must be memorized, as they do not follow standard spelling rules.</p>
-        <ul>
-            <li>go → <strong>wwent</strong></li>
-            <li>have → <strong>had</strong></li>
-            <li>see → <strong>saw</strong></li>
-        </ul>
-    </div>
-</div>
-
-`}function returnLevel31PL(){return`<div class="container returnLevel31">
-    <div class="border border-primary rounded p-4 bg-light">
-        <h3 class="text-primary text-center">Zasada tworzenia zdań w Past Simple</h3>
-        
-        <h5 class="text-secondary">1. Zdanie twierdzące:</h5>
-        <p>Aby utworzyć zdanie twierdzące w Past Simple, używa się drugiej formy czasownika (czasownik w czasie przeszłym).</p>
-        <p class="font-weight-bold">Przykłady:</p>
-        <ul>
-            <li>I <strong>visited</strong> my grandmother last week.</li>
-            <li>They <strong>played</strong> soccer yesterday.</li>
-        </ul>
-
-        <h5 class="text-secondary">2. Zasady dla czasowników regularnych:</h5>
-        <p>Czasowniki regularne tworzą Past Simple, dodając końcówkę <strong>-ed</strong>.</p>
-        
-        <ul class="table table-bordered mt-2">
-                <h3>
-                    <p>Forma podstawowa - Regularny Past Simple</p>
-                    <p>Uwaga</p>
-                </h3>
-                <li>
-                    <p>walk - walked</p>
-                    <p>Dodaje się końcówkę -ed.</p>
-                </li>
-                <li>
-                    <p>play - played</p>
-                    <p>Dodaje się końcówkę -ed.</p>
-                </li>
-                <li>
-                    <p>try - tried</p>
-                    <p>Y zmienia się na I przed dodaniem -ed.</p>
-                </li>
-                <li>
-                    <p>stop - stopped</p>
-                    <p>Podwaja się końcową spółgłoskę.</p>
-                </li>
-                <li>
-                    <p>like - liked</p>
-                    <p>Dodaje się końcówkę -ed.</p>
-                </li>
-        </ul>
-
-        <h5 class="text-secondary">3. Zasady dla czasowników nieregularnych:</h5>
-        <p>Czasowniki nieregularne mają unikalne formy w czasie przeszłym, które trzeba zapamiętać.</p>
-        <ul>
-            <li>go → <strong>went</strong></li>
-            <li>have → <strong>had</strong></li>
-            <li>see → <strong>saw</strong></li>
-        </ul>
-    </div>
-</div>
-
-`}function returnLevel31UA(){return`<div class="container returnLevel31">
-    <div class="border border-primary rounded p-4 bg-light">
-        <h3 class="text-primary text-center">Правило утворення речень у Past Simple</h3>
-        
-        <h5 class="text-secondary">1. Стверджувальне речення:</h5>
-        <p>Для утворення стверджувального речення в Past Simple використовується друга форма дієслова (дієслово в минулому часі).</p>
-        <p class="font-weight-bold">Приклади:</p>
-        <ul>
-            <li>I <strong>visited</strong> my grandmother last week.</li>
-            <li>They <strong>played</strong> soccer yesterday.</li>
-        </ul>
-
-        <h5 class="text-secondary">2. Правила для правильних дієслів:</h5>
-        <p>Правильні дієслова утворюють Past Simple, додаючи закінчення <strong>-ed</strong>.</p>
-        
-        <ul class="table table-bordered mt-2">
-                <h3>
-                    <p>Основна форма - Правильний Past Simple</p>
-                    <p>Примітка</p>
-                </h3>
-                <li>
-                    <p>walk - walked</p>
-                    <p>Додається закінчення -ed.</p>
-                </li>
-                <li>
-                    <p>play - played</p>
-                    <p>Додається закінчення -ed.</p>
-                </li>
-                <li>
-                    <p>try - tried</p>
-                    <p>Y змінюється на I перед додаванням -ed.</p>
-                </li>
-                <li>
-                    <p>stop - stopped</p>
-                    <p>Подвоюється кінцева приголосна.</p>
-                </li>
-                <li>
-                    <p>like - liked</p>
-                    <p>Додається закінчення -ed.</p>
-                </li>
-        </ul>
-
-        <h5 class="text-secondary">3. Правила для неправильних дієслів:</h5>
-        <p>Неправильні дієслова мають унікальні форми в минулому часі, які потрібно запам’ятати.</p>
-        <ul>
-            <li>go → <strong>went</strong></li>
-            <li>have → <strong>had</strong></li>
-            <li>see → <strong>saw</strong></li>
-        </ul>
-    </div>
-</div>
-
 `}function returnInfoForDiamant(){return`<div class="modal fade" id="diamondsModal" tabindex="-1" aria-labelledby="diamondsModalLabel" aria-hidden="true">
   <div class="modal-dialog return-info-for-diamant">
     <div class="modal-content">
@@ -2732,7 +2304,7 @@ var I=Object.defineProperty;var T=(e,a,t)=>a in e?I(e,a,{enumerable:!0,configura
             </button>
           </div>
         </div>
-        `}const indexForThoury={helpForProgramRU,helpForProgramPL,helpForProgramUA,helpForProgramEN,helpForHomeMenuRU,helpForHomeMenuUA,helpForHomeMenuPL,helpForHomeMenuEN,helpForGreenPoleOneUA,helpForGreenPoleOneRU,helpForGreenPoleOnePL,helpForGreenPoleOneEN,returnInfoForDiamant,returnInfoForDiamantEN,returnInfoForDiamantPL,returnInfoForDiamantUA,returnLevel20EN,returnLevel20PL,returnLevel20UA,returnLevel20,returnLevel31EN,returnLevel31PL,returnLevel31UA,returnLevel31,returnLevel23EN,returnLevel23PL,returnLevel23UA,returnLevel23,returnLevel21EN,returnLevel21PL,returnLevel21UA,returnLevel21,returnLevel19EN,returnLevel19PL,returnLevel19UA,returnLevel19,returnLevel18EN,returnLevel18PL,returnLevel18UA,returnLevel18,returnLevel17EN,returnLevel17PL,returnLevel17UA,returnLevel17,returnLevel16EN,returnLevel16PL,returnLevel16UA,returnLevel16,returnLevel15EN,returnLevel15PL,returnLevel15UA,returnLevel15,returnLevel14EN,returnLevel14PL,returnLevel14UA,returnLevel14};function exportBDTranslate(){const e=[];return e.push(["","","",""]),e.push(["be/have/do in present and past tenses","be/have/do in present and past tenses","be/have/do in present and past tenses","be/have/do in present and past tenses"]),e.push([indexForThoury.helpForProgramRU(),indexForThoury.helpForProgramUA(),indexForThoury.helpForProgramPL(),indexForThoury.helpForProgramEN()]),e.push([indexForThoury.helpForHomeMenuRU(),indexForThoury.helpForHomeMenuUA(),indexForThoury.helpForHomeMenuPL(),indexForThoury.helpForHomeMenuEN()]),e.push([indexForThoury.helpForGreenPoleOneRU(),indexForThoury.helpForGreenPoleOneUA(),indexForThoury.helpForGreenPoleOnePL(),indexForThoury.helpForGreenPoleOneEN()]),e.push(["Примерно:","Приблизно:","Mówimy o:","We are talking approximately about:"]),e.push(["Последний ответ здесь","Остання відповідь тут","Najnowsza odpowiedź tutaj","The last answer is here"]),e.push(["Предыдущий вопрос здесь","Попереднє питання тут","Poprzednie pytanie tutaj","Previous question here"]),e.push(["В этом тесте нужно собрать предложение из предложенных слов. Имейте в виду, что иногда собранное предложение может не совпадать с общей темой теста.","У цьому тесті потрібно зібрати пропозицію із запропонованих слів. Майте на увазі, що інколи зібрана пропозиція може не співпадати із загальною темою тесту.","W tym teście musisz ułożyć zdanie z podanych słów. Pamiętaj, że czasami zebrane zdanie może nie pokrywać się z ogólnym tematem testu.","In this test you need to assemble a sentence from the given words. Keep in mind that sometimes the assembled sentence may not match the general topic of the test."]),e.push(["(может отличаться)","(може відрізнятися)","(może się różnić)","(may differ)"]),e.push([indexForThoury.returnLevel20(),indexForThoury.returnLevel20UA(),indexForThoury.returnLevel20PL(),indexForThoury.returnLevel20EN()]),e.push([indexForThoury.returnInfoForDiamant(),indexForThoury.returnInfoForDiamantUA(),indexForThoury.returnInfoForDiamantPL(),indexForThoury.returnInfoForDiamantEN()]),e.push(["Вставьте глагол вместо троеточия или подберите правильное предложение в продолженном прошедшем времени.","Вставте дієслово замість три крапки або підберіть правильну пропозицію в минулому часі.","Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym ciągłym.","Insert a verb instead of the ellipsis or choose the correct sentence in the past continuous tense."]),e.push(["Past Simple отрицательные и вопросы","Past Simple негативні та питання","Past Simple przeczenia i pytania","Past Simple Negative and Questions"]),e.push(["Вставьте глагол вместо троеточия или подберите правильное предложение в простом прошедшем времени.","Вставте дієслово замість три крапки або підберіть правильну пропозицію в простому часі.","Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym prostym.","Insert a verb instead of the ellipsis or choose the correct sentence in the simple past tense."]),e.push([indexForThoury.returnLevel31(),indexForThoury.returnLevel31UA(),indexForThoury.returnLevel31PL(),indexForThoury.returnLevel31EN()]),e.push(["Подобрать пару правильный - неправильный глагол. Тест разбавлен небольшим числом правильных глаголов.","Підібрати пару правильне - неправильне дієслово. Тест розбавлений невеликою кількістю правильних дієслів.","Dopasuj właściwy czasownik nieregularny. Test jest rozcieńczany niewielką liczbą czasowników regularnych.","Match a pair of regular and irregular verbs. The test is diluted with a small number of regular verbs."]),e.push(["Прошедшее простое","Минуле просте","Przeszłość prosta","Past simple"]),e.push(["Помощь","Допомога","Pomoc","Help"]),e.push(["Теория:","Теорія:","Teoria:","Theory:"]),e.push(["Задание теста:","Завдання тесту:","Zadanie testowe:","Test task:"]),e.push(["Переводов:","Перекладів:","Tłumaczenia:","Translations:"]),e.push(["Успех:","Успіх:","Sukces:","Success:"]),e.push(["Ошибок:","Помилок:","Błędy:","Errors:"]),e.push(["Статистика","Статистика","Statystyka","Statistics"]),e.push(["Собрано алмазов:","Зібрано алмазів:","Zebrane diamenty:","Diamonds collected:"]),e.push(["Глаголы Was и Were","Глаголи Was і Were","Czasowniki Was i Were","Verbs Was and Were"]),e.push([indexForThoury.returnLevel23(),indexForThoury.returnLevel23UA(),indexForThoury.returnLevel23PL(),indexForThoury.returnLevel23EN()]),e.push(["Упс. Кто-то уже сообщил об этой ошибке.","Упс. Хтось уже повідомив про цю помилку.","Ups. Ktoś już zgłosił ten błąd.","Oops. Someone already reported this bug."]),e.push(["Ошибка зафиксирована","Помилка зафіксована","Zapisano błąd","Error recorded"]),e.push([indexForThoury.returnLevel21(),indexForThoury.returnLevel21UA(),indexForThoury.returnLevel21PL(),indexForThoury.returnLevel21EN()]),e.push(["Глаголы Have и Have Got","Дієслова Have та Have Got","Czasowniki Have i Have Got","The verbs Have and Have Got"]),e.push([indexForThoury.returnLevel19(),indexForThoury.returnLevel19UA(),indexForThoury.returnLevel19PL(),indexForThoury.returnLevel19EN()]),e.push(["Выбор между P.S. и настоящим продолженным P.C.","Вибір між P.S. та справжнім продовженим P.C.","Wybór pomiędzy P.S. i niniejszym kontynuuje P.C.","The choice between P.S. and the present continuation P.C."]),e.push([indexForThoury.returnLevel18(),indexForThoury.returnLevel18UA(),indexForThoury.returnLevel18PL(),indexForThoury.returnLevel18EN()]),e.push(["Простое настоящее  P.S. вопросы","Просте справжнє P.S. питання","Prosty prezent P.S. pytania","Simple present P.S. questions"]),e.push([indexForThoury.returnLevel17(),indexForThoury.returnLevel17UA(),indexForThoury.returnLevel17PL(),indexForThoury.returnLevel17EN()]),e.push(["Простое настоящее  P.S. негативное","Просте справжнє P.S. негативне","Prosty prezent P.S. negatywny","Simple present P.S. negative"]),e.push([indexForThoury.returnLevel16(),indexForThoury.returnLevel16UA(),indexForThoury.returnLevel16PL(),indexForThoury.returnLevel16EN()]),e.push(["Простое настоящее  P.S. плюс периодичность","Просте справжнє P.S. плюс періодичність","Prosty prezent P.S. plus częstotliwość","Simple present P.S. plus periodicity"]),e.push([indexForThoury.returnLevel15(),indexForThoury.returnLevel15UA(),indexForThoury.returnLevel15PL(),indexForThoury.returnLevel15EN()]),e.push(["Простое настоящее P.S.","Просте справжнє P.S.","Prosty prezent P.S.","Simple present P.S."]),e.push([indexForThoury.returnLevel14(),indexForThoury.returnLevel14UA(),indexForThoury.returnLevel14PL(),indexForThoury.returnLevel14EN()]),e.push(["Образования вопросов в настоящем продолженном времени P.C.","Утворення питань у поточному продовженому часі P.C.","Tworzenie pytań w czasie teraźniejszym ciągłym P.C.","Formation of questions in the present continuous tense P.C."]),e.push(["Правило для настоящего продолженного времени (Present Continuous)","Правило для поточного часу (Present Continuous)","Reguła czasu teraźniejszego ciągłego","Rule for the Present Continuous"]),e.push(["Создание вопросов в Present Simple и Past Simple","Створення питань у Present Simple та Past Simple","Tworzenie pytań w czasie Present Simple i Past Simple","Forming questions in Present Simple and Past Simple"]),e.push(["Понятно","Зрозуміло","To jasne","It's clear"]),e.push(["Просто учим слова","Просто вчимо слова","Dopiero uczę się słówek","Just learning words"]),e.push(["Сокращенная форма глагола to Be","Скорочена форма дієслова","Krótka forma czasownika być","Shortened form of the verb to be"]),e.push(["Выбрать правильную пару.","Вибрати правильну пару.","Wybierz odpowiednią parę.","Choose the right pair."]),e.push(["Выбери верную форму глагола","Вибери правильну форму дієслова","Wybierz poprawną formę czasownika","Choose the correct form of the verb"]),e.push(["Вторая форма неправильных глаголов","Друга форма неправильних дієслів","Druga forma czasowników nieregularnych","The second form of irregular verbs"]),e.push(["Выбрать правильное время PS or PC","Вибрати правильне час PS or PC","Wybierz odpowiedni czas PS or PC","Choose the right time PS or PC"]),e.push(["Учить слова","Вчити слова","Ucz się słów","Learn words"]),e.push(["Подобрать правильно вопрос или ответ","Підібрати правильно питання чи відповідь","Wybierz właściwe pytanie lub odpowiedź","Choose the right question or answer"]),e.push(["Настоящее простое вопросы","Справжнє просте питання","Przedstaw proste pytania","Present simple questions"]),e.push(["Настоящее простое негативное","Справжнє просте негативне","Przedstaw prosty negatyw","Present simple negative"]),e.push(["300 глаголов","300 дієслів (RU)","300 czasowników (RU)","300 verbs (RU)"]),e.push(["50 глаголов","50 дієслів (RU/PL)","50 czasowników (RU/PL)","50 verbs (RU/PL)"]),e.push(["100 слов про спорт","100 слів про спорт (RU/PL)","100 słów o sporcie (RU/PL)","100 words about sports(RU/PL)"]),e.push(["Выберите правильно составленное предложение.","Виберіть правильно складену пропозицію.","Wybierz właściwe zdanie.","Choose the correctly constructed sentence."]),e.push(["Настоящее простое + периодичность","Справжнє просте + періодичність","Czas teraźniejszy prosty + okresowość","Present Simple + Periodicity"]),e.push(["Настоящее простое","Справжнє просте","Prezent prosty","Present simple"]),e.push(["Настоящее продолженное - вопрос","Справжнє продовжене – питання","Czas teraźniejszy ciągły – pytanie","Choose the right question"]),e.push(["Выбрать правильный вопрос","Вибрати правильне питання","Wybierz właściwe pytanie","Choose the right question"]),e.push(["Сообщить об ошибке","Повідомити про помилку","Zgłoś błąd","Report a bug"]),e.push(["Перевести вопрос","Перекласти питання","Przetłumacz pytanie","Translate question"]),e.push(["Выбрать правильный перевод","Вибрати правильний переклад","Wybierz właściwe tłumaczenie","Choose the correct translation"]),e.push(["100 слов о еде","100 слів про їжу","100 słów o jedzeniu","100 words about food"]),e.push(["100 слов о путешествии","100 слів про подорож (RU)","100 słów o podróżach (RU)","100 words about travel (RU)"]),e.push(["100 слов","100 слів (RU)","100 słów (RU)","100 words (RU)"]),e.push(["300 слов","300 слів (RU)","300 słów (RU)","300 words (RU)"]),e.push(["500 слов","500 слів (RU)","500 słów (RU)","500 words (RU)"]),e.push(["Настоящее продолженное","Присутній безперервний","Teraźniejszość ciągła","Present continuous"]),e.push(["Последний тест","Останній тест","Ostatni test","The last test"]),e.push(["Задание для теста","Завдання для тесту","Zadanie testowe","Task for the test"]),e.push(["Вопрос с вариантами ответа","Питання з варіантами відповіді","Pytanie wielokrotnego wyboru","Multiple choice question"]),e.push(["Where/Who...","Where/Who...","Where/Who...","Where/Who..."]),e.push(["Вставить правильное слово","Вставити правильне слово","Wstaw właściwe słowo","Insert the correct word"]),e.push(["To Be, ответь на вопрос","To Be, дай відповідь на запитання","Być, odpowiedz na pytanie","To Be, answer the question"]),e.push(["To Be, вопрос/ответ","To Be, питання/відповідь","Być, pytanie/odpowiedź","To Be, Q&A"]),e.push(["To Be, краткая форма","To Be, коротка форма","Być, krótka forma","To Be, short form"]),e.push(["Выбрать правильный вариант ответа","Вибрати правильний варіант відповіді","Wybierz poprawną odpowiedź","Choose the correct answer"]),e.push(["Сброс","Скидання","Resetowanie","Reset"]),e.push(["Выбрать правильный вариант сокращенной формы глагола to Be","Вибрати правильний варіант скороченої форми дієслова to Be","Wybierz poprawną wersję skróconej formy czasownika to Be","Choose the correct version of the shortened form of the verb to Be"]),e}class LanguageController{constructor(){this.langStr=localStorage.getItem("EnglishWithJs_lang")||"ru"}translate(a){if(this.langStr==="ru")return a;let t="",o=3;switch(this.langStr){case"pl":o=2;break;case"ua":o=1;break}return t=a,exportBDTranslate().forEach(i=>{i[0]==a&&(t=i[o])}),t}}const Help={translate:new LanguageController,viewhandleHelpToTranslate:function(e,a){const t=document.createElement("div");t.id="container-for-video-help";let o=this.translate.translate(e);o=o.replace(/<div id='video-help'><\/div>/,this.addVideoHelp(a)),t.innerHTML=o,document.body.appendChild(t),document.getElementById("button-close-info-modal").addEventListener("click",()=>{document.getElementById("container-for-video-help").remove()})},addVideoHelp(e){return`
+        `}const indexForThoury={helpForProgramRU,helpForProgramPL,helpForProgramUA,helpForProgramEN,helpForHomeMenuRU,helpForHomeMenuUA,helpForHomeMenuPL,helpForHomeMenuEN,helpForGreenPoleOneUA,helpForGreenPoleOneRU,helpForGreenPoleOnePL,helpForGreenPoleOneEN,returnInfoForDiamant,returnInfoForDiamantEN,returnInfoForDiamantPL,returnInfoForDiamantUA,returnLevel20EN,returnLevel20PL,returnLevel20UA,returnLevel20,returnLevel21EN,returnLevel21PL,returnLevel21UA,returnLevel21,returnLevel19EN,returnLevel19PL,returnLevel19UA,returnLevel19,returnLevel18EN,returnLevel18PL,returnLevel18UA,returnLevel18,returnLevel17EN,returnLevel17PL,returnLevel17UA,returnLevel17,returnLevel16EN,returnLevel16PL,returnLevel16UA,returnLevel16,returnLevel15EN,returnLevel15PL,returnLevel15UA,returnLevel15,returnLevel14EN,returnLevel14PL,returnLevel14UA,returnLevel14};function exportBDTranslate(){const e=[];return e.push(["","","",""]),e.push(["be/have/do in present and past tenses","be/have/do in present and past tenses","be/have/do in present and past tenses","be/have/do in present and past tenses"]),e.push([indexForThoury.helpForProgramRU(),indexForThoury.helpForProgramUA(),indexForThoury.helpForProgramPL(),indexForThoury.helpForProgramEN()]),e.push([indexForThoury.helpForHomeMenuRU(),indexForThoury.helpForHomeMenuUA(),indexForThoury.helpForHomeMenuPL(),indexForThoury.helpForHomeMenuEN()]),e.push([indexForThoury.helpForGreenPoleOneRU(),indexForThoury.helpForGreenPoleOneUA(),indexForThoury.helpForGreenPoleOnePL(),indexForThoury.helpForGreenPoleOneEN()]),e.push(["Примерно:","Приблизно:","Mówimy o:","We are talking approximately about:"]),e.push(["Последний ответ здесь","Остання відповідь тут","Najnowsza odpowiedź tutaj","The last answer is here"]),e.push(["Предыдущий вопрос здесь","Попереднє питання тут","Poprzednie pytanie tutaj","Previous question here"]),e.push(["В этом тесте нужно собрать предложение из предложенных слов. Имейте в виду, что иногда собранное предложение может не совпадать с общей темой теста.","У цьому тесті потрібно зібрати пропозицію із запропонованих слів. Майте на увазі, що інколи зібрана пропозиція може не співпадати із загальною темою тесту.","W tym teście musisz ułożyć zdanie z podanych słów. Pamiętaj, że czasami zebrane zdanie może nie pokrywać się z ogólnym tematem testu.","In this test you need to assemble a sentence from the given words. Keep in mind that sometimes the assembled sentence may not match the general topic of the test."]),e.push(["(может отличаться)","(може відрізнятися)","(może się różnić)","(may differ)"]),e.push([indexForThoury.returnLevel20(),indexForThoury.returnLevel20UA(),indexForThoury.returnLevel20PL(),indexForThoury.returnLevel20EN()]),e.push([indexForThoury.returnInfoForDiamant(),indexForThoury.returnInfoForDiamantUA(),indexForThoury.returnInfoForDiamantPL(),indexForThoury.returnInfoForDiamantEN()]),e.push(["Вставьте глагол вместо троеточия или подберите правильное предложение в продолженном прошедшем времени.","Вставте дієслово замість три крапки або підберіть правильну пропозицію в минулому часі.","Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym ciągłym.","Insert a verb instead of the ellipsis or choose the correct sentence in the past continuous tense."]),e.push(["Past Simple отрицательные и вопросы","Past Simple негативні та питання","Past Simple przeczenia i pytania","Past Simple Negative and Questions"]),e.push(["Вставьте глагол вместо троеточия или подберите правильное предложение в простом прошедшем времени.","Вставте дієслово замість три крапки або підберіть правильну пропозицію в простому часі.","Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym prostym.","Insert a verb instead of the ellipsis or choose the correct sentence in the simple past tense."]),e.push(["Подобрать пару правильный - неправильный глагол. Тест разбавлен небольшим числом правильных глаголов.","Підібрати пару правильне - неправильне дієслово. Тест розбавлений невеликою кількістю правильних дієслів.","Dopasuj właściwy czasownik nieregularny. Test jest rozcieńczany niewielką liczbą czasowników regularnych.","Match a pair of regular and irregular verbs. The test is diluted with a small number of regular verbs."]),e.push(["Прошедшее простое","Минуле просте","Przeszłość prosta","Past simple"]),e.push(["Помощь","Допомога","Pomoc","Help"]),e.push(["Теория:","Теорія:","Teoria:","Theory:"]),e.push(["Задание теста:","Завдання тесту:","Zadanie testowe:","Test task:"]),e.push(["Переводов:","Перекладів:","Tłumaczenia:","Translations:"]),e.push(["Успех:","Успіх:","Sukces:","Success:"]),e.push(["Ошибок:","Помилок:","Błędy:","Errors:"]),e.push(["Статистика","Статистика","Statystyka","Statistics"]),e.push(["Собрано алмазов:","Зібрано алмазів:","Zebrane diamenty:","Diamonds collected:"]),e.push(["Глаголы Was и Were","Глаголи Was і Were","Czasowniki Was i Were","Verbs Was and Were"]),e.push(["Упс. Кто-то уже сообщил об этой ошибке.","Упс. Хтось уже повідомив про цю помилку.","Ups. Ktoś już zgłosił ten błąd.","Oops. Someone already reported this bug."]),e.push(["Ошибка зафиксирована","Помилка зафіксована","Zapisano błąd","Error recorded"]),e.push([indexForThoury.returnLevel21(),indexForThoury.returnLevel21UA(),indexForThoury.returnLevel21PL(),indexForThoury.returnLevel21EN()]),e.push(["Глаголы Have и Have Got","Дієслова Have та Have Got","Czasowniki Have i Have Got","The verbs Have and Have Got"]),e.push([indexForThoury.returnLevel19(),indexForThoury.returnLevel19UA(),indexForThoury.returnLevel19PL(),indexForThoury.returnLevel19EN()]),e.push(["Выбор между P.S. и настоящим продолженным P.C.","Вибір між P.S. та справжнім продовженим P.C.","Wybór pomiędzy P.S. i niniejszym kontynuuje P.C.","The choice between P.S. and the present continuation P.C."]),e.push([indexForThoury.returnLevel18(),indexForThoury.returnLevel18UA(),indexForThoury.returnLevel18PL(),indexForThoury.returnLevel18EN()]),e.push(["Простое настоящее  P.S. вопросы","Просте справжнє P.S. питання","Prosty prezent P.S. pytania","Simple present P.S. questions"]),e.push([indexForThoury.returnLevel17(),indexForThoury.returnLevel17UA(),indexForThoury.returnLevel17PL(),indexForThoury.returnLevel17EN()]),e.push(["Простое настоящее  P.S. негативное","Просте справжнє P.S. негативне","Prosty prezent P.S. negatywny","Simple present P.S. negative"]),e.push([indexForThoury.returnLevel16(),indexForThoury.returnLevel16UA(),indexForThoury.returnLevel16PL(),indexForThoury.returnLevel16EN()]),e.push(["Простое настоящее  P.S. плюс периодичность","Просте справжнє P.S. плюс періодичність","Prosty prezent P.S. plus częstotliwość","Simple present P.S. plus periodicity"]),e.push([indexForThoury.returnLevel15(),indexForThoury.returnLevel15UA(),indexForThoury.returnLevel15PL(),indexForThoury.returnLevel15EN()]),e.push(["Простое настоящее P.S.","Просте справжнє P.S.","Prosty prezent P.S.","Simple present P.S."]),e.push([indexForThoury.returnLevel14(),indexForThoury.returnLevel14UA(),indexForThoury.returnLevel14PL(),indexForThoury.returnLevel14EN()]),e.push(["Образования вопросов в настоящем продолженном времени P.C.","Утворення питань у поточному продовженому часі P.C.","Tworzenie pytań w czasie teraźniejszym ciągłym P.C.","Formation of questions in the present continuous tense P.C."]),e.push(["Правило для настоящего продолженного времени (Present Continuous)","Правило для поточного часу (Present Continuous)","Reguła czasu teraźniejszego ciągłego","Rule for the Present Continuous"]),e.push(["Создание вопросов в Present Simple и Past Simple","Створення питань у Present Simple та Past Simple","Tworzenie pytań w czasie Present Simple i Past Simple","Forming questions in Present Simple and Past Simple"]),e.push(["Понятно","Зрозуміло","To jasne","It's clear"]),e.push(["Просто учим слова","Просто вчимо слова","Dopiero uczę się słówek","Just learning words"]),e.push(["Сокращенная форма глагола to Be","Скорочена форма дієслова","Krótka forma czasownika być","Shortened form of the verb to be"]),e.push(["Выбрать правильную пару.","Вибрати правильну пару.","Wybierz odpowiednią parę.","Choose the right pair."]),e.push(["Выбери верную форму глагола","Вибери правильну форму дієслова","Wybierz poprawną formę czasownika","Choose the correct form of the verb"]),e.push(["Вторая форма неправильных глаголов","Друга форма неправильних дієслів","Druga forma czasowników nieregularnych","The second form of irregular verbs"]),e.push(["Выбрать правильное время PS or PC","Вибрати правильне час PS or PC","Wybierz odpowiedni czas PS or PC","Choose the right time PS or PC"]),e.push(["Учить слова","Вчити слова","Ucz się słów","Learn words"]),e.push(["Подобрать правильно вопрос или ответ","Підібрати правильно питання чи відповідь","Wybierz właściwe pytanie lub odpowiedź","Choose the right question or answer"]),e.push(["Настоящее простое вопросы","Справжнє просте питання","Przedstaw proste pytania","Present simple questions"]),e.push(["Настоящее простое негативное","Справжнє просте негативне","Przedstaw prosty negatyw","Present simple negative"]),e.push(["300 глаголов","300 дієслів (RU)","300 czasowników (RU)","300 verbs (RU)"]),e.push(["50 глаголов","50 дієслів (RU/PL)","50 czasowników (RU/PL)","50 verbs (RU/PL)"]),e.push(["100 слов про спорт","100 слів про спорт (RU/PL)","100 słów o sporcie (RU/PL)","100 words about sports(RU/PL)"]),e.push(["Выберите правильно составленное предложение.","Виберіть правильно складену пропозицію.","Wybierz właściwe zdanie.","Choose the correctly constructed sentence."]),e.push(["Настоящее простое + периодичность","Справжнє просте + періодичність","Czas teraźniejszy prosty + okresowość","Present Simple + Periodicity"]),e.push(["Настоящее простое","Справжнє просте","Prezent prosty","Present simple"]),e.push(["Настоящее продолженное - вопрос","Справжнє продовжене – питання","Czas teraźniejszy ciągły – pytanie","Choose the right question"]),e.push(["Выбрать правильный вопрос","Вибрати правильне питання","Wybierz właściwe pytanie","Choose the right question"]),e.push(["Сообщить об ошибке","Повідомити про помилку","Zgłoś błąd","Report a bug"]),e.push(["Перевести вопрос","Перекласти питання","Przetłumacz pytanie","Translate question"]),e.push(["Выбрать правильный перевод","Вибрати правильний переклад","Wybierz właściwe tłumaczenie","Choose the correct translation"]),e.push(["100 слов о еде","100 слів про їжу","100 słów o jedzeniu","100 words about food"]),e.push(["100 слов о путешествии","100 слів про подорож (RU)","100 słów o podróżach (RU)","100 words about travel (RU)"]),e.push(["100 слов","100 слів (RU)","100 słów (RU)","100 words (RU)"]),e.push(["300 слов","300 слів (RU)","300 słów (RU)","300 words (RU)"]),e.push(["500 слов","500 слів (RU)","500 słów (RU)","500 words (RU)"]),e.push(["Настоящее продолженное","Присутній безперервний","Teraźniejszość ciągła","Present continuous"]),e.push(["Последний тест","Останній тест","Ostatni test","The last test"]),e.push(["Задание для теста","Завдання для тесту","Zadanie testowe","Task for the test"]),e.push(["Вопрос с вариантами ответа","Питання з варіантами відповіді","Pytanie wielokrotnego wyboru","Multiple choice question"]),e.push(["Where/Who...","Where/Who...","Where/Who...","Where/Who..."]),e.push(["Вставить правильное слово","Вставити правильне слово","Wstaw właściwe słowo","Insert the correct word"]),e.push(["To Be, ответь на вопрос","To Be, дай відповідь на запитання","Być, odpowiedz na pytanie","To Be, answer the question"]),e.push(["To Be, вопрос/ответ","To Be, питання/відповідь","Być, pytanie/odpowiedź","To Be, Q&A"]),e.push(["To Be, краткая форма","To Be, коротка форма","Być, krótka forma","To Be, short form"]),e.push(["Выбрать правильный вариант ответа","Вибрати правильний варіант відповіді","Wybierz poprawną odpowiedź","Choose the correct answer"]),e.push(["Сброс","Скидання","Resetowanie","Reset"]),e.push(["Выбрать правильный вариант сокращенной формы глагола to Be","Вибрати правильний варіант скороченої форми дієслова to Be","Wybierz poprawną wersję skróconej formy czasownika to Be","Choose the correct version of the shortened form of the verb to Be"]),e}class LanguageController{constructor(){this.langStr=localStorage.getItem("EnglishWithJs_lang")||"ru"}translate(a){if(this.langStr==="ru")return a;let t="",o=3;switch(this.langStr){case"pl":o=2;break;case"ua":o=1;break}return t=a,exportBDTranslate().forEach(i=>{i[0]==a&&(t=i[o])}),t}}const Help={translate:new LanguageController,viewhandleHelpToTranslate:function(e,a){const t=document.createElement("div");t.id="container-for-video-help";let o=this.translate.translate(e);o=o.replace(/<div id='video-help'><\/div>/,this.addVideoHelp(a)),t.innerHTML=o,document.body.appendChild(t),document.getElementById("button-close-info-modal").addEventListener("click",()=>{document.getElementById("container-for-video-help").remove()})},addVideoHelp(e){return`
         <div class="embed-responsive embed-responsive-16by9">
           <iframe showinfo=1 class="embed-responsive-item" src="https://www.youtube.com/embed/${e}" allowfullscreen></iframe>
         </div>
@@ -3242,6 +2814,426 @@ Examples:
 ul
 I am not working.
 They are not sleeping.
+`}function thouryUnit10(){return`
+    file23
+    unit-10
+    ru
+    h2
+Справка по глаголам "was" и "were"
+
+h3
+Правила использования
+
+h4
+"Was" используется с местоимениями I, he, she, it (единичными подлежащими).
+
+ul
+Пример: I was at home. (Я был дома)
+
+h4
+"Were" используется с местоимениями you, we, they (множественными подлежащими).
+
+ul
+Пример: They were happy. (Они были счастливы)
+
+h3
+Образование предложений
+
+h4
+Положительные утверждения (Statements):
+
+ul
+I was tired after work. (Я был уставшим после работы)
+They were in the park yesterday. (Они были в парке вчера)
+
+h4
+Отрицательные утверждения (Negative Statements):
+
+ul
+I wasn’t tired after work. (Я не был уставшим после работы)
+They weren’t in the park yesterday. (Они не были в парке вчера)
+
+h4
+Вопросительные предложения (Questions):
+
+ul
+Was she at school? (Она была в школе?)
+Were you at the party last night? (Ты был на вечеринке вчера?)
+
+h4
+Отрицательные вопросительные предложения (Negative Questions):
+
+ul
+Wasn’t he at work yesterday? (Разве он не был на работе вчера?)
+Weren’t they ready for the trip? (Разве они не были готовы к поездке?)
+
+ua
+h2
+Довідка щодо дієслів "was" і "were"
+
+h3
+Правила використання
+
+h4
+"Was" використовується з займенниками I, he, she, it (однина).
+
+ul
+Приклад: I was at home. (Я був удома)
+
+h4
+"Were" використовується з займенниками you, we, they (множина).
+
+ul
+Приклад: They were happy. (Вони були щасливі)
+
+h3
+Утворення речень
+
+h4
+Стверджувальні речення (Statements):
+
+ul
+I was tired after work. (Я був втомленим після роботи)
+They were in the park yesterday. (Вони були в парку вчора)
+
+h4
+Заперечні речення (Negative Statements):
+
+ul
+I wasn’t tired after work. (Я не був втомленим після роботи)
+They weren’t in the park yesterday. (Вони не були в парку вчора)
+
+h4
+Питальні речення (Questions):
+
+ul
+Was she at school? (Вона була в школі?)
+Were you at the party last night? (Ти був на вечірці вчора?)
+
+h4
+Заперечні питальні речення (Negative Questions):
+
+ul
+Wasn’t he at work yesterday? (Хіба він не був на роботі вчора?)
+Weren’t they ready for the trip? (Хіба вони не були готові до подорожі?)
+
+
+pl
+h2
+Informacja o czasownikach "was" i "were"
+
+h3
+Zasady użycia
+
+h4
+"Was" używa się z zaimkami I, he, she, it (liczba pojedyncza).
+
+ul
+Przykład: I was at home. (Byłem w domu)
+
+h4
+"Were" używa się z zaimkami you, we, they (liczba mnoga).
+
+ul
+Przykład: They were happy. (Oni byli szczęśliwi)
+
+h3
+Tworzenie zdań
+
+h4
+Zdania twierdzące (Statements):
+
+ul
+I was tired after work. (Byłem zmęczony po pracy)
+They were in the park yesterday. (Oni byli w parku wczoraj)
+
+h4
+Zdania przeczące (Negative Statements):
+
+ul
+I wasn’t tired after work. (Nie byłem zmęczony po pracy)
+They weren’t in the park yesterday. (Oni nie byli w parku wczoraj)
+
+h4
+Pytania (Questions):
+
+ul
+Was she at school? (Czy ona była w szkole?)
+Were you at the party last night? (Czy byłeś na imprezie wczoraj?)
+
+h4
+Pytania przeczące (Negative Questions):
+
+ul
+Wasn’t he at work yesterday? (Czy on nie był wczoraj w pracy?)
+Weren’t they ready for the trip? (Czy oni nie byli gotowi na wycieczkę?)
+
+
+en
+h2
+Reference for the verbs "was" and "were"
+
+h3
+Usage rules
+
+h4
+"Was" is used with the pronouns I, he, she, it (singular subjects).
+
+ul
+Example: I was at home. (I was at home)
+
+h4
+"Were" is used with the pronouns you, we, they (plural subjects).
+
+ul
+Example: They were happy. (They were happy)
+
+h3
+Forming sentences
+
+h4
+Affirmative statements (Statements):
+
+ul
+I was tired after work.
+They were in the park yesterday.
+
+h4
+Negative statements (Negative Statements):
+
+ul
+I wasn’t tired after work.
+They weren’t in the park yesterday.
+
+h4
+Questions:
+
+ul
+Was she at school?
+Were you at the party last night?
+
+h4
+Negative questions:
+
+ul
+Wasn’t he at work yesterday?
+Weren’t they ready for the trip?
+
+
+`}function thouryUnit11(){return`
+    file31
+    unit-11
+    ru
+    h2
+Правило образования предложений в Past Simple
+
+h3
+Утвердительное предложение:
+
+ul
+Для образования утвердительного предложения в Past Simple используется вторая форма глагола (глагол в прошедшем времени).
+
+h3
+Примеры:
+
+ul
+I visited my grandmother last week.
+They played soccer yesterday.
+
+h3
+Правила для правильных глаголов:
+
+h4
+Правильные глаголы образуют Past Simple, добавляя окончание -ed.
+
+h3
+Основная форма — Правильный Past Simple
+
+h4
+Примечание
+
+ul
+walk — walked
+Добавляется окончание -ed.
+play — played
+Добавляется окончание -ed.
+try — tried
+Y меняется на I перед добавлением -ed.
+stop — stopped
+Удваивается конечная согласная.
+like — liked
+Добавляется окончание -ed.
+
+h3
+Правила для неправильных глаголов:
+
+h4
+Неправильные глаголы имеют уникальные формы в прошедшем времени, которые нужно запомнить.
+
+ul
+go → went
+have → had
+see → saw
+
+ua
+h2
+Правило утворення речень у Past Simple
+
+h3
+Стверджувальне речення:
+
+ul
+Для утворення стверджувального речення в Past Simple використовується друга форма дієслова (дієслово в минулому часі).
+
+h3
+Приклади:
+
+ul
+I visited my grandmother last week.
+They played soccer yesterday.
+
+h3
+Правила для правильних дієслів:
+
+h4
+Правильні дієслова утворюють Past Simple, додаючи закінчення -ed.
+
+h3
+Основна форма — Правильний Past Simple
+
+h4
+Примітка
+
+ul
+walk — walked
+Додається закінчення -ed.
+play — played
+Додається закінчення -ed.
+try — tried
+Y змінюється на I перед додаванням -ed.
+stop — stopped
+Подвоюється кінцева приголосна.
+like — liked
+Додається закінчення -ed.
+
+h3
+Правила для неправильних дієслів:
+
+h4
+Неправильні дієслова мають унікальні форми в минулому часі, які потрібно запам’ятати.
+
+ul
+go → went
+have → had
+see → saw
+
+pl
+h2
+Zasada tworzenia zdań w Past Simple
+
+h3
+Zdanie twierdzące:
+
+ul
+Aby utworzyć zdanie twierdzące w Past Simple, używa się drugiej formy czasownika (czasownika w czasie przeszłym).
+
+h3
+Przykłady:
+
+ul
+I visited my grandmother last week.
+They played soccer yesterday.
+
+h3
+Zasady dla czasowników regularnych:
+
+h4
+Czasowniki regularne tworzą Past Simple, dodając końcówkę -ed.
+
+h3
+Forma podstawowa — Regularny Past Simple
+
+h4
+Uwaga
+
+ul
+walk — walked
+Dodaje się końcówkę -ed.
+play — played
+Dodaje się końcówkę -ed.
+try — tried
+Y zmienia się na I przed dodaniem -ed.
+stop — stopped
+Podwaja się końcowa spółgłoska.
+like — liked
+Dodaje się końcówkę -ed.
+
+h3
+Zasady dla czasowników nieregularnych:
+
+h4
+Czasowniki nieregularne mają unikalne formy w czasie przeszłym, które trzeba zapamiętać.
+
+ul
+go → went
+have → had
+see → saw
+
+
+en
+h2
+Rule for Forming Sentences in Past Simple
+
+h3
+Affirmative sentence:
+
+ul
+To form an affirmative sentence in the Past Simple, use the second form of the verb (the verb in the past tense).
+
+h3
+Examples:
+
+ul
+I visited my grandmother last week.
+They played soccer yesterday.
+
+h3
+Rules for regular verbs:
+
+h4
+Regular verbs form the Past Simple by adding the ending -ed.
+
+h3
+Base form — Regular Past Simple
+
+h4
+Note
+
+ul
+walk — walked
+The ending -ed is added.
+play — played
+The ending -ed is added.
+try — tried
+Y changes to I before adding -ed.
+stop — stopped
+The final consonant is doubled.
+like — liked
+The ending -ed is added.
+
+h3
+Rules for irregular verbs:
+
+h4
+Irregular verbs have unique past tense forms that must be memorized.
+
+ul
+go → went
+have → had
+see → saw
+
+
+
 `}function thouryUnit12(){return`
     file32
     unit-12
@@ -8623,9 +8615,9 @@ ul
 - questions: may — normal, might — formal
 
 
-`}const arrayDataThoury=[];arrayDataThoury.push(thouryUnit1());arrayDataThoury.push(thouryUnit2());arrayDataThoury.push(thouryUnit2_2());arrayDataThoury.push(thouryUnit3());arrayDataThoury.push(thouryUnit12());arrayDataThoury.push(thouryUnit13());arrayDataThoury.push(thouryUnit14());arrayDataThoury.push(thouryUnit15());arrayDataThoury.push(thouryUnit16());arrayDataThoury.push(thouryUnit17());arrayDataThoury.push(thouryUnit18());arrayDataThoury.push(thouryUnit19());arrayDataThoury.push(thouryUnit20());arrayDataThoury.push(thouryUnit21());arrayDataThoury.push(thouryUnit22());arrayDataThoury.push(thouryUnit23());arrayDataThoury.push(thouryUnit24());arrayDataThoury.push(thouryUnit25());arrayDataThoury.push(thouryUnit26());arrayDataThoury.push(thouryUnit27());arrayDataThoury.push(thouryUnit28());arrayDataThoury.push(thouryUnit29());function returnDataArrayForStr(e){let a="";return Number.isFinite(e)?a="file"+e:a=e,a=arrayDataThoury.find(t=>t.includes(a)),a}function searchLabel(e,a){if(e==null)return"";a+=`
+`}const arrayDataThoury=[];arrayDataThoury.push(thouryUnit1());arrayDataThoury.push(thouryUnit2());arrayDataThoury.push(thouryUnit2_2());arrayDataThoury.push(thouryUnit3());arrayDataThoury.push(thouryUnit10());arrayDataThoury.push(thouryUnit11());arrayDataThoury.push(thouryUnit12());arrayDataThoury.push(thouryUnit13());arrayDataThoury.push(thouryUnit14());arrayDataThoury.push(thouryUnit15());arrayDataThoury.push(thouryUnit16());arrayDataThoury.push(thouryUnit17());arrayDataThoury.push(thouryUnit18());arrayDataThoury.push(thouryUnit19());arrayDataThoury.push(thouryUnit20());arrayDataThoury.push(thouryUnit21());arrayDataThoury.push(thouryUnit22());arrayDataThoury.push(thouryUnit23());arrayDataThoury.push(thouryUnit24());arrayDataThoury.push(thouryUnit25());arrayDataThoury.push(thouryUnit26());arrayDataThoury.push(thouryUnit27());arrayDataThoury.push(thouryUnit28());arrayDataThoury.push(thouryUnit29());function returnDataArrayForStr(e){let a="";return Number.isFinite(e)?a="file"+e:a=e,a=arrayDataThoury.find(t=>t.includes(a)),a}function searchLabel(e,a){if(e==null)return"";a+=`
 `;let t=e.indexOf(a);return t<0&&(t=e.indexOf(a.charAt(0).toUpperCase()+a.slice(1))),t<0&&e.indexOf(a.toUpperCase()),t<0&&(t=0,console.log("не удалось найти маркер "+a)),t}function returnStringHelpForLanguage(e){const a=returnDataArrayForStr(e);if(a==null)return"";let t={ru:searchLabel(a,"ru"),ua:searchLabel(a,"ua"),pl:searchLabel(a,"pl"),en:searchLabel(a,"en"),strLenght:a.length,get start(){return localStorage.getItem("EnglishWithJs_lang")==="ru"?this.ru:localStorage.getItem("EnglishWithJs_lang")==="ua"?this.ua:localStorage.getItem("EnglishWithJs_lang")==="pl"?this.pl:this.en},get finish(){const i=[this.ru,this.ua,this.pl,this.en];i.sort((s,r)=>s-r);let n=i.find(s=>s>this.start);return n==null&&(n=this.strLenght),n}};return a.slice(t.start,t.finish)}function ThouryH2(e="start",a=0){return e==="start"?`<h2 id="thoury-pattern-h2-${a}">`:"</h2>"}function ThouryH3(e="start",a=0){return e==="start"?`<h3 id="thoury-pattern-h3-${a}">`:"</h3>"}function ThouryH4(e="start",a=0){return e==="start"?`<h4 id="thoury-pattern-h4-${a}">`:"</h4>"}function ThouryUl(e="start",a=0){return e==="start"?`<ul id="thoury-pattern-ui-${a}">`:"</ul>"}function ThouryLi(e="start",a=0){return e==="start"?`<li id="thoury-pattern-li-${a}">`:"</li>"}function ThouryDiv(e="start"){return e==="start"?'<div class="thoury-pattern" id="thoury-pattern">':"</div>"}function returnBodyHelpForLanguage(e){let a=returnStringHelpForLanguage(e);if(a=="")return"";let t=a.split(`
-`),o="",i="",n="",s=0;for(let r of t){if(s++,r.trim()==""&&n!==""){i=="h2"&&(n=ThouryH2("start",s)+n+ThouryH2(""),o=o+n+"<hr>"),i=="ul"&&(n=ThouryUl("start",s)+n+ThouryUl(""),o=o+n),i=="h3"&&(n=ThouryH3("start",s)+n+ThouryH3(""),o=o+n),i=="h4"&&(n=ThouryH4("start",s)+n+ThouryH4(""),o=o+n),i="",n="";continue}if(r.trim().split(/\s+/).includes("h2")){i="h2";continue}if(r.trim().split(/\s+/).includes("h3")){i="h3";continue}if(r.trim().split(/\s+/).includes("h4")){i="h4";continue}if(r.trim().split(/\s+/).includes("ul")){i="ul";continue}(i=="h4"||i=="h3"||i=="h2"||i=="ul")&&((i=="h4"||i=="h3"||i=="h2"||i=="P")&&(n+=r+"<br>"),i=="ul"&&(n+=ThouryLi("start",s)+r+ThouryLi("")))}return ThouryDiv()+o+ThouryDiv("")}function getBodyThoury(e){switch(e.level){case 20:return e.translate.translate(indexForThoury.returnLevel20());case 31:return e.translate.translate(indexForThoury.returnLevel31());case 23:return e.translate.translate(indexForThoury.returnLevel23());case 21:return e.translate.translate(indexForThoury.returnLevel21());case 19:return e.translate.translate(indexForThoury.returnLevel19());case 18:return e.translate.translate(indexForThoury.returnLevel18());case 17:return e.translate.translate(indexForThoury.returnLevel17());case 16:return e.translate.translate(indexForThoury.returnLevel16());case 15:return e.translate.translate(indexForThoury.returnLevel15());case 14:return e.translate.translate(indexForThoury.returnLevel14());default:let a=returnBodyHelpForLanguage(e.level);return a==""?e.translate.translate("Просто учим слова"):a}}function getWorkPlace(e,a){return`
+`),o="",i="",n="",s=0;for(let r of t){if(s++,r.trim()==""&&n!==""){i=="h2"&&(n=ThouryH2("start",s)+n+ThouryH2(""),o=o+n+"<hr>"),i=="ul"&&(n=ThouryUl("start",s)+n+ThouryUl(""),o=o+n),i=="h3"&&(n=ThouryH3("start",s)+n+ThouryH3(""),o=o+n),i=="h4"&&(n=ThouryH4("start",s)+n+ThouryH4(""),o=o+n),i="",n="";continue}if(r.trim().split(/\s+/).includes("h2")){i="h2";continue}if(r.trim().split(/\s+/).includes("h3")){i="h3";continue}if(r.trim().split(/\s+/).includes("h4")){i="h4";continue}if(r.trim().split(/\s+/).includes("ul")){i="ul";continue}(i=="h4"||i=="h3"||i=="h2"||i=="ul")&&((i=="h4"||i=="h3"||i=="h2"||i=="P")&&(n+=r+"<br>"),i=="ul"&&(n+=ThouryLi("start",s)+r+ThouryLi("")))}return ThouryDiv()+o+ThouryDiv("")}function getBodyThoury(e){switch(e.level){case 20:return e.translate.translate(indexForThoury.returnLevel20());case 21:return e.translate.translate(indexForThoury.returnLevel21());case 19:return e.translate.translate(indexForThoury.returnLevel19());case 18:return e.translate.translate(indexForThoury.returnLevel18());case 17:return e.translate.translate(indexForThoury.returnLevel17());case 16:return e.translate.translate(indexForThoury.returnLevel16());case 15:return e.translate.translate(indexForThoury.returnLevel15());case 14:return e.translate.translate(indexForThoury.returnLevel14());default:let a=returnBodyHelpForLanguage(e.level);return a==""?e.translate.translate("Просто учим слова"):a}}function getWorkPlace(e,a){return`
     <div class="card shadow-lg rounded-3 get-work-place">
      <button id="${a}"
          type="button" class="btn-close" aria-label="Close" 
