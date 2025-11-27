@@ -54,11 +54,6 @@ BDTranslate.push(
    `Poprzednie pytanie tutaj`,
    `Previous question here`]);
 BDTranslate.push(
-  [returnInfoUnit.returnLevel38(), 
-   returnInfoUnit.returnLevel38UA(), 
-   returnInfoUnit.returnLevel38PL(),
-   returnInfoUnit.returnLevel38EN()]);
-BDTranslate.push(
   [returnInfoUnit.returnLevel37(), 
    returnInfoUnit.returnLevel37UA(), 
    returnInfoUnit.returnLevel37PL(),
