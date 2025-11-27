@@ -64,11 +64,6 @@ BDTranslate.push(
    `(może się różnić)`,
    `(may differ)`]);
 BDTranslate.push(
-  [returnInfoUnit.returnLevel20(), 
-   returnInfoUnit.returnLevel20UA(), 
-   returnInfoUnit.returnLevel20PL(),
-   returnInfoUnit.returnLevel20EN()]);
-BDTranslate.push(
   [returnInfoUnit.returnInfoForDiamant(), 
    returnInfoUnit.returnInfoForDiamantUA(), 
    returnInfoUnit.returnInfoForDiamantPL(),
@@ -158,11 +153,6 @@ BDTranslate.push(
      `Дієслова Have та Have Got`, 
      `Czasowniki Have i Have Got`,
      `The verbs Have and Have Got`]);
-BDTranslate.push(
-    [returnInfoUnit.returnLevel19(), 
-     returnInfoUnit.returnLevel19UA(), 
-     returnInfoUnit.returnLevel19PL(),
-     returnInfoUnit.returnLevel19EN()]);
 BDTranslate.push(
     [`Выбор между P.S. и настоящим продолженным P.C.`, 
      `Вибір між P.S. та справжнім продовженим P.C.`, 

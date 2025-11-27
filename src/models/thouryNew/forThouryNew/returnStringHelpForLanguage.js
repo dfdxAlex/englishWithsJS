@@ -42,7 +42,6 @@ export function returnStringHelpForLanguage(id)
 
     // Вырезать часть строки описывающая помощь в нужном языке
     let strOutput = strAll.slice(pozObj.start, pozObj.finish);
-
     return strOutput;
 }
 

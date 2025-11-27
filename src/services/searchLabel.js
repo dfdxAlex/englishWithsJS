@@ -2,17 +2,17 @@
 // но может искать любые другие маркеры, важно чтобы они стояли в отдельной строке.
 // первый параметр - это строка, второй параметр - это метка, позицию которой нужно найти
 
-export function searchLabel(str, label)
-{
-    if (str == undefined) return '';
-    label+='\n';
-    let poz = str.indexOf(label);
-    if (poz < 0) poz = str.indexOf(label.charAt(0).toUpperCase() + label.slice(1));
-    if (poz < 0) str.indexOf(label.toUpperCase());
+export function searchLabel(str, label) {
+    if (!str) return -1;
 
-    if (poz < 0) {
-        poz = 0;
-        console.log('не удалось найти маркер '+label);
+    // создаём регулярку для поиска маркера как отдельного слова
+    const regex = new RegExp('\\b' + label + '\\b', 'i'); // 'i' - без учёта регистра
+    const match = str.match(regex);
+    
+    if (match) {
+        return match.index;
+    } else {
+        console.log('Не удалось найти маркер ' + label);
+        return -1;
     }
-    return poz;
 }

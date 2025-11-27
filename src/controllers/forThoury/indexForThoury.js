@@ -27,16 +27,6 @@ import returnLevel18EN from '../../view/thoury/returnLevel18EN.js';
 import returnLevel18PL from '../../view/thoury/returnLevel18PL.js';
 import returnLevel18UA from '../../view/thoury/returnLevel18UA.js';
 
-import returnLevel19 from '../../view/thoury/returnLevel19.js';
-import returnLevel19EN from '../../view/thoury/returnLevel19EN.js';
-import returnLevel19PL from '../../view/thoury/returnLevel19PL.js';
-import returnLevel19UA from '../../view/thoury/returnLevel19UA.js';
-
-import returnLevel20 from '../../view/thoury/returnLevel20.js';
-import returnLevel20EN from '../../view/thoury/returnLevel20EN.js';
-import returnLevel20PL from '../../view/thoury/returnLevel20PL.js';
-import returnLevel20UA from '../../view/thoury/returnLevel20UA.js';
-
 import returnInfoForDiamant  from '../../view/thoury/returnInfoForDiamant.js';
 import returnInfoForDiamantEN  from '../../view/thoury/returnInfoForDiamantEN.js';
 import returnInfoForDiamantPL  from '../../view/thoury/returnInfoForDiamantPL.js';
@@ -74,14 +64,6 @@ const indexForThoury = {
          returnInfoForDiamantEN,
          returnInfoForDiamantPL,
          returnInfoForDiamantUA,
-         returnLevel20EN,
-         returnLevel20PL,
-         returnLevel20UA,
-         returnLevel20,
-         returnLevel19EN,
-         returnLevel19PL,
-         returnLevel19UA,
-         returnLevel19,
          returnLevel18EN,
          returnLevel18PL,
          returnLevel18UA,
