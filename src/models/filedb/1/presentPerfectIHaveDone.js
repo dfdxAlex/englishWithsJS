@@ -1165,9 +1165,9 @@ export const presentPerfectIHaveDone = [
         "Yes, I just have painted.",
         "Yes, I has just painted.",
         "Yes just, I have painted.",
-        "Мы убрали дом?",
-        "Ми прибрали дім?",
-        "Czy posprzątaliśmy dom?"
+        "Она нарисовала картину?",
+        "Вона намалювала картину?",
+        "Czy ona namalowała obraz?"
     ],
     [
         "Have they fixed the computer?",
