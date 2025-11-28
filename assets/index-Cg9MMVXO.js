@@ -1,530 +1,4 @@
-var I=Object.defineProperty;var T=(e,a,t)=>a in e?I(e,a,{enumerable:!0,configurable:!0,writable:!0,value:t}):e[a]=t;var d=(e,a,t)=>T(e,typeof a!="symbol"?a+"":a,t);(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))o(i);new MutationObserver(i=>{for(const n of i)if(n.type==="childList")for(const s of n.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&o(s)}).observe(document,{childList:!0,subtree:!0});function t(i){const n={};return i.integrity&&(n.integrity=i.integrity),i.referrerPolicy&&(n.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?n.credentials="include":i.crossOrigin==="anonymous"?n.credentials="omit":n.credentials="same-origin",n}function o(i){if(i.ep)return;i.ep=!0;const n=t(i);fetch(i.href,n)}})();function returnLevel14(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
-    <h2 style="color: #333;">Определение настоящего продолженного времени</h2>
-    <p style="line-height: 1.6; color: #555;">
-        Настоящее продолженное время используется для описания действий, происходящих в данный момент, или для обозначения временных ситуаций. Оно образуется при помощи вспомогательного глагола "to be" и основного глагола с окончанием -ing.
-    </p>
-
-    <h3 style="color: #333;">Образование вопросов в настоящем продолженном времени</h3>
-
-    <h4 style="color: #444;">Структура вопроса:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        Вопросы в настоящем продолженном времени образуются путем вынесения вспомогательного глагола "to be" (am, is, are) на первое место перед подлежащим.
-    </p>
-
-    <h4 style="color: #444;">Формула:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        Am/Is/Are + подлежащее + глагол с окончанием -ing?
-    </p>
-
-    <h4 style="color: #444;">Примеры:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        - Are you studying English? (Ты изучаешь английский?)<br>
-        - Is he playing football? (Он играет в футбол?)<br>
-        - Am I making noise? (Я шумлю?)
-    </p>
-
-    <h4 style="color: #444;">Важные заметки:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        - "Am" используется только с "I": Am I late? (Я опоздал?)<br>
-        - "Is" используется с единственным числом: Is she coming? (Она приходит?)<br>
-        - "Are" используется с множественным числом и с "you": Are they here? (Они здесь?)
-    </p>
-
-    <p style="line-height: 1.6; color: #555;">
-        Таким образом, для образования вопросов в настоящем продолженном времени важно определить правильную форму "to be" в зависимости от подлежащего и следовать указанной формуле.
-    </p>
-</div>
-`}function returnLevel14EN(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
-    <h2 style="color: #333;">Definition of Present Continuous Tense</h2>
-    <p style="line-height: 1.6; color: #555;">
-        The Present Continuous tense is used to describe actions happening at the moment or temporary situations. It is formed using the auxiliary verb "to be" and the main verb with the -ing ending.
-    </p>
-
-    <h3 style="color: #333;">Rule for forming questions in Present Continuous</h3>
-
-    <h4 style="color: #444;">Question structure:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        To form questions in Present Continuous, place the auxiliary verb "to be" (am, is, are) before the subject.
-    </p>
-
-    <h4 style="color: #444;">Formula:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        Am/Is/Are + subject + verb with -ing?
-    </p>
-
-    <h4 style="color: #444;">Examples:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        - Are you studying English? (This structure is for questions where the auxiliary verb precedes the subject.)<br>
-        - Is he playing football? (Similar structure with "is" for singular subjects.)<br>
-        - Am I making noise? (Used with "I" and "am.")
-    </p>
-
-    <h4 style="color: #444;">Key points to note:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        - "Am" is used only with "I": Am I late? <br>
-        - "Is" is used with singular subjects: Is she coming? <br>
-        - "Are" is used with plural subjects and with "you": Are they here?
-    </p>
-
-    <p style="line-height: 1.6; color: #555;">
-        To correctly form questions in Present Continuous, it is important to identify the correct form of "to be" based on the subject and follow the given formula.
-    </p>
-</div>
-`}function returnLevel14PL(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
-    <h2 style="color: #333;">Definicja czasu teraźniejszego ciągłego (Present Continuous)</h2>
-    <p style="line-height: 1.6; color: #555;">
-        Czas teraźniejszy ciągły jest używany do opisywania działań, które odbywają się w danym momencie, lub do oznaczania sytuacji tymczasowych. Tworzy się go za pomocą czasownika pomocniczego "to be" oraz czasownika głównego z końcówką -ing.
-    </p>
-
-    <h3 style="color: #333;">Zasada tworzenia pytań w czasie teraźniejszym ciągłym</h3>
-
-    <h4 style="color: #444;">Struktura pytania:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        Pytania w czasie teraźniejszym ciągłym tworzy się poprzez umieszczenie czasownika pomocniczego "to be" (am, is, are) przed podmiotem.
-    </p>
-
-    <h4 style="color: #444;">Formuła:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        Am/Is/Are + podmiot + czasownik z końcówką -ing?
-    </p>
-
-    <h4 style="color: #444;">Przykłady:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        - Are you studying English? (Czy uczysz się angielskiego?)<br>
-        - Is he playing football? (Czy on gra w piłkę nożną?)<br>
-        - Am I making noise? (Czy robię hałas?)
-    </p>
-
-    <h4 style="color: #444;">Ważne uwagi:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        - "Am" jest używane tylko z "I": Am I late? (Czy jestem spóźniony?)<br>
-        - "Is" jest używane w liczbie pojedynczej: Is she coming? (Czy ona przychodzi?)<br>
-        - "Are" jest używane w liczbie mnogiej oraz z "you": Are they here? (Czy oni są tutaj?)
-    </p>
-
-    <p style="line-height: 1.6; color: #555;">
-        Aby utworzyć pytania w czasie Present Continuous, należy określić formę czasownika "to be" w zależności od podmiotu i zastosować podaną formułę.
-    </p>
-</div>
-`}function returnLevel14UA(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
-    <h2 style="color: #333;">Визначення теперішнього тривалого часу (Present Continuous)</h2>
-    <p style="line-height: 1.6; color: #555;">
-        Теперішній тривалий час використовується для опису дій, які відбуваються в даний момент, або для позначення тимчасових ситуацій. Він утворюється за допомогою допоміжного дієслова "to be" та основного дієслова з закінченням -ing.
-    </p>
-
-    <h3 style="color: #333;">Правило утворення питань у теперішньому тривалому часі</h3>
-
-    <h4 style="color: #444;">Структура питання:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        Питання у теперішньому тривалому часі утворюються шляхом винесення допоміжного дієслова "to be" (am, is, are) перед підметом.
-    </p>
-
-    <h4 style="color: #444;">Формула:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        Am/Is/Are + підмет + дієслово з закінченням -ing?
-    </p>
-
-    <h4 style="color: #444;">Приклади:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        - Are you studying English? (Ти вивчаєш англійську?)<br>
-        - Is he playing football? (Він грає у футбол?)<br>
-        - Am I making noise? (Я створюю шум?)
-    </p>
-
-    <h4 style="color: #444;">Важливі зауваження:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        - "Am" використовується тільки з "I": Am I late? (Я запізнився?)<br>
-        - "Is" використовується з одниною: Is she coming? (Вона приходить?)<br>
-        - "Are" використовується з множиною та з "you": Are they here? (Вони тут?)
-    </p>
-
-    <p style="line-height: 1.6; color: #555;">
-        Отже, для утворення питань у Present Continuous потрібно визначити форму дієслова "to be" в залежності від підмета та слідувати вказаній формулі.
-    </p>
-</div>
-`}function returnLevel15(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
-    <h2 style="color: #333;">Present Simple</h2>
-    <p style="line-height: 1.6; color: #555;">
-        Настоящее простое время (Present Simple) используется для описания регулярных действий, привычек, фактов и состояний, а также для выражения общеизвестных истин.
-    </p>
-    <p style="line-height: 1.6; color: #555;">
-        Оно применяется для выражения действия, которое происходит постоянно или с определенной периодичностью.
-    </p>
-
-    <h3 style="color: #333;">Образование Present Simple</h3>
-
-    <h4 style="color: #444;">Утверждения:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        Для положительных предложений используется основное значение глагола. Например:
-        <br> - I work. (Я работаю.)
-        <br> - She plays. (Она играет.)
-    </p>
-
-    <h4 style="color: #444;">Отрицательные предложения:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        Для отрицательных предложений используется вспомогательный глагол do/does с частицей not. Например:
-        <br> - I do not work. (Я не работаю.)
-        <br> - He does not play. (Он не играет.)
-    </p>
-
-    <h4 style="color: #444;">Вопросы:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        Вопросы в Present Simple образуются с помощью вспомогательного глагола do/does перед подлежащим:
-        <br> - Do you work? (Ты работаешь?)
-        <br> - Does she play? (Она играет?)
-    </p>
-
-    <h3 style="color: #333;">Правила использования:</h3>
-    <p style="line-height: 1.6; color: #555;">
-        - Do используется с I, you, we, they.
-        <br> - Does используется с he, she, it.
-    </p>
-
-    <p style="line-height: 1.6; color: #555;">
-        Эти правила обеспечивают правильное использование Present Simple в различных контекстах.
-    </p>
-</div>`}function returnLevel15EN(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
-    <h2 style="color: #333;">Present Simple</h2>
-    <p style="line-height: 1.6; color: #555;">
-        The Present Simple tense is used to describe regular actions, habits, facts, and states, as well as to express universally known truths.
-    </p>
-    <p style="line-height: 1.6; color: #555;">
-        It applies to actions that occur consistently or periodically.
-    </p>
-
-    <h3 style="color: #333;">Formation of Present Simple</h3>
-
-    <h4 style="color: #444;">Affirmative sentences:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        For affirmative sentences, the base form of the verb is used. For example:
-        <br> - I work. (I am describing my habitual action.)
-        <br> - She plays. (A regular action, referring to her.)
-    </p>
-
-    <h4 style="color: #444;">Negative sentences:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        In negative sentences, the auxiliary verb "do/does" is used with the particle "not". For example:
-        <br> - I do not work. (Expresses a negative action.)
-        <br> - He does not play. (Shows that he is not involved in the action.)
-    </p>
-
-    <h4 style="color: #444;">Questions:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        Questions in the Present Simple tense are formed using the auxiliary verb "do/does" before the subject:
-        <br> - Do you work? (Asking about a habitual action.)
-        <br> - Does she play? (Inquiring about her regular activity.)
-    </p>
-
-    <h3 style="color: #333;">Usage rules:</h3>
-    <p style="line-height: 1.6; color: #555;">
-        - "Do" is used with I, you, we, they.
-        <br> - "Does" is used with he, she, it.
-    </p>
-
-    <p style="line-height: 1.6; color: #555;">
-        These rules ensure correct usage of the Present Simple tense in various contexts.
-    </p>
-</div>
-`}function returnLevel15PL(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
-    <h2 style="color: #333;">Present Simple</h2>
-    <p style="line-height: 1.6; color: #555;">
-        Czas teraźniejszy prosty (Present Simple) jest używany do opisywania regularnych czynności, nawyków, faktów i stanów, a także do wyrażania powszechnie znanych prawd.
-    </p>
-    <p style="line-height: 1.6; color: #555;">
-        Stosuje się go do wyrażania czynności, która odbywa się stale lub z określoną regularnością.
-    </p>
-
-    <h3 style="color: #333;">Tworzenie Present Simple</h3>
-
-    <h4 style="color: #444;">Twierdzenia:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        Do zdań twierdzących używa się podstawowej formy czasownika. Na przykład:
-        <br> - I work. (Pracuję.)
-        <br> - She plays. (Ona gra.)
-    </p>
-
-    <h4 style="color: #444;">Zdania przeczące:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        Do zdań przeczących używa się czasownika pomocniczego do/does z partykułą not. Na przykład:
-        <br> - I do not work. (Nie pracuję.)
-        <br> - He does not play. (On nie gra.)
-    </p>
-
-    <h4 style="color: #444;">Pytania:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        Pytania w Present Simple tworzy się za pomocą czasownika pomocniczego do/does przed podmiotem:
-        <br> - Do you work? (Czy pracujesz?)
-        <br> - Does she play? (Czy ona gra?)
-    </p>
-
-    <h3 style="color: #333;">Zasady użycia:</h3>
-    <p style="line-height: 1.6; color: #555;">
-        - Do jest używane z I, you, we, they.
-        <br> - Does jest używane z he, she, it.
-    </p>
-
-    <p style="line-height: 1.6; color: #555;">
-        Te zasady zapewniają prawidłowe użycie Present Simple w różnych kontekstach.
-    </p>
-</div>
-`}function returnLevel15UA(){return`<div style="font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; border-radius: 10px; box-shadow: 0px 0px 15px rgba(0,0,0,0.1); margin: 20px;">
-    <h2 style="color: #333;">Present Simple</h2>
-    <p style="line-height: 1.6; color: #555;">
-        Теперішній простий час (Present Simple) використовується для опису регулярних дій, звичок, фактів і станів, а також для вираження загальновідомих істин.
-    </p>
-    <p style="line-height: 1.6; color: #555;">
-        Він застосовується для вираження дії, що відбувається постійно або з певною періодичністю.
-    </p>
-
-    <h3 style="color: #333;">Утворення Present Simple</h3>
-
-    <h4 style="color: #444;">Ствердження:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        Для стверджувальних речень використовується основне значення дієслова. Наприклад:
-        <br> - I work. (Я працюю.)
-        <br> - She plays. (Вона грає.)
-    </p>
-
-    <h4 style="color: #444;">Заперечні речення:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        Для заперечних речень використовується допоміжне дієслово do/does з часткою not. Наприклад:
-        <br> - I do not work. (Я не працюю.)
-        <br> - He does not play. (Він не грає.)
-    </p>
-
-    <h4 style="color: #444;">Питання:</h4>
-    <p style="line-height: 1.6; color: #555;">
-        Питання у Present Simple утворюються за допомогою допоміжного дієслова do/does перед підметом:
-        <br> - Do you work? (Ти працюєш?)
-        <br> - Does she play? (Вона грає?)
-    </p>
-
-    <h3 style="color: #333;">Правила використання:</h3>
-    <p style="line-height: 1.6; color: #555;">
-        - Do використовується з I, you, we, they.
-        <br> - Does використовується з he, she, it.
-    </p>
-
-    <p style="line-height: 1.6; color: #555;">
-        Ці правила забезпечують правильне використання Present Simple в різних контекстах.
-    </p>
-</div>`}function returnLevel16(){return`<div style="font-family: Arial, sans-serif; line-height: 1.6; background-color: #f4f4f4; margin: 20px; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-    <h1 style="color: #333;">Простое Настоящее Время с Периодичностью</h1>
-
-    <h2 style="color: #555;">Определение:</h2>
-    <p>
-        Простое настоящее время (Present Simple) используется для описания привычных действий, фактов и рутин. Оно часто включает наречия частоты, чтобы указать, как часто происходит действие.
-    </p>
-
-    <h2 style="color: #555;">Ключевые моменты:</h2>
-    <ul>
-        <li><strong>Наречия Частоты:</strong> Наиболее распространенные наречия частоты:</li>
-        <ul>
-            <li>Always (всегда)</li>
-            <li>Usually (обычно)</li>
-            <li>Often (часто)</li>
-            <li>Sometimes (иногда)</li>
-            <li>Rarely (редко)</li>
-            <li>Never (никогда)</li>
-        </ul>
-    </ul>
-
-    <h2 style="color: #555;">Образование:</h2>
-    <h3>1. Утвердительные предложения:</h3>
-    <p>
-        Используйте базовую форму глагола. Например:
-        <br>I always eat breakfast. — Я всегда завтракаю.
-        <br>She usually goes for a walk. — Она обычно гуляет.
-    </p>
-
-    <h3>2. Отрицательные предложения:</h3>
-    <p>
-        Используйте вспомогательный глагол do/does + not + базовый глагол. Например:
-        <br>I do not eat breakfast. — Я не завтракаю.
-        <br>He does not go for a walk. — Он не гуляет.
-    </p>
-
-    <h3>3. Вопросы:</h3>
-    <p>
-        Сформируйте вопросы, поставив do/does перед подлежащим:
-        <br>Do you always eat breakfast? — Ты всегда завтракаешь?
-        <br>Does she usually go for a walk? — Она обычно гуляет?
-    </p>
-
-    <h2 style="color: #555;">Использование:</h2>
-    <p>
-        Когда вы используете наречия частоты, они обычно стоят перед основным глаголом, но после глагола "to be". Например:
-        <br>I always play football. — Я всегда играю в футбол.
-        <br>He is often late. — Он часто опаздывает.
-    </p>
-
-    <p>
-        Эта структура помогает четко передать частоту действий в простом настоящем времени.
-    </p>
-</div>
-`}function returnLevel16EN(){return`<div style="font-family: Arial, sans-serif; line-height: 1.6; background-color: #f4f4f4; margin: 20px; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-    <h1 style="color: #333;">Present Simple with Frequency</h1>
-
-    <h2 style="color: #555;">Definition:</h2>
-    <p>
-        Present Simple is used to describe habitual actions, facts, and routines. It often includes adverbs of frequency to indicate how often an action takes place.
-    </p>
-
-    <h2 style="color: #555;">Key Points:</h2>
-    <ul>
-        <li><strong>Adverbs of Frequency:</strong> Commonly used adverbs of frequency include:</li>
-        <ul>
-            <li>Always</li>
-            <li>Usually</li>
-            <li>Often</li>
-            <li>Sometimes</li>
-            <li>Rarely</li>
-            <li>Never</li>
-        </ul>
-    </ul>
-
-    <h2 style="color: #555;">Formation:</h2>
-    <h3>1. Affirmative Sentences:</h3>
-    <p>
-        Use the base form of the verb. For example:
-        <br>I always eat breakfast.
-        <br>She usually goes for a walk.
-    </p>
-
-    <h3>2. Negative Sentences:</h3>
-    <p>
-        Use the auxiliary verb do/does + not + base verb. For example:
-        <br>I do not eat breakfast.
-        <br>He does not go for a walk.
-    </p>
-
-    <h3>3. Questions:</h3>
-    <p>
-        Form questions by placing do/does before the subject:
-        <br>Do you always eat breakfast?
-        <br>Does she usually go for a walk?
-    </p>
-
-    <h2 style="color: #555;">Usage:</h2>
-    <p>
-        When using adverbs of frequency, they typically appear before the main verb but after the verb "to be." For example:
-        <br>I always play football.
-        <br>He is often late.
-    </p>
-
-    <p>
-        This structure helps clearly convey the frequency of actions in the present simple tense.
-    </p>
-</div>
-`}function returnLevel16PL(){return`<div style="font-family: Arial, sans-serif; line-height: 1.6; background-color: #f4f4f4; margin: 20px; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-    <h1 style="color: #333;">Prosty Czas Teraźniejszy z Częstotliwością</h1>
-
-    <h2 style="color: #555;">Definicja:</h2>
-    <p>
-        Prosty czas teraźniejszy (Present Simple) jest używany do opisu zwykłych działań, faktów i rutyny. Często zawiera przysłówki częstotliwości, aby wskazać, jak często dana czynność ma miejsce.
-    </p>
-
-    <h2 style="color: #555;">Kluczowe punkty:</h2>
-    <ul>
-        <li><strong>Przysłówki Częstotliwości:</strong> Najczęściej używane przysłówki częstotliwości:</li>
-        <ul>
-            <li>Always (zawsze)</li>
-            <li>Usually (zazwyczaj)</li>
-            <li>Often (często)</li>
-            <li>Sometimes (czasami)</li>
-            <li>Rarely (rzadko)</li>
-            <li>Never (nigdy)</li>
-        </ul>
-    </ul>
-
-    <h2 style="color: #555;">Tworzenie:</h2>
-    <h3>1. Zdania afirmacyjne:</h3>
-    <p>
-        Użyj podstawowej formy czasownika. Na przykład:
-        <br>I always eat breakfast. — Zawsze jem śniadanie.
-        <br>She usually goes for a walk. — Ona zazwyczaj idzie na spacer.
-    </p>
-
-    <h3>2. Zdania przeczące:</h3>
-    <p>
-        Użyj czasownika pomocniczego do/does + not + podstawowy czasownik. Na przykład:
-        <br>I do not eat breakfast. — Nie jem śniadania.
-        <br>He does not go for a walk. — On nie idzie na spacer.
-    </p>
-
-    <h3>3. Pytania:</h3>
-    <p>
-        Uformuj pytania, stawiając do/does przed podmiotem:
-        <br>Do you always eat breakfast? — Czy zawsze jesz śniadanie?
-        <br>Does she usually go for a walk? — Czy ona zazwyczaj idzie na spacer?
-    </p>
-
-    <h2 style="color: #555;">Użycie:</h2>
-    <p>
-        Gdy używasz przysłówków częstotliwości, zazwyczaj stoją one przed czasownikiem głównym, ale po czasowniku "to be". Na przykład:
-        <br>I always play football. — Zawsze gram w piłkę nożną.
-        <br>He is often late. — On często się spóźnia.
-    </p>
-
-    <p>
-        Ta struktura pomaga wyraźnie przekazać częstotliwość działań w prostym czasie teraźniejszym.
-    </p>
-</div>
-`}function returnLevel16UA(){return`<div style="font-family: Arial, sans-serif; line-height: 1.6; background-color: #f4f4f4; margin: 20px; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-    <h1 style="color: #333;">Простий Теперішній Час з Періодичністю</h1>
-
-    <h2 style="color: #555;">Визначення:</h2>
-    <p>
-        Простий теперішній час (Present Simple) використовується для опису звичних дій, фактів і рутини. Він часто включає прислівники частоти, щоб вказати, як часто відбувається дія.
-    </p>
-
-    <h2 style="color: #555;">Ключові моменти:</h2>
-    <ul>
-        <li><strong>Прислівники Частоти:</strong> Найбільш поширені прислівники частоти:</li>
-        <ul>
-            <li>Always (завжди)</li>
-            <li>Usually (зазвичай)</li>
-            <li>Often (часто)</li>
-            <li>Sometimes (іноді)</li>
-            <li>Rarely (рідко)</li>
-            <li>Never (ніколи)</li>
-        </ul>
-    </ul>
-
-    <h2 style="color: #555;">Утворення:</h2>
-    <h3>1. Позитивні речення:</h3>
-    <p>
-        Використовуйте базову форму дієслова. Наприклад:
-        <br>I always eat breakfast. — Я завжди снідаю.
-        <br>She usually goes for a walk. — Вона зазвичай гуляє.
-    </p>
-
-    <h3>2. Заперечні речення:</h3>
-    <p>
-        Використовуйте допоміжне дієслово do/does + not + базове дієслово. Наприклад:
-        <br>I do not eat breakfast. — Я не снідаю.
-        <br>He does not go for a walk. — Він не гуляє.
-    </p>
-
-    <h3>3. Питання:</h3>
-    <p>
-        Сформулюйте питання, поставивши do/does перед підметом:
-        <br>Do you always eat breakfast? — Ти завжди снідаєш?
-        <br>Does she usually go for a walk? — Вона зазвичай гуляє?
-    </p>
-
-    <h2 style="color: #555;">Використання:</h2>
-    <p>
-        Коли ви використовуєте прислівники частоти, вони зазвичай стоять перед основним дієсловом, але після дієслова "to be". Наприклад:
-        <br>I always play football. — Я завжди граю у футбол.
-        <br>He is often late. — Він часто запізнюється.
-    </p>
-
-    <p>
-        Ця структура допомагає чітко передати частоту дій у простому теперішньому часі.
-    </p>
-</div>
-`}function returnInfoForDiamant(){return`<div class="modal fade" id="diamondsModal" tabindex="-1" aria-labelledby="diamondsModalLabel" aria-hidden="true">
+var I=Object.defineProperty;var T=(e,a,t)=>a in e?I(e,a,{enumerable:!0,configurable:!0,writable:!0,value:t}):e[a]=t;var d=(e,a,t)=>T(e,typeof a!="symbol"?a+"":a,t);(function(){const a=document.createElement("link").relList;if(a&&a.supports&&a.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))o(i);new MutationObserver(i=>{for(const n of i)if(n.type==="childList")for(const s of n.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&o(s)}).observe(document,{childList:!0,subtree:!0});function t(i){const n={};return i.integrity&&(n.integrity=i.integrity),i.referrerPolicy&&(n.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?n.credentials="include":i.crossOrigin==="anonymous"?n.credentials="omit":n.credentials="same-origin",n}function o(i){if(i.ep)return;i.ep=!0;const n=t(i);fetch(i.href,n)}})();function returnInfoForDiamant(){return`<div class="modal fade" id="diamondsModal" tabindex="-1" aria-labelledby="diamondsModalLabel" aria-hidden="true">
   <div class="modal-dialog return-info-for-diamant">
     <div class="modal-content">
       <div class="modal-header">
@@ -888,7 +362,7 @@ var I=Object.defineProperty;var T=(e,a,t)=>a in e?I(e,a,{enumerable:!0,configura
             </button>
           </div>
         </div>
-        `}const indexForThoury={helpForProgramRU,helpForProgramPL,helpForProgramUA,helpForProgramEN,helpForHomeMenuRU,helpForHomeMenuUA,helpForHomeMenuPL,helpForHomeMenuEN,helpForGreenPoleOneUA,helpForGreenPoleOneRU,helpForGreenPoleOnePL,helpForGreenPoleOneEN,returnInfoForDiamant,returnInfoForDiamantEN,returnInfoForDiamantPL,returnInfoForDiamantUA,returnLevel16EN,returnLevel16PL,returnLevel16UA,returnLevel16,returnLevel15EN,returnLevel15PL,returnLevel15UA,returnLevel15,returnLevel14EN,returnLevel14PL,returnLevel14UA,returnLevel14};function exportBDTranslate(){const e=[];return e.push(["","","",""]),e.push(["be/have/do in present and past tenses","be/have/do in present and past tenses","be/have/do in present and past tenses","be/have/do in present and past tenses"]),e.push([indexForThoury.helpForProgramRU(),indexForThoury.helpForProgramUA(),indexForThoury.helpForProgramPL(),indexForThoury.helpForProgramEN()]),e.push([indexForThoury.helpForHomeMenuRU(),indexForThoury.helpForHomeMenuUA(),indexForThoury.helpForHomeMenuPL(),indexForThoury.helpForHomeMenuEN()]),e.push([indexForThoury.helpForGreenPoleOneRU(),indexForThoury.helpForGreenPoleOneUA(),indexForThoury.helpForGreenPoleOnePL(),indexForThoury.helpForGreenPoleOneEN()]),e.push(["Примерно:","Приблизно:","Mówimy o:","We are talking approximately about:"]),e.push(["Последний ответ здесь","Остання відповідь тут","Najnowsza odpowiedź tutaj","The last answer is here"]),e.push(["Предыдущий вопрос здесь","Попереднє питання тут","Poprzednie pytanie tutaj","Previous question here"]),e.push(["В этом тесте нужно собрать предложение из предложенных слов. Имейте в виду, что иногда собранное предложение может не совпадать с общей темой теста.","У цьому тесті потрібно зібрати пропозицію із запропонованих слів. Майте на увазі, що інколи зібрана пропозиція може не співпадати із загальною темою тесту.","W tym teście musisz ułożyć zdanie z podanych słów. Pamiętaj, że czasami zebrane zdanie może nie pokrywać się z ogólnym tematem testu.","In this test you need to assemble a sentence from the given words. Keep in mind that sometimes the assembled sentence may not match the general topic of the test."]),e.push(["(может отличаться)","(може відрізнятися)","(może się różnić)","(may differ)"]),e.push([indexForThoury.returnInfoForDiamant(),indexForThoury.returnInfoForDiamantUA(),indexForThoury.returnInfoForDiamantPL(),indexForThoury.returnInfoForDiamantEN()]),e.push(["Вставьте глагол вместо троеточия или подберите правильное предложение в продолженном прошедшем времени.","Вставте дієслово замість три крапки або підберіть правильну пропозицію в минулому часі.","Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym ciągłym.","Insert a verb instead of the ellipsis or choose the correct sentence in the past continuous tense."]),e.push(["Past Simple отрицательные и вопросы","Past Simple негативні та питання","Past Simple przeczenia i pytania","Past Simple Negative and Questions"]),e.push(["Вставьте глагол вместо троеточия или подберите правильное предложение в простом прошедшем времени.","Вставте дієслово замість три крапки або підберіть правильну пропозицію в простому часі.","Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym prostym.","Insert a verb instead of the ellipsis or choose the correct sentence in the simple past tense."]),e.push(["Подобрать пару правильный - неправильный глагол. Тест разбавлен небольшим числом правильных глаголов.","Підібрати пару правильне - неправильне дієслово. Тест розбавлений невеликою кількістю правильних дієслів.","Dopasuj właściwy czasownik nieregularny. Test jest rozcieńczany niewielką liczbą czasowników regularnych.","Match a pair of regular and irregular verbs. The test is diluted with a small number of regular verbs."]),e.push(["Прошедшее простое","Минуле просте","Przeszłość prosta","Past simple"]),e.push(["Помощь","Допомога","Pomoc","Help"]),e.push(["Теория:","Теорія:","Teoria:","Theory:"]),e.push(["Задание теста:","Завдання тесту:","Zadanie testowe:","Test task:"]),e.push(["Переводов:","Перекладів:","Tłumaczenia:","Translations:"]),e.push(["Успех:","Успіх:","Sukces:","Success:"]),e.push(["Ошибок:","Помилок:","Błędy:","Errors:"]),e.push(["Статистика","Статистика","Statystyka","Statistics"]),e.push(["Собрано алмазов:","Зібрано алмазів:","Zebrane diamenty:","Diamonds collected:"]),e.push(["Глаголы Was и Were","Глаголи Was і Were","Czasowniki Was i Were","Verbs Was and Were"]),e.push(["Упс. Кто-то уже сообщил об этой ошибке.","Упс. Хтось уже повідомив про цю помилку.","Ups. Ktoś już zgłosił ten błąd.","Oops. Someone already reported this bug."]),e.push(["Ошибка зафиксирована","Помилка зафіксована","Zapisano błąd","Error recorded"]),e.push(["Глаголы Have и Have Got","Дієслова Have та Have Got","Czasowniki Have i Have Got","The verbs Have and Have Got"]),e.push(["Выбор между P.S. и настоящим продолженным P.C.","Вибір між P.S. та справжнім продовженим P.C.","Wybór pomiędzy P.S. i niniejszym kontynuuje P.C.","The choice between P.S. and the present continuation P.C."]),e.push(["Простое настоящее  P.S. вопросы","Просте справжнє P.S. питання","Prosty prezent P.S. pytania","Simple present P.S. questions"]),e.push(["Простое настоящее  P.S. негативное","Просте справжнє P.S. негативне","Prosty prezent P.S. negatywny","Simple present P.S. negative"]),e.push([indexForThoury.returnLevel16(),indexForThoury.returnLevel16UA(),indexForThoury.returnLevel16PL(),indexForThoury.returnLevel16EN()]),e.push(["Простое настоящее  P.S. плюс периодичность","Просте справжнє P.S. плюс періодичність","Prosty prezent P.S. plus częstotliwość","Simple present P.S. plus periodicity"]),e.push([indexForThoury.returnLevel15(),indexForThoury.returnLevel15UA(),indexForThoury.returnLevel15PL(),indexForThoury.returnLevel15EN()]),e.push(["Простое настоящее P.S.","Просте справжнє P.S.","Prosty prezent P.S.","Simple present P.S."]),e.push([indexForThoury.returnLevel14(),indexForThoury.returnLevel14UA(),indexForThoury.returnLevel14PL(),indexForThoury.returnLevel14EN()]),e.push(["Образования вопросов в настоящем продолженном времени P.C.","Утворення питань у поточному продовженому часі P.C.","Tworzenie pytań w czasie teraźniejszym ciągłym P.C.","Formation of questions in the present continuous tense P.C."]),e.push(["Правило для настоящего продолженного времени (Present Continuous)","Правило для поточного часу (Present Continuous)","Reguła czasu teraźniejszego ciągłego","Rule for the Present Continuous"]),e.push(["Создание вопросов в Present Simple и Past Simple","Створення питань у Present Simple та Past Simple","Tworzenie pytań w czasie Present Simple i Past Simple","Forming questions in Present Simple and Past Simple"]),e.push(["Понятно","Зрозуміло","To jasne","It's clear"]),e.push(["Просто учим слова","Просто вчимо слова","Dopiero uczę się słówek","Just learning words"]),e.push(["Сокращенная форма глагола to Be","Скорочена форма дієслова","Krótka forma czasownika być","Shortened form of the verb to be"]),e.push(["Выбрать правильную пару.","Вибрати правильну пару.","Wybierz odpowiednią parę.","Choose the right pair."]),e.push(["Выбери верную форму глагола","Вибери правильну форму дієслова","Wybierz poprawną formę czasownika","Choose the correct form of the verb"]),e.push(["Вторая форма неправильных глаголов","Друга форма неправильних дієслів","Druga forma czasowników nieregularnych","The second form of irregular verbs"]),e.push(["Выбрать правильное время PS or PC","Вибрати правильне час PS or PC","Wybierz odpowiedni czas PS or PC","Choose the right time PS or PC"]),e.push(["Учить слова","Вчити слова","Ucz się słów","Learn words"]),e.push(["Подобрать правильно вопрос или ответ","Підібрати правильно питання чи відповідь","Wybierz właściwe pytanie lub odpowiedź","Choose the right question or answer"]),e.push(["Настоящее простое вопросы","Справжнє просте питання","Przedstaw proste pytania","Present simple questions"]),e.push(["Настоящее простое негативное","Справжнє просте негативне","Przedstaw prosty negatyw","Present simple negative"]),e.push(["300 глаголов","300 дієслів (RU)","300 czasowników (RU)","300 verbs (RU)"]),e.push(["50 глаголов","50 дієслів (RU/PL)","50 czasowników (RU/PL)","50 verbs (RU/PL)"]),e.push(["100 слов про спорт","100 слів про спорт (RU/PL)","100 słów o sporcie (RU/PL)","100 words about sports(RU/PL)"]),e.push(["Выберите правильно составленное предложение.","Виберіть правильно складену пропозицію.","Wybierz właściwe zdanie.","Choose the correctly constructed sentence."]),e.push(["Настоящее простое + периодичность","Справжнє просте + періодичність","Czas teraźniejszy prosty + okresowość","Present Simple + Periodicity"]),e.push(["Настоящее простое","Справжнє просте","Prezent prosty","Present simple"]),e.push(["Настоящее продолженное - вопрос","Справжнє продовжене – питання","Czas teraźniejszy ciągły – pytanie","Choose the right question"]),e.push(["Выбрать правильный вопрос","Вибрати правильне питання","Wybierz właściwe pytanie","Choose the right question"]),e.push(["Сообщить об ошибке","Повідомити про помилку","Zgłoś błąd","Report a bug"]),e.push(["Перевести вопрос","Перекласти питання","Przetłumacz pytanie","Translate question"]),e.push(["Выбрать правильный перевод","Вибрати правильний переклад","Wybierz właściwe tłumaczenie","Choose the correct translation"]),e.push(["100 слов о еде","100 слів про їжу","100 słów o jedzeniu","100 words about food"]),e.push(["100 слов о путешествии","100 слів про подорож (RU)","100 słów o podróżach (RU)","100 words about travel (RU)"]),e.push(["100 слов","100 слів (RU)","100 słów (RU)","100 words (RU)"]),e.push(["300 слов","300 слів (RU)","300 słów (RU)","300 words (RU)"]),e.push(["500 слов","500 слів (RU)","500 słów (RU)","500 words (RU)"]),e.push(["Настоящее продолженное","Присутній безперервний","Teraźniejszość ciągła","Present continuous"]),e.push(["Последний тест","Останній тест","Ostatni test","The last test"]),e.push(["Задание для теста","Завдання для тесту","Zadanie testowe","Task for the test"]),e.push(["Вопрос с вариантами ответа","Питання з варіантами відповіді","Pytanie wielokrotnego wyboru","Multiple choice question"]),e.push(["Where/Who...","Where/Who...","Where/Who...","Where/Who..."]),e.push(["Вставить правильное слово","Вставити правильне слово","Wstaw właściwe słowo","Insert the correct word"]),e.push(["To Be, ответь на вопрос","To Be, дай відповідь на запитання","Być, odpowiedz na pytanie","To Be, answer the question"]),e.push(["To Be, вопрос/ответ","To Be, питання/відповідь","Być, pytanie/odpowiedź","To Be, Q&A"]),e.push(["To Be, краткая форма","To Be, коротка форма","Być, krótka forma","To Be, short form"]),e.push(["Выбрать правильный вариант ответа","Вибрати правильний варіант відповіді","Wybierz poprawną odpowiedź","Choose the correct answer"]),e.push(["Сброс","Скидання","Resetowanie","Reset"]),e.push(["Выбрать правильный вариант сокращенной формы глагола to Be","Вибрати правильний варіант скороченої форми дієслова to Be","Wybierz poprawną wersję skróconej formy czasownika to Be","Choose the correct version of the shortened form of the verb to Be"]),e}class LanguageController{constructor(){this.langStr=localStorage.getItem("EnglishWithJs_lang")||"ru"}translate(a){if(this.langStr==="ru")return a;let t="",o=3;switch(this.langStr){case"pl":o=2;break;case"ua":o=1;break}return t=a,exportBDTranslate().forEach(i=>{i[0]==a&&(t=i[o])}),t}}const Help={translate:new LanguageController,viewhandleHelpToTranslate:function(e,a){const t=document.createElement("div");t.id="container-for-video-help";let o=this.translate.translate(e);o=o.replace(/<div id='video-help'><\/div>/,this.addVideoHelp(a)),t.innerHTML=o,document.body.appendChild(t),document.getElementById("button-close-info-modal").addEventListener("click",()=>{document.getElementById("container-for-video-help").remove()})},addVideoHelp(e){return`
+        `}const indexForThoury={helpForProgramRU,helpForProgramPL,helpForProgramUA,helpForProgramEN,helpForHomeMenuRU,helpForHomeMenuUA,helpForHomeMenuPL,helpForHomeMenuEN,helpForGreenPoleOneUA,helpForGreenPoleOneRU,helpForGreenPoleOnePL,helpForGreenPoleOneEN,returnInfoForDiamant,returnInfoForDiamantEN,returnInfoForDiamantPL,returnInfoForDiamantUA};function exportBDTranslate(){const e=[];return e.push(["","","",""]),e.push(["be/have/do in present and past tenses","be/have/do in present and past tenses","be/have/do in present and past tenses","be/have/do in present and past tenses"]),e.push([indexForThoury.helpForProgramRU(),indexForThoury.helpForProgramUA(),indexForThoury.helpForProgramPL(),indexForThoury.helpForProgramEN()]),e.push([indexForThoury.helpForHomeMenuRU(),indexForThoury.helpForHomeMenuUA(),indexForThoury.helpForHomeMenuPL(),indexForThoury.helpForHomeMenuEN()]),e.push([indexForThoury.helpForGreenPoleOneRU(),indexForThoury.helpForGreenPoleOneUA(),indexForThoury.helpForGreenPoleOnePL(),indexForThoury.helpForGreenPoleOneEN()]),e.push(["Примерно:","Приблизно:","Mówimy o:","We are talking approximately about:"]),e.push(["Последний ответ здесь","Остання відповідь тут","Najnowsza odpowiedź tutaj","The last answer is here"]),e.push(["Предыдущий вопрос здесь","Попереднє питання тут","Poprzednie pytanie tutaj","Previous question here"]),e.push(["В этом тесте нужно собрать предложение из предложенных слов. Имейте в виду, что иногда собранное предложение может не совпадать с общей темой теста.","У цьому тесті потрібно зібрати пропозицію із запропонованих слів. Майте на увазі, що інколи зібрана пропозиція може не співпадати із загальною темою тесту.","W tym teście musisz ułożyć zdanie z podanych słów. Pamiętaj, że czasami zebrane zdanie może nie pokrywać się z ogólnym tematem testu.","In this test you need to assemble a sentence from the given words. Keep in mind that sometimes the assembled sentence may not match the general topic of the test."]),e.push(["(может отличаться)","(може відрізнятися)","(może się różnić)","(may differ)"]),e.push([indexForThoury.returnInfoForDiamant(),indexForThoury.returnInfoForDiamantUA(),indexForThoury.returnInfoForDiamantPL(),indexForThoury.returnInfoForDiamantEN()]),e.push(["Вставьте глагол вместо троеточия или подберите правильное предложение в продолженном прошедшем времени.","Вставте дієслово замість три крапки або підберіть правильну пропозицію в минулому часі.","Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym ciągłym.","Insert a verb instead of the ellipsis or choose the correct sentence in the past continuous tense."]),e.push(["Past Simple отрицательные и вопросы","Past Simple негативні та питання","Past Simple przeczenia i pytania","Past Simple Negative and Questions"]),e.push(["Вставьте глагол вместо троеточия или подберите правильное предложение в простом прошедшем времени.","Вставте дієслово замість три крапки або підберіть правильну пропозицію в простому часі.","Wstaw czasownik zamiast wielokropka lub wybierz właściwe zdanie w czasie przeszłym prostym.","Insert a verb instead of the ellipsis or choose the correct sentence in the simple past tense."]),e.push(["Подобрать пару правильный - неправильный глагол. Тест разбавлен небольшим числом правильных глаголов.","Підібрати пару правильне - неправильне дієслово. Тест розбавлений невеликою кількістю правильних дієслів.","Dopasuj właściwy czasownik nieregularny. Test jest rozcieńczany niewielką liczbą czasowników regularnych.","Match a pair of regular and irregular verbs. The test is diluted with a small number of regular verbs."]),e.push(["Прошедшее простое","Минуле просте","Przeszłość prosta","Past simple"]),e.push(["Помощь","Допомога","Pomoc","Help"]),e.push(["Теория:","Теорія:","Teoria:","Theory:"]),e.push(["Задание теста:","Завдання тесту:","Zadanie testowe:","Test task:"]),e.push(["Переводов:","Перекладів:","Tłumaczenia:","Translations:"]),e.push(["Успех:","Успіх:","Sukces:","Success:"]),e.push(["Ошибок:","Помилок:","Błędy:","Errors:"]),e.push(["Статистика","Статистика","Statystyka","Statistics"]),e.push(["Собрано алмазов:","Зібрано алмазів:","Zebrane diamenty:","Diamonds collected:"]),e.push(["Глаголы Was и Were","Глаголи Was і Were","Czasowniki Was i Were","Verbs Was and Were"]),e.push(["Упс. Кто-то уже сообщил об этой ошибке.","Упс. Хтось уже повідомив про цю помилку.","Ups. Ktoś już zgłosił ten błąd.","Oops. Someone already reported this bug."]),e.push(["Ошибка зафиксирована","Помилка зафіксована","Zapisano błąd","Error recorded"]),e.push(["Глаголы Have и Have Got","Дієслова Have та Have Got","Czasowniki Have i Have Got","The verbs Have and Have Got"]),e.push(["Выбор между P.S. и настоящим продолженным P.C.","Вибір між P.S. та справжнім продовженим P.C.","Wybór pomiędzy P.S. i niniejszym kontynuuje P.C.","The choice between P.S. and the present continuation P.C."]),e.push(["Простое настоящее  P.S. вопросы","Просте справжнє P.S. питання","Prosty prezent P.S. pytania","Simple present P.S. questions"]),e.push(["Простое настоящее  P.S. негативное","Просте справжнє P.S. негативне","Prosty prezent P.S. negatywny","Simple present P.S. negative"]),e.push(["Простое настоящее  P.S. плюс периодичность","Просте справжнє P.S. плюс періодичність","Prosty prezent P.S. plus częstotliwość","Simple present P.S. plus periodicity"]),e.push(["Простое настоящее P.S.","Просте справжнє P.S.","Prosty prezent P.S.","Simple present P.S."]),e.push(["Образования вопросов в настоящем продолженном времени P.C.","Утворення питань у поточному продовженому часі P.C.","Tworzenie pytań w czasie teraźniejszym ciągłym P.C.","Formation of questions in the present continuous tense P.C."]),e.push(["Правило для настоящего продолженного времени (Present Continuous)","Правило для поточного часу (Present Continuous)","Reguła czasu teraźniejszego ciągłego","Rule for the Present Continuous"]),e.push(["Создание вопросов в Present Simple и Past Simple","Створення питань у Present Simple та Past Simple","Tworzenie pytań w czasie Present Simple i Past Simple","Forming questions in Present Simple and Past Simple"]),e.push(["Понятно","Зрозуміло","To jasne","It's clear"]),e.push(["Просто учим слова","Просто вчимо слова","Dopiero uczę się słówek","Just learning words"]),e.push(["Сокращенная форма глагола to Be","Скорочена форма дієслова","Krótka forma czasownika być","Shortened form of the verb to be"]),e.push(["Выбрать правильную пару.","Вибрати правильну пару.","Wybierz odpowiednią parę.","Choose the right pair."]),e.push(["Выбери верную форму глагола","Вибери правильну форму дієслова","Wybierz poprawną formę czasownika","Choose the correct form of the verb"]),e.push(["Вторая форма неправильных глаголов","Друга форма неправильних дієслів","Druga forma czasowników nieregularnych","The second form of irregular verbs"]),e.push(["Выбрать правильное время PS or PC","Вибрати правильне час PS or PC","Wybierz odpowiedni czas PS or PC","Choose the right time PS or PC"]),e.push(["Учить слова","Вчити слова","Ucz się słów","Learn words"]),e.push(["Подобрать правильно вопрос или ответ","Підібрати правильно питання чи відповідь","Wybierz właściwe pytanie lub odpowiedź","Choose the right question or answer"]),e.push(["Настоящее простое вопросы","Справжнє просте питання","Przedstaw proste pytania","Present simple questions"]),e.push(["Настоящее простое негативное","Справжнє просте негативне","Przedstaw prosty negatyw","Present simple negative"]),e.push(["300 глаголов","300 дієслів (RU)","300 czasowników (RU)","300 verbs (RU)"]),e.push(["50 глаголов","50 дієслів (RU/PL)","50 czasowników (RU/PL)","50 verbs (RU/PL)"]),e.push(["100 слов про спорт","100 слів про спорт (RU/PL)","100 słów o sporcie (RU/PL)","100 words about sports(RU/PL)"]),e.push(["Выберите правильно составленное предложение.","Виберіть правильно складену пропозицію.","Wybierz właściwe zdanie.","Choose the correctly constructed sentence."]),e.push(["Настоящее простое + периодичность","Справжнє просте + періодичність","Czas teraźniejszy prosty + okresowość","Present Simple + Periodicity"]),e.push(["Настоящее простое","Справжнє просте","Prezent prosty","Present simple"]),e.push(["Настоящее продолженное - вопрос","Справжнє продовжене – питання","Czas teraźniejszy ciągły – pytanie","Choose the right question"]),e.push(["Выбрать правильный вопрос","Вибрати правильне питання","Wybierz właściwe pytanie","Choose the right question"]),e.push(["Сообщить об ошибке","Повідомити про помилку","Zgłoś błąd","Report a bug"]),e.push(["Перевести вопрос","Перекласти питання","Przetłumacz pytanie","Translate question"]),e.push(["Выбрать правильный перевод","Вибрати правильний переклад","Wybierz właściwe tłumaczenie","Choose the correct translation"]),e.push(["100 слов о еде","100 слів про їжу","100 słów o jedzeniu","100 words about food"]),e.push(["100 слов о путешествии","100 слів про подорож (RU)","100 słów o podróżach (RU)","100 words about travel (RU)"]),e.push(["100 слов","100 слів (RU)","100 słów (RU)","100 words (RU)"]),e.push(["300 слов","300 слів (RU)","300 słów (RU)","300 words (RU)"]),e.push(["500 слов","500 слів (RU)","500 słów (RU)","500 words (RU)"]),e.push(["Настоящее продолженное","Присутній безперервний","Teraźniejszość ciągła","Present continuous"]),e.push(["Последний тест","Останній тест","Ostatni test","The last test"]),e.push(["Задание для теста","Завдання для тесту","Zadanie testowe","Task for the test"]),e.push(["Вопрос с вариантами ответа","Питання з варіантами відповіді","Pytanie wielokrotnego wyboru","Multiple choice question"]),e.push(["Where/Who...","Where/Who...","Where/Who...","Where/Who..."]),e.push(["Вставить правильное слово","Вставити правильне слово","Wstaw właściwe słowo","Insert the correct word"]),e.push(["To Be, ответь на вопрос","To Be, дай відповідь на запитання","Być, odpowiedz na pytanie","To Be, answer the question"]),e.push(["To Be, вопрос/ответ","To Be, питання/відповідь","Być, pytanie/odpowiedź","To Be, Q&A"]),e.push(["To Be, краткая форма","To Be, коротка форма","Być, krótka forma","To Be, short form"]),e.push(["Выбрать правильный вариант ответа","Вибрати правильний варіант відповіді","Wybierz poprawną odpowiedź","Choose the correct answer"]),e.push(["Сброс","Скидання","Resetowanie","Reset"]),e.push(["Выбрать правильный вариант сокращенной формы глагола to Be","Вибрати правильний варіант скороченої форми дієслова to Be","Wybierz poprawną wersję skróconej formy czasownika to Be","Choose the correct version of the shortened form of the verb to Be"]),e}class LanguageController{constructor(){this.langStr=localStorage.getItem("EnglishWithJs_lang")||"ru"}translate(a){if(this.langStr==="ru")return a;let t="",o=3;switch(this.langStr){case"pl":o=2;break;case"ua":o=1;break}return t=a,exportBDTranslate().forEach(i=>{i[0]==a&&(t=i[o])}),t}}const Help={translate:new LanguageController,viewhandleHelpToTranslate:function(e,a){const t=document.createElement("div");t.id="container-for-video-help";let o=this.translate.translate(e);o=o.replace(/<div id='video-help'><\/div>/,this.addVideoHelp(a)),t.innerHTML=o,document.body.appendChild(t),document.getElementById("button-close-info-modal").addEventListener("click",()=>{document.getElementById("container-for-video-help").remove()})},addVideoHelp(e){return`
         <div class="embed-responsive embed-responsive-16by9">
           <iframe showinfo=1 class="embed-responsive-item" src="https://www.youtube.com/embed/${e}" allowfullscreen></iframe>
         </div>
@@ -1398,6 +872,605 @@ Examples:
 ul
 I am not working.
 They are not sleeping.
+`}function thouryUnit4_3(){return`
+    file14
+    unit-4
+    ru
+  h2
+  Определение настоящего продолженного времени
+
+h3
+Настоящее продолженное время используется для описания действий, происходящих в данный момент, или для обозначения временных ситуаций. Оно образуется при помощи вспомогательного глагола "to be" и основного глагола с окончанием -ing.
+
+h4
+Образование вопросов в настоящем продолженном времени
+
+h4
+Структура вопроса:
+
+h4
+Вопросы в настоящем продолженном времени образуются путем вынесения вспомогательного глагола "to be" (am, is, are) на первое место перед подлежащим.
+
+h4
+Формула:
+
+ul
+Am/Is/Are + подлежащее + глагол с окончанием -ing?
+
+h4
+Примеры:
+
+ul
+Are you studying English? (Ты изучаешь английский?)
+Is he playing football? (Он играет в футбол?)
+Am I making noise? (Я шумлю?)
+
+h4
+Важные заметки:
+
+ul
+"Am" используется только с "I": Am I late? (Я опоздал?)
+"Is" используется с единственным числом: Is she coming? (Она приходит?)
+"Are" используется с множественным числом и с "you": Are they here? (Они здесь?)
+
+h4
+Таким образом, для образования вопросов в настоящем продолженном времени важно определить правильную форму "to be" в зависимости от подлежащего и следовать указанной формуле.
+
+ua
+h2
+Визначення теперішнього тривального часу
+
+h3
+Теперішній тривальний час використовується для опису дій, що відбуваються в даний момент, або для позначення тимчасових ситуацій. Він утворюється за допомогою допоміжного дієслова "to be" і основного дієслова з закінченням -ing.
+
+h4
+Утворення запитань у теперішньому тривальному часі
+
+h4
+Структура запитання:
+
+h4
+Запитання в теперішньому тривальному часі утворюються шляхом винесення допоміжного дієслова "to be" (am, is, are) на перше місце перед підметом.
+
+h4
+Формула:
+
+ul
+Am/Is/Are + підмет + дієслово із закінченням -ing?
+
+h4
+Приклади:
+
+ul
+Are you studying English? (Ти вивчаєш англійську?)
+Is he playing football? (Він грає у футбол?)
+Am I making noise? (Я шумлю?)
+
+h4
+Важливі примітки:
+
+ul
+"Am" використовується лише з "I": Am I late? (Я запізнився?)
+"Is" використовується з одниною: Is she coming? (Вона приходить?)
+"Are" використовується з множиною та з "you": Are they here? (Вони тут?)
+
+h4
+Таким чином, для утворення запитань у теперішньому тривальному часі важливо визначити правильну форму "to be" залежно від підмета та дотримуватися наведеної формули.
+
+pl
+h2
+Definicja czasu Present Continuous
+
+h3
+Czas Present Continuous jest używany do opisywania czynności odbywających się w danym momencie lub do wskazywania sytuacji tymczasowych. Tworzy się go za pomocą czasownika pomocniczego "to be" oraz czasownika głównego z końcówką -ing.
+
+h4
+Tworzenie pytań w czasie Present Continuous
+
+h4
+Struktura pytania:
+
+h4
+Pytania w czasie Present Continuous tworzy się poprzez umieszczenie czasownika pomocniczego "to be" (am, is, are) na początku, przed podmiotem.
+
+h4
+Formuła:
+
+ul
+Am/Is/Are + podmiot + czasownik z końcówką -ing?
+
+h4
+Przykłady:
+
+ul
+Are you studying English? (Czy uczysz się angielskiego?)
+Is he playing football? (Czy on gra w piłkę nożną?)
+Am I making noise? (Czy ja hałasuję?)
+
+h4
+Ważne uwagi:
+
+ul
+"Am" używa się tylko z "I": Am I late? (Czy się spóźniłem?)
+"Is" używa się z liczbą pojedynczą: Is she coming? (Czy ona idzie/przychodzi?)
+"Are" używa się z liczbą mnogą oraz z "you": Are they here? (Czy oni są tutaj?)
+
+h4
+Aby poprawnie tworzyć pytania w czasie Present Continuous, należy wybrać właściwą formę "to be" w zależności od podmiotu oraz stosować się do podanej formuły.
+
+
+en
+h2
+Definition of the Present Continuous Tense
+
+h3
+The Present Continuous tense is used to describe actions happening at the moment of speaking or to indicate temporary situations. It is formed using the auxiliary verb "to be" and the main verb with the -ing ending.
+
+h4
+Forming questions in the Present Continuous tense
+
+h4
+Question structure:
+
+h4
+Questions in the Present Continuous tense are formed by placing the auxiliary verb "to be" (am, is, are) at the beginning, before the subject.
+
+h4
+Formula:
+
+ul
+Am/Is/Are + subject + verb ending in -ing?
+
+h4
+Examples:
+
+ul
+Are you studying English?
+Is he playing football?
+Am I making noise? 
+
+h4
+Important notes:
+
+ul
+"Am" is used only with "I": Am I late?
+"Is" is used with singular subjects: Is she coming?
+"Are" is used with plural subjects and with "you": Are they here?
+
+h4
+Thus, to form questions in the Present Continuous tense, it is important to choose the correct form of "to be" depending on the subject and follow the given formula.
+
+`}function thouryUnit4_5(){return`
+    file15
+    unit-4
+    ru
+    h2
+Present Simple
+
+h3
+Настоящее простое время (Present Simple) используется для описания регулярных действий, привычек, фактов и состояний, а также для выражения общеизвестных истин.
+
+h3
+Оно применяется для выражения действия, которое происходит постоянно или с определенной периодичностью.
+
+h4
+Образование Present Simple
+
+h4
+Утверждения:
+
+h4
+Для положительных предложений используется основное значение глагола. Например:
+
+ul
+I work. (Я работаю.)
+She plays. (Она играет.)
+
+h4
+Отрицательные предложения:
+
+h4
+Для отрицательных предложений используется вспомогательный глагол do/does с частицей not. Например:
+
+ul
+I do not work. (Я не работаю.)
+He does not play. (Он не играет.)
+
+h4
+Вопросы:
+
+h4
+Вопросы в Present Simple образуются с помощью вспомогательного глагола do/does перед подлежащим:
+
+ul
+Do you work? (Ты работаешь?)
+Does she play? (Она играет?)
+
+h4
+Правила использования:
+
+ul
+Do используется с I, you, we, they.
+Does используется с he, she, it.
+
+h4
+Эти правила обеспечивают правильное использование Present Simple в различных контекстах.
+
+ua
+Present Simple
+
+Наступний простий час (Present Simple) використовується для опису регулярних дій, звичок, фактів та станів, а також для вираження загальновідомих істин.
+
+Він застосовується для вираження дії, яка відбувається постійно або з певною періодичністю.
+
+Образування Present Simple
+
+Утвердження:
+
+Для позитивних речень використовується основне значення дієслова. Наприклад:
+
+I work. (Я працюю.)
+She plays. (Вона грає.)
+
+Заперечні речення:
+
+Для заперечних речень використовується допоміжне дієслово do/does з часткою not. Наприклад:
+
+I do not work. (Я не працюю.)
+He does not play. (Він не грає.)
+
+Питання:
+
+Питання в Present Simple утворюються за допомогою допоміжного дієслова do/does перед підметом:
+
+Do you work? (Ти працюєш?)
+Does she play? (Вона грає?)
+
+Правила використання:
+
+Do використовується з I, you, we, they.
+Does використовується з he, she, it.
+
+Ці правила забезпечують правильне використання Present Simple у різних контекстах.
+
+pl
+Present Simple
+
+Czas teraźniejszy prosty (Present Simple) używany jest do opisywania regularnych czynności, przyzwyczajeń, faktów i stanów, a także do wyrażania powszechnie znanych prawd.
+
+Stosuje się go do opisywania czynności, które odbywają się stale lub z określoną częstotliwością.
+
+Tworzenie Present Simple
+
+Zdania twierdzące:
+
+W zdaniach twierdzących używa się podstawowej formy czasownika. Na przykład:
+
+I work. (Ja pracuję.)
+She plays. (Ona gra.)
+
+Zdania przeczące:
+
+W zdaniach przeczących używa się czasownika posiłkowego do/does wraz z partykułą not. Na przykład:
+
+I do not work. (Ja nie pracuję.)
+He does not play. (On nie gra.)
+
+Pytania:
+
+Pytania w Present Simple tworzy się przy użyciu czasownika posiłkowego do/does przed podmiotem:
+
+Do you work? (Czy ty pracujesz?)
+Does she play? (Czy ona gra?)
+
+Zasady użycia:
+
+Do używa się z I, you, we, they.
+Does używa się z he, she, it.
+
+Te zasady zapewniają prawidłowe użycie Present Simple w różnych kontekstach.
+
+en
+Present Simple
+
+The Present Simple tense is used to describe regular actions, habits, facts, and states, as well as to express generally accepted truths.
+
+It is used to indicate actions that happen regularly or with a certain frequency.
+
+Formation of Present Simple
+
+Affirmative sentences:
+
+In affirmative sentences, the base form of the verb is used. For example:
+
+I work.
+She plays.
+
+Negative sentences:
+
+In negative sentences, the auxiliary verb do/does is used with the particle not. For example:
+
+I do not work.
+He does not play.
+
+Questions:
+
+Questions in Present Simple are formed using the auxiliary verb do/does before the subject:
+
+Do you work?
+Does she play?
+
+Usage rules:
+
+"Do" is used with I, you, we, they.
+"Does" is used with he, she, it.
+
+These rules ensure the correct use of the Present Simple tense in different contexts.
+
+
+`}function thouryUnit4(){return`
+    file16
+    unit-4
+    ru
+    h2
+Простое Настоящее Время с Периодичностью
+
+h3
+Определение:
+
+h4
+Простое настоящее время (Present Simple) используется для описания привычных действий, фактов и рутин. Оно часто включает наречия частоты, чтобы указать, как часто происходит действие.
+
+h3
+Ключевые моменты:
+
+h4
+Наречия Частоты: Наиболее распространенные наречия частоты:
+
+ul
+Always (всегда)
+Usually (обычно)
+Often (часто)
+Sometimes (иногда)
+Rarely (редко)
+Never (никогда)
+
+h3
+Образование:
+
+h4
+1. Утвердительные предложения:
+   Используйте базовую форму глагола. Например:
+
+ul
+   I always eat breakfast. — Я всегда завтракаю.
+   She usually goes for a walk. — Она обычно гуляет.
+
+   h4
+2. Отрицательные предложения:
+   Используйте вспомогательный глагол do/does + not + базовый глагол. Например:
+
+   ul
+   I do not eat breakfast. — Я не завтракаю.
+   He does not go for a walk. — Он не гуляет.
+
+   h4
+3. Вопросы:
+   Сформируйте вопросы, поставив do/does перед подлежащим:
+
+   ul
+   Do you always eat breakfast? — Ты всегда завтракаешь?
+   Does she usually go for a walk? — Она обычно гуляет?
+
+   h3
+Использование:
+
+h4
+Когда вы используете наречия частоты, они обычно стоят перед основным глаголом, но после глагола "to be". Например:
+
+ul
+I always play football. — Я всегда играю в футбол.
+He is often late. — Он часто опаздывает.
+
+h4
+Эта структура помогает четко передать частоту действий в простом настоящем времени.
+
+ua
+h2
+Простий теперішній час із періодичністю
+
+h3
+Визначення:
+
+h4
+Простий теперішній час (Present Simple) використовується для опису звичних дій, фактів і рутин. Він часто включає прислівники частоти, щоб показати, як часто відбувається дія.
+
+h3
+Ключові моменти:
+
+h4
+Прислівники частоти: Найпоширеніші прислівники частоти:
+
+ul
+Always (завжди)
+Usually (зазвичай)
+Often (часто)
+Sometimes (іноді)
+Rarely (рідко)
+Never (ніколи)
+
+h3
+Утворення:
+
+h4
+
+1. Позитивні речення:
+   Використовуйте базову форму дієслова. Наприклад:
+
+ul
+I always eat breakfast. — Я завжди снідаю.
+She usually goes for a walk. — Вона зазвичай гуляє.
+
+h4
+2. Заперечні речення:
+Використовуйте допоміжне дієслово do/does + not + базове дієслово. Наприклад:
+
+ul
+I do not eat breakfast. — Я не снідаю.
+He does not go for a walk. — Він не гуляє.
+
+h4
+3. Питання:
+Сформуйте питання, поставивши do/does перед підметом:
+
+ul
+Do you always eat breakfast? — Ти завжди снідаєш?
+Does she usually go for a walk? — Вона зазвичай гуляє?
+
+h3
+Використання:
+
+h4
+Коли ви використовуєте прислівники частоти, вони зазвичай стоять перед основним дієсловом, але після дієслова "to be". Наприклад:
+
+ul
+I always play football. — Я завжди граю у футбол.
+He is often late. — Він часто запізнюється.
+
+h4
+Ця структура допомагає чітко передати частоту дій у простому теперішньому часі.
+
+pl
+h2
+Czas teraźniejszy prosty z określeniem częstotliwości
+
+h3
+Definicja:
+
+h4
+Czas teraźniejszy prosty (Present Simple) jest używany do opisywania zwyczajowych działań, faktów i rutyn. Często zawiera przysłówki częstotliwości, aby wskazać, jak często dana czynność się odbywa.
+
+h3
+Kluczowe punkty:
+
+h4
+Przysłówki częstotliwości: Najczęściej używane przysłówki częstotliwości:
+
+ul
+Always (zawsze)
+Usually (zazwyczaj)
+Often (często)
+Sometimes (czasami)
+Rarely (rzadko)
+Never (nigdy)
+
+h3
+Tworzenie zdań:
+
+h4
+
+1. Zdania twierdzące:
+   Użyj podstawowej formy czasownika. Na przykład:
+
+ul
+I always eat breakfast. — Zawsze jem śniadanie.
+She usually goes for a walk. — Zazwyczaj ona spaceruje.
+
+h4
+2. Zdania przeczące:
+Użyj czasownika posiłkowego do/does + not + podstawowa forma czasownika. Na przykład:
+
+ul
+I do not eat breakfast. — Nie jem śniadania.
+He does not go for a walk. — On nie spaceruje.
+
+h4
+3. Pytania:
+Twórz pytania, stawiając do/does przed podmiotem:
+
+ul
+Do you always eat breakfast? — Czy zawsze jesz śniadanie?
+Does she usually go for a walk? — Czy ona zazwyczaj spaceruje?
+
+h3
+Zastosowanie:
+
+h4
+Gdy używasz przysłówków częstotliwości, zazwyczaj stoją one przed głównym czasownikiem, ale po czasowniku "to be". Na przykład:
+
+ul
+I always play football. — Zawsze gram w piłkę nożną.
+He is often late. — On często się spóźnia.
+
+h4
+Ta struktura pomaga jasno przekazać częstotliwość działań w czasie teraźniejszym prostym.
+
+en
+h2
+Present Simple with Frequency
+
+h3
+Definition:
+
+h4
+The Present Simple tense is used to describe habitual actions, facts, and routines. It often includes frequency adverbs to indicate how often an action occurs.
+
+h3
+Key points:
+
+h4
+Frequency adverbs: The most common frequency adverbs:
+
+ul
+Always
+Usually
+Often
+Sometimes
+Rarely
+Never
+
+h3
+Forming sentences:
+
+h4
+
+1. Affirmative sentences:
+   Use the base form of the verb. For example:
+
+ul
+I always eat breakfast. — I always eat breakfast.
+She usually goes for a walk. — She usually goes for a walk.
+
+h4
+2. Negative sentences:
+Use the auxiliary verb do/does + not + base verb. For example:
+
+ul
+I do not eat breakfast. — I do not eat breakfast.
+He does not go for a walk. — He does not go for a walk.
+
+h4
+3. Questions:
+Form questions by placing do/does before the subject:
+
+ul
+Do you always eat breakfast? — Do you always eat breakfast?
+Does she usually go for a walk? — Does she usually go for a walk?
+
+h3
+Usage:
+
+h4
+When using frequency adverbs, they usually come before the main verb but after the verb "to be." For example:
+
+ul
+I always play football. — I always play football.
+He is often late. — He is often late.
+
+h4
+This structure helps clearly convey the frequency of actions in the Present Simple tense.
+
+
 `}function thouryUnit5(){return`
     file17
     unit-5
@@ -8157,8 +8230,8 @@ ul
 - questions: may — normal, might — formal
 
 
-`}const arrayDataThoury=[];arrayDataThoury.push(thouryUnit1());arrayDataThoury.push(thouryUnit2());arrayDataThoury.push(thouryUnit2_2());arrayDataThoury.push(thouryUnit3());arrayDataThoury.push(thouryUnit5());arrayDataThoury.push(thouryUnit6());arrayDataThoury.push(thouryUnit7());arrayDataThoury.push(thouryUnit8());arrayDataThoury.push(thouryUnit9());arrayDataThoury.push(thouryUnit10());arrayDataThoury.push(thouryUnit11());arrayDataThoury.push(thouryUnit12());arrayDataThoury.push(thouryUnit13());arrayDataThoury.push(thouryUnit14());arrayDataThoury.push(thouryUnit15());arrayDataThoury.push(thouryUnit16());arrayDataThoury.push(thouryUnit17());arrayDataThoury.push(thouryUnit18());arrayDataThoury.push(thouryUnit19());arrayDataThoury.push(thouryUnit20());arrayDataThoury.push(thouryUnit21());arrayDataThoury.push(thouryUnit22());arrayDataThoury.push(thouryUnit23());arrayDataThoury.push(thouryUnit24());arrayDataThoury.push(thouryUnit25());arrayDataThoury.push(thouryUnit26());arrayDataThoury.push(thouryUnit27());arrayDataThoury.push(thouryUnit28());arrayDataThoury.push(thouryUnit29());function returnDataArrayForStr(e){let a="";return Number.isFinite(e)?a="file"+e:a=e,a=arrayDataThoury.find(t=>t.includes(a)),a}function searchLabel(e,a){if(!e)return-1;const t=new RegExp("\\b"+a+"\\b","i"),o=e.match(t);return o?o.index:(console.log("Не удалось найти маркер "+a),-1)}function returnStringHelpForLanguage(e){const a=returnDataArrayForStr(e);if(a==null)return"";let t={ru:searchLabel(a,"ru"),ua:searchLabel(a,"ua"),pl:searchLabel(a,"pl"),en:searchLabel(a,"en"),strLenght:a.length,get start(){return localStorage.getItem("EnglishWithJs_lang")==="ru"?this.ru:localStorage.getItem("EnglishWithJs_lang")==="ua"?this.ua:localStorage.getItem("EnglishWithJs_lang")==="pl"?this.pl:this.en},get finish(){const i=[this.ru,this.ua,this.pl,this.en];i.sort((s,r)=>s-r);let n=i.find(s=>s>this.start);return n==null&&(n=this.strLenght),n}};return a.slice(t.start,t.finish)}function ThouryH2(e="start",a=0){return e==="start"?`<h2 id="thoury-pattern-h2-${a}">`:"</h2>"}function ThouryH3(e="start",a=0){return e==="start"?`<h3 id="thoury-pattern-h3-${a}">`:"</h3>"}function ThouryH4(e="start",a=0){return e==="start"?`<h4 id="thoury-pattern-h4-${a}">`:"</h4>"}function ThouryUl(e="start",a=0){return e==="start"?`<ul id="thoury-pattern-ui-${a}">`:"</ul>"}function ThouryLi(e="start",a=0){return e==="start"?`<li id="thoury-pattern-li-${a}">`:"</li>"}function ThouryDiv(e="start"){return e==="start"?'<div class="thoury-pattern" id="thoury-pattern">':"</div>"}function returnBodyHelpForLanguage(e){let a=returnStringHelpForLanguage(e);if(a=="")return"";let t=a.split(`
-`),o="",i="",n="",s=0;for(let r of t){if(s++,r.trim()==""&&n!==""){i=="h2"&&(n=ThouryH2("start",s)+n+ThouryH2(""),o=o+n+"<hr>"),i=="ul"&&(n=ThouryUl("start",s)+n+ThouryUl(""),o=o+n),i=="h3"&&(n=ThouryH3("start",s)+n+ThouryH3(""),o=o+n),i=="h4"&&(n=ThouryH4("start",s)+n+ThouryH4(""),o=o+n),i="",n="";continue}if(r.trim().split(/\s+/).includes("h2")){i="h2";continue}if(r.trim().split(/\s+/).includes("h3")){i="h3";continue}if(r.trim().split(/\s+/).includes("h4")){i="h4";continue}if(r.trim().split(/\s+/).includes("ul")){i="ul";continue}(i=="h4"||i=="h3"||i=="h2"||i=="ul")&&((i=="h4"||i=="h3"||i=="h2"||i=="P")&&(n+=r+"<br>"),i=="ul"&&(n+=ThouryLi("start",s)+r+ThouryLi("")))}return ThouryDiv()+o+ThouryDiv("")}function getBodyThoury(e){switch(e.level){case 16:return e.translate.translate(indexForThoury.returnLevel16());case 15:return e.translate.translate(indexForThoury.returnLevel15());case 14:return e.translate.translate(indexForThoury.returnLevel14());default:let a=returnBodyHelpForLanguage(e.level);return a==""?e.translate.translate("Просто учим слова"):a}}function getWorkPlace(e,a){return`
+`}const arrayDataThoury=[];arrayDataThoury.push(thouryUnit1());arrayDataThoury.push(thouryUnit2());arrayDataThoury.push(thouryUnit2_2());arrayDataThoury.push(thouryUnit3());arrayDataThoury.push(thouryUnit4_3());arrayDataThoury.push(thouryUnit4_5());arrayDataThoury.push(thouryUnit4());arrayDataThoury.push(thouryUnit5());arrayDataThoury.push(thouryUnit6());arrayDataThoury.push(thouryUnit7());arrayDataThoury.push(thouryUnit8());arrayDataThoury.push(thouryUnit9());arrayDataThoury.push(thouryUnit10());arrayDataThoury.push(thouryUnit11());arrayDataThoury.push(thouryUnit12());arrayDataThoury.push(thouryUnit13());arrayDataThoury.push(thouryUnit14());arrayDataThoury.push(thouryUnit15());arrayDataThoury.push(thouryUnit16());arrayDataThoury.push(thouryUnit17());arrayDataThoury.push(thouryUnit18());arrayDataThoury.push(thouryUnit19());arrayDataThoury.push(thouryUnit20());arrayDataThoury.push(thouryUnit21());arrayDataThoury.push(thouryUnit22());arrayDataThoury.push(thouryUnit23());arrayDataThoury.push(thouryUnit24());arrayDataThoury.push(thouryUnit25());arrayDataThoury.push(thouryUnit26());arrayDataThoury.push(thouryUnit27());arrayDataThoury.push(thouryUnit28());arrayDataThoury.push(thouryUnit29());function returnDataArrayForStr(e){let a="";return Number.isFinite(e)?a="file"+e:a=e,a=arrayDataThoury.find(t=>t.includes(a)),a}function searchLabel(e,a){if(!e)return-1;const t=new RegExp("\\b"+a+"\\b","i"),o=e.match(t);return o?o.index:(console.log("Не удалось найти маркер "+a),-1)}function returnStringHelpForLanguage(e){const a=returnDataArrayForStr(e);if(a==null)return"";let t={ru:searchLabel(a,"ru"),ua:searchLabel(a,"ua"),pl:searchLabel(a,"pl"),en:searchLabel(a,"en"),strLenght:a.length,get start(){return localStorage.getItem("EnglishWithJs_lang")==="ru"?this.ru:localStorage.getItem("EnglishWithJs_lang")==="ua"?this.ua:localStorage.getItem("EnglishWithJs_lang")==="pl"?this.pl:this.en},get finish(){const i=[this.ru,this.ua,this.pl,this.en];i.sort((s,r)=>s-r);let n=i.find(s=>s>this.start);return n==null&&(n=this.strLenght),n}};return a.slice(t.start,t.finish)}function ThouryH2(e="start",a=0){return e==="start"?`<h2 id="thoury-pattern-h2-${a}">`:"</h2>"}function ThouryH3(e="start",a=0){return e==="start"?`<h3 id="thoury-pattern-h3-${a}">`:"</h3>"}function ThouryH4(e="start",a=0){return e==="start"?`<h4 id="thoury-pattern-h4-${a}">`:"</h4>"}function ThouryUl(e="start",a=0){return e==="start"?`<ul id="thoury-pattern-ui-${a}">`:"</ul>"}function ThouryLi(e="start",a=0){return e==="start"?`<li id="thoury-pattern-li-${a}">`:"</li>"}function ThouryDiv(e="start"){return e==="start"?'<div class="thoury-pattern" id="thoury-pattern">':"</div>"}function returnBodyHelpForLanguage(e){let a=returnStringHelpForLanguage(e);if(a=="")return"";let t=a.split(`
+`),o="",i="",n="",s=0;for(let r of t){if(s++,r.trim()==""&&n!==""){i=="h2"&&(n=ThouryH2("start",s)+n+ThouryH2(""),o=o+n+"<hr>"),i=="ul"&&(n=ThouryUl("start",s)+n+ThouryUl(""),o=o+n),i=="h3"&&(n=ThouryH3("start",s)+n+ThouryH3(""),o=o+n),i=="h4"&&(n=ThouryH4("start",s)+n+ThouryH4(""),o=o+n),i="",n="";continue}if(r.trim().split(/\s+/).includes("h2")){i="h2";continue}if(r.trim().split(/\s+/).includes("h3")){i="h3";continue}if(r.trim().split(/\s+/).includes("h4")){i="h4";continue}if(r.trim().split(/\s+/).includes("ul")){i="ul";continue}(i=="h4"||i=="h3"||i=="h2"||i=="ul")&&((i=="h4"||i=="h3"||i=="h2"||i=="P")&&(n+=r+"<br>"),i=="ul"&&(n+=ThouryLi("start",s)+r+ThouryLi("")))}return ThouryDiv()+o+ThouryDiv("")}function getBodyThoury(e){let a=returnBodyHelpForLanguage(e.level);return a==""?e.translate.translate("Просто учим слова"):a}function getWorkPlace(e,a){return`
     <div class="card shadow-lg rounded-3 get-work-place">
      <button id="${a}"
          type="button" class="btn-close" aria-label="Close" 
