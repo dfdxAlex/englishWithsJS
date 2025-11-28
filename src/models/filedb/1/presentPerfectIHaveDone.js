@@ -422,7 +422,17 @@ export const presentPerfectIHaveDone = [
       [
         "Have you seen that movie?", 
         "Yes, I have seen it.", 
+        "I watch is now.", 
+        "I will watch it tomorrow.", 
+        "I saw it last month.", 
+        "Вы видели этот фильм?", 
+        "Ви бачили цей фільм?", 
+        "Czy widziałeś ten film?"
+      ],
+      [
+        "Have you seen that movie?", 
         "I watch it now.", 
+        "Yes, I has seen it.", 
         "I will watch it tomorrow.", 
         "I saw it last month.", 
         "Вы видели этот фильм?", 
@@ -482,7 +492,17 @@ export const presentPerfectIHaveDone = [
       [
         "Have you read the book?", 
         "Yes, I have read the book already.", 
+        "I am have reading it right now.", 
+        "I will read it tomorrow.", 
+        "I read it last month.", 
+        "Ты прочитал книгу?", 
+        "Ти прочитав книгу?", 
+        "Czy przeczytałeś książkę?"
+      ],
+      [
+        "Have you read the book?", 
         "I am reading it right now.", 
+        "Yes, I has read the book already.", 
         "I will read it tomorrow.", 
         "I read it last month.", 
         "Ты прочитал книгу?", 
@@ -568,7 +588,7 @@ export const presentPerfectIHaveDone = [
         "Ты говорил с ним сегодня?", 
         "Ти говорив з ним сьогодні?", 
         "Czy rozmawiałeś z nim dzisiaj?"
-      ],
+      ],   
       [
         "Has he heard the news?", 
         "No, he hasn't heard it yet.", 
@@ -652,7 +672,17 @@ export const presentPerfectIHaveDone = [
       [
         "Has it been a good day?", 
         "Yes, it has been a really good day.", 
+        "It is good day today.", 
+        "It will be a good day tomorrow.", 
+        "It was a good day yesterday.", 
+        "Сегодня был хороший день?", 
+        "Сьогодні був хороший день?", 
+        "Czy dzisiaj był dobry dzień?"
+      ],
+      [
+        "Has it been a good day?", 
         "It is a good day today.", 
+        "Yes, it have been a really good day.", 
         "It will be a good day tomorrow.", 
         "It was a good day yesterday.", 
         "Сегодня был хороший день?", 
@@ -682,7 +712,17 @@ export const presentPerfectIHaveDone = [
       [
         "Yes, I watched it last weekend.", 
         "Have you seen that movie?", 
+        "Is you watching it now?", 
+        "Will you watch it tomorrow?", 
+        "Did you watch it last month?", 
+        "Да, я смотрел его на выходных.", 
+        "Так, я дивився його минулого вихідного.", 
+        "Tak, oglądałem go w zeszły weekend."
+      ],
+      [
+        "Yes, I watched it last weekend.", 
         "Are you watching it now?", 
+        "Has you seen that movie?", 
         "Will you watch it tomorrow?", 
         "Did you watch it last month?", 
         "Да, я смотрел его на выходных.", 
@@ -742,7 +782,17 @@ export const presentPerfectIHaveDone = [
       [
         "Yes, I have read the book already.", 
         "Have you read the book?", 
-        "Are you reading it now?", 
+        "Is you reading it now?", 
+        "Will you read it tomorrow?", 
+        "Did you read it last month?", 
+        "Да, я уже прочитал книгу.", 
+        "Так, я вже прочитав книгу.", 
+        "Tak, już przeczytałem książkę."
+      ],
+      [
+        "Yes, I have read the book already.", 
+        "Are you reading it now?",
+        "Has you read the book?", 
         "Will you read it tomorrow?", 
         "Did you read it last month?", 
         "Да, я уже прочитал книгу.", 
@@ -812,7 +862,17 @@ export const presentPerfectIHaveDone = [
       [
         "Yes, it has been a really good day.", 
         "Has it been a good day?", 
+        "Is a good day today?", 
+        "Will it be a good day tomorrow?", 
+        "Was it a good day yesterday?", 
+        "Сегодня был хороший день.", 
+        "Сьогодні був хороший день.", 
+        "Dzisiaj był dobry dzień."
+      ],
+      [
+        "Yes, it has been a really good day.", 
         "Is it a good day today?", 
+        "Have it been a good day?", 
         "Will it be a good day tomorrow?", 
         "Was it a good day yesterday?", 
         "Сегодня был хороший день.", 
@@ -1199,7 +1259,7 @@ export const presentPerfectIHaveDone = [
         "Він відвідав музей?",
         "Czy odwiedził muzeum?"
     ],
-    [
+[
         "Has she arranged the meeting?",
         "Yes, I have just arranged the meeting.",
         "Yes, I just have arranged the meeting.",
@@ -1652,7 +1712,17 @@ export const presentPerfectIHaveDone = [
 [
     "Have they arrived yet?",
     "Yes, they have just arrived.",
+    "No, they hasn't arrived yet.",
+    "They have arrived yet.",
+    "They haven't just arrived yet.",
+    "Они уже прибыли?",
+    "Вони вже прибули?",
+    "Czy oni już przyjechali?"
+],
+[
+    "Have they arrived yet?",
     "No, they haven't arrived yet.",
+    "Yes, they has just arrived.",
     "They have arrived yet.",
     "They haven't just arrived yet.",
     "Они уже прибыли?",
@@ -1822,7 +1892,17 @@ export const presentPerfectIHaveDone = [
 [
     "Have you read the book yet?",
     "Yes, I have already read it.",
+    "No, I hasn't read it yet.",
+    "I haven't read yet.",
+    "I read the book yet.",
+    "Ты уже прочитал книгу?",
+    "Ти вже прочитав книгу?",
+    "Czy już przeczytałeś książkę?"
+],
+[
+    "Have you read the book yet?",
     "No, I haven't read it yet.",
+    "Yes, I has already read it.",
     "I haven't read yet.",
     "I read the book yet.",
     "Ты уже прочитал книгу?",

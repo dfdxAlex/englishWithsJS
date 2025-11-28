@@ -25,9 +25,11 @@ export function handleTranslateQuestion(event)
         }
 
         // если работает любой тест кроме simple-translate то перевод берется из массива
-        if (SettingForProgram.selectTypeTest !== 'simple-translate')
+        if (SettingForProgram.selectTypeTest !== 'simple-translate') {
             event.target.innerText = translateFromArray;
-        // если работает simple-translate, то перевод берется из первой кнопки
+        }
+        // если работает simple-translate, то перевод берется из первой кнопки, которая может 
+        // быть либо с индексом 5 или 9
         else {
             const levelOne = document.getElementById('option5');
             const levelTwo = document.getElementById('option9');
