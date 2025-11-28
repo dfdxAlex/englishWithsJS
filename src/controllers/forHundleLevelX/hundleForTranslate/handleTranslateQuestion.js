@@ -5,6 +5,7 @@
 // данные для переводов
 
 import { countHints } from '../../../view/countHints.js';
+import { SettingForProgram } from '../../../models/SettingForProgram.js';
 
 export function handleTranslateQuestion(event) 
 {
@@ -22,5 +23,15 @@ export function handleTranslateQuestion(event)
         if (localStorage.getItem('EnglishWithJs_lang') === 'pl') {
             translateFromArray = window.DataSet.arrayBD[7];
         }
-        event.target.innerText = translateFromArray;
+
+        // если работает любой тест кроме simple-translate то перевод берется из массива
+        if (SettingForProgram.selectTypeTest !== 'simple-translate')
+            event.target.innerText = translateFromArray;
+        // если работает simple-translate, то перевод берется из первой кнопки
+        else {
+            const levelOne = document.getElementById('option5');
+            const levelTwo = document.getElementById('option9');
+            if (levelOne) event.target.innerText = levelOne.innerText;
+            if (levelTwo) event.target.innerText = levelTwo.innerText;
+        }
 }

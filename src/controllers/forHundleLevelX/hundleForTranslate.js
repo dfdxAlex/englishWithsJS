@@ -12,7 +12,6 @@ export function hundleForTranslate()
             // Перевод должен появиться только после клика на кнопку
             let translate = document.getElementById('translate');  // выбрать кнопку перевода
             if (translate) {
-                // console.log('навешиваю обработчик на translate');
                 translate.addEventListener('click', (event)=>{
                     // поместить перевод на кнопку
                     handleTranslateQuestion(event);
