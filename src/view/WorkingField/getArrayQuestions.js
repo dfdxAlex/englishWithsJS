@@ -2,7 +2,7 @@
   // массива. Данные принадлежат классу, поэтому обновляются через this.
   export function getArrayQuestions(arrayBD)
   {
-    if (arrayBD !== undefined && arrayBD.length == 8) {
+    if (arrayBD !== undefined) {
         [this.question, 
         this.option1,
         this.option2, 
