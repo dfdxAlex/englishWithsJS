@@ -169,30 +169,15 @@ BDTranslate.push(
      `Prosty prezent P.S. negatywny`,
      `Simple present P.S. negative`]);
 BDTranslate.push(
-    [returnInfoUnit.returnLevel16(), 
-     returnInfoUnit.returnLevel16UA(), 
-     returnInfoUnit.returnLevel16PL(),
-     returnInfoUnit.returnLevel16EN()]);
-BDTranslate.push(
     [`Простое настоящее  P.S. плюс периодичность`, 
      `Просте справжнє P.S. плюс періодичність`, 
      `Prosty prezent P.S. plus częstotliwość`,
      `Simple present P.S. plus periodicity`]);
 BDTranslate.push(
-    [returnInfoUnit.returnLevel15(), 
-     returnInfoUnit.returnLevel15UA(), 
-     returnInfoUnit.returnLevel15PL(),
-     returnInfoUnit.returnLevel15EN()]);
-BDTranslate.push(
     [`Простое настоящее P.S.`, 
      `Просте справжнє P.S.`, 
      `Prosty prezent P.S.`,
      `Simple present P.S.`]);
-BDTranslate.push(
-    [returnInfoUnit.returnLevel14(), 
-     returnInfoUnit.returnLevel14UA(), 
-     returnInfoUnit.returnLevel14PL(),
-     returnInfoUnit.returnLevel14EN()]);
 BDTranslate.push(
     [`Образования вопросов в настоящем продолженном времени P.C.`, 
      `Утворення питань у поточному продовженому часі P.C.`, 
