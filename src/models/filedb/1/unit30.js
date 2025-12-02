@@ -1,3 +1,5 @@
+import { extendForArray } from '../extendForArray.js';
+
 const unit30 = [
   ["He can run very fast.","Can he run very fast?","Could he run very fast?","Does he run very fast?","Is he able to run very fast?","Он бегает очень быстро.","Він бігає дуже швидко.","On biega bardzo szybko.","01000","10000","00100"],
   ["They can speak Spanish.","Can they speak Spanish?","Could they speak Spanish?","Do they speak Spanish?","Are they able to speak Spanish?","Они говорят по-испански.","Вони говорять іспанською.","Oni mówią po hiszpańsku.","01000","10000","00100"],
@@ -264,4 +266,10 @@ unit30.nameLeson = "Can / Could";
 //--созданными предложениями.
 unit30.lengthTrue = 5;
 
+unit30.push(...extendForArray(unit30));
+// console.log(extendForArray(unit30));
+
+console.log(unit30.length);
 export { unit30 };
+
+
