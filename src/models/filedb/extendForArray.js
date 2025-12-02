@@ -18,6 +18,9 @@ export function extendForArray(array)
                 // Заменить местами предложение вопрос и предложение - правильный ответ
                 timeArray[0] = el[1]; 
                 timeArray[1] = el[0]; 
+                timeArray[5] = el[5]; 
+                timeArray[6] = el[6]; 
+                timeArray[7] = el[7]; 
 
                 searchIndex234(arrayLocal, 2, timeArray, '?');
 
