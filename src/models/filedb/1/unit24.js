@@ -1,3 +1,5 @@
+import { extendForArray } from '../extendForArray.js';
+
 export const unit24 = [
 // Вопросы (30)
   [
@@ -1400,6 +1402,9 @@ export const unit24 = [
 
     // Если это свойство есть, то оно попадает в заголовок теста
     unit24.nameLeson = "Regular and irregular verbs";
+
+    // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
+    // unit24.push(...extendForArray(unit24));
 
     //--созданными предложениями.
     unit24.lengthTrue = 2;

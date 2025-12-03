@@ -1,3 +1,5 @@
+import { extendForArray } from '../extendForArray.js';
+
 const unit28Start = [
 [
     "Will you help me carry these heavy bags?",
@@ -2084,5 +2086,8 @@ const unit28 = [...unit28PartOne, ...unit28PartTwo, ...unit28PartThree,
 
     //--созданными предложениями.
     unit28.lengthTrue = 5;
+
+    // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
+    unit28.push(...extendForArray(unit28));
 
 export { unit28 };

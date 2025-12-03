@@ -1,3 +1,5 @@
+import { extendForArray } from '../extendForArray.js';
+
 const unit29Migth = [
   [
     "The sky is dark and heavy clouds are gathering quickly. A strong wind has just started blowing.",
@@ -3191,5 +3193,10 @@ unit29.nameLeson = "Might / May";
 
 //--созданными предложениями.
 unit29.lengthTrue = 5;
+
+// расширение числа подмассивов за счёт замены местами нулевого и первого индекса
+unit29.push(...extendForArray(unit29));
+
+// console.log(unit29.length);
 
 export { unit29 };

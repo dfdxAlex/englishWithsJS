@@ -1,3 +1,5 @@
+import { extendForArray } from '../extendForArray.js';
+
 export const unit25 = [
 [
     "What are you doing tomorrow?",
@@ -1039,5 +1041,10 @@ export const unit25 = [
     // Если это свойство есть, то оно попадает в заголовок теста
     unit25.nameLeson = "What are you doing tomorrow";
 
+
+
     //--созданными предложениями.
     unit25.lengthTrue = 5;
+
+    // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
+    unit25.push(...extendForArray(unit25));

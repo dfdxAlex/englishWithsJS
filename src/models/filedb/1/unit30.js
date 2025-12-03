@@ -266,10 +266,11 @@ unit30.nameLeson = "Can / Could";
 //--созданными предложениями.
 unit30.lengthTrue = 5;
 
+// расширение числа подмассивов за счёт замены местами нулевого и первого индекса
 unit30.push(...extendForArray(unit30));
 // console.log(extendForArray(unit30));
 
-console.log(unit30.length);
+// console.log(unit30.length);
 export { unit30 };
 
 

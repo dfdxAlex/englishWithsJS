@@ -1,3 +1,5 @@
+import { extendForArray } from '../extendForArray.js';
+
 export const unit26 = [
   [
     "I am going to visit my grandparents next weekend.",
@@ -1506,5 +1508,10 @@ export const unit26 = [
     // Если это свойство есть, то оно попадает в заголовок теста
     unit26.nameLeson = "I'm going to ...";
 
+
     //--созданными предложениями.
     unit26.lengthTrue = 5;
+
+    // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
+    unit26.push(...extendForArray(unit26));
+

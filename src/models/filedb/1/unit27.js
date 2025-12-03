@@ -1,3 +1,5 @@
+import { extendForArray } from '../extendForArray.js';
+
 const unit27Start = [
   [
     "I will start a new hobby next month.",
@@ -3598,5 +3600,8 @@ const unit27 = [...unit28PartOne, ...unit28PartTwo, ...unit28PartThree,
 
     //--созданными предложениями.
     unit27.lengthTrue = 5;
+
+    // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
+    // unit27.push(...extendForArray(unit27));
 
 export { unit27 };
