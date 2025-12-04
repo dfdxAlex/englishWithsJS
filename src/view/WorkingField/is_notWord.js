@@ -1,24 +1,14 @@
 
-export function is_notWord(array)
-{
-  // Функция - дубликат только возвращает true, если в текущем подмассиве
-  // работаем с пропущенным словом
-  let question, option1;
+export function is_notWord(arr) {
+    const str = arr?.[0];
+    if (!str) return false; 
 
-  [question, option1] = array;
-        if (question.includes('/')) {
-            return true;
-        }
-        if (question.includes('...')) {
-            return true;
-        }
-        if (question.includes('…')) {
-            return true;
-        }
-        if (question.includes('___')) {
-            return true;
-        }
-        return false;
+    return (
+        str.includes('/') ||
+        str.includes('...') || 
+        str.includes('…') ||
+        str.includes('___')
+    );
 }
 
 is_notWord.help = `

@@ -1,3 +1,5 @@
+import { extendForArray } from '../extendForArray.js';
+
 export const presentPerfectOrPastSimple = [
     ["I have finished my work.", "Have you finished your work?", "Did you finish your work?", "Will you finish your work?", "Are you finishing your work?", "Я закончил свою работу.", "Я закінчив свою роботу.", "Skończyłem swoją pracę."],
     ["She has not seen this movie.", "Has she seen this movie?", "Did she see this movie?", "Will she see this movie?", "Is she seeing this movie?", "Она не видела этот фильм.", "Вона не бачила цей фільм.", "Ona nie widziała tego filmu."],
@@ -515,3 +517,6 @@ export const presentPerfectOrPastSimple = [
       // только индекс 0 и 1. Если 5 - это индексы 0,1,2,3,4 с правильно
       // созданными предложениями.
       presentPerfectOrPastSimple.lengthTrue = 5;
+
+    // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
+    presentPerfectOrPastSimple.push(...extendForArray(presentPerfectOrPastSimple));

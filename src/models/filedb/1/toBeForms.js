@@ -1,3 +1,5 @@
+import { extendForArray } from '../extendForArray.js';
+
 export const toBeForms = [
     ['I am', "I'm", 'Im', 'Iam', 'I am', 'Я есть', 'Я є', 'Jestem'],
     ['I am not', "I'm not", 'Im not', 'Iamnot', 'I amnot', 'Я не есть', 'Я не є', 'Nie jestem'],
@@ -24,3 +26,12 @@ export const toBeForms = [
 
     // Если это свойство есть, то оно попадает в заголовок теста
     toBeForms.nameLeson = "I am / I'm";
+
+    // Свойство показывает сколько индексов содержат правильные предложения
+    // Если его нет, то будет считаться, что правильные предложения 
+    // только индекс 0 и 1. Если 5 - это индексы 0,1,2,3,4 с правильно
+    // созданными предложениями.
+    toBeForms.lengthTrue = 2;
+
+    // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
+    toBeForms.push(...extendForArray(toBeForms));

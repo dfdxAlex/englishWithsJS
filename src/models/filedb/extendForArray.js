@@ -6,15 +6,16 @@ export function extendForArray(array)
 {
     const arrayRez = [];
     array.forEach((el, id, arrayLocal)=>{
+        if (el.length < 8) {
+            return;
+        }
         let timeArray = [];
         
         // Определяем тим конкретного теста конкретного подмассива
         // Если первое предложение - это вопрос, а второе это предложение
         // то меняем местами правильный ответ с вопросом и заполняем остальные элементы
         // вопросами их произвольных подмассивов.
-        if (el[0].includes('?') && el[1].includes('.')) {
-            if (!is_notWord(el)) {
-                
+        if (el && el[0].includes('?') && el[1].includes('.') && !is_notWord(el)) {
                 // Заменить местами предложение вопрос и предложение - правильный ответ
                 timeArray[0] = el[1]; 
                 timeArray[1] = el[0]; 
@@ -30,10 +31,7 @@ export function extendForArray(array)
 
                 arrayRez.push(timeArray);
 
-            }
-            
-        } else if (el[1].includes('?') && el[0].includes('.')) {
-            if (!is_notWord(el)) {
+        } else if (el[1].includes('?') && el[0].includes('.') && !is_notWord(el)) {
                 timeArray[0] = el[1]; 
                 timeArray[1] = el[0]; 
                 timeArray[5] = el[5]; 
@@ -47,10 +45,8 @@ export function extendForArray(array)
                 searchIndex234(arrayLocal, 4, timeArray, '.');
 
                 arrayRez.push(timeArray);
-            }
             
-        } else  if (el[0].includes('. ')) {
-            if (!is_notWord(el)) {
+        } else  if (el[0].includes('. ') && !is_notWord(el)) {
                 timeArray[0] = el[1]; 
                 timeArray[1] = el[0]; 
                 timeArray[5] = el[5]; 
@@ -64,9 +60,6 @@ export function extendForArray(array)
                 searchIndex234(arrayLocal, 4, timeArray, '. ');
 
                 arrayRez.push(timeArray);
-
-                // console.log(timeArray);
-            }
         } else {
             if (is_notWord(el)) {
                 timeArray[0] = el[1]; 
@@ -74,38 +67,18 @@ export function extendForArray(array)
                 timeArray[5] = el[5]; 
                 timeArray[6] = el[6]; 
                 timeArray[7] = el[7]; 
-            
 
-            let ret = false;
-            while (!ret) {
                 // Сгенерировать номер случайного подмассива
                 let randomeNomberArray = getRandomInt(0, arrayLocal.length-1);
 
-                if (is_notWord(arrayLocal[randomeNomberArray][0])) {
-                   timeArray[2] = arrayLocal[randomeNomberArray][0];
-                   ret = true;
-                }
-            }
-            ret = false;
-            while (!ret) {
+                timeArray[2] = arrayLocal[randomeNomberArray][0];
                 // Сгенерировать номер случайного подмассива
-                let randomeNomberArray = getRandomInt(0, arrayLocal.length-1);
-
-                if (is_notWord(arrayLocal[randomeNomberArray][0])) {
+                randomeNomberArray = getRandomInt(0, arrayLocal.length-1);
                    timeArray[3] = arrayLocal[randomeNomberArray][0];
-                   ret = true;
-                }
-            }
-            ret = false;
-            while (!ret) {
                 // Сгенерировать номер случайного подмассива
-                let randomeNomberArray = getRandomInt(0, arrayLocal.length-1);
-
-                if (is_notWord(arrayLocal[randomeNomberArray][0])) {
+                randomeNomberArray = getRandomInt(0, arrayLocal.length-1);
                    timeArray[4] = arrayLocal[randomeNomberArray][0];
-                   ret = true;
-                }
-            }
+            arrayRez.push(timeArray);
         }
     }
     
@@ -133,13 +106,16 @@ function searchIndex234(arrayLocal, index, timeArray, marker)
                         
                     } else {
                         let loop = false;
-                        for(let i = randomeNomberArray; i < arrayLocal.length-1; i++) {
+                        for(let i = randomeNomberArray; i < arrayLocal.length; i++) {
                             randomeNomberEl = getRandomInt(1, arrayLocal.lengthTrue - 1);
                             // Если работаем с минитекстом, то всегда просматривать только в нулевом элементе
                             if (marker === '. ') {
                                 randomeNomberEl = 0;
                                 i += 7;
+                                
                             }
+                            // Если вышли за пределы массива то вернуться обратно 
+                            if (arrayLocal.length <= i) i = arrayLocal.length - 1;
                             if (arrayLocal[i][randomeNomberEl].includes(marker)) {
                                 timeArray[index] = arrayLocal[i][randomeNomberEl];
                                 break;

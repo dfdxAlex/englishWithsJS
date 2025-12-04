@@ -1,3 +1,5 @@
+import { extendForArray } from '../extendForArray.js';
+
 export const passiveIsDoneWasDone = [
     ["The dog chases the ball.", "The ball is chased by the dog.", "The dog is chasing the ball.", "The ball will be chased by the dog.", "The dog has chased the ball.", "Собака гоняется за мячом.", "Собака бігає за м'ячем.", "Pies goni piłkę."],
     ["She reads books.", "Books are read by her.", "She is reading a book.", "Books will be read by her.", "She had read many books.", "Она читает книги.", "Вона читає книги.", "Ona czyta książki."],
@@ -437,4 +439,7 @@ export const passiveIsDoneWasDone = [
     // только индекс 0 и 1. Если 5 - это индексы 0,1,2,3,4 с правильно
     // созданными предложениями.
     passiveIsDoneWasDone.lengthTrue = 5;
+
+    // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
+    passiveIsDoneWasDone.push(...extendForArray(passiveIsDoneWasDone));
 

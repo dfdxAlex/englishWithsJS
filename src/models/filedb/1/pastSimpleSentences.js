@@ -1,3 +1,5 @@
+import { extendForArray } from '../extendForArray.js';
+
 export const pastSimpleSentences = [
     [
         "They ... the new movie last night.",
@@ -1542,3 +1544,12 @@ export const pastSimpleSentences = [
 
   // Если это свойство есть, то оно попадает в заголовок теста
   pastSimpleSentences.nameLeson = "Past Simple Sentences";
+
+    // Свойство показывает сколько индексов содержат правильные предложения
+    // Если его нет, то будет считаться, что правильные предложения 
+    // только индекс 0 и 1. Если 5 - это индексы 0,1,2,3,4 с правильно
+    // созданными предложениями.
+    pastSimpleSentences.lengthTrue = 2;
+
+    // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
+    pastSimpleSentences.push(...extendForArray(pastSimpleSentences));

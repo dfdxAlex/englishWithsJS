@@ -1,3 +1,5 @@
+import { extendForArray } from '../extendForArray.js';
+
 export const toBeSentences = [
     ['I ... happy.', "I'm", 'Im', 'Iam', 'I am', 'Я счастлив.', 'Я щасливий.', 'Jestem szczęśliwy.'],
     ['I ... not happy.', "I'm not", 'Im not', 'Iamnot', 'I amnot', 'Я не счастлив.', 'Я не щасливий.', 'Nie jestem szczęśliwy.'],
@@ -101,7 +103,14 @@ export const toBeSentences = [
     ['They ... not coming.', "They're not", 'Theyre not', 'They are not', 'They arenot', 'Они не идут.', 'Вони не йдуть.', 'Oni nie idą.']
 ];
 
-
-
     // Если это свойство есть, то оно попадает в заголовок теста
     toBeSentences.nameLeson = "to Be Sentences";
+
+    // Свойство показывает сколько индексов содержат правильные предложения
+    // Если его нет, то будет считаться, что правильные предложения 
+    // только индекс 0 и 1. Если 5 - это индексы 0,1,2,3,4 с правильно
+    // созданными предложениями.
+    toBeSentences.lengthTrue = 2;
+
+    // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
+    toBeSentences.push(...extendForArray(toBeSentences));

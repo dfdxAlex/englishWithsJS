@@ -1,3 +1,5 @@
+import { extendForArray } from '../extendForArray.js';
+
 export const presentSimpleNegative = [
     ["He does not ... coffee.", "drink", "drinks", "drank", "drinking", "Он не пьет кофе.", "Він не п'є каву.", "On nie pije kawy."],
     ["They do not ... in the park.", "play", "plays", "played", "playing", "Они не играют в парке.", "Вони не грають у парку.", "Oni nie grają w parku."],
@@ -659,3 +661,12 @@ export const presentSimpleNegative = [
 
     // Если это свойство есть, то оно попадает в заголовок теста
     presentSimpleNegative.nameLeson = "Present Simple Negative";
+
+    // Свойство показывает сколько индексов содержат правильные предложения
+    // Если его нет, то будет считаться, что правильные предложения 
+    // только индекс 0 и 1. Если 5 - это индексы 0,1,2,3,4 с правильно
+    // созданными предложениями.
+    presentSimpleNegative.lengthTrue = 2;
+ 
+    // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
+    presentSimpleNegative.push(...extendForArray(presentSimpleNegative));

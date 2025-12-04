@@ -1,3 +1,5 @@
+import { extendForArray } from '../extendForArray.js';
+
 export const presentSimpleQuestions = [
     ["... you like coffee?", "Do", "Does", "", "", "Ты любишь кофе?", "Ти любиш каву?", "Czy lubisz kawę?"],
     ["... she play the piano every day?", "Does", "Do", "", "", "Она играет на пианино каждый день?", "Вона грає на піаніно кожного дня?", "Czy ona gra na pianinie codziennie?"],
@@ -731,3 +733,12 @@ presentSimpleQuestions.forEach((el, index, array) => {
 
     // Если это свойство есть, то оно попадает в заголовок теста
     presentSimpleQuestions.nameLeson = "Present Simple Questions";
+
+        // Свойство показывает сколько индексов содержат правильные предложения
+    // Если его нет, то будет считаться, что правильные предложения 
+    // только индекс 0 и 1. Если 5 - это индексы 0,1,2,3,4 с правильно
+    // созданными предложениями.
+    presentSimpleQuestions.lengthTrue = 2;
+
+    // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
+    presentSimpleQuestions.push(...extendForArray(presentSimpleQuestions));

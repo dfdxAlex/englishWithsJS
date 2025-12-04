@@ -1,3 +1,5 @@
+import { extendForArray } from '../extendForArray.js';
+
 export const questionsWithAnswers = [
     ['Are the doors closed?', "Yes, they are.", "Yes, theyre.", "Yes, they ar.", "Yes, it is.", 'Двери закрыты?', 'Двері закриті?', 'Czy drzwi są zamknięte?'],
     ['Is the window open?', "Yes, it is.", "Yes, its.", "Yes, it open.", "Yes, it are.", 'Окно открыто?', 'Вікно відкрите?', 'Czy okno jest otwarte?'],
@@ -76,3 +78,12 @@ export const questionsWithAnswers = [
 
     // Если это свойство есть, то оно попадает в заголовок теста
     questionsWithAnswers.nameLeson = "Questions With Answers";
+
+    // Свойство показывает сколько индексов содержат правильные предложения
+    // Если его нет, то будет считаться, что правильные предложения 
+    // только индекс 0 и 1. Если 5 - это индексы 0,1,2,3,4 с правильно
+    // созданными предложениями.
+    questionsWithAnswers.lengthTrue = 2;
+
+    // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
+    questionsWithAnswers.push(...extendForArray(questionsWithAnswers));

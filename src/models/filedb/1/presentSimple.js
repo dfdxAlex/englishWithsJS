@@ -1,3 +1,5 @@
+import { extendForArray } from '../extendForArray.js';
+
 export const presentSimple = [
     [
       "She is ... to music.",
@@ -1317,3 +1319,12 @@ export const presentSimple = [
   
     // Если это свойство есть, то оно попадает в заголовок теста
     presentSimple.nameLeson = "Present Simple";
+
+    // Свойство показывает сколько индексов содержат правильные предложения
+    // Если его нет, то будет считаться, что правильные предложения 
+    // только индекс 0 и 1. Если 5 - это индексы 0,1,2,3,4 с правильно
+    // созданными предложениями.
+    presentSimple.lengthTrue = 2;
+
+    // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
+    presentSimple.push(...extendForArray(presentSimple));

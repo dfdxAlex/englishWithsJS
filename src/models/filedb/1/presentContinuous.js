@@ -1,3 +1,5 @@
+import { extendForArray } from '../extendForArray.js';
+
 export const presentContinuous = [
         ["She is ... to music.", "listening", "listenning", "listens", "listened", "Она слушает музыку.", "Вона слухає музику.", "Ona słucha muzyki."],
         ["They are ... football.", "playing", "play", "played", "plays", "Они играют в футбол.", "Вони грають у футбол.", "Oni grają w piłkę nożną."],
@@ -304,3 +306,12 @@ export const presentContinuous = [
 
   // Если это свойство есть, то оно попадает в заголовок теста
   presentContinuous.nameLeson = "Present Continuous";
+
+    // Свойство показывает сколько индексов содержат правильные предложения
+    // Если его нет, то будет считаться, что правильные предложения 
+    // только индекс 0 и 1. Если 5 - это индексы 0,1,2,3,4 с правильно
+    // созданными предложениями.
+    presentContinuous.lengthTrue = 2;
+
+    // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
+    presentContinuous.push(...extendForArray(presentContinuous));

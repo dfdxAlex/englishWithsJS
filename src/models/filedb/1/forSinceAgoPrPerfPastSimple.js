@@ -1,3 +1,5 @@
+import { extendForArray } from '../extendForArray.js';
+
 export const forSinceAgoPrPerfPastSimple = [
     ["I moved to this city a year ...", "ago", "for", "since", "earlier", "Я переехал в этот город год назад.", "Я переїхав у це місто рік тому.", "Przeprowadziłem się do tego miasta rok temu."],
     ["She finished university ...", "ago", "for", "since", "previously", "Она закончила университет два года назад.", "Вона закінчила університет два роки тому.", "Ukończyła uniwersytet dwa lata temu."],
@@ -107,4 +109,14 @@ export const forSinceAgoPrPerfPastSimple = [
 
   // Если это свойство есть, то оно попадает в заголовок теста
   forSinceAgoPrPerfPastSimple.nameLeson = "for, since, ago - Pr.Perf+Ps.Sp";
+
+
+      // Свойство показывает сколько индексов содержат правильные предложения
+    // Если его нет, то будет считаться, что правильные предложения 
+    // только индекс 0 и 1. Если 5 - это индексы 0,1,2,3,4 с правильно
+    // созданными предложениями.
+    forSinceAgoPrPerfPastSimple.lengthTrue = 2;
+
+    // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
+    forSinceAgoPrPerfPastSimple.push(...extendForArray(forSinceAgoPrPerfPastSimple));
   

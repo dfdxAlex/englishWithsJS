@@ -320,3 +320,9 @@ export const presentSimpleNever = [
 
     // Информация о принадлежности к какому Unit
     presentSimpleNever.infoUnit = 'Unit 5, часть C: always, never, often, usually, sometimes';
+
+    // Свойство показывает сколько индексов содержат правильные предложения
+    // Если его нет, то будет считаться, что правильные предложения 
+    // только индекс 0 и 1. Если 5 - это индексы 0,1,2,3,4 с правильно
+    // созданными предложениями.
+    presentSimpleNever.lengthTrue = 2;

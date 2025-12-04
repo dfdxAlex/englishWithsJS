@@ -1,3 +1,5 @@
+import { extendForArray } from '../extendForArray.js';
+
 export const unit23 = [
     ["Are you eating?", "Yes, I am eating.", "Did you eat?", "You eat every day.", "You had eaten.", "Ты ешь?", "Ти їси?", "Czy jesz?"],
     ["She is reading.", "Is she reading?", "She read a book.", "She reads a lot.", "She had read it.", "Она читает.", "Вона читає.", "Ona czyta."],
@@ -4206,3 +4208,6 @@ export const unit23 = [
     // только индекс 0 и 1. Если 5 - это индексы 0,1,2,3,4 с правильно
     // созданными предложениями.
     unit23.lengthTrue = 5;
+
+    // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
+    unit23.push(...extendForArray(unit23));

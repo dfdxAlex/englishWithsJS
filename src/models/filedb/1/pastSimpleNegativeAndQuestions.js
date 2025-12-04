@@ -1,3 +1,5 @@
+import { extendForArray } from '../extendForArray.js';
+
 export const pastSimpleNegativeAndQuestions = [
     [
         "She did not ... any mistakes in the report.",
@@ -1339,4 +1341,13 @@ export const pastSimpleNegativeAndQuestions = [
 
   // Если это свойство есть, то оно попадает в заголовок теста
   pastSimpleNegativeAndQuestions.nameLeson = "Past Simple Negative and Questions";
+
+      // Свойство показывает сколько индексов содержат правильные предложения
+    // Если его нет, то будет считаться, что правильные предложения 
+    // только индекс 0 и 1. Если 5 - это индексы 0,1,2,3,4 с правильно
+    // созданными предложениями.
+    pastSimpleNegativeAndQuestions.lengthTrue = 2;
+
+    // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
+    pastSimpleNegativeAndQuestions.push(...extendForArray(pastSimpleNegativeAndQuestions));
 

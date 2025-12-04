@@ -1,3 +1,5 @@
+import { extendForArray } from '../extendForArray.js';
+
 export const presetnContiniusQuestion = [
     [
         "Yes, she is studying now.",
@@ -1444,3 +1446,12 @@ export const presetnContiniusQuestion = [
 
     // Если это свойство есть, то оно попадает в заголовок теста
     presetnContiniusQuestion.nameLeson = "Present Continius Questions";
+
+    // Свойство показывает сколько индексов содержат правильные предложения
+    // Если его нет, то будет считаться, что правильные предложения 
+    // только индекс 0 и 1. Если 5 - это индексы 0,1,2,3,4 с правильно
+    // созданными предложениями.
+    presetnContiniusQuestion.lengthTrue = 2;
+
+    // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
+    presetnContiniusQuestion.push(...extendForArray(presetnContiniusQuestion));

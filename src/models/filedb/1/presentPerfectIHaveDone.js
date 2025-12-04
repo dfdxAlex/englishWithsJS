@@ -1,3 +1,5 @@
+import { extendForArray } from '../extendForArray.js';
+
 export const presentPerfectIHaveDone = [
     [
         "I have … my homework.", 
@@ -2447,3 +2449,13 @@ export const presentPerfectIHaveDone = [
 
     // Если это свойство есть, то оно попадает в заголовок теста
     presentPerfectIHaveDone.nameLeson = "Present Perfect";
+
+
+    // Свойство показывает сколько индексов содержат правильные предложения
+    // Если его нет, то будет считаться, что правильные предложения 
+    // только индекс 0 и 1. Если 5 - это индексы 0,1,2,3,4 с правильно
+    // созданными предложениями.
+    presentPerfectIHaveDone.lengthTrue = 2;
+
+    // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
+    presentPerfectIHaveDone.push(...extendForArray(presentPerfectIHaveDone));

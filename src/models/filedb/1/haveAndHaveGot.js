@@ -1,3 +1,5 @@
+import { extendForArray } from '../extendForArray.js';
+
 export const haveAndHaveGot = [
     [
         "I have a book", 
@@ -2893,3 +2895,13 @@ export const haveAndHaveGot = [
 
 // Если это свойство есть, то оно попадает в заголовок теста
 haveAndHaveGot.nameLeson = "Have and Have Got";
+
+
+    // Свойство показывает сколько индексов содержат правильные предложения
+    // Если его нет, то будет считаться, что правильные предложения 
+    // только индекс 0 и 1. Если 5 - это индексы 0,1,2,3,4 с правильно
+    // созданными предложениями.
+    haveAndHaveGot.lengthTrue = 2;
+
+    // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
+    haveAndHaveGot.push(...extendForArray(haveAndHaveGot));

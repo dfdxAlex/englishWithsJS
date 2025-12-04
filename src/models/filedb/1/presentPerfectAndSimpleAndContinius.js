@@ -1,3 +1,5 @@
+import { extendForArray } from '../extendForArray.js';
+
 export const presentPerfectAndSimpleAndContinius = [
     [
         "Has she completed the report, or is it still in progress?", 
@@ -586,3 +588,12 @@ export const presentPerfectAndSimpleAndContinius = [
 
     // Если это свойство есть, то оно попадает в заголовок теста
     presentPerfectAndSimpleAndContinius.nameLeson = "PrPerf + (PrCont or PsSimpl)";
+
+    // Свойство показывает сколько индексов содержат правильные предложения
+    // Если его нет, то будет считаться, что правильные предложения 
+    // только индекс 0 и 1. Если 5 - это индексы 0,1,2,3,4 с правильно
+    // созданными предложениями.
+    presentPerfectAndSimpleAndContinius.lengthTrue = 2;
+
+    // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
+    presentPerfectAndSimpleAndContinius.push(...extendForArray(presentPerfectAndSimpleAndContinius));
