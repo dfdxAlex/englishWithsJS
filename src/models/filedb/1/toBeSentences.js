@@ -1,5 +1,3 @@
-import { extendForArray } from '../extendForArray.js';
-
 export const toBeSentences = [
     ['I ... happy.', "I'm", 'Im', 'Iam', 'I am', 'Я счастлив.', 'Я щасливий.', 'Jestem szczęśliwy.'],
     ['I ... not happy.', "I'm not", 'Im not', 'Iamnot', 'I amnot', 'Я не счастлив.', 'Я не щасливий.', 'Nie jestem szczęśliwy.'],
@@ -112,5 +110,3 @@ export const toBeSentences = [
     // созданными предложениями.
     toBeSentences.lengthTrue = 2;
 
-    // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
-    toBeSentences.push(...extendForArray(toBeSentences));
