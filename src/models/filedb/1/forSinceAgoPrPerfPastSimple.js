@@ -118,5 +118,5 @@ export const forSinceAgoPrPerfPastSimple = [
     forSinceAgoPrPerfPastSimple.lengthTrue = 2;
 
     // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
-    forSinceAgoPrPerfPastSimple.push(...extendForArray(forSinceAgoPrPerfPastSimple));
+    // forSinceAgoPrPerfPastSimple.push(...extendForArray(forSinceAgoPrPerfPastSimple));
   
