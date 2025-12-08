@@ -3050,13 +3050,9 @@ const unit31 = [
     "Я вирішив вивчити японську вільно до 30 років. Мені зараз 27. Я займаюся щодня.",
     "Postanowiłem biegle nauczyć się japońskiego przed 30. Mam teraz 27 lat. Uczę się codziennie."
   ]
-
-
   
 ];
 
-// console.log(unit30.length);
-// console.log(unit30);
 // Если это свойство есть, то оно попадает в заголовок теста
 unit31.nameLeson = "Must / Mustn't ...";
 
@@ -3065,9 +3061,7 @@ unit31.lengthTrue = 5;
 
 // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
 unit31.push(...extendForArray(unit31));
-// console.log(extendForArray(unit30));
 
-// console.log(unit30.length);
 export { unit31 };
 
 
