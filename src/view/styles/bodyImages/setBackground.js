@@ -31,10 +31,19 @@ export async function setBackground() {
   });
 
   // Когда загрузка завершена — применить фон к body
-  tegBody.style.backgroundImage = `url('${imageUrl}')`;
-  tegBody.style.backgroundSize = "cover";
-  tegBody.style.backgroundRepeat = "no-repeat";
-  tegBody.style.backgroundPosition = "center";
+  // tegBody.style.backgroundImage = `url('${imageUrl}')`;
+  // tegBody.style.backgroundSize = "contain";
+  // tegBody.style.backgroundRepeat = "no-repeat";
+  // tegBody.style.backgroundPosition = "center";
+
+  // Когда загрузка завершена — применить фон к body
+tegBody.style.backgroundImage = `url('${imageUrl}')`;
+tegBody.style.backgroundSize = "contain";
+tegBody.style.backgroundRepeat = "no-repeat";
+tegBody.style.backgroundPosition = "center";
+tegBody.style.backgroundAttachment = "fixed"; // фиксируем фон
+tegBody.style.height = "100vh"; // картинка видна полностью
+
 
     setColorMenu();
 
