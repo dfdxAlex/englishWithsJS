@@ -9123,7 +9123,7 @@ randomeLeftRightButton() - небольшое смещение картинок 
 setPaddingForSimple() - устанавливает дополнительный Padding на первом тесте, уначе текст выходит за пределы контейнера
 `;function closeNavbar(){const e=document.getElementById("navbarNav"),t=document.querySelector(".navbar-toggler");e&&(e.classList.remove("show"),t.classList.add("collapsed"),t.setAttribute("aria-expanded","false"))}closeNavbar.help=`
 Функция закрывает Гамбургер меню
-`;async function setBackground(){const e=Math.floor(Math.random()*48)+1,t=`css/images/background${e}.jpg`;DataSet.numberBackground=e;const a=document.body;a.style.transition="background-image 1s ease-in-out",await new Promise((n,s)=>{const r=new Image;r.src=t,r.onload=n,r.onerror=s}),a.style.backgroundImage=`url('${t}')`,a.style.backgroundSize="auto 100vh",a.style.backgroundRepeat="no-repeat",a.style.backgroundPosition="0% center";let o=0,i=.1;setInterval(()=>{o+=i*1,o>=100&&(i=-1),o<=0&&(i=1),a.style.backgroundPosition=`${o}% center`},20),setColorMenu(),closeNavbar()}setBackground.help=`
+`;async function setBackground(){const e=Math.floor(Math.random()*48)+1,t=`css/images/background${e}.jpg`;DataSet.numberBackground=e;const a=document.body;a.style.transition="background-image 1s ease-in-out",await new Promise((o,i)=>{const n=new Image;n.src=t,n.onload=o,n.onerror=i}),a.style.backgroundImage=`url('${t}')`,a.style.backgroundSize="contain",a.style.backgroundRepeat="no-repeat",a.style.backgroundPosition="center",setColorMenu(),closeNavbar()}setBackground.help=`
 Функция setRandomBackground(path):
   • Выбирает случайную картинку из 48 возможных;
   • Асинхронно загружает её в память (предзагрузка через Image);
