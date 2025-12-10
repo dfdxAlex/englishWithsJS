@@ -54,7 +54,7 @@ tegBody.style.backgroundRepeat = "no-repeat";
 tegBody.style.backgroundPosition = "0% center";
 
 let pos = 0;          // начальная позиция
-let direction = 0.5;    // 1 — вправо, -1 — влево
+let direction = 0.1;    // 1 — вправо, -1 — влево
 
 // авто-анимация
 setInterval(() => {
