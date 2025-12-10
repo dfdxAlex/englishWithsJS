@@ -31,10 +31,10 @@ export async function setBackground() {
   });
 
   // Когда загрузка завершена — применить фон к body
-  tegBody.style.backgroundImage = `url('${imageUrl}')`;
-  tegBody.style.backgroundSize = "auto 100vh";
-  tegBody.style.backgroundRepeat = "no-repeat";
-  tegBody.style.backgroundPosition = "center";
+tegBody.style.backgroundImage = `url('${imageUrl}')`;
+tegBody.style.backgroundSize = "cover";
+tegBody.style.backgroundRepeat = "no-repeat";
+tegBody.style.backgroundPosition = "center center";
   
 // устанавливаем фон
 // tegBody.style.backgroundImage = `url('${imageUrl}')`;
