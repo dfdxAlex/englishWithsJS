@@ -35,15 +35,36 @@ export async function setBackground() {
   // tegBody.style.backgroundSize = "contain";
   // tegBody.style.backgroundRepeat = "no-repeat";
   // tegBody.style.backgroundPosition = "center";
+  
+// устанавливаем фон
+// tegBody.style.backgroundImage = `url('${imageUrl}')`;
+// tegBody.style.backgroundSize = "auto 100vh"; // по высоте: 100vh, по ширине — сколько нужно
+// tegBody.style.backgroundRepeat = "no-repeat";
+// tegBody.style.backgroundPosition = "center";
 
-  // Когда загрузка завершена — применить фон к body
+// // слушаем движение мыши для смещения
+// document.addEventListener("mousemove", (e) => {
+//     const percent = e.clientX / window.innerWidth; // от 0 до 1
+//     tegBody.style.backgroundPosition = `${percent * 100}% center`;
+// });
+
 tegBody.style.backgroundImage = `url('${imageUrl}')`;
-tegBody.style.backgroundSize = "contain";
+tegBody.style.backgroundSize = "auto 100vh"; 
 tegBody.style.backgroundRepeat = "no-repeat";
-tegBody.style.backgroundPosition = "center";
-tegBody.style.backgroundAttachment = "fixed"; // фиксируем фон
-tegBody.style.height = "100vh"; // картинка видна полностью
+tegBody.style.backgroundPosition = "0% center";
 
+let pos = 0;          // начальная позиция
+let direction = 0.5;    // 1 — вправо, -1 — влево
+
+// авто-анимация
+setInterval(() => {
+    pos += direction * 1; // скорость (0.1 = медленно, можно увеличить)
+
+    if (pos >= 100) direction = -1; // дошли до правого края — обратно
+    if (pos <= 0) direction = 1;    // дошли до левого края — вперед
+
+    tegBody.style.backgroundPosition = `${pos}% center`;
+}, 20);
 
     setColorMenu();
 
