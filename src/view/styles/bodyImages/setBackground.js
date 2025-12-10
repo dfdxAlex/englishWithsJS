@@ -32,7 +32,7 @@ export async function setBackground() {
 
   // Когда загрузка завершена — применить фон к body
   tegBody.style.backgroundImage = `url('${imageUrl}')`;
-  tegBody.style.backgroundSize = "contain";
+  tegBody.style.backgroundSize = "auto 100vh";
   tegBody.style.backgroundRepeat = "no-repeat";
   tegBody.style.backgroundPosition = "center";
   
