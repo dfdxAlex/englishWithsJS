@@ -35,7 +35,12 @@ tegBody.style.backgroundImage = `url('${imageUrl}')`;
 tegBody.style.backgroundSize = "cover";
 tegBody.style.backgroundRepeat = "no-repeat";
 tegBody.style.backgroundPosition = "center center";
-  
+
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.body.classList.add('addForBackground');
+  }, 1000); // 10 секунд
+});
 
     setColorMenu();
 

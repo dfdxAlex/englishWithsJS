@@ -1,3 +1,36 @@
+.addForBackground {
+      animation: bg-pan-horizontal 240s linear infinite alternate;
+
+//   animation: bg-pan-horizontal 40s linear infinite;
+//   will-change: background-position;
+
+}
+
+// @keyframes bg-pan-horizontal {
+//   from {
+//     background-position: calc(50% - var(--bg-shift)) center;
+//   }
+//   to {
+//     background-position: calc(50% + var(--bg-shift)) center;
+//   }
+// }
+
+@keyframes bg-pan-horizontal {
+  0%   { background-position: 50% center; }
+  50%  { background-position: 0% center; }
+  100% { background-position: 100% center; }
+}
+
+/* движение фона */
+// @keyframes bg-pan-horizontal {
+//   from {
+//     background-position: 0% center;
+//   }
+//   to {
+//     background-position: 100% center;
+//   }
+// }
+
 .working-field {
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.2);
