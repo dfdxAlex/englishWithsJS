@@ -2,6 +2,7 @@
 import { DataSet } from '../../../services/data/DataSet.js';
 import { setColorMenu } from './setColorMenu.js';
 import { closeNavbar } from './setBackground/closeNavbar.js';
+import { scrollingBackground } from './setBackground/scrollingBackground.js';
 
  // Асинхронно устанавливает случайный фоновый рисунок для страницы.
  // Ждёт полной загрузки изображения, чтобы избежать моргания или пустого фона.
@@ -36,11 +37,7 @@ tegBody.style.backgroundSize = "cover";
 tegBody.style.backgroundRepeat = "no-repeat";
 tegBody.style.backgroundPosition = "center center";
 
-window.addEventListener('load', () => {
-  setTimeout(() => {
-    document.body.classList.add('addForBackground');
-  }, 1000); // 10 секунд
-});
+    scrollingBackground();
 
     setColorMenu();
 
