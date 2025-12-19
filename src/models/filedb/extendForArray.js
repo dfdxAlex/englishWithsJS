@@ -22,12 +22,6 @@ export function extendForArray(array)
         // то меняем местами правильный ответ с вопросом и заполняем остальные элементы
         // вопросами их произвольных подмассивов.
         if (el && el[0].includes('?') && el[1].includes('.') && !is_notWord(el)) {
-                // Заменить местами предложение вопрос и предложение - правильный ответ
-                // timeArray[0] = el[1]; 
-                // timeArray[1] = el[0]; 
-                // timeArray[5] = el[5]; 
-                // timeArray[6] = el[6]; 
-                // timeArray[7] = el[7]; 
 
                 searchIndex234(arrayLocal, 2, timeArray, '?');
 
@@ -38,11 +32,6 @@ export function extendForArray(array)
                 arrayRez.push(timeArray);
 
         } else if (el[1].includes('?') && el[0].includes('.') && !is_notWord(el)) {
-                // timeArray[0] = el[1]; 
-                // timeArray[1] = el[0]; 
-                // timeArray[5] = el[5]; 
-                // timeArray[6] = el[6]; 
-                // timeArray[7] = el[7]; 
 
                 searchIndex234(arrayLocal, 2, timeArray, '.');
 
@@ -53,11 +42,6 @@ export function extendForArray(array)
                 arrayRez.push(timeArray);
             
         } else  if (el[0].includes('. ') && !is_notWord(el)) {
-                // timeArray[0] = el[1]; 
-                // timeArray[1] = el[0]; 
-                // timeArray[5] = el[5]; 
-                // timeArray[6] = el[6]; 
-                // timeArray[7] = el[7]; 
 
                 searchIndex234(arrayLocal, 2, timeArray, '. ');
 
@@ -68,11 +52,6 @@ export function extendForArray(array)
                 arrayRez.push(timeArray);
         } else {
             if (is_notWord(el)) {
-                // timeArray[0] = el[1]; 
-                // timeArray[1] = el[0]; 
-                // timeArray[5] = el[5]; 
-                // timeArray[6] = el[6]; 
-                // timeArray[7] = el[7]; 
 
                 // Сгенерировать номер случайного подмассива
                 let randomeNomberArray = getRandomInt(0, arrayLocal.length-1);
