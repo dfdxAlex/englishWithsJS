@@ -55,7 +55,6 @@ class WorkingFieldClass {
 
   init(arrayBD, nameLeson = false) 
   {
-        //   console.log(arrayBD);
           // Поместить текущий подмассив в глобальный объект для использования
           // в других модулях
           DataSet.arrayBD = arrayBD;

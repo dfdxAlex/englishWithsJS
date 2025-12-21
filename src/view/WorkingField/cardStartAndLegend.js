@@ -7,9 +7,11 @@ export function cardStartAndLegend(nameLeson)
     const transL = new LanguageController();
 
     if (!nameLeson)
-        return `<h5 class="card-title" id="fieldset-legend">${transL.translate('Вопрос с вариантами ответа')}</h5>`;
+        return `<h5 class="card-title" id="fieldset-legend">${transL.translate('Вопрос с вариантами ответа')}</h5>
+                <div id="dinamic-menu"></div>`;
     if (nameLeson)
-        return `<h5 class="card-title" id="fieldset-legend">${nameLeson}</h5>`;
+        return `<h5 class="card-title" id="fieldset-legend">${nameLeson}</h5>
+                <div id="dinamic-menu"></div>`;
   }
 
 cardStartAndLegend.help = `

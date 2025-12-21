@@ -11,12 +11,27 @@ export function exportBDTranslate()
 {
 
 const BDTranslate = [];
-
 BDTranslate.push(
     [``, 
      ``, 
      ``,
      ``]);
+BDTranslate.push(
+    [``, 
+     ``, 
+     ``,
+     ``]);
+
+BDTranslate.push(
+    [`Призовой ящик выпадает с некоторой вероятностью. Если его поймать, то добавится удвоенное число кристалов.`, 
+     `Призовий ящик випадає з певною ймовірністю. Якщо його зловити, додасться подвоєне число кристалів.`, 
+     `Skrzynia z nagrodami ma określoną szansę na wypadnięcie. Jeśli ją złapiesz, otrzymasz podwójną liczbę kryształów.`,
+     `A prize box has a certain probability of dropping. If you catch it, you'll receive double the amount of crystals.`]);
+BDTranslate.push(
+    [`О призовом ящике...`, 
+     `Про призову скриньку...`, 
+     `O pudełku z nagrodami...`,
+     `About the prize box...`]);
 
 BDTranslate.push(
   [`be/have/do in present and past tenses`, 

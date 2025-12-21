@@ -1,4 +1,8 @@
-function boobleUp()
+import { SettingForProgram } from '../models/SettingForProgram.js';
+import { scarbClick } from './boobleUp/scarbClick.js';
+import { infoForPresentBox } from './boobleUp/infoForPresentBox.js';
+
+export function boobleUp()
 {
    // постоянная часть для всплывающего шарика
    let divCreate = document.createElement("div");
@@ -19,10 +23,10 @@ function boobleUp()
 
    setInterval(() => {
        // Если координата Y всё ещё ниже потолка то работаем
-       if (window.SettingForProgram.buttonCheckY > 50) {
+       if (SettingForProgram.buttonCheckY > 50) {
            // Если ещё не запоминали стартовую координату Y, то запомнить
            if (!propertySrartXInitialise) {
-               window.SettingForProgram.buttonCheckYStart = window.SettingForProgram.buttonCheckY;
+               SettingForProgram.buttonCheckYStart = SettingForProgram.buttonCheckY;
                // признак того что уже запомнили стартовое значение
                propertySrartXInitialise = true;
            }
@@ -31,25 +35,25 @@ function boobleUp()
                numberRand = arrayTic();
                lag = 16;
                // если приближаемся к правой стороне то скорректировать тренд в левую
-               if (window.innerWidth - window.SettingForProgram.buttonCheckX < 100) {
+               if (window.innerWidth - SettingForProgram.buttonCheckX < 100) {
                    numberRand = -1;
                }
            }
            lag--;
 
            // Изменение координаты влево-вправо.
-           window.SettingForProgram.buttonCheckX+=numberRand;
-           divCreate.style.left = window.SettingForProgram.buttonCheckX + "px"; // Начальная позиция
-           divCreate.style.top = window.SettingForProgram.buttonCheckY + "px";
+           SettingForProgram.buttonCheckX+=numberRand;
+           divCreate.style.left = SettingForProgram.buttonCheckX + "px"; // Начальная позиция
+           divCreate.style.top = SettingForProgram.buttonCheckY + "px";
 
-           if (!putEl || propertyTest < window.SettingForProgram.buttonCheckY) {
+           if (!putEl || propertyTest < SettingForProgram.buttonCheckY) {
                let pre = '<span class="diamond">💎</span>';
-               let diamant = `<span class="score">${window.SettingForProgram.diamant}</span>`;
-               if (window.SettingForProgram.diamant === '-1') {
+               let diamant = `<span class="score">${SettingForProgram.diamant}</span>`;
+               if (SettingForProgram.diamant === '-1') {
                    pre = '<span class="diamond">💀</span>';
                    diamant = '';
                }
-               if (window.SettingForProgram.diamant === '0') {
+               if (SettingForProgram.diamant === '0') {
                    pre = '<span class="diamond">🎓</span>';
                    diamant = '';
                }
@@ -62,70 +66,66 @@ function boobleUp()
            }
 
            // сундук с сокровищами
-           if (window.SettingForProgram.buttonCheckYStart - window.SettingForProgram.buttonCheckY > 50 && !bonusBox) {
+           if (SettingForProgram.buttonCheckYStart - SettingForProgram.buttonCheckY > 50 && !bonusBox) {
                bonusBox = true;
                let randomInt = arrayTic(1,10);
                if (randomInt == 5) randomOk = true;
-               //randomOk = true; // если раскомментировать, то ящик падает всегда
+            //    randomOk = true; // если раскомментировать, то ящик падает всегда
                if (randomOk) {
-                   preBon = '<span onclick="scarbClick(2)" class="scarb">🎁</span>';
+                   preBon = '<span class="scarb" id="scarb">🎁</span>';
                    divCreateForBonusBox.innerHTML = preBon;
                    document.body.appendChild(divCreateForBonusBox);
-                   window.SettingForProgram.randomOk = true;
+
+                   SettingForProgram.randomOk = true;
+
+                   const id = setInterval(() => {
+                        const scarb = document.getElementById("scarb");
+                        scarb.addEventListener('click',() => {
+                              scarbClick(2)
+                        });
+                        if (scarb) {
+                            clearInterval(id);
+                        }
+                   }, 100);
+
                }
            }
 
            if (bonusBox && randomOk) {
             divCreateForBonusBox.style.position = "absolute";
-            window.SettingForProgram.buttonCheckX+=numberRand;
-            divCreateForBonusBox.style.left = window.SettingForProgram.buttonCheckX + "px"; // Начальная позиция
-            divCreateForBonusBox.style.top = window.SettingForProgram.buttonCheckYStart - window.SettingForProgram.buttonCheckY + "px";
+            SettingForProgram.buttonCheckX+=numberRand;
+            divCreateForBonusBox.style.left = SettingForProgram.buttonCheckX + "px"; // Начальная позиция
+            divCreateForBonusBox.style.top = SettingForProgram.buttonCheckYStart - SettingForProgram.buttonCheckY + "px";
            }
            // Скорость всплытия
-           window.SettingForProgram.buttonCheckY-=1;
+           SettingForProgram.buttonCheckY-=1;
 
            // Переменняя propertyTest нужна для контроля факта
            // необходимости нового пузыря до окончания всплытия старого
            // Выше в коде проверяется, если фактический Y стал снова больше
            // то прекращаем старое всплытие и начинаем новое.
-           propertyTest = window.SettingForProgram.buttonCheckY;
+           propertyTest = SettingForProgram.buttonCheckY;
        } else if (putEl) {
            divCreate.innerText = '';
            putEl = false;
            propertySrartXInitialise = false;
            bonusBox = false;
            randomOk = false;
-           const signal = document.getElementById('fieldset-legend');
+           const signal = document.getElementById('dinamic-menu');
            if (signal) {
-               signal.style.backgroundColor = '#a4f1b9';
+            const box = document.createElement('div');
+            box.id = 'box-for-info-bonus';
+            box.textContent = '🎁';
+            box.addEventListener('click', infoForPresentBox);
+            signal.appendChild(box);
            }
-           window.SettingForProgram.randomOk = false;
+           SettingForProgram.randomOk = false;
        }
    }, 10);
 }
 
-function scarbClick(xx=1)
-{
-    const selectScarb = document.querySelector('.scarb');
-    const x = selectScarb.getBoundingClientRect().left + window.scrollX;
-    const y = selectScarb.getBoundingClientRect().top + window.scrollY;
-    
-    selectScarb.remove();
 
-    const bonusForScarb = document.createElement("div");
-    document.body.appendChild(bonusForScarb);
-    bonusForScarb.classList.add("bonus-for-scarb");
-    bonusForScarb.innerHTML = `<span class="text-about-scarb">${window.SettingForProgram.diamant*xx}</span>`;
-    
-    bonusForScarb.style.left = x+'px';
-    bonusForScarb.style.top = y+'px';
 
-    DataOk.addOk(window.SettingForProgram.diamant*xx);
 
-    setTimeout(()=>{
-        document.querySelector('.text-about-scarb').remove();
-        
-    }, 2500);
 
-    window.hundleHelpPrime();
-}
+

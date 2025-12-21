@@ -1,7 +1,7 @@
 import { hundleHelpPrime } from './forInitEventListeners/hundleHelpPrime.js';
 import { initEventForMenuStatistic } from '../view/forStatistic/initEventForMenuStatistic.js';
 import { hundleUpdateBurgerOrWord } from './forInitEventListeners/hundleUpdateBurgerOrWord.js';
-import { hundleBlockMenu } from '../services/hundleBlockMenu.js';
+// import { hundleBlockMenu } from '../services/hundleBlockMenu.js';
 import { setBackground } from '../view/styles/bodyImages/setBackground.js';
 import { setColorMenu } from '../view/styles/bodyImages/setColorMenu.js';
 import { handleForSelectLangauge } from './forInitEventListeners/handleForSelectLangauge.js';
@@ -10,6 +10,7 @@ import { activationMenuSetting } from './activationMenuSetting.js';
 import { DataSet } from '../services/data/DataSet.js';
 import { nav } from '../view/nav.js';
 import { MenuController } from './MenuController.js';
+import { boobleUp } from '../view/boobleUp.js';
 
 // Здесь функции, которые должны отработать когда загрузится статическая страница
 window.addEventListener('load', () => {
@@ -53,6 +54,10 @@ window.addEventListener('load', () => {
 
     // инициализация переменных, хранящихся в классе данных
     window.SettingForProgram.initializeToProperty();
+
+    // функция отслеживает инфу по ответам и запускает процесс
+    // всплытия кристала, шапки или черепа
+    boobleUp();
 });
 
 // интервал проверяет все элементы и накладывает на них обработчики событий.
