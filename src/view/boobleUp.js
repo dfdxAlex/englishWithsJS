@@ -1,6 +1,7 @@
 import { SettingForProgram } from '../models/SettingForProgram.js';
 import { scarbClick } from './boobleUp/scarbClick.js';
 import { infoForPresentBox } from './boobleUp/infoForPresentBox.js';
+import { removeBonusDiamant } from './boobleUp/removeBonusDiamant.js';
 
 export function boobleUp()
 {
@@ -78,6 +79,16 @@ export function boobleUp()
 
                    SettingForProgram.randomOk = true;
 
+                   const dinamicMenuForDiamant = document.getElementById('dinamic-menu');
+
+                   const box = document.createElement('div');
+                   box.textContent = '💎×2'; // можно сразу вставить символ кристалла и удвоение
+                   box.style.fontWeight = 'bold';
+                   box.style.color = 'gold';
+                   box.id = 'bonus-diamant';
+                   dinamicMenuForDiamant.appendChild(box);
+                   
+
                    const id = setInterval(() => {
                         const scarb = document.getElementById("scarb");
                         scarb.addEventListener('click',() => {
@@ -86,7 +97,7 @@ export function boobleUp()
                         if (scarb) {
                             clearInterval(id);
                         }
-                   }, 100);
+                   }, 0);
 
                }
            }
@@ -120,6 +131,7 @@ export function boobleUp()
             signal.appendChild(box);
            }
            SettingForProgram.randomOk = false;
+           removeBonusDiamant();
        }
    }, 10);
 }
