@@ -7,7 +7,7 @@
 // параметр dataObj - это екземпляр LevelDataModel(i)
 // c входящим парамером определяющим масив с данными.(масив теста)
 
-import { noonMenu } from '../services/noonMenu.js';
+// import { noonMenu } from '../services/noonMenu.js';
 import { DataOk } from '../services/data/DataOk.js';
 import { LevelDataModel } from '../models/LevelDataModel.js';
 import { getRandomInt } from '../services/getRandomInt.js';
@@ -109,7 +109,7 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
         // Тест уровня Word-assembly-translate
         // создать рабочее поле с вопроссом и вариантами ответа
         // поместить форму в соответствующий div
-        if (SettingForProgram.selectTypeTest === 'word-assembly') {
+        if (SettingForProgram.selectTypeTest === 'word-assembly-translate') {
             const workingFieldC = document.getElementById('working_field-translate');
             workingFieldC.innerHTML = WorkingField.initWordAssembly(mas, nameLeson);
         

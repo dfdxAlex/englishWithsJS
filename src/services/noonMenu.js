@@ -1,5 +1,6 @@
 // Функция находит элемент и прячет его
 
+// покрыта тестом
 export function noonMenu(name)
 {
     const el = document.querySelector(name);

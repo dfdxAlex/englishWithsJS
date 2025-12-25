@@ -1,6 +1,8 @@
-// vite.config.js
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
-  base: '/englishWithsJS/', // укажи путь, по которому сайт развёрнут
-})
+  test: {
+    environment: 'jsdom', // если есть DOM
+    globals: true
+  }
+});

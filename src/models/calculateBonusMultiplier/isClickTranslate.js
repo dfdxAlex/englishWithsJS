@@ -2,7 +2,11 @@
 // значит перевод был заказан.
 export function isClickTranslate()
 {
-   const buttonText = document.getElementById('translate').innerText;
+   const searchButtonTranslate = document.getElementById('translate');
+   if (!searchButtonTranslate) return false;
+
+   const buttonText = searchButtonTranslate.textContent;
+
     if (buttonText !== "Перевести вопрос" 
         && buttonText !== "Перекласти питання"
           && buttonText !== "Przetłumacz pytanie"
