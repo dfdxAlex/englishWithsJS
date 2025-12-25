@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { notNull } from '../services/notNull.js';
+import { notNull } from '../../services/notNull.js';
 
 describe('notNull', () => {
   it('returns value if it is not null', () => {

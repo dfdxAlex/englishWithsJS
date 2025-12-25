@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { searchLabel } from '../services/searchLabel';
+import { searchLabel } from '../../services/searchLabel';
 
 describe('searchLabel', () => {
   it('finds the position of a label in a string', () => {

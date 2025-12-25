@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { noonMenu } from '../services/noonMenu.js';
+import { noonMenu } from '../../services/noonMenu.js';
 
 describe('noonMenu', () => {
   it('hides the element if it exists', () => {

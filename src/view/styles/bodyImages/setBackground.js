@@ -11,6 +11,7 @@ export async function setBackground() {
   // Сформировать полный путь к изображению
   const numberImg = Math.floor(Math.random() * 48) + 1;
   const imageUrl = `css/images/background${numberImg}.jpg`;
+  console.log(imageUrl);
 
   // Запомнить номер последнего выбранного фона, используется в других функциях
   DataSet.numberBackground = numberImg;

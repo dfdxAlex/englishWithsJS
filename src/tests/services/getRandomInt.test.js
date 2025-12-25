@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { getRandomInt } from '../services/getRandomInt.js';
+import { getRandomInt } from '../../services/getRandomInt.js';
 
 describe('getRandomInt', () => {
 
