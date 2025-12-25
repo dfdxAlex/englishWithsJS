@@ -10,7 +10,7 @@ export async function setBackground() {
 
   // Сформировать полный путь к изображению
   const numberImg = Math.floor(Math.random() * 48) + 1;
-  const imageUrl = `css/images/background${numberImg}.jpg`;
+  const imageUrl = `/css/images/background${numberImg}.jpg`;
   console.log(imageUrl);
 
   // Запомнить номер последнего выбранного фона, используется в других функциях
@@ -25,12 +25,23 @@ export async function setBackground() {
   // Предварительно загрузить картинку через объект Image
   // и ждать, пока она полностью загрузится. Картинка не используется на прямую
   // а вытягивается из кеша по ссылке из объекта Image. Это реализовано в браузере
-  await new Promise((resolve, reject) => {
-    const img = new Image(); // создать виртуальный <img>
-    img.src = imageUrl;      // указать источник
-    img.onload = resolve;    // при успешной загрузке -> завершить промис
-    img.onerror = reject;    // при ошибке загрузки -> отклонить промис
-  });
+await new Promise((resolve) => {
+  const img = new Image();
+  img.src = imageUrl;
+
+  // Если картинка загрузилась — ставим фон
+  img.onload = () => {
+    document.body.style.backgroundImage = `url('${imageUrl}')`;
+    resolve();
+  };
+
+  // Если не удалось загрузить картинку — всё равно ставим фон и не падаем
+  img.onerror = () => {
+    console.warn('Не удалось загрузить изображение, ставим фон в любом случае:', imageUrl);
+    document.body.style.backgroundImage = `url('${imageUrl}')`;
+    resolve();
+  };
+});
 
   // Когда загрузка завершена — применить фон к body
 tegBody.style.backgroundImage = `url('${imageUrl}')`;
@@ -49,7 +60,7 @@ tegBody.style.backgroundPosition = "center center";
 
 // Описание функции (документационное свойство)
 setBackground.help = `
-Функция setRandomBackground(path):
+Функция setBackground(path):
   • Выбирает случайную картинку из 48 возможных;
   • Асинхронно загружает её в память (предзагрузка через Image);
   • После загрузки плавно меняет фон <body>;
