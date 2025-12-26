@@ -2,6 +2,7 @@ import { SettingForProgram } from '../models/SettingForProgram.js';
 import { scarbClick } from './boobleUp/scarbClick.js';
 import { infoForPresentBox } from './boobleUp/infoForPresentBox.js';
 import { removeBonusDiamant } from './boobleUp/removeBonusDiamant.js';
+import { getRandom } from '../services/getRandom.js';
 
 export function boobleUp()
 {
@@ -11,9 +12,13 @@ export function boobleUp()
    let divCreateForBonusBox = document.createElement("div");
 
    let putEl = false;
-   let arrayTic = (min=1, max=3) => {
-       return Math.floor(Math.random() * max) - min ;
-   }
+
+
+//    let arrayTic = (min=1, max=3) => {
+//        return Math.floor(Math.random() * max) - min ;
+//    }
+
+
    let lag = 6;
    let numberRand = 0;
    let propertyTest;
@@ -33,11 +38,14 @@ export function boobleUp()
            }
            // Здесь задается смещение вправо-влево
            if (lag < 0) {
-               numberRand = arrayTic();
+               numberRand = getRandom(-2,2);
                lag = 16;
                // если приближаемся к правой стороне то скорректировать тренд в левую
                if (window.innerWidth - SettingForProgram.buttonCheckX < 100) {
                    numberRand = -1;
+               }
+               if (SettingForProgram.buttonCheckX < 100) {
+                   numberRand = 1;
                }
            }
            lag--;
@@ -69,9 +77,9 @@ export function boobleUp()
            // сундук с сокровищами
            if (SettingForProgram.buttonCheckYStart - SettingForProgram.buttonCheckY > 50 && !bonusBox) {
                bonusBox = true;
-               let randomInt = arrayTic(1,10);
+               let randomInt = getRandom(0,9);
                if (randomInt == 5) randomOk = true;
-            //    randomOk = true; // если раскомментировать, то ящик падает всегда
+               //randomOk = true; // если раскомментировать, то ящик падает всегда
                if (randomOk) {
                    preBon = '<span class="scarb" id="scarb">🎁</span>';
                    divCreateForBonusBox.innerHTML = preBon;
