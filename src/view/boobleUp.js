@@ -3,6 +3,7 @@ import { scarbClick } from './boobleUp/scarbClick.js';
 import { infoForPresentBox } from './boobleUp/infoForPresentBox.js';
 import { removeBonusDiamant } from './boobleUp/removeBonusDiamant.js';
 import { getRandom } from '../services/getRandom.js';
+import { getNumberRand } from './boobleUp/getNumberRand.js';
 
 export function boobleUp()
 {
@@ -38,16 +39,10 @@ export function boobleUp()
            }
            // Здесь задается смещение вправо-влево
            if (lag < 0) {
-               numberRand = getRandom(-2,2);
+               numberRand = getNumberRand();
                lag = 16;
-               // если приближаемся к правой стороне то скорректировать тренд в левую
-               if (window.innerWidth - SettingForProgram.buttonCheckX < 100) {
-                   numberRand = -1;
-               }
-               if (SettingForProgram.buttonCheckX < 100) {
-                   numberRand = 1;
-               }
            }
+
            lag--;
 
            // Изменение координаты влево-вправо.
