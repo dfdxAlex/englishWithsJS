@@ -4,6 +4,8 @@ import { infoForPresentBox } from './boobleUp/infoForPresentBox.js';
 import { removeBonusDiamant } from './boobleUp/removeBonusDiamant.js';
 import { getRandom } from '../services/getRandom.js';
 import { getNumberRand } from './boobleUp/getNumberRand.js';
+import { getImageBooble } from './boobleUp/getImageBooble.js';
+import { getBonusBooble } from './boobleUp/getBonusBooble.js';
 
 export function boobleUp()
 {
@@ -51,19 +53,15 @@ export function boobleUp()
            divCreate.style.top = SettingForProgram.buttonCheckY + "px";
 
            if (!putEl || propertyTest < SettingForProgram.buttonCheckY) {
-               let pre = '<span class="diamond">💎</span>';
-               let diamant = `<span class="score">${SettingForProgram.diamant}</span>`;
-               if (SettingForProgram.diamant === '-1') {
-                   pre = '<span class="diamond">💀</span>';
-                   diamant = '';
-               }
-               if (SettingForProgram.diamant === '0') {
-                   pre = '<span class="diamond">🎓</span>';
-                   diamant = '';
-               }
+
+               // Получить картинку пузыря - это алмаз, череп или шапка
+               let pre = getImageBooble();
+
+               // получить число баллов за ответ
+               let diamant = getBonusBooble();
 
                // постоянные настройки пузырька
-               divCreate.innerHTML = pre+diamant;
+               divCreate.innerHTML = pre + diamant;
                divCreate.style.position = "absolute"; // Позволяет двигать элемент по координатам
                document.body.appendChild(divCreate);
                putEl = true;
@@ -100,7 +98,7 @@ export function boobleUp()
                         if (scarb) {
                             clearInterval(id);
                         }
-                   }, 0);
+                   }, 100);
 
                }
            }
