@@ -24,6 +24,7 @@ import { hundleHelpPrime } from './forInitEventListeners/hundleHelpPrime.js';
 import { setBorderRadiusForWorkingField } from '../services/setColorMenu/setBorderRadiusForWorkingField.js';
 import { handleLevelX } from './handleLevelX.js';
 import { SettingForProgram } from '../models/SettingForProgram.js';
+import { resetStatistic } from '../models/resetStatistic.js';
 
 export function handleOkErr(str, event) {
     // Сохранить координаты места клика по кнопке Проверить

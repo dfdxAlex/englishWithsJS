@@ -12,8 +12,10 @@ import { SettingForProgram } from '../models/SettingForProgram.js';
 import { indexQuestion } from './handleButtonLightNormHardHelp/indexQuestion.js';
 import { outputTranslateForTest } from './handleButtonOk/outputTranslateForTest.js';
 import { DataSet } from '../services/data/DataSet.js';
+import { resetStatistic } from '../models/resetStatistic.js';
 
 
+window.resetStatistic = resetStatistic;
 window.outputTranslateForTest = outputTranslateForTest;
 window.indexQuestion = indexQuestion;
 window.SettingForProgram = SettingForProgram;

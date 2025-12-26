@@ -1,4 +1,6 @@
 import './styles/diamentReturnStr.scss';
+import { addElToDinamicMenu } from '../view/addElToDinamicMenu.js';
+import { resetErrorByDynamicMenu } from './diamentReturnStr/resetErrorByDynamicMenu.js';
 
 export function diamentReturnStr()
 {
@@ -30,9 +32,14 @@ export function diamentReturnStr()
     let smile = '<span>😊</span>';
     if (sumError/sumOk <= 0.5 && sumError/sumOk > 0) {
         smile = '<span>😔</span>';
+        addElToDinamicMenu('😔', 'smile-for-dinamic-menu', 'smile-for-dinamic-menu');
     }
     if (sumError/sumOk <= 0.8 && sumError/sumOk > 0.5) {
         smile = '<span">😭</span>';
+        addElToDinamicMenu('😭', 'smile-for-dinamic-menu', 'smile-for-dinamic-menu');
     }
+
+    resetErrorByDynamicMenu();
+
     return [emodziDiament, smile, diament];
 }

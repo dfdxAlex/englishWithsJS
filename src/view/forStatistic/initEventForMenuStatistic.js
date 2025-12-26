@@ -1,5 +1,6 @@
 import { DataOk } from '../../services/data/DataOk.js';
 import { LanguageController } from '../../controllers/LanguageController.js';
+import { resetStatistic } from '../../models/resetStatistic.js';
 
 export function initEventForMenuStatistic()
 {

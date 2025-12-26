@@ -10,11 +10,12 @@ function handleSearchError() {
     
     // Клик по кнопке Сообщить об ошибке
     buttonError.onclick = function(event) {
-        
+    
+    // Поискать пузырь, если он есть, то не отправляем ошибку
     // Если падает ящик заблокировать отправку ошибки
     // чтобы не попасть случайно в отправку ошибок
-    if (window.SettingForProgram.buttonCheckY > 50)
-        if (window.SettingForProgram.randomOk) {
+    const selectBoobleUp = document.getElementById('boobleUp');
+    if (selectBoobleUp) {
             console.log('Ящик ещё падает');
             event.preventDefault(); // Не выполнять стандартное действие
             return;

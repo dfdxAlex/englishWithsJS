@@ -1,37 +1,45 @@
 import { SettingForProgram } from '../models/SettingForProgram.js';
-import { scarbClick } from './boobleUp/scarbClick.js';
-import { infoForPresentBox } from './boobleUp/infoForPresentBox.js';
+// import { infoForPresentBox } from './boobleUp/infoForPresentBox.js';
 import { removeBonusDiamant } from './boobleUp/removeBonusDiamant.js';
 import { getRandom } from '../services/getRandom.js';
 import { getNumberRand } from './boobleUp/getNumberRand.js';
 import { getImageBooble } from './boobleUp/getImageBooble.js';
 import { getBonusBooble } from './boobleUp/getBonusBooble.js';
+import { createDiamandX2 } from './boobleUp/createDiamandX2.js';
+import { createBoxScarb } from './boobleUp/createBoxScarb.js';
+import { createBoxForInfoBonus } from './boobleUp/createBoxForInfoBonus.js';
 
 export function boobleUp()
 {
    // постоянная часть для всплывающего шарика
    let divCreate = document.createElement("div");
    divCreate.innerText = '💎';
-   let divCreateForBonusBox = document.createElement("div");
+   let divCreateForBonusBox;
+   
 
    let lag = 6;
    let numberRand = 0;
-   let propertyTest;
    let propertySrartXInitialise = false;
-   let bonusBox = 0;
-   let preBon = '';
+   let bonusBox = false;
    let randomOk = false;
+   let hightOld;
+   let buttonCheckYStart;
 
-   setInterval(() => {
+   const id = setInterval(() => {
        const selectBoobleUp = document.getElementById('boobleUp');
+
        // Если координата Y всё ещё ниже потолка то работаем
+       // Если кристал ниже отметки в 50 пиксел
        if (SettingForProgram.buttonCheckY > 50) {
+
            // Если ещё не запоминали стартовую координату Y, то запомнить
            if (!propertySrartXInitialise) {
-               SettingForProgram.buttonCheckYStart = SettingForProgram.buttonCheckY;
+               buttonCheckYStart = SettingForProgram.buttonCheckY;
                // признак того что уже запомнили стартовое значение
                propertySrartXInitialise = true;
+               hightOld = SettingForProgram.buttonCheckY;
            }
+
            // Здесь задается смещение вправо-влево
            if (lag < 0) {
                numberRand = getNumberRand();
@@ -45,88 +53,63 @@ export function boobleUp()
            divCreate.style.left = SettingForProgram.buttonCheckX + "px"; // Начальная позиция
            divCreate.style.top = SettingForProgram.buttonCheckY + "px";
 
+           // Нарисовать картинку пузыря, если ее ещё нет, алмаз, шапка или череп
            if (!selectBoobleUp) {
-
                // постоянные настройки пузырька
                divCreate.innerHTML = getImageBooble() + getBonusBooble();
                divCreate.style.position = "absolute"; // Позволяет двигать элемент по координатам
                divCreate.id = 'boobleUp';
                document.body.appendChild(divCreate);
-               console.log('сработало 1 раз');
            }
 
            // сундук с сокровищами
-           if (SettingForProgram.buttonCheckYStart - SettingForProgram.buttonCheckY > 50 && !bonusBox) {
+           if (buttonCheckYStart - SettingForProgram.buttonCheckY > 50 && !bonusBox) {
                bonusBox = true;
                let randomInt = getRandom(0,9);
                if (randomInt == 5) randomOk = true;
-               //randomOk = true; // если раскомментировать, то ящик падает всегда
+            //    randomOk = true; // если раскомментировать, то ящик падает всегда
                if (randomOk) {
-                   preBon = '<span class="scarb" id="scarb">🎁</span>';
-                   divCreateForBonusBox.innerHTML = preBon;
-                   document.body.appendChild(divCreateForBonusBox);
+                   // создать бонусный ящик и накинуть событие клика
+                   createBoxScarb();
 
-                   SettingForProgram.randomOk = true;
+                   divCreateForBonusBox = document.getElementById('scarb');
 
-                   const dinamicMenuForDiamant = document.getElementById('dinamic-menu');
-
-                   const box = document.createElement('div');
-                   box.textContent = '💎×2'; // можно сразу вставить символ кристалла и удвоение
-                   box.style.fontWeight = 'bold';
-                   box.style.color = 'gold';
-                   box.id = 'bonus-diamant';
-                   dinamicMenuForDiamant.appendChild(box);
-                   
-
-                   const id = setInterval(() => {
-                        const scarb = document.getElementById("scarb");
-                        scarb.addEventListener('click',() => {
-                              scarbClick(2)
-                        });
-                        if (scarb) {
-                            clearInterval(id);
-                        }
-                   }, 150);
-
+                   // вставляет в динамическое меню картинку алмаза умножить на 2
+                   createDiamandX2();
                }
            }
 
            if (bonusBox && randomOk) {
-            divCreateForBonusBox.style.position = "absolute";
             SettingForProgram.buttonCheckX+=numberRand;
             divCreateForBonusBox.style.left = SettingForProgram.buttonCheckX + "px"; // Начальная позиция
-            divCreateForBonusBox.style.top = SettingForProgram.buttonCheckYStart - SettingForProgram.buttonCheckY + "px";
+            divCreateForBonusBox.style.top = buttonCheckYStart - SettingForProgram.buttonCheckY + "px";
            }
            // Скорость всплытия
            SettingForProgram.buttonCheckY-=1;
 
-           // Переменняя propertyTest нужна для контроля факта
-           // необходимости нового пузыря до окончания всплытия старого
-           // Выше в коде проверяется, если фактический Y стал снова больше
-           // то прекращаем старое всплытие и начинаем новое.
-           propertyTest = SettingForProgram.buttonCheckY;
+           // Пока пузырь нормально летит вверх его координата Y предыдущая на 1 больше новой
+           // Если приходит новый ответ раньше, чем пузырь долетел до верха, то его координата
+           // изменяется и перестает отличаться на 1 балл
+           // Для ресета картинки удаляем старый пузырь и система автоматически сгенерирует новый
+           if (SettingForProgram.buttonCheckY - hightOld !== -1) {
+               if (selectBoobleUp) {
+                   selectBoobleUp.remove();
+               }
+           }
+
+           // Запомнить текущую координату Y чтобы на следующей итерации сравнить её с текущей
+           // величиной следующей итерации.
+           // Если разница будет отличаться от -1, то пришел новый ответ отличный по тестам
+           hightOld = SettingForProgram.buttonCheckY;
+           
        } else if (selectBoobleUp) {
            selectBoobleUp.remove();
            divCreate.innerText = '';
            propertySrartXInitialise = false;
            bonusBox = false;
            randomOk = false;
-           const signal = document.getElementById('dinamic-menu');
-           if (signal) {
-            const box = document.createElement('div');
-            box.id = 'box-for-info-bonus';
-            box.textContent = '🎁';
-            box.addEventListener('click', infoForPresentBox);
-            signal.appendChild(box);
-           }
-           SettingForProgram.randomOk = false;
+           createBoxForInfoBonus();
            removeBonusDiamant();
        }
-   }, 10);
+   }, 12);
 }
-
-
-
-
-
-

@@ -7,7 +7,13 @@
 // хранится отдельно в хранилище.
 // Соединив всё это получаются две переменные, которые используются
 // как индекс, который нужно обнулить.
-const resetStatistic = (reset = true) => {
+
+import { DataOk } from '../services/data/DataOk.js';
+import { LanguageController } from '../controllers/LanguageController.js';
+import { hundleHelpPrime } from '../controllers/forInitEventListeners/hundleHelpPrime.js';
+import { succesP } from './resetStatistic/succesP.js';
+
+export const resetStatistic = (reset = true) => {
 
     let numberError = DataOk.error;
     let numberOk = DataOk.ok;
@@ -20,7 +26,7 @@ const resetStatistic = (reset = true) => {
         DataOk.error = numberError;
         DataOk.ok = numberOk;
     }
-    const translate = window.LanguageController;
+    const translate = new LanguageController();
     let resultSucces = numberOk+numberError;
     if (resultSucces !== 0) {
         resultSucces = Math.floor(numberOk/(numberOk+numberError)*100);
@@ -28,21 +34,7 @@ const resetStatistic = (reset = true) => {
     document.getElementById('level24').innerHTML = translate.translate('Собрано алмазов:') + Math.trunc(numberOk);
     document.getElementById('level25').innerHTML = translate.translate('Ошибок:') + numberError;
     document.getElementById('level26').innerHTML = translate.translate('Успех:') + resultSucces +'%';
-    window.hundleHelpPrime();
+    hundleHelpPrime();
 }
 
-// сбросс ошибок
-function succesP(ok, err)
-{
-    // Если хватает пунктов для сбрасывания ошибок
-    if (err*2 <= ok) {
-        err *= 2;
-        ok = ok - err;
-        err = 0;
-    } else  {
-        err = err - Math.floor(ok / 2);
-        ok = 0;
-    } 
 
-    return [ok, err];
-}

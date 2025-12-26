@@ -10,7 +10,7 @@ export function diamentView(diament, emodzi, smile)
             <span>${diament}</span>
             <span data-bs-toggle="modal" data-bs-target="#diamondsModal">${emodzi}</span>
         </div>
-        <div>
+        <div id="smile-for-error">
         <button id="prime-help" type="button" class="text-primary mb-3">&#10067;</button> 
             ${smile}  
         </div>

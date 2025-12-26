@@ -11,7 +11,7 @@ export function getImageBooble()
     if (isBonusBox) {
         isBonusBox.remove();
     }
-    
+   
     if (SettingForProgram.diamant === '-1') {
         return '<span class="diamond">💀</span>';
     }
