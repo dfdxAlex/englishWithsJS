@@ -6,13 +6,13 @@
   "directories": {
     "test": "tests"
   },
-"scripts": {
-  "test": "echo \"Error: no test specified\" && exit 1",
-  "dev": "vite",
-  "build": "vite build",
-  "preview": "vite preview",
-  "deploy": "gh-pages -d dist"
-},
+  "scripts": {
+    "test": "vitest",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dfdxAlex/englishWithsJS.git"
