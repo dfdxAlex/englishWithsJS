@@ -14,14 +14,6 @@ export function boobleUp()
    divCreate.innerText = '💎';
    let divCreateForBonusBox = document.createElement("div");
 
-   let putEl = false;
-
-
-//    let arrayTic = (min=1, max=3) => {
-//        return Math.floor(Math.random() * max) - min ;
-//    }
-
-
    let lag = 6;
    let numberRand = 0;
    let propertyTest;
@@ -31,6 +23,7 @@ export function boobleUp()
    let randomOk = false;
 
    setInterval(() => {
+       const selectBoobleUp = document.getElementById('boobleUp');
        // Если координата Y всё ещё ниже потолка то работаем
        if (SettingForProgram.buttonCheckY > 50) {
            // Если ещё не запоминали стартовую координату Y, то запомнить
@@ -52,19 +45,14 @@ export function boobleUp()
            divCreate.style.left = SettingForProgram.buttonCheckX + "px"; // Начальная позиция
            divCreate.style.top = SettingForProgram.buttonCheckY + "px";
 
-           if (!putEl || propertyTest < SettingForProgram.buttonCheckY) {
-
-               // Получить картинку пузыря - это алмаз, череп или шапка
-               let pre = getImageBooble();
-
-               // получить число баллов за ответ
-               let diamant = getBonusBooble();
+           if (!selectBoobleUp) {
 
                // постоянные настройки пузырька
-               divCreate.innerHTML = pre + diamant;
+               divCreate.innerHTML = getImageBooble() + getBonusBooble();
                divCreate.style.position = "absolute"; // Позволяет двигать элемент по координатам
+               divCreate.id = 'boobleUp';
                document.body.appendChild(divCreate);
-               putEl = true;
+               console.log('сработало 1 раз');
            }
 
            // сундук с сокровищами
@@ -98,7 +86,7 @@ export function boobleUp()
                         if (scarb) {
                             clearInterval(id);
                         }
-                   }, 100);
+                   }, 150);
 
                }
            }
@@ -117,9 +105,9 @@ export function boobleUp()
            // Выше в коде проверяется, если фактический Y стал снова больше
            // то прекращаем старое всплытие и начинаем новое.
            propertyTest = SettingForProgram.buttonCheckY;
-       } else if (putEl) {
+       } else if (selectBoobleUp) {
+           selectBoobleUp.remove();
            divCreate.innerText = '';
-           putEl = false;
            propertySrartXInitialise = false;
            bonusBox = false;
            randomOk = false;
