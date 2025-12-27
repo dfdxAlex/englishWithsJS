@@ -10,12 +10,22 @@ import { DataSet } from '../services/data/DataSet.js';
 import { nav } from '../view/nav.js';
 import { MenuController } from './MenuController.js';
 import { boobleUp } from '../view/boobleUp.js';
+import { resetBottonError } from './resetBottonError.js';
+import { handleSearchError } from './handleSearchError.js';
+import { htmlHelp } from '../view/htmlHelp.js';
+import { handleSound } from './handleSound.js';
+import { handleButtonOk } from './handleButtonOk.js';
 
 // Здесь функции, которые должны отработать когда загрузится статическая страница
 window.addEventListener('load', () => {
+    htmlHelp();
+    handleSound();
     nav();
     const menuC = new MenuController();
     menuC.init();
+
+    // событие на кнопку "Сообщить об ошибке"
+    handleSearchError();
 
     // После рендеринга накинуть событие для изменения фона на группы менюшек.
     // Группы берутся из классов MenuRight и потомков
@@ -53,6 +63,9 @@ window.addEventListener('load', () => {
     // функция отслеживает инфу по ответам и запускает процесс
     // всплытия кристала, шапки или черепа
     boobleUp();
+
+    // Достать из регистра объект переводчика
+    resetBottonError();
 });
 
 // интервал проверяет все элементы и накладывает на них обработчики событий.
@@ -75,11 +88,24 @@ const id = setInterval(()=>{
     if (!hundleUpdateBurgerOrWord('word')) test = false;
     if (!hundleUpdateBurgerOrWord('statistic')) test = false;
 
-
     if (test) {
         console.log('Все элементы получили свои события');
         clearInterval(id);}
 },300);
 
+
+// // инициализация переменных, хранящихся в классе данных
+// window.SettingForProgram.initializeToProperty();
+
+// Что можно узнать из локального хранилища localStorage.getItem
+// nameArrayDb - имя массива, который используется в текущем тесте
+// level - номер текущего уровня - теста.
+// randomEl - индекс текущего вопросса из массива.
+// EnglishWithJs_lang - выбранный язык ru, en, pl, eu
+// 'intTranslate_'+level - число заказанных подсказок на каждом уровне
+// 'user_select' - информация о том, какой режим теста выбран
+// 'indexMax' - число кнопок, которое получилось при разбитии предложения на отдельные слова
+
+// sk_a0c451bdcbb8b32e659dca5f6fd1b3d5ff33e432e4d57b34
 
 

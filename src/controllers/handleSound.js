@@ -1,6 +1,7 @@
 // обработчик события для нажатия на динамик
+import { httpAsk } from '../models/HttpClient.js';
 
-function buttonSound()
+export function handleSound()
 {
 document.getElementById('sound').onclick = ()=>{
 

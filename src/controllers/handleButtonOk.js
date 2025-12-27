@@ -1,5 +1,5 @@
 // Функция проверяет правильность составленного предложения
-function handleButtonOk(ev)
+export function handleButtonOk(ev)
 {
     // Узнать сколько должно быть кнопок в зоне ответа.
     const buttonMax = parseInt(localStorage.getItem('indexMax'));

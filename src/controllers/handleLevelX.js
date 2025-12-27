@@ -18,6 +18,7 @@ import { selectLightNormalHard } from './selectLightNormalHard.js';
 import { setClickForLightNormalHardHelp } from './forHundleLevelX/setClickForLightNormalHardHelp.js';
 import { EventController } from './EventController.js';
 import { WorkingField } from '../view/WorkingField.js';
+import { handleButtonOk } from './handleButtonOk.js';
 
 export const handleLevelX = (dataObj, constIndexArray = false) =>
     {
@@ -132,6 +133,8 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
         // Объект накидывает на кнопки обработчики 
         // соответствующих событий, ответ правильный или нет
         new EventController().init();
+
+        document.getElementById('button-ok')?.addEventListener('click', handleButtonOk);
     };
 
 

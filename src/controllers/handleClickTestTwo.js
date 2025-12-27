@@ -1,7 +1,7 @@
 // Функция удаляет кнопку с словом внизу и помещает его вверх
 // туда, где строится предложение.
 
-function handleClickTestTwo(event)
+export function handleClickTestTwo(event)
 {
     // Выбрать елемент по его Дата атрибуту
     const data = '[data-index="'+event.target.dataset.index+'"]';

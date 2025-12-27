@@ -25,6 +25,8 @@ import { setBorderRadiusForWorkingField } from '../services/setColorMenu/setBord
 import { handleLevelX } from './handleLevelX.js';
 import { SettingForProgram } from '../models/SettingForProgram.js';
 import { resetStatistic } from '../models/resetStatistic.js';
+import { handleClickError } from './handleClickError.js';
+import { resetBottonError } from './resetBottonError.js';
 
 export function handleOkErr(str, event) {
     // выйти из функции если падает бонусный ящик

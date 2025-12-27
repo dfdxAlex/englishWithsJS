@@ -3,7 +3,7 @@
 // Задача функции собрать из разных мест инфу и поместить в атрибут
 // Функция запускается как функция из handleOkErr()
 
-function handleClickError()
+export function handleClickError()
 {
         // выбрать кнопку Сообщить об ошибке
         const button = document.getElementById('search_error');

@@ -1,4 +1,4 @@
-function resetBottonError()
+export function resetBottonError()
 {
         // Достать из регистра объект переводчика
         const translate = window.LanguageController;
