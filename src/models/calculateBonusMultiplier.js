@@ -4,6 +4,7 @@
 import { LevelDataModel } from './LevelDataModel.js';
 import { SettingForProgram } from './SettingForProgram.js';
 import { isClickTranslate } from './calculateBonusMultiplier/isClickTranslate.js';
+import { calculateMedian } from './calculateBonusMultiplier/calculateMedian.js';
 
 export function calculateBonusMultiplier(propertyForBonus)
 {
@@ -160,15 +161,3 @@ export function calculateBonusMultiplier(propertyForBonus)
     return ticLocal;
 }
 
-function calculateMedian(array) {
-    const sorted = [...array].sort((a, b) => a - b); // Сортируем массив
-    const mid = Math.floor(sorted.length / 2);       // Находим середину
-
-    if (sorted.length % 2 === 0) {
-        // Если чётное количество элементов, среднее двух центральных
-        return (sorted[mid - 1] + sorted[mid]) / 2;
-    } else {
-        // Если нечётное, возвращаем центральный элемент
-        return sorted[mid];
-    }
-}

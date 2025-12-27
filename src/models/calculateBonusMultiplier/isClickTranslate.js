@@ -5,7 +5,7 @@ export function isClickTranslate()
    const searchButtonTranslate = document.getElementById('translate');
    if (!searchButtonTranslate) return false;
 
-   const buttonText = searchButtonTranslate.textContent;
+   const buttonText = searchButtonTranslate.innerText;
 
     if (buttonText !== "Перевести вопрос" 
         && buttonText !== "Перекласти питання"

@@ -7,7 +7,6 @@
 // параметр dataObj - это екземпляр LevelDataModel(i)
 // c входящим парамером определяющим масив с данными.(масив теста)
 
-// import { noonMenu } from '../services/noonMenu.js';
 import { DataOk } from '../services/data/DataOk.js';
 import { LevelDataModel } from '../models/LevelDataModel.js';
 import { getRandomInt } from '../services/getRandomInt.js';
@@ -22,10 +21,6 @@ import { WorkingField } from '../view/WorkingField.js';
 
 export const handleLevelX = (dataObj, constIndexArray = false) =>
     {
-
-        // закоментировано 18.11.2025.
-        // noonMenu('.dropdown-content');
-
         // Если Сменили тест, то запомнить номер нового теста и протолкнуть в массиве dataElevator[]
         // дальше по массиву
         if (DataOk.level.int !== dataObj.getLevel()) {
@@ -82,14 +77,14 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
         if (SettingForProgram.selectTypeTest === 'simple') {
             document.getElementById('working_field')
                     .innerHTML = WorkingField.init(mas, nameLeson);
-        hundleForTranslate();
+            hundleForTranslate();
         }
 
         // Тест уровня Simple - Translate
         if (SettingForProgram.selectTypeTest === 'simple-translate') {
             document.getElementById('working_field')
                     .innerHTML = WorkingField.initTranslate(mas, nameLeson);
-        hundleForTranslate();
+            hundleForTranslate();
         }
         
         // Тест уровня Word-assembly
@@ -98,17 +93,17 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
         if (SettingForProgram.selectTypeTest === 'word-assembly') {
             const workingFieldC = document.getElementById('working_field');
             workingFieldC.innerHTML = WorkingField.initWordAssembly(mas, nameLeson);
-        
-        setClickForLightNormalHardHelp();
-        hundleForTranslate();
-        borderRadiusForLevelTwoAndThree();
-        setColorForLevelToAndThree();
+            setClickForLightNormalHardHelp();
+            hundleForTranslate();
+            borderRadiusForLevelTwoAndThree();
+            setColorForLevelToAndThree();
         }
 
         // Новый тест, удалить коммент когда закончу
         // Тест уровня Word-assembly-translate
         // создать рабочее поле с вопроссом и вариантами ответа
         // поместить форму в соответствующий div
+        if (false) // убрать при начале работы
         if (SettingForProgram.selectTypeTest === 'word-assembly-translate') {
             const workingFieldC = document.getElementById('working_field-translate');
             workingFieldC.innerHTML = WorkingField.initWordAssembly(mas, nameLeson);
@@ -128,11 +123,10 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
         if (SettingForProgram.selectTypeTest === 'word-assembly-not-translate') {
             const workingFieldC = document.getElementById('working_field');
             workingFieldC.innerHTML = WorkingField.initWordAssemblyNotTranslate(mas, nameLeson, property);
-            
-        setClickForLightNormalHardHelp();       
-        selectLightNormalHard();
-        borderRadiusForLevelTwoAndThree();
-        setColorForLevelToAndThree();
+            setClickForLightNormalHardHelp();       
+            selectLightNormalHard();
+            borderRadiusForLevelTwoAndThree();
+            setColorForLevelToAndThree();
         }
         
         // Объект накидывает на кнопки обработчики 

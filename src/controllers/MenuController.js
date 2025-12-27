@@ -7,6 +7,7 @@ import { MenuHelp } from '../view/MenuHelp.js';
 import { MenuStatictic } from '../view/MenuStatistic.js';
 import { LevelDataModel } from '../models/LevelDataModel.js';
 import { handleLevelX } from './handleLevelX.js';
+import { fixModalFocus } from '../services/all/fixModalFocus.js';
 
 export class MenuController
 {

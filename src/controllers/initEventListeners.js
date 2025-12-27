@@ -1,7 +1,6 @@
 import { hundleHelpPrime } from './forInitEventListeners/hundleHelpPrime.js';
 import { initEventForMenuStatistic } from '../view/forStatistic/initEventForMenuStatistic.js';
 import { hundleUpdateBurgerOrWord } from './forInitEventListeners/hundleUpdateBurgerOrWord.js';
-// import { hundleBlockMenu } from '../services/hundleBlockMenu.js';
 import { setBackground } from '../view/styles/bodyImages/setBackground.js';
 import { setColorMenu } from '../view/styles/bodyImages/setColorMenu.js';
 import { handleForSelectLangauge } from './forInitEventListeners/handleForSelectLangauge.js';
@@ -17,10 +16,6 @@ window.addEventListener('load', () => {
     nav();
     const menuC = new MenuController();
     menuC.init();
-
-    // Закоментировал функцию 18.11.2025. Если траблов не будет и дата далеко позади, то удалить функцию
-    // здесь и в файле описания.
-    // hundleBlockMenu();
 
     // После рендеринга накинуть событие для изменения фона на группы менюшек.
     // Группы берутся из классов MenuRight и потомков

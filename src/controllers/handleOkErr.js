@@ -27,6 +27,10 @@ import { SettingForProgram } from '../models/SettingForProgram.js';
 import { resetStatistic } from '../models/resetStatistic.js';
 
 export function handleOkErr(str, event) {
+    // выйти из функции если падает бонусный ящик
+    if (document.getElementById('scarb')) {
+        return;
+    }
     // Сохранить координаты места клика по кнопке Проверить
     SettingForProgram.buttonCheckX = event.pageX;
     SettingForProgram.buttonCheckY = event.pageY;

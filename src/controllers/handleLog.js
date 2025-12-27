@@ -4,6 +4,10 @@ import { Logs } from '../models/Logs.js';
 // функция обрабатывает нажатие кнопки Log
 export function handleLog()
 {
+    // выйти из функции если падает бонусный ящик
+    if (document.getElementById('scarb')) {
+        return;
+    }
     // убрать лишнее перед показом логов
     activatingLogs(true);
     // выбрать блок для логов и поместить в него логи

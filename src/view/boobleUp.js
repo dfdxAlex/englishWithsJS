@@ -1,5 +1,7 @@
+// Функция контролирует процесс всплытия кристала и падение ящика
+// Цикл работает всегда, управление пузырями производится через изменение координат у адпления кристалов
+
 import { SettingForProgram } from '../models/SettingForProgram.js';
-// import { infoForPresentBox } from './boobleUp/infoForPresentBox.js';
 import { removeBonusDiamant } from './boobleUp/removeBonusDiamant.js';
 import { getRandom } from '../services/getRandom.js';
 import { getNumberRand } from './boobleUp/getNumberRand.js';
@@ -104,6 +106,8 @@ export function boobleUp()
            
        } else if (selectBoobleUp) {
            selectBoobleUp.remove();
+           if (document.getElementById('scarb'))
+               document.getElementById('scarb').remove();
            divCreate.innerText = '';
            propertySrartXInitialise = false;
            bonusBox = false;
@@ -113,3 +117,8 @@ export function boobleUp()
        }
    }, 12);
 }
+
+boobleUp.help = `
+Функция контролирует процесс всплытия кристала и падение ящика
+Цикл работает всегда, управление пузырями производится через изменение координат у адпления кристалов
+`;

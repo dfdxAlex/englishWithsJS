@@ -4,5 +4,8 @@ import { addElToDinamicMenu } from '../addElToDinamicMenu.js';
 export function createBoxForInfoBonus()
 {
     addElToDinamicMenu('🎁', 'box-for-info-bonus', 'box-for-info-bonus');
-    document.getElementById('box-for-info-bonus').addEventListener('click', infoForPresentBox);
+    const box = document.getElementById('box-for-info-bonus');
+    if (box) {
+        box.addEventListener('click', infoForPresentBox);
+    }
 }
