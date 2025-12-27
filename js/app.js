@@ -2,11 +2,11 @@
 // Описывается событие загрузки документа
 
 window.addEventListener('load', () => {
-    htmlHelp();
+    window.htmlHelp();
     buttonSound();
    
     // событие на кнопку "Сообщить об ошибке"
-    handleSearchError();
+    window.handleSearchError();
 
     // Достать из регистра объект переводчика
     resetBottonError();
