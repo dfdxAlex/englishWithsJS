@@ -1,4 +1,5 @@
 import { extendForArray } from '../extendForArray.js';
+import { replaceEllipsisWithWord } from '../../replaceEllipsisWithWord.js';
 
 export const presentContinuous = [
         ["She is ... to music.", "listening", "listenning", "listens", "listened", "Она слушает музыку.", "Вона слухає музику.", "Ona słucha muzyki."],

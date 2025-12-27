@@ -1,4 +1,5 @@
 import { extendForArray } from '../extendForArray.js';
+import { replaceEllipsisWithWord } from '../../replaceEllipsisWithWord.js';
 
 export const presentSimpleNegative = [
     ["He does not ... coffee.", "drink", "drinks", "drank", "drinking", "Он не пьет кофе.", "Він не п'є каву.", "On nie pije kawy."],

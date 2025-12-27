@@ -4,7 +4,9 @@
 // то дописывает, если есть, то игнорирует.
 // Функция запускается в самом начале, в файле app.js
 
-function handleSearchError() {
+import { httpAsk } from '../models/HttpClient.js';
+
+export function handleSearchError() {
 
     const buttonError = document.getElementById('search_error');
     

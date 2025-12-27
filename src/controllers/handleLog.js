@@ -1,5 +1,6 @@
 import { activatingLogs } from './activatingLogs.js';
 import { Logs } from '../models/Logs.js';
+import { LogField } from '../view/LogField.js';
 
 // функция обрабатывает нажатие кнопки Log
 export function handleLog()

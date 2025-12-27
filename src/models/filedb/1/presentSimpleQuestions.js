@@ -1,4 +1,5 @@
 import { extendForArray } from '../extendForArray.js';
+import { replaceEllipsisWithWord } from '../../replaceEllipsisWithWord.js';
 
 export const presentSimpleQuestions = [
     ["... you like coffee?", "Do", "Does", "", "", "Ты любишь кофе?", "Ти любиш каву?", "Czy lubisz kawę?"],

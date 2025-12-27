@@ -1,4 +1,4 @@
-function replaceEllipsisWithWord(id, arrayName)
+export function replaceEllipsisWithWord(id, arrayName)
 {
           //функция подготавливает предложение, которое должно попасть
           //в блок предыдущих ответов, для этого все вопроссы

@@ -1,4 +1,4 @@
-function htmlHelp()
+export function htmlHelp()
 {
     document.getElementById('html-help').innerHTML = `
         <div class="row w-100 mb-3">

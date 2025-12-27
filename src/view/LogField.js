@@ -1,4 +1,4 @@
-class LogField
+export class LogField
 {
     constructor (logs)
     {

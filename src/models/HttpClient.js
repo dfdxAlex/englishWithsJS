@@ -37,6 +37,7 @@ function HttpClient(link = '') {
 }
 
 HttpClient.prototype._fetchData = function() {
+    let responseObj;
     if (this._isLoading) return; // Если запрос уже выполняется, не начинаем новый
     this._isLoading = true; // Устанавливаем флаг загрузки
 
@@ -78,4 +79,4 @@ HttpClient.prototype._fetchData = function() {
 
 // Объявить объект сразу
 // Это нужно для доступа к данным ответа сервера в разное время
-const httpAsk = new HttpClient('https://amatordd.webd.pro/amatorDed/DFDX/test.php');
+export const httpAsk = new HttpClient('https://amatordd.webd.pro/amatorDed/DFDX/test.php');

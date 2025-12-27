@@ -13,8 +13,11 @@ import { indexQuestion } from './handleButtonLightNormHardHelp/indexQuestion.js'
 import { outputTranslateForTest } from './handleButtonOk/outputTranslateForTest.js';
 import { DataSet } from '../services/data/DataSet.js';
 import { resetStatistic } from '../models/resetStatistic.js';
+import { htmlHelp } from '../view/htmlHelp.js';
+import { handleSearchError } from './handleSearchError.js';
 
-
+window.handleSearchError = handleSearchError;
+window.htmlHelp = htmlHelp;
 window.resetStatistic = resetStatistic;
 window.outputTranslateForTest = outputTranslateForTest;
 window.indexQuestion = indexQuestion;

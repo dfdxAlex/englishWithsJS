@@ -1,4 +1,5 @@
 import { extendForArray } from '../extendForArray.js';
+import { replaceEllipsisWithWord } from '../../replaceEllipsisWithWord.js';
 
 export const forSinceAgoPrPerfPastSimple = [
     ["I moved to this city a year ...", "ago", "for", "since", "earlier", "Я переехал в этот город год назад.", "Я переїхав у це місто рік тому.", "Przeprowadziłem się do tego miasta rok temu."],
