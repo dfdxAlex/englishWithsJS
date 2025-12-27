@@ -9,6 +9,8 @@
 // модификация от 27.10.2024. В ответе приходит объект с информацией
 // содержимое объекта настраивается в файле сервера в специальном объекте.
 
+import { LanguageController } from '../controllers/LanguageController.js';
+
 function HttpClient(link = '') {
     this.link = link;
     this._response = null; // Внутренняя переменная для хранения ответа
@@ -51,7 +53,7 @@ HttpClient.prototype._fetchData = function() {
         this._isLoading = false; // Сбрасываем флаг загрузки
         if (xhr.status >= 200 && xhr.status < 300) {
             setTimeout(function() {
-                const translate = window.LanguageController;
+                const translate = new LanguageController;
                 responseObj = JSON.parse(xhr.responseText);
                 if (!responseObj.zapros) {
                     document.getElementById('search_error').textContent = translate.translate('Ошибка зафиксирована');

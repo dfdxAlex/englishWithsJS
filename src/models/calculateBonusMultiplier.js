@@ -5,6 +5,7 @@ import { LevelDataModel } from './LevelDataModel.js';
 import { SettingForProgram } from './SettingForProgram.js';
 import { isClickTranslate } from './calculateBonusMultiplier/isClickTranslate.js';
 import { calculateMedian } from './calculateBonusMultiplier/calculateMedian.js';
+import { DataOk } from '../services/data/DataOk.js';
 
 export function calculateBonusMultiplier(propertyForBonus)
 {

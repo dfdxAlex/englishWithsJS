@@ -1,4 +1,5 @@
 import { countValidOptions } from './countValidOptions.js';
+import { SettingForProgram } from '../../models/SettingForProgram.js';
 
   export function createButtonHardNormalLight()
   {

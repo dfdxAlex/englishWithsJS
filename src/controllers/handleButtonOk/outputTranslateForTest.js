@@ -1,5 +1,6 @@
 import { indexQuestion } from '../handleButtonLightNormHardHelp/indexQuestion.js';
 import { LanguageController } from '../LanguageController.js';
+import { SettingForProgram } from '../../models/SettingForProgram.js';
 
 export function outputTranslateForTest()
 {
@@ -7,15 +8,15 @@ export function outputTranslateForTest()
     if (localStorage.getItem('randomNumber') !== "1") {
         let transL = new LanguageController;
         commentPlus = transL.translate('Примерно:');
-        window.SettingForProgram.commentPlus.push(commentPlus);
+        SettingForProgram.commentPlus.push(commentPlus);
     } else {
-        window.SettingForProgram.commentPlus.push('');
+        SettingForProgram.commentPlus.push('');
     }
 
-    window.SettingForProgram.dataElevator.push(indexQuestion()[5]);
+    SettingForProgram.dataElevator.push(indexQuestion()[5]);
     const place = document.getElementById('clicked_element');
-    if (window.SettingForProgram.dataElevator.length > 1) {
-        commentPlus = window.SettingForProgram.commentPlus.shift();
-        place.innerText = commentPlus+' '+window.SettingForProgram.dataElevator.shift();
+    if (SettingForProgram.dataElevator.length > 1) {
+        commentPlus = SettingForProgram.commentPlus.shift();
+        place.innerText = commentPlus+' '+SettingForProgram.dataElevator.shift();
     }
 }

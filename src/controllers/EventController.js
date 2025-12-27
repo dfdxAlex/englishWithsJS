@@ -7,6 +7,7 @@ import { SettingForProgram } from '../models/SettingForProgram.js';
 import { handleLevelX } from './handleLevelX.js';
 import { LevelDataModel } from '../models/LevelDataModel.js';
 import { handleClickTestTwo } from './handleClickTestTwo.js';
+import { handleLog } from './handleLog.js';
 
 // объект достаточно просто создать в нужном месте
 export class EventController {
@@ -138,6 +139,6 @@ export class EventController {
         }
         
         // обработчик события клика по кнопке логов
-        document.getElementById('log').onclick = window.handleLog;
+        document.getElementById('log').onclick = handleLog;
     }
 }

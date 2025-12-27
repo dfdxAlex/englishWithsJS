@@ -14,7 +14,7 @@ import { resetBottonError } from './resetBottonError.js';
 import { handleSearchError } from './handleSearchError.js';
 import { htmlHelp } from '../view/htmlHelp.js';
 import { handleSound } from './handleSound.js';
-import { handleButtonOk } from './handleButtonOk.js';
+import { SettingForProgram } from '../models/SettingForProgram.js';
 
 // Здесь функции, которые должны отработать когда загрузится статическая страница
 window.addEventListener('load', () => {
@@ -58,7 +58,7 @@ window.addEventListener('load', () => {
     document.querySelector('#setting').onclick = activationMenuSetting;
 
     // инициализация переменных, хранящихся в классе данных
-    window.SettingForProgram.initializeToProperty();
+    SettingForProgram.initializeToProperty();
 
     // функция отслеживает инфу по ответам и запускает процесс
     // всплытия кристала, шапки или черепа
@@ -95,7 +95,6 @@ const id = setInterval(()=>{
 
 
 // // инициализация переменных, хранящихся в классе данных
-// window.SettingForProgram.initializeToProperty();
 
 // Что можно узнать из локального хранилища localStorage.getItem
 // nameArrayDb - имя массива, который используется в текущем тесте

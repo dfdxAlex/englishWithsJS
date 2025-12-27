@@ -1,3 +1,7 @@
+import { outputTranslateForTest } from './handleButtonOk/outputTranslateForTest.js';
+import { handleOkErr } from './handleOkErr.js';
+import { DataSet } from '../services/data/DataSet.js';
+
 // Функция проверяет правильность составленного предложения
 export function handleButtonOk(ev)
 {
@@ -24,7 +28,7 @@ export function handleButtonOk(ev)
     //с одинаковыми двумя словами.
 
     // Достать образец текущего задания в тесте из другого объекта
-    let testState = window.DataSet.questionDB;
+    let testState = DataSet.questionDB;
     testState = testState.replace(/\s+/g, '');
     let testForButton = rezultString.replace(/\s+/g, '');
 
@@ -37,10 +41,10 @@ export function handleButtonOk(ev)
     document.querySelector('#button-ok').innerText = rezultString;
     // Если ответ правильный
     if (testRezult) {
-        window.handleOkErr('Ok',ev);
-        window.outputTranslateForTest();
+        handleOkErr('Ok',ev);
+        outputTranslateForTest();
     } else {
-        window.handleOkErr('Error',ev);
+        handleOkErr('Error',ev);
     }
 }
 

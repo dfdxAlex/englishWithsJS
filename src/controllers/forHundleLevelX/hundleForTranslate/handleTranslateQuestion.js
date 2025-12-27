@@ -6,6 +6,7 @@
 
 import { countHints } from '../../../view/countHints.js';
 import { SettingForProgram } from '../../../models/SettingForProgram.js';
+import { DataSet } from '../../../services/data/DataSet.js';
 
 export function handleTranslateQuestion(event) 
 {
@@ -15,13 +16,13 @@ export function handleTranslateQuestion(event)
         let translateFromArray = '';
         // здесь подготавливается перевод для вопросса
         if (localStorage.getItem('EnglishWithJs_lang') === 'ru') {
-            translateFromArray = window.DataSet.arrayBD[5];
+            translateFromArray = DataSet.arrayBD[5];
         }
         if (localStorage.getItem('EnglishWithJs_lang') === 'ua') {
-            translateFromArray = window.DataSet.arrayBD[6];
+            translateFromArray = DataSet.arrayBD[6];
         }
         if (localStorage.getItem('EnglishWithJs_lang') === 'pl') {
-            translateFromArray = window.DataSet.arrayBD[7];
+            translateFromArray = DataSet.arrayBD[7];
         }
 
         // если работает любой тест кроме simple-translate то перевод берется из массива

@@ -8,6 +8,7 @@ import { MenuStatictic } from '../view/MenuStatistic.js';
 import { LevelDataModel } from '../models/LevelDataModel.js';
 import { handleLevelX } from './handleLevelX.js';
 import { fixModalFocus } from '../services/all/fixModalFocus.js';
+import { DataOk } from '../services/data/DataOk.js';
 
 export class MenuController
 {

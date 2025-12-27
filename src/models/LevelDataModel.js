@@ -28,6 +28,7 @@ import { Exercise } from '../view/Exercise.js';
 import { setStatisticForButton } from '../view/forLevelDataModel/setStatisticForButton.js';
 import { SettingForProgram } from './SettingForProgram.js';
 import { LanguageController } from '../controllers/LanguageController.js';
+import { Thoury } from '../controllers/Thoury.js';
 
 // Не УДАЛЯТЬ!!!
 import  fileDB  from './filedb/indexForFileDB.js';
@@ -97,7 +98,7 @@ export class LevelDataModel
         if (level == this.level && (lang === true || lang === this.lang)) {
             this.ex.init(this.translate.translate(exercise));
             localStorage.setItem('nameArrayDb',nameArray);
-            window.Thoury.handleThoury(level);
+            Thoury.handleThoury(level);
             // поместить в this.rez нужный массив с данными. getArrayDB() запускает данный метод
             // и потом возвращает переменную this.rez
             nameArray = 'fileDB.'+nameArray;

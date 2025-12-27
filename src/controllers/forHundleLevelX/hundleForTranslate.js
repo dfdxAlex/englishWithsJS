@@ -1,8 +1,9 @@
 import { handleTranslateQuestion } from './hundleForTranslate/handleTranslateQuestion.js';
+import { DataOk } from '../../services/data/DataOk.js';
 
 export function hundleForTranslate()
 {
-            // Здесь можно накидывать на кнопки события, по мере появления кнопок
+        // Здесь можно накидывать на кнопки события, по мере появления кнопок
         // Когда все кнопки получат свои события, таймер уничтожается
         const id = setInterval(()=>{
             // Если значение сохраняется до конца блока, то уничтожить таймер
@@ -17,10 +18,10 @@ export function hundleForTranslate()
                     handleTranslateQuestion(event);
 
                     // увеличиь счётчик на 1
-                    if (!window.DataOk.translateStop) {
-                        window.DataOk.countInt+=1;
+                    if (!DataOk.translateStop) {
+                        DataOk.countInt+=1;
                         // Признак того что перевод уже показан
-                        window.DataOk.translateStop = true;
+                        DataOk.translateStop = true;
                     }
                 });
             } else {

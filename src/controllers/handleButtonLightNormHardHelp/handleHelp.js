@@ -1,11 +1,12 @@
 import { indexQuestion } from './indexQuestion.js';
+import { SettingForProgram } from '../../models/SettingForProgram.js';
 
 export function handleHelp()
 {
     let randomNumber = parseFloat(localStorage.getItem('randomNumber'));
     const respons = document.getElementById('clicked_element');
     // Если работаем со вторым тестом, то там всегда выбирается только главный вопрос
-    if (window.SettingForProgram.selectTypeTest === "word-assembly") randomNumber = 1;
+    if (SettingForProgram.selectTypeTest === "word-assembly") randomNumber = 1;
     respons.innerText = indexQuestion()[randomNumber-1];
     respons.classList.remove('bg-success');
     respons.classList.remove('bg-warning');
