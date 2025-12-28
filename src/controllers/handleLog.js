@@ -5,8 +5,8 @@ import { LogField } from '../view/LogField.js';
 // функция обрабатывает нажатие кнопки Log
 export function handleLog()
 {
-    // выйти из функции если падает бонусный ящик
-    if (document.getElementById('scarb')) {
+    // выйти из функции если падает бонусный ящик или ещё нет записей
+    if (document.getElementById('scarb') || Logs.logs.length === 0) {
         return;
     }
     // убрать лишнее перед показом логов
