@@ -39,7 +39,7 @@ export function handleButtonOk(ev)
     // Блок сработает если ни одного камня не было выбрано перед нажатием кнопки Проверить
     if (rezultString.trim().length === 0) {
         document.querySelector('#button-ok').innerText = translate.translate('Ответ не введён!');
-                event.stopPropagation();
+        ev.stopPropagation();
 
         const boxForWords = document.querySelector('[data-select="initWord"]');
         boxForWords?.addEventListener('click', () => {
