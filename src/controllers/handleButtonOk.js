@@ -2,6 +2,7 @@ import { outputTranslateForTest } from './handleButtonOk/outputTranslateForTest.
 import { handleOkErr } from './handleOkErr.js';
 import { DataSet } from '../services/data/DataSet.js';
 import { LanguageController } from './LanguageController.js';
+import { buttonOkBlockNoon } from './handleButtonOk/buttonOkBlockNoon.js';
 
 // Функция проверяет правильность составленного предложения
 export function handleButtonOk(ev)
@@ -38,15 +39,14 @@ export function handleButtonOk(ev)
 
     // Блок сработает если ни одного камня не было выбрано перед нажатием кнопки Проверить
     if (rezultString.trim().length === 0) {
+        // Изменить надпись на кнопке Проверить и остановить всплытие события клика
         document.querySelector('#button-ok').innerText = translate.translate('Ответ не введён!');
         ev.stopPropagation();
-
-        const boxForWords = document.querySelector('[data-select="initWord"]');
-        boxForWords?.addEventListener('click', () => {
-          const translate = new LanguageController();
-          document.querySelector('#button-ok').innerText = translate.translate('Проверить');
-        }, { once: true }); 
-
+        // Выбрать контейнер с нижними кнопками и накинуть на него событие, которое сработает 1 раз
+        // Событие накидывается если была введена пустая строка, то есть нет ни одного скинутого вверх камня
+        // Срабатывает один раз потому, что при неправильном вводе комбинации такое же событие 
+        // наложится в другом месте уже на многоразовую отработку
+        buttonOkBlockNoon();
         return;
     }
 

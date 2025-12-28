@@ -941,7 +941,16 @@ const unit31 = [
   ['Can I enter this area?', 'You mustn’t enter this area.', 'You must enter this area.', 'You don’t need to enter this area.', 'You need not enter this area.', 'Можно входить в эту зону?', 'Можна заходити в цю зону?', 'Czy można wejść do tej strefy?'],
   ['Is it okay to use your phone now?', 'You mustn’t use your phone now.', 'You must use your phone now.', 'You don’t need to use your phone now.', 'You need not use your phone now.', 'Можно пользоваться телефоном сейчас?', 'Можна користуватися телефоном зараз?', 'Czy można teraz używać telefonu?'],
   ['Is it allowed to cross the road here?', 'You mustn’t cross the road here.', 'You must cross the road here.', 'You don’t need to cross the road here.', 'You need not cross the road here.', 'Можно переходить дорогу здесь?', 'Можна переходити дорогу тут?', 'Czy można przechodzić przez drogę tutaj?'],
-  ['Can I use this machine?', 'You mustn’t use this machine.', 'You must use this machine.', 'You don’t need to use this machine.', 'You need not use this machine.', 'Можно использовать эту машину?', 'Можна користуватися цією машиною?', 'Czy mogę używać tej maszyny?'],
+[
+  'Can I use this machine? (There is a warning sign on it.)',
+  'You mustn’t use this machine.',
+  'You must use this machine.',
+  'You don’t need to use this machine.',
+  'You need not use this machine.',
+  'Можно использовать эту машину? (На ней есть предупреждающий знак.)',
+  'Можна користуватися цією машиною? (На ній є попереджувальний знак.)',
+  'Czy mogę używać tej maszyny? (Jest na niej znak ostrzegawczy.)'
+],
 
   ['Is it allowed to leave the door open?', 'You mustn’t leave the door open.', 'You must leave the door open.', 'You don’t need to leave the door open.', 'You need not leave the door open.', 'Можно оставлять дверь открытой?', 'Можна залишати двері відчиненими?', 'Czy można zostawić drzwi otwarte?'],
   ['Can we swim here?', 'You mustn’t swim here.', 'You must swim here.', 'You don’t need to swim here.', 'You need not swim here.', 'Можно плавать здесь?', 'Можна плавати тут?', 'Czy można tu pływać?'],
@@ -950,7 +959,26 @@ const unit31 = [
   ['Is it allowed to bring food inside?', 'You mustn’t bring food inside.', 'You must bring food inside.', 'You don’t need to bring food inside.', 'You need not bring food inside.', 'Можно приносить еду внутрь?', 'Можна приносити їжу всередину?', 'Czy można wnosić jedzenie do środka?'],
   ['Can we touch this equipment?', 'You mustn’t touch this equipment.', 'You must touch this equipment.', 'You don’t need to touch this equipment.', 'You need not touch this equipment.', 'Можно трогать это оборудование?', 'Можна чіпати це обладнання?', 'Czy można dotknąć tego sprzętu?'],
   ['Is it okay to leave the lights on?', 'You mustn’t leave the lights on.', 'You must leave the lights on.', 'You don’t need to leave the lights on.', 'You need not leave the lights on.', 'Можно оставлять свет включенным?', 'Можна залишати світло увімкненим?', 'Czy można zostawić światło włączone?'],
-  ['Can I sit here?', 'You mustn’t sit here.', 'You must sit here.', 'You don’t need to sit here.', 'You need not sit here.', 'Можно сидеть здесь?', 'Можна сидіти тут?', 'Czy można tu usiąść?'],
+[
+  'Is it allowed to sit here?',
+  'You mustn’t sit here.',
+  'You must sit here.',
+  'You don’t need to sit here.',
+  'You need not sit here.',
+  'Можно сидеть здесь?',
+  'Можна сидіти тут?',
+  'Czy można tu usiąść?'
+],
+[
+  'Can I sit here? (There is a “No sitting” sign.)',
+  'You mustn’t sit here.',
+  'You must sit here.',
+  'You don’t need to sit here.',
+  'You need not sit here.',
+  'Можно сидеть здесь? (Здесь есть знак «Сидеть запрещено».)',
+  'Можна сидіти тут? (Тут є знак «Сидіти заборонено».)',
+  'Czy można tu usiąść? (Jest tu znak „Zakaz siadania”.)'
+],
   ['Is it allowed to use this path?', 'You mustn’t use this path.', 'You must use this path.', 'You don’t need to use this path.', 'You need not use this path.', 'Можно идти по этой тропинке?', 'Можна йти цією стежкою?', 'Czy można iść tą ścieżką?'],
   ['Is it okay to touch the controls?', 'You mustn’t touch the controls.', 'You must touch the controls.', 'You don’t need to touch the controls.', 'You need not touch the controls.', 'Можно трогать эти рычаги?', 'Можна чіпати ці важелі?', 'Czy można dotknąć tych dźwigni?'],
 

@@ -27,7 +27,7 @@ import { SettingForProgram } from '../models/SettingForProgram.js';
 import { resetStatistic } from '../models/resetStatistic.js';
 import { handleClickError } from './handleClickError.js';
 import { resetBottonError } from './resetBottonError.js';
-import { LanguageController } from './LanguageController.js';
+import { buttonOkBlockNoon } from './handleButtonOk/buttonOkBlockNoon.js';
 
 export function handleOkErr(str, event) {
     // выйти из функции если падает бонусный ящик
@@ -68,8 +68,6 @@ export function handleOkErr(str, event) {
     // Сброс состояния кнопки Сообщить об ошибке
     resetBottonError();
 
-
-
     // если был ответ ошибочный, то поместить выбранный вариант
     // в поле clicked_element
     let rezult  = event.target.innerText;
@@ -104,15 +102,8 @@ export function handleOkErr(str, event) {
         const btn = event.target;
         btn.style.display = 'none';      
         event.stopPropagation();
-
-        const boxForWords = document.querySelector('[data-select="initWord"]');
-        boxForWords?.addEventListener('click', () => {
-            const translate = new LanguageController();
-            document.querySelector('#button-ok').innerText = translate.translate('Проверить');
-            btn.style.display = '';
-        }); 
+        buttonOkBlockNoon(btn);
     }
-
 
     // Настроить событие на кнопку Сообщить об ошибке
     // Функция подготавливает информацию о том, с каким словом работаем
