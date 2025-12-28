@@ -16,7 +16,6 @@ export function wordToHtmlButton(arrayButton, flag)
                                       +element+getStrFinish());
                 indexMax = index;
             });
-            
     return {
         buttonOption,
         indexMax

@@ -1,4 +1,5 @@
 
+// Функция возвращает начальную часть разметки, для кнопок различных уровней
 
 export function getStrStart(flag)
 {
@@ -6,16 +7,10 @@ export function getStrStart(flag)
        return `<div class='row mb-2'>
                   <div class='col-12'>
                      <button class="working-field" type='button'`;
-    if (flag === 'initWordAssembly')
-       return `<div>
-                 <div class="button-word">
-                   <button 
-                     class="init-word-assembly-str-start"
-                     type='button'`;
-    if (flag === 'initWordAssemblyNotTranslate')
-       return `<div class='row mb-2'>
-                  <div class='col-12'>
-                     <button 
-                        class="init-word-assembly-str-start"
-                        type='button'`;
+
+    // Если пришел флаг init, то срабатываем по условию, если любой другой флаг, то то что осталось
+       return `<span>
+                 <button 
+                   class="init-word-assembly-str-start"
+                   type='button'`;
 }

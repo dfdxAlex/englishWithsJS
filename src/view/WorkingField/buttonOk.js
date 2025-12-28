@@ -3,7 +3,7 @@
   // во втором и третьем тесте
 
 
-  export function buttonOk()
+  export function buttonOk(str = "Проверить")
   {
     return `<div class='row mb-2'>
     <div class='col-12'>
@@ -14,7 +14,7 @@
         type='button' 
         id='button-ok'
        >
-        Проверить
+        ${str}
       </button>
     </div>
    </div>`;

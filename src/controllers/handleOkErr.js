@@ -27,12 +27,14 @@ import { SettingForProgram } from '../models/SettingForProgram.js';
 import { resetStatistic } from '../models/resetStatistic.js';
 import { handleClickError } from './handleClickError.js';
 import { resetBottonError } from './resetBottonError.js';
+import { LanguageController } from './LanguageController.js';
 
 export function handleOkErr(str, event) {
     // выйти из функции если падает бонусный ящик
     if (document.getElementById('scarb')) {
         return;
     }
+
     // Сохранить координаты места клика по кнопке Проверить
     SettingForProgram.buttonCheckX = event.pageX;
     SettingForProgram.buttonCheckY = event.pageY;
@@ -62,11 +64,12 @@ export function handleOkErr(str, event) {
     // и увеличивает его. Правила смотреть внутри функции
     let ticResult = tic+calculateBonusMultiplier(propertyForBonus);
     localStorage.setItem('level'+level+'_'+str,ticResult);
-    // Сброс состояния кнопки
+
+    // Сброс состояния кнопки Сообщить об ошибке
     resetBottonError();
-    // Выбрать html тег, который покажет выбранный неправильный вариант
-    // или весь правильный вопрос
-    const clickedEl = document.getElementById('clicked_element');
+
+
+
     // если был ответ ошибочный, то поместить выбранный вариант
     // в поле clicked_element
     let rezult  = event.target.innerText;
@@ -83,15 +86,33 @@ export function handleOkErr(str, event) {
         if (typeof workingArray[workingArray.length-1] === "function")
             rezult = workingArray[workingArray.length-1](indexArray);
     }
-    clickedEl.innerHTML = rezult;
+
+    // Выбрать html тег, который покажет выбранный неправильный вариант
+    // или весь правильный вопрос
+    const clickedElement = document.getElementById('clicked_element');
+    if (clickedElement) {
+        clickedElement.innerHTML = rezult;
+    }
 
     // добавить объект с логами в пулл логов
     Logs.addLog = new Log(str, rezult);
 
     // Здесь просто прячется нажатая кнопка. Это нужно для того, 
     // чтобы не дублировать неправильные ответы.
-    if (str == "Error")
-        event.target.style.display = 'none';
+    // Добавляется событие возврата кнопки, при клике на любую кнопку из камней внизу
+    if (str === 'Error') {
+        const btn = event.target;
+        btn.style.display = 'none';      
+        event.stopPropagation();
+
+        const boxForWords = document.querySelector('[data-select="initWord"]');
+        boxForWords?.addEventListener('click', () => {
+            const translate = new LanguageController();
+            document.querySelector('#button-ok').innerText = translate.translate('Проверить');
+            btn.style.display = '';
+        }); 
+    }
+
 
     // Настроить событие на кнопку Сообщить об ошибке
     // Функция подготавливает информацию о том, с каким словом работаем

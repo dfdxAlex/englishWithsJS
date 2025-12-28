@@ -8,6 +8,7 @@ import { handleLevelX } from './handleLevelX.js';
 import { LevelDataModel } from '../models/LevelDataModel.js';
 import { handleClickTestTwo } from './handleClickTestTwo.js';
 import { handleLog } from './handleLog.js';
+import { DataOk } from '../services/data/DataOk.js';
 
 // объект достаточно просто создать в нужном месте
 export class EventController {

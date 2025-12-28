@@ -3,7 +3,6 @@ import { getStrFinish } from './getStrFinish.js';
 import { DataSet } from '../../services/data/DataSet.js';
 import { getTranslateForTest } from './getButtonOption/getTranslateForTest.js';
 import { getRandomeTranslateForTest } from './getButtonOption/getRandomeTranslateForTest.js';
-import { cleartoBeSentences } from '../WorkingField/cleartoBeSentences.js';
 import { getRandomeOptionForTest } from './getButtonOption/getRandomeOptionForTest.js';
 import { getOptionForTest } from './getButtonOption/getOptionForTest.js';
 

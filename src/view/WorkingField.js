@@ -26,7 +26,7 @@ import { containerForRezzult } from './WorkingField/containerForRezzult.js';
 import { generateQuestion } from './WorkingField/generateQuestion.js';
 import { createButtonHardNormalLight } from './WorkingField/createButtonHardNormalLight.js';
 import { buttonOk } from './WorkingField/buttonOk.js';
-import { handleButtonOk } from '../controllers/handleButtonOk.js';
+// import { handleButtonOk } from '../controllers/handleButtonOk.js';
 
 
 class WorkingFieldClass {
@@ -175,6 +175,7 @@ class WorkingFieldClass {
                   cardStartAndLegend(nameLeson) + 
                   setButtonTranslate() + 
                   containerForRezzult();
+
         const strButton = buttonOption.join('');
         rez+='<hr>'+
              strButton+

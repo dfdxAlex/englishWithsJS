@@ -21,6 +21,21 @@ BDTranslate.push(
      ``, 
      ``,
      ``]);
+BDTranslate.push(
+    [``, 
+     ``, 
+     ``,
+     ``]);
+BDTranslate.push(
+    [``, 
+     ``, 
+     ``,
+     ``]);
+BDTranslate.push(
+    [`Ответ не введён!`, 
+     `Відповідь не введено!`, 
+     `Odpowiedź nie została wpisana!`,
+     `The answer is not entered!`]);
 
 BDTranslate.push(
     [`Призовой ящик выпадает с некоторой вероятностью. Если его поймать, то добавится удвоенное число кристалов.`, 
