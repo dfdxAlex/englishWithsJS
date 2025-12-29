@@ -4,6 +4,8 @@ import { LanguageController } from '../../controllers/LanguageController.js';
 
 export function buttonOkBlockNoon(button = false)
 {
+        if (!document.querySelector('#button-ok')) return;
+        
         const boxForWords = document.querySelector('[data-select="initWord"]');
         boxForWords?.addEventListener('click', () => {
             const translate = new LanguageController();

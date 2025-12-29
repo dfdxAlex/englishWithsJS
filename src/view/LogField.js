@@ -1,3 +1,5 @@
+import { getTranslate } from './LogField/getTranslate.js';
+
 export class LogField
 {
     constructor (logs)
@@ -46,6 +48,7 @@ export class LogField
             bodyAccordion += '<i>' + element.nameArray + '</i><br>';
             bodyAccordion += '<strong>Question:<i>' +element.question + '</i></strong><br>';
             bodyAccordion += '<strong>Answer:<i>' +element.rezult + '</i></strong><br>';
+            bodyAccordion += '<strong>Translate:<i>' +getTranslate(element) + '</i></strong><br>';
 
             let accordionElLocal = accordionEl;
             accordionElLocal = accordionElLocal.replace(/headingOne/g, headingOne);
@@ -60,3 +63,4 @@ export class LogField
         return rezultLocal;
     }
 }
+
