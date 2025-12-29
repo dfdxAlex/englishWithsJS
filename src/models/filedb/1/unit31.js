@@ -3105,7 +3105,1000 @@ const unit31 = [
     "Я решил выучить японский свободно до 30 лет. Мне сейчас 27. Я занимаюсь каждый день.",
     "Я вирішив вивчити японську вільно до 30 років. Мені зараз 27. Я займаюся щодня.",
     "Postanowiłem biegle nauczyć się japońskiego przed 30. Mam teraz 27 lat. Uczę się codziennie."
-  ]
+  ],
+
+  [
+"Why did you leave the party so early last night?",
+"I had to catch the last train home.",
+"I must catch the last train home.",
+"I must have caught the train by now.",
+"You must leave the party early.",
+"Почему ты ушёл с вечеринки так рано вчера вечером?",
+"Чому ти пішов з вечірки так рано вчора ввечері?",
+"Dlaczego wyszedłeś z imprezy tak wcześnie wczoraj wieczorem?"
+],
+[
+"Why did she call you at 3 a.m. yesterday?",
+"She had to ask for my help with an urgent problem.",
+"She must ask for help right now.",
+"She must have been sleeping at that time.",
+"You mustn't call people so late.",
+"Почему она позвонила тебе в 3 часа ночи вчера?",
+"Чому вона подзвонила тобі о 3 годині ночі вчора?",
+"Dlaczego zadzwoniła do ciebie o 3 w nocy wczoraj?"
+],
+[
+"Why did they drive so fast on the highway last weekend?",
+"They had to get to the hospital quickly.",
+"They must drive more carefully.",
+"They must have arrived already.",
+"You mustn't exceed the speed limit.",
+"Почему они так быстро ехали по шоссе на прошлых выходных?",
+"Чому вони так швидко їхали по шосе на минулих вихідних?",
+"Dlaczego jechali tak szybko autostradą w ostatni weekend?"
+],
+[
+"Why did you buy so much food yesterday?",
+"I had to prepare dinner for twenty guests.",
+"I must prepare dinner tonight.",
+"I must have forgotten to buy milk.",
+"You must eat everything you buy.",
+"Почему ты купил столько еды вчера?",
+"Чому ти купив стільки їжі вчора?",
+"Dlaczego kupiłeś tyle jedzenia wczoraj?"
+],
+[
+"Why did he miss the meeting yesterday morning?",
+"He had to take his child to the doctor.",
+"He must attend all meetings.",
+"He must have overslept again.",
+"You mustn't miss important meetings.",
+"Почему он пропустил собрание вчера утром?",
+"Чому він пропустив нараду вчора вранці?",
+"Dlaczego nie przyszedł na spotkanie wczoraj rano?"
+],
+[
+"Why did you stay home all day last Saturday?",
+"I had to finish a big project for work.",
+"I must finish it by tomorrow.",
+"I must have been very tired.",
+"You don't have to go out every weekend.",
+"Почему ты просидел дома весь день в прошлую субботу?",
+"Чому ти просидів удома весь день у минулу суботу?",
+"Dlaczego siedziałeś w domu cały dzień w ostatnią sobotę?"
+],
+[
+"Why did they cancel the trip last month?",
+"They had to because of the bad weather forecast.",
+"They must plan better next time.",
+"They must have enjoyed the staycation.",
+"You mustn't travel in winter.",
+"Почему они отменили поездку в прошлом месяце?",
+"Чому вони скасували поїздку минулого місяця?",
+"Dlaczego odwołali wyjazd w zeszłym miesiącu?"
+],
+[
+"Why did she wear a suit to the party yesterday?",
+"She had to go straight to an important interview after.",
+"She must wear casual clothes to parties.",
+"She must have felt uncomfortable.",
+"You must dress appropriately.",
+"Почему она пришла на вечеринку в костюме вчера?",
+"Чому вона прийшла на вечірку в костюмі вчора?",
+"Dlaczego przyszła na imprezę w garniturze wczoraj?"
+],
+[
+"Why did you wake up at 5 a.m. last Sunday?",
+"I had to catch an early flight.",
+"I must sleep more on weekends.",
+"I must have heard a noise.",
+"You don't have to wake up early on Sundays.",
+"Почему ты встал в 5 утра в прошлое воскресенье?",
+"Чому ти встав о 5 ранку в минулу неділю?",
+"Dlaczego wstałeś o 5 rano w ostatnią niedzielę?"
+],
+[
+"Why did he borrow money from you last week?",
+"He had to pay an unexpected bill.",
+"He must save more money.",
+"He must have spent too much.",
+"You mustn't lend money to friends.",
+"Почему он занял у тебя деньги на прошлой неделе?",
+"Чому він позичив у тебе гроші на минулому тижні?",
+"Dlaczego pożyczył od ciebie pieniądze w zeszłym tygodniu?"
+],
+[
+"Why did they run to the station yesterday?",
+"They had to catch the 6 o'clock train.",
+"They must exercise more often.",
+"They must have missed it anyway.",
+"You must buy tickets in advance.",
+"Почему они бежали на вокзал вчера?",
+"Чому вони бігли на вокзал вчора?",
+"Dlaczego biegli na dworzec wczoraj?"
+],
+[
+"Why did you turn off your phone during dinner last night?",
+"I had to because of an important family rule.",
+"You must keep your phone on for emergencies.",
+"I must have low battery.",
+"You mustn't use phones at the table.",
+"Почему ты выключил телефон во время ужина вчера вечером?",
+"Чому ти вимкнув телефон під час вечері вчора ввечері?",
+"Dlaczego wyłączyłeś telefon podczas kolacji wczoraj wieczorem?"
+],
+[
+"Why did she study until midnight last Friday?",
+"She had to prepare for a difficult exam on Saturday.",
+"She must study every day.",
+"She must have passed with flying colors.",
+"You don't have to study on weekends.",
+"Почему она училась до полуночи в прошлую пятницу?",
+"Чому вона вчилася до опівночі в минулу п'ятницю?",
+"Dlaczego uczyła się do północy w ostatni piątek?"
+],
+[
+"Why did you take a taxi home yesterday?",
+"I had to because I missed the last bus.",
+"You must take public transport to save money.",
+"I must have walked otherwise.",
+"You mustn't drink and drive.",
+"Почему ты взял такси домой вчера?",
+"Чому ти взяв таксі додому вчора?",
+"Dlaczego wziąłeś taksówkę do domu wczoraj?"
+],
+[
+"Why did they move to a new apartment last year?",
+"They had to because their old building was renovated.",
+"They must love the new place.",
+"They must choose furniture carefully.",
+"You must notify the landlord in advance.",
+"Почему они переехали в новую квартиру в прошлом году?",
+"Чому вони переїхали в нову квартиру минулого року?",
+"Dlaczego przeprowadzili się do nowego mieszkania w zeszłym roku?"
+],
+[
+"Why did he apologize to everyone at the meeting yesterday?",
+"He had to because he was late due to traffic.",
+"He must be more punctual.",
+"He must have made a mistake.",
+"You mustn't interrupt others.",
+"Почему он извинился перед всеми на собрании вчера?",
+"Чому він вибачився перед усіма на нараді вчора?",
+"Dlaczego przepraszał wszystkich na spotkaniu wczoraj?"
+],
+[
+"Why did you cook so much food last Christmas?",
+"I had to feed the whole extended family.",
+"You must try my special recipe.",
+"I must have eaten too much.",
+"You don't have to cook everything yourself.",
+"Почему ты приготовил столько еды на прошлое Рождество?",
+"Чому ти приготував стільки їжі на минуле Різдво?",
+"Dlaczego ugotowałeś tyle jedzenia na ostatnie Boże Narodzenie?"
+],
+[
+"Why did she refuse the job offer last month?",
+"She had to because it required moving abroad.",
+"She must accept better offers.",
+"She must have regretted it later.",
+"You must negotiate the salary.",
+"Почему она отказалась от предложения о работе в прошлом месяце?",
+"Чому вона відмовилася від пропозиції роботи минулого місяця?",
+"Dlaczego odmówiła oferty pracy w zeszłym miesiącu?"
+],
+[
+"Why did you clean the entire house yesterday?",
+"I had to before my parents arrived.",
+"You must keep it tidy every day.",
+"I must have missed some dust.",
+"You mustn't leave dishes in the sink.",
+"Почему ты убирал весь дом вчера?",
+"Чому ти прибирав весь дім вчора?",
+"Dlaczego sprzątałeś cały dom wczoraj?"
+],
+[
+"Why did they shout during the match last weekend?",
+"They had to because the stadium was very noisy.",
+"They must support their team.",
+"They must have been very excited.",
+"You mustn't swear at games.",
+"Почему они кричали во время матча на прошлых выходных?",
+"Чому вони кричали під час матчу на минулих вихідних?",
+"Dlaczego krzyczeli podczas meczu w ostatni weekend?"
+],
+[
+"Why did he sell his car last summer?",
+"He had to because he needed money for university.",
+"He must buy a new one soon.",
+"He must have loved that car.",
+"You must maintain it regularly.",
+"Почему он продал машину прошлым летом?",
+"Чому він продав машину минулого літа?",
+"Dlaczego sprzedał samochód latem zeszłego roku?"
+],
+[
+"Why did you wear a coat yesterday when it was warm?",
+"I had to go to a formal evening event later.",
+"You must check the weather forecast.",
+"I must have felt cold anyway.",
+"You mustn't overdress.",
+"Почему ты надел пальто вчера, когда было тепло?",
+"Чому ти одягнув пальто вчора, коли було тепло?",
+"Dlaczego włożyłeś płaszcz wczoraj, gdy było ciepło?"
+],
+[
+"Why did she cry after the phone call last night?",
+"She had to hear bad news from home.",
+"She must stay strong.",
+"She must have watched a sad movie.",
+"You mustn't cry in public.",
+"Почему она плакала после телефонного звонка вчера вечером?",
+"Чому вона плакала після телефонної розмови вчора ввечері?",
+"Dlaczego płakała po rozmowie telefonicznej wczoraj wieczorem?"
+],
+[
+"Why did they wait so long at the restaurant yesterday?",
+"They had to because the food took forever to arrive.",
+"They must choose a better place next time.",
+"They must have enjoyed the conversation.",
+"You must book a table in advance.",
+"Почему они так долго ждали в ресторане вчера?",
+"Чому вони так довго чекали в ресторані вчора?",
+"Dlaczego tak długo czekali w restauracji wczoraj?"
+],
+[
+"Why did you delete all those photos last week?",
+"I had to free up space on my phone urgently.",
+"You must back up important photos.",
+"I must have deleted the wrong ones.",
+"You mustn't share private pictures.",
+"Почему ты удалил все эти фото на прошлой неделе?",
+"Чому ти видалив усі ці фото на минулому тижні?",
+"Dlaczego usunąłeś wszystkie te zdjęcia w zeszłym tygodniu?"
+],
+[
+"Why did he run in the rain yesterday?",
+"He had to get home before the storm got worse.",
+"He must take an umbrella next time.",
+"He must have gotten completely wet.",
+"You mustn't run on wet streets.",
+"Почему он бежал под дождём вчера?",
+"Чому він біг під дощем вчора?",
+"Dlaczego biegł w deszczu wczoraj?"
+],
+[
+"Why did you change your password last month?",
+"I had to because my account was hacked.",
+"You must use strong passwords.",
+"I must have forgotten the old one.",
+"You must enable two-factor authentication.",
+"Почему ты сменил пароль в прошлом месяце?",
+"Чому ти змінив пароль минулого місяця?",
+"Dlaczego zmieniłeś hasło w zeszłym miesiącu?"
+],
+[
+"Why did she skip lunch yesterday?",
+"She had to attend an urgent meeting.",
+"She must eat regularly to stay healthy.",
+"She must have eaten a big breakfast.",
+"You don't have to skip meals.",
+"Почему она пропустила обед вчера?",
+"Чому вона пропустила обід вчора?",
+"Dlaczego pominęła lunch wczoraj?"
+],
+[
+"Why did they close the shop early last Friday?",
+"They had to because of a family emergency.",
+"They must open on time tomorrow.",
+"They must have lost many customers.",
+"You must inform customers in advance.",
+"Почему они закрыли магазин рано в прошлую пятницу?",
+"Чому вони закрили магазин рано в минулу п'ятницю?",
+"Dlaczego zamknęli sklep wcześniej w ostatni piątek?"
+],
+[
+"Why did you return the gift last week?",
+"I had to because I already had the same one.",
+"You must appreciate gifts.",
+"I must have hurt her feelings.",
+"You mustn't return presents.",
+"Почему ты вернул подарок на прошлой неделе?",
+"Чому ти повернув подарунок на минулому тижні?",
+"Dlaczego oddałeś prezent w zeszłym tygodniu?"
+],
+[
+"Why did he stay silent during the discussion yesterday?",
+"He had to because he didn't know the topic well.",
+"He must speak up more often.",
+"He must have been thinking deeply.",
+"You must contribute to discussions.",
+"Почему он молчал во время обсуждения вчера?",
+"Чому він мовчав під час обговорення вчора?",
+"Dlaczego milczał podczas dyskusji wczoraj?"
+],
+[
+"Why did you book a hotel last minute yesterday?",
+"I had to because my flight was delayed overnight.",
+"You must plan trips earlier.",
+"I must have paid extra.",
+"You must check reviews first.",
+"Почему ты забронировал отель в последний момент вчера?",
+"Чому ти забронював готель в останній момент вчора?",
+"Dlaczego zarezerwowałeś hotel w ostatniej chwili wczoraj?"
+],
+[
+"Why did she cut her hair short last month?",
+"She had to because it was damaged after coloring.",
+"She must look great with long hair.",
+"She must have wanted a change.",
+"You must go to a professional stylist.",
+"Почему она коротко подстриглась в прошлом месяце?",
+"Чому вона коротко підстриглася минулого місяця?",
+"Dlaczego obcięła włosy na krótko w zeszłym miesiącu?"
+],
+[
+"Why did they turn down the music at midnight last night?",
+"They had to because the neighbors complained.",
+"They must play louder next time.",
+"They must have been tired anyway.",
+"You mustn't disturb neighbors.",
+"Почему они убавили музыку в полночь вчера?",
+"Чому вони зробили музику тихіше опівночі вчора?",
+"Dlaczego ściszyli muzykę o północy wczoraj?"
+],
+[
+"Why did you pay the fine yesterday?",
+"I had to because I parked in the wrong place last week.",
+"You must read parking signs carefully.",
+"I must have forgotten about it.",
+"You mustn't park illegally.",
+"Почему ты оплатил штраф вчера?",
+"Чому ти сплатив штраф вчора?",
+"Dlaczego zapłaciłeś mandat wczoraj?"
+],
+[
+"Why did he quit smoking last year?",
+"He had to after the doctor warned him about health risks.",
+"He must stay away from cigarettes.",
+"He must have felt much better.",
+"You must support him.",
+"Почему он бросил курить в прошлом году?",
+"Чому він кинув палити минулого року?",
+"Dlaczego rzucił palenie w zeszłym roku?"
+],
+[
+"Why did you rewrite the email three times yesterday?",
+"I had to make it perfect for the boss.",
+"You must write clearly.",
+"I must have made many mistakes.",
+"You must proofread before sending.",
+"Почему ты переписывал email три раза вчера?",
+"Чому ти переписував email три рази вчора?",
+"Dlaczego przepisywałeś email trzy razy wczoraj?"
+],
+[
+"Why did she arrive late to the wedding last Saturday?",
+"She had to help with a car breakdown on the way.",
+"She must be on time for important events.",
+"She must have missed the ceremony.",
+"You must plan extra time for traffic.",
+"Почему она опоздала на свадьбу в прошлую субботу?",
+"Чому вона спізнилася на весілля в минулу суботу?",
+"Dlaczego spóźniła się na ślub w ostatnią sobotę?"
+],
+[
+"Why did they spend all day at the airport yesterday?",
+"They had to wait for a delayed flight.",
+"They must travel more comfortably next time.",
+"They must have read many books.",
+"You must check flight status.",
+"Почему они провели весь день в аэропорту вчера?",
+"Чому вони провели весь день в аеропорту вчора?",
+"Dlaczego spędzili cały dzień na lotnisku wczoraj?"
+],
+[
+"Why did you block that number last week?",
+"I had to stop constant spam calls.",
+"You must report spam.",
+"I must have blocked the wrong one.",
+"You mustn't answer unknown calls.",
+"Почему ты заблокировал тот номер на прошлой неделе?",
+"Чому ти заблокував той номер на минулому тижні?",
+"Dlaczego zablokowałeś ten numer w zeszłym tygodniu?"
+],
+[
+"Why did he carry all the bags alone yesterday?",
+"He had to because I hurt my back.",
+"He must ask for help next time.",
+"He must have been very tired.",
+"You must share the load.",
+"Почему он нёс все сумки один вчера?",
+"Чому він ніс усі сумки один вчора?",
+"Dlaczego niósł wszystkie torby sam wczoraj?"
+],
+[
+"Why did you watch the news all evening last night?",
+"I had to follow an important breaking story.",
+"You must stay informed.",
+"I must have seen the same reports.",
+"You don't have to watch everything.",
+"Почему ты смотрел новости весь вечер вчера?",
+"Чому ти дивився новини весь вечір вчора?",
+"Dlaczego oglądałeś wiadomości cały wieczór wczoraj?"
+],
+[
+"Why did she cancel the reservation yesterday?",
+"She had to because she got sick suddenly.",
+"She must feel better soon.",
+"She must have found a better place.",
+"You must cancel in advance.",
+"Почему она отменила бронь вчера?",
+"Чому вона скасувала бронювання вчора?",
+"Dlaczego odwołała rezerwację wczoraj?"
+],
+[
+"Why did they paint the room blue last weekend?",
+"They had to cover ugly stains on the walls.",
+"They must choose warm colors.",
+"They must have finished quickly.",
+"You must use protective covers.",
+"Почему они покрасили комнату в синий на прошлых выходных?",
+"Чому вони пофарбували кімнату в синій на минулих вихідних?",
+"Dlaczego pomalowali pokój na niebiesko w ostatni weekend?"
+],
+[
+"Why did you charge your phone three times yesterday?",
+"I had to use it intensively for work calls.",
+"You must buy a better battery.",
+"I must have played games too much.",
+"You must turn off unnecessary apps.",
+"Почему ты заряжал телефон три раза вчера?",
+"Чому ти заряджав телефон три рази вчора?",
+"Dlaczego ładowałeś telefon trzy razy wczoraj?"
+],
+[
+"Why did he wear glasses to the beach last summer?",
+"He had to because he lost his contact lenses.",
+"He must protect his eyes from the sun.",
+"He must have looked funny.",
+"You must use sunscreen.",
+"Почему он надел очки на пляж прошлым летом?",
+"Чому він одягнув окуляри на пляж минулого літа?",
+"Dlaczego założył okulary na plażę latem zeszłego roku?"
+],
+[
+"Why did you print so many pages yesterday?",
+"I had to prepare documents for a meeting.",
+"You must go paperless.",
+"I must have printed duplicates.",
+"You must use double-sided printing.",
+"Почему ты распечатал столько страниц вчера?",
+"Чому ти роздрукував стільки сторінок вчора?",
+"Dlaczego wydrukowałeś tyle stron wczoraj?"
+],
+[
+"Why did she whisper during the movie last night?",
+"She had to explain the plot to her friend quietly.",
+"You mustn't talk in the cinema.",
+"She must have known the ending.",
+"You must watch silently.",
+"Почему она шептала во время фильма вчера вечером?",
+"Чому вона шепотіла під час фільму вчора ввечері?",
+"Dlaczego szeptała podczas filmu wczoraj wieczorem?"
+],
+[
+"Why did they leave the window open all night last winter?",
+"They had to air out smoke from burnt food.",
+"They must close it to stay warm.",
+"They must have frozen.",
+"You must be careful with cooking.",
+"Почему они оставили окно открытым всю ночь прошлой зимой?",
+"Чому вони залишили вікно відкритим всю ніч минулої зими?",
+"Dlaczego zostawili okno otwarte całą noc zeszłej zimy?"
+],
+[
+"Do you work on Sundays at your job?",
+"No, I don't have to work on Sundays.",
+"No, I mustn't work on Sundays.",
+"No, I have to work on Sundays.",
+"No, I must work more hours.",
+"Ты работаешь по воскресеньям на своей работе?",
+"Ти працюєш по неділях на своїй роботі?",
+"Czy pracujesz w niedziele w swojej pracy?"
+],
+[
+"Is it necessary to wear a suit to the party tomorrow?",
+"No, you don't have to wear a suit.",
+"No, you must wear a suit.",
+"No, you mustn't wear a suit.",
+"No, you must look formal.",
+"Обязательно ли надевать костюм на вечеринку завтра?",
+"Чи обов'язково вдягати костюм на вечірку завтра?",
+"Czy trzeba ubrać garnitur na imprezę jutro?"
+],
+[
+"Do students have to buy textbooks for this online course?",
+"No, they don't have to buy textbooks.",
+"No, they must buy textbooks.",
+"No, they mustn't share textbooks.",
+"No, they must study every day.",
+"Студентам нужно покупать учебники для этого онлайн-курса?",
+"Студентам треба купувати підручники для цього онлайн-курсу?",
+"Czy studenci muszą kupować podręczniki na ten kurs online?"
+],
+[
+"Do we need to book tickets in advance for this free concert?",
+"No, we don't have to book tickets.",
+"No, we must book tickets.",
+"No, we must arrive early.",
+"No, we mustn't be late.",
+"Нам нужно бронировать билеты заранее на этот бесплатный концерт?",
+"Нам треба бронювати квитки заздалегідь на цей безкоштовний концерт?",
+"Czy musimy rezerwować bilety z wyprzedzeniem na ten darmowy koncert?"
+],
+[
+"Do children have to eat everything on their plate here?",
+"No, they don't have to eat everything.",
+"No, they must eat everything.",
+"No, they mustn't waste food.",
+"No, they must try new things.",
+"Дети должны доедать всё с тарелки здесь?",
+"Діти повинні доїдати все з тарілки тут?",
+"Czy dzieci muszą zjadać wszystko z talerza tutaj?"
+],
+[
+"Is it required to bring your own laptop to the library?",
+"No, you don't have to bring your own laptop.",
+"No, you must bring your own laptop.",
+"No, you mustn't use library computers.",
+"No, you must register first.",
+"Обязательно ли приносить свой ноутбук в библиотеку?",
+"Чи обов'язково приносити свій ноутбук до бібліотеки?",
+"Czy trzeba przynosić własny laptop do biblioteki?"
+],
+[
+"Do guests have to remove shoes when entering your house?",
+"No, they don't have to remove shoes.",
+"No, they must remove shoes.",
+"No, they mustn't wear dirty shoes.",
+"No, they must feel comfortable.",
+"Гости должны снимать обувь, заходя в ваш дом?",
+"Гості повинні знімати взуття, заходячи до вашого дому?",
+"Czy goście muszą zdejmować buty wchodząc do twojego domu?"
+],
+[
+"Do you need to pay to enter this park?",
+"No, you don't have to pay.",
+"No, you must pay.",
+"No, you mustn't litter.",
+"No, you must keep dogs on a leash.",
+"Нужно ли платить за вход в этот парк?",
+"Чи треба платити за вхід до цього парку?",
+"Czy trzeba płacić za wejście do tego parku?"
+],
+[
+"Are employees required to attend the Friday team-building event?",
+"No, we don't have to attend.",
+"No, we must attend.",
+"No, we mustn't miss it.",
+"No, we must participate actively.",
+"Сотрудники обязаны посещать пятничное командное мероприятие?",
+"Співробітники зобов'язані відвідувати п'ятничний командний захід?",
+"Czy pracownicy muszą uczestniczyć w piątkowym team-building?"
+],
+[
+"Do I have to fill in all the optional fields in this form?",
+"No, you don't have to fill in the optional fields.",
+"No, you must fill in all fields.",
+"No, you mustn't leave them blank.",
+"No, you must provide accurate information.",
+"Мне нужно заполнять все необязательные поля в этой форме?",
+"Мені треба заповнювати всі необов'язкові поля в цій формі?",
+"Czy muszę wypełniać wszystkie opcjonalne pola w tym formularzu?"
+],
+[
+"Is tipping required in this restaurant?",
+"No, you don't have to tip.",
+"No, you must tip.",
+"No, you mustn't forget to tip.",
+"No, you must order dessert.",
+"Чаевые обязательны в этом ресторане?",
+"Чайові обов'язкові в цьому ресторані?",
+"Czy napiwek jest obowiązkowy w tej restauracji?"
+],
+[
+"Do we have to arrive an hour early for the movie?",
+"No, we don't have to arrive an hour early.",
+"No, we must arrive early.",
+"No, we mustn't miss the start.",
+"No, we must buy popcorn.",
+"Нам нужно приезжать за час до фильма?",
+"Нам треба приїжджати за годину до фільму?",
+"Czy musimy przyjechać godzinę wcześniej na film?"
+],
+[
+"Are visitors required to register at the reception?",
+"No, they don't have to register.",
+"No, they must register.",
+"No, they mustn't enter without permission.",
+"No, they must wear a badge.",
+"Посетители должны регистрироваться на ресепшене?",
+"Відвідувачі повинні реєструватися на рецепції?",
+"Czy odwiedzający muszą rejestrować się w recepcji?"
+],
+[
+"Do you need to speak Spanish to travel in Barcelona?",
+"No, you don't have to speak Spanish.",
+"No, you must speak Spanish.",
+"No, you must learn basic phrases.",
+"No, you mustn't speak loudly.",
+"Нужно ли говорить по-испански, чтобы путешествовать по Барселоне?",
+"Чи треба говорити іспанською, щоб подорожувати Барселоною?",
+"Czy trzeba mówić po hiszpańsku, aby podróżować po Barcelonie?"
+],
+[
+"Is it necessary to print the ticket or can I show it on my phone?",
+"You don't have to print it; showing on the phone is fine.",
+"You must print it.",
+"You mustn't lose it.",
+"You must arrive early.",
+"Обязательно ли распечатывать билет или можно показать на телефоне?",
+"Чи обов'язково друкувати квиток чи можна показати на телефоні?",
+"Czy trzeba drukować bilet czy można pokazać na telefonie?"
+],
+[
+"Do members have to pay for the gym classes?",
+"No, members don't have to pay extra for classes.",
+"No, members must pay.",
+"No, members must book in advance.",
+"No, members mustn't be late.",
+"Члены клуба должны платить за групповые занятия?",
+"Члени клубу повинні платити за групові заняття?",
+"Czy członkowie muszą płacić za zajęcia grupowe?"
+],
+[
+"Are we required to bring food to the potluck party?",
+"No, you don't have to bring food if you don't want to.",
+"No, you must bring food.",
+"No, you mustn't come empty-handed.",
+"No, you must try everything.",
+"Мы обязаны приносить еду на вечеринку в складчину?",
+"Ми зобов'язані приносити їжу на вечірку в складчину?",
+"Czy musimy przynosić jedzenie na imprezę potluck?"
+],
+[
+"Do I have to answer all the questions in the survey?",
+"No, you don't have to answer all of them.",
+"No, you must answer all.",
+"No, you mustn't skip important ones.",
+"No, you must be honest.",
+"Мне нужно отвечать на все вопросы в опросе?",
+"Мені треба відповідати на всі питання в опитуванні?",
+"Czy muszę odpowiadać na wszystkie pytania w ankiecie?"
+],
+[
+"Is it compulsory to vote in your country?",
+"No, people don't have to vote.",
+"No, people must vote.",
+"No, people mustn't spoil ballots.",
+"No, people must choose wisely.",
+"Голосование обязательно в вашей стране?",
+"Голосування обов'язкове у вашій країні?",
+"Czy głosowanie jest obowiązkowe w twoim kraju?"
+],
+[
+"Do passengers have to stay seated during the entire flight?",
+"No, they don't have to stay seated the whole time.",
+"No, they must stay seated.",
+"No, they mustn't disturb others.",
+"No, they must fasten seatbelts when the sign is on.",
+"Пассажиры должны сидеть на местах весь полёт?",
+"Пасажири повинні сидіти на місцях весь політ?",
+"Czy pasażerowie muszą siedzieć na miejscach przez cały lot?"
+],
+[
+"Are we required to wear masks on this train?",
+"No, passengers don't have to wear masks anymore.",
+"No, passengers must wear masks.",
+"No, passengers mustn't cough openly.",
+"No, passengers must keep distance.",
+"Мы обязаны носить маски в этом поезде?",
+"Ми зобов'язані носити маски в цьому поїзді?",
+"Czy musimy nosić maski w tym pociągu?"
+],
+[
+"Do you need a reservation to visit this museum on weekdays?",
+"No, you don't have to make a reservation on weekdays.",
+"No, you must make a reservation.",
+"No, you mustn't touch exhibits.",
+"No, you must buy tickets online.",
+"Нужна ли бронь для посещения этого музея в будни?",
+"Чи потрібна бронь для відвідування цього музею в будні?",
+"Czy нужна rezerwacja na wizytę w tym muzeum w dni powszednie?"
+],
+[
+"Is homework mandatory every day in your school?",
+"No, students don't have to do homework every day.",
+"No, students must do homework every day.",
+"No, students mustn't copy.",
+"No, students must study hard.",
+"Домашнее задание обязательно каждый день в вашей школе?",
+"Домашнє завдання обов'язкове щодня у вашій школі?",
+"Czy zadanie domowe jest obowiązkowe codziennie w twojej szkole?"
+],
+[
+"Do I have to download the app to use the service?",
+"No, you don't have to download the app; the website works too.",
+"No, you must download the app.",
+"No, you mustn't share your password.",
+"No, you must create an account.",
+"Мне нужно скачивать приложение, чтобы пользоваться сервисом?",
+"Мені треба завантажувати додаток, щоб користуватися сервісом?",
+"Czy muszę pobierać aplikację, aby korzystać z usługi?"
+],
+[
+"Are pets required to be on a leash in this park?",
+"No, dogs don't have to be on a leash here.",
+"No, dogs must be on a leash.",
+"No, dogs mustn't bark loudly.",
+"No, owners must clean up.",
+"Домашних животных нужно держать на поводке в этом парке?",
+"Домашніх тварин треба тримати на повідку в цьому парку?",
+"Czy zwierzęta muszą być na smyczy w tym parku?"
+],
+[
+"Do we have to dress formally for the office on Fridays?",
+"No, employees don't have to dress formally on Fridays.",
+"No, employees must dress formally.",
+"No, employees mustn't wear jeans.",
+"No, employees must be punctual.",
+"Мы должны одеваться формально в офис по пятницам?",
+"Ми повинні одягатися формально в офіс по п'ятницях?",
+"Czy musimy ubierać się formalnie do biura w piątki?"
+],
+[
+"Is it necessary to buy bottled water in this city?",
+"No, you don't have to buy bottled water; tap water is safe.",
+"No, you must buy bottled water.",
+"No, you mustn't drink from fountains.",
+"No, you must stay hydrated.",
+"Нужно ли покупать бутилированную воду в этом городе?",
+"Чи треба купувати бутильовану воду в цьому місті?",
+"Czy trzeba kupować butelkowaną wodę w tym mieście?"
+],
+[
+"Do participants have to prepare a speech for the meeting?",
+"No, you don't have to prepare a speech.",
+"No, you must prepare a speech.",
+"No, you mustn't interrupt others.",
+"No, you must listen carefully.",
+"Участники должны готовить речь для собрания?",
+"Учасники повинні готувати промову для наради?",
+"Czy uczestnicy muszą przygotować przemówienie na spotkanie?"
+],
+[
+"Are photos allowed inside this church?",
+"Yes, visitors don't have to avoid taking photos.",
+"No, visitors must take photos.",
+"No, visitors mustn't use flash.",
+"No, visitors must be silent.",
+"Фотографии разрешены внутри этой церкви?",
+"Фотографії дозволені всередині цієї церкви?",
+"Czy zdjęcia są dozwolone wewnątrz tego kościoła?"
+],
+[
+"Do I need to bring cash to the festival?",
+"No, you don't have to bring cash; cards are accepted everywhere.",
+"No, you must bring cash.",
+"No, you mustn't lose your wallet.",
+"No, you must try all food stalls.",
+"Мне нужно брать наличные на фестиваль?",
+"Мені треба брати готівку на фестиваль?",
+"Czy muszę brać gotówkę na festiwal?"
+],
+[
+"Is it required to have a driving license to rent an e-scooter here?",
+"No, you don't have to have a driving license.",
+"No, you must have a driving license.",
+"No, you mustn't ride on sidewalks.",
+"No, you must wear a helmet.",
+"Нужны ли права, чтобы арендовать электросамокат здесь?",
+"Чи потрібні права, щоб орендувати електросамокат тут?",
+"Czy potrzebne jest prawo jazdy, aby wynająć hulajnogę elektryczną tutaj?"
+],
+[
+"Do we have to check in luggage for this short flight?",
+"No, passengers don't have to check in luggage.",
+"No, passengers must check in luggage.",
+"No, passengers mustn't exceed weight limits.",
+"No, passengers must arrive early.",
+"Мы должны сдавать багаж на этот короткий рейс?",
+"Ми повинні здавати багаж на цей короткий рейс?",
+"Czy musimy nadawać bagaż na ten krótki lot?"
+],
+[
+"Are gifts mandatory for the birthday party?",
+"No, guests don't have to bring gifts.",
+"No, guests must bring gifts.",
+"No, guests mustn't come empty-handed.",
+"No, guests must have fun.",
+"Подарки обязательны на день рождения?",
+"Подарунки обов'язкові на день народження?",
+"Czy prezenty są obowiązkowe na urodziny?"
+],
+[
+"Do I have to create an account to read the articles?",
+"No, you don't have to create an account.",
+"No, you must create an account.",
+"No, you mustn't copy content.",
+"No, you must share interesting articles.",
+"Мне нужно создавать аккаунт, чтобы читать статьи?",
+"Мені треба створювати акаунт, щоб читати статті?",
+"Czy muszę zakładać konto, aby czytać artykuły?"
+],
+[
+"Is swimming allowed in this lake?",
+"Yes, people don't have to avoid swimming here.",
+"No, people must swim here.",
+"No, people mustn't dive from rocks.",
+"No, people must watch children.",
+"Купаться разрешено в этом озере?",
+"Купатися дозволено в цьому озері?",
+"Czy kąpiel jest dozwolona w tym jeziorze?"
+],
+[
+"Do volunteers have to commit to a minimum number of hours?",
+"No, volunteers don't have to commit to a minimum.",
+"No, volunteers must commit.",
+"No, volunteers mustn't cancel last minute.",
+"No, volunteers must be reliable.",
+"Волонтёры должны отрабатывать минимальное количество часов?",
+"Волонтери повинні відпрацьовувати мінімальну кількість годин?",
+"Czy wolontariusze muszą zobowiązać się do minimalnej liczby godzin?"
+],
+[
+"Are reviews required after staying at the hotel?",
+"No, guests don't have to leave reviews.",
+"No, guests must leave reviews.",
+"No, guests mustn't complain publicly.",
+"No, guests must be honest.",
+"Отзывы обязательны после проживания в отеле?",
+"Відгуки обов'язкові після проживання в готелі?",
+"Czy opinie są obowiązkowe po pobycie w hotelu?"
+],
+[
+"Do I need to bring my own towel to the swimming pool?",
+"No, you don't have to bring your own towel.",
+"No, you must bring your own towel.",
+"No, you mustn't run near the pool.",
+"No, you must shower before swimming.",
+"Мне нужно приносить своё полотенце в бассейн?",
+"Мені треба приносити свій рушник до басейну?",
+"Czy muszę przynosić własny ręcznik na basen?"
+],
+[
+"Is it necessary to speak loudly in this quiet café?",
+"No, customers don't have to speak loudly.",
+"No, customers must speak loudly.",
+"No, customers mustn't disturb others.",
+"No, customers must order something.",
+"Нужно ли говорить громко в этом тихом кафе?",
+"Чи треба говорити голосно в цій тихій кав'ярні?",
+"Czy trzeba mówić głośno w tej cichej kawiarni?"
+],
+[
+"Do players have to wear special uniforms for casual games?",
+"No, players don't have to wear uniforms for casual games.",
+"No, players must wear uniforms.",
+"No, players mustn't cheat.",
+"No, players must follow rules.",
+"Игроки должны надевать специальную форму для неофициальных игр?",
+"Гравці повинні вдягати спеціальну форму для неофіційних ігор?",
+"Czy gracze muszą nosić specjalne stroje na nieoficjalne gry?"
+],
+[
+"Are donations required to enter the charity event?",
+"No, visitors don't have to donate to enter.",
+"No, visitors must donate.",
+"No, visitors mustn't feel pressured.",
+"No, visitors must support the cause.",
+"Пожертвования обязательны для входа на благотворительное мероприятие?",
+"Пожертви обов'язкові для входу на благодійний захід?",
+"Czy datki są obowiązkowe na wejście na wydarzenie charytatywne?"
+],
+[
+"Do I have to watch all the videos to pass the course?",
+"No, you don't have to watch all videos.",
+"No, you must watch all videos.",
+"No, you mustn't skip lectures.",
+"No, you must take notes.",
+"Мне нужно смотреть все видео, чтобы сдать курс?",
+"Мені треба дивитися всі відео, щоб здати курс?",
+"Czy muszę oglądać wszystkie filmy, aby zaliczyć kurs?"
+],
+[
+"Is it compulsory to recycle plastic in your neighborhood?",
+"No, residents don't have to recycle, but it's encouraged.",
+"No, residents must recycle.",
+"No, residents mustn't litter.",
+"No, residents must separate waste.",
+"Переработка пластика обязательна в вашем районе?",
+"Переробка пластику обов'язкова у вашому районі?",
+"Czy segregacja plastiku jest obowiązkowa w twojej okolicy?"
+],
+[
+"Do guests have to stay until the end of the wedding?",
+"No, guests don't have to stay until the very end.",
+"No, guests must stay until the end.",
+"No, guests mustn't leave early.",
+"No, guests must congratulate the couple.",
+"Гости должны оставаться до конца свадьбы?",
+"Гості повинні залишатися до кінця весілля?",
+"Czy goście muszą zostać do końca wesela?"
+],
+[
+"Are subtitles required when watching foreign films here?",
+"No, viewers don't have to use subtitles if they understand.",
+"No, viewers must use subtitles.",
+"No, viewers mustn't talk during the film.",
+"No, viewers must turn off phones.",
+"Субтитры обязательны при просмотре иностранных фильмов здесь?",
+"Субтитри обов'язкові при перегляді іноземних фільмів тут?",
+"Czy napisy są obowiązkowe przy oglądaniu zagranicznych filmów tutaj?"
+],
+[
+"Do I need to confirm attendance for the free webinar?",
+"No, you don't have to confirm attendance.",
+"No, you must confirm attendance.",
+"No, you mustn't miss it.",
+"No, you must ask questions.",
+"Мне нужно подтверждать участие в бесплатном вебинаре?",
+"Мені треба підтверджувати участь у безкоштовному вебінарі?",
+"Czy muszę potwierdzać obecność na darmowym webinarze?"
+],
+[
+"Is it necessary to have experience to join the beginner class?",
+"No, participants don't have to have any experience.",
+"No, participants must have experience.",
+"No, participants mustn't be late.",
+"No, participants must practice at home.",
+"Нужен ли опыт, чтобы записаться на класс для начинающих?",
+"Чи потрібен досвід, щоб записатися на клас для початківців?",
+"Czy potrzebne jest doświadczenie, aby zapisać się na zajęcia dla początkujących?"
+],
+[
+"Do customers have to order a minimum amount for delivery?",
+"No, customers don't have to order a minimum.",
+"No, customers must order a minimum.",
+"No, customers mustn't cancel last minute.",
+"No, customers must pay online.",
+"Клиенты должны заказывать на минимальную сумму для доставки?",
+"Клієнти повинні замовляти на мінімальну суму для доставки?",
+"Czy klienci muszą zamawiać minimalną kwotę na dostawę?"
+],
+[
+"Are comments required on the forum posts?",
+"No, members don't have to comment on every post.",
+"No, members must comment.",
+"No, members mustn't be rude.",
+"No, members must read rules.",
+"Комментарии обязательны к постам на форуме?",
+"Коментарі обов'язкові до постів на форумі?",
+"Czy komentarze są obowiązkowe do postów na forum?"
+],
+[
+"Do I have to use my real name on this platform?",
+"No, users don't have to use their real names.",
+"No, users must use real names.",
+"No, users mustn't harass others.",
+"No, users must verify accounts.",
+"Мне нужно использовать настоящее имя на этой платформе?",
+"Мені треба використовувати справжнє ім'я на цій платформі?",
+"Czy muszę używać prawdziwego imienia na tej platformie?"
+],
+
+
   
 ];
 
