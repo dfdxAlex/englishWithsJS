@@ -3848,7 +3848,7 @@ const unit31 = [
 "Czy zwierzęta muszą być na smyczy w tym parku?"
 ],
 [
-"Do we have to dress formally for the office on Fridays?",
+"The company has a casual Friday policy, so employees do not have to dress formally on that day.",
 "No, employees don't have to dress formally on Fridays.",
 "No, employees must dress formally.",
 "No, employees mustn't wear jeans.",
