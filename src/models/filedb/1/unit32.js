@@ -1,4 +1,5 @@
 import { extendForArray } from '../extendForArray.js';
+import { extending } from './extend/extending.js';
 
 const unit32 = [
   [
@@ -1826,13 +1827,986 @@ const unit32 = [
     "Ты в тихой библиотеке. Люди вокруг читают и учатся.",
     "Ти в тихій бібліотеці. Люди навколо читають і навчаються.",
     "Jesteś w cichej bibliotece. Ludzie dookoła czytają i uczą się."
-  ]
+  ],
+[
+    "Should I eat vegetables every day?",
+    "Yes, you should eat vegetables every day for good health.",
+    "No, you shouldn't eat vegetables every day because they are unhealthy.",
+    "Yes, you should eat vegetables every day to gain weight quickly.",
+    "No, you shouldn't eat vegetables every day as they have no nutrients.",
+    "Должен ли я есть овощи каждый день?",
+    "Чи повинен я їсти овочі щодня?",
+    "Czy powinienem jeść warzywa codziennie?"
+  ],
+  [
+    "Should I go to bed early?",
+    "Yes, you should go to bed early to get enough sleep.",
+    "No, you shouldn't go to bed early because sleep is not important.",
+    "Yes, you should go to bed early to feel tired all day.",
+    "No, you shouldn't go to bed early if you want to be energetic.",
+    "Должен ли я ложиться спать рано?",
+    "Чи повинен я лягати спати рано?",
+    "Czy powinienem kłaść się spać wcześnie?"
+  ],
+  [
+    "Should I brush my teeth twice a day?",
+    "Yes, you should brush your teeth twice a day for oral hygiene.",
+    "No, you shouldn't brush your teeth twice a day because it's too often.",
+    "Yes, you should brush your teeth twice a day to damage your enamel.",
+    "No, you shouldn't brush your teeth twice a day to keep them clean.",
+    "Должен ли я чистить зубы два раза в день?",
+    "Чи повинен я чистити зуби двічі на день?",
+    "Czy powinienem myć zęby dwa razy dziennie?"
+  ],
+  [
+    "Should I wear a seatbelt in the car?",
+    "Yes, you should wear a seatbelt in the car for safety.",
+    "No, you shouldn't wear a seatbelt in the car because it's uncomfortable.",
+    "Yes, you should wear a seatbelt in the car to increase risk in accidents.",
+    "No, you shouldn't wear a seatbelt in the car to stay protected.",
+    "Должен ли я пристегиваться ремнём безопасности в машине?",
+    "Чи повинен я пристебуватися ременем безпеки в машині?",
+    "Czy powinienem zapinać pas bezpieczeństwa w samochodzie?"
+  ],
+  [
+    "Should I study for exams in advance?",
+    "Yes, you should study for exams in advance to do well.",
+    "No, you shouldn't study for exams in advance because it's useless.",
+    "Yes, you should study for exams in advance to forget everything.",
+    "No, you shouldn't study for exams in advance to get good grades.",
+    "Должен ли я готовиться к экзаменам заранее?",
+    "Чи повинен я готуватися до іспитів заздалегідь?",
+    "Czy powinienem uczyć się do egzaminów z wyprzedzeniem?"
+  ],
+  [
+    "Should I drink alcohol in moderation?",
+    "No, you shouldn't drink alcohol at all if possible, but if you do, in moderation.",
+    "Yes, you should drink alcohol excessively every day.",
+    "No, you shouldn't drink alcohol in moderation to stay healthy.",
+    "Yes, you should drink alcohol in moderation to harm your liver.",
+    "Не должен ли я пить алкоголь в умеренных количествах?",
+    "Чи не повинен я пити алкоголь у помірних кількостях?",
+    "Czy nie powinienem pić alkoholu z umiarem?"
+  ],
+  [
+    "Should I save money for the future?",
+    "Yes, you should save money for the future.",
+    "No, you shouldn't save money for the future because it's pointless.",
+    "Yes, you should save money for the future to go broke quickly.",
+    "No, you shouldn't save money for the future to be financially secure.",
+    "Должен ли я копить деньги на будущее?",
+    "Чи повинен я заощаджувати гроші на майбутнє?",
+    "Czy powinienem oszczędzać pieniądze na przyszłość?"
+  ],
+  [
+    "Should I exercise regularly?",
+    "Yes, you should exercise regularly to stay fit.",
+    "No, you shouldn't exercise regularly because it's harmful.",
+    "Yes, you should exercise regularly to become weak.",
+    "No, you shouldn't exercise regularly to maintain health.",
+    "Должен ли я регулярно заниматься спортом?",
+    "Чи повинен я регулярно займатися спортом?",
+    "Czy powinienem regularnie ćwiczyć?"
+  ],
+  [
+    "Should I read books?",
+    "Yes, you should read books to expand your knowledge.",
+    "No, you shouldn't read books because they are boring.",
+    "Yes, you should read books to limit your thinking.",
+    "No, you shouldn't read books to learn new things.",
+    "Должен ли я читать книги?",
+    "Чи повинен я читати книги?",
+    "Czy powinienem czytać książki?"
+  ],
+  [
+    "Should I be kind to others?",
+    "Yes, you should be kind to others.",
+    "No, you shouldn't be kind to others because it's weak.",
+    "Yes, you should be kind to others to make enemies.",
+    "No, you shouldn't be kind to others to build good relationships.",
+    "Должен ли я быть добрым к другим?",
+    "Чи повинен я бути добрим до інших?",
+    "Czy powinienem być życzliwy dla innych?"
+  ],
+  [
+    "Should I recycle waste?",
+    "Yes, you should recycle waste to protect the environment.",
+    "No, you shouldn't recycle waste because it's too much effort.",
+    "Yes, you should recycle waste to pollute more.",
+    "No, you shouldn't recycle waste to help the planet.",
+    "Должен ли я сортировать и перерабатывать мусор?",
+    "Чи повинен я сортувати та переробляти сміття?",
+    "Czy powinienem segregować odpady?"
+  ],
+  [
+    "Should I learn a foreign language?",
+    "Yes, you should learn a foreign language for better opportunities.",
+    "No, you shouldn't learn a foreign language because it's difficult.",
+    "Yes, you should learn a foreign language to limit your communication.",
+    "No, you shouldn't learn a foreign language to broaden horizons.",
+    "Должен ли я учить иностранный язык?",
+    "Чи повинен я вчити іноземну мову?",
+    "Czy powinienem uczyć się języka obcego?"
+  ],
+  [
+    "Should I help people in need?",
+    "Yes, you should help people in need.",
+    "No, you shouldn't help people in need because it's none of your business.",
+    "Yes, you should help people in need to feel worse.",
+    "No, you shouldn't help people in need to make the world better.",
+    "Должен ли я помогать людям в беде?",
+    "Чи повинен я допомагати людям у біді?",
+    "Czy powinienem pomagać ludziom w potrzebie?"
+  ],
+  [
+    "Should I eat breakfast every morning?",
+    "Yes, you should eat breakfast every morning for energy.",
+    "No, you shouldn't eat breakfast every morning because it's unnecessary.",
+    "Yes, you should eat breakfast every morning to feel hungry all day.",
+    "No, you shouldn't eat breakfast every morning to start the day well.",
+    "Должен ли я завтракать каждое утро?",
+    "Чи повинен я снідати щоранку?",
+    "Czy powinienem jeść śniadanie każdego ranka?"
+  ],
+  [
+    "Should I spend time with family?",
+    "Yes, you should spend time with family.",
+    "No, you shouldn't spend time with family because it's boring.",
+    "Yes, you should spend time with family to feel lonely.",
+    "No, you shouldn't spend time with family to strengthen bonds.",
+    "Должен ли я проводить время с семьёй?",
+    "Чи повинен я проводити час із сім'єю?",
+    "Czy powinienem spędzać czas z rodziną?"
+  ],
+  [
+    "Should I avoid smoking?",
+    "Yes, you should avoid smoking for your health.",
+    "No, you shouldn't avoid smoking because it's cool.",
+    "Yes, you should avoid smoking to damage your lungs.",
+    "No, you shouldn't avoid smoking to live longer.",
+    "Должен ли я избегать курения?",
+    "Чи повинен я уникати куріння?",
+    "Czy powinienem unikać palenia?"
+  ],
+  [
+    "Should I walk more instead of driving?",
+    "Yes, you should walk more for exercise and environment.",
+    "No, you shouldn't walk more because it's tiring.",
+    "Yes, you should walk more to waste time.",
+    "No, you shouldn't walk more to stay healthy.",
+    "Должен ли я больше ходить пешком вместо езды на машине?",
+    "Чи повинен я більше ходити пішки замість їзди на машині?",
+    "Czy powinienem więcej chodzić pieszo zamiast jeździć samochodem?"
+  ],
+  [
+    "Should I drink coffee in moderation?",
+    "Yes, you should drink coffee in moderation.",
+    "No, you shouldn't drink coffee in moderation because it's bad.",
+    "Yes, you should drink coffee in moderation to get insomnia.",
+    "No, you shouldn't drink coffee in moderation for enjoyment.",
+    "Должен ли я пить кофе в умеренных количествах?",
+    "Чи повинен я пити каву в помірних кількостях?",
+    "Czy powinienem pić kawę z umiarem?"
+  ],
+  [
+    "Should I apologize when I'm wrong?",
+    "Yes, you should apologize when you're wrong.",
+    "No, you shouldn't apologize when you're wrong because it's weak.",
+    "Yes, you should apologize when you're wrong to lose respect.",
+    "No, you shouldn't apologize when you're wrong to maintain relationships.",
+    "Должен ли я извиняться, когда я не прав?",
+    "Чи повинен я вибачатися, коли я неправий?",
+    "Czy powinienem przepraszać, kiedy się mylę?"
+  ],
+  [
+    "Should I limit screen time?",
+    "Yes, you should limit screen time for better health.",
+    "No, you shouldn't limit screen time because it's fun.",
+    "Yes, you should limit screen time to strain your eyes more.",
+    "No, you shouldn't limit screen time to rest your eyes.",
+    "Должен ли я ограничивать время за экраном?",
+    "Чи повинен я обмежувати час за екраном?",
+    "Czy powinienem ograniczać czas przed ekranem?"
+  ],
+  [
+    "Should I eat fruits daily?",
+    "Yes, you should eat fruits daily for vitamins.",
+    "No, you shouldn't eat fruits daily because they are expensive.",
+    "Yes, you should eat fruits daily to lack nutrients.",
+    "No, you shouldn't eat fruits daily for a balanced diet.",
+    "Должен ли я есть фрукты ежедневно?",
+    "Чи повинен я їсти фрукти щодня?",
+    "Czy powinienem jeść owoce codziennie?"
+  ],
+  [
+    "Should I be honest?",
+    "Yes, you should be honest in most situations.",
+    "No, you shouldn't be honest because it hurts feelings.",
+    "Yes, you should be honest to lose friends.",
+    "No, you shouldn't be honest to build trust.",
+    "Должен ли я быть честным?",
+    "Чи повинен я бути чесним?",
+    "Czy powinienem być uczciwy?"
+  ],
+  [
+    "Should I get regular health check-ups?",
+    "Yes, you should get regular health check-ups.",
+    "No, you shouldn't get regular health check-ups because it's scary.",
+    "Yes, you should get regular health check-ups to ignore problems.",
+    "No, you shouldn't get regular health check-ups for prevention.",
+    "Должен ли я проходить регулярные медосмотры?",
+    "Чи повинен я проходити регулярні медогляди?",
+    "Czy powinienem robić regularne badania lekarskie?"
+  ],
+  [
+    "Should I respect other people's opinions?",
+    "Yes, you should respect other people's opinions.",
+    "No, you shouldn't respect other people's opinions because they are wrong.",
+    "Yes, you should respect other people's opinions to create conflict.",
+    "No, you shouldn't respect other people's opinions for harmony.",
+    "Должен ли я уважать мнения других людей?",
+    "Чи повинен я поважати думки інших людей?",
+    "Czy powinienem szanować opinie innych ludzi?"
+  ],
+  [
+    "Should I use sunscreen?",
+    "Yes, you should use sunscreen to protect your skin.",
+    "No, you shouldn't use sunscreen because it blocks vitamin D.",
+    "Yes, you should use sunscreen to get sunburned easily.",
+    "No, you shouldn't use sunscreen for skin health.",
+    "Должен ли я использовать солнцезащитный крем?",
+    "Чи повинен я використовувати сонцезахисний крем?",
+    "Czy powinienem używać kremu z filtrem?"
+  ],
+  [
+    "Should I plan my day?",
+    "Yes, you should plan your day for productivity.",
+    "No, you shouldn't plan your day because plans fail.",
+    "Yes, you should plan your day to waste time.",
+    "No, you shouldn't plan your day to be organized.",
+    "Должен ли я планировать свой день?",
+    "Чи повинен я планувати свій день?",
+    "Czy powinienem planować swój dzień?"
+  ],
+  [
+    "Should I forgive others?",
+    "Yes, you should forgive others for your peace of mind.",
+    "No, you shouldn't forgive others because they don't deserve it.",
+    "Yes, you should forgive others to hold grudges forever.",
+    "No, you shouldn't forgive others to move on.",
+    "Должен ли я прощать других?",
+    "Чи повинен я пробачати інших?",
+    "Czy powinienem przebaczać innym?"
+  ],
+  [
+    "Should I drink green tea?",
+    "Yes, you should drink green tea for its benefits.",
+    "No, you shouldn't drink green tea because it's bitter.",
+    "Yes, you should drink green tea to gain weight.",
+    "No, you shouldn't drink green tea for antioxidants.",
+    "Должен ли я пить зелёный чай?",
+    "Чи повинен я пити зелений чай?",
+    "Czy powinienem pić zieloną herbatę?"
+  ],
+  [
+    "Should I take breaks while working?",
+    "Yes, you should take breaks while working for better focus.",
+    "No, you shouldn't take breaks while working because it's lazy.",
+    "Yes, you should take breaks while working to reduce productivity.",
+    "No, you shouldn't take breaks while working to stay efficient.",
+    "Должен ли я делать перерывы во время работы?",
+    "Чи повинен я робити перерви під час роботи?",
+    "Czy powinienem robić przerwy podczas pracy?"
+  ],
+  [
+    "Should I listen to music while studying?",
+    "No, you shouldn't listen to music while studying if it distracts you.",
+    "Yes, you should listen to loud music while studying to concentrate better.",
+    "No, you shouldn't listen to music while studying to improve focus.",
+    "Yes, you should listen to music while studying to remember less.",
+    "Должен ли я слушать музыку во время учёбы?",
+    "Чи повинен я слухати музику під час навчання?",
+    "Czy powinienem słuchać muzyki podczas nauki?"
+  ],
+  [
+    "Should I keep promises?",
+    "Yes, you should keep promises to be trustworthy.",
+    "No, you shouldn't keep promises because circumstances change.",
+    "Yes, you should keep promises to lose credibility.",
+    "No, you shouldn't keep promises to be reliable.",
+    "Должен ли я держать обещания?",
+    "Чи повинен я тримати обіцянки?",
+    "Czy powinienem dotrzymywać obietnic?"
+  ],
+  [
+    "Should I eat less sugar?",
+    "Yes, you should eat less sugar for health.",
+    "No, you shouldn't eat less sugar because it's tasty.",
+    "Yes, you should eat less sugar to get diabetes faster.",
+    "No, you shouldn't eat less sugar to stay healthy.",
+    "Должен ли я есть меньше сахара?",
+    "Чи повинен я їсти менше цукру?",
+    "Czy powinienem jeść mniej cukru?"
+  ],
+  [
+    "Should I learn to cook?",
+    "Yes, you should learn to cook for independence.",
+    "No, you shouldn't learn to cook because takeaways are easier.",
+    "Yes, you should learn to cook to depend on others.",
+    "No, you shouldn't learn to cook for healthy meals.",
+    "Должен ли я научиться готовить?",
+    "Чи повинен я навчитися готувати?",
+    "Czy powinienem nauczyć się gotować?"
+  ],
+  [
+    "Should I meditate?",
+    "Yes, you should meditate for mental clarity.",
+    "No, you shouldn't meditate because it's boring.",
+    "Yes, you should meditate to increase stress.",
+    "No, you shouldn't meditate for relaxation.",
+    "Должен ли я медитировать?",
+    "Чи повинен я медитувати?",
+    "Czy powinienem medytować?"
+  ],
+  [
+    "Should I say thank you?",
+    "Yes, you should say thank you to show gratitude.",
+    "No, you shouldn't say thank you because it's unnecessary.",
+    "Yes, you should say thank you to seem ungrateful.",
+    "No, you shouldn't say thank you for politeness.",
+    "Должен ли я говорить спасибо?",
+    "Чи повинен я казати дякую?",
+    "Czy powinienem mówić dziękuję?"
+  ],
+  [
+    "Should I avoid junk food?",
+    "Yes, you should avoid junk food for better health.",
+    "No, you shouldn't avoid junk food because it's convenient.",
+    "Yes, you should avoid junk food to gain nutrients.",
+    "No, you shouldn't avoid junk food to feel energetic.",
+    "Должен ли я избегать фастфуда?",
+    "Чи повинен я уникати фастфуду?",
+    "Czy powinienem unikać fast foodów?"
+  ],
+  [
+    "Should I set goals?",
+    "Yes, you should set goals to achieve more.",
+    "No, you shouldn't set goals because they disappoint.",
+    "Yes, you should set goals to fail constantly.",
+    "No, you shouldn't set goals for motivation.",
+    "Должен ли я ставить цели?",
+    "Чи повинен я ставити цілі?",
+    "Czy powinienem wyznaczać cele?"
+  ],
+  [
+    "Should I drink water when thirsty?",
+    "Yes, you should drink water when thirsty.",
+    "No, you shouldn't drink water when thirsty because ignore it.",
+    "Yes, you should drink water when thirsty to stay dehydrated.",
+    "No, you shouldn't drink water when thirsty for hydration.",
+    "Должен ли я пить воду, когда хочу пить?",
+    "Чи повинен я пити воду, коли хочу пити?",
+    "Czy powinienem pić wodę, kiedy jestem spragniony?"
+  ],
+  [
+    "Should I smile more?",
+    "Yes, you should smile more to feel happier.",
+    "No, you shouldn't smile more because it's fake.",
+    "Yes, you should smile more to feel sad.",
+    "No, you shouldn't smile more for positive mood.",
+    "Должен ли я больше улыбаться?",
+    "Чи повинен я більше посміхатися?",
+    "Czy powinienem więcej się uśmiechać?"
+  ],
+  [
+    "Should I back up important files?",
+    "Yes, you should back up important files.",
+    "No, you shouldn't back up important files because it's time-consuming.",
+    "Yes, you should back up important files to lose data easily.",
+    "No, you shouldn't back up important files for safety.",
+    "Должен ли я делать резервные копии важных файлов?",
+    "Чи повинен я робити резервні копії важливих файлів?",
+    "Czy powinienem robić kopie zapasowe ważnych plików?"
+  ],
+  [
+    "Should I learn first aid?",
+    "Yes, you should learn first aid to help in emergencies.",
+    "No, you shouldn't learn first aid because it's complicated.",
+    "Yes, you should learn first aid to be helpless.",
+    "No, you shouldn't learn first aid for preparedness.",
+    "Должен ли я изучить первую помощь?",
+    "Чи повинен я вивчити першу допомогу?",
+    "Czy powinienem nauczyć się pierwszej pomocy?"
+  ],
+  [
+    "Should I turn off lights when leaving a room?",
+    "Yes, you should turn off lights to save energy.",
+    "No, you shouldn't turn off lights because it's minor.",
+    "Yes, you should turn off lights to waste electricity.",
+    "No, you shouldn't turn off lights for environment.",
+    "Должен ли я выключать свет, выходя из комнаты?",
+    "Чи повинен я вимикати світло, виходячи з кімнати?",
+    "Czy powinienem wyłączać światło wychodząc z pokoju?"
+  ],
+  [
+    "Should I listen actively?",
+    "Yes, you should listen actively in conversations.",
+    "No, you shouldn't listen actively because it's effort.",
+    "Yes, you should listen actively to misunderstand.",
+    "No, you shouldn't listen actively for better communication.",
+    "Должен ли я активно слушать?",
+    "Чи повинен я активно слухати?",
+    "Czy powinienem aktywnie słuchać?"
+  ],
+  [
+    "Should I wear a helmet when cycling?",
+    "Yes, you should wear a helmet when cycling for safety.",
+    "No, you shouldn't wear a helmet because it's uncomfortable.",
+    "Yes, you should wear a helmet to increase head injury risk.",
+    "No, you shouldn't wear a helmet for protection.",
+    "Должен ли я надевать шлем при езде на велосипеде?",
+    "Чи повинен я одягати шолом під час їзди на велосипеді?",
+    "Czy powinienem nosić kask podczas jazdy na rowerze?"
+  ],
+  [
+    "Should I express my feelings?",
+    "Yes, you should express your feelings healthily.",
+    "No, you shouldn't express your feelings because it's weak.",
+    "Yes, you should express your feelings to bottle them up.",
+    "No, you shouldn't express your feelings for mental health.",
+    "Должен ли я выражать свои чувства?",
+    "Чи повинен я виражати свої почуття?",
+    "Czy powinienem wyrażać swoje uczucia?"
+  ],
+  [
+    "Should I avoid procrastination?",
+    "Yes, you should avoid procrastination for productivity.",
+    "No, you shouldn't avoid procrastination because it's normal.",
+    "Yes, you should avoid procrastination to stress more.",
+    "No, you shouldn't avoid procrastination to get things done.",
+    "Должен ли я избегать прокрастинации?",
+    "Чи повинен я уникати прокрастинації?",
+    "Czy powinienem unikać prokrastynacji?"
+  ],
+  [
+    "Should I appreciate small things?",
+    "Yes, you should appreciate small things for happiness.",
+    "No, you shouldn't appreciate small things because they are insignificant.",
+    "Yes, you should appreciate small things to feel unhappy.",
+    "No, you shouldn't appreciate small things for gratitude.",
+    "Должен ли я ценить мелочи?",
+    "Чи повинен я цінувати дрібниці?",
+    "Czy powinienem doceniać drobne rzeczy?"
+  ],
+  [
+    "Should I keep learning new things?",
+    "Yes, you should keep learning new things throughout life.",
+    "No, you shouldn't keep learning because school is over.",
+    "Yes, you should keep learning to stay ignorant.",
+    "No, you shouldn't keep learning for personal growth.",
+    "Должен ли я продолжать учиться новому?",
+    "Чи повинен я продовжувати вчитися новому?",
+    "Czy powinienem ciągle uczyć się nowych rzeczy?"
+  ],
 
- 
-
-
+[
+    "Should I drink plenty of water every day?",
+    "Yes, you must drink plenty of water every day to stay hydrated.",
+    "No, you shouldn't drink plenty of water because it can cause overhydration.",
+    "Yes, you can drink plenty of water every day if you want to feel constantly thirsty.",
+    "No, you don't have to drink plenty of water every day to maintain good health.",
+    "Должен ли я пить много воды каждый день?",
+    "Чи повинен я пити багато води щодня?",
+    "Czy powinienem pić dużo wody codziennie?"
+  ],
+  [
+    "Should I exercise regularly?",
+    "Yes, you should exercise regularly to keep fit.",
+    "No, you mustn't exercise regularly because it's dangerous.",
+    "Yes, you can exercise regularly only if you want to get exhausted quickly.",
+    "No, you don't have to exercise regularly to have strong muscles.",
+    "Должен ли я регулярно заниматься спортом?",
+    "Чи повинен я регулярно займатися спортом?",
+    "Czy powinienem regularnie ćwiczyć?"
+  ],
+  [
+    "Should I eat breakfast every morning?",
+    "Yes, you ought to eat breakfast every morning for better energy.",
+    "No, you needn't eat breakfast every morning because it's optional.",
+    "Yes, you may eat breakfast every morning to feel hungry all day.",
+    "No, you can't eat breakfast every morning if you want to start the day well.",
+    "Должен ли я завтракать каждое утро?",
+    "Чи повинен я снідати щоранку?",
+    "Czy powinienem jeść śniadanie każdego ranka?"
+  ],
+  [
+    "Should I wear a seatbelt in the car?",
+    "Yes, you have to wear a seatbelt in the car for safety.",
+    "No, you don't have to wear a seatbelt if you're driving slowly.",
+    "Yes, you can wear a seatbelt in the car to increase risk in accidents.",
+    "No, you mustn't wear a seatbelt to stay protected.",
+    "Должен ли я пристегиваться ремнём безопасности в машине?",
+    "Чи повинен я пристебуватися ременем безпеки в машині?",
+    "Czy powinienem zapinać pas bezpieczeństwa w samochodzie?"
+  ],
+  [
+    "Should I brush my teeth twice a day?",
+    "Yes, you should brush your teeth twice a day.",
+    "No, you needn't brush your teeth twice a day – once is enough.",
+    "Yes, you must brush your teeth twice a day to damage your enamel.",
+    "No, you can't brush your teeth twice a day for good oral health.",
+    "Должен ли я чистить зубы два раза в день?",
+    "Чи повинен я чистити зуби двічі на день?",
+    "Czy powinienem myć zęby dwa razy dziennie?"
+  ],
+  [
+    "Should I get enough sleep?",
+    "Yes, you must get enough sleep to function properly.",
+    "No, you shouldn't get enough sleep because it wastes time.",
+    "Yes, you can get enough sleep if you want to feel tired all day.",
+    "No, you don't have to get enough sleep to be productive.",
+    "Должен ли я высыпаться?",
+    "Чи повинен я висипатися?",
+    "Czy powinienem się wysypiać?"
+  ],
+  [
+    "Should I save money?",
+    "Yes, you ought to save money for emergencies.",
+    "No, you mustn't save money – spend everything.",
+    "Yes, you may save money to go broke faster.",
+    "No, you needn't save money for financial security.",
+    "Должен ли я копить деньги?",
+    "Чи повинен я заощаджувати гроші?",
+    "Czy powinienem oszczędzać pieniądze?"
+  ],
+  [
+    "Should I read books?",
+    "Yes, you should read books to broaden your mind.",
+    "No, you don't have to read books – watching videos is better.",
+    "Yes, you can read books to limit your knowledge.",
+    "No, you must read books to stay ignorant.",
+    "Должен ли я читать книги?",
+    "Чи повинен я читати книги?",
+    "Czy powinienem czytać książki?"
+  ],
+  [
+    "Should I avoid smoking?",
+    "Yes, you shouldn't smoke for your health.",
+    "No, you can smoke if you enjoy it.",
+    "Yes, you must smoke to live longer.",
+    "No, you have to smoke to avoid lung problems.",
+    "Должен ли я избегать курения?",
+    "Чи повинен я уникати куріння?",
+    "Czy powinienem unikać palenia?"
+  ],
+  [
+    "Should I learn foreign languages?",
+    "Yes, you should learn foreign languages for better opportunities.",
+    "No, you needn't learn foreign languages in the age of translators.",
+    "Yes, you may learn foreign languages to complicate communication.",
+    "No, you can't learn foreign languages to travel easily.",
+    "Должен ли я учить иностранные языки?",
+    "Чи повинен я вчити іноземні мови?",
+    "Czy powinienem uczyć się języków obcych?"
+  ],
+  [
+    "Should I recycle?",
+    "Yes, you ought to recycle to help the environment.",
+    "No, you mustn't recycle – it's too much hassle.",
+    "Yes, you can recycle to increase pollution.",
+    "No, you don't have to recycle for a cleaner planet.",
+    "Должен ли я сортировать мусор для переработки?",
+    "Чи повинен я сортувати сміття для переробки?",
+    "Czy powinienem segregować śmieci?"
+  ],
+  [
+    "Should I be kind to others?",
+    "Yes, you should be kind to others.",
+    "No, you shouldn't be kind – people take advantage.",
+    "Yes, you must be kind to make enemies.",
+    "No, you needn't be kind to build relationships.",
+    "Должен ли я быть добрым к другим?",
+    "Чи повинен я бути добрим до інших?",
+    "Czy powinienem być życzliwy dla innych?"
+  ],
+  [
+    "Should I eat vegetables daily?",
+    "Yes, you have to eat vegetables daily for vitamins.",
+    "No, you can skip vegetables – meat is enough.",
+    "Yes, you should eat vegetables daily to lack nutrients.",
+    "No, you mustn't eat vegetables for balanced diet.",
+    "Должен ли я есть овощи ежедневно?",
+    "Чи повинен я їсти овочі щодня?",
+    "Czy powinienem jeść warzywa codziennie?"
+  ],
+  [
+    "Should I spend time with family?",
+    "Yes, you should spend time with family.",
+    "No, you don't have to – friends are more important.",
+    "Yes, you may spend time with family to feel lonely.",
+    "No, you can't spend time with family to strengthen bonds.",
+    "Должен ли я проводить время с семьёй?",
+    "Чи повинен я проводити час із сім'єю?",
+    "Czy powinienem spędzać czas z rodziną?"
+  ],
+  [
+    "Should I study hard?",
+    "Yes, you must study hard to achieve good results.",
+    "No, you needn't study hard – luck matters more.",
+    "Yes, you can study hard to fail exams.",
+    "No, you shouldn't study hard for knowledge.",
+    "Должен ли я усердно учиться?",
+    "Чи повинен я старанно вчитися?",
+    "Czy powinienem uczyć się pilnie?"
+  ],
+  [
+    "Should I use sunscreen?",
+    "Yes, you should use sunscreen to protect skin.",
+    "No, you mustn't use sunscreen – natural tan is better.",
+    "Yes, you have to use sunscreen to get sunburned.",
+    "No, you don't have to use sunscreen for skin health.",
+    "Должен ли я использовать солнцезащитный крем?",
+    "Чи повинен я використовувати сонцезахисний крем?",
+    "Czy powinienem używać kremu z filtrem?"
+  ],
+  [
+    "Should I apologize when wrong?",
+    "Yes, you ought to apologize when you're wrong.",
+    "No, you shouldn't apologize – it shows weakness.",
+    "Yes, you can apologize to lose respect.",
+    "No, you needn't apologize to maintain relationships.",
+    "Должен ли я извиняться, когда не прав?",
+    "Чи повинен я вибачатися, коли неправий?",
+    "Czy powinienem przepraszać, kiedy się mylę?"
+  ],
+  [
+    "Should I limit screen time?",
+    "Yes, you should limit screen time for eye health.",
+    "No, you can use screens as much as you want.",
+    "Yes, you must limit screen time to strain eyes more.",
+    "No, you don't have to limit screen time for better sleep.",
+    "Должен ли я ограничивать время за экраном?",
+    "Чи повинен я обмежувати час за екраном?",
+    "Czy powinienem ograniczać czas przed ekranem?"
+  ],
+  [
+    "Should I eat fruits every day?",
+    "Yes, you should eat fruits every day.",
+    "No, you needn't eat fruits – they're too sweet.",
+    "Yes, you may eat fruits every day to lack vitamins.",
+    "No, you can't eat fruits every day for immunity.",
+    "Должен ли я есть фрукты каждый день?",
+    "Чи повинен я їсти фрукти щодня?",
+    "Czy powinienem jeść owoce codziennie?"
+  ],
+  [
+    "Should I be honest?",
+    "Yes, you have to be honest in most cases.",
+    "No, you shouldn't be honest – white lies are okay.",
+    "Yes, you must be honest to lose trust.",
+    "No, you ought not to be honest for good relationships.",
+    "Должен ли я быть честным?",
+    "Чи повинен я бути чесним?",
+    "Czy powinienem być uczciwy?"
+  ],
+  [
+    "Should I do regular health check-ups?",
+    "Yes, you should do regular health check-ups.",
+    "No, you don't have to – only when sick.",
+    "Yes, you can do regular check-ups to ignore early signs.",
+    "No, you must do regular check-ups for prevention.",
+    "Должен ли я проходить регулярные медосмотры?",
+    "Чи повинен я проходити регулярні медогляди?",
+    "Czy powinienem robić regularne badania lekarskie?"
+  ],
+  [
+    "Should I respect others' opinions?",
+    "Yes, you ought to respect others' opinions.",
+    "No, you needn't respect wrong opinions.",
+    "Yes, you should respect others' opinions to create arguments.",
+    "No, you can't respect others' opinions for harmony.",
+    "Должен ли я уважать мнения других?",
+    "Чи повинен я поважати думки інших?",
+    "Czy powinienem szanować opinie innych?"
+  ],
+  [
+    "Should I walk more?",
+    "Yes, you should walk more for exercise.",
+    "No, you mustn't walk more – drive everywhere.",
+    "Yes, you have to walk more to get tired faster.",
+    "No, you may walk more for better fitness.",
+    "Должен ли я больше ходить пешком?",
+    "Чи повинен я більше ходити пішки?",
+    "Czy powinienem więcej chodzić pieszo?"
+  ],
+  [
+    "Should I plan my day?",
+    "Yes, you can plan your day for productivity.",
+    "No, you shouldn't plan – go with the flow.",
+    "Yes, you must plan your day to waste time.",
+    "No, you don't have to plan your day to be organized.",
+    "Должен ли я планировать свой день?",
+    "Чи повинен я планувати свій день?",
+    "Czy powinienem planować swój dzień?"
+  ],
+  [
+    "Should I forgive others?",
+    "Yes, you should forgive others for peace.",
+    "No, you can't forgive serious wrongs.",
+    "Yes, you ought to forgive to hold grudges.",
+    "No, you needn't forgive to move on.",
+    "Должен ли я прощать других?",
+    "Чи повинен я пробачати інших?",
+    "Czy powinienem przebaczać innym?"
+  ],
+  [
+    "Should I take breaks at work?",
+    "Yes, you must take breaks to stay focused.",
+    "No, you shouldn't take breaks – work non-stop.",
+    "Yes, you can take breaks to reduce efficiency.",
+    "No, you have to take breaks for better performance.",
+    "Должен ли я делать перерывы на работе?",
+    "Чи повинен я робити перерви на роботі?",
+    "Czy powinienem robić przerwy w pracy?"
+  ],
+  [
+    "Should I keep promises?",
+    "Yes, you have to keep promises.",
+    "No, you may break small promises.",
+    "Yes, you should keep promises to lose trust.",
+    "No, you don't have to keep promises to be reliable.",
+    "Должен ли я держать обещания?",
+    "Чи повинен я тримати обіцянки?",
+    "Czy powinienem dotrzymywać obietnic?"
+  ],
+  [
+    "Should I reduce sugar intake?",
+    "Yes, you should reduce sugar intake.",
+    "No, you can eat as much sugar as you like.",
+    "Yes, you must reduce sugar to harm health.",
+    "No, you needn't reduce sugar for better teeth.",
+    "Должен ли я сократить потребление сахара?",
+    "Чи повинен я скоротити споживання цукру?",
+    "Czy powinienem zmniejszyć spożycie cukru?"
+  ],
+  [
+    "Should I learn to cook?",
+    "Yes, you ought to learn to cook.",
+    "No, you don't have to – order delivery.",
+    "Yes, you can learn to cook to eat unhealthy food.",
+    "No, you must learn to cook for independence.",
+    "Должен ли я научиться готовить?",
+    "Чи повинен я навчитися готувати?",
+    "Czy powinienem nauczyć się gotować?"
+  ],
+  [
+    "Should I meditate daily?",
+    "Yes, you should meditate daily for calm.",
+    "No, you needn't meditate – it's not for everyone.",
+    "Yes, you may meditate to increase stress.",
+    "No, you can't meditate for mental health.",
+    "Должен ли я медитировать ежедневно?",
+    "Чи повинен я медитувати щодня?",
+    "Czy powinienem medytować codziennie?"
+  ],
+  [
+    "Should I say thank you?",
+    "Yes, you must say thank you for politeness.",
+    "No, you shouldn't say thank you – it's obvious.",
+    "Yes, you have to say thank you to seem rude.",
+    "No, you may say thank you for gratitude.",
+    "Должен ли я говорить спасибо?",
+    "Чи повинен я казати дякую?",
+    "Czy powinienem mówić dziękuję?"
+  ],
+  [
+    "Should I avoid junk food?",
+    "Yes, you should avoid junk food.",
+    "No, you can eat junk food occasionally.",
+    "Yes, you ought to avoid junk food to gain weight fast.",
+    "No, you must avoid junk food for energy.",
+    "Должен ли я избегать фастфуда?",
+    "Чи повинен я уникати фастфуду?",
+    "Czy powinienem unikać fast foodów?"
+  ],
+  [
+    "Should I set goals?",
+    "Yes, you have to set goals for motivation.",
+    "No, you don't have to set goals – life happens.",
+    "Yes, you should set goals to fail constantly.",
+    "No, you needn't set goals for success.",
+    "Должен ли я ставить цели?",
+    "Чи повинен я ставити цілі?",
+    "Czy powinienem wyznaczać cele?"
+  ],
+  [
+    "Should I drink when thirsty?",
+    "Yes, you must drink when thirsty.",
+    "No, you can ignore thirst sometimes.",
+    "Yes, you shouldn't drink when thirsty to stay hydrated.",
+    "No, you have to drink when thirsty to dehydrate.",
+    "Должен ли я пить, когда хочу пить?",
+    "Чи повинен я пити, коли хочу пити?",
+    "Czy powinienem pić, kiedy jestem spragniony?"
+  ],
+  [
+    "Should I smile more?",
+    "Yes, you should smile more.",
+    "No, you mustn't smile – be serious.",
+    "Yes, you can smile more to feel worse.",
+    "No, you don't have to smile more for happiness.",
+    "Должен ли я больше улыбаться?",
+    "Чи повинен я більше посміхатися?",
+    "Czy powinienem więcej się uśmiechać?"
+  ],
+  [
+    "Should I backup files?",
+    "Yes, you ought to backup important files.",
+    "No, you needn't backup – cloud is enough.",
+    "Yes, you may backup files to lose data easily.",
+    "No, you can't backup files for safety.",
+    "Должен ли я делать резервные копии файлов?",
+    "Чи повинен я робити резервні копії файлів?",
+    "Czy powinienem robić kopie zapasowe plików?"
+  ],
+  [
+    "Should I learn first aid?",
+    "Yes, you should learn first aid.",
+    "No, you don't have to – professionals handle it.",
+    "Yes, you must learn first aid to be helpless.",
+    "No, you have to learn first aid for emergencies.",
+    "Должен ли я изучить первую помощь?",
+    "Чи повинен я вивчити першу допомогу?",
+    "Czy powinienem nauczyć się pierwszej pomocy?"
+  ],
+  [
+    "Should I turn off lights?",
+    "Yes, you should turn off lights when leaving.",
+    "No, you can leave lights on.",
+    "Yes, you ought to turn off lights to waste energy.",
+    "No, you must turn off lights for savings.",
+    "Должен ли я выключать свет, уходя из комнаты?",
+    "Чи повинен я вимикати світло, виходячи з кімнати?",
+    "Czy powinienem wyłączać światło wychodząc z pokoju?"
+  ],
+  [
+    "Should I listen actively?",
+    "Yes, you have to listen actively.",
+    "No, you shouldn't – think about your response.",
+    "Yes, you can listen actively to misunderstand.",
+    "No, you needn't listen actively for communication.",
+    "Должен ли я активно слушать?",
+    "Чи повинен я активно слухати?",
+    "Czy powinienem aktywnie słuchać?"
+  ],
+  [
+    "Should I wear a helmet when cycling?",
+    "Yes, you must wear a helmet when cycling.",
+    "No, you don't have to if riding slowly.",
+    "Yes, you should wear a helmet to risk injury.",
+    "No, you may wear a helmet for protection.",
+    "Должен ли я надевать шлем на велосипеде?",
+    "Чи повинен я одягати шолом на велосипеді?",
+    "Czy powinienem nosić kask na rowerze?"
+  ],
+  [
+    "Should I express feelings?",
+    "Yes, you should express feelings healthily.",
+    "No, you mustn't express – keep inside.",
+    "Yes, you can express feelings to bottle them up.",
+    "No, you have to express feelings for mental health.",
+    "Должен ли я выражать чувства?",
+    "Чи повинен я виражати почуття?",
+    "Czy powinienem wyrażać uczucia?"
+  ],
+  [
+    "Should I avoid procrastination?",
+    "Yes, you ought to avoid procrastination.",
+    "No, you can procrastinate – it's normal.",
+    "Yes, you must avoid procrastination to stress more.",
+    "No, you shouldn't avoid procrastination for productivity.",
+    "Должен ли я избегать прокрастинации?",
+    "Чи повинен я уникати прокрастинації?",
+    "Czy powinienem unikać prokrastynacji?"
+  ],
+  [
+    "Should I appreciate small things?",
+    "Yes, you should appreciate small things.",
+    "No, you needn't – focus on big achievements.",
+    "Yes, you may appreciate small things to be unhappy.",
+    "No, you don't have to appreciate small things for joy.",
+    "Должен ли я ценить мелочи?",
+    "Чи повинен я цінувати дрібниці?",
+    "Czy powinienem doceniać drobiazgi?"
+  ],
+  [
+    "Should I continue learning?",
+    "Yes, you have to continue learning lifelong.",
+    "No, you can stop learning after school.",
+    "Yes, you should continue learning to stay behind.",
+    "No, you must continue learning for growth.",
+    "Должен ли я продолжать учиться всю жизнь?",
+    "Чи повинен я продовжувати вчитися все життя?",
+    "Czy powinienem uczyć się przez całe życie?"
+  ],
+  [
+    "Should I help others?",
+    "Yes, you should help others when you can.",
+    "No, you mustn't help – mind your business.",
+    "Yes, you ought to help others to feel worse.",
+    "No, you needn't help others to make difference.",
+    "Должен ли я помогать другим?",
+    "Чи повинен я допомагати іншим?",
+    "Czy powinienem pomagać innym?"
+  ],
+  [
+    "Should I drink green tea?",
+    "Yes, you can drink green tea for antioxidants.",
+    "No, you shouldn't drink green tea – coffee is better.",
+    "Yes, you must drink green tea to gain weight.",
+    "No, you have to drink green tea for health benefits.",
+    "Должен ли я пить зелёный чай?",
+    "Чи повинен я пити зелений чай?",
+    "Czy powinienem pić zieloną herbatę?"
+  ],
+  [
+    "Should I wash hands before eating?",
+    "Yes, you must wash hands before eating.",
+    "No, you don't have to if they're clean.",
+    "Yes, you should wash hands to spread germs.",
+    "No, you can wash hands for hygiene.",
+    "Должен ли я мыть руки перед едой?",
+    "Чи повинен я мити руки перед їжею?",
+    "Czy powinienem myć ręce przed jedzeniem?"
+  ],
+  [
+    "Should I go to bed early?",
+    "Yes, you ought to go to bed early.",
+    "No, you may stay up late.",
+    "Yes, you have to go to bed early to lack sleep.",
+    "No, you shouldn't go to bed early for rest.",
+    "Должен ли я ложиться спать рано?",
+    "Чи повинен я лягати спати рано?",
+    "Czy powinienem kłaść się spać wcześnie?"
+  ],
+  [
+    "Should I be punctual?",
+    "Yes, you should be punctual.",
+    "No, you can be late sometimes.",
+    "Yes, you must be punctual to miss opportunities.",
+    "No, you needn't be punctual for respect.",
+    "Должен ли я быть пунктуальным?",
+    "Чи повинен я бути пунктуальним?",
+    "Czy powinienem być punktualny?"
+  ],
   
 ];
+
+// Расширение тестов за счёт подмены синонимов
+unit32.push(...extending(unit32, 'should', 'ought to'));
+unit32.push(...extending(unit32, "shouldn't", 'should not'));
+unit32.push(...extending(unit32, "shouldn't", 'ought not to'));
+unit32.push(...extending(unit32, "shouldn't", "oughtn't to"));
 
 // Если это свойство есть, то оно попадает в заголовок теста
 unit32.nameLeson = "Should";
