@@ -2803,10 +2803,11 @@ const unit32 = [
 ];
 
 // Расширение тестов за счёт подмены синонимов
-unit32.push(...extending(unit32, 'should', 'ought to'));
-unit32.push(...extending(unit32, "shouldn't", 'should not'));
-unit32.push(...extending(unit32, "shouldn't", 'ought not to'));
-unit32.push(...extending(unit32, "shouldn't", "oughtn't to"));
+unit32.push(...extending(unit32, 'should ', 'ought to '));
+unit32.push(...extending(unit32, "shouldn't ", 'should not '));
+unit32.push(...extending(unit32, "shouldn't ", 'ought not to '));
+unit32.push(...extending(unit32, "shouldn't ", "oughtn't to "));
+console.log(unit32.length);
 
 // Если это свойство есть, то оно попадает в заголовок теста
 unit32.nameLeson = "Should";
