@@ -1,65 +1,49 @@
-// обработчик события для нажатия на динамик
 import { httpAsk } from '../models/HttpClient.js';
+import { LanguageController } from './LanguageController.js';
 
-export function handleSound()
-{
-document.getElementById('sound').onclick = ()=>{
+export function handleSound() {
+    const soundBtn = document.getElementById('sound');
+    if (!soundBtn) return;
 
-    const buttonQuestionOne = document.getElementById('question_old');
-    const buttonQuestionTwo = document.getElementById('clicked_element');
-    
-    // по умолчанию источник текста 'question_old'
-    let buttonQuestion = buttonQuestionOne;
-    // если в 'question_old' есть троеточие, то предложение не полное
-    // значит источником текста будет ответ 'clicked_element'
-    if (buttonQuestionOne.innerText.includes('...')) {
-        buttonQuestion = buttonQuestionTwo;
-    }
-    if (buttonQuestionOne.innerText.includes('___')) {
-        buttonQuestion = buttonQuestionTwo;
-    }
-    if (buttonQuestionOne.innerText.includes('/')) {
-        buttonQuestion = buttonQuestionTwo;
-    }
-    // Если не удалось выбрать источник текста то выйти
-    if (buttonQuestion === null) return false;
+    soundBtn.onclick = () => {
+        const questionOld = document.getElementById('question_old');
+        const clickedEl = document.getElementById('clicked_element');
+        if (!questionOld || !clickedEl) return;
 
-    //Создать сам запрос к серверу
-    const textRequest = buttonQuestion.innerText;
-    const dataRequest = 'sound='+encodeURIComponent(textRequest);
+        // Определяем источник текста
+        const markers = ['...', '___', '/'];
+        let buttonQuestion = questionOld;
+        if (markers.some(m => questionOld.innerText.includes(m))) {
+            buttonQuestion = clickedEl;
+        }
 
-    // создаю промис для асинхронной загрузки данных с сервера
-    const sound = new Promise((onSuccess, onFailure) => {
+        const textRequest = buttonQuestion.innerText;
+        const dataRequest = 'sound=' + encodeURIComponent(textRequest);
+
+        // Запускаем запрос
         httpAsk.fetchData = dataRequest;
 
-    // каждые 100 милисекунд проверка признака работы запроса
-    // если запрос прекращается, то запускаем then
-    const checkLoading = setInterval(() => {
-        // Проверяем, когда загрузка завершится
-        if (!httpAsk.isLoading) {
-            clearInterval(checkLoading); // Останавливаем проверку
-            onSuccess(httpAsk.fetchData); // Возвращаем успешный результат
-        }
-    }, 100); // Проверяем каждую 100 миллисекунд
-
-    if (httpAsk.fetchData === null) {
-        onFailure(null);
-    }
-
-    });
-
-    sound.then((onSuccess) => {
-        const audio = new Audio(onSuccess);
-        audio.onloadeddata = () => audio.play();
-        audio.load();
-    });
-
-    sound.catch((error) => {
-        return error;
-    });
-
-    sound.finally(() => {
-        console.log('Запрос окончен');
-    }); 
-};
+        // Проверяем результат через setInterval
+        const check = setInterval(() => {
+            if (!httpAsk.isLoading) {
+                clearInterval(check);
+                const result = httpAsk.fetchData;
+console.log(result);
+// const audio = new Audio(result);
+                // Если result — это строка, проверяем URL
+                if (typeof result === 'string' && result.includes('http')) {
+                    const audio = new Audio(result);
+                    audio.play().catch(err => {
+                        console.error('Не удалось воспроизвести аудио:', err);
+                        // alert('Аудиофайл недоступен. Попробуйте позже.');
+                    });
+                } else if (result && result.zapros !== undefined) {
+                    console.log('Получен JSON:', result);
+                } else {
+                    console.log(result);
+                    console.warn('Неверный формат ответа от сервера:', result);
+                }
+            }
+        }, 100);
+    };
 }

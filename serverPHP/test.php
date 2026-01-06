@@ -1,8 +1,14 @@
 <?php
-namespace class\redaktor;
+// namespace class\redaktor;
 require "funcii.php";
 require "functionDfdx.php"; 
 require "class.php";
+require_once "test/hasCyrillic.php";
+require_once "test/normalizeNameSound.php";
+require_once "test/searchOldMp3.php";
+
+// use function class\redaktor\test\hasCyrillic;
+
 
 // Разрешает запросы с любого источника
 header("Access-Control-Allow-Origin: *"); 
@@ -83,92 +89,82 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
   }
 
+///////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+// Работает с ElevenLabs TTS (новая модель) и сохраняет MP3
 
-    if (isset($_POST['sound'])) {
-        //echo 'Работаем с озвучкой';
-        $apiKey = "sk_a0c451bdcbb8b32e659dca5f6fd1b3d5ff33e432e4d57b34";  // Ваш реальный API-ключ
-        // $voiceId = "pMsXgVXv3BLzUgSXRplE";  // Идентификатор голоса
-        $voiceId = "pNInz6obpgDQGcFmaJgB";  // Идентификатор голоса
-        
-        $filePath = $_POST['sound'];
-        $filePath = str_replace(' ', '', $filePath);
-        $filePath = str_replace('\'', '', $filePath);
-        $filePath = str_replace('\\', '', $filePath);
-        $filePath = str_replace('/', '', $filePath);
-        $filePath = str_replace('.', '', $filePath);
-        $filePath = str_replace('?', '', $filePath);
-        $filePath = str_replace(';', '', $filePath);
-        $filePath = str_replace(':', '', $filePath);
-        $filePath = strtolower($filePath);
-        $filePath = 'sound'.DIRECTORY_SEPARATOR.$filePath;
-        $filePath = substr($filePath, 0, 200);
-        $filePath .= '.mp3';
-        // проверить если файл существует, то вернуть его и выйти
-        if (file_exists($filePath)) {
-          $filePath = 'https://amatordd.webd.pro/amatorDed/DFDX/'.$filePath;
-          echo $filePath;
-          return $filePath;
-        }
+if (isset($_POST['sound'])) {
 
-        // идея работала до переноса воспроизведения на целое
-        // предложение
-        // $messageSong = str_replace('...', 'ааа', $_POST['sound']);
-        $messageSong = $_POST['sound'];
-        //Инициализирует сессию cURL
-        $curl = curl_init();
-        
-        //Подготовка данных
-        $data = [
-          "text" => $messageSong,
-          "language" => "en",
-          "model_id" => "eleven_monolingual_v1",
-          "voice_settings" => [
-            "stability" => 0.1,
-            "similarity_boost" => 0.3,
-          ]
-        ];
-        
-        // Данные для запроссов
-        // CURLOPT_URL - адрес
-        // CURLOPT_RETURNTRANSFER - вернуть данные в программу
-        // CURLOPT_POST - будет пост запрос
-        // CURLOPT_HTTPHEADER - заголовки
-        // CURLOPT_POSTFIELDS - данные уходят в джейсоне
-        curl_setopt_array($curl, [
-          CURLOPT_URL => "https://api.elevenlabs.io/v1/text-to-speech/{$voiceId}",
-          CURLOPT_RETURNTRANSFER => true,
-          CURLOPT_ENCODING => "",
-          CURLOPT_MAXREDIRS => 10,
-          CURLOPT_TIMEOUT => 30,
-          CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-          CURLOPT_CUSTOMREQUEST => "POST",
-          CURLOPT_HTTPHEADER => [
-            "Content-Type: application/json",
-            "xi-api-key: $apiKey"
-          ],
-          CURLOPT_POSTFIELDS => json_encode($data)
-        ]);
-        /////////////////////////////////////////////////////////
-        // Выполняет запрос и получает ответ от сервера.
-        $response = curl_exec($curl);
-        // Получаем HTTP статус
-        $httpStatus = curl_getinfo($curl, CURLINFO_HTTP_CODE);
-        // Проверяет, произошла ли ошибка во время выполнения запроса.  
-        $err = curl_error($curl);
-        // Закрытие сессии cURL
-        curl_close($curl);
-        //////////////////////////////////////////////////////////
-        if ($err) {
-            echo "cURL Error #: " . $err;
-        } else {
-                // Сохраняем аудиофайл
-                file_put_contents($filePath, $response);
-        
-                $filePath = 'https://amatordd.webd.pro/amatorDed/DFDX/'.$filePath;
-                echo $filePath;
-        }
-    }
+// проверка есть ли кириллица
+hasCyrillic($_POST['sound']);
 
+// нормализовать имя файла из текста
+[$filePath, $filePathWav] = normalizeNameSound($_POST['sound']);
+
+// поиск файлов с озвучкой
+searchOldMp3($filePath);
+searchOldMp3($filePathWav);
+
+$apiKey = 'AIzaSyCl-1F2bXLazlFU6eaTWmawlbvuDWZge9g'; // Из Google AI Studio
+$model = 'gemini-2.5-flash-preview-tts';
+$text = $_POST['sound'];
+
+$data = [
+    "contents" => [
+        [
+            "role" => "user",
+            "parts" => [["text" => $text]]
+        ]
+    ],
+    "generationConfig" => [
+        "responseModalities" => ["AUDIO"],  // Обязательно для TTS
+        "speechConfig" => [
+            "voiceConfig" => [
+                "prebuiltVoiceConfig" => [
+                    "voiceName" => "Puck"  // Энергичный голос; варианты: Kore, Zephyr, Fenrir и т.д.
+                ]
+            ]
+        ]
+    ]
+];
+
+$url = "https://generativelanguage.googleapis.com/v1beta/models/{$model}:generateContent?key={$apiKey}";
+
+$ch = curl_init($url);
+curl_setopt_array($ch, [
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_POST => true,
+    CURLOPT_HTTPHEADER => ['Content-Type: application/json'],
+    CURLOPT_POSTFIELDS => json_encode($data),
+    CURLOPT_TIMEOUT => 60
+]);
+
+$response = curl_exec($ch);
+$httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+curl_close($ch);
+
+if ($httpCode !== 200) {
+    echo "Ошибка: " . $response;
+    die();
+}
+
+$json = json_decode($response, true);
+$base64Audio = $json['candidates'][0]['content']['parts'][0]['inlineData']['data'];
+
+// Декодируем PCM
+$pcmData = base64_decode($base64Audio);
+
+// Добавляем WAV-заголовок (24kHz, 16-bit, mono)
+$wavHeader = "\x52\x49\x46\x46" . pack('V', strlen($pcmData) + 36) . "\x57\x41\x56\x45\x66\x6d\x74\x20\x10\x00\x00\x00\x01\x00\x01\x00\x80\x5E\x00\x00\x00\xBC\x00\x00\x02\x00\x10\x00\x64\x61\x74\x61" . pack('V', strlen($pcmData));
+$wavData = $wavHeader . $pcmData;
+
+file_put_contents($filePathWav, $wavData);
+echo "Аудио сохранено как output.wav (проиграйте в любом плеере)";
+
+
+echo "https://amatordd.webd.pro/amatorDed/DFDX/{$filePathWav}.wav";
+}
 
 
 
