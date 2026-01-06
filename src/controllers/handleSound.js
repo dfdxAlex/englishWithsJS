@@ -28,14 +28,24 @@ export function handleSound() {
             if (!httpAsk.isLoading) {
                 clearInterval(check);
                 const result = httpAsk.fetchData;
-console.log(result);
+// console.log(result);
 // const audio = new Audio(result);
                 // Если result — это строка, проверяем URL
+                if (result === 'https://429') {
+                    const translate = new LanguageController();
+                    alert(translate.translate('Скорее всего закончились запросы.'));
+                    return;
+                }
                 if (typeof result === 'string' && result.includes('http')) {
-                    const audio = new Audio(result);
-                    audio.play().catch(err => {
-                        console.error('Не удалось воспроизвести аудио:', err);
-                        // alert('Аудиофайл недоступен. Попробуйте позже.');
+                    const audio = new Audio();
+                    audio.src = result; // ссылка с сервера
+
+                    audio.addEventListener('canplaythrough', () => {
+                        audio.play();
+                    });
+
+                    audio.addEventListener('error', (e) => {
+                        console.error('Не удалось воспроизвести аудио:', e);
                     });
                 } else if (result && result.zapros !== undefined) {
                     console.log('Получен JSON:', result);

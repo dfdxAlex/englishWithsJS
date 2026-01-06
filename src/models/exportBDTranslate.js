@@ -27,10 +27,10 @@ BDTranslate.push(
      ``,
      ``]);
 BDTranslate.push(
-    [``, 
-     ``, 
-     ``,
-     ``]);
+    [`Скорее всего закончились запросы.`, 
+     `Швидше за все, закінчилися запити.`, 
+     `Najprawdopodobniej liczba wniosków się wyczerpała.`,
+     `Most likely the requests have run out.`]);
 BDTranslate.push(
     [`Ответ не введён!`, 
      `Відповідь не введено!`, 

@@ -7,15 +7,26 @@ require_once "test/hasCyrillic.php";
 require_once "test/normalizeNameSound.php";
 require_once "test/searchOldMp3.php";
 
-// use function class\redaktor\test\hasCyrillic;
+// Для Geminy
+require_once "test/getUrlForGeminy.php";
+require_once "test/setHttpForGeminy.php";
+
+// Speechify
+
+require_once "test/getUrlForSpeechify.php";
+require_once "test/setHttpForSpeechify.php";
+require_once "test/getSpeechifyVoices.php";
 
 
-// Разрешает запросы с любого источника
-header("Access-Control-Allow-Origin: *"); 
-// разрешить только метод POST
-header("Access-Control-Allow-Methods: POST");
-// разрешить кроссдоменный запрос с заголовком Content-Type
-header("Access-Control-Allow-Headers: Content-Type");
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
+header("Access-Control-Allow-Headers: Content-Type, Authorization");
+
+// Для preflight-запроса (OPTIONS)
+if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
+    http_response_code(200);
+    exit;
+}
 
 // пустой класс для метода saveError
 // данный класс наполнится свойствами и отправится как ответ
@@ -106,64 +117,81 @@ hasCyrillic($_POST['sound']);
 searchOldMp3($filePath);
 searchOldMp3($filePathWav);
 
-$apiKey = 'AIzaSyCl-1F2bXLazlFU6eaTWmawlbvuDWZge9g'; // Из Google AI Studio
-$model = 'gemini-2.5-flash-preview-tts';
-$text = $_POST['sound'];
-
-$data = [
-    "contents" => [
-        [
-            "role" => "user",
-            "parts" => [["text" => $text]]
-        ]
-    ],
-    "generationConfig" => [
-        "responseModalities" => ["AUDIO"],  // Обязательно для TTS
-        "speechConfig" => [
-            "voiceConfig" => [
-                "prebuiltVoiceConfig" => [
-                    "voiceName" => "Puck"  // Энергичный голос; варианты: Kore, Zephyr, Fenrir и т.д.
-                ]
-            ]
-        ]
-    ]
-];
-
-$url = "https://generativelanguage.googleapis.com/v1beta/models/{$model}:generateContent?key={$apiKey}";
-
+// Инициализаровать cUrl запрос и получить дескриптор
+$url = getUrlForGeminy();
 $ch = curl_init($url);
-curl_setopt_array($ch, [
-    CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_POST => true,
-    CURLOPT_HTTPHEADER => ['Content-Type: application/json'],
-    CURLOPT_POSTFIELDS => json_encode($data),
-    CURLOPT_TIMEOUT => 60
-]);
 
+// Настроить запрос для Geminy
+curl_setopt_array($ch, setHttpForGeminy($_POST['sound']));
+
+// отправить запрос
 $response = curl_exec($ch);
+
+// Узнать код ответа
 $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
 curl_close($ch);
 
-if ($httpCode !== 200) {
-    echo "Ошибка: " . $response;
-    die();
+if ($httpCode === 200) {
+    $json = json_decode($response, true);
+    $base64Audio = $json['candidates'][0]['content']['parts'][0]['inlineData']['data'];
+    // Декодируем PCM
+    $pcmData = base64_decode($base64Audio);
+    // Добавляем WAV-заголовок (24kHz, 16-bit, mono)
+    $wavHeader = "\x52\x49\x46\x46" . pack('V', strlen($pcmData) + 36) . "\x57\x41\x56\x45\x66\x6d\x74\x20\x10\x00\x00\x00\x01\x00\x01\x00\x80\x5E\x00\x00\x00\xBC\x00\x00\x02\x00\x10\x00\x64\x61\x74\x61" . pack('V', strlen($pcmData));
+    $wavData = $wavHeader . $pcmData;
+    file_put_contents($filePathWav, $wavData);
+
+    // Ждать пол секунды чтобы новый файл успел записаться
+    usleep(500000); // 0.5 секунды
+
+    echo "https://amatordd.webd.pro/amatorDed/DFDX/{$filePathWav}";
+
+
+} else if ($httpCode === 429) {
+
+    // Инициализаровать cUrl запрос и получить дескриптор
+    $url = getUrlForSpeechify();
+    $ch = curl_init($url);
+
+    [$data, $headers] = setHttpForSpeechify($_POST['sound']);
+    // Настроить запрос для Geminy
+    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+    $response = curl_exec($ch);
+    curl_close($ch);
+
+    // Узнать код ответа
+    $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+
+    if ($httpCode === 200) {
+      $json = json_decode($response, true);      
+
+      if (!empty($json['audio_data'])) {
+          $mp3Data = base64_decode($json['audio_data']);
+          file_put_contents($filePath, $mp3Data);
+
+          // Ждать пол секунды чтобы новый файл успел записаться
+          usleep(500000); // 0.5 секунды
+
+          echo "https://amatordd.webd.pro/amatorDed/DFDX/{$filePath}";
+      } else {
+          echo "Ошибка: audio_data нет в ответе";
+          var_dump($json); // на всякий случай посмотреть весь ответ
+      }
+    }
+
+    
+} else if ($httpCode === 429) {
+    echo "https://429";
 }
 
-$json = json_decode($response, true);
-$base64Audio = $json['candidates'][0]['content']['parts'][0]['inlineData']['data'];
-
-// Декодируем PCM
-$pcmData = base64_decode($base64Audio);
-
-// Добавляем WAV-заголовок (24kHz, 16-bit, mono)
-$wavHeader = "\x52\x49\x46\x46" . pack('V', strlen($pcmData) + 36) . "\x57\x41\x56\x45\x66\x6d\x74\x20\x10\x00\x00\x00\x01\x00\x01\x00\x80\x5E\x00\x00\x00\xBC\x00\x00\x02\x00\x10\x00\x64\x61\x74\x61" . pack('V', strlen($pcmData));
-$wavData = $wavHeader . $pcmData;
-
-file_put_contents($filePathWav, $wavData);
-echo "Аудио сохранено как output.wav (проиграйте в любом плеере)";
 
 
-echo "https://amatordd.webd.pro/amatorDed/DFDX/{$filePathWav}.wav";
+
+
 }
 
 

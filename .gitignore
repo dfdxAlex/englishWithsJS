@@ -16,3 +16,6 @@ pnpm-debug.log*
 # 📂 системное
 .DS_Store
 Thumbs.db
+
+getKeyGeminy.php
+getKeySpeechify.php
