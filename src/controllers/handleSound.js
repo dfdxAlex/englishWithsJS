@@ -2,6 +2,7 @@ import { httpAsk } from '../models/HttpClient.js';
 import { LanguageController } from './LanguageController.js';
 
 export function handleSound() {
+    const translate = new LanguageController();
     const soundBtn = document.getElementById('sound');
     if (!soundBtn) return;
 
@@ -29,16 +30,18 @@ export function handleSound() {
                 clearInterval(check);
                 const result = httpAsk.fetchData;
 // console.log(result);
-// const audio = new Audio(result);
-                // Если result — это строка, проверяем URL
-                if (result === 'https://429') {
-                    const translate = new LanguageController();
+                const soundLink = normalizeLink(result).url;
+                if (soundLink === 'Cyrillic is not supported') {
+                    alert(translate.translate('Попытка озвучить не английский текст.'));
+                    return;
+                }
+                if (soundLink === 'https://429') {
                     alert(translate.translate('Скорее всего закончились запросы.'));
                     return;
                 }
-                if (typeof result === 'string' && result.includes('http')) {
+                if (typeof soundLink === 'string' && soundLink.includes('http')) {
                     const audio = new Audio();
-                    audio.src = result; // ссылка с сервера
+                    audio.src = soundLink; // ссылка с сервера
 
                     audio.addEventListener('canplaythrough', () => {
                         audio.play();
@@ -47,8 +50,7 @@ export function handleSound() {
                     audio.addEventListener('error', (e) => {
                         console.error('Не удалось воспроизвести аудио:', e);
                     });
-                } else if (result && result.zapros !== undefined) {
-                    console.log('Получен JSON:', result);
+
                 } else {
                     console.log(result);
                     console.warn('Неверный формат ответа от сервера:', result);
@@ -56,4 +58,26 @@ export function handleSound() {
             }
         }, 100);
     };
+}
+
+
+function normalizeLink(response) {
+    try {
+
+        // ожидаем { url, engine, voice, format }
+        if (!response.url) {
+            throw new Error("url отсутствует в ответе");
+        }
+
+        return {
+            url: response.url,
+            engine: response.engine ?? "unknown",
+            format: response.format ?? "mp3"
+        };
+
+
+    } catch (e) {
+        console.error("Неверный формат ответа от сервера:", e, response);
+        return null;
+    }
 }

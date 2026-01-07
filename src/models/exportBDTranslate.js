@@ -22,10 +22,10 @@ BDTranslate.push(
      ``,
      ``]);
 BDTranslate.push(
-    [``, 
-     ``, 
-     ``,
-     ``]);
+    [`Попытка озвучить не английский текст.`, 
+     `Спроба озвучити не англійський текст.`, 
+     `Próba odczytania tekstu w języku innym niż angielski.`,
+     `Attempt to voice non-English text.`]);
 BDTranslate.push(
     [`Скорее всего закончились запросы.`, 
      `Швидше за все, закінчилися запити.`, 

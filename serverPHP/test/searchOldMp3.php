@@ -6,7 +6,12 @@ function searchOldMp3($filePath)
     if (file_exists($filePath)) {
       $filePath = 'https://amatordd.webd.pro/amatorDed/DFDX/'.$filePath;
       header('Content-Type: application/json; charset=utf-8');
-      echo $filePath;
+      // echo $filePath;
+      echo json_encode([
+          "url" => $filePath,
+          "engine" => "",
+          "format" => ""
+      ]);
       exit;
     }
 }

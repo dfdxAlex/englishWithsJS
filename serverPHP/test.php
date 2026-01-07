@@ -143,9 +143,14 @@ if ($httpCode === 200) {
     file_put_contents($filePathWav, $wavData);
 
     // Ждать пол секунды чтобы новый файл успел записаться
-    usleep(500000); // 0.5 секунды
+    usleep(1000000); // 0.5 секунды
 
-    echo "https://amatordd.webd.pro/amatorDed/DFDX/{$filePathWav}";
+    // echo "https://amatordd.webd.pro/amatorDed/DFDX/{$filePathWav}";
+    echo json_encode([
+        "url" => "https://amatordd.webd.pro/amatorDed/DFDX/{$filePathWav}",
+        "engine" => "Geminy",   // или "gemini", "google", "azure"
+        "format" => "wav"
+    ]);
 
 
 } else if ($httpCode === 429) {
@@ -174,9 +179,14 @@ if ($httpCode === 200) {
           file_put_contents($filePath, $mp3Data);
 
           // Ждать пол секунды чтобы новый файл успел записаться
-          usleep(500000); // 0.5 секунды
+          usleep(1000000); // 0.5 секунды
 
-          echo "https://amatordd.webd.pro/amatorDed/DFDX/{$filePath}";
+          echo json_encode([
+              "url" => "https://amatordd.webd.pro/amatorDed/DFDX/{$filePath}",
+              "engine" => "Speechify",   // или "gemini", "google", "azure"
+              "format" => "mp3"
+          ]);
+
       } else {
           echo "Ошибка: audio_data нет в ответе";
           var_dump($json); // на всякий случай посмотреть весь ответ
@@ -185,6 +195,7 @@ if ($httpCode === 200) {
 
     
 } else if ($httpCode === 429) {
+  
     echo "https://429";
 }
 
