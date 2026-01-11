@@ -40,8 +40,9 @@ export function handleSound() {
                     return;
                 }
                 if (typeof soundLink === 'string' && soundLink.includes('http')) {
-                    const audio = new Audio();
-                    audio.src = soundLink; // ссылка с сервера
+                    const audio = new Audio(soundLink + '?v=' + Date.now());
+
+                    audio.load();
 
                     audio.addEventListener('canplaythrough', () => {
                         audio.play();

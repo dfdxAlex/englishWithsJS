@@ -6,17 +6,19 @@ require "class.php";
 require_once "test/hasCyrillic.php";
 require_once "test/normalizeNameSound.php";
 require_once "test/searchOldMp3.php";
+require_once "test/echoReturn.php";
+
+// Обработка ошибок
+require_once "test/error/EnglishWithsJs.php";
 
 // Для Geminy
 require_once "test/getUrlForGeminy.php";
 require_once "test/setHttpForGeminy.php";
 
 // Speechify
-
 require_once "test/getUrlForSpeechify.php";
 require_once "test/setHttpForSpeechify.php";
 require_once "test/getSpeechifyVoices.php";
-
 
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: POST, GET, OPTIONS");
@@ -27,66 +29,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(200);
     exit;
 }
-
-// пустой класс для метода saveError
-// данный класс наполнится свойствами и отправится как ответ
-// работает в системе отправки Ошибок
-class ClassNull
-{
-
-}
-
-  // проверка таблицы englishWithsJs
-  class EnglishWithsJs
-  {
-      use \class\redaktor\interface\trait\TraitInterfaceWorkToBd;
-     
-      public function __construct()
-      {
-          $this->rezult = new ClassNull;
-
-          if (!$this->searcNameTablic('english_withs_js')) {
-            $zapros="CREATE TABLE english_withs_js(error_str VARCHAR(100))";
-            $this->zaprosSQL($zapros);
-           }
-
-           $this->name = '';
-      }
-
-      public function setName($name)
-      {
-        $this->rezult->name = $name;
-
-        $this->nameOrigin = urldecode($name);
-        $this->name = addslashes(urldecode($name));
-        
-        $this->rezult->nameDecode = $this->name;
-        $this->rezult->nameOrigin = $this->nameOrigin;
-      }
-
-      public function saveError()
-      {
-        $con = \class\redaktor\DatabaseConn::dBConnection()->getCon();
-        //file_put_contents('debug.log', "старт метода" . "\n", FILE_APPEND);
-        //Если последний параметр, четвертый true, то функция вернет объект с информацией
-        $rez = $this->searchSlovaTwo('english_withs_js','error_str',$this->nameOrigin);
-
-        $this->rezult->zapros = $rez;
-        $this->rezult->rez = 'saveError:Cлово есть в БД';
-
-        if ($rez) return json_encode($this->rezult);
-       
-        // отдельная запись в БД
-        // принцип подготовленной записи
-        $yourString = mysqli_real_escape_string($con, $this->nameOrigin); // Экранирование строки
-        $query = "INSERT INTO english_withs_js (error_str) VALUES ('$yourString')";
-        mysqli_query($con, $query);
-
-        $this->rezult->rez = 'saveError:Слова нет в БД';
-        return json_encode($this->rezult);
-      }
-  }
-
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['name'])) {
@@ -103,7 +45,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ///////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////
-// Работает с ElevenLabs TTS (новая модель) и сохраняет MP3
 
 if (isset($_POST['sound'])) {
 
@@ -143,15 +84,9 @@ if ($httpCode === 200) {
     file_put_contents($filePathWav, $wavData);
 
     // Ждать пол секунды чтобы новый файл успел записаться
-    usleep(1000000); // 0.5 секунды
+    usleep(1000000);
 
-    // echo "https://amatordd.webd.pro/amatorDed/DFDX/{$filePathWav}";
-    echo json_encode([
-        "url" => "https://amatordd.webd.pro/amatorDed/DFDX/{$filePathWav}",
-        "engine" => "Geminy",   // или "gemini", "google", "azure"
-        "format" => "wav"
-    ]);
-
+    echoReturn("https://amatordd.webd.pro/amatorDed/DFDX/{$filePathWav}",'Geminy','wav');
 
 } else if ($httpCode === 429) {
 
@@ -176,34 +111,20 @@ if ($httpCode === 200) {
 
       if (!empty($json['audio_data'])) {
           $mp3Data = base64_decode($json['audio_data']);
+
           file_put_contents($filePath, $mp3Data);
+          usleep(1000000);
 
-          // Ждать пол секунды чтобы новый файл успел записаться
-          usleep(1000000); // 0.5 секунды
-
-          echo json_encode([
-              "url" => "https://amatordd.webd.pro/amatorDed/DFDX/{$filePath}",
-              "engine" => "Speechify",   // или "gemini", "google", "azure"
-              "format" => "mp3"
-          ]);
-
+          echoReturn("https://amatordd.webd.pro/amatorDed/DFDX/{$filePath}",'Speechify','mp3');
       } else {
           echo "Ошибка: audio_data нет в ответе";
           var_dump($json); // на всякий случай посмотреть весь ответ
       }
     }
-
     
 } else if ($httpCode === 429) {
-  
+
     echo "https://429";
 }
 
-
-
-
-
 }
-
-
-
