@@ -2,7 +2,11 @@
 
 function normalizeNameSound($soundStr)
 {
+
+        $soundStr = preg_replace('/\s+/', '', $soundStr);
+
         $filePath = $soundStr;
+
         $filePath = str_replace(' ', '', $filePath);
         $filePath = str_replace('\'', '', $filePath);
         $filePath = str_replace('\\', '', $filePath);

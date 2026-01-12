@@ -89,7 +89,7 @@ export function handleOkErr(str, event) {
     // или весь правильный вопрос
     const clickedElement = document.getElementById('clicked_element');
     if (clickedElement) {
-        clickedElement.innerHTML = rezult;
+        clickedElement.innerHTML = rezult.replace("🔊", "");
     }
 
     // добавить объект с логами в пулл логов
@@ -116,7 +116,7 @@ export function handleOkErr(str, event) {
     // Проверить есть ли поле с вопроссом, это поле отсутствует 
     // При втором уровне тестов, сборка предложения по словам
     if (oldElementText !== null)
-        clickedElementOld.innerText = oldElementText.innerText;
+        clickedElementOld.innerText = oldElementText.innerText.replace("🔊", "");
     else
         // Если не было поля с вопроссом, то инфу про предыдущий ответ
         // можно поймать на этой кнопке в пределах одного цикла.

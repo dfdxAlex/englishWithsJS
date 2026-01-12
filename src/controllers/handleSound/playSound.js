@@ -1,0 +1,62 @@
+import { httpAsk } from '../../models/HttpClient.js';
+import { normalizeLink } from './normalizeLink.js';
+import { LanguageController } from '../LanguageController.js';
+
+export function playSound(question = 'question_old', clicked = 'clicked_element')
+{
+        
+        const translate = new LanguageController();
+        const questionOld = document.getElementById(question);
+        const clickedEl = document.getElementById(clicked);
+        if (!questionOld || !clickedEl) return;
+
+        // Определяем источник текста
+        const markers = ['...', '___', '/'];
+        let buttonQuestion = questionOld;
+        if (markers.some(m => questionOld.innerText.includes(m))) {
+            buttonQuestion = clickedEl;
+        }
+
+        const textRequest = buttonQuestion.innerText.replace("🔊", "");
+
+        const dataRequest = 'sound=' + encodeURIComponent(textRequest);
+
+        // Запускаем запрос
+        httpAsk.fetchData = dataRequest;
+
+        // Проверяем результат через setInterval
+        const check = setInterval(() => {
+            if (!httpAsk.isLoading) {
+                clearInterval(check);
+                const result = httpAsk.fetchData;
+// console.log(result);
+                const soundLink = normalizeLink(result).url;
+                if (soundLink === 'Cyrillic is not supported') {
+                    alert(translate.translate('Попытка озвучить не английский текст.'));
+                    return;
+                }
+                if (soundLink === 'https://429') {
+                    alert(translate.translate('Скорее всего закончились запросы.'));
+                    return;
+                }
+                if (typeof soundLink === 'string' && soundLink.includes('http')) {
+                    const audio = new Audio(soundLink + '?v=' + Date.now());
+
+                    audio.load();
+
+                    audio.addEventListener('canplaythrough', () => {
+                        audio.play();
+                    });
+
+                    audio.addEventListener('error', (e) => {
+                        console.error('Не удалось воспроизвести аудио:', e);
+                    });
+
+                } else {
+                    console.log(result);
+                    console.warn('Неверный формат ответа от сервера:', result);
+                }
+            }
+        }, 100);
+    };
+

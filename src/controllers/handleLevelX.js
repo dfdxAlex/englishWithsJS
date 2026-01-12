@@ -19,6 +19,8 @@ import { setClickForLightNormalHardHelp } from './forHundleLevelX/setClickForLig
 import { EventController } from './EventController.js';
 import { WorkingField } from '../view/WorkingField.js';
 import { handleButtonOk } from './handleButtonOk.js';
+import { addButtonPlaySound } from './handleLevelX/addButtonPlaySound.js';
+import { playSound } from './handleSound/playSound.js';
 
 export const handleLevelX = (dataObj, constIndexArray = false) =>
     {
@@ -79,6 +81,15 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
             document.getElementById('working_field')
                     .innerHTML = WorkingField.init(mas, nameLeson);
             hundleForTranslate();
+
+            addButtonPlaySound('question_old');
+            addButtonPlaySound('clicked_element');
+            addButtonPlaySound('question');
+            // addButtonPlaySound('translate');
+            // addButtonPlaySound('option1');
+            // addButtonPlaySound('option2');
+            // addButtonPlaySound('option3');
+            // addButtonPlaySound('option4');
         }
 
         // Тест уровня Simple - Translate
@@ -136,7 +147,6 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
 
         document.getElementById('button-ok')?.addEventListener('click', handleButtonOk);
     };
-
 
 
 
