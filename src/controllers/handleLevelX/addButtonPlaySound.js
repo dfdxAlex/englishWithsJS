@@ -28,7 +28,7 @@ export function addButtonPlaySound(buttonId, options = {})
   const side = options.side || 'right'; // 'right' | 'left'
   const offset = options.offset ?? 8;
 
-  console.log(speaker);
+//   console.log(speaker);
 
   if (side === 'right') {
     speaker.style.left = `calc(100% + ${offset}px)`;
@@ -41,7 +41,7 @@ export function addButtonPlaySound(buttonId, options = {})
   const buttonPlay = document.getElementById('play'+buttonId);
 //   console.log(buttonPlay);
   buttonPlay.addEventListener('click', ()=>{
-    console.log(buttonId);
+    // console.log(buttonId);
     playSound(buttonId);
   })
 

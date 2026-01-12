@@ -97,6 +97,15 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
             document.getElementById('working_field')
                     .innerHTML = WorkingField.initTranslate(mas, nameLeson);
             hundleForTranslate();
+
+            addButtonPlaySound('question_old');
+            addButtonPlaySound('clicked_element');
+            addButtonPlaySound('question');
+            // addButtonPlaySound('translate');
+            // addButtonPlaySound('option1');
+            // addButtonPlaySound('option2');
+            // addButtonPlaySound('option3');
+            // addButtonPlaySound('option4');
         }
         
         // Тест уровня Word-assembly
