@@ -20,7 +20,7 @@ import { EventController } from './EventController.js';
 import { WorkingField } from '../view/WorkingField.js';
 import { handleButtonOk } from './handleButtonOk.js';
 import { addButtonPlaySound } from './handleLevelX/addButtonPlaySound.js';
-import { playSound } from './handleSound/playSound.js';
+// import { playSound } from './handleSound/playSound.js';
 
 export const handleLevelX = (dataObj, constIndexArray = false) =>
     {

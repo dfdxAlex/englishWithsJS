@@ -73,16 +73,3 @@ export function htmlOldQuestionsView(obj) {
     </div>
     `;
 }
-
-
-// Старый динамик
-            // <div class="col-2 button-block">
-            //   <button 
-            //     type="button" 
-            //     id="sound" 
-            //     class="btn sound" 
-            //     name="sound"
-            //   >
-            //     &#x1F50A;
-            //   </button>
-            // </div>

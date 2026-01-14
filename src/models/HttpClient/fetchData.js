@@ -7,8 +7,8 @@ export function fetchData()
     this._isLoading = true;
 
     const xhr = new XMLHttpRequest();
-    // xhr.timeout = 160000; 
-    xhr.timeout = 6000; 
+    xhr.timeout = 160000; 
+    // xhr.timeout = 6000; 
     xhr.open('POST', this.link, true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 
