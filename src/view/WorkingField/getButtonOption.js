@@ -53,7 +53,7 @@ export function getButtonOption(opt)
                         option = getRandomeOptionForTest.bind(this)();
     } 
 
-    return getStrStart('init')+id+option+getStrFinish();
+    return getStrStart('init')+id+option+getStrFinish('init', id.replace('"> ','')+'-sound" ');
 }
 
 getButtonOption.help = `

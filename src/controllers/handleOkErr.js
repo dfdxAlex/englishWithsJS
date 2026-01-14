@@ -100,7 +100,13 @@ export function handleOkErr(str, event) {
     // Добавляется событие возврата кнопки, при клике на любую кнопку из камней внизу
     if (str === 'Error') {
         const btn = event.target;
-        btn.style.display = 'none';      
+        btn.style.display = 'none';
+        
+        // Найти div с динамиком и спрятать его  
+        // выбирается div как следующий елемент после кнопки btn, сначала выйти к родителю 
+        // а потом взять следующий елемент
+        document.getElementById(btn.parentElement.nextElementSibling.id).style.display = 'none';
+        
         event.stopPropagation();
         buttonOkBlockNoon(btn);
     }

@@ -86,10 +86,10 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
             addButtonPlaySound('clicked_element');
             addButtonPlaySound('question');
             // addButtonPlaySound('translate');
-            // addButtonPlaySound('option1');
-            // addButtonPlaySound('option2');
-            // addButtonPlaySound('option3');
-            // addButtonPlaySound('option4');
+            addButtonPlaySound('option1-sound');
+            addButtonPlaySound('option2-sound');
+            addButtonPlaySound('option3-sound');
+            addButtonPlaySound('option4-sound');
         }
 
         // Тест уровня Simple - Translate
@@ -102,10 +102,10 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
             addButtonPlaySound('clicked_element');
             addButtonPlaySound('question');
             // addButtonPlaySound('translate');
-            // addButtonPlaySound('option1');
-            // addButtonPlaySound('option2');
-            // addButtonPlaySound('option3');
-            // addButtonPlaySound('option4');
+            addButtonPlaySound('option9-sound');
+            addButtonPlaySound('option10-sound');
+            addButtonPlaySound('option11-sound');
+            addButtonPlaySound('option12-sound');
         }
         
         // Тест уровня Word-assembly
