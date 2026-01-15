@@ -38,7 +38,11 @@ export function addButtonPlaySound(buttonId, options = {})
 
   const buttonPlay = document.getElementById('play'+buttonId);
   buttonPlay.addEventListener('click', ()=>{
-    playSound(buttonId.replace('-sound', ''));
+    if (options.test !== 'word')
+        playSound(buttonId.replace('-sound', ''));
+    else {
+        playSound('button-ok-word');
+    }
   })
 
   return true;

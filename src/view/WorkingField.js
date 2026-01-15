@@ -162,6 +162,7 @@ class WorkingFieldClass {
         // попытка перейти от хранения данных в этов классе к специальному объекту DataSet
         DataSet.questionDB = arrayButton.join(' ');
         
+
         // создание кнопок
         let {buttonOption, indexMax} = wordToHtmlButton(arrayButton, 'initWordAssembly');
 

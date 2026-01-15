@@ -6,7 +6,7 @@
   export function buttonOk(str = "Проверить")
   {
     return `<div class='row mb-2'>
-    <div class='col-12'>
+    <div class='col-11'>
       <button 
         style='width: 100%; 
                border: 1px solid rgba(0, 0, 0, 0.2); 
@@ -17,5 +17,6 @@
         ${str}
       </button>
     </div>
+    <div id="button-ok-word" class="col-1"></div>
    </div>`;
   }

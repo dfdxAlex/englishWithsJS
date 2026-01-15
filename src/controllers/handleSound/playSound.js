@@ -1,6 +1,7 @@
 import { httpAsk } from '../../models/HttpClient.js';
 import { normalizeLink } from './normalizeLink.js';
 import { LanguageController } from '../LanguageController.js';
+import { DataSet } from '../../services/data/DataSet.js';
 
 export function playSound(question = 'question_old', clicked = 'clicked_element')
 {
@@ -17,8 +18,12 @@ export function playSound(question = 'question_old', clicked = 'clicked_element'
             buttonQuestion = clickedEl;
         }
 
-        const textRequest = buttonQuestion.innerText.replace("🔊", "");
+        let textRequest = buttonQuestion.innerText.replace("🔊", "");
 
+        // Если на вход приходит false, то берем предложение для озвучки из объекта DataSet
+        if (question === 'button-ok-word') {
+            textRequest = DataSet.questionDB;
+        }
         const dataRequest = 'sound=' + encodeURIComponent(textRequest);
 
         // Запускаем запрос

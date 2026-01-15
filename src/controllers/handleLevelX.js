@@ -8,6 +8,7 @@
 // c входящим парамером определяющим масив с данными.(масив теста)
 
 import { DataOk } from '../services/data/DataOk.js';
+import { DataSet } from '../services/data/DataSet.js';
 import { LevelDataModel } from '../models/LevelDataModel.js';
 import { getRandomInt } from '../services/getRandomInt.js';
 import { hundleForTranslate } from './forHundleLevelX/hundleForTranslate.js';
@@ -124,6 +125,8 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
             addButtonPlaySound('question_old');
             addButtonPlaySound('clicked_element');
             addButtonPlaySound('question');
+            addButtonPlaySound('button-ok-word', {test:'word'});
+
         }
 
         // Новый тест, удалить коммент когда закончу
@@ -158,6 +161,8 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
             addButtonPlaySound('question_old');
             addButtonPlaySound('clicked_element');
             addButtonPlaySound('question');
+
+            addButtonPlaySound('button-ok-word', {test:'word'});
         }
         
         // Объект накидывает на кнопки обработчики 
