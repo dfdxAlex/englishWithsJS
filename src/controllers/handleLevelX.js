@@ -85,7 +85,8 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
             addButtonPlaySound('question_old');
             addButtonPlaySound('clicked_element');
             addButtonPlaySound('question');
-            // addButtonPlaySound('translate');
+            // addButtonPlaySound('translate-sound');
+
             addButtonPlaySound('option1-sound');
             addButtonPlaySound('option2-sound');
             addButtonPlaySound('option3-sound');
@@ -101,7 +102,8 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
             addButtonPlaySound('question_old');
             addButtonPlaySound('clicked_element');
             addButtonPlaySound('question');
-            // addButtonPlaySound('translate');
+            addButtonPlaySound('translate-sound');
+
             addButtonPlaySound('option9-sound');
             addButtonPlaySound('option10-sound');
             addButtonPlaySound('option11-sound');
@@ -118,6 +120,10 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
             hundleForTranslate();
             borderRadiusForLevelTwoAndThree();
             setColorForLevelToAndThree();
+
+            addButtonPlaySound('question_old');
+            addButtonPlaySound('clicked_element');
+            addButtonPlaySound('question');
         }
 
         // Новый тест, удалить коммент когда закончу
@@ -148,6 +154,10 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
             selectLightNormalHard();
             borderRadiusForLevelTwoAndThree();
             setColorForLevelToAndThree();
+
+            addButtonPlaySound('question_old');
+            addButtonPlaySound('clicked_element');
+            addButtonPlaySound('question');
         }
         
         // Объект накидывает на кнопки обработчики 
