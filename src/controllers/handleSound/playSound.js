@@ -2,29 +2,48 @@ import { httpAsk } from '../../models/HttpClient.js';
 import { normalizeLink } from './normalizeLink.js';
 import { LanguageController } from '../LanguageController.js';
 import { DataSet } from '../../services/data/DataSet.js';
+import { is_notWord } from '../../view/WorkingField/is_notWord.js';
+import { detectPlaceholder } from '../../view/WorkingField/detectPlaceholder.js';
+import { clearStringToBeSentences } from '../../view/WorkingField/clearStringToBeSentences.js';
 
 export function playSound(question = 'question_old', clicked = 'clicked_element')
 {
         
         const translate = new LanguageController();
-        const questionOld = document.getElementById(question);
-        const clickedEl = document.getElementById(clicked);
+        let questionOld = document.getElementById(question);
+        let clickedEl = document.getElementById(clicked);
         if (!questionOld || !clickedEl) return;
+
+        // проверить если в блоке с вопроссом есть пропущенное слово, то добавить его
+        // из индекса 1
+        let buttonQuestion = questionOld.innerText.replace("🔊", "");
+        let indexOne;
+        if (is_notWord([questionOld.innerText,'','','','','','',''])) {
+            // console.log('поймали пропущенное слово');
+            
+            buttonQuestion = questionOld.innerText;
+            buttonQuestion = buttonQuestion.replace("🔊", "");
+            indexOne = clickedEl.innerText.replace("🔊", "");
+            buttonQuestion = buttonQuestion.replace(detectPlaceholder([buttonQuestion,'','','','','','','']), indexOne);
+            buttonQuestion = clearStringToBeSentences(buttonQuestion);
+            // console.log(buttonQuestion);
+        }
 
         // Определяем источник текста
         const markers = ['...', '___', '/'];
-        let buttonQuestion = questionOld;
-        if (markers.some(m => questionOld.innerText.includes(m))) {
-            buttonQuestion = clickedEl;
+        // let buttonQuestion = questionOld;
+        if (markers.some(m => buttonQuestion.includes(m))) {
+            buttonQuestion = indexOne;
         }
 
-        let textRequest = buttonQuestion.innerText.replace("🔊", "");
+        // скорее всего можно textRequest убрать и заменить на buttonQuestion
+        // let textRequest = buttonQuestion;
 
         // Если на вход приходит false, то берем предложение для озвучки из объекта DataSet
         if (question === 'button-ok-word') {
-            textRequest = DataSet.questionDB;
+            buttonQuestion = DataSet.questionDB;
         }
-        const dataRequest = 'sound=' + encodeURIComponent(textRequest);
+        const dataRequest = 'sound=' + encodeURIComponent(buttonQuestion);
 
         // Запускаем запрос
         httpAsk.fetchData = dataRequest;
