@@ -1,6 +1,7 @@
 
 import { is_notWord } from '../../view/WorkingField/is_notWord.js';
 import { getRandomInt } from '../../services/getRandomInt.js';
+import { searchIndex234 } from './extendForArray/searchIndex234.js';
 
 export function extendForArray(array)
 {
@@ -9,8 +10,25 @@ export function extendForArray(array)
         if (el.length < 8) {
             return;
         }
+
+    // проверить есть ли к текущему подмассиву одинаковые правильные ответы
+    // Это необходимо в тех случаях, когда правильные ответы повторяются, i have to ...
+    // Цель избежать замены правильного ответа с вопроссом когда во многих тестах
+    // правильный ответ повторяется.
+    // То есть если в массиве подмассивов есть два одинаковых правильных ответа в индексе 1
+    // то не использовать этот подмассив для расширения базы вопроссов для теста.
+    let ret = 0;
+    arrayLocal.forEach((el2)=>{
+        if (el[1] === el2[1]) {
+            ret++;
+        }
+    })
+    if (ret>1) return;
+    // console.log(ret);
+
         let timeArray = [];
 
+        // Поменять элементы 1 и 0
         timeArray[0] = el[1]; 
         timeArray[1] = el[0]; 
         timeArray[5] = el[5]; 
@@ -72,50 +90,6 @@ export function extendForArray(array)
     return arrayRez;
 }
 
-function searchIndex234(arrayLocal, index, timeArray, marker)
-{
-                // Сгенерировать номер случайного подмассива
-                let randomeNomberArray = getRandomInt(0, arrayLocal.length-1);
-                // если нулевой элемент случайного подмассива с маркером, то поместить
-                // эту строку в позицию index рабочего подмассива
-                if (arrayLocal[randomeNomberArray][0].includes(marker)) {
-                    timeArray[index] = arrayLocal[randomeNomberArray][0];
-                } else {
-                    // иначе ищем вопросительные знаки в остальной части подмассива случайного
-                    // придумать случайное число от 1 до числа правильных ответов в подмассиве
-                    let randomeNomberEl = getRandomInt(1, arrayLocal.lengthTrue-1);
-
-                    // если нашли предложение с вопросительным, то помещаем его в индекс 2
-                    if (arrayLocal[randomeNomberArray][randomeNomberEl].includes(marker)) {
-                        timeArray[index] = arrayLocal[randomeNomberArray][randomeNomberEl];
-                        
-                    } else {
-                        let loop = false;
-                        for(let i = randomeNomberArray; i < arrayLocal.length; i++) {
-                            randomeNomberEl = getRandomInt(1, arrayLocal.lengthTrue - 1);
-                            // Если работаем с минитекстом, то всегда просматривать только в нулевом элементе
-                            if (marker === '. ') {
-                                randomeNomberEl = 0;
-                                i += 7;
-                                
-                            }
-                            // Если вышли за пределы массива то вернуться обратно 
-                            if (arrayLocal.length <= i) i = arrayLocal.length - 1;
-                            if (arrayLocal[i][randomeNomberEl].includes(marker)) {
-                                timeArray[index] = arrayLocal[i][randomeNomberEl];
-                                break;
-                            }
-                            if (i === arrayLocal.length-2 && !loop) {
-                                i=0;
-                                loop = true;
-                            }
-                            if (i === arrayLocal.length-2 && loop) {
-                                break;
-                            }
-                        }
-                    }
-                }
-}
 
 searchIndex234.help = `
 Функция пробегает по каждому элементу массива и в зависимости от типа теста
