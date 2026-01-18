@@ -1,4 +1,5 @@
 import { extendForArray } from '../extendForArray.js';
+import { extendForArray2 } from '../extendForArray2.js';
 
 const unit33 = [
 
@@ -34,10 +35,9 @@ const unit33 = [
   ["I … work this weekend – I have time off.", "don't have to", "didn't have to", "won't have to", "wouldn't have to", "Мне не нужно работать на этих выходных – у меня отгул.", "Мені не треба працювати на цих вихідних – у мене відгул.", "Nie muszę pracować w ten weekend – mam wolne."],
   ["They … pay extra for checked luggage.", "have to", "had to", "will have to", "would have to", "Им нужно доплачивать за регистрируемый багаж.", "Їм треба доплачувати за зареєстрований багаж.", "Muszą dopłacić za bagaż rejestrowany."],
   ["You … remember your login details.", "have to", "had to", "will have to", "would have to", "Тебе нужно помнить свои логин и пароль.", "Тобі треба пам'ятати свої логін і пароль.", "Musisz pamiętać swoje dane logowania."],
-  ["He … visit his parents more often.", "should / has to", "had to", "will have to", "would have to", "Ему нужно чаще навещать родителей.", "Йому треба частіше навідувати батьків.", "On powinien / musi częściej odwiedzać rodziców."],
+  ["He … visit his parents more often.", "has to", "had to", "will have to", "would have to", "Ему нужно чаще навещать родителей.", "Йому треба частіше навідувати батьків.", "On powinien / musi częściej odwiedzać rodziców."],
   ["We … wait for the results until next week.", "will have to", "have to", "had to", "would have to", "Нам придётся ждать результатов до следующей недели.", "Нам доведеться чекати результатів до наступного тижня.", "Będziemy musieli czekać na wyniki do przyszłego tygodnia."],
   ["She … wear special shoes in the lab.", "has to", "had to", "will have to", "would have to", "Ей нужно носить специальную обувь в лаборатории.", "Вона мусить носити спеціальне взуття в лабораторії.", "Musi nosić specjalne buty w laboratorium."],
-  ["You … explain it to me one more time?", "do ... have to", "did ... have to", "will ... have to", "would ... have to", "Тебе нужно объяснить мне это ещё раз?", "Тобі треба пояснити мені це ще раз?", "Czy musisz mi to jeszcze raz wyjaśnić?"],
   ["They … leave the building during the fire drill.", "had to", "have to", "will have to", "would have to", "Им пришлось покинуть здание во время пожарной тренировки.", "Їм довелося покинути будівлю під час пожежного тренування.", "Musieli opuścić budynek podczas próbnego alarmu pożarowego."],
   ["I … buy new headphones – the old ones broke.", "have to", "had to", "will have to", "would have to", "Мне нужно купить новые наушники – старые сломались.", "Мені треба купити нові навушники – старі зламалися.", "Muszę kupić nowe słuchawki – stare się zepsuły."],
   ["We … wear masks inside the hospital.", "have to", "had to", "will have to", "would have to", "Нам нужно носить маски внутри больницы.", "Нам треба носити маски всередині лікарні.", "Musimy nosić maseczki wewnątrz szpitala."],
@@ -593,8 +593,16 @@ unit33.nameLeson = "I have to ...";
 //--созданными предложениями.
 unit33.lengthTrue = 5;
 
+console.log(unit33.length);
+
 // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
 unit33.push(...extendForArray(unit33));
+
+console.log(unit33.length);
+
+unit33.push(...extendForArray2(unit33));
+
+console.log(unit33.length);
 
 export { unit33 };
 
