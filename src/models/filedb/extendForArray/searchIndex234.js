@@ -1,13 +1,22 @@
 import { getRandomInt } from '../../../services/getRandomInt.js';
+import { is_notWord } from '../../../view/WorkingField/is_notWord.js';
+import { detectPlaceholder } from '../../../view/WorkingField/detectPlaceholder.js';
 
 export function searchIndex234(arrayLocal, index, timeArray, marker)
 {
                 // Сгенерировать номер случайного подмассива
                 let randomeNomberArray = getRandomInt(0, arrayLocal.length-1);
+
                 // если нулевой элемент случайного подмассива с маркером, то поместить
                 // эту строку в позицию index рабочего подмассива
                 if (arrayLocal[randomeNomberArray][0].includes(marker)) {
-                    timeArray[index] = arrayLocal[randomeNomberArray][0];
+                    let arrayOne = arrayLocal[randomeNomberArray][0];
+                    // если в случайно выбранное предложение попало предложение с пропущенным словом
+                    // то вставить его.
+                    if (is_notWord(arrayLocal[randomeNomberArray])) {
+                        arrayOne.replace(detectPlaceholder(arrayLocal[randomeNomberArray]),arrayLocal[randomeNomberArray][1]);
+                    }
+                    timeArray[index] = arrayOne;
                 } else {
                     // иначе ищем вопросительные знаки в остальной части подмассива случайного
                     // придумать случайное число от 1 до числа правильных ответов в подмассиве
@@ -15,7 +24,13 @@ export function searchIndex234(arrayLocal, index, timeArray, marker)
 
                     // если нашли предложение с вопросительным, то помещаем его в индекс 2
                     if (arrayLocal[randomeNomberArray][randomeNomberEl].includes(marker)) {
-                        timeArray[index] = arrayLocal[randomeNomberArray][randomeNomberEl];
+                        let arrayOne = arrayLocal[randomeNomberArray][randomeNomberEl];
+                        // если в случайно выбранное предложение попало предложение с пропущенным словом
+                        // то вставить его.
+                        if (is_notWord(arrayLocal[randomeNomberArray]) && randomeNomberEl === 0) {
+                            arrayOne.replace(detectPlaceholder(arrayLocal[randomeNomberArray]),arrayLocal[randomeNomberArray][1]);
+                        }
+                        timeArray[index] = arrayOne;
                         
                     } else {
                         let loop = false;

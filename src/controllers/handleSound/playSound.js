@@ -19,7 +19,7 @@ export function playSound(question = 'question_old', clicked = 'clicked_element'
         let buttonQuestion = questionOld.innerText.replace("🔊", "");
         let indexOne = clickedEl.innerText.replace("🔊", "");
         if (is_notWord([questionOld.innerText,'','','','','','',''])) {
-            console.log('поймали пропущенное слово');
+            // console.log('поймали пропущенное слово');
             buttonQuestion = questionOld.innerText;
             buttonQuestion = buttonQuestion.replace("🔊", "");
             buttonQuestion = buttonQuestion.replace(detectPlaceholder([buttonQuestion,'','','','','','','']), indexOne);
@@ -31,7 +31,6 @@ export function playSound(question = 'question_old', clicked = 'clicked_element'
         if (markers.some(m => buttonQuestion.includes(m))) {
             buttonQuestion = indexOne;
         }
-
 
         // Если на вход приходит false, то берем предложение для озвучки из объекта DataSet
         if (question === 'button-ok-word') {
