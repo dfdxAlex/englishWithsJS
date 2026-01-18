@@ -17,27 +17,21 @@ export function playSound(question = 'question_old', clicked = 'clicked_element'
         // проверить если в блоке с вопроссом есть пропущенное слово, то добавить его
         // из индекса 1
         let buttonQuestion = questionOld.innerText.replace("🔊", "");
-        let indexOne;
+        let indexOne = clickedEl.innerText.replace("🔊", "");
         if (is_notWord([questionOld.innerText,'','','','','','',''])) {
-            // console.log('поймали пропущенное слово');
-            
+            console.log('поймали пропущенное слово');
             buttonQuestion = questionOld.innerText;
             buttonQuestion = buttonQuestion.replace("🔊", "");
-            indexOne = clickedEl.innerText.replace("🔊", "");
             buttonQuestion = buttonQuestion.replace(detectPlaceholder([buttonQuestion,'','','','','','','']), indexOne);
             buttonQuestion = clearStringToBeSentences(buttonQuestion);
-            // console.log(buttonQuestion);
         }
 
         // Определяем источник текста
         const markers = ['...', '___', '/'];
-        // let buttonQuestion = questionOld;
         if (markers.some(m => buttonQuestion.includes(m))) {
             buttonQuestion = indexOne;
         }
 
-        // скорее всего можно textRequest убрать и заменить на buttonQuestion
-        // let textRequest = buttonQuestion;
 
         // Если на вход приходит false, то берем предложение для озвучки из объекта DataSet
         if (question === 'button-ok-word') {

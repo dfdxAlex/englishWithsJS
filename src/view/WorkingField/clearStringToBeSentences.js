@@ -7,7 +7,10 @@ export function clearStringToBeSentences(stringToBeSentences)
     if (localStorage.getItem('nameArrayDb') === 'toBeSentences') {
         arrayString = stringFoWork.split(" ");
         arrayString.shift();
+    } else {
+        return stringToBeSentences;
     }
+    
     let rezString = arrayString.join(" ");
     rezString = rezString.replace("not", '');
 
