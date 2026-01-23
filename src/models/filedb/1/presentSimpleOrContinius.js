@@ -1,4 +1,5 @@
 import { extendForArray } from '../extendForArray.js';
+import { extendForArray2 } from '../extendForArray2.js';
 
 export const presentSimpleOrContinius = [
 [
@@ -1348,3 +1349,5 @@ export const presentSimpleOrContinius = [
 
     // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
     presentSimpleOrContinius.push(...extendForArray(presentSimpleOrContinius));
+
+    presentSimpleOrContinius.push(...extendForArray2(presentSimpleOrContinius));

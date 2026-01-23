@@ -1,5 +1,6 @@
 import { extendForArray } from '../extendForArray.js';
 import { replaceEllipsisWithWord } from '../../replaceEllipsisWithWord.js';
+import { extendForArray2 } from '../extendForArray2.js';
 
 export const presentSimple = [
     [
@@ -1329,3 +1330,5 @@ export const presentSimple = [
 
     // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
     presentSimple.push(...extendForArray(presentSimple));
+
+    presentSimple.push(...extendForArray2(presentSimple));

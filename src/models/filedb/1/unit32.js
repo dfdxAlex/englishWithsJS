@@ -1,5 +1,6 @@
 import { extendForArray } from '../extendForArray.js';
 import { extending } from './extend/extending.js';
+import { extendForArray2 } from '../extendForArray2.js';
 
 const unit32 = [
   [
@@ -2816,6 +2817,8 @@ unit32.lengthTrue = 5;
 
 // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
 unit32.push(...extendForArray(unit32));
+
+unit32.push(...extendForArray2(unit32));
 
 export { unit32 };
 

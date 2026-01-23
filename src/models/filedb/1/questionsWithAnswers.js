@@ -1,4 +1,5 @@
 import { extendForArray } from '../extendForArray.js';
+import { extendForArray2 } from '../extendForArray2.js';
 
 export const questionsWithAnswers = [
     ['Are the doors closed?', "Yes, they are.", "Yes, theyre.", "Yes, they ar.", "Yes, it is.", 'Двери закрыты?', 'Двері закриті?', 'Czy drzwi są zamknięte?'],
@@ -87,3 +88,5 @@ export const questionsWithAnswers = [
 
     // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
     questionsWithAnswers.push(...extendForArray(questionsWithAnswers));
+
+    questionsWithAnswers.push(...extendForArray2(questionsWithAnswers));

@@ -1,5 +1,6 @@
 import { extendForArray } from '../extendForArray.js';
 import { replaceEllipsisWithWord } from '../../replaceEllipsisWithWord.js';
+import { extendForArray2 } from '../extendForArray2.js';
 
 export const presentSimpleQuestions = [
     ["... you like coffee?", "Do", "Does", "", "", "Ты любишь кофе?", "Ти любиш каву?", "Czy lubisz kawę?"],
@@ -743,3 +744,5 @@ presentSimpleQuestions.forEach((el, index, array) => {
 
     // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
     presentSimpleQuestions.push(...extendForArray(presentSimpleQuestions));
+
+    presentSimpleQuestions.push(...extendForArray2(presentSimpleQuestions));

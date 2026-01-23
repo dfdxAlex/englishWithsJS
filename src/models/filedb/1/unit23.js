@@ -1,4 +1,5 @@
 import { extendForArray } from '../extendForArray.js';
+import { extendForArray2 } from '../extendForArray2.js';
 
 export const unit23 = [
     ["Are you eating?", "Yes, I am eating.", "Did you eat?", "You eat every day.", "You had eaten.", "Ты ешь?", "Ти їси?", "Czy jesz?"],
@@ -4211,3 +4212,5 @@ export const unit23 = [
 
     // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
     unit23.push(...extendForArray(unit23));
+
+    unit23.push(...extendForArray2(unit23));

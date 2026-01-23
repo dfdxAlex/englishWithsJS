@@ -1,4 +1,5 @@
 import { extendForArray } from '../extendForArray.js';
+import { extendForArray2 } from '../extendForArray2.js';
 
 export const presetnContiniusQuestion = [
     [
@@ -1455,3 +1456,5 @@ export const presetnContiniusQuestion = [
 
     // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
     presetnContiniusQuestion.push(...extendForArray(presetnContiniusQuestion));
+
+    presetnContiniusQuestion.push(...extendForArray2(presetnContiniusQuestion));

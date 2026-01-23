@@ -1,5 +1,6 @@
 import { extendForArray } from '../extendForArray.js';
 import { replaceEllipsisWithWord } from '../../replaceEllipsisWithWord.js';
+import { extendForArray2 } from '../extendForArray2.js';
 
 export const presentSimpleNegative = [
     ["He does not ... coffee.", "drink", "drinks", "drank", "drinking", "Он не пьет кофе.", "Він не п'є каву.", "On nie pije kawy."],
@@ -671,3 +672,5 @@ export const presentSimpleNegative = [
  
     // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
     presentSimpleNegative.push(...extendForArray(presentSimpleNegative));
+
+    presentSimpleNegative.push(...extendForArray2(presentSimpleNegative));

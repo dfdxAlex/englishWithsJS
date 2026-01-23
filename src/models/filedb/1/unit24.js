@@ -1,5 +1,6 @@
 import { extendForArray } from '../extendForArray.js';
 import { replaceEllipsisWithWord } from '../../replaceEllipsisWithWord.js';
+import { extendForArray2 } from '../extendForArray2.js';
 
 export const unit24 = [
 // Вопросы (30)
@@ -1409,3 +1410,5 @@ export const unit24 = [
 
     // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
     unit24.push(...extendForArray(unit24));
+
+    unit24.push(...extendForArray2(unit24));

@@ -1,4 +1,5 @@
 import { extendForArray } from '../extendForArray.js';
+import { extendForArray2 } from '../extendForArray2.js';
 
 const unit31 = [
 [
@@ -4110,6 +4111,8 @@ unit31.lengthTrue = 5;
 
 // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
 unit31.push(...extendForArray(unit31));
+
+unit31.push(...extendForArray2(unit31));
 
 export { unit31 };
 

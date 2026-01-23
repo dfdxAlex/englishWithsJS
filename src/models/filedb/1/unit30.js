@@ -1,4 +1,5 @@
 import { extendForArray } from '../extendForArray.js';
+import { extendForArray2 } from '../extendForArray2.js';
 
 const unit30 = [
   ["He can run very fast.","Can he run very fast?","Could he run very fast?","Does he run very fast?","Is he able to run very fast?","Он бегает очень быстро.","Він бігає дуже швидко.","On biega bardzo szybko.","01000","10000","00100"],
@@ -287,6 +288,8 @@ unit30.lengthTrue = 5;
 // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
 unit30.push(...extendForArray(unit30));
 // console.log(extendForArray(unit30));
+
+unit30.push(...extendForArray2(unit30));
 
 // console.log(unit30.length);
 export { unit30 };

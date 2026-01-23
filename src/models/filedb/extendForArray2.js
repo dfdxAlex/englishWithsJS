@@ -32,8 +32,12 @@ export function extendForArray2(array)
             while(i < 5) {
                 // Дальше работаем со случайными словами для альтернативных вариантов
                 // Выбрать случайный подмассив
-                let randomString = arrayOld[getRandomInt(0, arrayOld.length)][0];
+                // console.log(arrayOld);
+                let randomString = arrayOld[getRandomInt(0, arrayOld.length-1)][0];
                 // очистить предложение от муссора
+                // console.log(randomString);
+                // console.log(detectPlaceholder(el));
+                if (!randomString) continue;
                 randomString = randomString.replace(detectPlaceholder(el), '');
                 // разбить предложение на массив
                 const randomStringArray = randomString.split(" ");

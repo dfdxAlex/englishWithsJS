@@ -1,6 +1,5 @@
 
 import { is_notWord } from '../../view/WorkingField/is_notWord.js';
-import { getRandomInt } from '../../services/getRandomInt.js';
 import { searchIndex234 } from './extendForArray/searchIndex234.js';
 
 export function extendForArray(array)
@@ -77,9 +76,9 @@ searchIndex234.help = `
 накидывая неправильные варианты из других подмассивов
 `;
 
-function randomFirstSentences(arrayLocal)
-{
-    // Сгенерировать номер случайного подмассива
-    let randomeNomberArray = getRandomInt(0, arrayLocal.length-1);
-    return arrayLocal[randomeNomberArray][0];
-}
+// function randomFirstSentences(arrayLocal)
+// {
+//     // Сгенерировать номер случайного подмассива
+//     let randomeNomberArray = getRandomInt(0, arrayLocal.length-1);
+//     return arrayLocal[randomeNomberArray][0];
+// }

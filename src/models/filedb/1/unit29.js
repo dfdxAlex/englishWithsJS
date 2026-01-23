@@ -1,5 +1,6 @@
 import { extendForArray } from '../extendForArray.js';
 import { extending } from './extend/extending.js';
+import { extendForArray2 } from '../extendForArray2.js';
 
 const unit29Migth = [
   [
@@ -3147,5 +3148,7 @@ unit29.lengthTrue = 5;
 
 // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
 unit29.push(...extendForArray(unit29));
+
+unit29.push(...extendForArray2(unit29));
 
 export { unit29 };
