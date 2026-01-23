@@ -598,11 +598,7 @@ unit33.lengthTrue = 5;
 // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
 unit33.push(...extendForArray(unit33));
 
-// console.log(unit33.length);
-
 unit33.push(...extendForArray2(unit33));
-
-// console.log(unit33.length);
 
 export { unit33 };
 
