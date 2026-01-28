@@ -1254,7 +1254,7 @@ export const pastContinuousArray = [
       ],
       function (id) {
         return replaceEllipsisWithWord(id, pastContinuousArray);
-      }  
+      }
 ];
 
 // Если это свойство есть, то оно попадает в заголовок теста

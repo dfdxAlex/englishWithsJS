@@ -21,10 +21,34 @@ import { EventController } from './EventController.js';
 import { WorkingField } from '../view/WorkingField.js';
 import { handleButtonOk } from './handleButtonOk.js';
 import { addButtonPlaySound } from './handleLevelX/addButtonPlaySound.js';
+import { addElToDinamicMenu } from '../view/addElToDinamicMenu.js';
+import { delElToDinamicMenu } from '../view/delElToDinamicMenu.js';
+
 // import { playSound } from './handleSound/playSound.js';
 
 export const handleLevelX = (dataObj, constIndexArray = false) =>
     {
+        // console.log('extend-1');
+        localStorage.setItem('extend1','ok');
+        // Отдельный блок, можно вынести в модуль, устанавливает дополнительные значки
+        // в динамическое меню
+        if (!localStorage.getItem('extend1') || localStorage.getItem('extend1') === "ok") {
+            addElToDinamicMenu('🤖','extend-1','extend-1');
+            delElToDinamicMenu('extend-3');
+        }
+        if (!localStorage.getItem('extend2') || localStorage.getItem('extend2') === "ok") {
+            addElToDinamicMenu('🧠','extend-2','extend-2');
+            delElToDinamicMenu('extend-4');
+        }
+        if (localStorage.getItem('extend1') === "not") {
+            addElToDinamicMenu('🚫','extend-1','extend-1');
+            delElToDinamicMenu('extend-1');
+        }
+        if (localStorage.getItem('extend2') === "not") {
+            addElToDinamicMenu('⛔','extend-2','extend-2');
+            delElToDinamicMenu('extend-2');
+        }
+///////////////////////////////////////////////////////////////////////////////////////////\
         // Если Сменили тест, то запомнить номер нового теста и протолкнуть в массиве dataElevator[]
         // дальше по массиву
         if (DataOk.level.int !== dataObj.getLevel()) {

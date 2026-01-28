@@ -1046,7 +1046,7 @@ const unit32 = [
     "Since you have a job interview, you should forget your documents at home.",
     "Раз у тебя собеседование, ты приходишь рано.",
     "Оскільки в тебе співбесіда, ти приходиш рано.",
-
+    "Skoro masz rozmowę kwalifikacyjną, przyjdź wcześniej."
   ],
   [
     "Because your knee hurts, you run a marathon.",

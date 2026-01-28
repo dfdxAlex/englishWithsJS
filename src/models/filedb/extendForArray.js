@@ -1,14 +1,11 @@
 
 import { is_notWord } from '../../view/WorkingField/is_notWord.js';
 import { searchIndex234 } from './extendForArray/searchIndex234.js';
+import { addElToDinamicMenu } from '../../view/addElToDinamicMenu.js';
 
 export function extendForArray(array)
 {
-    const arrayRez = [];
-    array.forEach((el, id, arrayLocal)=>{
-        if (el.length < 8) {
-            return;
-        }
+    
 
     // проверить есть ли к текущему подмассиву одинаковые правильные ответы
     // Это необходимо в тех случаях, когда правильные ответы повторяются, i have to ...
@@ -16,13 +13,30 @@ export function extendForArray(array)
     // правильный ответ повторяется.
     // То есть если в массиве подмассивов есть два одинаковых правильных ответа в индексе 1
     // то не использовать этот подмассив для расширения базы вопроссов для теста.
-    let ret = 0;
-    arrayLocal.forEach((el2)=>{
-        if (el[1] === el2[1]) {
-            ret++;
+
+
+    const arrayNew = array;
+
+    // searchUndefined(array);
+
+
+    const arrayRez = [];
+    arrayNew.forEach((el, id, arrayLocal)=>{
+
+        // Поиск подмассивов с числом элементов меньше 8
+        if (el.length < 8 && id < arrayLocal.length-1) {
+            console.log("Обнаружен подмассив с длиной меньше 8 елементов:");
+            console.log(el);
+            console.log(el[0]);
+            console.log(id);
+            return;
         }
-    })
-    if (ret>1) return;
+
+        if (el.length < 8 && id === arrayLocal.length-1) {
+            console.log("Последний элемент не рабочий подмассив");
+            return;
+        }
+
     // console.log(ret);
 
         let timeArray = [];
@@ -38,6 +52,7 @@ export function extendForArray(array)
         // Если первое предложение - это вопрос, а второе это предложение
         // то меняем местами правильный ответ с вопросом и заполняем остальные элементы
         // вопросами их произвольных подмассивов.
+        // console.log(el[0]);
         if (el && el[0].includes('?') && el[1].includes('.') && !is_notWord(el)) {
                 searchIndex234(arrayLocal, 2, timeArray, '?');
 
@@ -66,6 +81,8 @@ export function extendForArray(array)
     
     });
 
+    // console.log(arrayRez);
+    searchUndefined(arrayRez);
     return arrayRez;
 }
 
@@ -82,3 +99,35 @@ searchIndex234.help = `
 //     let randomeNomberArray = getRandomInt(0, arrayLocal.length-1);
 //     return arrayLocal[randomeNomberArray][0];
 // }
+
+function searchUndefined(arrayRez)
+{
+    
+
+}
+
+function uniqueByIndex1(arr) {
+  let resInt = 0;
+
+  // Set для хранения уже встреченных значений из sub[1]
+  const seen = new Set();
+
+  // filter проходит по каждому подмассиву
+  return arr.filter(sub => {
+
+    // Берём элемент с индексом 1 (по нему проверяем уникальность)
+    const key = sub[1];
+
+    // Если такое значение уже встречалось — исключаем подмассив
+    if (seen.has(key)) {
+      resInt++;
+      return false;
+    }
+
+    // Если ещё не встречалось — запоминаем его
+    seen.add(key);
+
+    // И оставляем текущий подмассив в результате
+    return true;
+  });
+}

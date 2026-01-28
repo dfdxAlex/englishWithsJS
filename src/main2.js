@@ -5,3 +5,4 @@ import { setBackground } from './view/styles/bodyImages/setBackground.js';
 daimentInfo();
 htmlOldQuestionsCntr();
 setBackground();
+        

@@ -7,6 +7,12 @@ export function searchIndex234(arrayLocal, index, timeArray, marker)
                 // получить случайный подмассив
                 const arrayRandome = getRandomeArray(arrayLocal);
 
+                // получить число правильно составленных предложений
+                let trueSentences = arrayLocal.lengthTrue;
+                if (!trueSentences) {
+                    trueSentences = 2;
+                }
+
                 // если нулевой элемент случайного подмассива с маркером, то поместить
                 // эту строку в позицию index рабочего подмассива
                 // Маркером может быть знак ? - значит работаем с вопросами ...
@@ -19,7 +25,7 @@ export function searchIndex234(arrayLocal, index, timeArray, marker)
                 } else {
                     // иначе ищем вопросительные знаки в остальной части подмассива случайного
                     // придумать случайное число от 1 до числа правильных ответов в подмассиве
-                    let randomeNomberEl = getRandomInt(1, arrayLocal.lengthTrue-1);
+                    let randomeNomberEl = getRandomInt(1, trueSentences-1);
 
                     // если нашли предложение с вопросительным, то помещаем его в индекс 2
                     if (arrayRandome[randomeNomberEl].includes(marker)) {
@@ -39,7 +45,7 @@ export function searchIndex234(arrayLocal, index, timeArray, marker)
                             
                             // Если не работаем с минитекстом, то можно просматривать случайный элемент
                             if (marker !== '. ') {
-                                randomeNomberEl = getRandomInt(1, arrayLocal.lengthTrue - 1);
+                                randomeNomberEl = getRandomInt(1, trueSentences - 1);
                             }
 
                             // Если вышли за пределы массива то вернуться обратно 
