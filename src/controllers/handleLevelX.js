@@ -8,7 +8,6 @@
 // c входящим парамером определяющим масив с данными.(масив теста)
 
 import { DataOk } from '../services/data/DataOk.js';
-// import { DataSet } from '../services/data/DataSet.js';
 import { LevelDataModel } from '../models/LevelDataModel.js';
 import { getRandomInt } from '../services/getRandomInt.js';
 import { hundleForTranslate } from './forHundleLevelX/hundleForTranslate.js';
@@ -21,8 +20,6 @@ import { EventController } from './EventController.js';
 import { WorkingField } from '../view/WorkingField.js';
 import { handleButtonOk } from './handleButtonOk.js';
 import { addButtonPlaySound } from './handleLevelX/addButtonPlaySound.js';
-import { extendTwo } from './handleLevelX/extendTwo.js';
-import { extendOne } from './handleLevelX/extendOne.js';
 import { extendFirstSetButton } from './handleLevelX/extendFirstSetButton.js';
 
 export const handleLevelX = (dataObj, constIndexArray = false) =>

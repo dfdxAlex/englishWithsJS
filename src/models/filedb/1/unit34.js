@@ -1,5 +1,6 @@
 import { extendForArray } from '../extendForArray.js';
 import { extendForArray2 } from '../extendForArray2.js';
+import { extending } from './extend/extending.js';
 
 const unit34 = [
 
@@ -571,6 +572,7 @@ const unit34 = [
 
 ];
 
+unit34.push(...extending(unit34, 'I would ', "I'd "));
 
 // Если это свойство есть, то оно попадает в заголовок теста
 unit34.nameLeson = "Would you like ...";
