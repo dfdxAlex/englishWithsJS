@@ -1,4 +1,5 @@
 
+// Функция добавляет ассинхронно обработчик события когда появится элемент
 export function setEventAsynс(calback, eventName, id)
 {
     const idResetErrorByDynamicMenu = setInterval(()=>{

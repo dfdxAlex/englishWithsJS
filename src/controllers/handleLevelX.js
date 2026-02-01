@@ -23,30 +23,65 @@ import { handleButtonOk } from './handleButtonOk.js';
 import { addButtonPlaySound } from './handleLevelX/addButtonPlaySound.js';
 import { addElToDinamicMenu } from '../view/addElToDinamicMenu.js';
 import { delElToDinamicMenu } from '../view/delElToDinamicMenu.js';
+import { setEventAsynс } from '../services/set/setEventAsynс.js';
 
 // import { playSound } from './handleSound/playSound.js';
+
+function extendOne()
+{
+    if (localStorage.getItem('extend1') === "ok") {
+        localStorage.setItem('extend1', 'not');
+        delElToDinamicMenu('extend-1');
+        addElToDinamicMenu('🚫','extend-1','extend-1');
+        setEventAsynс(extendOne, 'click', 'extend-1');
+    } else {
+        localStorage.setItem('extend1', 'ok');
+        delElToDinamicMenu('extend-1');
+        addElToDinamicMenu('🤖','extend-1','extend-1');
+        setEventAsynс(extendOne, 'click', 'extend-1');
+    }
+}
+
+function extendTwo()
+{
+    if (localStorage.getItem('extend2') === "ok") {
+        localStorage.setItem('extend2', 'not');
+        delElToDinamicMenu('extend-2');
+        addElToDinamicMenu('⛔','extend-2','extend-2');
+        setEventAsynс(extendTwo, 'click', 'extend-2');
+    } else {
+        localStorage.setItem('extend2', 'ok');
+        delElToDinamicMenu('extend-2');
+        addElToDinamicMenu('🧠','extend-2','extend-2');
+        setEventAsynс(extendTwo, 'click', 'extend-2');
+    }
+}
 
 export const handleLevelX = (dataObj, constIndexArray = false) =>
     {
         // console.log('extend-1');
-        localStorage.setItem('extend1','ok');
+        // localStorage.setItem('extend1','ok');
         // Отдельный блок, можно вынести в модуль, устанавливает дополнительные значки
         // в динамическое меню
         if (!localStorage.getItem('extend1') || localStorage.getItem('extend1') === "ok") {
             addElToDinamicMenu('🤖','extend-1','extend-1');
-            delElToDinamicMenu('extend-3');
+            delElToDinamicMenu('extend-1');
+            setEventAsynс(extendOne, 'click', 'extend-1');
         }
         if (!localStorage.getItem('extend2') || localStorage.getItem('extend2') === "ok") {
+            delElToDinamicMenu('extend-2');
             addElToDinamicMenu('🧠','extend-2','extend-2');
-            delElToDinamicMenu('extend-4');
+            setEventAsynс(extendOne, 'click', 'extend-2');
         }
         if (localStorage.getItem('extend1') === "not") {
-            addElToDinamicMenu('🚫','extend-1','extend-1');
             delElToDinamicMenu('extend-1');
+            addElToDinamicMenu('🚫','extend-1','extend-1');
+            setEventAsynс(extendTwo, 'click', 'extend-1');
         }
         if (localStorage.getItem('extend2') === "not") {
-            addElToDinamicMenu('⛔','extend-2','extend-2');
             delElToDinamicMenu('extend-2');
+            addElToDinamicMenu('⛔','extend-2','extend-2');
+            setEventAsynс(extendTwo, 'click', 'extend-1');
         }
 ///////////////////////////////////////////////////////////////////////////////////////////\
         // Если Сменили тест, то запомнить номер нового теста и протолкнуть в массиве dataElevator[]
