@@ -23,12 +23,12 @@ import { handleButtonOk } from './handleButtonOk.js';
 import { addButtonPlaySound } from './handleLevelX/addButtonPlaySound.js';
 import { extendTwo } from './handleLevelX/extendTwo.js';
 import { extendOne } from './handleLevelX/extendOne.js';
+import { extendFirstSetButton } from './handleLevelX/extendFirstSetButton.js';
 
 export const handleLevelX = (dataObj, constIndexArray = false) =>
     {
         //  первоначальная установка кнопок для включения/отключения расширений
-        extendOne();
-        extendTwo();
+        extendFirstSetButton();
 ///////////////////////////////////////////////////////////////////////////////////////////\
         // Если Сменили тест, то запомнить номер нового теста и протолкнуть в массиве dataElevator[]
         // дальше по массиву
@@ -91,8 +91,6 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
             addButtonPlaySound('question_old');
             addButtonPlaySound('clicked_element');
             addButtonPlaySound('question');
-            // addButtonPlaySound('translate-sound');
-
             addButtonPlaySound('option1-sound');
             addButtonPlaySound('option2-sound');
             addButtonPlaySound('option3-sound');
@@ -109,7 +107,6 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
             addButtonPlaySound('clicked_element');
             addButtonPlaySound('question');
             addButtonPlaySound('translate-sound');
-
             addButtonPlaySound('option9-sound');
             addButtonPlaySound('option10-sound');
             addButtonPlaySound('option11-sound');
@@ -126,7 +123,6 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
             hundleForTranslate();
             borderRadiusForLevelTwoAndThree();
             setColorForLevelToAndThree();
-
             addButtonPlaySound('question_old');
             addButtonPlaySound('clicked_element');
             addButtonPlaySound('question');
@@ -162,11 +158,9 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
             selectLightNormalHard();
             borderRadiusForLevelTwoAndThree();
             setColorForLevelToAndThree();
-
             addButtonPlaySound('question_old');
             addButtonPlaySound('clicked_element');
             addButtonPlaySound('question');
-
             addButtonPlaySound('button-ok-word', {test:'word'});
         }
         

@@ -6,6 +6,7 @@ import { addElToDinamicMenu } from '../../view/addElToDinamicMenu.js';
 export function extendForArray(array)
 {
     
+    if (localStorage.getItem('extend1') === "not") return [];
 
     // проверить есть ли к текущему подмассиву одинаковые правильные ответы
     // Это необходимо в тех случаях, когда правильные ответы повторяются, i have to ...

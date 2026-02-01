@@ -4,6 +4,8 @@ import { getRandomInt } from '../../services/getRandomInt.js';
 
 export function extendForArray2(array)
 {
+    if (localStorage.getItem('extend2') === "not") return [];
+
     let arrayForString = [];
     const arrayToReturn = [];
     array.forEach((el, id, arrayOld)=>{
