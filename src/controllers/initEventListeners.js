@@ -13,13 +13,12 @@ import { boobleUp } from '../view/boobleUp.js';
 import { resetBottonError } from './resetBottonError.js';
 import { handleSearchError } from './handleSearchError.js';
 import { htmlHelp } from '../view/htmlHelp.js';
-// import { handleSound } from './handleSound.js';
 import { SettingForProgram } from '../models/SettingForProgram.js';
+import { addElToDinamicMenu } from '../view/addElToDinamicMenu.js';
 
 // Здесь функции, которые должны отработать когда загрузится статическая страница
 window.addEventListener('load', () => {
     htmlHelp();
-    // handleSound();
     nav();
     const menuC = new MenuController();
     menuC.init();

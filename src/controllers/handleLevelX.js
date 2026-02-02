@@ -21,11 +21,21 @@ import { WorkingField } from '../view/WorkingField.js';
 import { handleButtonOk } from './handleButtonOk.js';
 import { addButtonPlaySound } from './handleLevelX/addButtonPlaySound.js';
 import { extendFirstSetButton } from './handleLevelX/extendFirstSetButton.js';
+import { addElToDinamicMenu } from '../view/addElToDinamicMenu.js';
+import { Thoury } from './Thoury.js';
+import { setEventAsync } from '../services/set/setEventAsynс.js';
+import { renderThoury} from './forThoury/renderThoury.js';
 
 export const handleLevelX = (dataObj, constIndexArray = false) =>
     {
         //  первоначальная установка кнопок для включения/отключения расширений
         extendFirstSetButton();
+
+        // добавить кнопку хелп в динамическое меню
+        addElToDinamicMenu('📘','help-for-dynamic-menu','help-for-dynamic-menu');
+        setEventAsync(() => {renderThoury.call(Thoury);},
+              'click',
+              'help-for-dynamic-menu');
 ///////////////////////////////////////////////////////////////////////////////////////////\
         // Если Сменили тест, то запомнить номер нового теста и протолкнуть в массиве dataElevator[]
         // дальше по массиву

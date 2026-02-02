@@ -1,9 +1,9 @@
 import { resetStatistic } from '../resetStatistic.js';
-import { setEventAsynс } from '../../services/set/setEventAsynс.js';
+import { setEventAsync } from '../../services/set/setEventAsynс.js';
 
 export function resetErrorByDynamicMenu()
 {
-    setEventAsynс(()=>{
+    setEventAsync(()=>{
         resetStatistic(); 
         delToSmile();
     }, 'click' ,'smile-for-dinamic-menu');

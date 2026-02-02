@@ -1,8 +1,8 @@
 import { getBodyThoury } from '../models/forThoury/getBodyThoury.js';
 import { getWorkPlace } from '../view/thoury/getWorkPlace.js';
 import { renderThoury} from './forThoury/renderThoury.js';
-import { DataSet } from '../services/data/DataSet.js';
 import { LanguageController } from './LanguageController.js';
+import { setEventAsync } from '../services/set/setEventAsynс.js';
 
 export class Thoury
 {
@@ -15,14 +15,10 @@ export class Thoury
     static handleThoury(level)
     {
         this.level = level;    
-        const thisS = this;
         this.strLocal = getWorkPlace(this.bodyThoury(), this.idForButtonClosed); 
-        if (!DataSet.renderThoury) {
-            document.getElementById('level30').addEventListener('click', function() {
-                    renderThoury.call(thisS);
-            });
-            DataSet.renderThoury = true;
-        }
+
+        setEventAsync(() => {renderThoury.call(this);},'click','level30');
+        return this;
     }
 
     // Функция помещает информацию в тело раздела Теория

@@ -1,6 +1,6 @@
 import { delElToDinamicMenu } from '../../view/delElToDinamicMenu.js';
 import { addElToDinamicMenu } from '../../view/addElToDinamicMenu.js';
-import { setEventAsynс } from '../../services/set/setEventAsynс.js';
+import { setEventAsync } from '../../services/set/setEventAsynс.js';
 
 
 export function extendOne()
@@ -9,11 +9,11 @@ export function extendOne()
         localStorage.setItem('extend1', 'not');
         delElToDinamicMenu('extend-1');
         addElToDinamicMenu('🚫','extend-1','extend-1');
-        setEventAsynс(extendOne, 'click', 'extend-1');
+        setEventAsync(extendOne, 'click', 'extend-1');
     } else {
         localStorage.setItem('extend1', 'ok');
         delElToDinamicMenu('extend-1');
         addElToDinamicMenu('🤖','extend-1','extend-1');
-        setEventAsynс(extendOne, 'click', 'extend-1');
+        setEventAsync(extendOne, 'click', 'extend-1');
     }
 }
