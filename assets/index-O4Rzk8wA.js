@@ -10376,7 +10376,284 @@ I have to = necessity from outside
 h3
 If without this action “life breaks” — then it’s have to 😄
 
-`}const arrayDataThoury=[];arrayDataThoury.push(thouryUnit1());arrayDataThoury.push(thouryUnit2());arrayDataThoury.push(thouryUnit2_2());arrayDataThoury.push(thouryUnit3());arrayDataThoury.push(thouryUnit4_3());arrayDataThoury.push(thouryUnit4_5());arrayDataThoury.push(thouryUnit4());arrayDataThoury.push(thouryUnit5());arrayDataThoury.push(thouryUnit6());arrayDataThoury.push(thouryUnit7());arrayDataThoury.push(thouryUnit8());arrayDataThoury.push(thouryUnit9());arrayDataThoury.push(thouryUnit10());arrayDataThoury.push(thouryUnit11());arrayDataThoury.push(thouryUnit12());arrayDataThoury.push(thouryUnit13());arrayDataThoury.push(thouryUnit14());arrayDataThoury.push(thouryUnit15());arrayDataThoury.push(thouryUnit16());arrayDataThoury.push(thouryUnit17());arrayDataThoury.push(thouryUnit18());arrayDataThoury.push(thouryUnit19());arrayDataThoury.push(thouryUnit20());arrayDataThoury.push(thouryUnit21());arrayDataThoury.push(thouryUnit22());arrayDataThoury.push(thouryUnit23());arrayDataThoury.push(thouryUnit24());arrayDataThoury.push(thouryUnit25());arrayDataThoury.push(thouryUnit26());arrayDataThoury.push(thouryUnit27());arrayDataThoury.push(thouryUnit28());arrayDataThoury.push(thouryUnit29());arrayDataThoury.push(thouryUnit30());arrayDataThoury.push(thouryUnit31());arrayDataThoury.push(thouryUnit32());arrayDataThoury.push(thouryUnit33());function returnDataArrayForStr(e){let t="";return Number.isFinite(e)?t="file"+e:t=e,t=arrayDataThoury.find(a=>a.includes(t)),t}function searchLabel(e,t){if(!e)return-1;const a=new RegExp("\\b"+t+"\\b","i"),i=e.match(a);return i?i.index:(console.log("Не удалось найти маркер "+t),-1)}function returnStringHelpForLanguage(e){const t=returnDataArrayForStr(e);if(t==null)return"";let a={ru:searchLabel(t,"ru"),ua:searchLabel(t,"ua"),pl:searchLabel(t,"pl"),en:searchLabel(t,"en"),strLenght:t.length,get start(){return localStorage.getItem("EnglishWithJs_lang")==="ru"?this.ru:localStorage.getItem("EnglishWithJs_lang")==="ua"?this.ua:localStorage.getItem("EnglishWithJs_lang")==="pl"?this.pl:this.en},get finish(){const o=[this.ru,this.ua,this.pl,this.en];o.sort((s,r)=>s-r);let n=o.find(s=>s>this.start);return n==null&&(n=this.strLenght),n}};return t.slice(a.start,a.finish)}function ThouryH2(e="start",t=0){return e==="start"?`<h2 id="thoury-pattern-h2-${t}">`:"</h2>"}function ThouryH3(e="start",t=0){return e==="start"?`<h3 id="thoury-pattern-h3-${t}">`:"</h3>"}function ThouryH4(e="start",t=0){return e==="start"?`<h4 id="thoury-pattern-h4-${t}">`:"</h4>"}function ThouryUl(e="start",t=0){return e==="start"?`<ul id="thoury-pattern-ui-${t}">`:"</ul>"}function ThouryLi(e="start",t=0){return e==="start"?`<li id="thoury-pattern-li-${t}">`:"</li>"}function ThouryDiv(e="start"){return e==="start"?'<div class="thoury-pattern" id="thoury-pattern">':"</div>"}function returnBodyHelpForLanguage(e){let t=returnStringHelpForLanguage(e);if(t=="")return"";let a=t.split(`
+`}function thouryUnit34(){return`
+    file55
+    unit-34
+    ru
+    h2
+WOULD YOU LIKE … ? (Unit 34)
+
+h3
+Would you like … ? используется для вежливых предложений и приглашений.
+Это означает: «Не хотели бы вы…? / Хотите (прямо сейчас)?»
+
+h3
+ФОРМЫ:
+
+ul
+1) Would you like + noun
+   Would you like a coffee?
+   Would you like some help?
+
+ul
+2) Would you like + to + verb
+   Would you like to sit down?
+   Would you like to come with us?
+
+h3
+КРАТКИЕ ОТВЕТЫ:
+
+ul
+Yes, please.
+Yes, I would.
+I’d love to.
+
+ul
+No, thank you.
+I’d rather not.
+
+h3
+ВАЖНО:
+
+ul
+Would you like ≠ Do you like
+
+ul
+Do you like coffee? — тебе вообще нравится кофе?
+Would you like coffee? — хочешь кофе сейчас?
+
+h3
+WOULD YOU LIKE vs WANT:
+
+ul
+Do you want … ? — нейтрально, разговорно
+Would you like … ? — вежливо, стандартно
+
+h3
+ЧАСТЫЕ ОШИБКИ:
+
+ul
+❌ Yes, I like
+✅ Yes, please / Yes, I would
+
+ul
+❌ Would you like go with us?
+✅ Would you like to go with us?
+
+h3
+ФОРМУЛА:
+
+ul
+Would you like + noun
+Would you like + to + verb
+
+
+ua
+h2
+WOULD YOU LIKE … ? (Unit 34)
+
+h3
+Would you like … ? використовується для ввічливих пропозицій і запрошень.
+Це означає: «Чи не хотіли б ви…? / Хочете (прямо зараз)?»
+
+h3
+ФОРМИ:
+
+ul
+1) Would you like + noun
+   Would you like a coffee?
+   Would you like some help?
+
+ul
+2) Would you like + to + verb
+   Would you like to sit down?
+   Would you like to come with us?
+
+h3
+КРОТКІ ВІДПОВІДІ:
+
+ul
+Yes, please.
+Yes, I would.
+I’d love to.
+
+ul
+No, thank you.
+I’d rather not.
+
+h3
+ВАЖЛИВО:
+
+ul
+Would you like ≠ Do you like
+
+ul
+Do you like coffee? — тобі взагалі подобається кава?
+Would you like coffee? — хочеш кави зараз?
+
+h3
+WOULD YOU LIKE vs WANT:
+
+ul
+Do you want … ? — нейтрально, розмовно
+Would you like … ? — ввічливо, стандартно
+
+h3
+ЧАСТІ ПОМИЛКИ:
+
+ul
+❌ Yes, I like
+✅ Yes, please / Yes, I would
+
+ul
+❌ Would you like go with us?
+✅ Would you like to go with us?
+
+h3
+ФОРМУЛА:
+
+ul
+Would you like + noun
+Would you like + to + verb
+
+pl
+h2
+WOULD YOU LIKE … ? (Unit 34)
+
+h3
+Would you like … ? jest używane do uprzejmych propozycji i zaproszeń.
+Oznacza to: „Czy nie chcieliby Państwo…? / Czy chcą Państwo (w tej chwili)?”
+
+h3
+FORMY:
+
+ul
+1) Would you like + noun
+   Would you like a coffee?
+   Would you like some help?
+
+ul
+2) Would you like + to + verb
+   Would you like to sit down?
+   Would you like to come with us?
+
+h3
+KRÓTKIE ODPOWIEDZI:
+
+ul
+Yes, please.
+Yes, I would.
+I’d love to.
+
+ul
+No, thank you.
+I’d rather not.
+
+h3
+WAŻNE:
+
+ul
+Would you like ≠ Do you like
+
+ul
+Do you like coffee? — czy w ogóle lubisz kawę?
+Would you like coffee? — czy chcesz kawy teraz?
+
+h3
+WOULD YOU LIKE vs WANT:
+
+ul
+Do you want … ? — neutralnie, potocznie
+Would you like … ? — uprzejmie, standardowo
+
+h3
+CZĘSTE BŁĘDY:
+
+ul
+❌ Yes, I like
+✅ Yes, please / Yes, I would
+
+ul
+❌ Would you like go with us?
+✅ Would you like to go with us?
+
+h3
+FORMUŁA:
+
+ul
+Would you like + noun
+Would you like + to + verb
+
+
+en
+h2
+WOULD YOU LIKE … ? (Unit 34)
+
+h3
+Would you like … ? is used to make polite offers and invitations.
+It means: “Would you like…? / Do you want (right now)?”
+
+h3
+FORMS:
+
+ul
+1) Would you like + noun
+   Would you like a coffee?
+   Would you like some help?
+
+ul
+2) Would you like + to + verb
+   Would you like to sit down?
+   Would you like to come with us?
+
+h3
+SHORT ANSWERS:
+
+ul
+Yes, please.
+Yes, I would.
+I’d love to.
+
+ul
+No, thank you.
+I’d rather not.
+
+h3
+IMPORTANT:
+
+ul
+Would you like ≠ Do you like
+
+ul
+Do you like coffee? — asks about general preference.
+Would you like coffee? — asks about a choice right now.
+
+h3
+WOULD YOU LIKE vs WANT:
+
+ul
+Do you want … ? — neutral, informal
+Would you like … ? — polite, standard
+
+h3
+COMMON MISTAKES:
+
+ul
+❌ Yes, I like
+✅ Yes, please / Yes, I would
+
+ul
+❌ Would you like go with us?
+✅ Would you like to go with us?
+
+h3
+FORMULA:
+
+ul
+Would you like + noun
+Would you like + to + verb
+
+`}const arrayDataThoury=[];arrayDataThoury.push(thouryUnit1());arrayDataThoury.push(thouryUnit2());arrayDataThoury.push(thouryUnit2_2());arrayDataThoury.push(thouryUnit3());arrayDataThoury.push(thouryUnit4_3());arrayDataThoury.push(thouryUnit4_5());arrayDataThoury.push(thouryUnit4());arrayDataThoury.push(thouryUnit5());arrayDataThoury.push(thouryUnit6());arrayDataThoury.push(thouryUnit7());arrayDataThoury.push(thouryUnit8());arrayDataThoury.push(thouryUnit9());arrayDataThoury.push(thouryUnit10());arrayDataThoury.push(thouryUnit11());arrayDataThoury.push(thouryUnit12());arrayDataThoury.push(thouryUnit13());arrayDataThoury.push(thouryUnit14());arrayDataThoury.push(thouryUnit15());arrayDataThoury.push(thouryUnit16());arrayDataThoury.push(thouryUnit17());arrayDataThoury.push(thouryUnit18());arrayDataThoury.push(thouryUnit19());arrayDataThoury.push(thouryUnit20());arrayDataThoury.push(thouryUnit21());arrayDataThoury.push(thouryUnit22());arrayDataThoury.push(thouryUnit23());arrayDataThoury.push(thouryUnit24());arrayDataThoury.push(thouryUnit25());arrayDataThoury.push(thouryUnit26());arrayDataThoury.push(thouryUnit27());arrayDataThoury.push(thouryUnit28());arrayDataThoury.push(thouryUnit29());arrayDataThoury.push(thouryUnit30());arrayDataThoury.push(thouryUnit31());arrayDataThoury.push(thouryUnit32());arrayDataThoury.push(thouryUnit33());arrayDataThoury.push(thouryUnit34());function returnDataArrayForStr(e){let t="";return Number.isFinite(e)?t="file"+e:t=e,t=arrayDataThoury.find(a=>a.includes(t)),t}function searchLabel(e,t){if(!e)return-1;const a=new RegExp("\\b"+t+"\\b","i"),i=e.match(a);return i?i.index:(console.log("Не удалось найти маркер "+t),-1)}function returnStringHelpForLanguage(e){const t=returnDataArrayForStr(e);if(t==null)return"";let a={ru:searchLabel(t,"ru"),ua:searchLabel(t,"ua"),pl:searchLabel(t,"pl"),en:searchLabel(t,"en"),strLenght:t.length,get start(){return localStorage.getItem("EnglishWithJs_lang")==="ru"?this.ru:localStorage.getItem("EnglishWithJs_lang")==="ua"?this.ua:localStorage.getItem("EnglishWithJs_lang")==="pl"?this.pl:this.en},get finish(){const o=[this.ru,this.ua,this.pl,this.en];o.sort((s,r)=>s-r);let n=o.find(s=>s>this.start);return n==null&&(n=this.strLenght),n}};return t.slice(a.start,a.finish)}function ThouryH2(e="start",t=0){return e==="start"?`<h2 id="thoury-pattern-h2-${t}">`:"</h2>"}function ThouryH3(e="start",t=0){return e==="start"?`<h3 id="thoury-pattern-h3-${t}">`:"</h3>"}function ThouryH4(e="start",t=0){return e==="start"?`<h4 id="thoury-pattern-h4-${t}">`:"</h4>"}function ThouryUl(e="start",t=0){return e==="start"?`<ul id="thoury-pattern-ui-${t}">`:"</ul>"}function ThouryLi(e="start",t=0){return e==="start"?`<li id="thoury-pattern-li-${t}">`:"</li>"}function ThouryDiv(e="start"){return e==="start"?'<div class="thoury-pattern" id="thoury-pattern">':"</div>"}function returnBodyHelpForLanguage(e){let t=returnStringHelpForLanguage(e);if(t=="")return"";let a=t.split(`
 `),i="",o="",n="",s=0;for(let r of a){if(s++,r.trim()==""&&n!==""){o=="h2"&&(n=ThouryH2("start",s)+n+ThouryH2(""),i=i+n+"<hr>"),o=="ul"&&(n=ThouryUl("start",s)+n+ThouryUl(""),i=i+n),o=="h3"&&(n=ThouryH3("start",s)+n+ThouryH3(""),i=i+n),o=="h4"&&(n=ThouryH4("start",s)+n+ThouryH4(""),i=i+n),o="",n="";continue}if(r.trim().split(/\s+/).includes("h2")){o="h2";continue}if(r.trim().split(/\s+/).includes("h3")){o="h3";continue}if(r.trim().split(/\s+/).includes("h4")){o="h4";continue}if(r.trim().split(/\s+/).includes("ul")){o="ul";continue}(o=="h4"||o=="h3"||o=="h2"||o=="ul")&&((o=="h4"||o=="h3"||o=="h2"||o=="P")&&(n+=r+"<br>"),o=="ul"&&(n+=ThouryLi("start",s)+r+ThouryLi("")))}return ThouryDiv()+i+ThouryDiv("")}function getBodyThoury(e){let t=returnBodyHelpForLanguage(e.level);return t==""?e.translate.translate("Просто учим слова"):t}class Thoury{static translate=new LanguageController;static idForButtonClosed="button-for-get-work-place";static handleThoury(t){this.level=t;const a=this;this.strLocal=getWorkPlace(this.bodyThoury(),this.idForButtonClosed),DataSet.renderThoury||(document.getElementById("level30").addEventListener("click",function(){renderThoury.call(a)}),DataSet.renderThoury=!0)}static bodyThoury(){return getBodyThoury(this)}}function is_notWord(e){const t=e?.[0];return t?t.includes("/")||t.includes("...")||t.includes("…")||t.includes("___"):!1}is_notWord.help=`
 Функция - дубликат только возвращает true, если в текущем подмассиве
 работаем с пропущенным словом
