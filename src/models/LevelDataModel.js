@@ -56,7 +56,7 @@ export class LevelDataModel
     // на кнопке навигационного меню
     arrayNameButton()
     {
-        for (let i=1; i<24; i++) {
+        for (let i=1; i<25; i++) {
             this.propertyArrayNameButton.push(setStatisticForButton(i));
         }
 
@@ -86,7 +86,7 @@ export class LevelDataModel
                                 1,2,1,4,4,4,4,4,3,3,
                                 1,1,2,1,1,2,1,1,1,1,
                                 2,1,1,1,6,6,6,6,6,6,
-                                6,6,6,6,6];
+                                6,6,6,6,6,6];
 
         return arrayForButton[test];
     }
@@ -163,6 +163,7 @@ export class LevelDataModel
         this.selectLevel('Выбрать правильную пару.','unit32',53);
         this.selectLevel('Выбрать правильную пару.','unit33',54);
         this.selectLevel('Выбрать правильную пару.','unit34',55);
+        this.selectLevel('Выбрать правильную пару.','unit35',56);
 
         return this.rez;
     }
