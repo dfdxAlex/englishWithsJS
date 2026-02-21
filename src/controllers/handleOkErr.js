@@ -51,6 +51,7 @@ export function handleOkErr(str, event) {
     let ticTime = parseFloat(localStorage.getItem('level'+level+'_'+str));
     if (!Number.isFinite(ticTime)) ticTime = 0;
     let tic = ticTime;
+    
 
     // объект с разными данными для подсчёта бонусов
     const propertyForBonus = {

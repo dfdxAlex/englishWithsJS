@@ -24,7 +24,7 @@ export class MenuController
 
         // подпункт units 1-23
         const menu = new MenuRight(this.levelDataModel.getArrayNameButton());
-        console.log(this.levelDataModel.getArrayNameButton()[31]);
+        // console.log(this.levelDataModel.getArrayNameButton()[30]);
 
         // подпункт units 24-
         const menu5 = new MenuRight2(this.levelDataModel.getArrayNameButton());
