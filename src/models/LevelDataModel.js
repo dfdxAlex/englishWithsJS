@@ -56,9 +56,10 @@ export class LevelDataModel
     // на кнопке навигационного меню
     arrayNameButton()
     {
-        for (let i=1; i<25; i++) {
+        for (let i=2; i<25; i++) {
             this.propertyArrayNameButton.push(setStatisticForButton(i));
         }
+        // console.log(this.propertyArrayNameButton);
 
         this.propertyArrayNameButton.push(this.translate.translate('Собрано алмазов:'));// пункт 4
         this.propertyArrayNameButton.push(this.translate.translate('Ошибок:'));// пункт 4
@@ -68,7 +69,8 @@ export class LevelDataModel
         this.propertyArrayNameButton.push('');//Задание теста:'));// пункт 3
         this.propertyArrayNameButton.push('');/// пункт 3
 
-        for (let i=31; i<56; i++) {
+        for (let i=31; i<57; i++) {
+
             this.propertyArrayNameButton.push(setStatisticForButton(i));
         }
 

@@ -1,5 +1,4 @@
 import { getRandomInt } from '../../../services/getRandomInt.js';
-// import { is_notWord } from '../../../view/WorkingField/is_notWord.js';
 import { detectPlaceholder } from '../../../view/WorkingField/detectPlaceholder.js';
 
 export function searchIndex234(arrayLocal, index, timeArray, marker)

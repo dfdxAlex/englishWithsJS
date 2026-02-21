@@ -661,11 +661,11 @@ const unit35 = [
   ],
 ];
 
-console.log(unit35.length);
+// console.log(unit35.length);
 unit35.push(...extending(unit35, "Don't ", "Do not "));
 unit35.push(...extending(unit35, "don't ", "do not "));
 unit35.push(...extending(unit35, "Let's ", "Let us "));
-console.log(unit35.length);
+// console.log(unit35.length);
 
 // Если это свойство есть, то оно попадает в заголовок теста
 unit35.nameLeson = "Do This";
