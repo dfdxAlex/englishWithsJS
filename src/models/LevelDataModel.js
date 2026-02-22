@@ -73,7 +73,7 @@ export class LevelDataModel
         this.propertyArrayNameButton.push('');//Задание теста:'));// пункт 3
         this.propertyArrayNameButton.push('');/// пункт 3
 
-        for (let i=31; i<56; i++) {
+        for (let i=31; i<57; i++) {
 
             this.propertyArrayNameButton.push(setStatisticForButton(i));
         }
