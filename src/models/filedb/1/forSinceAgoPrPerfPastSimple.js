@@ -1,4 +1,3 @@
-import { extendForArray } from '../extendForArray.js';
 import { replaceEllipsisWithWord } from '../../replaceEllipsisWithWord.js';
 
 export const forSinceAgoPrPerfPastSimple = [
@@ -118,6 +117,4 @@ export const forSinceAgoPrPerfPastSimple = [
     // созданными предложениями.
     forSinceAgoPrPerfPastSimple.lengthTrue = 2;
 
-    // расширение числа подмассивов за счёт замены местами нулевого и первого индекса
-    // forSinceAgoPrPerfPastSimple.push(...extendForArray(forSinceAgoPrPerfPastSimple));
   
