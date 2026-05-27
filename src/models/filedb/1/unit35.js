@@ -529,16 +529,16 @@ const unit35 = [
     "Ти ненавидиш холодні дзвінки в продажах. Не роби цього: не дзвони без короткого персоналізованого вступу, дослідженого в LinkedIn. Загальні скрипти відразу кидають трубку.",
     "Nienawidzisz zimnych telefonów w sprzedaży. Nie rób tego: nie dzwoń bez krótkiego spersonalizowanego wstępu sprawdzonego na LinkedIn. Generyczne skrypty od razu kończą się odłożeniem słuchawki."
   ],
-  [
-    "Your focus is shot during deep work sessions. Let's do this: use the Pomodoro timer but with 25 minutes work + 5 minutes stretch/walk instead of phone. Physical movement resets attention better than scrolling.",
-    "Replacing phone breaks with movement resets focus more effectively.",
-    "Phone breaks during Pomodoro are essential for mental health.",
-    "Work 4 hours straight without any breaks at all.",
-    "Listen to true crime podcasts while working — it helps concentration.",
-    "Твоя концентрация пропадает во время глубокой работы. Давай сделаем это: используй таймер Помодоро, но 25 минут работы + 5 минут растяжки/прогулки вместо телефона. Физическое движение лучше перезагружает внимание, чем скроллинг.",
-    "Твоя концентрація пропадає під час глибокої роботи. Давай зробимо це: використовуй таймер Помодоро, але 25 хвилин роботи + 5 хвилин розтяжки/прогулянки замість телефону. Фізичний рух краще перезавантажує увагу, ніж скролінг.",
-    "Twoja koncentracja siada podczas głębokiej pracy. Zróbmy to: używaj timera Pomodoro, ale 25 minut pracy + 5 minut rozciągania/spaceru zamiast telefonu. Ruch fizyczny lepiej resetuje uwagę niż scrollowanie."
-  ],
+[
+  "Your focus is shot during deep work sessions. Let's do this: use the Pomodoro timer but with 25 minutes work + 5 minutes stretch/walk instead of phone. Physical movement resets attention better than scrolling.",
+  "Yes, replacing phone breaks with movement resets focus more effectively during deep work sessions.",
+  "Phone breaks during Pomodoro are essential for mental health.",
+  "Work 4 hours straight without any breaks at all.",
+  "Listen to true crime podcasts while working — it helps concentration.",
+  "Твоя концентрация пропадает во время глубокой работы. Давай сделаем это: используй таймер Помодоро, но 25 минут работы + 5 минут растяжки/прогулки вместо телефона. Физическое движение лучше перезагружает внимание, чем скроллинг.",
+  "Твоя концентрація пропадає під час глибокої роботи. Давай зробимо це: використовуй таймер Помодоро, але 25 хвилин роботи + 5 хвилин розтяжки/прогулянки замість телефону. Фізичний рух краще перезавантажує увагу, ніж скролінг.",
+  "Twoja koncentracja siada podczas głębokiej pracy. Zróbmy to: używaj timera Pomodoro, ale 25 minut pracy + 5 minut rozciągania/spaceru zamiast telefonu. Ruch fizyczny lepiej resetuje uwagę niż scrollowanie."
+],
   [
     "You're gaining weight despite 'eating healthy'. Don't do that: don't ignore portion sizes even of good foods. Nuts, olive oil and avocados are calorie-dense — track them for a week.",
     "Tracking portions of calorie-dense healthy foods reveals hidden calories.",
