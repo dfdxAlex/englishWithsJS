@@ -107,7 +107,7 @@ was/were → законченное прошлое
 has/have been → прошлое, связанное с настоящим
 will be → будущее
 
-h2
+ua
 h2
 Правило: Конструкція "There + to be" в різних часах
 
@@ -197,7 +197,7 @@ has/have been → минуле, пов’язане з теперішнім
 will be → майбутнє
 
 pl
-    h2
+h2
 Zasada: Konstrukcja "There + to be" w różnych czasach
 
 h3
