@@ -60,7 +60,7 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
             randomEl = 1;
         }
 
-        console.log("randomEl", randomEl);
+        // console.log("randomEl", randomEl);
         
         // Если работает цикл с новым вопросом, то сгенерировать
         // новый номер вопроса
