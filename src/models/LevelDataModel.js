@@ -44,7 +44,9 @@ export class LevelDataModel
         this.rez = false;
         this.ex = new Exercise();
         this.translate = new LanguageController();
-        this.lang = localStorage.getItem('EnglishWithJs_lang');
+        this.lang = localStorage.getItem('EnglishWithJs_lang') || 'ru';
+        localStorage.setItem('EnglishWithJs_lang', this.lang)
+        // console.log(localStorage.getItem('EnglishWithJs_lang'));
         this.propertyArrayNameButton = [];
         this.tic = 0;
         // опережающий запуск формирования массива для меню верхнего
@@ -174,6 +176,7 @@ export class LevelDataModel
         this.selectLevel('Выбрать правильную пару.','unit37',58);
         this.selectLevel('Выбрать правильную пару.','unit38',59);
 
+        console.log(this.rez);
         return this.rez;
     }
 

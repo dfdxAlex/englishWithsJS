@@ -54,7 +54,13 @@ export const handleLevelX = (dataObj, constIndexArray = false) =>
     
         // Взять значение индекса текущего вопросса из локального хранилища
         // Используется как дефолтное значение
-        let randomEl = localStorage.getItem('randomEl');
+        let randomEl = Number(localStorage.getItem('randomEl'));
+
+        if (Number.isNaN(randomEl)) {
+            randomEl = 1;
+        }
+
+        console.log("randomEl", randomEl);
         
         // Если работает цикл с новым вопросом, то сгенерировать
         // новый номер вопроса
