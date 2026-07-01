@@ -13,7 +13,7 @@ export function extendOne()
     } else {
         localStorage.setItem('extend1', 'ok');
         delElToDinamicMenu('extend-1');
-        addElToDinamicMenu('🤖','extend-1','extend-1');
+        addElToDinamicMenu("<img src='css/images/ex1.png' style='width:27px;height:27px;'>",'extend-1','extend-1');
         setEventAsync(extendOne, 'click', 'extend-1');
     }
 }

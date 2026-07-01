@@ -8,7 +8,8 @@ export function addElToDinamicMenu(str, className, idName)
           if (signal) {
            const box = document.createElement('span');
            box.id = idName;
-           box.textContent = str;
+        //    box.textContent = str;
+           box.innerHTML = str;
            box.className = className;
            signal.appendChild(box);
           } 
