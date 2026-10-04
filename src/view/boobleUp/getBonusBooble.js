@@ -1,11 +1,10 @@
-import { SettingForProgram } from '../../models/SettingForProgram.js';
 
-export function getBonusBooble()
+export function getBonusBooble(diamant)
 {
     
-    if (SettingForProgram.diamant === '-1' || SettingForProgram.diamant === '0') {
+    if (diamant === '-1' || diamant === '0') {
         return '';
     }
 
-    return `<span class="score">${SettingForProgram.diamant}</span>`;
+    return `<span class="score">${diamant}</span>`;
 }

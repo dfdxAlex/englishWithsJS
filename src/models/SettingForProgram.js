@@ -25,10 +25,13 @@ export class SettingForProgram
 
     // ********* инфа для пузырьков
     // В эти переменные попадает стартовая координата для пузырька, определяется по клику
-    static buttonCheckX;
-    static buttonCheckY;
     // хранит число выбитых диамантов
-    static diamant;
+    static forBooble = {
+        buttonCheckX:0,
+        buttonCheckY:0,
+        diamant:0
+    }
+    
     // хранит дубликат стартовых координат для сравнения
     static buttonCheckXStart;
     static buttonCheckYStart;

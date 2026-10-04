@@ -16,13 +16,13 @@ export function calculateBonusMultiplier(propertyForBonus)
             localStorage.setItem('was_click_help','false');
             // поместить инфу в статическую переменную для использования
             // в остальной части кода.
-            SettingForProgram.diamant = "0";
+            SettingForProgram.forBooble.diamant = "0";
             return 0;
         }
 
     // Если в тесте Symple-Translate была нажата подсказка то обнулить бонус
     if (isClickTranslate() && SettingForProgram.selectTypeTest === 'simple-translate') {
-        SettingForProgram.diamant = "0";
+        SettingForProgram.forBooble.diamant = "0";
         return 0;
     }
 
@@ -40,7 +40,7 @@ export function calculateBonusMultiplier(propertyForBonus)
     if (str === "Error") {
         // поместить инфу в статическую переменную для использования
         // в остальной части кода.
-            SettingForProgram.diamant = "-1";
+            SettingForProgram.forBooble.diamant = "-1";
         return 1;
     }
 
@@ -158,7 +158,7 @@ export function calculateBonusMultiplier(propertyForBonus)
 
     // поместить инфу в статическую переменную для использования
     // в остальной части кода.
-    SettingForProgram.diamant = ticLocal.toFixed(2);
+    SettingForProgram.forBooble.diamant = ticLocal.toFixed(2);
 
     return ticLocal;
 }

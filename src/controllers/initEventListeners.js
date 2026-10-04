@@ -15,6 +15,7 @@ import { handleSearchError } from './handleSearchError.js';
 import { htmlHelp } from '../view/htmlHelp.js';
 import { SettingForProgram } from '../models/SettingForProgram.js';
 import { addElToDinamicMenu } from '../view/addElToDinamicMenu.js';
+import { BoobleUpController } from './BoobleUpController.js';
 
 // Здесь функции, которые должны отработать когда загрузится статическая страница
 window.addEventListener('load', () => {
@@ -61,7 +62,10 @@ window.addEventListener('load', () => {
 
     // функция отслеживает инфу по ответам и запускает процесс
     // всплытия кристала, шапки или черепа
-    boobleUp();
+    // boobleUp();
+    const boobleUpController = new BoobleUpController({SettingForProgram});
+    boobleUpController.init();
+
 
     // Достать из регистра объект переводчика
     resetBottonError();
