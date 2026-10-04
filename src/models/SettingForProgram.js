@@ -29,7 +29,8 @@ export class SettingForProgram
     static forBooble = {
         buttonCheckX:0,
         buttonCheckY:0,
-        diamant:0
+        diamant:0,
+        correctStreak:0
     }
     
     // хранит дубликат стартовых координат для сравнения
