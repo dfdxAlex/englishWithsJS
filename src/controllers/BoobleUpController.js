@@ -13,6 +13,7 @@ import { createBoxScarb } from '../view/boobleUp/createBoxScarb.js';
 import { createBoxForInfoBonus } from '../view/boobleUp/createBoxForInfoBonus.js';
 
 import { removeBonusBox } from '../view/boobleUp/removeBonusBox.js';
+import { createBonusLevel } from '../view/boobleUp/createBonusLevel.js';
 
 
 export class BoobleUpController
@@ -29,7 +30,7 @@ export class BoobleUpController
             const ANIMATION_INTERVAL = 12;
             const RANDOM_SHIFT_DELAY = 16;
 
-            let bonus_random_max = 9;
+            // let bonus_random_max = 9;
 
             let randomInt = undefined;
 
@@ -88,8 +89,11 @@ export class BoobleUpController
                         // тут считаем число баллов заработанных. если ошибка то сброс в ноль
                         this.boobleUpModel.correctStreak();
 
+                        // вставить шкалу процента заполнения текущего уровня
+                        createBonusLevel(this.boobleUpModel.bonusPercent());
 
-                        console.log(this.boobleUpModel.bonusRandomMax());
+
+                        // console.log(this.boobleUpModel.bonusRandomMax());
                         randomInt = getRandom(0, this.boobleUpModel.bonusRandomMax());
                         if (randomInt == 1) randomOk = true;
                     //    randomOk = true; // если раскомментировать, то ящик падает всегда

@@ -1,0 +1,19 @@
+.level-create-bonus-level {
+    --level: 75%;
+
+    display: inline-block;
+    position: relative;
+    width: 6px;
+    height: 1em;
+    background: #ddd;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: var(--level);
+        background: var(--level-color);
+    }
+}

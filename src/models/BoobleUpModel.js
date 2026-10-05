@@ -8,8 +8,8 @@ export class BoobleUpModel {
     correctStreak () {
         let correctStreak = this.forBooble.correctStreak * 1;
         let diamant = this.forBooble.diamant * 1;
-        if (this.forBooble.diamant > 0) correctStreak+=diamant;
-        if (this.forBooble.diamant < 0) this.forBooble.correctStreak = 0;
+        if (diamant > 0) correctStreak+=diamant;
+        if (diamant < 0) correctStreak = 0;
         this.forBooble.correctStreak = correctStreak;
     }
 
@@ -25,5 +25,53 @@ export class BoobleUpModel {
         }
         return 9;
     }
+
+bonusPercent() {
+    const correctStreak = Number(this.forBooble.correctStreak);
+
+    switch (true) {
+        case correctStreak > 600:
+            return {
+                percent: Math.round(correctStreak * 100 / 1200),
+                color: '#00ff00'
+            };
+
+        case correctStreak > 300:
+            return {
+                percent: Math.round(correctStreak * 100 / 600),
+                color: '#22ee22'
+            };
+
+        case correctStreak > 150:
+            return {
+                percent: Math.round(correctStreak * 100 / 300),
+                color: '#44dd44'
+            };
+
+        case correctStreak > 70:
+            return {
+                percent: Math.round(correctStreak * 100 / 150),
+                color: '#66cc66'
+            };
+
+        case correctStreak > 30:
+            return {
+                percent: Math.round(correctStreak * 100 / 70),
+                color: '#88bb88'
+            };
+
+        case correctStreak > 10:
+            return {
+                percent: Math.round(correctStreak * 100 / 30),
+                color: '#aaccaa'
+            };
+
+        default:
+            return {
+                percent: Math.round(correctStreak * 100 / 10),
+                color: '#ccffcc'
+            };
+    }
+}
 
 }
