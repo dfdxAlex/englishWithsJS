@@ -28,6 +28,8 @@ import { resetStatistic } from '../models/resetStatistic.js';
 import { handleClickError } from './handleClickError.js';
 import { resetBottonError } from './resetBottonError.js';
 import { buttonOkBlockNoon } from './handleButtonOk/buttonOkBlockNoon.js';
+// import { BoobleUpView } from '../view/boobleUp/BoobleUpView.js';
+// import { BoobleUpModel } from '../models/BoobleUpModel.js';
 
 export function handleOkErr(str, event) {
     // выйти из функции если падает бонусный ящик
@@ -35,9 +37,14 @@ export function handleOkErr(str, event) {
         return;
     }
 
+    // const boobleUpView = new BoobleUpView();
+    // const boobleUpModel = new BoobleUpModel({SettingForProgram});
     // Сохранить координаты места клика по кнопке Проверить
     SettingForProgram.forBooble.buttonCheckX = event.pageX;
     SettingForProgram.forBooble.buttonCheckY = event.pageY;
+    // вставить шкалу процента заполнения текущего уровня
+    // boobleUpView.createBonusLevel(boobleUpModel.bonusPercent());
+
     // Переменные, в которых хранится инфа об верных и не верных 
     // ответак создается так: 
     // слово "level", к нему добавляется уровень, на котором

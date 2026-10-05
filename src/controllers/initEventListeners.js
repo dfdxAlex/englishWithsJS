@@ -9,7 +9,6 @@ import { activationMenuSetting } from './activationMenuSetting.js';
 import { DataSet } from '../services/data/DataSet.js';
 import { nav } from '../view/nav.js';
 import { MenuController } from './MenuController.js';
-import { boobleUp } from '../view/boobleUp.js';
 import { resetBottonError } from './resetBottonError.js';
 import { handleSearchError } from './handleSearchError.js';
 import { htmlHelp } from '../view/htmlHelp.js';
@@ -17,6 +16,7 @@ import { SettingForProgram } from '../models/SettingForProgram.js';
 import { addElToDinamicMenu } from '../view/addElToDinamicMenu.js';
 import { BoobleUpController } from './BoobleUpController.js';
 import { BoobleUpModel } from '../models/BoobleUpModel.js';
+import { BoobleUpView } from '../view/boobleUp/BoobleUpView.js';
 
 // Здесь функции, которые должны отработать когда загрузится статическая страница
 window.addEventListener('load', () => {
@@ -66,7 +66,9 @@ window.addEventListener('load', () => {
     // boobleUp();
     const boobleUpModel = new BoobleUpModel({SettingForProgram});
 
-    const boobleUpController = new BoobleUpController({SettingForProgram, boobleUpModel});
+    const boobleUpView = new BoobleUpView();
+
+    const boobleUpController = new BoobleUpController({SettingForProgram, boobleUpModel, boobleUpView});
     boobleUpController.init();
 
 

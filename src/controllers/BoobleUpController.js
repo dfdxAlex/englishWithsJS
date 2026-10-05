@@ -1,5 +1,4 @@
 // контроллер для всплывающих кристалов
-// после теста удалить модуль boobleUp();
 
 // Функция контролирует процесс всплытия кристала и падение ящика
 // Цикл работает всегда, управление пузырями производится через изменение координат у адпления кристалов
@@ -7,30 +6,24 @@
 import { removeBonusDiamant } from '../view/boobleUp/removeBonusDiamant.js';
 import { getRandom } from '../services/getRandom.js';
 import { getNumberRand } from '../view/boobleUp/getNumberRand.js';
-import { setBoobleUp } from '../view/boobleUp/setBoobleUp.js';
 import { createDiamandX2 } from '../view/boobleUp/createDiamandX2.js';
 import { createBoxScarb } from '../view/boobleUp/createBoxScarb.js';
 import { createBoxForInfoBonus } from '../view/boobleUp/createBoxForInfoBonus.js';
 
-import { removeBonusBox } from '../view/boobleUp/removeBonusBox.js';
-import { createBonusLevel } from '../view/boobleUp/createBonusLevel.js';
-
-
 export class BoobleUpController
 {
-    constructor({SettingForProgram, boobleUpModel}) {
+    constructor({SettingForProgram, boobleUpModel, boobleUpView}) {
         this.settingForProgram = SettingForProgram;
         this.forBooble = SettingForProgram.forBooble;
 
         this.boobleUpModel = boobleUpModel;
+        this.boobleUpView = boobleUpView;
     }
 
     init() {
             const BOOBLE_FINISH_Y = 50;
             const ANIMATION_INTERVAL = 12;
             const RANDOM_SHIFT_DELAY = 16;
-
-            // let bonus_random_max = 9;
 
             let randomInt = undefined;
 
@@ -76,9 +69,9 @@ export class BoobleUpController
                     // Нарисовать картинку пузыря, если ее ещё нет, алмаз, шапка или череп
                     if (!selectBoobleUp) {
                         //если падал бонусный сундук то удалить его
-                        removeBonusBox();
+                        this.boobleUpView.removeBonusBox();
                         //создать контейнер с кристалом
-                        setBoobleUp(this.forBooble.diamant, divCreate);
+                        this.boobleUpView.setBoobleUp(this.forBooble.diamant, divCreate);
                     }
         
                     // сундук с сокровищами, одна попытка создать его. сброс попытки при окончании
@@ -90,7 +83,7 @@ export class BoobleUpController
                         this.boobleUpModel.correctStreak();
 
                         // вставить шкалу процента заполнения текущего уровня
-                        createBonusLevel(this.boobleUpModel.bonusPercent());
+                        this.boobleUpView.createBonusLevel(this.boobleUpModel.bonusPercent());
 
 
                         // console.log(this.boobleUpModel.bonusRandomMax());
