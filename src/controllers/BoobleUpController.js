@@ -78,16 +78,8 @@ export class BoobleUpController
                     // всплытия кристала
                     // прикомандировка сюда счётчика правильных ответов подряд
                     if (divCreateForBonusBox === undefined && randomInt === undefined) {
-
-                        // тут считаем число баллов заработанных. если ошибка то сброс в ноль
-                        this.boobleUpModel.correctStreak();
-
-                        // вставить шкалу процента заполнения текущего уровня
-                        this.boobleUpView.createBonusLevel(this.boobleUpModel.bonusPercent());
-
-
-                        // console.log(this.boobleUpModel.bonusRandomMax());
                         randomInt = getRandom(0, this.boobleUpModel.bonusRandomMax());
+                        
                         if (randomInt == 1) randomOk = true;
                     //    randomOk = true; // если раскомментировать, то ящик падает всегда
                         if (randomOk) {
