@@ -6,6 +6,7 @@ import { SettingForProgram } from './SettingForProgram.js';
 import { isClickTranslate } from './calculateBonusMultiplier/isClickTranslate.js';
 import { calculateMedian } from './calculateBonusMultiplier/calculateMedian.js';
 import { DataOk } from '../services/data/DataOk.js';
+import { BoobleUpModel } from '../models/BoobleUpModel.js';
 
 export function calculateBonusMultiplier(propertyForBonus)
 {
@@ -147,6 +148,10 @@ export function calculateBonusMultiplier(propertyForBonus)
 
     if (ticLocal < 0.4) ticLocal = 0.4;
  
+    // добавить коррекция по числу правильных подряд ответов
+    const boobleUpModel = new BoobleUpModel({SettingForProgram});
+    ticLocal = Number(boobleUpModel.bonusPercent().koefForBonus * ticLocal);
+
     log.ticLocalRezult = ticLocal;
     
     
