@@ -140,7 +140,7 @@ export class BoobleUpController
                     hightOld = undefined;
                     divCreateForBonusBox = undefined;
                     randomInt = undefined;
-                    animation_Interval = 15;
+                    animation_Interval = 8;
                }
            }, animation_Interval);
     }
