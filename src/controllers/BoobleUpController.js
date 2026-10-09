@@ -25,6 +25,10 @@ export class BoobleUpController
             const ANIMATION_INTERVAL = 12;
             const RANDOM_SHIFT_DELAY = 16;
 
+            // работа с шириной екрана
+            const screenWidth = window.innerWidth;
+            const crystalWidth = 30;
+
             let randomInt = undefined;
 
             // постоянная часть для всплывающего шарика
@@ -63,6 +67,10 @@ export class BoobleUpController
         
                     // Изменение координаты влево-вправо.
                     this.forBooble.buttonCheckX+=numberRand;
+                    this.forBooble.buttonCheckX = Math.max(
+                        0,
+                        Math.min(this.forBooble.buttonCheckX, screenWidth - crystalWidth)
+                    );
                     divCreate.style.left = this.forBooble.buttonCheckX + "px"; // Начальная позиция
                     divCreate.style.top = this.forBooble.buttonCheckY + "px";
             

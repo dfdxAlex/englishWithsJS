@@ -17,13 +17,13 @@ export function calculateBonusMultiplier(propertyForBonus)
             localStorage.setItem('was_click_help','false');
             // поместить инфу в статическую переменную для использования
             // в остальной части кода.
-            SettingForProgram.forBooble.diamant = "0";
+            SettingForProgram.forBooble.diamant = 0;
             return 0;
         }
 
     // Если в тесте Symple-Translate была нажата подсказка то обнулить бонус
     if (isClickTranslate() && SettingForProgram.selectTypeTest === 'simple-translate') {
-        SettingForProgram.forBooble.diamant = "0";
+        SettingForProgram.forBooble.diamant = 0;
         return 0;
     }
 
@@ -31,38 +31,26 @@ export function calculateBonusMultiplier(propertyForBonus)
     // упрощения кода
     let {str, level, log:logView} = propertyForBonus;
 
-    // объект для логов
-    const log = {};
-    log.propertyForBonus_input = propertyForBonus; //logs
-    log.levelTest = level;
-
     // На случай если произошел ошибочный ответ, то вернуть 1
     // Штрафы оставляю на будущее
     if (str === "Error") {
         // поместить инфу в статическую переменную для использования
         // в остальной части кода.
-            SettingForProgram.forBooble.diamant = "-1";
+            SettingForProgram.forBooble.diamant = -1;
         return 1;
     }
 
-    // вычислить нахождение числа ошибок
-    log.errorName = DataOk.levelNameError;
-    
     // Узнать число правильных и не правильных ответов
     const {ok, error} = DataOk;
-    log.ok = ok;
-    log.error = error;
 
     // Узнать число существующих тестов
     const levelDataModel = new LevelDataModel([DataOk.level.int]);
     const numberTest = levelDataModel.getArrayNameButton().length;
-    log.numberTest = numberTest;
 
     // для третьего бонуса
     // Массив с пунктами меню, нужен просто для обхода всех сохраненных 
     // данных касательно пройденных тестов. 
     const arrayNumberTest = levelDataModel.getArrayNameButton();
-    log.arrayNumberTest = arrayNumberTest;
 
     // Стартовое значение коэффициента
     let ticLocal=1;
@@ -72,12 +60,10 @@ export function calculateBonusMultiplier(propertyForBonus)
     let bonusOne;
     if (error > 0 || ok > 0) bonusOne = ok / (error + ok);
     if (error == 0 && ok == 0) bonusOne = 1;
-    log.bonusOne = bonusOne;
 
     // Второй бонус, попытка настройть раздачу балов в зависимости
     // от сложности. Сложным считается последний тест.
     const bonusTwo = level / numberTest;
-    log.bonusTwo = bonusTwo;
 
     // Третий бонус - самые малопройденные тесты дают больше баллов
     // Плюс создать массив с цифрами, сколько есть данных по числу
@@ -95,20 +81,14 @@ export function calculateBonusMultiplier(propertyForBonus)
     let maxError = Math.max(...testsError);
 
     if (maxError === maxOk) maxError+=1;
-    log.maxError = maxError;
-    log.testsOk = testsOk;
     // сбор информации в статический класс
     SettingForProgram.testsOk = testsOk;
     SettingForProgram.testsError = testsError;
     //******************************
-    log.maxOk = maxOk;
-    log.testsError = testsError;
 
     let bonusThree = (1 - (ok + error)/(maxOk+maxError));
     if (isNaN(bonusThree)) bonusThree = 1;
-    log.bonusThree = bonusThree;
 
-    log.calculateMedian = calculateMedian(testsOk);
     // Бонус пробует определить на сколько равномерно пройдены все тесты
     let diferent;
     // Если число пройденных тестов 0 и медианное среднее 0, 
@@ -122,10 +102,8 @@ export function calculateBonusMultiplier(propertyForBonus)
 
     let bonusFour = diferent;
     if (isNaN(bonusFour)) bonusFour = 1;
-    log.bonusFour = bonusFour;
 
     ticLocal = (bonusOne + bonusTwo + bonusThree + bonusFour)/4;
-    log.ticLocalFull = ticLocal;
 
     // Цена положительного ответа при коэф.=1 для первого теста
     let koefForTypeTest = 3;
@@ -151,15 +129,6 @@ export function calculateBonusMultiplier(propertyForBonus)
     // добавить коррекция по числу правильных подряд ответов
     const boobleUpModel = new BoobleUpModel({SettingForProgram});
     ticLocal = Number(boobleUpModel.bonusPercent().koefForBonus * ticLocal);
-
-    log.ticLocalRezult = ticLocal;
-    
-    
-    if (logView) {
-        console.log('---calculateBonusMultiplier---');
-        console.log(log);
-        console.log('***************************');
-    }
 
     // поместить инфу в статическую переменную для использования
     // в остальной части кода.
