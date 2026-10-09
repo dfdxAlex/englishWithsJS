@@ -25,9 +25,10 @@ export class BoobleUpController
             const ANIMATION_INTERVAL = 12;
             const RANDOM_SHIFT_DELAY = 16;
 
-            // работа с шириной екрана
+            // работа с шириной екрана, отскок от правой стороны екрана
             const screenWidth = window.innerWidth;
             const crystalWidth = 60;
+            const BOOBLE_MARGIN = 10;
 
             let randomInt = undefined;
 
@@ -68,7 +69,7 @@ export class BoobleUpController
                     // Изменение координаты влево-вправо.
                     this.forBooble.buttonCheckX+=numberRand;
                     this.forBooble.buttonCheckX = Math.max(
-                        0,
+                        BOOBLE_MARGIN,
                         Math.min(this.forBooble.buttonCheckX, screenWidth - crystalWidth)
                     );
                     divCreate.style.left = this.forBooble.buttonCheckX + "px"; // Начальная позиция
