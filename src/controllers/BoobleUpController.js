@@ -22,8 +22,9 @@ export class BoobleUpController
 
     init() {
             const BOOBLE_FINISH_Y = 50;
-            let animation_Interval = 8;
+            let ANIMATION_INTERVAL = 12;
             const RANDOM_SHIFT_DELAY = 16;
+            let speedY = 2;
 
             // работа с шириной екрана, отскок от правой стороны екрана
             const screenWidth = window.innerWidth;
@@ -92,8 +93,9 @@ export class BoobleUpController
                         if (randomInt == 1) randomOk = true;
                     //    randomOk = true; // если раскомментировать, то ящик падает всегда
                         if (randomOk) {
-                            // если выпал ящик, то замедлить выполнение цикла пока он не пролетит
-                            animation_Interval = 15;
+
+                            // если выпал ящик, то замедлить всплытие кристала
+                            speedY = 1;
 
                             // создать бонусный ящик и накинуть событие клика
                             createBoxScarb();
@@ -111,13 +113,13 @@ export class BoobleUpController
                         divCreateForBonusBox.style.top = buttonCheckYStart - this.forBooble.buttonCheckY + "px";
                     }
                     // Скорость всплытия
-                    this.forBooble.buttonCheckY-=1;
+                    this.forBooble.buttonCheckY-=speedY;
             
                     // Пока пузырь нормально летит вверх его координата Y предыдущая на 1 больше новой
                     // Если приходит новый ответ раньше, чем пузырь долетел до верха, то его координата
                     // изменяется и перестает отличаться на 1 балл
                     // Для ресета картинки удаляем старый пузырь и система автоматически сгенерирует новый
-                    if (this.forBooble.buttonCheckY - hightOld !== -1) {
+                    if (this.forBooble.buttonCheckY - hightOld !== -speedY) {
                         if (selectBoobleUp) {
                             selectBoobleUp.remove();
                         }
@@ -140,8 +142,8 @@ export class BoobleUpController
                     hightOld = undefined;
                     divCreateForBonusBox = undefined;
                     randomInt = undefined;
-                    animation_Interval = 8;
+                    speedY = 2;
                }
-           }, animation_Interval);
+           }, ANIMATION_INTERVAL);
     }
 }
