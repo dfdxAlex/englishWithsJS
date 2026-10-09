@@ -142,6 +142,6 @@ export class BoobleUpController
                     randomInt = undefined;
                     animation_Interval = 15;
                }
-           }, ANIMATION_INTERVAL);
+           }, animation_Interval);
     }
 }
