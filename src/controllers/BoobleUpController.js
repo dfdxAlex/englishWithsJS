@@ -119,17 +119,14 @@ export class BoobleUpController
                     // Если приходит новый ответ раньше, чем пузырь долетел до верха, то его координата
                     // изменяется и перестает отличаться на 1 балл
                     // Для ресета картинки удаляем старый пузырь и система автоматически сгенерирует новый
-                    if (this.forBooble.buttonCheckY - hightOld !== -speedY) {
-                        // if (selectBoobleUp) 
-                            
-                            if (
-                                Math.abs(
-                                                (this.forBooble.buttonCheckY - hightOld) - (-speedY)
-                                            ) > 0.01
-                            )
-                            {
+                    // if (this.forBooble.buttonCheckY - hightOld !== -speedY) 
+                    if (
+    Math.abs(
+        (this.forBooble.buttonCheckY - hightOld) - (-speedY)
+    ) > 0.01
+)
+                        {
                             selectBoobleUp?.remove();
-                        }
                     }
             
                     // Запомнить текущую координату Y чтобы на следующей итерации сравнить её с текущей
