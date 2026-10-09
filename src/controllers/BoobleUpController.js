@@ -24,7 +24,7 @@ export class BoobleUpController
             const BOOBLE_FINISH_Y = 50;
             let ANIMATION_INTERVAL = 12;
             const RANDOM_SHIFT_DELAY = 16;
-            let speedY = 2;
+            let speedY = 1.5;
 
             // работа с шириной екрана, отскок от правой стороны екрана
             const screenWidth = window.innerWidth;
@@ -142,7 +142,7 @@ export class BoobleUpController
                     hightOld = undefined;
                     divCreateForBonusBox = undefined;
                     randomInt = undefined;
-                    speedY = 2;
+                    speedY = 1.5;
                }
            }, ANIMATION_INTERVAL);
     }
