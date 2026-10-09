@@ -27,7 +27,7 @@ export class BoobleUpController
 
             // работа с шириной екрана
             const screenWidth = window.innerWidth;
-            const crystalWidth = 40;
+            const crystalWidth = 50;
 
             let randomInt = undefined;
 
