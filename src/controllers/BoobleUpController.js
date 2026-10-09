@@ -120,8 +120,15 @@ export class BoobleUpController
                     // изменяется и перестает отличаться на 1 балл
                     // Для ресета картинки удаляем старый пузырь и система автоматически сгенерирует новый
                     if (this.forBooble.buttonCheckY - hightOld !== -speedY) {
-                        if (selectBoobleUp) {
-                            selectBoobleUp.remove();
+                        // if (selectBoobleUp) 
+                            
+                            if (
+                                Math.abs(
+                                                (this.forBooble.buttonCheckY - hightOld) - (-speedY)
+                                            ) > 0.01
+                            )
+                            {
+                            selectBoobleUp?.remove();
                         }
                     }
             
