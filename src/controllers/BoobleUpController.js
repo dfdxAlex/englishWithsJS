@@ -22,7 +22,7 @@ export class BoobleUpController
 
     init() {
             const BOOBLE_FINISH_Y = 50;
-            let ANIMATION_INTERVAL = 8;
+            let animation_Interval = 8;
             const RANDOM_SHIFT_DELAY = 16;
 
             // работа с шириной екрана, отскок от правой стороны екрана
@@ -48,7 +48,7 @@ export class BoobleUpController
 
                 // выбрать контейнер для алмаза
                 const selectBoobleUp = document.getElementById('boobleUp');
-            
+                
                 // Если координата Y всё ещё ниже потолка то работаем
                 // Если кристал ниже границы окончания всплытия
                 if (this.forBooble.buttonCheckY > BOOBLE_FINISH_Y) {
@@ -93,7 +93,7 @@ export class BoobleUpController
                     //    randomOk = true; // если раскомментировать, то ящик падает всегда
                         if (randomOk) {
                             // если выпал ящик, то замедлить выполнение цикла пока он не пролетит
-                            ANIMATION_INTERVAL = 15;
+                            animation_Interval = 15;
 
                             // создать бонусный ящик и накинуть событие клика
                             createBoxScarb();
@@ -140,6 +140,7 @@ export class BoobleUpController
                     hightOld = undefined;
                     divCreateForBonusBox = undefined;
                     randomInt = undefined;
+                    animation_Interval = 15;
                }
            }, ANIMATION_INTERVAL);
     }
