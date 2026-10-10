@@ -36,7 +36,9 @@ export class BoobleUpController
             // постоянная часть для всплывающего шарика
             let divCreate = document.createElement("div");
             divCreate.innerText = '💎';
-            let divCreateForBonusBox;
+            let divCreateForBonusBox = undefined;
+
+            let selectBoobleUp = undefined;
            
         
             let lag = 6;
@@ -48,7 +50,13 @@ export class BoobleUpController
             const id = setInterval(() => {
 
                 // выбрать контейнер для алмаза
-                const selectBoobleUp = document.getElementById('boobleUp');
+                if (!selectBoobleUp) {
+                    selectBoobleUp = document.getElementById('boobleUp');
+                }
+
+                if (!divCreateForBonusBox) {
+                    divCreateForBonusBox = document.getElementById('scarb');
+                }
                 
                 // Если координата Y всё ещё ниже потолка то работаем
                 // Если кристал ниже границы окончания всплытия
@@ -75,7 +83,7 @@ export class BoobleUpController
                     );
                     divCreate.style.left = this.forBooble.buttonCheckX + "px"; // Начальная позиция
                     divCreate.style.top = this.forBooble.buttonCheckY + "px";
-            
+                    
                     // Нарисовать картинку пузыря, если ее ещё нет, алмаз, шапка или череп
                     if (!selectBoobleUp) {
                         //если падал бонусный сундук то удалить его
@@ -100,7 +108,7 @@ export class BoobleUpController
                             // создать бонусный ящик и накинуть событие клика
                             createBoxScarb();
         
-                            divCreateForBonusBox = document.getElementById('scarb');
+                            // divCreateForBonusBox = document.getElementById('scarb');
         
                             // вставляет в динамическое меню картинку алмаза умножить на 2
                             createDiamandX2();
@@ -108,7 +116,7 @@ export class BoobleUpController
                     }
         
                     if (divCreateForBonusBox !== undefined && randomOk) {
-                        this.forBooble.buttonCheckX+=numberRand;
+                        // this.forBooble.buttonCheckX+=numberRand;
                         divCreateForBonusBox.style.left = this.forBooble.buttonCheckX + "px"; // Начальная позиция
                         divCreateForBonusBox.style.top = buttonCheckYStart - this.forBooble.buttonCheckY + "px";
                     }
@@ -122,6 +130,9 @@ export class BoobleUpController
                     // if (this.forBooble.buttonCheckY - hightOld !== -speedY) 
                     if (Math.abs((this.forBooble.buttonCheckY - hightOld) - (-speedY)) > 0.01) {
                             selectBoobleUp?.remove();
+                            selectBoobleUp = undefined;
+                            divCreateForBonusBox?.remove();
+                            divCreateForBonusBox = undefined;
                         }
             
                     // Запомнить текущую координату Y чтобы на следующей итерации сравнить её с текущей
@@ -130,9 +141,12 @@ export class BoobleUpController
                     hightOld = this.forBooble.buttonCheckY;
                    
                } else if (selectBoobleUp) {
-                    selectBoobleUp.remove();
-                   if (document.getElementById('scarb'))
-                       document.getElementById('scarb').remove();
+                    selectBoobleUp?.remove();
+                    selectBoobleUp = undefined;
+                    divCreateForBonusBox?.remove();
+                    divCreateForBonusBox = undefined;
+                //    if (document.getElementById('scarb'))
+                    //    document.getElementById('scarb').remove();
                     divCreate.innerText = '';
                     randomOk = false;
                     createBoxForInfoBonus();
