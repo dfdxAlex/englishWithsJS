@@ -22,7 +22,7 @@ export class BoobleUpController
 
     init() {
             const BOOBLE_FINISH_Y = 50;
-            let ANIMATION_INTERVAL = 16;
+            let ANIMATION_INTERVAL = 14;
             const RANDOM_SHIFT_DELAY = 16;
             let speedY = 1.5;
 
@@ -91,7 +91,7 @@ export class BoobleUpController
                         randomInt = getRandom(0, this.boobleUpModel.bonusRandomMax());
                         
                         if (randomInt == 1) randomOk = true;
-                    //    randomOk = true; // если раскомментировать, то ящик падает всегда
+                       randomOk = true; // если раскомментировать, то ящик падает всегда
                         if (randomOk) {
 
                             // если выпал ящик, то замедлить всплытие кристала
@@ -120,15 +120,9 @@ export class BoobleUpController
                     // изменяется и перестает отличаться на 1 балл
                     // Для ресета картинки удаляем старый пузырь и система автоматически сгенерирует новый
                     // if (this.forBooble.buttonCheckY - hightOld !== -speedY) 
-                    if (
-    Math.abs(
-        (this.forBooble.buttonCheckY - hightOld) - (-speedY)
-    ) > 0.01
-)
-                        {
-                            console.log('remove crystal');
+                    if (Math.abs((this.forBooble.buttonCheckY - hightOld) - (-speedY)) > 0.01) {
                             selectBoobleUp?.remove();
-                    }
+                        }
             
                     // Запомнить текущую координату Y чтобы на следующей итерации сравнить её с текущей
                     // величиной следующей итерации.
