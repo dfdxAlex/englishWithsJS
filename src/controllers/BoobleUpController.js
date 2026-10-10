@@ -22,7 +22,7 @@ export class BoobleUpController
 
     init() {
             const BOOBLE_FINISH_Y = 50;
-            let ANIMATION_INTERVAL = 14;
+            let ANIMATION_INTERVAL = 16;
             const RANDOM_SHIFT_DELAY = 16;
             let speedY = 1.5;
 
