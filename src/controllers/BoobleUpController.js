@@ -4,19 +4,25 @@
 // Цикл работает всегда, управление пузырями производится через изменение координат у адпления кристалов
 
 import { getRandom } from '../services/getRandom.js';
+import { hundleHelpPrime } from '../view/hundleHelpPrime.js';
 
 export class BoobleUpController
 {
     constructor({   SettingForProgram, 
                     boobleUpModel, 
                     boobleUpView,
-                    boobleUpService}) {
+                    boobleUpService,
+                    DataOk,
+                    Help}) {
         this.settingForProgram = SettingForProgram;
         this.forBooble = SettingForProgram.forBooble;
         this.boobleUpService = boobleUpService;
-
+        this.DataOk = DataOk;
         this.boobleUpModel = boobleUpModel;
         this.boobleUpView = boobleUpView;
+
+        // накинуть событие помощи на кристал вверху слева
+        hundleHelpPrime(Help);
     }
 
     init() {
@@ -102,7 +108,7 @@ export class BoobleUpController
                             speedY = 1;
 
                             // создать бонусный ящик и накинуть событие клика
-                            this.boobleUpView.createBoxScarb(this.forBooble);
+                            this.boobleUpView.createBoxScarb(this.forBooble, this.DataOk);
 
         
                             divCreateForBonusBox = document.getElementById('scarb');

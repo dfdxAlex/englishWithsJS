@@ -11,6 +11,5 @@ export function renderThoury()
     document.getElementById('exercise').innerHTML = this.strLocal;
     document.getElementById(this.idForButtonClosed).addEventListener('click', ()=>{
         document.getElementById('exercise').style.display='none';
-        // document.getElementById('exercise').remove();
     });
 }

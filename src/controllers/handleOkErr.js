@@ -20,7 +20,7 @@ import { Logs } from '../models/Logs.js';
 import { calculateBonusMultiplier } from '../models/calculateBonusMultiplier.js';
 import { DataOk } from '../services/data/DataOk.js';
 import { LevelDataModel } from '../models/LevelDataModel.js';
-import { hundleHelpPrime } from './forInitEventListeners/hundleHelpPrime.js';
+import { hundleHelpPrime } from '../view/hundleHelpPrime.js';
 import { setBorderRadiusForWorkingField } from '../services/setColorMenu/setBorderRadiusForWorkingField.js';
 import { handleLevelX } from './handleLevelX.js';
 import { SettingForProgram } from '../models/SettingForProgram.js';

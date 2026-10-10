@@ -1,4 +1,4 @@
-import { hundleHelpPrime } from './forInitEventListeners/hundleHelpPrime.js';
+import { hundleHelpPrime } from '../view/hundleHelpPrime.js';
 import { initEventForMenuStatistic } from '../view/forStatistic/initEventForMenuStatistic.js';
 import { hundleUpdateBurgerOrWord } from './forInitEventListeners/hundleUpdateBurgerOrWord.js';
 import { setBackground } from '../view/styles/bodyImages/setBackground.js';
@@ -18,6 +18,8 @@ import { BoobleUpModel } from '../models/BoobleUpModel.js';
 import { BoobleUpView } from '../view/boobleUp/BoobleUpView.js';
 import { BoobleUpService } from '../services/BoobleUpService.js';
 import { LanguageController } from './LanguageController.js';
+import { DataOk } from '../services/data/DataOk.js';
+import { Help } from '../view/Help.js';
 
 // Здесь функции, которые должны отработать когда загрузится статическая страница
 window.addEventListener('load', () => {
@@ -74,7 +76,9 @@ window.addEventListener('load', () => {
     const boobleUpController = new BoobleUpController({ SettingForProgram, 
                                                         boobleUpModel, 
                                                         boobleUpView, 
-                                                        boobleUpService
+                                                        boobleUpService,
+                                                        DataOk,
+                                                        Help
                                                         });
     boobleUpController.init();
 

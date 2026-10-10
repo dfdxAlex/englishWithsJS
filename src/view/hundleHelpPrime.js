@@ -1,8 +1,7 @@
-import { Help } from '../../view/Help.js';
-import  indexForThoury  from '../../controllers/forThoury/indexForThoury.js';
-import { diamentView } from '../../view/diamentView.js';
+import  indexForThoury  from '../controllers/forThoury/indexForThoury.js';
+import { diamentView } from './diamentView.js';
 
-export function hundleHelpPrime()
+export function hundleHelpPrime(Help)
 {
     // переменная при старте 1 и изменится только если что-то не получится найти
     let test = true;

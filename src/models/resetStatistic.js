@@ -10,7 +10,7 @@
 
 import { DataOk } from '../services/data/DataOk.js';
 import { LanguageController } from '../controllers/LanguageController.js';
-import { hundleHelpPrime } from '../controllers/forInitEventListeners/hundleHelpPrime.js';
+import { hundleHelpPrime } from '../view/hundleHelpPrime.js';
 import { succesP } from './resetStatistic/succesP.js';
 
 export const resetStatistic = (reset = true) => {

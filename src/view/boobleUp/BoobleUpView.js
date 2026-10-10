@@ -75,17 +75,15 @@ export class BoobleUpView {
             'bonus-diamant'
         );
     }
-
-
     
-    createBoxScarb(forBooble)
+    createBoxScarb(forBooble, objDataOk)
     {
         const divCreateForBonusBox = document.createElement("div");
         divCreateForBonusBox.innerHTML = '<span class="scarb" id="scarb">🎁</span>';
         document.body.appendChild(divCreateForBonusBox);
     
         divCreateForBonusBox.addEventListener('click', () => {
-          scarbClick(2, forBooble.diamant);
+          scarbClick(2, forBooble.diamant, objDataOk);
           // обнулить координату Y кристала, чтобы контроллер подумал что кристал долетел до конца
           forBooble.buttonCheckY = 0;
         });
