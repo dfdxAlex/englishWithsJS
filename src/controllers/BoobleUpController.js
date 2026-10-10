@@ -22,7 +22,7 @@ export class BoobleUpController
 
     init() {
             const BOOBLE_FINISH_Y = 50;
-            let ANIMATION_INTERVAL = 12;
+            let ANIMATION_INTERVAL = 16;
             const RANDOM_SHIFT_DELAY = 16;
             let speedY = 1.5;
 
@@ -126,6 +126,7 @@ export class BoobleUpController
     ) > 0.01
 )
                         {
+                            console.log('remove crystal');
                             selectBoobleUp?.remove();
                     }
             
