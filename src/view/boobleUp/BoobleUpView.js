@@ -36,14 +36,15 @@ export class BoobleUpView {
     // Запускается при ответе на тест
     // удаляет картинку бонусного ящика, если она есть
     // возвращает одну из картинок в зависимости от результата ответа
-    getImageBooble(diamant)
+    getImageBooble(diamantInput)
     {
+        const diamant = Number(diamantInput);
     
-        if (diamant === '-1') {
+        if (diamant === -1) {
             return '<span class="diamond">💀</span>';
         }
         
-        if (diamant === '0') {
+        if (diamant === 0) {
             return '<span class="diamond">🎓</span>';
         }
 

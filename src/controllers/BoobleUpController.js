@@ -45,22 +45,19 @@ export class BoobleUpController
             let randomOk = false;
             let hightOld;
             let buttonCheckYStart;
+
+            // для ограничения времени всплытия когда не выпал ящик с призом
+            let startTime;
         
             const id = setInterval(() => {
-
-                // выбрать контейнер для алмаза
-                if (!selectBoobleUp) {
-                    selectBoobleUp = document.getElementById('boobleUp');
-                }
-            
+          
                 // Если координата Y всё ещё ниже потолка то работаем
                 // Если кристал ниже границы окончания всплытия
                 if (this.forBooble.buttonCheckY > BOOBLE_FINISH_Y) {
-        
                     // Если ещё не запоминали стартовую координату Y, то запомнить
                         if (buttonCheckYStart === undefined) {
                         buttonCheckYStart = this.forBooble.buttonCheckY;
-                        hightOld = this.forBooble.buttonCheckY;
+                        hightOld = buttonCheckYStart;
                     }
             
                     // Здесь задается смещение вправо-влево
@@ -81,8 +78,13 @@ export class BoobleUpController
 
                     // Нарисовать картинку пузыря, если ее ещё нет, алмаз, шапка или череп
                     if (!selectBoobleUp) {
+                        selectBoobleUp = document.getElementById('boobleUp');
+                    // divCreate.innerText = '💎';
+                        startTime = Date.now();
                         //если падал бонусный сундук то удалить его
                         this.boobleUpView.removeBonusBox();
+                        console.log(this.forBooble.diamant);
+
                         //создать контейнер с кристалом
                         this.boobleUpView.setBoobleUp(this.forBooble.diamant, divCreate);
                     }
@@ -93,7 +95,7 @@ export class BoobleUpController
                         randomInt = getRandom(0, this.boobleUpModel.bonusRandomMax());
                         
                         if (randomInt == 1) randomOk = true;
-                       randomOk = true; // если раскомментировать, то ящик падает всегда
+                    //    randomOk = true; // если раскомментировать, то ящик падает всегда
                         if (randomOk) {
 
                             // если выпал ящик, то замедлить всплытие кристала
@@ -107,6 +109,10 @@ export class BoobleUpController
                             // вставляет в динамическое меню картинку алмаза умножить на 2
                             createDiamandX2();
                         }
+                    } 
+                    
+                    if (divCreateForBonusBox) {
+                        startTime = Date.now();
                     }
         
                     if (divCreateForBonusBox !== undefined && randomOk) {
@@ -122,20 +128,14 @@ export class BoobleUpController
                     // Для ресета картинки удаляем старый пузырь и система автоматически сгенерирует новый
                     // if (this.forBooble.buttonCheckY - hightOld !== -speedY) 
                     if (Math.abs((this.forBooble.buttonCheckY - hightOld) - (-speedY)) > 0.01) {
-                        selectBoobleUp?.remove();
-                        selectBoobleUp = undefined;
-                        divCreateForBonusBox?.remove();
-                        divCreateForBonusBox = undefined;
-                        divCreate.innerText = '';
-                        randomOk = false;
-                        createBoxForInfoBonus();
-                        document.querySelector('#bonus-diamant')?.remove();
-                        buttonCheckYStart = undefined;
-                        hightOld = undefined;
-                        divCreateForBonusBox = undefined;
-                        randomInt = undefined;
-                        speedY = 1.5;
+                            selectBoobleUp?.remove();
+                            selectBoobleUp = undefined;
                         }
+
+                    if (Date.now() - startTime > 3000) {
+                        startTime = 0;
+                        this.forBooble.buttonCheckY = 0;
+                    }
             
                     // Запомнить текущую координату Y чтобы на следующей итерации сравнить её с текущей
                     // величиной следующей итерации.
@@ -156,6 +156,7 @@ export class BoobleUpController
                     divCreateForBonusBox = undefined;
                     randomInt = undefined;
                     speedY = 1.5;
+                    startTime = 0;
                }
            }, ANIMATION_INTERVAL);
     }
