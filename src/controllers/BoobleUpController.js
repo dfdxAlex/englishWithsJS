@@ -3,7 +3,6 @@
 // Функция контролирует процесс всплытия кристала и падение ящика
 // Цикл работает всегда, управление пузырями производится через изменение координат у адпления кристалов
 
-import { removeBonusDiamant } from '../view/boobleUp/removeBonusDiamant.js';
 import { getRandom } from '../services/getRandom.js';
 import { getNumberRand } from '../view/boobleUp/getNumberRand.js';
 import { createDiamandX2 } from '../view/boobleUp/createDiamandX2.js';
@@ -94,7 +93,7 @@ export class BoobleUpController
                         randomInt = getRandom(0, this.boobleUpModel.bonusRandomMax());
                         
                         if (randomInt == 1) randomOk = true;
-                    //    randomOk = true; // если раскомментировать, то ящик падает всегда
+                       randomOk = true; // если раскомментировать, то ящик падает всегда
                         if (randomOk) {
 
                             // если выпал ящик, то замедлить всплытие кристала
@@ -111,7 +110,6 @@ export class BoobleUpController
                     }
         
                     if (divCreateForBonusBox !== undefined && randomOk) {
-                        // this.forBooble.buttonCheckX+=numberRand;
                         divCreateForBonusBox.style.left = this.forBooble.buttonCheckX + "px"; // Начальная позиция
                         divCreateForBonusBox.style.top = buttonCheckYStart - this.forBooble.buttonCheckY + "px";
                     }
@@ -124,10 +122,19 @@ export class BoobleUpController
                     // Для ресета картинки удаляем старый пузырь и система автоматически сгенерирует новый
                     // if (this.forBooble.buttonCheckY - hightOld !== -speedY) 
                     if (Math.abs((this.forBooble.buttonCheckY - hightOld) - (-speedY)) > 0.01) {
-                            selectBoobleUp?.remove();
-                            selectBoobleUp = undefined;
-                            divCreateForBonusBox?.remove();
-                            divCreateForBonusBox = undefined;
+                        selectBoobleUp?.remove();
+                        selectBoobleUp = undefined;
+                        divCreateForBonusBox?.remove();
+                        divCreateForBonusBox = undefined;
+                        divCreate.innerText = '';
+                        randomOk = false;
+                        createBoxForInfoBonus();
+                        document.querySelector('#bonus-diamant')?.remove();
+                        buttonCheckYStart = undefined;
+                        hightOld = undefined;
+                        divCreateForBonusBox = undefined;
+                        randomInt = undefined;
+                        speedY = 1.5;
                         }
             
                     // Запомнить текущую координату Y чтобы на следующей итерации сравнить её с текущей
@@ -140,12 +147,10 @@ export class BoobleUpController
                     selectBoobleUp = undefined;
                     divCreateForBonusBox?.remove();
                     divCreateForBonusBox = undefined;
-                //    if (document.getElementById('scarb'))
-                    //    document.getElementById('scarb').remove();
                     divCreate.innerText = '';
                     randomOk = false;
                     createBoxForInfoBonus();
-                    removeBonusDiamant();
+                    document.querySelector('#bonus-diamant')?.remove();
                     buttonCheckYStart = undefined;
                     hightOld = undefined;
                     divCreateForBonusBox = undefined;
