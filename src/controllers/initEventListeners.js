@@ -69,7 +69,7 @@ window.addEventListener('load', () => {
     // boobleUp();
     const boobleUpModel = new BoobleUpModel({SettingForProgram});
     const boobleUpService = new BoobleUpService();
-    const boobleUpView = new BoobleUpView({languageController});
+    const boobleUpView = new BoobleUpView({languageController, SettingForProgram});
 
     const boobleUpController = new BoobleUpController({ SettingForProgram, 
                                                         boobleUpModel, 

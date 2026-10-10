@@ -102,14 +102,15 @@ export class BoobleUpController
                             speedY = 1;
 
                             // создать бонусный ящик и накинуть событие клика
-                            this.boobleUpView.createBoxScarb();
+                            this.boobleUpView.createBoxScarb(this.forBooble);
+
         
                             divCreateForBonusBox = document.getElementById('scarb');
         
                             // вставляет в динамическое меню картинку алмаза умножить на 2
                             this.boobleUpView.createDiamandX2();
                         }
-                    } 
+                    }
                     
                     if (divCreateForBonusBox) {
                         startTime = Date.now();
@@ -131,6 +132,8 @@ export class BoobleUpController
                             selectBoobleUp?.remove();
                             selectBoobleUp = undefined;
                         }
+
+
 
                     if (Date.now() - startTime > 3000) {
                         startTime = 0;

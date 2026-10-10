@@ -6,8 +6,9 @@ import { infoForPresentBox } from './infoForPresentBox.js';
 
 export class BoobleUpView {
 
-    constructor({languageController}) {
+    constructor({languageController, settingForProgram}) {
         this.languageController = languageController;
+        this.SettingForProgram = settingForProgram;
     }
 
     removeBonusBox()
@@ -77,23 +78,22 @@ export class BoobleUpView {
 
 
     
-    createBoxScarb()
+    createBoxScarb(forBooble)
     {
         const divCreateForBonusBox = document.createElement("div");
         divCreateForBonusBox.innerHTML = '<span class="scarb" id="scarb">🎁</span>';
         document.body.appendChild(divCreateForBonusBox);
     
         divCreateForBonusBox.addEventListener('click', () => {
-          scarbClick(2);
+          scarbClick(2, forBooble.diamant);
+          // обнулить координату Y кристала, чтобы контроллер подумал что кристал долетел до конца
+          forBooble.buttonCheckY = 0;
         });
-    
     }
     
     createBoxForInfoBonus()
     {
         addElToDinamicMenu('🎁', 'box-for-info-bonus', 'box-for-info-bonus');
-        // document.getElementById('box-for-info-bonus')?.addEventListener('click', infoForPresentBox);
-
             setTimeout(() => {
                 document
                     .getElementById('box-for-info-bonus')
