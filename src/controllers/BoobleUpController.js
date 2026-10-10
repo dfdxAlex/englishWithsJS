@@ -24,7 +24,7 @@ export class BoobleUpController
             const BOOBLE_FINISH_Y = 50;
             let ANIMATION_INTERVAL = 16;
             const RANDOM_SHIFT_DELAY = 16;
-            let speedY = 1.5;
+            let speedY = 2;
 
             // работа с шириной екрана, отскок от правой стороны екрана
             const screenWidth = window.innerWidth;
@@ -53,11 +53,7 @@ export class BoobleUpController
                 if (!selectBoobleUp) {
                     selectBoobleUp = document.getElementById('boobleUp');
                 }
-
-                if (!divCreateForBonusBox) {
-                    divCreateForBonusBox = document.getElementById('scarb');
-                }
-                
+            
                 // Если координата Y всё ещё ниже потолка то работаем
                 // Если кристал ниже границы окончания всплытия
                 if (this.forBooble.buttonCheckY > BOOBLE_FINISH_Y) {
@@ -83,7 +79,7 @@ export class BoobleUpController
                     );
                     divCreate.style.left = this.forBooble.buttonCheckX + "px"; // Начальная позиция
                     divCreate.style.top = this.forBooble.buttonCheckY + "px";
-                    
+
                     // Нарисовать картинку пузыря, если ее ещё нет, алмаз, шапка или череп
                     if (!selectBoobleUp) {
                         //если падал бонусный сундук то удалить его
@@ -94,12 +90,11 @@ export class BoobleUpController
         
                     // сундук с сокровищами, одна попытка создать его. сброс попытки при окончании
                     // всплытия кристала
-                    // прикомандировка сюда счётчика правильных ответов подряд
                     if (divCreateForBonusBox === undefined && randomInt === undefined) {
                         randomInt = getRandom(0, this.boobleUpModel.bonusRandomMax());
                         
                         if (randomInt == 1) randomOk = true;
-                       randomOk = true; // если раскомментировать, то ящик падает всегда
+                    //    randomOk = true; // если раскомментировать, то ящик падает всегда
                         if (randomOk) {
 
                             // если выпал ящик, то замедлить всплытие кристала
@@ -108,7 +103,7 @@ export class BoobleUpController
                             // создать бонусный ящик и накинуть событие клика
                             createBoxScarb();
         
-                            // divCreateForBonusBox = document.getElementById('scarb');
+                            divCreateForBonusBox = document.getElementById('scarb');
         
                             // вставляет в динамическое меню картинку алмаза умножить на 2
                             createDiamandX2();
