@@ -13,10 +13,11 @@ import { resetBottonError } from './resetBottonError.js';
 import { handleSearchError } from './handleSearchError.js';
 import { htmlHelp } from '../view/htmlHelp.js';
 import { SettingForProgram } from '../models/SettingForProgram.js';
-import { addElToDinamicMenu } from '../view/addElToDinamicMenu.js';
 import { BoobleUpController } from './BoobleUpController.js';
 import { BoobleUpModel } from '../models/BoobleUpModel.js';
 import { BoobleUpView } from '../view/boobleUp/BoobleUpView.js';
+import { BoobleUpService } from '../services/BoobleUpService.js';
+import { LanguageController } from './LanguageController.js';
 
 // Здесь функции, которые должны отработать когда загрузится статическая страница
 window.addEventListener('load', () => {
@@ -24,6 +25,8 @@ window.addEventListener('load', () => {
     nav();
     const menuC = new MenuController();
     menuC.init();
+
+    const languageController = new LanguageController();
 
     // событие на кнопку "Сообщить об ошибке"
     handleSearchError();
@@ -65,10 +68,14 @@ window.addEventListener('load', () => {
     // всплытия кристала, шапки или черепа
     // boobleUp();
     const boobleUpModel = new BoobleUpModel({SettingForProgram});
+    const boobleUpService = new BoobleUpService();
+    const boobleUpView = new BoobleUpView({languageController});
 
-    const boobleUpView = new BoobleUpView();
-
-    const boobleUpController = new BoobleUpController({SettingForProgram, boobleUpModel, boobleUpView});
+    const boobleUpController = new BoobleUpController({ SettingForProgram, 
+                                                        boobleUpModel, 
+                                                        boobleUpView, 
+                                                        boobleUpService
+                                                        });
     boobleUpController.init();
 
 

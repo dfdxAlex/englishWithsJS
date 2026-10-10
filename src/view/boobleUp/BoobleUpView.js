@@ -1,7 +1,15 @@
 import '../styles/createBonusLevel.scss';
+import '../styles/createBoxScarb.scss';
 import { addElToDinamicMenu } from '../addElToDinamicMenu.js';
+import { scarbClick } from './scarbClick.js';
+import { infoForPresentBox } from './infoForPresentBox.js';
 
 export class BoobleUpView {
+
+    constructor({languageController}) {
+        this.languageController = languageController;
+    }
+
     removeBonusBox()
     {
         document.getElementById('box-for-info-bonus')?.remove();
@@ -57,5 +65,39 @@ export class BoobleUpView {
         divCreate.style.position = "absolute"; // Позволяет двигать элемент по координатам
         divCreate.id = 'boobleUp';
         document.body.appendChild(divCreate);
+    }
+
+    createDiamandX2() {
+        addElToDinamicMenu(
+            '💎×2',
+            'box-x-2',
+            'bonus-diamant'
+        );
+    }
+
+
+    
+    createBoxScarb()
+    {
+        const divCreateForBonusBox = document.createElement("div");
+        divCreateForBonusBox.innerHTML = '<span class="scarb" id="scarb">🎁</span>';
+        document.body.appendChild(divCreateForBonusBox);
+    
+        divCreateForBonusBox.addEventListener('click', () => {
+          scarbClick(2);
+        });
+    
+    }
+    
+    createBoxForInfoBonus()
+    {
+        addElToDinamicMenu('🎁', 'box-for-info-bonus', 'box-for-info-bonus');
+        // document.getElementById('box-for-info-bonus')?.addEventListener('click', infoForPresentBox);
+
+            setTimeout(() => {
+                document
+                    .getElementById('box-for-info-bonus')
+                    ?.addEventListener('click', () => {infoForPresentBox(this.languageController)});
+            }, 0);
     }
 }

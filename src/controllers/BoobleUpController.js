@@ -4,16 +4,16 @@
 // Цикл работает всегда, управление пузырями производится через изменение координат у адпления кристалов
 
 import { getRandom } from '../services/getRandom.js';
-import { getNumberRand } from '../view/boobleUp/getNumberRand.js';
-import { createDiamandX2 } from '../view/boobleUp/createDiamandX2.js';
-import { createBoxScarb } from '../view/boobleUp/createBoxScarb.js';
-import { createBoxForInfoBonus } from '../view/boobleUp/createBoxForInfoBonus.js';
 
 export class BoobleUpController
 {
-    constructor({SettingForProgram, boobleUpModel, boobleUpView}) {
+    constructor({   SettingForProgram, 
+                    boobleUpModel, 
+                    boobleUpView,
+                    boobleUpService}) {
         this.settingForProgram = SettingForProgram;
         this.forBooble = SettingForProgram.forBooble;
+        this.boobleUpService = boobleUpService;
 
         this.boobleUpModel = boobleUpModel;
         this.boobleUpView = boobleUpView;
@@ -62,7 +62,8 @@ export class BoobleUpController
             
                     // Здесь задается смещение вправо-влево
                     if (lag < 0) {
-                        numberRand = getNumberRand();
+                        numberRand = this.boobleUpService.getBoobleDirection(   this.forBooble.buttonCheckX, 
+                                                                                window.innerWidth);
                         lag = RANDOM_SHIFT_DELAY;
                     }
                     lag--;
@@ -79,11 +80,10 @@ export class BoobleUpController
                     // Нарисовать картинку пузыря, если ее ещё нет, алмаз, шапка или череп
                     if (!selectBoobleUp) {
                         selectBoobleUp = document.getElementById('boobleUp');
-                    // divCreate.innerText = '💎';
                         startTime = Date.now();
+
                         //если падал бонусный сундук то удалить его
                         this.boobleUpView.removeBonusBox();
-                        console.log(this.forBooble.diamant);
 
                         //создать контейнер с кристалом
                         this.boobleUpView.setBoobleUp(this.forBooble.diamant, divCreate);
@@ -102,12 +102,12 @@ export class BoobleUpController
                             speedY = 1;
 
                             // создать бонусный ящик и накинуть событие клика
-                            createBoxScarb();
+                            this.boobleUpView.createBoxScarb();
         
                             divCreateForBonusBox = document.getElementById('scarb');
         
                             // вставляет в динамическое меню картинку алмаза умножить на 2
-                            createDiamandX2();
+                            this.boobleUpView.createDiamandX2();
                         }
                     } 
                     
@@ -149,7 +149,7 @@ export class BoobleUpController
                     divCreateForBonusBox = undefined;
                     divCreate.innerText = '';
                     randomOk = false;
-                    createBoxForInfoBonus();
+                    this.boobleUpView.createBoxForInfoBonus();
                     document.querySelector('#bonus-diamant')?.remove();
                     buttonCheckYStart = undefined;
                     hightOld = undefined;

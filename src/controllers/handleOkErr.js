@@ -30,6 +30,7 @@ import { resetBottonError } from './resetBottonError.js';
 import { buttonOkBlockNoon } from './handleButtonOk/buttonOkBlockNoon.js';
 import { BoobleUpView } from '../view/boobleUp/BoobleUpView.js';
 import { BoobleUpModel } from '../models/BoobleUpModel.js';
+import { LanguageController } from './LanguageController.js';
 
 export function handleOkErr(str, event) {
     // выйти из функции если падает бонусный ящик
@@ -41,7 +42,8 @@ export function handleOkErr(str, event) {
     // в блоке счтается число правильно подряд заработанных баллов и рисуется
     // индикатор заполнения для текущего шага.
     // выше уровень, чаще выпадает бонусный ящик.
-    const boobleUpView = new BoobleUpView();
+    const languageController = new LanguageController();
+    const boobleUpView = new BoobleUpView({languageController});
     const boobleUpModel = new BoobleUpModel({SettingForProgram});
     // Сохранить координаты места клика по кнопке Проверить
     SettingForProgram.forBooble.buttonCheckX = event.pageX;

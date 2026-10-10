@@ -1,12 +1,5 @@
-import { cleanupBootstrapModals }  from './cleanupBootstrapModals.js';
-import { LanguageController } from '../../controllers/LanguageController.js';
-
-export function infoForPresentBox()
+export function infoForPresentBox(lang)
 {
-    cleanupBootstrapModals();
-
-    const lang = new LanguageController();
-
 
     if (!document.getElementById('exampleModal1')) {
         const ret = `
@@ -37,10 +30,14 @@ export function infoForPresentBox()
     const modal = new bootstrap.Modal(modalEl);
     modal.show();
 
-    const closeModalForBox = document.getElementById('close-modal-for-box');
-    document.addEventListener('click', ()=>{
-        document.activeElement?.blur();
-        modal.hide();
-    });
+    setTimeout(() => {
+        document.addEventListener('click', () => {
+            document.activeElement?.blur();
+
+            setTimeout(() => {
+                modal.hide();
+            }, 0);
+        }, { once: true });
+    }, 0);
 
 }
