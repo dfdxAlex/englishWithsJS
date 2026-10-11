@@ -15,11 +15,11 @@ const max = Number(this.statisticModel.loadMaxDiamantToday());
 // document.getElementById('console').dataset.progress =
 //     `d:${daily} m:${max}`;
 
-let procent = daily+1;
+let procent = 0;
 
 if (!Number.isNaN(daily) &&
         !Number.isNaN(max) &&
-            max > 0) {
+            max >= 0) {
 
     procent = daily / max * 100;
 }
