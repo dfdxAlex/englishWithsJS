@@ -8,7 +8,14 @@ export class StatisticController{
 
 
 init() {
-    this.statisticView.setDiamantProgress(50);
+
+    let procent = Number(this.statisticModel.loadSaveDailyScore().diamantToday)/this.statisticModel.loadMaxDiamantToday()*100;
+    if (procent > 100) procent = 100;
+
+    this.statisticView.setDiamantProgress(procent);
+
+    console.log(this.statisticModel.loadSaveDailyScore());
+    console.log(this.statisticModel.loadMaxDiamantToday());
 }
 
 }

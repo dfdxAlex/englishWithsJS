@@ -4,6 +4,35 @@ constructor({SettingForProgram, boobleUpService}) {
     this.forBooble = this.SettingForProgram.forBooble;
     this.boobleUpService = boobleUpService;
 }
+
+// если нет переменной в локадсторедже, то создать ее на день сегодняшний, или вернуть false
+loadSaveDailyScore() {
+
+    let objDaily = JSON.parse(localStorage.getItem('saveDailyScore'));
+    if (objDaily === null) {
+        objDaily = this.resetSaveDailyScore();
+    }
+
+    if (objDaily.data === undefined 
+        || objDaily.diamantToday === undefined
+            || objDaily.data !== new Date().toDateString()) {
+                localStorage.removeItem('saveDailyScore');
+                objDaily=this.resetSaveDailyScore();
+    }
+ 
+    return objDaily;
+}
+
+// создает объект с полями и записывает в localStorage
+resetSaveDailyScore() {
+        
+        let objDaily = {data: new Date().toDateString(), 
+                        diamantToday: this.forBooble.diamantToday};
+
+        localStorage.setItem('saveDailyScore',JSON.stringify(objDaily));
+        return objDaily;
+}
+
 // добавить число выбитых пунктов и записать(добавить к тем что уже есть)
 saveDailyScore() {
 
@@ -30,6 +59,12 @@ saveMaxDiamantToday(diamantToday) {
         || Number(diamantToday) > Number(this.forBooble.maxDiamantToday)) {
         localStorage.setItem('maxDiamantToday', diamantToday);
         this.forBooble.maxDiamantToday = diamantToday;
+    }
+}
+
+loadMaxDiamantToday() {
+    if (localStorage.getItem('maxDiamantToday') !== null) {
+        return Number(localStorage.getItem('maxDiamantToday'));
     }
 }
 }

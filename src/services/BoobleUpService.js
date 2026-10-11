@@ -34,33 +34,7 @@ saveStatisticAll() {
 
 }
 
-// если нет переменной в локадсторедже, то создать ее на день сегодняшний, или вернуть false
-loadSaveDailyScore() {
 
-    let objDaily = JSON.parse(localStorage.getItem('saveDailyScore'));
-    if (objDaily === null) {
-        objDaily = this.resetSaveDailyScore();
-    }
-
-    if (objDaily.data === undefined 
-        || objDaily.diamantToday === undefined
-            || objDaily.data !== new Date().toDateString()) {
-                localStorage.removeItem('saveDailyScore');
-                objDaily=this.resetSaveDailyScore();
-    }
- 
-    return objDaily;
-}
-
-// создает объект с полями и записывает в localStorage
-resetSaveDailyScore() {
-        
-        let objDaily = {data: new Date().toDateString(), 
-                        diamantToday: this.forBooble.diamantToday};
-
-        localStorage.setItem('saveDailyScore',JSON.stringify(objDaily));
-        return objDaily;
-}
 
 resetSaveStatisticAll()
 {
