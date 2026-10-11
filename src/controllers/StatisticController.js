@@ -26,7 +26,7 @@ if (!Number.isNaN(daily) &&
 
 if (procent > 100) procent = 100;
 
-    this.statisticView.setDiamantProgress(daily);
+    this.statisticView.setDiamantProgress(max);
 
     console.log(this.statisticModel.loadSaveDailyScore());
     console.log(this.statisticModel.loadMaxDiamantToday());
