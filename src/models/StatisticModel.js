@@ -37,7 +37,7 @@ resetSaveDailyScore() {
 saveDailyScore() {
 
     // получить данные по статистике сегодня из хранилища
-    let statisticToday = this.boobleUpService.loadSaveDailyScore();
+    let statisticToday = this.loadSaveDailyScore();
 
         statisticToday.diamantToday = Number(statisticToday.diamantToday) 
                                         + Number(this.forBooble.diamant)
@@ -65,6 +65,8 @@ saveMaxDiamantToday(diamantToday) {
 loadMaxDiamantToday() {
     if (localStorage.getItem('maxDiamantToday') !== null) {
         return Number(localStorage.getItem('maxDiamantToday'));
+    } else {
+        return 0;
     }
 }
 }
