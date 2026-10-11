@@ -13,13 +13,15 @@ export class BoobleUpController
                     boobleUpView,
                     boobleUpService,
                     DataOk,
-                    Help}) {
+                    Help,
+                    statisticModel}) {
         this.settingForProgram = SettingForProgram;
         this.forBooble = SettingForProgram.forBooble;
         this.boobleUpService = boobleUpService;
         this.DataOk = DataOk;
         this.boobleUpModel = boobleUpModel;
         this.boobleUpView = boobleUpView;
+        this.statisticModel = statisticModel;
 
         // накинуть событие помощи на кристал вверху слева
         hundleHelpPrime(Help);
@@ -137,6 +139,11 @@ export class BoobleUpController
                     if (Math.abs((this.forBooble.buttonCheckY - hightOld) - (-speedY)) > 0.01) {
                             selectBoobleUp?.remove();
                             selectBoobleUp = undefined;
+                            // функция набора заработанных баллов за сегодня
+                            this.boobleUpModel.correctStreak();
+                            // функция контролля числа баллов заработанных сегодня
+                            this.statisticModel.saveDailyScore(this.forBooble);
+                            this.boobleUpService.saveStatisticAll();
                         }
 
 
@@ -144,6 +151,7 @@ export class BoobleUpController
                     if (Date.now() - startTime > 3000) {
                         startTime = 0;
                         this.forBooble.buttonCheckY = 0;
+                        // this.boobleUpService.saveDailyScore(this.forBooble);
                     }
             
                     // Запомнить текущую координату Y чтобы на следующей итерации сравнить её с текущей
@@ -166,6 +174,9 @@ export class BoobleUpController
                     randomInt = undefined;
                     speedY = 1.5;
                     startTime = 0;
+                    this.boobleUpModel.correctStreak();
+                    this.statisticModel.saveDailyScore(this.forBooble);
+                    this.boobleUpService.saveStatisticAll();
                }
            }, ANIMATION_INTERVAL);
     }

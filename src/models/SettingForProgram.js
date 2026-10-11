@@ -30,7 +30,10 @@ export class SettingForProgram
         buttonCheckX:0,
         buttonCheckY:0,
         diamant:0,
-        correctStreak:0
+        correctStreak:0,
+        diamantToday:0,
+        bonusX2:0,
+        maxDiamantToday:0
     }
     
     // хранит дубликат стартовых координат для сравнения

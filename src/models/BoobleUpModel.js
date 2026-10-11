@@ -6,8 +6,8 @@ export class BoobleUpModel {
     }
 
     correctStreak () {
-        let correctStreak = this.forBooble.correctStreak * 1;
-        let diamant = this.forBooble.diamant * 1;
+        let correctStreak = Number(this.forBooble.correctStreak);
+        let diamant = Number(this.forBooble.diamant);
         if (diamant > 0) correctStreak+=diamant;
         if (diamant < 0) correctStreak = 0;
         this.forBooble.correctStreak = correctStreak;

@@ -20,6 +20,9 @@ import { BoobleUpService } from '../services/BoobleUpService.js';
 import { LanguageController } from './LanguageController.js';
 import { DataOk } from '../services/data/DataOk.js';
 import { Help } from '../view/Help.js';
+import { StatisticModel } from '../models/StatisticModel.js';
+import { StatisticController } from './StatisticController.js';
+import { StatisticView } from '../view/StatisticView.js';
 
 // Здесь функции, которые должны отработать когда загрузится статическая страница
 window.addEventListener('load', () => {
@@ -69,16 +72,23 @@ window.addEventListener('load', () => {
     // функция отслеживает инфу по ответам и запускает процесс
     // всплытия кристала, шапки или черепа
     // boobleUp();
+
     const boobleUpModel = new BoobleUpModel({SettingForProgram});
-    const boobleUpService = new BoobleUpService();
+    const boobleUpService = new BoobleUpService({SettingForProgram});
     const boobleUpView = new BoobleUpView({languageController, SettingForProgram});
+
+    const statisticView = new StatisticView();
+    const statisticModel = new StatisticModel({SettingForProgram, boobleUpService});
+    const statisticController = new StatisticController({statisticModel, statisticView});
+    statisticController.init();
 
     const boobleUpController = new BoobleUpController({ SettingForProgram, 
                                                         boobleUpModel, 
                                                         boobleUpView, 
                                                         boobleUpService,
                                                         DataOk,
-                                                        Help
+                                                        Help,
+                                                        statisticModel
                                                         });
     boobleUpController.init();
 

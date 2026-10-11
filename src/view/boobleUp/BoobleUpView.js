@@ -83,7 +83,7 @@ export class BoobleUpView {
         document.body.appendChild(divCreateForBonusBox);
     
         divCreateForBonusBox.addEventListener('click', () => {
-          scarbClick(2, forBooble.diamant, objDataOk);
+          scarbClick(2, forBooble, objDataOk);
           // обнулить координату Y кристала, чтобы контроллер подумал что кристал долетел до конца
           forBooble.buttonCheckY = 0;
         });

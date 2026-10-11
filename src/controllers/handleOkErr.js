@@ -49,7 +49,7 @@ export function handleOkErr(str, event) {
     SettingForProgram.forBooble.buttonCheckX = event.pageX;
     SettingForProgram.forBooble.buttonCheckY = event.pageY;
     // тут считаем число баллов заработанных. если ошибка то сброс в ноль
-    boobleUpModel.correctStreak();
+    // boobleUpModel.correctStreak();
     // вставить шкалу процента заполнения текущего уровня
     boobleUpView.createBonusLevel(boobleUpModel.bonusPercent());
     /////////////////////////////////////////////////////////////////////////

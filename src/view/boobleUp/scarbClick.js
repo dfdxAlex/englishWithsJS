@@ -1,4 +1,4 @@
-export function scarbClick(xx=1, diamant, DataOk)
+export function scarbClick(xx=1, forBooble, DataOk)
 {
     const selectScarb = document.querySelector('.scarb');
 
@@ -15,7 +15,10 @@ export function scarbClick(xx=1, diamant, DataOk)
 
     const span = document.createElement('span');
     span.classList.add('text-about-scarb');
-    span.textContent = diamant * xx;
+    span.textContent = forBooble.diamant * xx;
+
+    // специально для статистики, сбрасывается в статистике ежедневной
+    forBooble.bonusX2 = forBooble.diamant * xx;
 
     bonusForScarb.appendChild(span);
 
@@ -24,7 +27,7 @@ export function scarbClick(xx=1, diamant, DataOk)
 
     document.body.appendChild(bonusForScarb);
 
-    DataOk.addOk(diamant * xx);
+    DataOk.addOk(forBooble.diamant * xx);
 
     setTimeout(() => {
         bonusForScarb.remove();
