@@ -1,30 +1,31 @@
 export class StatisticModel {
-constructor({SettingForProgram, boobleUpService}) {
-    this.SettingForProgram = SettingForProgram;
-    this.forBooble = this.SettingForProgram.forBooble;
-    this.boobleUpService = boobleUpService;
+constructor({forBooble}) {
+    this.forBooble = forBooble;
 }
 
 // если нет переменной в локадсторедже, то создать ее на день сегодняшний, или вернуть false
-loadSaveDailyScore() {
+loadDailyScore() {
+
+    // localStorage.removeItem('saveDailyScore');
+    // localStorage.removeItem('maxDiamantToday');
 
     let objDaily = JSON.parse(localStorage.getItem('saveDailyScore'));
     if (objDaily === null) {
-        objDaily = this.resetSaveDailyScore();
+        objDaily = this.resetDailyScore();
     }
 
     if (objDaily.data === undefined 
         || objDaily.diamantToday === undefined
             || objDaily.data !== new Date().toDateString()) {
                 localStorage.removeItem('saveDailyScore');
-                objDaily=this.resetSaveDailyScore();
+                objDaily=this.resetDailyScore();
     }
  
     return objDaily;
 }
 
 // создает объект с полями и записывает в localStorage
-resetSaveDailyScore() {
+resetDailyScore() {
         
         let objDaily = {data: new Date().toDateString(), 
                         diamantToday: this.forBooble.diamantToday};
@@ -37,7 +38,7 @@ resetSaveDailyScore() {
 saveDailyScore() {
 
     // получить данные по статистике сегодня из хранилища
-    let statisticToday = this.loadSaveDailyScore();
+    let statisticToday = this.loadDailyScore();
 
         statisticToday.diamantToday = Number(statisticToday.diamantToday) 
                                         + Number(this.forBooble.diamant)
@@ -47,10 +48,7 @@ saveDailyScore() {
 
         // записать данные, если они выросли по сравнению с другими днями
         this.saveMaxDiamantToday(statisticToday.diamantToday);
-
-        // console.log(statisticToday.diamantToday);
-
-        this.forBooble.bonusX2 = 0;
+        console.log('добавить кристал');
 
 }
 
@@ -63,10 +61,6 @@ saveMaxDiamantToday(diamantToday) {
 }
 
 loadMaxDiamantToday() {
-    if (localStorage.getItem('maxDiamantToday') !== null) {
-        return Number(localStorage.getItem('maxDiamantToday'));
-    } else {
-        return 0;
-    }
+    return Number(localStorage.getItem('maxDiamantToday')) || 0;
 }
 }

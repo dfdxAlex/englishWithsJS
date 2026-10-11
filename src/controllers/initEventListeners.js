@@ -78,7 +78,7 @@ window.addEventListener('load', () => {
     const boobleUpView = new BoobleUpView({languageController, SettingForProgram});
 
     const statisticView = new StatisticView();
-    const statisticModel = new StatisticModel({SettingForProgram, boobleUpService});
+    const statisticModel = new StatisticModel({ forBooble: SettingForProgram.forBooble});
     const statisticController = new StatisticController({statisticModel, statisticView});
     statisticController.init();
 

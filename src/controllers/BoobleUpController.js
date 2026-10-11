@@ -133,13 +133,7 @@ export class BoobleUpController
                     // Скорость всплытия
                     this.forBooble.buttonCheckY-=speedY;
             
-                    if (Date.now() - startTime > 3000) {
-                        startTime = 0;
-                        this.forBooble.buttonCheckY = 0;
-                        // this.statisticModel.saveDailyScore(this.forBooble);
-                        // this.boobleUpService.saveStatisticAll();
-                        // this.boobleUpService.saveDailyScore(this.forBooble);
-                    }
+
                     // Пока пузырь нормально летит вверх его координата Y предыдущая на 1 больше новой
                     // Если приходит новый ответ раньше, чем пузырь долетел до верха, то его координата
                     // изменяется и перестает отличаться на 1 балл
@@ -150,11 +144,20 @@ export class BoobleUpController
                             selectBoobleUp = undefined;
                             // функция набора заработанных баллов за сегодня
                             this.boobleUpModel.correctStreak();
+
                             // функция контролля числа баллов заработанных сегодня
                             this.statisticModel.saveDailyScore(this.forBooble);
-                            this.boobleUpService.saveStatisticAll();
+                            this.forBooble.bonusX2 = 0;
+
+                            // this.boobleUpService.saveStatisticAll();
                             this.statisticController.init();
-                        }
+                        } else if (Date.now() - startTime > 3000) {
+                                    startTime = 0;
+                                    this.forBooble.buttonCheckY = 0;
+
+                                    this.statisticModel.saveDailyScore(this.forBooble);
+                                    this.forBooble.bonusX2 = 0;
+                                }
             
                     // Запомнить текущую координату Y чтобы на следующей итерации сравнить её с текущей
                     // величиной следующей итерации.
@@ -167,7 +170,7 @@ export class BoobleUpController
                     divCreateForBonusBox?.remove();
                     divCreateForBonusBox = undefined;
                     divCreate.innerText = '';
-                    randomOk = false;
+                    
                     this.boobleUpView.createBoxForInfoBonus();
                     document.querySelector('#bonus-diamant')?.remove();
                     buttonCheckYStart = undefined;
@@ -177,8 +180,14 @@ export class BoobleUpController
                     speedY = 1.5;
                     startTime = 0;
                     this.boobleUpModel.correctStreak();
-                    this.statisticModel.saveDailyScore(this.forBooble);
-                    this.boobleUpService.saveStatisticAll();
+
+                    if (randomOk) {
+                        this.statisticModel.saveDailyScore(this.forBooble);
+                        this.forBooble.bonusX2 = 0;
+                    }
+
+                    randomOk = false;
+                    // this.boobleUpService.saveStatisticAll();
                     this.statisticController.init();
                }
            }, ANIMATION_INTERVAL);
