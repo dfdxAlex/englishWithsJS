@@ -12,9 +12,6 @@ init() {
 const daily = Number(this.statisticModel.loadSaveDailyScore().diamantToday);
 const max = Number(this.statisticModel.loadMaxDiamantToday());
 
-// document.getElementById('console').dataset.progress =
-//     `d:${daily} m:${max}`;
-
 let procent = 0;
 
 if (!Number.isNaN(daily) &&

@@ -88,7 +88,8 @@ window.addEventListener('load', () => {
                                                         boobleUpService,
                                                         DataOk,
                                                         Help,
-                                                        statisticModel
+                                                        statisticModel,
+                                                        statisticController
                                                         });
     boobleUpController.init();
 

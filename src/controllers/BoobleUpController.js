@@ -14,7 +14,8 @@ export class BoobleUpController
                     boobleUpService,
                     DataOk,
                     Help,
-                    statisticModel}) {
+                    statisticModel,
+                    statisticController}) {
         this.settingForProgram = SettingForProgram;
         this.forBooble = SettingForProgram.forBooble;
         this.boobleUpService = boobleUpService;
@@ -22,6 +23,7 @@ export class BoobleUpController
         this.boobleUpModel = boobleUpModel;
         this.boobleUpView = boobleUpView;
         this.statisticModel = statisticModel;
+        this.statisticController = statisticController;
 
         // накинуть событие помощи на кристал вверху слева
         hundleHelpPrime(Help);
@@ -131,6 +133,13 @@ export class BoobleUpController
                     // Скорость всплытия
                     this.forBooble.buttonCheckY-=speedY;
             
+                    if (Date.now() - startTime > 3000) {
+                        startTime = 0;
+                        this.forBooble.buttonCheckY = 0;
+                        // this.statisticModel.saveDailyScore(this.forBooble);
+                        // this.boobleUpService.saveStatisticAll();
+                        // this.boobleUpService.saveDailyScore(this.forBooble);
+                    }
                     // Пока пузырь нормально летит вверх его координата Y предыдущая на 1 больше новой
                     // Если приходит новый ответ раньше, чем пузырь долетел до верха, то его координата
                     // изменяется и перестает отличаться на 1 балл
@@ -144,15 +153,8 @@ export class BoobleUpController
                             // функция контролля числа баллов заработанных сегодня
                             this.statisticModel.saveDailyScore(this.forBooble);
                             this.boobleUpService.saveStatisticAll();
+                            this.statisticController.init();
                         }
-
-
-
-                    if (Date.now() - startTime > 3000) {
-                        startTime = 0;
-                        this.forBooble.buttonCheckY = 0;
-                        // this.boobleUpService.saveDailyScore(this.forBooble);
-                    }
             
                     // Запомнить текущую координату Y чтобы на следующей итерации сравнить её с текущей
                     // величиной следующей итерации.
@@ -177,6 +179,7 @@ export class BoobleUpController
                     this.boobleUpModel.correctStreak();
                     this.statisticModel.saveDailyScore(this.forBooble);
                     this.boobleUpService.saveStatisticAll();
+                    this.statisticController.init();
                }
            }, ANIMATION_INTERVAL);
     }
