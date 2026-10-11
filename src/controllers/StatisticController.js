@@ -9,7 +9,7 @@ export class StatisticController{
 
 init() {
 
-const daily = Number(this.statisticModel.loadSaveDailyScore()?.diamantToday);
+const daily = Number(this.statisticModel.loadSaveDailyScore().diamantToday);
 const max = Number(this.statisticModel.loadMaxDiamantToday());
 
 // document.getElementById('console').dataset.progress =
@@ -26,7 +26,7 @@ if (!Number.isNaN(daily) &&
 
 if (procent > 100) procent = 100;
 
-    this.statisticView.setDiamantProgress(procent);
+    this.statisticView.setDiamantProgress(daily);
 
     console.log(this.statisticModel.loadSaveDailyScore());
     console.log(this.statisticModel.loadMaxDiamantToday());
