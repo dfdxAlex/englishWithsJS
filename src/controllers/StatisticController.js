@@ -11,14 +11,14 @@ export class StatisticController{
         const numberOfCrystals = this.languageController.translate('Количество кристаллов')
         const enterTheGoal = this.languageController.translate('Введите цель')
         const save = this.languageController.translate('Сохранить')
-        this.statisticView.renderMenuGoal(goalForTheDay, numberOfCrystals, enterTheGoal, save);
-        
-
-
-
+        this.statisticView.renderMenuGoal(goalForTheDay, 
+                                          numberOfCrystals, 
+                                          enterTheGoal, 
+                                          save,
+                                          statisticModel.setGoalForToday,
+                                          () => this.init()
+                                        );
     }
-
-
 
 init() {
 

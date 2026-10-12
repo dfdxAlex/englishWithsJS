@@ -74,7 +74,7 @@ saveMaxDiamantToday(diamantToday) {
 }
 
 getGoalForToday() {
-    if (localStorage.getItem('goalForToday') === null) localStorage.setItem('goalForToday','0');
+    if (localStorage.getItem('goalForToday') === null) this.setGoalForToday(0);;
     const goalForToday = Number(localStorage.getItem('goalForToday'));
     if (goalForToday > 0) {
         this.forBooble.dailyGoal = goalForToday;
@@ -83,7 +83,14 @@ getGoalForToday() {
     return 0;
 }
 
+setGoalForToday(goal) {
+    localStorage.setItem('goalForToday', goal);
+}
+
+
+
 loadMaxDiamantToday() {
     return Number(localStorage.getItem('maxDiamantToday')) || 0;
 }
+
 }

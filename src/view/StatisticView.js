@@ -21,7 +21,7 @@ closeGoalModal() {
     document.querySelector('.goal-modal')?.remove();
 }
 
-renderMenuGoal(goalForTheDay, numberOfCrystals, enterTheGoal, save) {
+renderMenuGoal(goalForTheDay, numberOfCrystals, enterTheGoal, save, setGoalForToday, init) {
     let forRender = `
         <div class="goal-modal">
             <div class="goal-modal__content">
@@ -60,7 +60,9 @@ renderMenuGoal(goalForTheDay, numberOfCrystals, enterTheGoal, save) {
                     document
                             .getElementById('save-goal-btn')
                             .addEventListener('click', () => {
-                                localStorage.setItem('goalForToday', document.getElementById('goal-input').value);
+                                // localStorage.setItem('goalForToday', document.getElementById('goal-input').value);
+                                setGoalForToday(document.getElementById('goal-input').value);
+                                init();
                                 this.closeGoalModal();
                             });
                     document
