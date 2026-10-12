@@ -17,32 +17,4 @@ getBoobleDirection(x, screenWidth) {
     return getRandom(-2, 2);
 }
 
-
-
-
-
-
-saveStatisticAll() {
-
-    let nameLevel = localStorage.getItem('nameArrayDb');
-    let diamant = this.forBooble;
-
-    // console.log(this.SettingForProgram.testsOk);
-
-    // console.log(this.resetSaveStatisticAll());
-
-}
-
-
-
-resetSaveStatisticAll()
-{
-    let objStatisticAll = JSON.parse(localStorage.getItem('objStatisticAll'));
-    if (objStatisticAll === null) {
-        objStatisticAll = {};
-        localStorage.setItem('objStatisticAll',JSON.stringify(objStatisticAll));
-    }
-    return objStatisticAll;
-}
-
 }

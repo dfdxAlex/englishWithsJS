@@ -85,7 +85,7 @@ window.addEventListener('load', () => {
                                                         });
     statisticController.init();
 
-    const boobleUpController = new BoobleUpController({ SettingForProgram, 
+    const boobleUpController = new BoobleUpController({ forBooble: SettingForProgram.forBooble, 
                                                         boobleUpModel, 
                                                         boobleUpView, 
                                                         boobleUpService,

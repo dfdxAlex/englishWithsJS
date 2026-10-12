@@ -98,4 +98,18 @@ export class BoobleUpView {
                     ?.addEventListener('click', () => {infoForPresentBox(this.languageController)});
             }, 0);
     }
+
+    createCristal(forBooble) {
+
+        // ссылка на поле divCreate специально не описывается, может создаваться в любом классе
+        // используется контекст чтобы не создавалось много запросов в дом
+        if (this.divCreate === undefined) {
+            this.divCreate = document.createElement("div");
+            this.divCreate.innerText = '💎';
+        } 
+        this.divCreate.style.left = forBooble.buttonCheckX + "px"; // Начальная позиция
+        this.divCreate.style.top = forBooble.buttonCheckY + "px";
+
+        return this.divCreate;
+    }
 }

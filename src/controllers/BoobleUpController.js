@@ -8,7 +8,7 @@ import { hundleHelpPrime } from '../view/hundleHelpPrime.js';
 
 export class BoobleUpController
 {
-    constructor({   SettingForProgram, 
+    constructor({   forBooble, 
                     boobleUpModel, 
                     boobleUpView,
                     boobleUpService,
@@ -16,8 +16,7 @@ export class BoobleUpController
                     Help,
                     statisticModel,
                     statisticController}) {
-        this.settingForProgram = SettingForProgram;
-        this.forBooble = SettingForProgram.forBooble;
+        this.forBooble = forBooble;
         this.boobleUpService = boobleUpService;
         this.DataOk = DataOk;
         this.boobleUpModel = boobleUpModel;
@@ -29,30 +28,29 @@ export class BoobleUpController
         hundleHelpPrime(Help);
     }
 
+    #setupController = {
+        boobleFinishY:50,               // до куда долетает кристал если не отработает по времени
+        animationInterval:16,           // время задержки таймера на каждом цыкле
+        randomShiftDelay:16,            // длина смещения влево/вправо
+        
+        screenWidth:window.innerWidth,  // прочитать ширину екрана
+        crystalWidth:60,                // ширина кристала, для вычисления отскока слева
+        boobleMargin:10,                // отскок от правой стороны екрана
+    }
+
+    #state = {
+        speedY:2,                       // скорость движения анимации
+        randomInt:-1,                   // содержит цифру, если она 1, то выпадает ящик
+    }
+
     init() {
-            const BOOBLE_FINISH_Y = 50;
-            let ANIMATION_INTERVAL = 16;
-            const RANDOM_SHIFT_DELAY = 16;
-            let speedY = 2;
 
-            // работа с шириной екрана, отскок от правой стороны екрана
-            const screenWidth = window.innerWidth;
-            const crystalWidth = 60;
-            const BOOBLE_MARGIN = 10;
-
-            let randomInt = undefined;
-
-            // постоянная часть для всплывающего шарика
-            let divCreate = document.createElement("div");
-            divCreate.innerText = '💎';
             let divCreateForBonusBox = undefined;
 
             let selectBoobleUp = undefined;
-           
         
             let lag = 6;
             let numberRand = 0;
-            let randomOk = false;
             let hightOld;
             let buttonCheckYStart;
 
@@ -63,7 +61,7 @@ export class BoobleUpController
           
                 // Если координата Y всё ещё ниже потолка то работаем
                 // Если кристал ниже границы окончания всплытия
-                if (this.forBooble.buttonCheckY > BOOBLE_FINISH_Y) {
+                if (this.forBooble.buttonCheckY > this.#setupController.boobleFinishY) {
                     // Если ещё не запоминали стартовую координату Y, то запомнить
                         if (buttonCheckYStart === undefined) {
                         buttonCheckYStart = this.forBooble.buttonCheckY;
@@ -74,18 +72,18 @@ export class BoobleUpController
                     if (lag < 0) {
                         numberRand = this.boobleUpService.getBoobleDirection(   this.forBooble.buttonCheckX, 
                                                                                 window.innerWidth);
-                        lag = RANDOM_SHIFT_DELAY;
+                        lag = this.#setupController.randomShiftDelay;
                     }
                     lag--;
         
                     // Изменение координаты влево-вправо.
                     this.forBooble.buttonCheckX+=numberRand;
                     this.forBooble.buttonCheckX = Math.max(
-                        BOOBLE_MARGIN,
-                        Math.min(this.forBooble.buttonCheckX, screenWidth - crystalWidth)
+                        this.#setupController.boobleMargin,
+                        Math.min(this.forBooble.buttonCheckX, this.#setupController.screenWidth - this.#setupController.crystalWidth)
                     );
-                    divCreate.style.left = this.forBooble.buttonCheckX + "px"; // Начальная позиция
-                    divCreate.style.top = this.forBooble.buttonCheckY + "px";
+
+                    this.boobleUpView.createCristal(this.forBooble);
 
                     // Нарисовать картинку пузыря, если ее ещё нет, алмаз, шапка или череп
                     if (!selectBoobleUp) {
@@ -96,24 +94,22 @@ export class BoobleUpController
                         this.boobleUpView.removeBonusBox();
 
                         //создать контейнер с кристалом
-                        this.boobleUpView.setBoobleUp(this.forBooble.diamant, divCreate);
+                        this.boobleUpView.setBoobleUp(this.forBooble.diamant, this.boobleUpView.createCristal(this.forBooble));
                     }
         
                     // сундук с сокровищами, одна попытка создать его. сброс попытки при окончании
                     // всплытия кристала
-                    if (divCreateForBonusBox === undefined && randomInt === undefined) {
-                        randomInt = getRandom(0, this.boobleUpModel.bonusRandomMax());
+                    if (divCreateForBonusBox === undefined && this.#state.randomInt === -1) {
+                        this.#state.randomInt = getRandom(0, this.boobleUpModel.bonusRandomMax());
                         
-                        if (randomInt == 1) randomOk = true;
-                    //    randomOk = true; // если раскомментировать, то ящик падает всегда
-                        if (randomOk) {
+                    //    this.#state.randomInt = 1; // если раскомментировать, то ящик падает всегда
+                        if (this.#state.randomInt === 1) {
 
                             // если выпал ящик, то замедлить всплытие кристала
-                            speedY = 1;
+                            this.#state.speedY = 1;
 
                             // создать бонусный ящик и накинуть событие клика
                             this.boobleUpView.createBoxScarb(this.forBooble, this.DataOk);
-
         
                             divCreateForBonusBox = document.getElementById('scarb');
         
@@ -126,20 +122,19 @@ export class BoobleUpController
                         startTime = Date.now();
                     }
         
-                    if (divCreateForBonusBox !== undefined && randomOk) {
+                    if (divCreateForBonusBox !== undefined && this.#state.randomInt === 1) {
                         divCreateForBonusBox.style.left = this.forBooble.buttonCheckX + "px"; // Начальная позиция
                         divCreateForBonusBox.style.top = buttonCheckYStart - this.forBooble.buttonCheckY + "px";
                     }
                     // Скорость всплытия
-                    this.forBooble.buttonCheckY-=speedY;
+                    this.forBooble.buttonCheckY-=this.#state.speedY;
             
 
                     // Пока пузырь нормально летит вверх его координата Y предыдущая на 1 больше новой
                     // Если приходит новый ответ раньше, чем пузырь долетел до верха, то его координата
                     // изменяется и перестает отличаться на 1 балл
                     // Для ресета картинки удаляем старый пузырь и система автоматически сгенерирует новый
-                    // if (this.forBooble.buttonCheckY - hightOld !== -speedY) 
-                    if (Math.abs((this.forBooble.buttonCheckY - hightOld) - (-speedY)) > 0.01) {
+                    if (Math.abs((this.forBooble.buttonCheckY - hightOld) - (-this.#state.speedY)) > 0.01) {
                             selectBoobleUp?.remove();
                             selectBoobleUp = undefined;
                             // функция набора заработанных баллов за сегодня
@@ -149,7 +144,6 @@ export class BoobleUpController
                             this.statisticModel.saveDailyScore(this.forBooble);
                             this.forBooble.bonusX2 = 0;
 
-                            // this.boobleUpService.saveStatisticAll();
                             this.statisticController.init();
                         } else if (Date.now() - startTime > 3000) {
                                     startTime = 0;
@@ -169,27 +163,23 @@ export class BoobleUpController
                     selectBoobleUp = undefined;
                     divCreateForBonusBox?.remove();
                     divCreateForBonusBox = undefined;
-                    divCreate.innerText = '';
                     
                     this.boobleUpView.createBoxForInfoBonus();
                     document.querySelector('#bonus-diamant')?.remove();
                     buttonCheckYStart = undefined;
                     hightOld = undefined;
-                    divCreateForBonusBox = undefined;
-                    randomInt = undefined;
-                    speedY = 1.5;
+                    this.#state.speedY = 2;
                     startTime = 0;
                     this.boobleUpModel.correctStreak();
 
-                    if (randomOk) {
+                    if (this.#state.randomInt === 1) {
                         this.statisticModel.saveDailyScore(this.forBooble);
                         this.forBooble.bonusX2 = 0;
                     }
 
-                    randomOk = false;
-                    // this.boobleUpService.saveStatisticAll();
+                    this.#state.randomInt = -1;
                     this.statisticController.init();
                }
-           }, ANIMATION_INTERVAL);
+           }, this.#setupController.animationInterval);
     }
 }
