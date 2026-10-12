@@ -21,8 +21,8 @@ closeGoalModal() {
     document.querySelector('.goal-modal')?.remove();
 }
 
-createMenuGoal(goalForTheDay, numberOfCrystals, enterTheGoal, save) {
-    return `
+renderMenuGoal(goalForTheDay, numberOfCrystals, enterTheGoal, save) {
+    let forRender = `
         <div class="goal-modal">
             <div class="goal-modal__content">
 
@@ -52,6 +52,27 @@ createMenuGoal(goalForTheDay, numberOfCrystals, enterTheGoal, save) {
             </div>
         </div>
     `;
+
+    const goalForToday = document.getElementById('goal-for-today');
+        document.getElementById('diament-view')
+                .addEventListener('click', () => {
+                    goalForToday.innerHTML = forRender;
+                    document
+                            .getElementById('save-goal-btn')
+                            .addEventListener('click', () => {
+                                localStorage.setItem('goalForToday', document.getElementById('goal-input').value);
+                                this.closeGoalModal();
+                            });
+                    document
+                            .querySelector('.goal-modal')
+                            .addEventListener('click', (e) => {
+
+                                if (e.target.classList.contains('goal-modal')) {
+                                    e.currentTarget.remove();
+                                }
+
+                            });
+                });
 }
     
 

@@ -6,32 +6,15 @@ export class StatisticController{
         this.statisticView = statisticView;
         this.languageController = languageController;
 
-        
-
+        // рендер менюшки для ввода цели
         const goalForTheDay = this.languageController.translate('Цель на день')
         const numberOfCrystals = this.languageController.translate('Количество кристаллов')
         const enterTheGoal = this.languageController.translate('Введите цель')
         const save = this.languageController.translate('Сохранить')
-        const menuGoal = this.statisticView.createMenuGoal(goalForTheDay, numberOfCrystals, enterTheGoal, save);
-        const goalForToday = document.getElementById('goal-for-today');
-        document.getElementById('diament-view')
-                .addEventListener('click', () => {
-                    goalForToday.innerHTML = menuGoal;
-                    document
-                            .getElementById('save-goal-btn')
-                            .addEventListener('click', () => {
-                                this.statisticView.closeGoalModal();
-                            });
-                    document
-                            .querySelector('.goal-modal')
-                            .addEventListener('click', (e) => {
+        this.statisticView.renderMenuGoal(goalForTheDay, numberOfCrystals, enterTheGoal, save);
+        
 
-                                if (e.target.classList.contains('goal-modal')) {
-                                    e.currentTarget.remove();
-                                }
 
-                            });
-                });
 
     }
 
@@ -40,7 +23,11 @@ export class StatisticController{
 init() {
 
 const daily = Number(this.statisticModel.loadDailyScore().diamantToday);
-const max = Number(this.statisticModel.loadMaxDiamantToday());
+let max = Number(this.statisticModel.loadMaxDiamantToday());
+
+// проверить установлена ли цель в ручную
+const goalForToday = this.statisticModel.getGoalForToday();
+if (goalForToday > 0) max = goalForToday;
 
 let procent = 0;
 

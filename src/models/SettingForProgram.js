@@ -33,7 +33,8 @@ export class SettingForProgram
         correctStreak:0,
         diamantToday:0,
         bonusX2:0,
-        maxDiamantToday:0
+        maxDiamantToday:0,
+        dailyGoal:0
     }
     
     // хранит дубликат стартовых координат для сравнения

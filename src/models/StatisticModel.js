@@ -68,7 +68,19 @@ saveMaxDiamantToday(diamantToday) {
     if (Number(diamantToday) > Number(this.forBooble.maxDiamantToday)) {
         localStorage.setItem('maxDiamantToday', diamantToday);
         this.forBooble.maxDiamantToday = diamantToday;
+
+
     }
+}
+
+getGoalForToday() {
+    if (localStorage.getItem('goalForToday') === null) localStorage.setItem('goalForToday','0');
+    const goalForToday = Number(localStorage.getItem('goalForToday'));
+    if (goalForToday > 0) {
+        this.forBooble.dailyGoal = goalForToday;
+        return goalForToday;
+    }
+    return 0;
 }
 
 loadMaxDiamantToday() {
