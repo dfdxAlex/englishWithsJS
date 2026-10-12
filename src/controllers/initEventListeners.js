@@ -73,13 +73,16 @@ window.addEventListener('load', () => {
     // всплытия кристала, шапки или черепа
     // boobleUp();
 
-    const boobleUpModel = new BoobleUpModel({SettingForProgram});
-    const boobleUpService = new BoobleUpService({SettingForProgram});
+    const boobleUpModel = new BoobleUpModel({ forBooble: SettingForProgram.forBooble});
+    const boobleUpService = new BoobleUpService({forBooble: SettingForProgram.forBooble});
     const boobleUpView = new BoobleUpView({languageController, SettingForProgram});
 
     const statisticView = new StatisticView();
     const statisticModel = new StatisticModel({ forBooble: SettingForProgram.forBooble});
-    const statisticController = new StatisticController({statisticModel, statisticView});
+    const statisticController = new StatisticController({   statisticModel, 
+                                                            statisticView,
+                                                            languageController
+                                                        });
     statisticController.init();
 
     const boobleUpController = new BoobleUpController({ SettingForProgram, 

@@ -22,6 +22,31 @@ BDTranslate.push(
      ``,
      ``]);
 BDTranslate.push(
+    [`Цель на день`, 
+     `Ціль на день`, 
+     `Cel na dziś`,
+     `Goal for the day`]);
+BDTranslate.push(
+    [`Сохранить`, 
+     `Зберегти`, 
+     `Zapisz`,
+     `Save`]);
+BDTranslate.push(
+    [`Введите цель`, 
+     `Введіть ціль`, 
+     `Wprowadź swój cel`,
+     `Enter the goal`]);
+BDTranslate.push(
+    [`Количество кристаллов`, 
+     `Кількість кристалів`, 
+     `Liczba kryształów`,
+     `Number of crystals`]);
+BDTranslate.push(
+    [`Цель на день`, 
+     `Ціль на день`, 
+     `Cel na dziś`,
+     `Goal for the day`]);
+BDTranslate.push(
     [`Попытка озвучить не английский текст.`, 
      `Спроба озвучити не англійський текст.`, 
      `Próba odczytania tekstu w języku innym niż angielski.`,

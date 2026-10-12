@@ -5,7 +5,6 @@ constructor({forBooble}) {
 
 // если нет переменной в локадсторедже, то создать ее на день сегодняшний, или вернуть false
 loadDailyScore() {
-
     // localStorage.removeItem('saveDailyScore');
     // localStorage.removeItem('maxDiamantToday');
 
@@ -53,8 +52,20 @@ saveDailyScore() {
 }
 
 saveMaxDiamantToday(diamantToday) {
-    if (localStorage.getItem('maxDiamantToday') === null
-        || Number(diamantToday) > Number(this.forBooble.maxDiamantToday)) {
+    // если нет переменной в локальном хранилище то создать ее.
+    if (localStorage.getItem('maxDiamantToday') === null) {
+        localStorage.setItem('maxDiamantToday', diamantToday);
+    }
+
+    // если в объекте хранения максимального числа 0, то прочитать число из хранилища
+    // должно работать при обновлении страницы
+    if (this.forBooble.maxDiamantToday < Number(localStorage.getItem('maxDiamantToday'))) {
+        this.forBooble.maxDiamantToday = Number(localStorage.getItem('maxDiamantToday'));
+    }
+
+    // если пришло число большее, чем было в объекте с данными, то изменить максимальное значение
+    // в объекте и в хранилище
+    if (Number(diamantToday) > Number(this.forBooble.maxDiamantToday)) {
         localStorage.setItem('maxDiamantToday', diamantToday);
         this.forBooble.maxDiamantToday = diamantToday;
     }

@@ -44,7 +44,7 @@ export function handleOkErr(str, event) {
     // выше уровень, чаще выпадает бонусный ящик.
     const languageController = new LanguageController();
     const boobleUpView = new BoobleUpView({languageController});
-    const boobleUpModel = new BoobleUpModel({SettingForProgram});
+    const boobleUpModel = new BoobleUpModel({forBooble: SettingForProgram.forBooble});
     // Сохранить координаты места клика по кнопке Проверить
     SettingForProgram.forBooble.buttonCheckX = event.pageX;
     SettingForProgram.forBooble.buttonCheckY = event.pageY;

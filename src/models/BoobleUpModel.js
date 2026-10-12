@@ -1,8 +1,7 @@
 
 export class BoobleUpModel {
-    constructor ({SettingForProgram}) {
-        this.settingForProgram = SettingForProgram;
-        this.forBooble = SettingForProgram.forBooble;
+    constructor ({forBooble}) {
+        this.forBooble = forBooble;
     }
 
     correctStreak () {
@@ -14,7 +13,7 @@ export class BoobleUpModel {
     }
 
     bonusRandomMax() {
-        let correctStreak = this.forBooble.correctStreak * 1;
+        let correctStreak = Number(this.forBooble.correctStreak);
         switch (true) {
             case correctStreak > 600: return 3;
             case correctStreak > 300: return 4;

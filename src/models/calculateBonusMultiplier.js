@@ -127,7 +127,7 @@ export function calculateBonusMultiplier(propertyForBonus)
     if (ticLocal < 0.4) ticLocal = 0.4;
  
     // добавить коррекция по числу правильных подряд ответов
-    const boobleUpModel = new BoobleUpModel({SettingForProgram});
+    const boobleUpModel = new BoobleUpModel({forBooble: SettingForProgram.forBooble});
     ticLocal = Number(boobleUpModel.bonusPercent().koefForBonus * ticLocal);
 
     // поместить инфу в статическую переменную для использования

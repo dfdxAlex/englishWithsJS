@@ -5,9 +5,8 @@ export class BoobleUpService {
 
 
 
-constructor({SettingForProgram}) {
-    this.SettingForProgram = SettingForProgram;
-    this.forBooble = this.SettingForProgram.forBooble;
+constructor({forBooble}) {
+    this.forBooble = forBooble;
 
 }
 
