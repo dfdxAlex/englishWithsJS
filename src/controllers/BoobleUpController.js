@@ -111,9 +111,17 @@ export class BoobleUpController
                             this.#state.speedY = 1;
 
                             // затемнить екран
+                            // const overlay = document.createElement('div');
+                            // overlay.id = 'bonus-overlay';
+                            // document.body.appendChild(overlay);
+
                             const overlay = document.createElement('div');
                             overlay.id = 'bonus-overlay';
                             document.body.appendChild(overlay);
+
+                            requestAnimationFrame(() => {
+                                overlay.style.opacity = '0.6';
+                            });
 
                             // создать бонусный ящик и накинуть событие клика
                             this.boobleUpView.createBoxScarb(this.forBooble, this.DataOk);
