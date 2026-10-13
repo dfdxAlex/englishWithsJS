@@ -41,11 +41,21 @@ export class BoobleUpController
     #state = {
         speedY:2,                       // скорость движения анимации
         randomInt:-1,                   // содержит цифру, если она 1, то выпадает ящик
+        bonusBox:undefined,             // содержит ссылку на бонусный ящик
+    }
+
+    getBonusBox(state) {
+        if (!state.bonusBox)
+            state.bonusBox = document.getElementById('scarb') || undefined;
+        return state.bonusBox;
+    }
+
+    removeBonusBox(state) {
+        state.bonusBox?.remove();
+        state.bonusBox = undefined;
     }
 
     init() {
-
-            let divCreateForBonusBox = undefined;
 
             let selectBoobleUp = undefined;
         
@@ -99,7 +109,7 @@ export class BoobleUpController
         
                     // сундук с сокровищами, одна попытка создать его. сброс попытки при окончании
                     // всплытия кристала
-                    if (divCreateForBonusBox === undefined && this.#state.randomInt === -1) {
+                    if (this.#state.randomInt === -1) {
                         this.#state.randomInt = getRandom(0, this.boobleUpModel.bonusRandomMax());
                         
                     //    this.#state.randomInt = 1; // если раскомментировать, то ящик падает всегда
@@ -111,20 +121,22 @@ export class BoobleUpController
                             // создать бонусный ящик и накинуть событие клика
                             this.boobleUpView.createBoxScarb(this.forBooble, this.DataOk);
         
-                            divCreateForBonusBox = document.getElementById('scarb');
+                            this.getBonusBox(this.#state);
         
                             // вставляет в динамическое меню картинку алмаза умножить на 2
                             this.boobleUpView.createDiamandX2();
                         }
                     }
                     
-                    if (divCreateForBonusBox) {
+                    // Если выпал бонусный ящик, постоянно сбрасываем таймер,
+                    // чтобы отключить ограничение всплытия в 3 секунды.
+                    if (this.getBonusBox(this.#state)) {
                         startTime = Date.now();
                     }
         
-                    if (divCreateForBonusBox !== undefined && this.#state.randomInt === 1) {
-                        divCreateForBonusBox.style.left = this.forBooble.buttonCheckX + "px"; // Начальная позиция
-                        divCreateForBonusBox.style.top = buttonCheckYStart - this.forBooble.buttonCheckY + "px";
+                    if (this.getBonusBox(this.#state) && this.#state.randomInt === 1) {
+                        this.getBonusBox(this.#state).style.left = this.forBooble.buttonCheckX + "px"; // Начальная позиция
+                        this.getBonusBox(this.#state).style.top = buttonCheckYStart - this.forBooble.buttonCheckY + "px";
                     }
                     // Скорость всплытия
                     this.forBooble.buttonCheckY-=this.#state.speedY;
@@ -161,8 +173,7 @@ export class BoobleUpController
                } else if (selectBoobleUp) {
                     selectBoobleUp?.remove();
                     selectBoobleUp = undefined;
-                    divCreateForBonusBox?.remove();
-                    divCreateForBonusBox = undefined;
+                    this.removeBonusBox(this.#state);
                     
                     this.boobleUpView.createBoxForInfoBonus();
                     document.querySelector('#bonus-diamant')?.remove();
