@@ -124,4 +124,31 @@ export class BoobleUpView {
         state.bonusBox = undefined;
     }
 
+    showBonusOverlay() {
+        let overlay = document.getElementById('bonus-overlay');
+
+        if (!overlay) {
+            overlay = document.createElement('div');
+            overlay.id = 'bonus-overlay';
+            document.body.appendChild(overlay);
+        }
+
+        requestAnimationFrame(() => {
+            overlay.classList.add('show');
+        });
+    }
+
+    hideBonusOverlay() {
+        const overlay = document.getElementById('bonus-overlay');
+
+        if (!overlay) return;
+
+        overlay.classList.remove('show');
+        overlay.classList.add('hide');
+
+        overlay.addEventListener('transitionend', () => {
+            overlay.remove();
+        }, { once: true });
+    }
+
 }

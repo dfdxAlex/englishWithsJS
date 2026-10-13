@@ -195,8 +195,16 @@ select{
 }
 
 
-#scarb {
+/* #scarb {
     position: absolute;
     z-index: 101;
+} */
+
+#bonus-overlay.show {
+    opacity: 0.6;
+}
+
+#bonus-overlay.hide {
+    opacity: 0;
 }
 
