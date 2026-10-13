@@ -131,6 +131,7 @@ select{
     height: 50px;
     font-size: 34px;
     animation: flyUp2 8s ease-out forwards;
+    z-index: 101;
   }
   
   @keyframes flyUp2 {
@@ -146,6 +147,7 @@ select{
   
   .bonus-for-scarb {
     position: absolute;
+    
   }
 
 .text-about-scarb {

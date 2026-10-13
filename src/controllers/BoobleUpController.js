@@ -41,6 +41,7 @@ export class BoobleUpController
         speedY:2,                       // скорость движения анимации
         randomInt:-1,                   // содержит цифру, если она 1, то выпадает ящик
         bonusBox:undefined,             // содержит ссылку на бонусный ящик
+        timeAnimation:3000,             // время работы анимации, если сундука нет то 3000, если есть 5000
     }
 
     init() {
@@ -118,6 +119,9 @@ export class BoobleUpController
                             // вставляет в динамическое меню картинку алмаза умножить на 2
                             this.boobleUpView.createDiamandX2();
 
+                            // увеличить время анимации если выпал ящик
+                            this.#state.timeAnimation = 7000;
+
                             // вставить событие удаления ящика если нажата кнопка любого ответа
                             // на следующий тест
                             // this.boobleUpView.handleAnswerClick(() => this.#state);
@@ -127,7 +131,8 @@ export class BoobleUpController
                     const bonusBox = this.boobleUpView.getBonusBox(this.#state);
                     // Если выпал бонусный ящик, постоянно сбрасываем таймер,
                     // чтобы отключить ограничение всплытия в 3 секунды.
-                    if (bonusBox) {
+
+                    if (startTime === 0) {
                         startTime = Date.now();
                     }
         
@@ -157,7 +162,7 @@ export class BoobleUpController
 
                             //если падал бонусный сундук то удалить его
                             // this.boobleUpView.removeBonusBox(this.#state);
-                        } else if (Date.now() - startTime > 3000) {
+                        } else if (Date.now() - startTime > this.#state.timeAnimation) {
                                     startTime = 0;
                                     this.forBooble.buttonCheckY = 0;
 
@@ -177,6 +182,8 @@ export class BoobleUpController
 
                     // убрать затмение
                     this.boobleUpView.hideBonusOverlay();
+                    // сброс времени анимации
+                    this.#state.timeAnimation = 3000;
                     
                     this.boobleUpView.createBoxForInfoBonus();
                     document.querySelector('#bonus-diamant')?.remove();
