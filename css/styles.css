@@ -181,3 +181,16 @@ select{
     list-style: none; 
 }
 
+/* Затемнение екрана при выпадении ящика */
+#bonus-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.3);
+    z-index: 100;
+    pointer-events: none;
+}
+
+#scarb {
+    position: absolute;
+    z-index: 101;
+}
