@@ -29,11 +29,10 @@ export class BoobleUpController
     }
 
     #setupController = {
+        forceBonusBox:true,            // если дать true то бонусный ящик падает всегда
         boobleFinishY:50,               // до куда долетает кристал если не отработает по времени
         animationInterval:16,           // время задержки таймера на каждом цыкле
         randomShiftDelay:16,            // длина смещения влево/вправо
-        
-        screenWidth:window.innerWidth,  // прочитать ширину екрана
         crystalWidth:60,                // ширина кристала, для вычисления отскока слева
         boobleMargin:10,                // отскок от правой стороны екрана
     }
@@ -44,18 +43,9 @@ export class BoobleUpController
         bonusBox:undefined,             // содержит ссылку на бонусный ящик
     }
 
-    getBonusBox(state) {
-        if (!state.bonusBox)
-            state.bonusBox = document.getElementById('scarb') || undefined;
-        return state.bonusBox;
-    }
-
-    removeBonusBox(state) {
-        state.bonusBox?.remove();
-        state.bonusBox = undefined;
-    }
-
     init() {
+
+            
 
             let selectBoobleUp = undefined;
         
@@ -90,7 +80,7 @@ export class BoobleUpController
                     this.forBooble.buttonCheckX+=numberRand;
                     this.forBooble.buttonCheckX = Math.max(
                         this.#setupController.boobleMargin,
-                        Math.min(this.forBooble.buttonCheckX, this.#setupController.screenWidth - this.#setupController.crystalWidth)
+                        Math.min(this.forBooble.buttonCheckX, window.innerWidth - this.#setupController.crystalWidth)
                     );
 
                     this.boobleUpView.createCristal(this.forBooble);
@@ -101,7 +91,7 @@ export class BoobleUpController
                         startTime = Date.now();
 
                         //если падал бонусный сундук то удалить его
-                        this.boobleUpView.removeBonusBox();
+                        // this.boobleUpView.removeBonusBox(this.#state);
 
                         //создать контейнер с кристалом
                         this.boobleUpView.setBoobleUp(this.forBooble.diamant, this.boobleUpView.createCristal(this.forBooble));
@@ -112,31 +102,43 @@ export class BoobleUpController
                     if (this.#state.randomInt === -1) {
                         this.#state.randomInt = getRandom(0, this.boobleUpModel.bonusRandomMax());
                         
-                    //    this.#state.randomInt = 1; // если раскомментировать, то ящик падает всегда
+                        // для принудительного появления ящика изменить случайное число
+                        if (this.#setupController.forceBonusBox) this.#state.randomInt = 1;
+
                         if (this.#state.randomInt === 1) {
 
                             // если выпал ящик, то замедлить всплытие кристала
                             this.#state.speedY = 1;
 
+                            // затемнить екран
+                            const overlay = document.createElement('div');
+                            overlay.id = 'bonus-overlay';
+                            document.body.appendChild(overlay);
+
                             // создать бонусный ящик и накинуть событие клика
                             this.boobleUpView.createBoxScarb(this.forBooble, this.DataOk);
         
-                            this.getBonusBox(this.#state);
+                            this.boobleUpView.getBonusBox(this.#state);
         
                             // вставляет в динамическое меню картинку алмаза умножить на 2
                             this.boobleUpView.createDiamandX2();
+
+                            // вставить событие удаления ящика если нажата кнопка любого ответа
+                            // на следующий тест
+                            // this.boobleUpView.handleAnswerClick(() => this.#state);
                         }
                     }
                     
+                    const bonusBox = this.boobleUpView.getBonusBox(this.#state);
                     // Если выпал бонусный ящик, постоянно сбрасываем таймер,
                     // чтобы отключить ограничение всплытия в 3 секунды.
-                    if (this.getBonusBox(this.#state)) {
+                    if (bonusBox) {
                         startTime = Date.now();
                     }
         
-                    if (this.getBonusBox(this.#state) && this.#state.randomInt === 1) {
-                        this.getBonusBox(this.#state).style.left = this.forBooble.buttonCheckX + "px"; // Начальная позиция
-                        this.getBonusBox(this.#state).style.top = buttonCheckYStart - this.forBooble.buttonCheckY + "px";
+                    if (bonusBox && this.#state.randomInt === 1) {
+                        bonusBox.style.left = this.forBooble.buttonCheckX + "px"; // Начальная позиция
+                        bonusBox.style.top = buttonCheckYStart - this.forBooble.buttonCheckY + "px";
                     }
                     // Скорость всплытия
                     this.forBooble.buttonCheckY-=this.#state.speedY;
@@ -157,6 +159,9 @@ export class BoobleUpController
                             this.forBooble.bonusX2 = 0;
 
                             this.statisticController.init();
+
+                            //если падал бонусный сундук то удалить его
+                            // this.boobleUpView.removeBonusBox(this.#state);
                         } else if (Date.now() - startTime > 3000) {
                                     startTime = 0;
                                     this.forBooble.buttonCheckY = 0;
@@ -173,7 +178,10 @@ export class BoobleUpController
                } else if (selectBoobleUp) {
                     selectBoobleUp?.remove();
                     selectBoobleUp = undefined;
-                    this.removeBonusBox(this.#state);
+                    this.boobleUpView.removeBonusBox(this.#state);
+
+                    
+                    document.getElementById('bonus-overlay')?.remove();
                     
                     this.boobleUpView.createBoxForInfoBonus();
                     document.querySelector('#bonus-diamant')?.remove();

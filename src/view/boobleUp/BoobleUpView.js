@@ -112,4 +112,16 @@ export class BoobleUpView {
 
         return this.divCreate;
     }
+
+    getBonusBox(state) {
+        if (!state.bonusBox)
+            state.bonusBox = document.getElementById('scarb') || undefined;
+        return state.bonusBox;
+    }
+
+    removeBonusBox(state) {
+        state.bonusBox?.remove();
+        state.bonusBox = undefined;
+    }
+
 }
