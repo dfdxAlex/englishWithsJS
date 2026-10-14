@@ -29,7 +29,7 @@ export class BoobleUpController
     }
 
     #setupController = {
-        forceBonusBox:true,            // если дать true то бонусный ящик падает всегда
+        forceBonusBox:false,            // если дать true то бонусный ящик падает всегда
         boobleFinishY:50,               // до куда долетает кристал если не отработает по времени
         animationInterval:16,           // время задержки таймера на каждом цыкле
         randomShiftDelay:16,            // длина смещения влево/вправо
@@ -118,7 +118,6 @@ export class BoobleUpController
                     this.#state.hightOld = this.forBooble.buttonCheckY;
                    
                } else if (this.#elements.selectBoobleUp) {
-                console.log('точка выхода');
                     // удалить контейнер с пузырем и обнулить таймер длительности анимации
                     this.boobleUpView.removeBoobleUpContainer(this.#elements);
 

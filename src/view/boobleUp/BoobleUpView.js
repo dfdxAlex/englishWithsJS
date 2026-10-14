@@ -11,11 +11,6 @@ export class BoobleUpView {
         this.SettingForProgram = settingForProgram;
     }
 
-    // removeBonusBox()
-    // {
-    //     document.getElementById('box-for-info-bonus')?.remove();
-    // }
-
     createBonusLevel(levelInput)
     {
         const str = `<span class="level-create-bonus-level__fill"></span>`;
@@ -81,13 +76,11 @@ export class BoobleUpView {
         const divCreateForBonusBox = document.createElement("div");
         divCreateForBonusBox.innerHTML = '<span class="scarb" id="scarb">🎁</span>';
         document.body.appendChild(divCreateForBonusBox);
-        console.log(divCreateForBonusBox);
 
         divCreateForBonusBox.addEventListener('click', () => {
           scarbClick(2, forBooble, objDataOk);
           // обнулить координату Y кристала, чтобы контроллер подумал что кристал долетел до конца
           forBooble.buttonCheckY = 0;
-          console.log('обнулить ', forBooble.buttonCheckY);
         });
     }
     
