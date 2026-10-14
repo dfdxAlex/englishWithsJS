@@ -29,7 +29,7 @@ export class BoobleUpController
     }
 
     #setupController = {
-        forceBonusBox:false,            // если дать true то бонусный ящик падает всегда
+        forceBonusBox:true,            // если дать true то бонусный ящик падает всегда
         boobleFinishY:50,               // до куда долетает кристал если не отработает по времени
         animationInterval:16,           // время задержки таймера на каждом цыкле
         randomShiftDelay:16,            // длина смещения влево/вправо
@@ -40,130 +40,72 @@ export class BoobleUpController
     #state = {
         speedY:2,                       // скорость движения анимации
         randomInt:-1,                   // содержит цифру, если она 1, то выпадает ящик
-        bonusBox:undefined,             // содержит ссылку на бонусный ящик
         timeAnimation:3000,             // время работы анимации, если сундука нет то 3000, если есть 5000
+        startTime:0,                    // хранит состояние таймера длительности анимации
+        lag:6,                          // текущее значение отклонения для смещения вправо-влево
+        numberRand:0,                   // случайно задает шаг изменения координав лево/право
+        buttonCheckYStart:undefined,    // содержит стартовые координаты по Y
+        hightOld:undefined,             // хранит предыдущее значение координаты Y, для сигнала на случай прихода нового клика по ответам
+    }
+
+    #elements = {
+        bonusBox:undefined,             // содержит ссылку на бонусный ящик / используется во вьюхе
+        selectBoobleUp:undefined,       // контейнер для пузыря хранится тут
     }
 
     init() {
-
-            
-
-            let selectBoobleUp = undefined;
-        
-            let lag = 6;
-            let numberRand = 0;
-            let hightOld;
-            let buttonCheckYStart;
-
-            // для ограничения времени всплытия когда не выпал ящик с призом
-            let startTime;
-        
             const id = setInterval(() => {
+
+                // if (this.forBooble.buttonCheckY === 0) this.#state.buttonCheckYStart = undefined;
           
                 // Если координата Y всё ещё ниже потолка то работаем
                 // Если кристал ниже границы окончания всплытия
                 if (this.forBooble.buttonCheckY > this.#setupController.boobleFinishY) {
-                    // Если ещё не запоминали стартовую координату Y, то запомнить
-                        if (buttonCheckYStart === undefined) {
-                        buttonCheckYStart = this.forBooble.buttonCheckY;
-                        hightOld = buttonCheckYStart;
-                    }
-            
-                    // Здесь задается смещение вправо-влево
-                    if (lag < 0) {
-                        numberRand = this.boobleUpService.getBoobleDirection(   this.forBooble.buttonCheckX, 
-                                                                                window.innerWidth);
-                        lag = this.#setupController.randomShiftDelay;
-                    }
-                    lag--;
-        
-                    // Изменение координаты влево-вправо.
-                    this.forBooble.buttonCheckX+=numberRand;
-                    this.forBooble.buttonCheckX = Math.max(
-                        this.#setupController.boobleMargin,
-                        Math.min(this.forBooble.buttonCheckX, window.innerWidth - this.#setupController.crystalWidth)
-                    );
 
-                    this.boobleUpView.createCristal(this.forBooble);
+                    // запоминает стартовую координату Y при нажатии на ответ
+                    this.initAnimationState();
+                    // занимается смещением влево/вправо
+                    this.updateHorizontalPosition();
+
+                    this.boobleUpView.createCristal(this.forBooble.buttonCheckX,
+                                                    this.forBooble.buttonCheckY
+                                                    );
 
                     // Нарисовать картинку пузыря, если ее ещё нет, алмаз, шапка или череп
-                    if (!selectBoobleUp) {
-                        selectBoobleUp = document.getElementById('boobleUp');
-                        startTime = Date.now();
+                    // если нет контейнера, то создать его и вернуть ссылку в this.#elements.selectBoobleUp
+                    this.#elements.selectBoobleUp = this.boobleUpView.getBoobleUpContainer(
+                                                            this.#elements.selectBoobleUp, 
+                                                            this.forBooble.diamant,
+                                                            this.forBooble.buttonCheckX,
+                                                            this.forBooble.buttonCheckY
+                                                          );
 
-                        //создать контейнер с кристалом
-                        this.boobleUpView.setBoobleUp(this.forBooble.diamant, this.boobleUpView.createCristal(this.forBooble));
-                    }
-        
-                    // сундук с сокровищами, одна попытка создать его. сброс попытки при окончании
-                    // всплытия кристала
-                    if (this.#state.randomInt === -1) {
-                        this.#state.randomInt = getRandom(0, this.boobleUpModel.bonusRandomMax());
-                        
-                        // для принудительного появления ящика изменить случайное число
-                        if (this.#setupController.forceBonusBox) this.#state.randomInt = 1;
+                    // активирует бонусный ящик и подгоняет анимацию под его появление
+                    this.activateBonusMode();
 
-                        if (this.#state.randomInt === 1) {
-
-                            // если выпал ящик, то замедлить всплытие кристала
-                            this.#state.speedY = 1;
-
-                            // затемнить экран при выпадении бонусного ящика
-                            this.boobleUpView.showBonusOverlay();
-
-                            // создать бонусный ящик и накинуть событие клика
-                            this.boobleUpView.createBoxScarb(this.forBooble, this.DataOk);
-        
-                            this.boobleUpView.getBonusBox(this.#state);
-        
-                            // вставляет в динамическое меню картинку алмаза умножить на 2
-                            this.boobleUpView.createDiamandX2();
-
-                            // увеличить время анимации если выпал ящик
-                            this.#state.timeAnimation = 7000;
-
-                            // вставить событие удаления ящика если нажата кнопка любого ответа
-                            // на следующий тест
-                            // this.boobleUpView.handleAnswerClick(() => this.#state);
-                        }
-                    }
-                    
-                    const bonusBox = this.boobleUpView.getBonusBox(this.#state);
                     // Если выпал бонусный ящик, постоянно сбрасываем таймер,
                     // чтобы отключить ограничение всплытия в 3 секунды.
-
-                    if (startTime === 0) {
-                        startTime = Date.now();
-                    }
-        
-                    if (bonusBox && this.#state.randomInt === 1) {
-                        bonusBox.style.left = this.forBooble.buttonCheckX + "px"; // Начальная позиция
-                        bonusBox.style.top = buttonCheckYStart - this.forBooble.buttonCheckY + "px";
-                    }
-                    // Скорость всплытия
-                    this.forBooble.buttonCheckY-=this.#state.speedY;
-            
+                    this.startAnimationTimer();
+                    // всплытие кристаллов
+                    this.moveUp();
 
                     // Пока пузырь нормально летит вверх его координата Y предыдущая на 1 больше новой
                     // Если приходит новый ответ раньше, чем пузырь долетел до верха, то его координата
                     // изменяется и перестает отличаться на 1 балл
                     // Для ресета картинки удаляем старый пузырь и система автоматически сгенерирует новый
-                    if (Math.abs((this.forBooble.buttonCheckY - hightOld) - (-this.#state.speedY)) > 0.01) {
-                            selectBoobleUp?.remove();
-                            selectBoobleUp = undefined;
+                    if (Math.abs((this.forBooble.buttonCheckY - this.#state.hightOld) - (-this.#state.speedY)) > 0.01) {
+                            // удалить контейнер с пузырем и обнулить таймер
+                            this.boobleUpView.removeBoobleUpContainer(this.#elements);
                             // функция набора заработанных баллов за сегодня
                             this.boobleUpModel.correctStreak();
-
                             // функция контролля числа баллов заработанных сегодня
                             this.statisticModel.saveDailyScore(this.forBooble);
                             this.forBooble.bonusX2 = 0;
 
                             this.statisticController.init();
 
-                            //если падал бонусный сундук то удалить его
-                            // this.boobleUpView.removeBonusBox(this.#state);
-                        } else if (Date.now() - startTime > this.#state.timeAnimation) {
-                                    startTime = 0;
+                        } else if (Date.now() - this.#state.startTime > this.#state.timeAnimation) {
+                                    this.#state.startTime = 0;
                                     this.forBooble.buttonCheckY = 0;
 
                                     this.statisticModel.saveDailyScore(this.forBooble);
@@ -173,24 +115,25 @@ export class BoobleUpController
                     // Запомнить текущую координату Y чтобы на следующей итерации сравнить её с текущей
                     // величиной следующей итерации.
                     // Если разница будет отличаться от -1, то пришел новый ответ отличный по тестам
-                    hightOld = this.forBooble.buttonCheckY;
+                    this.#state.hightOld = this.forBooble.buttonCheckY;
                    
-               } else if (selectBoobleUp) {
-                    selectBoobleUp?.remove();
-                    selectBoobleUp = undefined;
-                    this.boobleUpView.removeBonusBox(this.#state);
+               } else if (this.#elements.selectBoobleUp) {
+                console.log('точка выхода');
+                    // удалить контейнер с пузырем и обнулить таймер длительности анимации
+                    this.boobleUpView.removeBoobleUpContainer(this.#elements);
 
+                    this.boobleUpView.removeBonusBox(this.#elements);
+                    this.#state.startTime = 0;
                     // убрать затмение
                     this.boobleUpView.hideBonusOverlay();
                     // сброс времени анимации
                     this.#state.timeAnimation = 3000;
                     
-                    this.boobleUpView.createBoxForInfoBonus();
+                    this.boobleUpView.renderBoxForInfoBonus();
                     document.querySelector('#bonus-diamant')?.remove();
-                    buttonCheckYStart = undefined;
-                    hightOld = undefined;
+                    this.#state.buttonCheckYStart = undefined;
+                    this.#state.hightOld = undefined;
                     this.#state.speedY = 2;
-                    startTime = 0;
                     this.boobleUpModel.correctStreak();
 
                     if (this.#state.randomInt === 1) {
@@ -203,4 +146,76 @@ export class BoobleUpController
                }
            }, this.#setupController.animationInterval);
     }
+
+activateBonusMode() {
+    // сундук с сокровищами, одна попытка создать его. сброс попытки при окончании
+    // всплытия кристала
+    if (this.#state.randomInt === -1) {
+        this.#state.randomInt = getRandom(0, this.boobleUpModel.bonusRandomMax());
+        
+    // для принудительного появления ящика изменить случайное число
+    if (this.#setupController.forceBonusBox) this.#state.randomInt = 1;
+
+    if (this.#state.randomInt === 1) {
+
+        // если выпал ящик, то замедлить всплытие кристала
+        this.#state.speedY = 1;
+
+        // затемнить экран при выпадении бонусного ящика
+        this.boobleUpView.showBonusOverlay();
+
+        // создать бонусный ящик и накинуть событие клика
+        this.boobleUpView.renderBoxScarb(this.forBooble, this.DataOk);
+
+        this.#elements.bonusBox = this.boobleUpView.getBonusBox(this.#elements.bonusBox);
+
+        // вставляет в динамическое меню картинку алмаза умножить на 2
+        this.boobleUpView.renderDiamandX2();
+
+        // увеличить время анимации если выпал ящик
+        this.#state.timeAnimation = 7000;
+    }
+}
+}
+
+updateHorizontalPosition() {
+    // Здесь задается смещение вправо-влево
+    if (this.#state.lag < 0) {
+        this.#state.numberRand = this.boobleUpService.getBoobleDirection(this.forBooble.buttonCheckX, 
+                                                                         window.innerWidth);
+        this.#state.lag = this.#setupController.randomShiftDelay;
+    }
+    this.#state.lag--;
+
+    // Изменение координаты влево-вправо.
+    this.forBooble.buttonCheckX+=this.#state.numberRand;
+    this.forBooble.buttonCheckX = Math.max(
+        this.#setupController.boobleMargin,
+        Math.min(this.forBooble.buttonCheckX, window.innerWidth - this.#setupController.crystalWidth)
+    );
+}
+
+initAnimationState() {
+    // Если ещё не запоминали стартовую координату Y, то запомнить
+    if (this.#state.buttonCheckYStart === undefined) {
+        this.#state.buttonCheckYStart = this.forBooble.buttonCheckY;
+        this.#state.hightOld = this.#state.buttonCheckYStart;
+    }
+}
+
+startAnimationTimer() {
+    if (this.#state.startTime === 0) {
+        this.#state.startTime = Date.now();
+    }
+}
+
+moveUp() {
+    const bonusBox = this.boobleUpView.getBonusBox(this.#elements.bonusBox);
+    if (bonusBox && this.#state.randomInt === 1) {
+        bonusBox.style.left = this.forBooble.buttonCheckX + "px"; // Начальная позиция
+        bonusBox.style.top = this.#state.buttonCheckYStart - this.forBooble.buttonCheckY + "px";
+    }
+    // процесс всплытия всплытия
+    this.forBooble.buttonCheckY-=this.#state.speedY;
+} 
 }

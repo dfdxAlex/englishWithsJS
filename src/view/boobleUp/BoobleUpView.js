@@ -11,10 +11,10 @@ export class BoobleUpView {
         this.SettingForProgram = settingForProgram;
     }
 
-    removeBonusBox()
-    {
-        document.getElementById('box-for-info-bonus')?.remove();
-    }
+    // removeBonusBox()
+    // {
+    //     document.getElementById('box-for-info-bonus')?.remove();
+    // }
 
     createBonusLevel(levelInput)
     {
@@ -68,7 +68,7 @@ export class BoobleUpView {
         document.body.appendChild(divCreate);
     }
 
-    createDiamandX2() {
+    renderDiamandX2() {
         addElToDinamicMenu(
             '💎×2',
             'box-x-2',
@@ -76,20 +76,22 @@ export class BoobleUpView {
         );
     }
     
-    createBoxScarb(forBooble, objDataOk)
+    renderBoxScarb(forBooble, objDataOk)
     {
         const divCreateForBonusBox = document.createElement("div");
         divCreateForBonusBox.innerHTML = '<span class="scarb" id="scarb">🎁</span>';
         document.body.appendChild(divCreateForBonusBox);
-    
+        console.log(divCreateForBonusBox);
+
         divCreateForBonusBox.addEventListener('click', () => {
           scarbClick(2, forBooble, objDataOk);
           // обнулить координату Y кристала, чтобы контроллер подумал что кристал долетел до конца
           forBooble.buttonCheckY = 0;
+          console.log('обнулить ', forBooble.buttonCheckY);
         });
     }
     
-    createBoxForInfoBonus()
+    renderBoxForInfoBonus()
     {
         addElToDinamicMenu('🎁', 'box-for-info-bonus', 'box-for-info-bonus');
             setTimeout(() => {
@@ -99,7 +101,7 @@ export class BoobleUpView {
             }, 0);
     }
 
-    createCristal(forBooble) {
+    createCristal(x,y) {
 
         // ссылка на поле divCreate специально не описывается, может создаваться в любом классе
         // используется контекст чтобы не создавалось много запросов в дом
@@ -107,21 +109,22 @@ export class BoobleUpView {
             this.divCreate = document.createElement("div");
             this.divCreate.innerText = '💎';
         } 
-        this.divCreate.style.left = forBooble.buttonCheckX + "px"; // Начальная позиция
-        this.divCreate.style.top = forBooble.buttonCheckY + "px";
+        this.divCreate.style.left = x + "px"; // Начальная позиция
+        this.divCreate.style.top = y + "px";
 
         return this.divCreate;
     }
 
-    getBonusBox(state) {
-        if (!state.bonusBox)
-            state.bonusBox = document.getElementById('scarb') || undefined;
-        return state.bonusBox;
+    getBonusBox(bonusBox) {
+        if (!bonusBox)
+            return bonusBox = document.getElementById('scarb') || undefined;
+        return bonusBox;
     }
 
     removeBonusBox(state) {
         state.bonusBox?.remove();
         state.bonusBox = undefined;
+        document.getElementById('box-for-info-bonus')?.remove();
     }
 
     showBonusOverlay() {
@@ -149,6 +152,24 @@ export class BoobleUpView {
         overlay.addEventListener('transitionend', () => {
             overlay.remove();
         }, { once: true });
+    }
+
+    getBoobleUpContainer(selectBoobleUp, diamant, x,y) {
+        let boobleUp = selectBoobleUp;
+        if (!boobleUp)
+            boobleUp = document.getElementById('boobleUp');
+
+        //создать контейнер с кристалом
+        this.setBoobleUp(diamant, this.createCristal(x,y));
+
+        return boobleUp;
+    }
+
+    removeBoobleUpContainer(state) {
+        state.selectBoobleUp?.remove();
+        state.selectBoobleUp = undefined;
+        // при удалении кристалов щбнулить и таймер длительности анимации
+        state.startTime = 0;
     }
 
 }
