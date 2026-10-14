@@ -1,4 +1,3 @@
-import '../styles/createBonusLevel.scss';
 import '../styles/createBoxScarb.scss';
 import { addElToDinamicMenu } from '../addElToDinamicMenu.js';
 import { scarbClick } from './scarbClick.js';
@@ -11,21 +10,6 @@ export class BoobleUpView {
         this.SettingForProgram = settingForProgram;
     }
 
-    createBonusLevel(levelInput)
-    {
-        const str = `<span class="level-create-bonus-level__fill"></span>`;
-        addElToDinamicMenu(str,'level-create-bonus-level','level-create-bonus-level');
-    
-        setTimeout(() => {
-            const level = document.getElementById('level-create-bonus-level');
-             
-            level.style.setProperty('--level', `${levelInput.percent}%`);
-        
-            level.style.setProperty('--level-color', `${levelInput.color}`);
-        
-        }, 0);
-    
-    }
 
     getBonusBooble(diamant)
     {
@@ -78,6 +62,10 @@ export class BoobleUpView {
         document.body.appendChild(divCreateForBonusBox);
 
         divCreateForBonusBox.addEventListener('click', () => {
+
+          //новый эффект для ящика
+          document.getElementById('scarb')?.classList.add('scarb-open');   
+
           scarbClick(2, forBooble, objDataOk);
           // обнулить координату Y кристала, чтобы контроллер подумал что кристал долетел до конца
           forBooble.buttonCheckY = 0;

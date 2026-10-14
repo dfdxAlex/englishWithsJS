@@ -40,7 +40,8 @@ export class BoobleUpController
     #state = {
         speedY:2,                       // скорость движения анимации
         randomInt:-1,                   // содержит цифру, если она 1, то выпадает ящик
-        timeAnimation:3000,             // время работы анимации, если сундука нет то 3000, если есть 5000
+        timeAnimation:3000,             // время работы анимации, если сундука нет то 3000, если есть 8200
+        timeAnimationByBox:8200,        // время работы цикла при выпадении сундука 
         startTime:0,                    // хранит состояние таймера длительности анимации
         lag:6,                          // текущее значение отклонения для смещения вправо-влево
         numberRand:0,                   // случайно задает шаг изменения координав лево/право
@@ -172,7 +173,7 @@ activateBonusMode() {
         this.boobleUpView.renderDiamandX2();
 
         // увеличить время анимации если выпал ящик
-        this.#state.timeAnimation = 7000;
+        this.#state.timeAnimation = this.#state.timeAnimationByBox;
     }
 }
 }

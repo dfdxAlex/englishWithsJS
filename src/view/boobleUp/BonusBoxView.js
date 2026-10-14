@@ -1,0 +1,154 @@
+
+export class BonusBoxView {
+
+    constructor({languageController, settingForProgram}) {
+        this.languageController = languageController;
+        this.SettingForProgram = settingForProgram;
+    }
+
+
+
+
+    getBonusBooble(diamant)
+    {
+        
+        if (diamant === '-1' || diamant === '0') {
+            return '';
+        }
+
+        return `<span class="score">${diamant}</span>`;
+    }
+
+    // Запускается при ответе на тест
+    // удаляет картинку бонусного ящика, если она есть
+    // возвращает одну из картинок в зависимости от результата ответа
+    getImageBooble(diamantInput)
+    {
+        const diamant = Number(diamantInput);
+    
+        if (diamant === -1) {
+            return '<span class="diamond">💀</span>';
+        }
+        
+        if (diamant === 0) {
+            return '<span class="diamond">🎓</span>';
+        }
+
+        return '<span class="diamond">💎</span>';
+    }
+
+    setBoobleUp(diamant, divCreate) {
+        // постоянные настройки пузырька
+        divCreate.innerHTML = this.getImageBooble(diamant) + this.getBonusBooble(diamant);
+        divCreate.style.position = "absolute"; // Позволяет двигать элемент по координатам
+        divCreate.id = 'boobleUp';
+        document.body.appendChild(divCreate);
+    }
+
+    renderDiamandX2() {
+        addElToDinamicMenu(
+            '💎×2',
+            'box-x-2',
+            'bonus-diamant'
+        );
+    }
+    
+    renderBoxScarb(forBooble, objDataOk)
+    {
+        const divCreateForBonusBox = document.createElement("div");
+        divCreateForBonusBox.innerHTML = '<span class="scarb" id="scarb">🎁</span>';
+        document.body.appendChild(divCreateForBonusBox);
+
+        divCreateForBonusBox.addEventListener('click', () => {
+
+          //новый эффект для ящика
+          document.getElementById('scarb')?.classList.add('scarb-open');   
+
+          scarbClick(2, forBooble, objDataOk);
+          // обнулить координату Y кристала, чтобы контроллер подумал что кристал долетел до конца
+          forBooble.buttonCheckY = 0;
+        });
+    }
+    
+    renderBoxForInfoBonus()
+    {
+        addElToDinamicMenu('🎁', 'box-for-info-bonus', 'box-for-info-bonus');
+            setTimeout(() => {
+                document
+                    .getElementById('box-for-info-bonus')
+                    ?.addEventListener('click', () => {infoForPresentBox(this.languageController)});
+            }, 0);
+    }
+
+    createCristal(x,y) {
+
+        // ссылка на поле divCreate специально не описывается, может создаваться в любом классе
+        // используется контекст чтобы не создавалось много запросов в дом
+        if (this.divCreate === undefined) {
+            this.divCreate = document.createElement("div");
+            this.divCreate.innerText = '💎';
+        } 
+        this.divCreate.style.left = x + "px"; // Начальная позиция
+        this.divCreate.style.top = y + "px";
+
+        return this.divCreate;
+    }
+
+    getBonusBox(bonusBox) {
+        if (!bonusBox)
+            return bonusBox = document.getElementById('scarb') || undefined;
+        return bonusBox;
+    }
+
+    removeBonusBox(state) {
+        state.bonusBox?.remove();
+        state.bonusBox = undefined;
+        document.getElementById('box-for-info-bonus')?.remove();
+    }
+
+    showBonusOverlay() {
+        let overlay = document.getElementById('bonus-overlay');
+
+        if (!overlay) {
+            overlay = document.createElement('div');
+            overlay.id = 'bonus-overlay';
+            document.body.appendChild(overlay);
+        }
+
+        requestAnimationFrame(() => {
+            overlay.classList.add('show');
+        });
+    }
+
+    hideBonusOverlay() {
+        const overlay = document.getElementById('bonus-overlay');
+
+        if (!overlay) return;
+
+        overlay.classList.remove('show');
+        overlay.classList.add('hide');
+
+        overlay.addEventListener('transitionend', () => {
+            overlay.remove();
+        }, { once: true });
+    }
+
+    getBoobleUpContainer(selectBoobleUp, diamant, x,y) {
+        let boobleUp = selectBoobleUp;
+        if (!boobleUp)
+            boobleUp = document.getElementById('boobleUp');
+
+        //создать контейнер с кристалом
+        this.setBoobleUp(diamant, this.createCristal(x,y));
+
+        return boobleUp;
+    }
+
+    removeBoobleUpContainer(state) {
+        state.selectBoobleUp?.remove();
+        state.selectBoobleUp = undefined;
+        // при удалении кристалов щбнулить и таймер длительности анимации
+        state.startTime = 0;
+    }
+
+}

@@ -28,9 +28,9 @@ import { resetStatistic } from '../models/resetStatistic.js';
 import { handleClickError } from './handleClickError.js';
 import { resetBottonError } from './resetBottonError.js';
 import { buttonOkBlockNoon } from './handleButtonOk/buttonOkBlockNoon.js';
-import { BoobleUpView } from '../view/boobleUp/BoobleUpView.js';
 import { BoobleUpModel } from '../models/BoobleUpModel.js';
 import { LanguageController } from './LanguageController.js';
+import { StatisticView } from '../view/StatisticView.js';
 
 export function handleOkErr(str, event) {
     // выйти из функции если падает бонусный ящик
@@ -42,16 +42,13 @@ export function handleOkErr(str, event) {
     // в блоке считается число правильно подряд заработанных баллов и рисуется
     // индикатор заполнения для текущего шага.
     // выше уровень, чаще выпадает бонусный ящик.
-    const languageController = new LanguageController();
-    const boobleUpView = new BoobleUpView({languageController});
+    const statisticView = new StatisticView();
     const boobleUpModel = new BoobleUpModel({forBooble: SettingForProgram.forBooble});
     // Сохранить координаты места клика по кнопке Проверить
     SettingForProgram.forBooble.buttonCheckX = event.pageX;
     SettingForProgram.forBooble.buttonCheckY = event.pageY;
-    // тут считаем число баллов заработанных. если ошибка то сброс в ноль
-    // boobleUpModel.correctStreak();
     // вставить шкалу процента заполнения текущего уровня
-    boobleUpView.createBonusLevel(boobleUpModel.bonusPercent());
+    statisticView.renderBonusLevel(boobleUpModel.bonusPercent());
     /////////////////////////////////////////////////////////////////////////
 
     // Переменные, в которых хранится инфа об верных и не верных 

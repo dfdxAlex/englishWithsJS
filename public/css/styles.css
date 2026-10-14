@@ -124,53 +124,6 @@ select{
     100% { text-shadow: 0 0 12px #00ffcc, 0 0 16px #00ffcc; }
   }
 
-/* Клад*/
-.scarb {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    font-size: 34px;
-    animation: flyUp2 8s ease-out forwards;
-    z-index: 101;
-  }
-  
-  @keyframes flyUp2 {
-    0% { transform: translateY(0); opacity: 1; }
-    90% { opacity: 1; } /* Дольше остаётся видимым */
-    100% { transform: translateY(-100px); opacity: 0; }
-  }
-   
-  @keyframes glow {
-    0% { text-shadow: 0 0 8px #00ffff, 0 0 12px #00ffff; }
-    100% { text-shadow: 0 0 12px #00ffcc, 0 0 16px #00ffcc; }
-  }
-  
-  .bonus-for-scarb {
-    position: absolute;
-    
-  }
-
-.text-about-scarb {
-    display: inline-block;
-    font-size: 20px;
-    font-weight: bold;
-    color: #0f1899; /* Красивый оранжевый */
-    animation: fadeGrow 2s ease-out forwards;
-}
-
-@keyframes fadeGrow {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(3); /* Увеличение в 2 раза */
-        opacity: 0; /* Полностью исчезает */
-    }
-}
-
-
-
 /* стиль для прокручивания модального окна в объекте Help */
 .help-for-green-pole-one {
     max-height: 80vh; /* Максимальная высота 80% от высоты экрана */
@@ -197,16 +150,98 @@ select{
 }
 
 
-/* #scarb {
-    position: absolute;
-    z-index: 101;
-} */
-
 #bonus-overlay.show {
     opacity: 0.6;
 }
 
 #bonus-overlay.hide {
     opacity: 0;
+}
+
+
+
+/* ************************************************************************ */
+/* новые стили для ящика */
+#scarb {
+    position: absolute;
+    z-index: 101;
+
+    animation:
+        flyUp2 8s ease-out forwards,
+        pulse 1s infinite;
+
+    filter: drop-shadow(0 0 10px gold);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 10px gold);
+    }
+
+    50% {
+        transform: scale(1.15);
+        filter: drop-shadow(0 0 25px gold);
+    }
+
+    100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 10px gold);
+    }
+}
+
+.scarb-open {
+    animation: scarbOpen .4s forwards;
+}
+
+@keyframes scarbOpen {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+/* Клад*/
+.scarb {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 34px;
+    animation: flyUp2 8s ease-out forwards;
+    z-index: 101;
+  }
+  
+  @keyframes flyUp2 {
+    0% { transform: translateY(0); opacity: 1; }
+    90% { opacity: 1; } /* Дольше остаётся видимым */
+    100% { transform: translateY(-100px); opacity: 0; }
+  }
+   
+  .bonus-for-scarb {
+    position: absolute;
+  }
+
+.text-about-scarb {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0f1899; /* Красивый оранжевый */
+    animation: fadeGrow 2s ease-out forwards;
+}
+
+@keyframes fadeGrow {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(3); /* Увеличение в 2 раза */
+        opacity: 0; /* Полностью исчезает */
+    }
 }
 
