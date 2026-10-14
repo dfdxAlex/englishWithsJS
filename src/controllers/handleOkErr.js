@@ -30,6 +30,7 @@ import { resetBottonError } from './resetBottonError.js';
 import { buttonOkBlockNoon } from './handleButtonOk/buttonOkBlockNoon.js';
 import { BoobleUpModel } from '../models/BoobleUpModel.js';
 import { StatisticView } from '../view/StatisticView.js';
+import { LanguageController } from '../controllers/LanguageController.js';
 
 export function handleOkErr(str, event) {
     // выйти из функции если падает бонусный ящик
@@ -42,10 +43,11 @@ export function handleOkErr(str, event) {
     // индикатор заполнения для текущего шага.
     // выше уровень, чаще выпадает бонусный ящик.
     const statisticView = new StatisticView();
-    const boobleUpModel = new BoobleUpModel({forBooble: SettingForProgram.forBooble});
+    const forBooble = SettingForProgram.forBooble;
+    const boobleUpModel = new BoobleUpModel({forBooble});
     // Сохранить координаты места клика по кнопке Проверить
-    SettingForProgram.forBooble.buttonCheckX = event.pageX;
-    SettingForProgram.forBooble.buttonCheckY = event.pageY;
+    forBooble.buttonCheckX = event.pageX;
+    forBooble.buttonCheckY = event.pageY;
     // вставить шкалу процента заполнения текущего уровня
     statisticView.renderBonusLevel(boobleUpModel.bonusPercent());
     /////////////////////////////////////////////////////////////////////////
@@ -79,7 +81,8 @@ export function handleOkErr(str, event) {
     localStorage.setItem('level'+level+'_'+str,ticResult);
 
     // Сброс состояния кнопки Сообщить об ошибке
-    resetBottonError();
+    const languageController = new LanguageController();
+    resetBottonError(languageController);
 
     // если был ответ ошибочный, то поместить выбранный вариант
     // в поле clicked_element
