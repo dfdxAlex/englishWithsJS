@@ -29,7 +29,6 @@ import { handleClickError } from './handleClickError.js';
 import { resetBottonError } from './resetBottonError.js';
 import { buttonOkBlockNoon } from './handleButtonOk/buttonOkBlockNoon.js';
 import { BoobleUpModel } from '../models/BoobleUpModel.js';
-import { LanguageController } from './LanguageController.js';
 import { StatisticView } from '../view/StatisticView.js';
 
 export function handleOkErr(str, event) {

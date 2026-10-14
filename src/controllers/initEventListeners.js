@@ -23,6 +23,7 @@ import { Help } from '../view/Help.js';
 import { StatisticModel } from '../models/StatisticModel.js';
 import { StatisticController } from './StatisticController.js';
 import { StatisticView } from '../view/StatisticView.js';
+import { BonusBoxView } from '../view/boobleUp/BonusBoxView.js';
 
 // Здесь функции, которые должны отработать когда загрузится статическая страница
 window.addEventListener('load', () => {
@@ -71,11 +72,11 @@ window.addEventListener('load', () => {
 
     // функция отслеживает инфу по ответам и запускает процесс
     // всплытия кристала, шапки или черепа
-    // boobleUp();
 
     const boobleUpModel = new BoobleUpModel({ forBooble: SettingForProgram.forBooble});
     const boobleUpService = new BoobleUpService({forBooble: SettingForProgram.forBooble});
     const boobleUpView = new BoobleUpView({languageController, SettingForProgram});
+    const bonusBoxView = new BonusBoxView();
 
     const statisticView = new StatisticView();
     const statisticModel = new StatisticModel({ forBooble: SettingForProgram.forBooble});
@@ -92,7 +93,8 @@ window.addEventListener('load', () => {
                                                         DataOk,
                                                         Help,
                                                         statisticModel,
-                                                        statisticController
+                                                        statisticController,
+                                                        bonusBoxView
                                                         });
     boobleUpController.init();
 

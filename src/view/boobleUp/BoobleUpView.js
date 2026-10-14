@@ -1,7 +1,5 @@
-import '../styles/createBoxScarb.scss';
-import { addElToDinamicMenu } from '../addElToDinamicMenu.js';
-import { scarbClick } from './scarbClick.js';
-import { infoForPresentBox } from './infoForPresentBox.js';
+
+
 
 export class BoobleUpView {
 
@@ -11,10 +9,10 @@ export class BoobleUpView {
     }
 
 
-    getBonusBooble(diamant)
+    // возвращает html для выбитого кристалла
+    getCrystalScore(diamant)
     {
-        
-        if (diamant === '-1' || diamant === '0') {
+        if (Number(diamant) === -1 || Number(diamant) === 0) {
             return '';
         }
 
@@ -41,45 +39,10 @@ export class BoobleUpView {
 
     setBoobleUp(diamant, divCreate) {
         // постоянные настройки пузырька
-        divCreate.innerHTML = this.getImageBooble(diamant) + this.getBonusBooble(diamant);
+        divCreate.innerHTML = this.getImageBooble(diamant) + this.getCrystalScore(diamant);
         divCreate.style.position = "absolute"; // Позволяет двигать элемент по координатам
         divCreate.id = 'boobleUp';
         document.body.appendChild(divCreate);
-    }
-
-    renderDiamandX2() {
-        addElToDinamicMenu(
-            '💎×2',
-            'box-x-2',
-            'bonus-diamant'
-        );
-    }
-    
-    renderBoxScarb(forBooble, objDataOk)
-    {
-        const divCreateForBonusBox = document.createElement("div");
-        divCreateForBonusBox.innerHTML = '<span class="scarb" id="scarb">🎁</span>';
-        document.body.appendChild(divCreateForBonusBox);
-
-        divCreateForBonusBox.addEventListener('click', () => {
-
-          //новый эффект для ящика
-          document.getElementById('scarb')?.classList.add('scarb-open');   
-
-          scarbClick(2, forBooble, objDataOk);
-          // обнулить координату Y кристала, чтобы контроллер подумал что кристал долетел до конца
-          forBooble.buttonCheckY = 0;
-        });
-    }
-    
-    renderBoxForInfoBonus()
-    {
-        addElToDinamicMenu('🎁', 'box-for-info-bonus', 'box-for-info-bonus');
-            setTimeout(() => {
-                document
-                    .getElementById('box-for-info-bonus')
-                    ?.addEventListener('click', () => {infoForPresentBox(this.languageController)});
-            }, 0);
     }
 
     createCristal(x,y) {
@@ -94,45 +57,6 @@ export class BoobleUpView {
         this.divCreate.style.top = y + "px";
 
         return this.divCreate;
-    }
-
-    getBonusBox(bonusBox) {
-        if (!bonusBox)
-            return bonusBox = document.getElementById('scarb') || undefined;
-        return bonusBox;
-    }
-
-    removeBonusBox(state) {
-        state.bonusBox?.remove();
-        state.bonusBox = undefined;
-        document.getElementById('box-for-info-bonus')?.remove();
-    }
-
-    showBonusOverlay() {
-        let overlay = document.getElementById('bonus-overlay');
-
-        if (!overlay) {
-            overlay = document.createElement('div');
-            overlay.id = 'bonus-overlay';
-            document.body.appendChild(overlay);
-        }
-
-        requestAnimationFrame(() => {
-            overlay.classList.add('show');
-        });
-    }
-
-    hideBonusOverlay() {
-        const overlay = document.getElementById('bonus-overlay');
-
-        if (!overlay) return;
-
-        overlay.classList.remove('show');
-        overlay.classList.add('hide');
-
-        overlay.addEventListener('transitionend', () => {
-            overlay.remove();
-        }, { once: true });
     }
 
     getBoobleUpContainer(selectBoobleUp, diamant, x,y) {

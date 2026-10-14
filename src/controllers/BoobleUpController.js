@@ -15,7 +15,8 @@ export class BoobleUpController
                     DataOk,
                     Help,
                     statisticModel,
-                    statisticController}) {
+                    statisticController,
+                    bonusBoxView}) {
         this.forBooble = forBooble;
         this.boobleUpService = boobleUpService;
         this.DataOk = DataOk;
@@ -23,6 +24,7 @@ export class BoobleUpController
         this.boobleUpView = boobleUpView;
         this.statisticModel = statisticModel;
         this.statisticController = statisticController;
+        this.bonusBoxView = bonusBoxView;
 
         // накинуть событие помощи на кристал вверху слева
         hundleHelpPrime(Help);
@@ -103,6 +105,9 @@ export class BoobleUpController
                             this.statisticModel.saveDailyScore(this.forBooble);
                             this.forBooble.bonusX2 = 0;
 
+                            // сброс таймера длительности анимации
+                            this.#state.startTime = 0;
+
                             this.statisticController.init();
 
                         } else if (Date.now() - this.#state.startTime > this.#state.timeAnimation) {
@@ -122,14 +127,14 @@ export class BoobleUpController
                     // удалить контейнер с пузырем и обнулить таймер длительности анимации
                     this.boobleUpView.removeBoobleUpContainer(this.#elements);
 
-                    this.boobleUpView.removeBonusBox(this.#elements);
+                    this.bonusBoxView.removeBonusBox(this.#elements);
                     this.#state.startTime = 0;
                     // убрать затмение
-                    this.boobleUpView.hideBonusOverlay();
+                    this.bonusBoxView.hideBonusOverlay();
                     // сброс времени анимации
                     this.#state.timeAnimation = 3000;
                     
-                    this.boobleUpView.renderBoxForInfoBonus();
+                    this.bonusBoxView.renderBoxForInfoBonus();
                     document.querySelector('#bonus-diamant')?.remove();
                     this.#state.buttonCheckYStart = undefined;
                     this.#state.hightOld = undefined;
@@ -156,21 +161,21 @@ activateBonusMode() {
     // для принудительного появления ящика изменить случайное число
     if (this.#setupController.forceBonusBox) this.#state.randomInt = 1;
 
-    if (this.#state.randomInt === 1) {
+    if (this.#state.randomInt === 1 && Number(this.forBooble.diamant) > 0) {
 
         // если выпал ящик, то замедлить всплытие кристала
         this.#state.speedY = 1;
 
         // затемнить экран при выпадении бонусного ящика
-        this.boobleUpView.showBonusOverlay();
+        this.bonusBoxView.showBonusOverlay();
 
         // создать бонусный ящик и накинуть событие клика
-        this.boobleUpView.renderBoxScarb(this.forBooble, this.DataOk);
+        this.bonusBoxView.renderBoxScarb(this.forBooble, this.DataOk);
 
-        this.#elements.bonusBox = this.boobleUpView.getBonusBox(this.#elements.bonusBox);
+        this.#elements.bonusBox = this.bonusBoxView.getBonusBox(this.#elements.bonusBox);
 
         // вставляет в динамическое меню картинку алмаза умножить на 2
-        this.boobleUpView.renderDiamandX2();
+        this.bonusBoxView.renderDiamandX2();
 
         // увеличить время анимации если выпал ящик
         this.#state.timeAnimation = this.#state.timeAnimationByBox;
@@ -210,7 +215,7 @@ startAnimationTimer() {
 }
 
 moveUp() {
-    const bonusBox = this.boobleUpView.getBonusBox(this.#elements.bonusBox);
+    const bonusBox = this.bonusBoxView.getBonusBox(this.#elements.bonusBox);
     if (bonusBox && this.#state.randomInt === 1) {
         bonusBox.style.left = this.forBooble.buttonCheckX + "px"; // Начальная позиция
         bonusBox.style.top = this.#state.buttonCheckYStart - this.forBooble.buttonCheckY + "px";
