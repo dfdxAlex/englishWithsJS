@@ -1,6 +1,6 @@
 export function scarbClick(xx=1, forBooble, DataOk)
 {
-    const selectScarb = document.querySelector('.scarb');
+    const selectScarb = document.querySelector('.div-for-scarb');
 
     if (!selectScarb) return;
 

@@ -1,7 +1,7 @@
 import { scarbClick } from './scarbClick.js';
 import { addElToDinamicMenu } from '../addElToDinamicMenu.js';
 import { infoForPresentBox } from './infoForPresentBox.js';
-import '../styles/createBoxScarb.scss';
+import '../styles/renderBoxScarb.scss';
 
 export class BonusBoxView {
 
@@ -22,12 +22,13 @@ export class BonusBoxView {
     {
         const divCreateForBonusBox = document.createElement("div");
         divCreateForBonusBox.innerHTML = '<span class="scarb" id="scarb">🎁</span>';
+        divCreateForBonusBox.classList.add('div-for-scarb');
         document.body.appendChild(divCreateForBonusBox);
 
         divCreateForBonusBox.addEventListener('click', () => {
 
           //новый эффект для ящика
-          document.getElementById('scarb')?.classList.add('scarb-open');   
+          document.querySelector('.div-for-scarb')?.classList.add('scarb-open');   
 
           scarbClick(2, forBooble, objDataOk);
           // обнулить координату Y кристала, чтобы контроллер подумал что кристал долетел до конца
@@ -47,8 +48,10 @@ export class BonusBoxView {
     }
 
     getBonusBox(bonusBox) {
-        if (!bonusBox)
-            return bonusBox = document.getElementById('scarb') || undefined;
+        if (!bonusBox) 
+            // return bonusBox = document.getElementById('scarb') || undefined;
+            // return bonusBox = document.getElementById('div-for-scarb') || undefined;
+            return document.querySelector('.div-for-scarb') || undefined
         return bonusBox;
     }
 

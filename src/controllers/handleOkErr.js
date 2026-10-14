@@ -34,7 +34,7 @@ import { LanguageController } from '../controllers/LanguageController.js';
 
 export function handleOkErr(str, event) {
     // выйти из функции если падает бонусный ящик
-    if (document.getElementById('scarb')) {
+    if (document.querySelector('.div-for-scarb')) {
         return;
     }
 

@@ -6,7 +6,7 @@ import { LogField } from '../view/LogField.js';
 export function handleLog()
 {
     // выйти из функции если падает бонусный ящик или ещё нет записей
-    if (document.getElementById('scarb') || Logs.logs.length === 0) {
+    if (document.querySelector('.div-for-scarb') || Logs.logs.length === 0) {
         return;
     }
     // убрать лишнее перед показом логов
