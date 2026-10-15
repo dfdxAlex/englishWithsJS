@@ -1,13 +1,27 @@
 export class StatisticModel {
 constructor({forBooble}) {
     this.forBooble = forBooble;
+    this.servisForThisModel();
+}
+
+getSetup() {
+    return this.#setupThisModel;
+}
+
+#setupThisModel = {
+    resetDailyScore:false,          // сбросить дневной счёт для отладки
+    resetMaxDiamantToday:false,     // сбросить максимальное число набранных алмазов за сегодня
+}
+
+servisForThisModel() {
+    if (this.#setupThisModel.resetDailyScore)
+        localStorage.removeItem('saveDailyScore');
+    if (this.#setupThisModel.resetMaxDiamantToday)
+        localStorage.removeItem('maxDiamantToday');
 }
 
 // если нет переменной в локадсторедже, то создать ее на день сегодняшний, или вернуть false
 loadDailyScore() {
-    // localStorage.removeItem('saveDailyScore');
-    // localStorage.removeItem('maxDiamantToday');
-
     let objDaily = JSON.parse(localStorage.getItem('saveDailyScore'));
     if (objDaily === null) {
         objDaily = this.resetDailyScore();

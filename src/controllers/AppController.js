@@ -24,6 +24,7 @@ import { StatisticModel } from '../models/StatisticModel.js';
 import { StatisticController } from './StatisticController.js';
 import { StatisticView } from '../view/StatisticView.js';
 import { BonusBoxView } from '../view/boobleUp/BonusBoxView.js';
+import { CheatService } from '../CheatService.js';
 
 export class AppController {
 
@@ -104,6 +105,11 @@ export class AppController {
                                                                 });
             boobleUpController.init();
 
+
+            const cheatService = new CheatService({statisticModel,
+
+            });
+            
 
         // интервал проверяет все элементы и накладывает на них обработчики событий.
         // если за один проход удалось зарегить все обработчики, то выходим

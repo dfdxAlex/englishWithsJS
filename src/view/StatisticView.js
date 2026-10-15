@@ -81,7 +81,6 @@ renderMenuGoal(goalForTheDay, numberOfCrystals, enterTheGoal, save, setGoalForTo
                     document
                             .getElementById('save-goal-btn')
                             .addEventListener('click', () => {
-                                // localStorage.setItem('goalForToday', document.getElementById('goal-input').value);
                                 setGoalForToday(document.getElementById('goal-input').value);
                                 init();
                                 this.closeGoalModal();

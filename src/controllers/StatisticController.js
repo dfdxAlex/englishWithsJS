@@ -55,9 +55,6 @@ if (this.#state.procent < this.#state.goalLevel) {
     this.boobleUpService.setGoalCompletedTodayOne(0);
 }
 
-// this.#state.procent = 200; 
-// this.#state.goalLevel = 200;
-// this.boobleUpService.setGoalCompletedTodayOne(0);
 // console.log(this.boobleUpService.isGoalCompletedTodayOne(), this.#state.procent, this.#state.goalLevel);
 if (this.#state.procent >= this.#state.goalLevel  && this.boobleUpService.isGoalCompletedTodayOne() === 0) {
     
