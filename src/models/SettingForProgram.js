@@ -34,9 +34,8 @@ export class SettingForProgram
         diamantToday:0,
         bonusX2:0,
         maxDiamantToday:0,
-        dailyGoal:0
     }
-    
+
     // хранит дубликат стартовых координат для сравнения
     static buttonCheckXStart;
     static buttonCheckYStart;

@@ -17,4 +17,14 @@ getBoobleDirection(x, screenWidth) {
     return getRandom(-2, 2);
 }
 
+// проверить выполнялась ли цель сегодня
+isGoalCompletedTodayOne() {
+    return Number(localStorage.getItem('isGoalCompletedTodayOne')) || 0;
+}
+
+// установить что цель выполнена на сегодня
+setGoalCompletedTodayOne(set) {
+    localStorage.setItem('isGoalCompletedTodayOne', set);
+}
+
 }

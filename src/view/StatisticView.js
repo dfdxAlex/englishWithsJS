@@ -2,6 +2,8 @@ import './styles/setDiamantProgress.scss';
 import './styles/statisticView.scss';
 import './styles/renderBonusLevel.scss';
 import { addElToDinamicMenu } from './addElToDinamicMenu.js';
+import './styles/goal200.scss';
+import confetti from 'canvas-confetti';
 
 
 export class StatisticView {
@@ -27,13 +29,13 @@ export class StatisticView {
     
     }
 
-    setDiamantProgress(percent) {
-    document.querySelector('#diament-view .diament-view__fill')
-        .style.width = `${percent}%`;
+setDiamantProgress(percent) {
+document.querySelector('#diament-view .diament-view__fill')
+    .style.width = `${percent}%`;
 
-    document.getElementById('diament-view')
-        .dataset.progress = `${Math.round(percent)}%`;
-    }
+document.getElementById('diament-view')
+    .dataset.progress = `${Math.round(percent)}%`;
+}
 
 
 closeGoalModal() {
@@ -96,5 +98,88 @@ renderMenuGoal(goalForTheDay, numberOfCrystals, enterTheGoal, save, setGoalForTo
                 });
 }
     
+goal100() {
+    confetti({particleCount: 200, spread: 150, origin: { y: 0.6 }});
+}
+
+goal120() {
+    confetti({particleCount: 200, angle: 60, spread: 80, origin: { x: 0 }});
+    confetti({particleCount: 200, angle: 120, spread: 80, origin: { x: 1 }});
+}
+
+goal150() {
+        const duration = 3000;
+        const end = Date.now() + duration;
+
+        const interval = setInterval(() => {
+            if (Date.now() > end) {
+                return clearInterval(interval);
+            }
+
+            confetti({particleCount: 30, 
+                      spread: 360, 
+                      startVelocity: 40, 
+                      origin: {x: Math.random(), y: Math.random() * 0.5
+                }
+            });
+        }, 200);
+}
+
+goal200() {
+    const shots = 9;
+
+    for (let shot = 0; shot < shots; shot++) {
+        setTimeout(() => {
+
+            const centerX =
+                window.innerWidth / 2 + (Math.random() - 0.5) * 150;
+
+            const centerY =
+                window.innerHeight / 2 + (Math.random() - 0.5) * 100;
+
+            for (let i = 0; i < 30; i++) {
+
+                const particle = document.createElement('div');
+
+                particle.className = 'goal-particle';
+
+                particle.textContent = '💎';
+                particle.style.fontSize =
+                    `${16 + Math.random() * 20}px`;
+
+                document.body.appendChild(particle);
+
+                particle.style.left = `${centerX}px`;
+                particle.style.top = `${centerY}px`;
+
+                const angle = Math.random() * Math.PI * 2;
+                const distance = 150 + Math.random() * 250;
+
+                const x = Math.cos(angle) * distance;
+                const y = Math.sin(angle) * distance;
+
+                particle.animate(
+                    [
+                        {
+                            transform: 'translate(0,0) scale(1)',
+                            opacity: 1
+                        },
+                        {
+                            transform: `translate(${x}px, ${y}px) scale(0.3)`,
+                            opacity: 0
+                        }
+                    ],
+                    {
+                        duration: 2200,
+                        easing: 'cubic-bezier(.17,.84,.44,1)'
+                    }
+                );
+
+                setTimeout(() => particle.remove(), 2200);
+            }
+
+        }, shot * 350);
+    }
+}
 
 }

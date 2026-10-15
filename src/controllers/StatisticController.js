@@ -1,10 +1,15 @@
 
 
+
 export class StatisticController{
-    constructor({statisticModel, statisticView, languageController}) {
+    constructor({statisticModel, 
+                 statisticView, 
+                 languageController, 
+                 boobleUpService}) {
         this.statisticModel = statisticModel;
         this.statisticView = statisticView;
         this.languageController = languageController;
+        this.boobleUpService = boobleUpService;
 
         // рендер менюшки для ввода цели
         const goalForTheDay = this.languageController.translate('Цель на день')
@@ -20,6 +25,19 @@ export class StatisticController{
                                         );
     }
 
+#setupController = {
+    
+}
+
+#state = {
+    procent:0,                  // число процентов относительно заданной цели
+    goalLevel:100,              // следующая цель, по достиженю цель растёт до 120, 150, 200
+}
+
+#elements = {
+
+}
+
 init() {
 
 const daily = Number(this.statisticModel.loadDailyScore().diamantToday);
@@ -29,16 +47,34 @@ let max = Number(this.statisticModel.loadMaxDiamantToday());
 const goalForToday = this.statisticModel.getGoalForToday();
 if (goalForToday > 0) max = goalForToday;
 
-let procent = 0;
-
 if (!Number.isNaN(daily) && !Number.isNaN(max) && max > 0) {
-    procent = Math.trunc(daily / max * 100);
+    this.#state.procent = Math.trunc(daily / max * 100);
 } 
 
-if (procent > 100) 
-        procent = 100;
+if (this.#state.procent < this.#state.goalLevel) {
+    this.boobleUpService.setGoalCompletedTodayOne(0);
+}
 
-this.statisticView.setDiamantProgress(procent);
+// this.#state.procent = 200; 
+// this.#state.goalLevel = 200;
+// this.boobleUpService.setGoalCompletedTodayOne(0);
+// console.log(this.boobleUpService.isGoalCompletedTodayOne(), this.#state.procent, this.#state.goalLevel);
+if (this.#state.procent >= this.#state.goalLevel  && this.boobleUpService.isGoalCompletedTodayOne() === 0) {
+    
+    // эффекты при достижении уровней
+    if (this.#state.goalLevel === 100) this.statisticView.goal100();
+    if (this.#state.goalLevel === 120) this.statisticView.goal120();
+    if (this.#state.goalLevel === 150) this.statisticView.goal150();
+    if (this.#state.goalLevel === 200) this.statisticView.goal200();
+
+    this.boobleUpService.setGoalCompletedTodayOne(1);
+
+    if (this.#state.procent >= 100) this.#state.goalLevel = 120;
+    if (this.#state.procent >= 120) this.#state.goalLevel = 150;
+    if (this.#state.procent >= 150) this.#state.goalLevel = 200;
+} 
+
+this.statisticView.setDiamantProgress(this.#state.procent);
 }
 
 

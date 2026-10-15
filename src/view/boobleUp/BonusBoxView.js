@@ -49,8 +49,6 @@ export class BonusBoxView {
 
     getBonusBox(bonusBox) {
         if (!bonusBox) 
-            // return bonusBox = document.getElementById('scarb') || undefined;
-            // return bonusBox = document.getElementById('div-for-scarb') || undefined;
             return document.querySelector('.div-for-scarb') || undefined
         return bonusBox;
     }

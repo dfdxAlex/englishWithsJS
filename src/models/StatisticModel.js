@@ -73,21 +73,15 @@ saveMaxDiamantToday(diamantToday) {
     }
 }
 
+// вернуть цель на сегодня если она задана или 0
 getGoalForToday() {
-    if (localStorage.getItem('goalForToday') === null) this.setGoalForToday(0);;
-    const goalForToday = Number(localStorage.getItem('goalForToday'));
-    if (goalForToday > 0) {
-        this.forBooble.dailyGoal = goalForToday;
-        return goalForToday;
-    }
-    return 0;
+    return Number(localStorage.getItem('goalForToday')) || 0;
 }
 
+// записать цель на сегодня в хранилище
 setGoalForToday(goal) {
     localStorage.setItem('goalForToday', goal);
 }
-
-
 
 loadMaxDiamantToday() {
     return Number(localStorage.getItem('maxDiamantToday')) || 0;

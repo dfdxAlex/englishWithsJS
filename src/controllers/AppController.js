@@ -29,7 +29,6 @@ export class AppController {
 
     init() {
         // Здесь функции, которые должны отработать когда загрузится статическая страница
-        // window.addEventListener('load', () => {
             htmlHelp();
             nav();
             const menuC = new MenuController();
@@ -88,7 +87,8 @@ export class AppController {
             const statisticModel = new StatisticModel({ forBooble: SettingForProgram.forBooble});
             const statisticController = new StatisticController({   statisticModel, 
                                                                     statisticView,
-                                                                    languageController
+                                                                    languageController,
+                                                                    boobleUpService
                                                                 });
             statisticController.init();
 
@@ -104,11 +104,6 @@ export class AppController {
                                                                 });
             boobleUpController.init();
 
-
-
-
-
-        // });
 
         // интервал проверяет все элементы и накладывает на них обработчики событий.
         // если за один проход удалось зарегить все обработчики, то выходим

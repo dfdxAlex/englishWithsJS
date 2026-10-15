@@ -1,0 +1,7 @@
+.goal-particle {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    user-select: none;
+    filter: drop-shadow(0 0 10px gold);
+}
