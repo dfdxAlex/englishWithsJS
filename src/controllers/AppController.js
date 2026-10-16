@@ -106,9 +106,8 @@ export class AppController {
             boobleUpController.init();
 
 
-            const cheatService = new CheatService({statisticModel,
-
-            });
+            const cheatService = new CheatService();
+            cheatService.init();
             
 
         // интервал проверяет все элементы и накладывает на них обработчики событий.

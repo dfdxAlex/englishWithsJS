@@ -1,7 +1,6 @@
 export class StatisticModel {
 constructor({forBooble}) {
     this.forBooble = forBooble;
-    this.servisForThisModel();
 }
 
 getSetup() {
@@ -13,6 +12,8 @@ getSetup() {
     resetMaxDiamantToday:false,     // сбросить максимальное число набранных алмазов за сегодня
 }
 
+// принудительное обновление набранных за день очков и максимальное всего набранное
+// работает для отладки
 servisForThisModel() {
     if (this.#setupThisModel.resetDailyScore)
         localStorage.removeItem('saveDailyScore');
@@ -39,7 +40,6 @@ loadDailyScore() {
 
 // создает объект с полями и записывает в localStorage
 resetDailyScore() {
-        
         let objDaily = {data: new Date().toDateString(), 
                         diamantToday: this.forBooble.diamantToday};
 
@@ -61,8 +61,6 @@ saveDailyScore() {
 
         // записать данные, если они выросли по сравнению с другими днями
         this.saveMaxDiamantToday(statisticToday.diamantToday);
-        console.log('добавить кристал');
-
 }
 
 saveMaxDiamantToday(diamantToday) {
