@@ -12,10 +12,10 @@ export class StatisticController{
         this.boobleUpService = boobleUpService;
 
         // рендер менюшки для ввода цели
-        const goalForTheDay = this.languageController.translate('Цель на день')
-        const numberOfCrystals = this.languageController.translate('Количество кристаллов')
-        const enterTheGoal = this.languageController.translate('Введите цель')
-        const save = this.languageController.translate('Сохранить')
+        const goalForTheDay = this.languageController.translate('Цель на день');
+        const numberOfCrystals = this.languageController.translate('Количество кристаллов');
+        const enterTheGoal = this.languageController.translate('Введите цель');
+        const save = this.languageController.translate('Сохранить');
         this.statisticView.renderMenuGoal(goalForTheDay, 
                                           numberOfCrystals, 
                                           enterTheGoal, 
@@ -46,6 +46,7 @@ let max = Number(this.statisticModel.loadMaxDiamantToday());
 // проверить установлена ли цель в ручную
 const goalForToday = this.statisticModel.getGoalForToday();
 if (goalForToday > 0) max = goalForToday;
+// console.log(goalForToday);
 
 if (!Number.isNaN(daily) && !Number.isNaN(max) && max > 0) {
     this.#state.procent = Math.trunc(daily / max * 100);
@@ -55,7 +56,6 @@ if (this.#state.procent < this.#state.goalLevel) {
     this.boobleUpService.setGoalCompletedTodayOne(0);
 }
 
-// console.log(this.boobleUpService.isGoalCompletedTodayOne(), this.#state.procent, this.#state.goalLevel);
 if (this.#state.procent >= this.#state.goalLevel  && this.boobleUpService.isGoalCompletedTodayOne() === 0) {
     
     // эффекты при достижении уровней
@@ -71,7 +71,14 @@ if (this.#state.procent >= this.#state.goalLevel  && this.boobleUpService.isGoal
     if (this.#state.procent >= 150) this.#state.goalLevel = 200;
 } 
 
-this.statisticView.setDiamantProgress(this.#state.procent);
+const goalString = this.languageController.translate('Цель на день');
+let next = this.languageController.translate('Следующий')+`:${this.#state.goalLevel}%`;
+if (this.#state.procent > 200) next = '';
+
+this.statisticView.setDiamantProgress(this.#state.procent, 
+                                      goalForToday, 
+                                      goalString, 
+                                      next);
 }
 
 

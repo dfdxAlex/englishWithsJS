@@ -17,10 +17,10 @@ BDTranslate.push(
      ``,
      ``]);
 BDTranslate.push(
-    [``, 
-     ``, 
-     ``,
-     ``]);
+    [`Следующий`, 
+     `Наступний`, 
+     `Następny`,
+     `Next`]);
 BDTranslate.push(
     [`Цель на день`, 
      `Ціль на день`, 

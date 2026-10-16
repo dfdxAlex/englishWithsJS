@@ -19,9 +19,11 @@ export class StatisticView {
         }, 0);
     }
 
-setDiamantProgress(percent) {
+setDiamantProgress(percent, goalForToday, wordGoal = 'Цель на день', next) {
+    let goal = '';
+    if (goalForToday > 0) goal = `${wordGoal}:${goalForToday}`;
     document.querySelector('#diament-view .diament-view__fill').style.width = `${percent}%`;
-    document.getElementById('diament-view').dataset.progress = `${Math.round(percent)}%`;
+    document.getElementById('diament-view').dataset.progress = `${Math.round(percent)}% ${goal}💎 ${next}`;
 }
 
 closeGoalModal() {
@@ -59,17 +61,14 @@ renderMenuGoal(goalForTheDay, numberOfCrystals, enterTheGoal, save, setGoalForTo
         document.getElementById('diament-view')
                 .addEventListener('click', () => {
                     goalForToday.innerHTML = forRender;
-                    document
-                            .getElementById('save-goal-btn')
+                    document.getElementById('save-goal-btn')
                             .addEventListener('click', () => {
                                 setGoalForToday(document.getElementById('goal-input').value);
                                 init();
                                 this.closeGoalModal();
                             });
-                    document
-                            .querySelector('.goal-modal')
+                    document.querySelector('.goal-modal')
                             .addEventListener('click', (e) => {
-
                                 if (e.target.classList.contains('goal-modal')) {
                                     e.currentTarget.remove();
                                 }
