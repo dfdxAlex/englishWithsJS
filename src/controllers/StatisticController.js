@@ -71,7 +71,7 @@ if (this.#state.procent >= this.#state.goalLevel  && this.boobleUpService.isGoal
     if (this.#state.procent >= 150) this.#state.goalLevel = 200;
 } 
 
-const goalString = this.languageController.translate('Цель на день');
+const goalString = this.languageController.translate('Цель');
 let next = this.languageController.translate('Следующий')+`:${this.#state.goalLevel}%`;
 if (this.#state.procent > 200) next = '';
 

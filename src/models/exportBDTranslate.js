@@ -12,20 +12,15 @@ export function exportBDTranslate()
 
 const BDTranslate = [];
 BDTranslate.push(
-    [``, 
-     ``, 
-     ``,
-     ``]);
+    [`Цель`, 
+     `Ціль`, 
+     `Cel`,
+     `Target`]);
 BDTranslate.push(
     [`Следующий`, 
      `Наступний`, 
      `Następny`,
      `Next`]);
-BDTranslate.push(
-    [`Цель на день`, 
-     `Ціль на день`, 
-     `Cel na dziś`,
-     `Goal for the day`]);
 BDTranslate.push(
     [`Сохранить`, 
      `Зберегти`, 
