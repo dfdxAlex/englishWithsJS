@@ -12,6 +12,26 @@ export function exportBDTranslate()
 
 const BDTranslate = [];
 BDTranslate.push(
+    [``, 
+     ``, 
+     ``,
+     ``]);
+BDTranslate.push(
+    [``, 
+     ``, 
+     ``,
+     ``]);
+BDTranslate.push(
+    [``, 
+     ``, 
+     ``,
+     ``]);
+BDTranslate.push(
+    [`Продолжайте`, 
+     `Продовжуйте`, 
+     `Kontynuować`,
+     `Continue`]);
+BDTranslate.push(
     [`Дальше`, 
      `Далі`, 
      `Dalej`,

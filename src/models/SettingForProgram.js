@@ -1,6 +1,6 @@
 export class SettingForProgram
 {
-    static APP_VERSION = 'v17.10.26/1';
+    static APP_VERSION = 'v17.10.26/2';
     // хранит тип теста, simple - это просто ответ на вопрос
     static selectTypeTestProperty = 'simple';
 

@@ -58,12 +58,15 @@ if (this.#state.procent >= this.#state.goalLevel
     this.boobleUpService.setGoalCompletedTodayOne(1);
 } 
 
+    let goalString = this.languageController.translate('Цель');
+    if (this.#state.procent >= this.#state.goalLevel) goalString = this.languageController.translate('Продолжайте');
+
+
     if (this.#state.procent >= 100) this.#state.goalLevel = 120;
     if (this.#state.procent >= 120) this.#state.goalLevel = 150;
     if (this.#state.procent >= 150) this.#state.goalLevel = 200;
-    
 
-const goalString = this.languageController.translate('Цель');
+
 
 let next = '';
 if (this.#state.goalLevel > 100)
