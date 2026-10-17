@@ -23,17 +23,9 @@ export class StatisticController{
                                         );
     }
 
-#setupController = {
-    
-}
-
 #state = {
     procent:0,                  // число процентов относительно заданной цели
     goalLevel:100,              // следующая цель, по достиженю цель растёт до 120, 150, 200
-}
-
-#elements = {
-
 }
 
 init() {
@@ -54,7 +46,8 @@ if (this.#state.procent < this.#state.goalLevel) {
     this.boobleUpService.setGoalCompletedTodayOne(0);
 }
 
-if (this.#state.procent >= this.#state.goalLevel  && this.boobleUpService.isGoalCompletedTodayOne() === 0) {
+if (this.#state.procent >= this.#state.goalLevel  
+    && this.boobleUpService.isGoalCompletedTodayOne() === 0) {
     
     // эффекты при достижении уровней
     if (this.#state.goalLevel === 100) this.statisticView.goal100();
@@ -63,11 +56,12 @@ if (this.#state.procent >= this.#state.goalLevel  && this.boobleUpService.isGoal
     if (this.#state.goalLevel === 200) this.statisticView.goal200();
 
     this.boobleUpService.setGoalCompletedTodayOne(1);
+} 
 
     if (this.#state.procent >= 100) this.#state.goalLevel = 120;
     if (this.#state.procent >= 120) this.#state.goalLevel = 150;
     if (this.#state.procent >= 150) this.#state.goalLevel = 200;
-} 
+    
 
 const goalString = this.languageController.translate('Цель');
 
