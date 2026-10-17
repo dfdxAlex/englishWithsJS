@@ -25,6 +25,7 @@ import { StatisticController } from './StatisticController.js';
 import { StatisticView } from '../view/StatisticView.js';
 import { BonusBoxView } from '../view/boobleUp/BonusBoxView.js';
 import { CheatService } from '../CheatService.js';
+import { renderAppVersion } from '../view/renderAppVersion.js';
 
 export class AppController {
 
@@ -103,11 +104,13 @@ export class AppController {
                                                                 statisticController,
                                                                 bonusBoxView
                                                                 });
-            boobleUpController.init();
+            boobleUpController.init(SettingForProgram.APP_VERSION);
 
 
             const cheatService = new CheatService();
             cheatService.init();
+
+            renderAppVersion('v17.10.26/0');
             
 
         // интервал проверяет все элементы и накладывает на них обработчики событий.

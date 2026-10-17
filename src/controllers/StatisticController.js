@@ -1,6 +1,4 @@
 
-
-
 export class StatisticController{
     constructor({statisticModel, 
                  statisticView, 
