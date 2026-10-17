@@ -104,13 +104,13 @@ export class AppController {
                                                                 statisticController,
                                                                 bonusBoxView
                                                                 });
-            boobleUpController.init(SettingForProgram.APP_VERSION);
+            boobleUpController.init();
 
 
             const cheatService = new CheatService();
             cheatService.init();
 
-            renderAppVersion('v17.10.26/0');
+            renderAppVersion(SettingForProgram.APP_VERSION);
             
 
         // интервал проверяет все элементы и накладывает на них обработчики событий.

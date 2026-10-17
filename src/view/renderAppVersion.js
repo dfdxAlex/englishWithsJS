@@ -1,7 +1,6 @@
 import './styles/renderAppVersion.scss'
 /**
  * Рендер версии приложения в левом нижнем углу экрана
- * @param {string} version
  */
 export function renderAppVersion(version = 'v1.0.0') {
     let versionEl = document.getElementById('app-version');
