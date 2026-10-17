@@ -12,6 +12,11 @@ export function exportBDTranslate()
 
 const BDTranslate = [];
 BDTranslate.push(
+    [`Дальше`, 
+     `Далі`, 
+     `Dalej`,
+     `Next`]);
+BDTranslate.push(
     [`Цель`, 
      `Ціль`, 
      `Cel`,

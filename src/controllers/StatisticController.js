@@ -72,7 +72,11 @@ if (this.#state.procent >= this.#state.goalLevel  && this.boobleUpService.isGoal
 } 
 
 const goalString = this.languageController.translate('Цель');
-let next = this.languageController.translate('Следующий')+`:${this.#state.goalLevel}%`;
+
+let next = '';
+if (this.#state.goalLevel > 100)
+    next = this.languageController.translate('Дальше')+`:${this.#state.goalLevel}%`;
+
 if (this.#state.procent > 200) next = '';
 
 this.statisticView.setDiamantProgress(this.#state.procent, 
