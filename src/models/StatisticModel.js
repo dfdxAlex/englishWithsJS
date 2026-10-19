@@ -4,8 +4,8 @@ constructor({forBooble}) {
 }
 
 normalizeGoalLevel(procent) {
-    if (procent >= 100) return 120;
-    if (procent >= 120) return 150;
+    if (procent >= 100 && procent < 119) return 120;
+    if (procent >= 120 && procent < 149) return 150;
     if (procent >= 150) return 200;
     return 100;
 }
