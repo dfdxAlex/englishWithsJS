@@ -6,7 +6,18 @@ import './styles/goal200.scss';
 import confetti from 'canvas-confetti';
 import { addElToDinamicMenu } from './addElToDinamicMenu.js';
 
+
+
 export class StatisticView {
+
+    setOffFireworks(goalLevel) {
+        // эффекты при достижении уровней
+        if (goalLevel === 100) this.goal100();
+        if (goalLevel === 120) this.goal120();
+        if (goalLevel === 150) this.goal150();
+        if (goalLevel === 200) this.goal200();
+    }
+
     // рендер полосы активности в динамическое меню
     renderBonusLevel(levelData)
     {

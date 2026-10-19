@@ -1,4 +1,5 @@
-
+// Ошибка!! если цель маленькая а число баллов большое, цель 4 а баллов 10, то перескакивание через
+// уровень и феерверк не срабатывает.
 export class StatisticController{
     constructor({statisticModel, 
                  statisticView, 
@@ -21,6 +22,8 @@ export class StatisticController{
                                           statisticModel.setGoalForToday,
                                           () => this.init()
                                         );
+        // восстановление нужного следующего уровня цели при перезагрузке
+        this.#state.goalLevel = this.statisticModel.normalizeGoalLevel(this.#state.procent);
     }
 
 #state = {
@@ -49,22 +52,24 @@ if (this.#state.procent < this.#state.goalLevel) {
 if (this.#state.procent >= this.#state.goalLevel  
     && this.boobleUpService.isGoalCompletedTodayOne() === 0) {
     
-    // эффекты при достижении уровней
-    if (this.#state.goalLevel === 100) this.statisticView.goal100();
-    if (this.#state.goalLevel === 120) this.statisticView.goal120();
-    if (this.#state.goalLevel === 150) this.statisticView.goal150();
-    if (this.#state.goalLevel === 200) this.statisticView.goal200();
-
+    // // эффекты при достижении уровней
+    // if (this.#state.goalLevel === 100) this.statisticView.goal100();
+    // if (this.#state.goalLevel === 120) this.statisticView.goal120();
+    // if (this.#state.goalLevel === 150) this.statisticView.goal150();
+    // if (this.#state.goalLevel === 200) this.statisticView.goal200();
+    this.statisticView.setOffFireworks(this.#state.goalLevel);
     this.boobleUpService.setGoalCompletedTodayOne(1);
 } 
 
     let goalString = this.languageController.translate('Цель');
-    if (this.#state.procent >= this.#state.goalLevel) goalString = this.languageController.translate('Продолжайте');
+    if (this.#state.procent >= this.#state.goalLevel) 
+        goalString = this.languageController.translate('Продолжайте');
 
 
-    if (this.#state.procent >= 100) this.#state.goalLevel = 120;
-    if (this.#state.procent >= 120) this.#state.goalLevel = 150;
-    if (this.#state.procent >= 150) this.#state.goalLevel = 200;
+    // if (this.#state.procent >= 100) this.#state.goalLevel = 120;
+    // if (this.#state.procent >= 120) this.#state.goalLevel = 150;
+    // if (this.#state.procent >= 150) this.#state.goalLevel = 200;
+    this.#state.goalLevel = this.statisticModel.normalizeGoalLevel(this.#state.procent);
 
 
 

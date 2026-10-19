@@ -3,6 +3,13 @@ constructor({forBooble}) {
     this.forBooble = forBooble;
 }
 
+normalizeGoalLevel(procent) {
+    if (procent >= 100) return 120;
+    if (procent >= 120) return 150;
+    if (procent >= 150) return 200;
+    return 100;
+}
+
 getSetup() {
     return this.#setupThisModel;
 }

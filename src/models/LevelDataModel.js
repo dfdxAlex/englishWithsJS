@@ -46,7 +46,6 @@ export class LevelDataModel
         this.translate = new LanguageController();
         this.lang = localStorage.getItem('EnglishWithJs_lang') || 'ru';
         localStorage.setItem('EnglishWithJs_lang', this.lang)
-        // console.log(localStorage.getItem('EnglishWithJs_lang'));
         this.propertyArrayNameButton = [];
         this.tic = 0;
         // опережающий запуск формирования массива для меню верхнего
@@ -63,7 +62,6 @@ export class LevelDataModel
         for (let i=1; i<24; i++) {
             this.propertyArrayNameButton.push(setStatisticForButton(i));
         }
-        // console.log(this.propertyArrayNameButton);
 
         // массив для прорисовки меню статистики
         this.propertyArrayNameButton.push(this.translate.translate('Собрано алмазов:'));// пункт 4
@@ -75,7 +73,7 @@ export class LevelDataModel
         this.propertyArrayNameButton.push('');//Задание теста:'));// пункт 3
         this.propertyArrayNameButton.push('');/// пункт 3
 
-        for (let i=31; i<61; i++) {
+        for (let i=31; i<62; i++) {
 
             this.propertyArrayNameButton.push(setStatisticForButton(i));
         }
@@ -94,7 +92,8 @@ export class LevelDataModel
                                 1,2,1,4,4,4,4,4,3,3,
                                 1,1,2,1,1,2,1,1,1,1,
                                 2,1,1,1,6,6,6,6,6,6,
-                                6,6,6,6,6,6,6,6,6,6];
+                                6,6,6,6,6,6,6,6,6,6,
+                                6];
 
         return arrayForButton[test];
     }
@@ -176,6 +175,7 @@ export class LevelDataModel
         this.selectLevel('Выбрать правильную пару.','unit37',58);
         this.selectLevel('Выбрать правильную пару.','unit38',59);
         this.selectLevel('Выбрать правильную пару.','unit39',60);
+        this.selectLevel('Выбрать правильную пару.','unit40',61);
 
         // console.log(this.rez);
         return this.rez;
