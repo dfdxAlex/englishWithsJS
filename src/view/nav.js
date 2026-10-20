@@ -28,6 +28,9 @@ export function nav()
             <div class="nav-link" id="burger2"></div>
           </li>
           <li class="nav-item">
+            <div class="nav-link" id="burger3"></div>
+          </li>
+          <li class="nav-item">
             <div class="nav-link" id="word"></div>
           </li>
           <li class="nav-item">

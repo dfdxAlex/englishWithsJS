@@ -50,7 +50,7 @@ export function setColorMenu()
             backgraundForLanguageSeectProp = 'black';
         }
 
-        setColorBlackOrWhite(['dropdownMenuburger', 'dropdownMenuburger2', 'dropdownMenuword',
+        setColorBlackOrWhite(['dropdownMenuburger', 'dropdownMenuburger2', 'dropdownMenuburger3', 'dropdownMenuword',
                               'dropdownMenuhelp', 'dropdownMenustatistic', 'setting', 'languageSelect',
                               'fieldset-legend-old', 'question_old', 'fieldset-legend',
                               'gamburger-menu-open', 'clicked_element'

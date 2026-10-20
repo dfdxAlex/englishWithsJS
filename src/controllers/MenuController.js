@@ -2,6 +2,7 @@
 
 import { MenuRight } from '../view/MenuRight.js';
 import { MenuRight2 } from '../view/MenuRight2.js';
+import { MenuRight3 } from '../view/MenuRight3.js';
 import { MenuLearnWord } from '../view/MenuLearnWord.js';
 import { MenuHelp } from '../view/MenuHelp.js';
 import { MenuStatictic } from '../view/MenuStatistic.js';
@@ -26,8 +27,13 @@ export class MenuController
         const menu = new MenuRight(this.levelDataModel.getArrayNameButton());
         // console.log(this.levelDataModel.getArrayNameButton()[30]);
 
-        // подпункт units 24-
+        // подпункт units 24-40
         const menu5 = new MenuRight2(this.levelDataModel.getArrayNameButton());
+        // console.log(menu5);
+
+        // подпункт units 40-
+        const menu6 = new MenuRight3(this.levelDataModel.getArrayNameButton());
+        // console.log(menu6);
 
         // создать объект второго правого меню
         const menu2 = new MenuLearnWord(this.levelDataModel.getArrayNameButton());
@@ -57,6 +63,12 @@ export class MenuController
         // найти точку для публикации правого меню
         // само место парковки задаётся внутри класса MenuLearnWord
         const point5 = menu5.getSeedForMenu();
+        // console.log(point5);
+
+        // найти точку для публикации правого меню
+        // само место парковки задаётся внутри класса MenuLearnWord
+        const point6 = menu6.getSeedForMenu();
+        // console.log(point6);
         
         // поместить меню на выбранное место.
         point.innerHTML = menu.menuDropdown2();
@@ -65,13 +77,15 @@ export class MenuController
         point3.innerHTML = menu3.menuDropdown2();
         point4.innerHTML = menu4.menuDropdown2();
         point5.innerHTML = menu5.menuDropdown2();
+        point6.innerHTML = menu6.menuDropdown2();
 
         const unit = [];
         for (let i=1; i<=this.levelDataModel.getTic(); i++) {
             let numberMenu = LevelDataModel.mapNameMenu(i - 1);
             if (numberMenu == 4
               || numberMenu == 3
-                || numberMenu == 5) {
+                || numberMenu == 5
+                    || numberMenu == 6) {
                     continue;
             } 
             unit[i] = document.getElementById('level'+i);

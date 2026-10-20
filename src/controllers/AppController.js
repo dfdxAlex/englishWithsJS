@@ -49,6 +49,7 @@ export class AppController {
             document.getElementById('pullItem1').addEventListener('click', setBackground);
             document.getElementById('pullItem2').addEventListener('click', setBackground);
             document.getElementById('pullItem6').addEventListener('click', setBackground);
+            document.getElementById('pullItem7').addEventListener('click', setBackground);
 
             // C Цветом текста и фона работаем для менюшек
             setColorMenu();
@@ -62,6 +63,9 @@ export class AppController {
                 DataSet.resetQuestion = true;
             }
             document.getElementById('dropdownMenuburger2').onclick = () => {
+                DataSet.resetQuestion = true;
+            }
+            document.getElementById('dropdownMenuburger3').onclick = () => {
                 DataSet.resetQuestion = true;
             }
 
