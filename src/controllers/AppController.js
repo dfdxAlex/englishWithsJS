@@ -26,15 +26,18 @@ import { StatisticView } from '../view/StatisticView.js';
 import { BonusBoxView } from '../view/boobleUp/BonusBoxView.js';
 import { CheatService } from '../CheatService.js';
 import { renderAppVersion } from '../view/renderAppVersion.js';
+import { LevelDataModel } from '../models/LevelDataModel.js';
 
 export class AppController {
 
     init() {
         // Здесь функции, которые должны отработать когда загрузится статическая страница
+            const levelDataModel = new LevelDataModel();
             htmlHelp();
             nav();
-            const menuC = new MenuController();
+            const menuC = new MenuController({levelDataModel: new LevelDataModel(DataOk.level.int)});
             menuC.init();
+            
 
             const languageController = new LanguageController();
 

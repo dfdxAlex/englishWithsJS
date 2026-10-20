@@ -1,21 +1,24 @@
 // Класс управляет работой правого меню
 
+import { LevelDataModel } from '../models/LevelDataModel.js';
+
 import { MenuRight } from '../view/MenuRight.js';
 import { MenuRight2 } from '../view/MenuRight2.js';
 import { MenuRight3 } from '../view/MenuRight3.js';
 import { MenuLearnWord } from '../view/MenuLearnWord.js';
 import { MenuHelp } from '../view/MenuHelp.js';
 import { MenuStatictic } from '../view/MenuStatistic.js';
-import { LevelDataModel } from '../models/LevelDataModel.js';
+
 import { handleLevelX } from './handleLevelX.js';
 import { fixModalFocus } from '../services/all/fixModalFocus.js';
-import { DataOk } from '../services/data/DataOk.js';
+// import { DataOk } from '../services/data/DataOk.js';
 
 export class MenuController
 {
-    constructor ()
+    constructor ({levelDataModel})
     {
-        this.levelDataModel = new LevelDataModel(DataOk.level.int);
+        // this.levelDataModel = new LevelDataModel(DataOk.level.int);
+        this.levelDataModel = levelDataModel;
     }
 
     init() 
