@@ -11,14 +11,14 @@ import { MenuStatictic } from '../view/MenuStatistic.js';
 
 import { handleLevelX } from './handleLevelX.js';
 import { fixModalFocus } from '../services/all/fixModalFocus.js';
-// import { DataOk } from '../services/data/DataOk.js';
+import { DataOk } from '../services/data/DataOk.js';
 
 export class MenuController
 {
-    constructor ({levelDataModel})
+    constructor ()
     {
-        // this.levelDataModel = new LevelDataModel(DataOk.level.int);
-        this.levelDataModel = levelDataModel;
+        this.levelDataModel = new LevelDataModel(DataOk.level.int);
+        // this.levelDataModel = levelDataModel;
     }
 
     init() 
@@ -88,7 +88,7 @@ export class MenuController
             if (numberMenu == 4
               || numberMenu == 3
                 || numberMenu == 5
-                    || numberMenu == 6) {
+                  || numberMenu == 7) {
                     continue;
             } 
             unit[i] = document.getElementById('level'+i);

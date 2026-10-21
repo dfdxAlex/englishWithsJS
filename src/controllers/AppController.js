@@ -32,10 +32,10 @@ export class AppController {
 
     init() {
         // Здесь функции, которые должны отработать когда загрузится статическая страница
-            const levelDataModel = new LevelDataModel();
+            // const levelDataModel = new LevelDataModel();
             htmlHelp();
             nav();
-            const menuC = new MenuController({levelDataModel: new LevelDataModel(DataOk.level.int)});
+            const menuC = new MenuController();
             menuC.init();
             
 
@@ -64,12 +64,15 @@ export class AppController {
             // присвоив свойство true принудительно обновляет вопрос
             document.getElementById('dropdownMenuburger').onclick = () => {
                 DataSet.resetQuestion = true;
+                // console.log('Выбор теста 1');
             }
             document.getElementById('dropdownMenuburger2').onclick = () => {
                 DataSet.resetQuestion = true;
+                // console.log('Выбор теста 24');
             }
             document.getElementById('dropdownMenuburger3').onclick = () => {
                 DataSet.resetQuestion = true;
+                // console.log('Выбор теста 41');
             }
 
             // принудительное изменение тестового вопосса при первом пуске или обновлении
@@ -137,6 +140,7 @@ export class AppController {
             // статистики то вернуть false statistic
             if (!hundleUpdateBurgerOrWord('burger')) test = false;
             if (!hundleUpdateBurgerOrWord('burger2')) test = false;
+            if (!hundleUpdateBurgerOrWord('burger3')) test = false;
             if (!hundleUpdateBurgerOrWord('word')) test = false;
             if (!hundleUpdateBurgerOrWord('statistic')) test = false;
 
