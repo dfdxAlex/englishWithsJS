@@ -22,6 +22,8 @@
 //    return replaceEllipsisWithWord(id, presentSimple);
 // }
 
+
+
 import './styles/LevelDataModel.scss';
 import { DataOk } from '../services/data/DataOk.js';
 import { Exercise } from '../view/Exercise.js';
@@ -89,11 +91,11 @@ export class LevelDataModel
     {
         const arrayForButton = [2,2,2,2,2,2,2,2,1,1,
                                 1,2,1,1,1,1,1,1,1,2,
-                                1,2,1,4,4,4,4,4,3,3,
+                                1,8,1,4,4,4,4,4,3,3,
                                 1,1,2,1,1,2,1,1,1,1,
                                 2,1,1,1,6,6,6,6,6,6,
                                 6,6,6,6,6,6,6,6,6,6,
-                                6,2,2,2,2,2,2];
+                                6,8,8,8,8,8,8];
 
         return arrayForButton[test];
     }

@@ -34,6 +34,9 @@ export function nav()
             <div class="nav-link" id="word"></div>
           </li>
           <li class="nav-item">
+            <div class="nav-link" id="text"></div>
+          </li>
+          <li class="nav-item">
             <div class="nav-link" id="help"></div>
           </li>
           <li class="nav-item">

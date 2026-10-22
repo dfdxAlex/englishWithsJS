@@ -1,24 +1,28 @@
 // Класс управляет работой правого меню
 
+// Делегировать все события на id = "nav"
+
+// класс со статическими методами, выгоднее подключить здесь, без передачи инъекциями
 import { LevelDataModel } from '../models/LevelDataModel.js';
 
 import { MenuRight } from '../view/MenuRight.js';
 import { MenuRight2 } from '../view/MenuRight2.js';
 import { MenuRight3 } from '../view/MenuRight3.js';
+import { MenuRight4 } from '../view/MenuRight4.js';
 import { MenuLearnWord } from '../view/MenuLearnWord.js';
 import { MenuHelp } from '../view/MenuHelp.js';
 import { MenuStatictic } from '../view/MenuStatistic.js';
 
 import { handleLevelX } from './handleLevelX.js';
 import { fixModalFocus } from '../services/all/fixModalFocus.js';
-import { DataOk } from '../services/data/DataOk.js';
+// import { DataOk } from '../services/data/DataOk.js';
 
 export class MenuController
 {
-    constructor ()
+    constructor ({level})
     {
-        this.levelDataModel = new LevelDataModel(DataOk.level.int);
-        // this.levelDataModel = levelDataModel;
+        // this.levelDataModel = new LevelDataModel(DataOk.level.int);
+        this.levelDataModel = new LevelDataModel(level);
     }
 
     init() 
@@ -28,15 +32,15 @@ export class MenuController
 
         // подпункт units 1-23
         const menu = new MenuRight(this.levelDataModel.getArrayNameButton());
-        // console.log(this.levelDataModel.getArrayNameButton()[30]);
 
         // подпункт units 24-40
         const menu5 = new MenuRight2(this.levelDataModel.getArrayNameButton());
-        // console.log(menu5);
 
         // подпункт units 40-
         const menu6 = new MenuRight3(this.levelDataModel.getArrayNameButton());
-        // console.log(menu6);
+
+        // подпункт Тексты
+        const menu7 = new MenuRight4(this.levelDataModel.getArrayNameButton());
 
         // создать объект второго правого меню
         const menu2 = new MenuLearnWord(this.levelDataModel.getArrayNameButton());
@@ -71,7 +75,10 @@ export class MenuController
         // найти точку для публикации правого меню
         // само место парковки задаётся внутри класса MenuLearnWord
         const point6 = menu6.getSeedForMenu();
-        // console.log(point6);
+
+        // найти точку для публикации правого меню
+        // само место парковки задаётся внутри класса MenuLearnWord
+        const point7 = menu7.getSeedForMenu();
         
         // поместить меню на выбранное место.
         point.innerHTML = menu.menuDropdown2();
@@ -81,16 +88,23 @@ export class MenuController
         point4.innerHTML = menu4.menuDropdown2();
         point5.innerHTML = menu5.menuDropdown2();
         point6.innerHTML = menu6.menuDropdown2();
+        point7.innerHTML = menu7.menuDropdown2();
 
+        
         const unit = [];
+        /////////////////исключить два подменю, где не нужны события
+        // при добавлении новых тестовых уровней СЮДА НЕ ЛЕЗЕМ
         for (let i=1; i<=this.levelDataModel.getTic(); i++) {
             let numberMenu = LevelDataModel.mapNameMenu(i - 1);
-            if (numberMenu == 4
-              || numberMenu == 3
-                || numberMenu == 5
-                  || numberMenu == 7) {
+            if (numberMenu == 3
+              || numberMenu == 4
+                // || numberMenu == 3
+                //   || numberMenu == 4
+                    // || numberMenu == 4
+                ) {
                     continue;
             } 
+        ////////////////////////////////////////////////////////////
             unit[i] = document.getElementById('level'+i);
             unit[i].onclick = handleLevelX.bind(null, new LevelDataModel(i));
         }

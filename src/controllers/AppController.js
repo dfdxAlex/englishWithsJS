@@ -26,7 +26,7 @@ import { StatisticView } from '../view/StatisticView.js';
 import { BonusBoxView } from '../view/boobleUp/BonusBoxView.js';
 import { CheatService } from '../CheatService.js';
 import { renderAppVersion } from '../view/renderAppVersion.js';
-import { LevelDataModel } from '../models/LevelDataModel.js';
+// import { LevelDataModel } from '../models/LevelDataModel.js';
 
 export class AppController {
 
@@ -35,7 +35,7 @@ export class AppController {
             // const levelDataModel = new LevelDataModel();
             htmlHelp();
             nav();
-            const menuC = new MenuController();
+            const menuC = new MenuController({level:DataOk.level.int});
             menuC.init();
             
 
@@ -53,6 +53,7 @@ export class AppController {
             document.getElementById('pullItem2').addEventListener('click', setBackground);
             document.getElementById('pullItem6').addEventListener('click', setBackground);
             document.getElementById('pullItem7').addEventListener('click', setBackground);
+            document.getElementById('pullItem8').addEventListener('click', setBackground);
 
             // C Цветом текста и фона работаем для менюшек
             setColorMenu();
@@ -73,6 +74,10 @@ export class AppController {
             document.getElementById('dropdownMenuburger3').onclick = () => {
                 DataSet.resetQuestion = true;
                 // console.log('Выбор теста 41');
+            }
+            document.getElementById('dropdownMenutext').onclick = () => {
+                DataSet.resetQuestion = true;
+                // console.log('cnok');
             }
 
             // принудительное изменение тестового вопосса при первом пуске или обновлении
@@ -142,6 +147,7 @@ export class AppController {
             if (!hundleUpdateBurgerOrWord('burger2')) test = false;
             if (!hundleUpdateBurgerOrWord('burger3')) test = false;
             if (!hundleUpdateBurgerOrWord('word')) test = false;
+            if (!hundleUpdateBurgerOrWord('text')) test = false;
             if (!hundleUpdateBurgerOrWord('statistic')) test = false;
 
             if (test) {
