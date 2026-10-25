@@ -30,16 +30,34 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     exit;
 }
 
+// POST запрос работает с системой контроля ошибок проекта EnglishWithJS
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
     if (isset($_POST['name'])) {
       $name = $_POST['name']; // Доступ к переданному параметру 'name'
       // Обработка данных  
       $obj = new EnglishWithsJs();
+
+    // если пришла команда getErrorList, то запустить метод чтения всех ошибок и выйти
+    if ($_POST['name'] === 'getErrorList') {
+        echo $obj->getErrorList();
+        exit;
+    }
+
+    // если пришла команда getErrorCount, то запустить метод getErrorCount, вернет число ошибок-записей
+    if ($_POST['name'] === 'getErrorCount') {
+        echo $obj->getErrorCount();
+        exit;
+    }
+
+
+
       $obj->setName($name);  
 
       // Установка заголовка для JSON
       echo $obj->saveError();
     }
+
   }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////

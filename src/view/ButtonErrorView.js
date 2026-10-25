@@ -1,3 +1,6 @@
+import './styles/emojeError.scss';
+import { addElToDinamicMenu } from '../view/addElToDinamicMenu.js';
+
 export class ButtonErrorView {
     #elements = {
         button: document.getElementById('search_error'),                // указатель на кнопку Сообщить об ошибке
@@ -8,6 +11,16 @@ export class ButtonErrorView {
     #state = {
         questionOld: '',
         questionOldClicked: '',
+    }
+
+    async renderErrorEmoji(getErrorCount) {
+        // вернуть число ошибок
+        const { count } = await getErrorCount();
+        
+        if (Number(count<1)) return;
+
+        const emoji = '⚠️<span>'+count+'</span>';
+        addElToDinamicMenu(emoji, 'dinamic_menu_error', 'dinamic_menu_error');
     }
 
     // вернуть ссылку на кнопку search_error

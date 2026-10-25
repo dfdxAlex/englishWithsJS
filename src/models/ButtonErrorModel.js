@@ -1,4 +1,10 @@
+import { AppModel } from '../models/AppModel.js';
+
 export class ButtonErrorModel {
+
+    #setup = {
+        url: 'https://amatordd.webd.pro/amatorDed/DFDX/test.php', // ссылка для запроса на сервер, список ошибок
+    }
 
     getMessageError() {
         // создать сообщение об ошибке
@@ -33,4 +39,35 @@ export class ButtonErrorModel {
             indexMax,
         }
     }
+
+    // метод возвращает json, в котором массив ошибок JSON. (2 раза закодирован JSON в BD)
+    async getErrorList() {
+
+        const response = await fetch(this.#setup.url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: 'name=getErrorList'
+        });
+
+        const errors = await response.json();
+        // Массив errors - это список всех ошибок
+        console.log(errors);
+    }
+
+    async getErrorCount() {
+        const response = await fetch(this.#setup.url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: 'name=getErrorCount'
+        });
+        const data = await response.json();
+        return data;
+    }
+
+
+
 }

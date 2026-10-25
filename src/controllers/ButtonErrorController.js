@@ -3,12 +3,12 @@ import { ButtonErrorView } from '../view/ButtonErrorView.js';
 import { httpAsk } from '../models/HttpClient.js';
 import { AppModel } from '../models/AppModel.js';
 
+
 export class ButtonErrorController {
 
     constructor() {
         this.buttonErrorView = new ButtonErrorView();
         this.buttonErrorModel = new ButtonErrorModel();
-
 
         // вернуть ссылку на кнопку search_error
         this.#elements.button = this.buttonErrorView.getButtonSearchError(); 
@@ -17,6 +17,10 @@ export class ButtonErrorController {
         this.#state.errorMessage = this.buttonErrorModel.getMessageError();
         // вернуть содержимое из question_old
         this.#state.messageOld = this.buttonErrorView.getQuestionOld();
+
+        // вернуть список ошибок
+        this.buttonErrorModel.getErrorList();
+
     }
 
     #elements = {
@@ -32,9 +36,11 @@ export class ButtonErrorController {
 
     init() {
         this.prepareErrorData();
-        this.handleSearchError();
+        this.setupErrorReporting();
+        this.buttonErrorView.renderErrorEmoji(this.buttonErrorModel.getErrorCount.bind(this.buttonErrorModel));
     }
 
+    // Дорого переносить данную функцию в модели
     syncState() {
         // Записать текущее значение карточки с вопроссами в глобальный объект AppModel
         // для использования на следующей итерации при необходимости
@@ -60,14 +66,11 @@ export class ButtonErrorController {
         },0);
     }
 
-
-handleSearchError() {
-
+setupErrorReporting() {
     // Клик по кнопке Сообщить об ошибке
     this.#elements.button.addEventListener('click', (event) => {
         const errorMessage = JSON.stringify({...AppModel.mapQuestionModel, ...AppModel.mapQuestionView});
         // создать строку из предыдущего вопросса, информация в глобальном AppModel
-        console.log(errorMessage);
 
         // Записать текущее значение карточки с вопроссами в глобальный объект AppModel,
         // для использования на следующей итерации при необходимости
@@ -76,24 +79,20 @@ handleSearchError() {
         // Поискать пузырь, если он есть, то не отправляем ошибку
         // Если падает ящик заблокировать отправку ошибки
         // чтобы не попасть случайно в отправку ошибок
-        
         const selectBoobleUp = document.getElementById('boobleUp');
-        // console.log('клац',selectBoobleUp);
         if (selectBoobleUp !== null) {
                 console.log('Ящик ещё падает');
                 event.preventDefault(); // Не выполнять стандартное действие
                 return;
             }
-
         //Создать сам запрос к серверу
         const dataRequest = 'name=' + encodeURIComponent(errorMessage);
         //Запрос отправляется когда сеттеру fetchData придать значение
         //Ответ будет в геттере fetchData
         httpAsk.fetchData = dataRequest;
+
     }, {once: true});
-
 }
-
 
 }
 
