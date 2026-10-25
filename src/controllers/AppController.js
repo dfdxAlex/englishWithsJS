@@ -10,7 +10,6 @@ import { DataSet } from '../services/data/DataSet.js';
 import { nav } from '../view/nav.js';
 import { MenuController } from './MenuController.js';
 import { resetBottonError } from './resetBottonError.js';
-import { handleSearchError } from './handleSearchError.js';
 import { htmlHelp } from '../view/htmlHelp.js';
 import { SettingForProgram } from '../models/SettingForProgram.js';
 import { BoobleUpController } from './BoobleUpController.js';
@@ -27,6 +26,7 @@ import { BonusBoxView } from '../view/boobleUp/BonusBoxView.js';
 import { CheatService } from '../CheatService.js';
 import { renderAppVersion } from '../view/renderAppVersion.js';
 // import { LevelDataModel } from '../models/LevelDataModel.js';
+import { ButtonErrorController } from './ButtonErrorController.js';
 
 export class AppController {
 
@@ -37,15 +37,15 @@ export class AppController {
             nav();
             const menuC = new MenuController({level:DataOk.level.int});
             menuC.init();
+
+            // объект работает с фиксированием ошибок
+            const buttonErrorController = new ButtonErrorController();
             
 
             const languageController = new LanguageController();
 
             // Сброс состояния кнопки 'Сообщить об ошибке'
             resetBottonError(languageController);
-
-            // событие на кнопку "Сообщить об ошибке"
-            handleSearchError();
 
             // После рендеринга накинуть событие для изменения фона на группы менюшек.
             // Группы берутся из классов MenuRight и потомков
@@ -154,6 +154,19 @@ export class AppController {
                 console.log('Все элементы получили свои события');
                 clearInterval(id);}
         },300);
+
+        // Делегирование кликов в меню.
+        document.getElementById('nav').addEventListener('click', (event) => {
+            // Если нажата любая из кнопок выбора конкретного теста
+            if (event.target.id.includes('level')) {
+                // запустить сканирование первого вопросса для дальнейшей работы системы
+                buttonErrorController.prepareErrorData();
+                // первый запуск, сразу карта улетает в старое состояние, для первого 
+                // использования, если это будет нужно уже другим объектом
+                buttonErrorController.syncState();
+            }
+            
+        });
 
     }
 }

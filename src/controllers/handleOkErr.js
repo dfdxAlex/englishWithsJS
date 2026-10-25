@@ -25,12 +25,14 @@ import { setBorderRadiusForWorkingField } from '../services/setColorMenu/setBord
 import { handleLevelX } from './handleLevelX.js';
 import { SettingForProgram } from '../models/SettingForProgram.js';
 import { resetStatistic } from '../models/resetStatistic.js';
-import { handleClickError } from './handleClickError.js';
 import { resetBottonError } from './resetBottonError.js';
 import { buttonOkBlockNoon } from './handleButtonOk/buttonOkBlockNoon.js';
 import { BoobleUpModel } from '../models/BoobleUpModel.js';
 import { StatisticView } from '../view/StatisticView.js';
 import { LanguageController } from '../controllers/LanguageController.js';
+
+// новые классы MVC
+import { ButtonErrorController } from './ButtonErrorController.js';
 
 export function handleOkErr(str, event) {
     // выйти из функции если падает бонусный ящик
@@ -129,7 +131,10 @@ export function handleOkErr(str, event) {
 
     // Настроить событие на кнопку Сообщить об ошибке
     // Функция подготавливает информацию о том, с каким словом работаем
-    handleClickError();
+    const buttonErrorController = new ButtonErrorController();
+    buttonErrorController.init();
+    
+
 
     // Запомнить содержимое вопросса, для того, чтобы его 
     // продублировать в поле предыдущего вопросса и ответа
