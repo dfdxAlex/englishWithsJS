@@ -5,7 +5,8 @@ import '../styles/renderBoxScarb.scss';
 
 export class BonusBoxView {
 
-    constructor() {
+    constructor({languageController}) {
+        this.languageController = languageController;
     }
 
     // рендерит подсказку что выпал бонусный ящик

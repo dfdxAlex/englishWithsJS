@@ -1,4 +1,3 @@
-import { AppModel } from '../models/AppModel.js';
 
 export class ButtonErrorModel {
 
@@ -6,9 +5,14 @@ export class ButtonErrorModel {
         url: 'https://amatordd.webd.pro/amatorDed/DFDX/test.php', // ссылка для запроса на сервер, список ошибок
     }
 
-    getMessageError() {
-        // создать сообщение об ошибке
-        return '#'+localStorage.getItem('nameArrayDb');
+    #state = {
+        getErrorList: '',                                         // массив с ошибками из БД
+        errorMy: '',
+        errorCommon: '',
+    }
+
+    getStateButtonErrorModel() {
+        return this.#state;
     }
 
     // кеш карточки заданий, на случай нажатия в будущем на ошибку
@@ -40,7 +44,7 @@ export class ButtonErrorModel {
         }
     }
 
-    // метод возвращает json, в котором массив ошибок JSON. (2 раза закодирован JSON в BD)
+    // метод возвращает обьект, в котором массив ошибок JSON.
     async getErrorList() {
 
         const response = await fetch(this.#setup.url, {
@@ -51,11 +55,10 @@ export class ButtonErrorModel {
             body: 'name=getErrorList'
         });
 
-        const errors = await response.json();
-        // Массив errors - это список всех ошибок
-        console.log(errors);
+        return await response.json();
     }
 
+    // посчитать ошибки в базе данных
     async getErrorCount() {
         const response = await fetch(this.#setup.url, {
             method: 'POST',
@@ -68,6 +71,33 @@ export class ButtonErrorModel {
         return data;
     }
 
+    // дублирование отправленных ошибок, чтобы разделить свои-чужие.
+    becapError(errorMessage) {
+        let becapOld;
+        // если нет хранилища то создать его
+        if (localStorage.getItem('errorMessage') === null) 
+            localStorage.setItem('errorMessage', JSON.stringify([]));
+        // получить архив ошибок из хранилища
+        becapOld = JSON.parse(localStorage.getItem('errorMessage'));
+        // добавить новую ошибку
+        becapOld.push(errorMessage);
+        // записать в архив ошибок
+        localStorage.setItem('errorMessage', JSON.stringify(becapOld));
+    }
 
+    // Метод должен вернуть два массива с ошибками моими, и оставшимися общими
+    async separateErrors() {
+        const errorMy = JSON.parse(localStorage.getItem('errorMessage'));
+
+        const response = await this.getErrorList();
+
+        const errorCommon = response.filter(
+            error => !errorMy.includes(error)
+        );
+
+        this.#state.errorMy = errorMy;
+        this.#state.errorCommon = errorCommon;
+
+    }
 
 }

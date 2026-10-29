@@ -2,6 +2,7 @@ import { ButtonErrorModel } from '../models/ButtonErrorModel.js';
 import { ButtonErrorView } from '../view/ButtonErrorView.js';
 import { httpAsk } from '../models/HttpClient.js';
 import { AppModel } from '../models/AppModel.js';
+import { LanguageController } from './LanguageController.js';
 
 
 export class ButtonErrorController {
@@ -9,14 +10,10 @@ export class ButtonErrorController {
     constructor() {
         this.buttonErrorView = new ButtonErrorView();
         this.buttonErrorModel = new ButtonErrorModel();
+        this.languageController = new LanguageController();
 
         // вернуть ссылку на кнопку search_error
         this.#elements.button = this.buttonErrorView.getButtonSearchError(); 
-
-        // первая часть сообщения об ошибке
-        this.#state.errorMessage = this.buttonErrorModel.getMessageError();
-        // вернуть содержимое из question_old
-        this.#state.messageOld = this.buttonErrorView.getQuestionOld();
 
         // вернуть список ошибок
         this.buttonErrorModel.getErrorList();
@@ -28,8 +25,8 @@ export class ButtonErrorController {
     }   
 
     #state = {
-        errorMessage: '',                            // сообщение об ошибке
-        messageOld: '',                              // сообщение из предыдущего ответа
+        // errorMessage: '',                            // сообщение об ошибке
+        // messageOld: '',                              // сообщение из предыдущего ответа
         mapQuestionView:AppModel.mapQuestionView,    // очищенное содержимое карты вопросса из DOM
         mapQuestionModel:AppModel.mapQuestionModel,  // очищенное содержимое карты вопросса из программы
     }
@@ -38,6 +35,14 @@ export class ButtonErrorController {
         this.prepareErrorData();
         this.setupErrorReporting();
         this.buttonErrorView.renderErrorEmoji(this.buttonErrorModel.getErrorCount.bind(this.buttonErrorModel));
+        
+        // событие на динамическую кнопку ошибок в динамическом меню
+        // console.log(this.buttonErrorModel.getStateButtonErrorModel().errorMy)
+        this.buttonErrorView.handleButtonErrorDinamic(
+            this.buttonErrorModel.separateErrors.bind(this.buttonErrorModel),
+            this.buttonErrorModel.getStateButtonErrorModel.bind(this.buttonErrorModel),
+            this.languageController
+        );
     }
 
     // Дорого переносить данную функцию в модели
@@ -48,7 +53,6 @@ export class ButtonErrorController {
             AppModel.mapQuestionModel = this.#state.mapQuestionModel;
             AppModel.mapQuestionView = this.#state.mapQuestionView;
         }, 0);
-
     }
 
     // запоминает сообщение для ошибки
@@ -76,9 +80,7 @@ setupErrorReporting() {
         // для использования на следующей итерации при необходимости
         this.syncState();
 
-        // Поискать пузырь, если он есть, то не отправляем ошибку
         // Если падает ящик заблокировать отправку ошибки
-        // чтобы не попасть случайно в отправку ошибок
         const selectBoobleUp = document.getElementById('boobleUp');
         if (selectBoobleUp !== null) {
                 console.log('Ящик ещё падает');
@@ -91,8 +93,15 @@ setupErrorReporting() {
         //Ответ будет в геттере fetchData
         httpAsk.fetchData = dataRequest;
 
+        // продублировать запись ошибки в локальное хранилище, для разделения своя-чужая ошибка
+        this.buttonErrorModel.becapError(errorMessage);
+
     }, {once: true});
 }
+
+
+
+
 
 }
 

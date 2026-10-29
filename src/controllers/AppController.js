@@ -98,7 +98,7 @@ export class AppController {
             const boobleUpModel = new BoobleUpModel({ forBooble: SettingForProgram.forBooble});
             const boobleUpService = new BoobleUpService({forBooble: SettingForProgram.forBooble});
             const boobleUpView = new BoobleUpView({languageController, SettingForProgram});
-            const bonusBoxView = new BonusBoxView();
+            const bonusBoxView = new BonusBoxView({languageController});
 
             const statisticView = new StatisticView();
             const statisticModel = new StatisticModel({ forBooble: SettingForProgram.forBooble});

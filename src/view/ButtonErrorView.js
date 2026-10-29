@@ -1,4 +1,5 @@
 import './styles/emojeError.scss';
+import './styles/renderErrorList.scss';
 import { addElToDinamicMenu } from '../view/addElToDinamicMenu.js';
 
 export class ButtonErrorView {
@@ -9,8 +10,192 @@ export class ButtonErrorView {
     }
 
     #state = {
-        questionOld: '',
-        questionOldClicked: '',
+        errorsModaXClose: false,                        // наличие одного крестика закрытия списка ошибок
+    }
+
+    // накинуть событие на кнопку ошибки в динамическом меню
+    handleButtonErrorDinamic(separateErrors, stateOfModel, translate) {
+        const id = setInterval (async () => {
+            const dinamicMenuError = document.getElementById('dinamic_menu_error');
+
+            dinamicMenuError?.addEventListener('click', async () => {
+                // метод помещает разделенные массивы в state Модели
+                await separateErrors();
+                // дальше нужна функция, которая сначала покажет мои ошибки, потом оставшиеся общие
+
+                const state = await stateOfModel();
+
+                this.renderErrorList(stateOfModel, translate);
+                this.handleButtonErrorDinamicEven();
+  
+                });
+            
+            if (dinamicMenuError) clearInterval(id);
+        }, 200, separateErrors, stateOfModel, translate);
+    }
+
+// Навесить делегированное событие закрытия модального окна ошибок.
+handleButtonErrorDinamicEven() {
+
+    // Удалить модальное окно ошибок со страницы.
+    const closeModal = () =>
+        document.querySelector('.errors-modal')?.remove();
+
+    document.addEventListener('click', event => {
+
+        // Закрыть модальное окно:
+        // - по крестику в заголовке;
+        // - по кнопке Close внизу;
+        // - по клику на затемнённый фон вокруг окна.
+        if (
+            event.target.closest('.errors-modal__close') ||
+            event.target.closest('.errors-modal__button') ||
+            event.target.classList.contains('errors-modal')
+        ) {
+            closeModal();
+        }
+
+    });
+}
+
+///////////////////////////////////// дробление renderErrorList ////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+    errorsModalXButton() {
+        if (!this.#state.errorsModaXClose) {
+            this.#state.errorsModaXClose = true;
+            return `
+                <button class="errors-modal__close">
+                    ✕
+                </button>
+            `;
+        } 
+        return '';
+    }
+
+    errorsModalButton() {
+        return `
+            <button class="errors-modal__button">
+                Close
+            </button>
+        `;
+    }
+
+    getHeaderListError(arrayMy) {
+        return `
+            <h2 class="errors-modal__title">
+            ${arrayMy.date.trim().slice(0, 10)} / 
+            ${arrayMy.nameArrayDb} / 
+            level:${arrayMy.level} / 
+            test:${arrayMy.userSelect} / 
+            №${arrayMy.randomEl}
+            </h2>
+        `;
+    }
+
+    getUlAnswerListError(arrayMy) {
+        return `
+            <ul class="test-error__answers">
+                <li class="test-error__answer test-error__answer--correct">
+                    Answer: ${arrayMy.option1 || arrayMy.option5 || arrayMy.option9}
+                </li>
+                <li class="test-error__answer">
+                    Answer: ${arrayMy.option2 || arrayMy.option6 || arrayMy.option10}
+                </li>
+                <li class="test-error__answer">
+                    Answer: ${arrayMy.option3 || arrayMy.option7 || arrayMy.option11}
+                </li>
+                <li class="test-error__answer">
+                    Answer: ${arrayMy.option4 || arrayMy.option8 || arrayMy.option12}
+                </li>
+            </ul>
+        `;
+    }
+
+    getButtonTestErrorRemove() {
+        return `
+            <button class="test-error__remove">
+                ✕
+            </button>
+        `;
+    }
+//////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+    renderErrorList(stateOfModel, translate) {
+        const errorMy = stateOfModel().errorMy;
+        const errorCommon = stateOfModel().errorCommon;
+
+        // const arrayMy = JSON.parse(stateOfModel().errorMy[0]);
+        //обнулить флаг наличие одного общего крестика закрытия
+        this.#state.errorsModaXClose = false;
+
+        let resultMyError = errorMy.map((arrayMy) => {
+        arrayMy = JSON.parse(arrayMy);   
+        return `
+                    ${this.getHeaderListError(arrayMy)}
+                    ${this.errorsModalXButton()}
+                    </div>
+                    <div class="errors-modal__body">
+                        <div class="test-error">
+                            <div class="test-error__content">
+                                <div class="test-error__question">
+                                    Question: ${arrayMy.question}
+                                </div>
+                            ${this.getUlAnswerListError(arrayMy)}
+                            </div>
+                            <div class="test-error__actions">
+                                <button class="test-error__copy">
+                                    📋
+                                </button>
+                                ${this.getButtonTestErrorRemove()}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="errors-modal__footer">
+            `;
+        }).join('');
+
+        let resultCommonError = errorCommon.map((arrayCommon) => {
+        arrayCommon = JSON.parse(arrayCommon);  
+
+        return `
+                    ${this.getHeaderListError(arrayCommon)}
+                    ${this.errorsModalXButton()}
+                    </div>
+                    <div class="errors-modal__body">
+                        <div class="test-error">
+                            <div class="test-error__content">
+                                <div class="test-error__question">
+                                    Question: ${arrayCommon.question}
+                                </div>
+                            ${this.getUlAnswerListError(arrayCommon)}
+                            </div>
+                            <div class="test-error__actions">
+                                <button class="test-error__copy">
+                                    📋
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="errors-modal__footer">
+            `;
+        }).join('');
+
+
+
+        resultMyError = `
+            <div class="errors-modal">
+                <div class="errors-modal__dialog">
+                    <div class="errors-modal__header">
+                        ${resultMyError}
+                        ${resultCommonError}
+                        ${this.errorsModalButton()}
+                    </div>
+                </div>
+            </div>
+                    
+        `;
+
+        document.getElementById('error_modal').innerHTML = resultMyError;
     }
 
     async renderErrorEmoji(getErrorCount) {
@@ -26,18 +211,6 @@ export class ButtonErrorView {
     // вернуть ссылку на кнопку search_error
     getButtonSearchError() {
         return this.#elements.button;
-    }
-
-    // вернуть содержимое из question_old
-    getQuestionOld() {
-        this.#state.questionOld = this.#elements.question.textContent;
-        return this.#state.questionOld;
-    }
-
-    //вернуть содержимое clicked_element
-    getQuestionOldClicked() {
-        this.#state.questionOldClicked = this.#elements.questionClicked.textContent;
-        return this.#state.questionOldClicked;
     }
 
     // кеш карточки заданий, на случай нажатия в будущем на ошибку
