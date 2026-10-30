@@ -18,12 +18,12 @@ export class ButtonErrorView {
         const id = setInterval (async () => {
             const dinamicMenuError = document.getElementById('dinamic_menu_error');
 
-            dinamicMenuError?.addEventListener('click', async () => {
+            dinamicMenuError.addEventListener('click', async () => {
                 // метод помещает разделенные массивы в state Модели
                 await separateErrors();
                 // дальше нужна функция, которая сначала покажет мои ошибки, потом оставшиеся общие
 
-                const state = await stateOfModel();
+                await stateOfModel();
 
                 this.renderErrorList(stateOfModel, translate);
                 this.handleButtonErrorDinamicEven();
