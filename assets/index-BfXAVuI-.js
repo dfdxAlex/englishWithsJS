@@ -13646,7 +13646,7 @@ HELP:returnNormButton(id)
             <button class="test-error__remove">
                 ✕
             </button>
-        `}renderErrorList(e,a){const o=e().errorMy,i=e().errorCommon;this.#e.errorsModaXClose=!1;let n=o.map(l=>(l=JSON.parse(l),`
+        `}renderErrorList(e,a){const o=e().errorMy,i=e().errorCommon;this.#e.errorsModaXClose=!1;let n;o!==""?n=o.map(l=>(l=JSON.parse(l),`
                     ${this.getHeaderListError(l)}
                     ${this.errorsModalXButton()}
                     </div>
@@ -13667,7 +13667,7 @@ HELP:returnNormButton(id)
                         </div>
                     </div>
                     <div class="errors-modal__footer">
-            `)).join(""),h=i.map(l=>(l=JSON.parse(l),`
+            `)).join(""):n="";let h=i.map(l=>(l=JSON.parse(l),`
                     ${this.getHeaderListError(l)}
                     ${this.errorsModalXButton()}
                     </div>
