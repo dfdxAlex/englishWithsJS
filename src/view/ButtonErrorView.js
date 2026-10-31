@@ -138,7 +138,9 @@ handleButtonErrorDinamicEven() {
         //обнулить флаг наличие одного общего крестика закрытия
         this.#state.errorsModaXClose = false;
 
-        let resultMyError = errorMy.map((arrayMy) => {
+        let resultMyError;
+        if (errorMy !== '') {
+        resultMyError = errorMy.map((arrayMy) => {
         arrayMy = JSON.parse(arrayMy);   
         return `
                     ${this.getHeaderListError(arrayMy)}
@@ -163,6 +165,9 @@ handleButtonErrorDinamicEven() {
                     <div class="errors-modal__footer">
             `;
         }).join('');
+    } else {
+        resultMyError = '';
+    }
 
         let resultCommonError = errorCommon.map((arrayCommon) => {
         arrayCommon = JSON.parse(arrayCommon);  
