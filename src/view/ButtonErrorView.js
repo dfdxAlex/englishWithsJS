@@ -24,6 +24,7 @@ export class ButtonErrorView {
             };
 
             dinamicMenuError.addEventListener('click', async () => {
+                alert('добавить событие');
                 // метод помещает разделенные массивы в state Модели
                 await separateErrors();
                 // дальше нужна функция, которая сначала покажет мои ошибки, потом оставшиеся общие
