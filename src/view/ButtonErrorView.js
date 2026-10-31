@@ -24,9 +24,9 @@ export class ButtonErrorView {
             dinamicMenuError.addEventListener('click', async () => {
                 // метод помещает разделенные массивы в state Модели
                 await separateErrors();
-                // дальше нужна функция, которая сначала покажет мои ошибки, потом оставшиеся общие
 
-                await stateOfModel();
+                // метод возвращает объект состояния модели
+                // await stateOfModel();
 
                 this.renderErrorList(stateOfModel, translate);
                 this.handleButtonErrorDinamicEven();
@@ -127,7 +127,6 @@ handleButtonErrorDinamicEven() {
         const errorMy = stateOfModel().errorMy;
         const errorCommon = stateOfModel().errorCommon;
 
-        // const arrayMy = JSON.parse(stateOfModel().errorMy[0]);
         //обнулить флаг наличие одного общего крестика закрытия
         this.#state.errorsModaXClose = false;
 
