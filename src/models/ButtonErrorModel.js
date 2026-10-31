@@ -87,7 +87,14 @@ export class ButtonErrorModel {
 
     // Метод должен вернуть два массива с ошибками моими, и оставшимися общими
     async separateErrors() {
-        const errorMy = JSON.parse(localStorage.getItem('errorMessage'));
+        let errorMy;
+        const errorMessageLocal = localStorage.getItem('errorMessage');
+
+        if (errorMessageLocal) {
+            errorMy = JSON.parse(errorMessageLocal);
+        } else {
+            errorMy = '';
+        }
 
         const response = await this.getErrorList();
 
