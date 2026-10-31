@@ -17,8 +17,11 @@ export class ButtonErrorView {
     handleButtonErrorDinamic(separateErrors, stateOfModel, translate) {
         const id = setInterval (async () => {
             const dinamicMenuError = document.getElementById('dinamic_menu_error');
-            if (!dinamicMenuError) return;
-            
+            if (!dinamicMenuError) {
+                alert('нет кнопки');
+                return
+            };
+
             dinamicMenuError.addEventListener('click', async () => {
                 // метод помещает разделенные массивы в state Модели
                 await separateErrors();
