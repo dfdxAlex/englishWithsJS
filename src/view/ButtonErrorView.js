@@ -16,6 +16,7 @@ export class ButtonErrorView {
     // накинуть событие на кнопку ошибки в динамическом меню
     handleButtonErrorDinamic(separateErrors, stateOfModel, translate) {
         const id = setInterval (async () => {
+            alert('сет интервал');
             const dinamicMenuError = document.getElementById('dinamic_menu_error');
             if (!dinamicMenuError) {
                 alert('нет кнопки');
