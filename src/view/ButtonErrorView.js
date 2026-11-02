@@ -166,6 +166,7 @@ handleButtonErrorDinamicEven() {
         this.buttonCloseError(errorMy);
     }
 
+// обработка нажатия на крестик конкретной ошибки
 buttonCloseError(errorMy) {
     // test-error-remove-
     const arrayButtonCopy = document.querySelector('.errors-modal');
@@ -187,17 +188,14 @@ buttonCloseError(errorMy) {
         // console.log();
 
         // перезаписать локальный массив с своими и чужими ошибками
-        this.reSaveError(newArr);
+        localStorage.setItem('errorMessage', JSON.stringify(newArr));
+
+        
+        setTimeout(() => {
+            button.innerText = '🗑️';
+        }, 1000);
 
     });
-
-
-}
-
-// дублирование отправленных ошибок, чтобы разделить свои-чужие.
-reSaveError(errorMessage) {
-    // записать в архив ошибок
-    localStorage.setItem('errorMessage', JSON.stringify(errorMessage));
 }
 
 async deleteError(error) {
