@@ -118,4 +118,25 @@ class EnglishWithsJs
 
         return json_encode($row);
     }
+
+    public function deleteError($error)
+    {
+        $con = \class\redaktor\DatabaseConn::dBConnection()->getCon();
+
+        $query = "DELETE FROM english_withs_js WHERE error_str = ?";
+
+        $stmt = mysqli_prepare($con, $query);
+
+        mysqli_stmt_bind_param($stmt, "s", $error);
+
+        if (mysqli_stmt_execute($stmt)) {
+            return json_encode([
+                'success' => true
+            ]);
+        }
+
+        return json_encode([
+            'success' => false
+        ]);
+    }
 }

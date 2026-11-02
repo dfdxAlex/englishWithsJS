@@ -12,6 +12,7 @@ export class ButtonErrorView {
     #state = {
         errorsModaXClose: false,                        // наличие одного крестика закрытия списка ошибок
         idForCopyButton: 0,                             // идентификатор для ошибок
+        url: 'https://amatordd.webd.pro/amatorDed/DFDX/test.php', // ссылка для запроса на сервер, список ошибок
     }
 
     // накинуть событие на кнопку ошибки в динамическом меню
@@ -161,14 +162,61 @@ handleButtonErrorDinamicEven() {
 
         // скопировать ошибку в буфер
         this.searchButtonCopy(translate, errorMy, errorCommon);
+
+        this.buttonCloseError(errorMy);
     }
 
- 
-searchButtonCopy(translate, arrayMy, arrayCommon) {
+buttonCloseError(errorMy) {
+    // test-error-remove-
     const arrayButtonCopy = document.querySelector('.errors-modal');
 
+    arrayButtonCopy?.addEventListener('click', async e => {
+
+        // если кликнули не в пиктограмку копирования, то выйти из обработки клика
+        const button = e.target.closest('[id^="test-error-remove-"]');
+        if (!button) return; 
+
+        // индекс массива, который нужно удалить
+        const idError = Number(e.target.id.replace('test-error-remove-', ''));
+
+        // удалить строку из таблицы
+        await this.deleteError(errorMy[idError-1]);
+
+        // удалить эту же строку из массива
+        const newArr = errorMy.filter(item => item !== errorMy[idError-1]);
+        // console.log();
+
+        // перезаписать локальный массив с своими и чужими ошибками
+        this.reSaveError(newArr);
+
+    });
 
 
+}
+
+// дублирование отправленных ошибок, чтобы разделить свои-чужие.
+reSaveError(errorMessage) {
+    // записать в архив ошибок
+    localStorage.setItem('errorMessage', JSON.stringify(errorMessage));
+}
+
+async deleteError(error) {
+
+    const formData = new FormData();
+
+    formData.append('name', 'deleteError');
+    formData.append('error', error);
+
+    const response = await fetch(this.#state.url, {
+        method: 'POST',
+        body: formData
+    });
+
+    return response.json();
+}
+
+searchButtonCopy(translate, arrayMy, arrayCommon) {
+    const arrayButtonCopy = document.querySelector('.errors-modal');
     arrayButtonCopy?.addEventListener('click', e => {
 
         // если кликнули не в пиктограмку копирования, то выйти из обработки клика
@@ -218,7 +266,6 @@ getObjForError(arrayMy, arrayCommon, target) {
         // прочитать атрибут и понять моя ошибка или общая
         // Do-Not-My-Error или My-Error
         const getTypeError = target.closest('.errors-modal__body').dataset.errorType;
-        console.log(getTypeError);
 
         // определить номер массива с ошибкой, если ошибка моя, то нумерация начинается с 1
         // если ошибка общая, то от номера ошибки нужно отнять длину массива с моими ошибками

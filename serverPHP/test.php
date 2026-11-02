@@ -50,6 +50,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit;
     }
 
+    // если пришла команда deleteError, удалить ошибку
+    if ($_POST['name'] === 'deleteError') {
+
+        if (isset($_POST['error'])) {
+            echo $obj->deleteError($_POST['error']);
+        }
+
+        exit;
+    }
+
 
 
       $obj->setName($name);  

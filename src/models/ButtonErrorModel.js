@@ -75,7 +75,8 @@ export class ButtonErrorModel {
     becapError(errorMessage) {
         let becapOld;
         // если нет хранилища то создать его
-        if (localStorage.getItem('errorMessage') === null) 
+        const errMessage = localStorage.getItem('errorMessage');
+        if (errMessage === null || errMessage === 'undefined') 
             localStorage.setItem('errorMessage', JSON.stringify([]));
         // получить архив ошибок из хранилища
         becapOld = JSON.parse(localStorage.getItem('errorMessage'));
@@ -90,7 +91,7 @@ export class ButtonErrorModel {
         let errorMy;
         const errorMessageLocal = localStorage.getItem('errorMessage');
 
-        if (errorMessageLocal) {
+        if (errorMessageLocal && errorMessageLocal!=='undefined') {
             errorMy = JSON.parse(errorMessageLocal);
         } else {
             errorMy = '';
