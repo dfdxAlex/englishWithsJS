@@ -27,6 +27,21 @@ BDTranslate.push(
      ``,
      ``]);
 BDTranslate.push(
+    [`Неправильный вариант:`, 
+     `Неправильний варіант:`, 
+     `Nieprawidłowa opcja:`,
+     `Incorrect version:`]);
+BDTranslate.push(
+    [`Правильный вариант:`, 
+     `Правильний варіант:`, 
+     `Prawidłowa odpowiedź to:`,
+     `The correct option:`]);
+BDTranslate.push(
+    [`Проверь задание из теста. Сначала тестовый вопрос или предложение. Потом правильный вариант ответа - пара к первому предложению или вопросу. После этого должны быть три не правильных варианта, которые не должны быть выбраны.`, 
+     `Перевір завдання з тесту. Спочатку тестове питання чи пропозицію. Потім правильний варіант відповіді - пара до першої пропозиції чи питання. Після цього мають бути три неправильні варіанти, які не повинні бути обрані.`, 
+     `Sprawdź zadanie testowe. Najpierw pytanie lub zdanie testowe. Następnie poprawną odpowiedź – parę z pierwszym zdaniem lub pytaniem. Następnie powinny pojawić się trzy niepoprawne odpowiedzi, których nie należy wybierać.`,
+     `Check the test item. First, provide the test question or sentence. Then, provide the correct answer—the one that corresponds to the initial question or sentence. Follow this with three incorrect options, which should not be selected.`]);
+BDTranslate.push(
     [`Продолжайте`, 
      `Продовжуйте`, 
      `Kontynuować`,
@@ -423,11 +438,6 @@ BDTranslate.push(
      'Питання з варіантами відповіді', 
      'Pytanie wielokrotnego wyboru',
      'Multiple choice question']);
-// BDTranslate.push(
-//     ['Выбрать тест.', 
-//      'Вибрати тест.', 
-//      'Wybierz test.',
-//      'Select a test.']);
 BDTranslate.push(
     ['Where/Who...', 
      'Where/Who...', 
