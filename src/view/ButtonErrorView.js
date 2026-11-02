@@ -156,24 +156,33 @@ handleButtonErrorDinamicEven() {
         </div>
         `;
 
+        // рендер списка с ошибками
         document.getElementById('error_modal').innerHTML = resultError;
 
+        // скопировать ошибку в буфер
         this.searchButtonCopy(translate, errorMy, errorCommon);
     }
 
  
 searchButtonCopy(translate, arrayMy, arrayCommon) {
     const arrayButtonCopy = document.querySelector('.errors-modal');
+
+
+
     arrayButtonCopy?.addEventListener('click', e => {
+
+        // если кликнули не в пиктограмку копирования, то выйти из обработки клика
+        const button = e.target.closest('[id^="test-error-copy-"]');
+        if (!button) return;
 
         const objForError = this.getObjForError(arrayMy, arrayCommon, e.target);
 
         const commentForGPT = translate.translate('Проверь задание из теста. Сначала тестовый вопрос или предложение. Потом правильный вариант ответа - пара к первому предложению или вопросу. После этого должны быть три не правильных варианта, которые не должны быть выбраны.');
-        const question = translate.translate('Задание теста:')+objForError.question;
-        const option1 = translate.translate('Правильный вариант:') + (objForError.option1 || objForError.option5 || objForError.option9);
-        const option2 =  translate.translate('Неправильный вариант:') + (objForError.option2 || objForError.option6 || objForError.option10);
-        const option3 = translate.translate('Неправильный вариант:') + (objForError.option3 || objForError.option7 || objForError.option11);
-        const option4 = translate.translate('Неправильный вариант:') + (objForError.option4 || objForError.option8 || objForError.option12);
+        const question = translate.translate('Задание теста:') + ' ' + objForError.question;
+        const option1 = translate.translate('Правильный вариант:') + ' ' + (objForError.option1 || objForError.option5 || objForError.option9);
+        const option2 =  translate.translate('Неправильный вариант:') + ' ' + (objForError.option2 || objForError.option6 || objForError.option10);
+        const option3 = translate.translate('Неправильный вариант:') + ' ' + (objForError.option3 || objForError.option7 || objForError.option11);
+        const option4 = translate.translate('Неправильный вариант:') + ' ' + (objForError.option4 || objForError.option8 || objForError.option12);
 
         const textForBuffer = `
             ${commentForGPT}
@@ -185,7 +194,20 @@ searchButtonCopy(translate, arrayMy, arrayCommon) {
         `;
 
         navigator.clipboard.writeText(textForBuffer);
+
+        // эффект для кнопки копирования
+        this.effectForCopy(button);
+
     });
+}
+
+// эффект для кнопки копирования
+effectForCopy(button) {
+    const originalText = button.innerText;
+    button.innerText = '✓';
+    setTimeout(() => {
+        button.innerText = originalText;
+    }, 1000);
 }
 
 getObjForError(arrayMy, arrayCommon, target) {
@@ -196,13 +218,14 @@ getObjForError(arrayMy, arrayCommon, target) {
         // прочитать атрибут и понять моя ошибка или общая
         // Do-Not-My-Error или My-Error
         const getTypeError = target.closest('.errors-modal__body').dataset.errorType;
+        console.log(getTypeError);
 
         // определить номер массива с ошибкой, если ошибка моя, то нумерация начинается с 1
         // если ошибка общая, то от номера ошибки нужно отнять длину массива с моими ошибками
         const indexError = getTypeError === 'My-Error' ? numberArray :  numberArray-arrayMy.length;
 
         if (getTypeError === 'My-Error') return JSON.parse(arrayMy[indexError-1]);
-        else return JSON.parse(arrayCommon[indexError-1]);
+        if (getTypeError === 'Do-Not-My-Error') return JSON.parse(arrayCommon[indexError-1]);
 }
 
 renderErrorItem(error, withRemoveButton = false) {
