@@ -3,6 +3,10 @@ import './styles/renderErrorList.scss';
 import { addElToDinamicMenu } from '../view/addElToDinamicMenu.js';
 
 export class ButtonErrorView {
+    constructor({translate}) {
+        this.translate = translate;
+    }
+
     #elements = {
         button: document.getElementById('search_error'),                // указатель на кнопку Сообщить об ошибке
         question: document.getElementById('question_old'),              // текст из поля Предыдущий вопрос
@@ -16,27 +20,24 @@ export class ButtonErrorView {
     }
 
     // накинуть событие на кнопку ошибки в динамическом меню
-    handleButtonErrorDinamic(separateErrors, stateOfModel, translate) {
+    handleButtonErrorDinamic(separateErrors, stateOfModel) {
         const id = setInterval (async () => {
+            // выбрать кнопку ошибок в динамическом меню
             const dinamicMenuError = document.getElementById('dinamic_menu_error');
-            if (!dinamicMenuError) {
-                return
-            };
+            // если нет, то выйти
+            if (!dinamicMenuError) return;
 
             dinamicMenuError.addEventListener('click', async () => {
                 // метод помещает разделенные массивы в state Модели
                 await separateErrors();
 
-                // метод возвращает объект состояния модели
-                // await stateOfModel();
-
-                this.renderErrorList(stateOfModel, translate);
+                this.renderErrorList(stateOfModel);
                 this.handleButtonErrorDinamicEven();
   
                 });
             
             if (dinamicMenuError) clearInterval(id);
-        }, 200, separateErrors, stateOfModel, translate);
+        }, 200, separateErrors, stateOfModel);
     }
 
 // Навесить делегированное событие закрытия модального окна ошибок.
@@ -127,7 +128,7 @@ handleButtonErrorDinamicEven() {
     }
 //////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////
-    renderErrorList(stateOfModel, translate) {
+    renderErrorList(stateOfModel) {
         const errorMy = stateOfModel().errorMy;
         const errorCommon = stateOfModel().errorCommon;
 
@@ -161,7 +162,7 @@ handleButtonErrorDinamicEven() {
         document.getElementById('error_modal').innerHTML = resultError;
 
         // скопировать ошибку в буфер
-        this.searchButtonCopy(translate, errorMy, errorCommon);
+        this.searchButtonCopy(errorMy, errorCommon);
 
         this.buttonCloseError(errorMy);
     }
@@ -189,7 +190,6 @@ buttonCloseError(errorMy) {
 
         // перезаписать локальный массив с своими и чужими ошибками
         localStorage.setItem('errorMessage', JSON.stringify(newArr));
-
         
         setTimeout(() => {
             button.innerText = '🗑️';
@@ -213,7 +213,7 @@ async deleteError(error) {
     return response.json();
 }
 
-searchButtonCopy(translate, arrayMy, arrayCommon) {
+searchButtonCopy(arrayMy, arrayCommon) {
     const arrayButtonCopy = document.querySelector('.errors-modal');
     arrayButtonCopy?.addEventListener('click', e => {
 
@@ -223,12 +223,15 @@ searchButtonCopy(translate, arrayMy, arrayCommon) {
 
         const objForError = this.getObjForError(arrayMy, arrayCommon, e.target);
 
-        const commentForGPT = translate.translate('Проверь задание из теста. Сначала тестовый вопрос или предложение. Потом правильный вариант ответа - пара к первому предложению или вопросу. После этого должны быть три не правильных варианта, которые не должны быть выбраны.');
-        const question = translate.translate('Задание теста:') + ' ' + objForError.question;
-        const option1 = translate.translate('Правильный вариант:') + ' ' + (objForError.option1 || objForError.option5 || objForError.option9);
-        const option2 =  translate.translate('Неправильный вариант:') + ' ' + (objForError.option2 || objForError.option6 || objForError.option10);
-        const option3 = translate.translate('Неправильный вариант:') + ' ' + (objForError.option3 || objForError.option7 || objForError.option11);
-        const option4 = translate.translate('Неправильный вариант:') + ' ' + (objForError.option4 || objForError.option8 || objForError.option12);
+        //немного косметики, стрелка вместо this.translate.translate
+        const translate = text => this.translate.translate(text);
+
+        const commentForGPT = translate('Проверь задание из теста. Сначала тестовый вопрос или предложение. Потом правильный вариант ответа - пара к первому предложению или вопросу. После этого должны быть три не правильных варианта, которые не должны быть выбраны.');
+        const question =  translate('Задание теста:') + ' ' + objForError.question;
+        const option1 =  translate('Правильный вариант:') + ' ' + (objForError.option1 || objForError.option5 || objForError.option9);
+        const option2 =   translate('Неправильный вариант:') + ' ' + (objForError.option2 || objForError.option6 || objForError.option10);
+        const option3 =  translate('Неправильный вариант:') + ' ' + (objForError.option3 || objForError.option7 || objForError.option11);
+        const option4 =  translate('Неправильный вариант:') + ' ' + (objForError.option4 || objForError.option8 || objForError.option12);
 
         const textForBuffer = `
             ${commentForGPT}
@@ -340,41 +343,5 @@ getDataAtributeMyErrorOrNo(withRemoveButton = false) {
         return this.#elements.button;
     }
 
-    // кеш карточки заданий, на случай нажатия в будущем на ошибку
-    preloadDataView() {
 
-        // имя массива с заданием
-
-        const fieldsetLegend = document.getElementById('fieldset-legend').innerText;
-        const question = document.getElementById('question')?.innerText.replace('\n🔊', '');
-        const option1 = document.getElementById('option1')?.innerText;
-        const option2 = document.getElementById('option2')?.innerText;
-        const option3 = document.getElementById('option3')?.innerText;
-        const option4 = document.getElementById('option4')?.innerText;
-        const option5 = document.getElementById('option5')?.innerText;
-        const option6 = document.getElementById('option6')?.innerText;
-        const option7 = document.getElementById('option7')?.innerText;
-        const option8 = document.getElementById('option8')?.innerText;
-        const option9 = document.getElementById('option9')?.innerText;
-        const option10 = document.getElementById('option10')?.innerText;
-        const option11 = document.getElementById('option11')?.innerText;
-        const option12 = document.getElementById('option12')?.innerText;
-
-        return {
-            fieldsetLegend,
-            question,
-            option1,
-            option2,
-            option3,
-            option4,
-            option5,
-            option6,
-            option7,
-            option8,
-            option9,
-            option10,
-            option11,
-            option12,
-        }
-    }
 }

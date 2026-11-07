@@ -40,6 +40,10 @@ export function handleOkErr(str, event) {
         return;
     }
 
+    //создать объект с вопросами
+    // получить объект с текущим рабочим массивом
+    const levelDataModel = new LevelDataModel(localStorage.getItem('level'));
+
     ///////////////////////////////////////////////////////////////////////
     // в блоке считается число правильно подряд заработанных баллов и рисуется
     // индикатор заполнения для текущего шага.
@@ -131,7 +135,7 @@ export function handleOkErr(str, event) {
 
     // Настроить событие на кнопку Сообщить об ошибке
     // Функция подготавливает информацию о том, с каким словом работаем
-    const buttonErrorController = new ButtonErrorController();
+    const buttonErrorController = new ButtonErrorController({levelDataModel});
     buttonErrorController.init();
     
 
@@ -154,7 +158,7 @@ export function handleOkErr(str, event) {
     // Поле со старым или текущим вопроссом
     // Изменить вопрос только если есть правильный ответ на предыдущий
     if (str === 'Ok') {
-        handleLevelX(new LevelDataModel(localStorage.getItem('level')));
+        handleLevelX(levelDataModel);
     }
     
     // пересчитать статистику и записать в хранилище

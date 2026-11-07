@@ -25,21 +25,21 @@ import { StatisticView } from '../view/StatisticView.js';
 import { BonusBoxView } from '../view/boobleUp/BonusBoxView.js';
 import { CheatService } from '../CheatService.js';
 import { renderAppVersion } from '../view/renderAppVersion.js';
-// import { LevelDataModel } from '../models/LevelDataModel.js';
+import { LevelDataModel } from '../models/LevelDataModel.js';
 import { ButtonErrorController } from './ButtonErrorController.js';
 
 export class AppController {
 
     init() {
         // Здесь функции, которые должны отработать когда загрузится статическая страница
-            // const levelDataModel = new LevelDataModel();
+            const levelDataModel = new LevelDataModel(localStorage.getItem('level'));
             htmlHelp();
             nav();
             const menuC = new MenuController({level:DataOk.level.int});
             menuC.init();
 
             // объект работает с фиксированием ошибок
-            const buttonErrorController = new ButtonErrorController();
+            const buttonErrorController = new ButtonErrorController({levelDataModel});
             
 
             const languageController = new LanguageController();

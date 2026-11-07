@@ -4,13 +4,14 @@ import { httpAsk } from '../models/HttpClient.js';
 import { AppModel } from '../models/AppModel.js';
 import { LanguageController } from './LanguageController.js';
 
-
 export class ButtonErrorController {
 
-    constructor() {
-        this.buttonErrorView = new ButtonErrorView();
-        this.buttonErrorModel = new ButtonErrorModel();
+    constructor({levelDataModel}) {
+        this.levelDataModel = levelDataModel;
         this.languageController = new LanguageController();
+        this.buttonErrorView = new ButtonErrorView({translate:this.languageController});
+        this.buttonErrorModel = new ButtonErrorModel();
+        
 
         // вернуть ссылку на кнопку search_error
         this.#elements.button = this.buttonErrorView.getButtonSearchError(); 
@@ -25,8 +26,6 @@ export class ButtonErrorController {
     }   
 
     #state = {
-        // errorMessage: '',                            // сообщение об ошибке
-        // messageOld: '',                              // сообщение из предыдущего ответа
         mapQuestionView:AppModel.mapQuestionView,    // очищенное содержимое карты вопросса из DOM
         mapQuestionModel:AppModel.mapQuestionModel,  // очищенное содержимое карты вопросса из программы
     }
@@ -36,12 +35,11 @@ export class ButtonErrorController {
         this.setupErrorReporting();
         this.buttonErrorView.renderErrorEmoji(this.buttonErrorModel.getErrorCount.bind(this.buttonErrorModel));
         
+        // переделать на короткие участки, максимум работы через контроллер
         // событие на динамическую кнопку ошибок в динамическом меню
-        // console.log(this.buttonErrorModel.getStateButtonErrorModel().errorMy)
         this.buttonErrorView.handleButtonErrorDinamic(
             this.buttonErrorModel.separateErrors.bind(this.buttonErrorModel),
-            this.buttonErrorModel.getStateButtonErrorModel.bind(this.buttonErrorModel),
-            this.languageController
+            this.buttonErrorModel.getStateButtonErrorModel.bind(this.buttonErrorModel)
         );
     }
 
@@ -58,15 +56,21 @@ export class ButtonErrorController {
     // запоминает сообщение для ошибки
     prepareErrorData() {
         setTimeout (() => {
+            // загнать в this.#state.mapQuestionModel данные для работы с ошибками
+            this.#state.mapQuestionModel = Object.fromEntries(
+                Object.entries(this.buttonErrorModel.preloadDataModel()).filter(([, value]) => value != null)
+            );
+
+            // получить массив с текущим юнитом из LevelDataModel для передачи в preloadDataModel
+            const arrayForActualUnit = this.levelDataModel.getArrayDB();
+            // console.log(arrayForActualUnit);
+            
             // Зафиксировать текущие данные тестового вопросса после полного рендеринга.
             // очистить от пустых полей и запомнить в #state
             this.#state.mapQuestionView = Object.fromEntries(
-            Object.entries(this.buttonErrorView.preloadDataView()).filter(([, value]) => value !== undefined)
+                Object.entries(this.buttonErrorModel.preloadDataView(arrayForActualUnit[this.#state.mapQuestionModel.randomEl])).filter(([, value]) => value !== undefined)
             );
 
-            this.#state.mapQuestionModel = Object.fromEntries(
-            Object.entries(this.buttonErrorModel.preloadDataModel()).filter(([, value]) => value != null)
-            );
         },0);
     }
 

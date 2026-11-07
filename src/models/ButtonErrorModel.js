@@ -33,6 +33,11 @@ export class ButtonErrorModel {
         // число кубиков indexMax
         const indexMax = localStorage.getItem('indexMax');
 
+        // получить данные для ошибок непосредственно из LevelDataModel()
+        // нужно для тех тестов, где нельзя прочитать из полей, тесты с кубиками
+        // const questionFromLevelDataModel = arrayForActualUnit()[randomEl];
+
+
         return {
             date,
             nameArrayDb,
@@ -41,6 +46,28 @@ export class ButtonErrorModel {
             EnglishWithJsLang,
             userSelect,
             indexMax,
+            // questionFromLevelDataModel
+        }
+    }
+
+    // кеш карточки заданий, на случай нажатия в будущем на ошибку
+    preloadDataView(arrayForActualUnit) {
+
+        const fieldsetLegend = localStorage.getItem('nameArrayDb');
+
+        const question = arrayForActualUnit[0];
+        const option1 = arrayForActualUnit[1];
+        const option2 = arrayForActualUnit[2];
+        const option3 = arrayForActualUnit[3];
+        const option4 = arrayForActualUnit[4];
+
+        return {
+            fieldsetLegend,
+            question,
+            option1,
+            option2,
+            option3,
+            option4,
         }
     }
 
