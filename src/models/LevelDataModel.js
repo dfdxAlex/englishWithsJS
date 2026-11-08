@@ -39,9 +39,9 @@ export class LevelDataModel
 {
     constructor(level = 1)
     {
-        
+        // console.log('level = '+level);
         // setLevel делает число числом, записывает его в объект
-        // и возвращает это число. 
+        // и возвращает это число.
         this.level = DataOk.setLevel(level);
         this.rez = false;
         this.ex = new Exercise();
@@ -104,6 +104,7 @@ export class LevelDataModel
     {
         if (SettingForProgram.selectTypeTest === "word-assembly" || SettingForProgram.selectTypeTest === "word-assembly-not-translate")
             exercise = "В этом тесте нужно собрать предложение из предложенных слов. Имейте в виду, что иногда собранное предложение может не совпадать с общей темой теста.";
+        
         if (level == this.level && (lang === true || lang === this.lang)) {
             this.ex.init(this.translate.translate(exercise));
             localStorage.setItem('nameArrayDb',nameArray);

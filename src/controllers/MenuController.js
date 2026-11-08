@@ -15,21 +15,16 @@ import { MenuStatictic } from '../view/MenuStatistic.js';
 
 import { handleLevelX } from './handleLevelX.js';
 import { fixModalFocus } from '../services/all/fixModalFocus.js';
-// import { DataOk } from '../services/data/DataOk.js';
 
 export class MenuController
 {
     constructor ({level})
     {
-        // this.levelDataModel = new LevelDataModel(DataOk.level.int);
         this.levelDataModel = new LevelDataModel(level);
     }
 
     init() 
     {
-        // levelDataModel.getArrayNameButton() - возвращает массив с названиями кнопок
-        // menu.getSeedForMenu() - выбирает нужный контейнер для кнопок
-
         // подпункт units 1-23
         const menu = new MenuRight(this.levelDataModel.getArrayNameButton());
 
@@ -70,7 +65,6 @@ export class MenuController
         // найти точку для публикации правого меню
         // само место парковки задаётся внутри класса MenuLearnWord
         const point5 = menu5.getSeedForMenu();
-        // console.log(point5);
 
         // найти точку для публикации правого меню
         // само место парковки задаётся внутри класса MenuLearnWord
@@ -90,7 +84,16 @@ export class MenuController
         point6.innerHTML = menu6.menuDropdown2();
         point7.innerHTML = menu7.menuDropdown2();
 
-        
+        //////////////////////////////////////костыль//////////////////////////////////////////////////////////
+        // при переборе LevelDataModel значение локального хранилища level меняется на каждой итерации
+        // после окончания цикла это значение остается равным последнему уровню, т.е. максимальному
+        // значит работа хранилища, как источника данных о последнем уровне при первом старте не 
+        // актуальна и равна максимальному уровню.
+        // костыль пока не дойдут руки разобраться с этим.
+        // запомнить значение хранилища, чтобы после окончания цикла перезаписать его
+        const costylLevel = localStorage.getItem('level');
+        /////////////////////////////////////////////////////////////////////////////////////////////////
+
         const unit = [];
         /////////////////исключить два подменю, где не нужны события
         // при добавлении новых тестовых уровней СЮДА НЕ ЛЕЗЕМ
@@ -98,9 +101,6 @@ export class MenuController
             let numberMenu = LevelDataModel.mapNameMenu(i - 1);
             if (numberMenu == 3
               || numberMenu == 4
-                // || numberMenu == 3
-                //   || numberMenu == 4
-                    // || numberMenu == 4
                 ) {
                     continue;
             } 
@@ -108,6 +108,13 @@ export class MenuController
             unit[i] = document.getElementById('level'+i);
             unit[i].onclick = handleLevelX.bind(null, new LevelDataModel(i));
         }
+
+        /////////////////////////////////////////костыль////////////////////////////////////////
+        // костыль пока не дойдут руки разобраться с этим.
+        // перезаписать содержимое хранилища по окончанию цикла, записано значение вверху
+        // перед началом цикла.
+        localStorage.setItem('level', costylLevel);
+        /////////////////////////////////////////////////////////////////////////////////////////
         
         // Функция находит все элементы с атрибутом data-bs-dismiss="modal" во всех модальных окнах
         // и навешивает на них обработчик, который убирает фокус с активного элемента после закрытия модалки

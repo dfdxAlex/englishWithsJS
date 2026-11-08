@@ -68,7 +68,9 @@ DataOk = {
 
     //Сеттер для level
     setLevel: function(value) {
+        // console.log(value, typeof value);
         this.level.int = parseFloat(value);
+        // console.log(this.level.int, typeof this.level.int);
         this.level.str = value;
         localStorage.setItem('level', value);
         return this.level.int;

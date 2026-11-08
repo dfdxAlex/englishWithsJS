@@ -5,20 +5,30 @@ import { AppModel } from '../models/AppModel.js';
 import { LanguageController } from './LanguageController.js';
 
 export class ButtonErrorController {
+    // пришлось сделать синглтон
+    static instance = null;
 
     constructor({levelDataModel}) {
+        if (ButtonErrorController.instance) {
+            return ButtonErrorController.instance;
+        }
+
         this.levelDataModel = levelDataModel;
         this.languageController = new LanguageController();
         this.buttonErrorView = new ButtonErrorView({translate:this.languageController});
         this.buttonErrorModel = new ButtonErrorModel();
         
-
         // вернуть ссылку на кнопку search_error
         this.#elements.button = this.buttonErrorView.getButtonSearchError(); 
 
         // вернуть список ошибок
         this.buttonErrorModel.getErrorList();
 
+        // создать независимую функцию с текущим контекстом для события нажатия на кнопку
+        // добавление ошибок
+        this.handleErrorBind = this.hundleErrorReporting.bind(this);
+
+        ButtonErrorController.instance = this;
     }
 
     #elements = {
@@ -28,9 +38,15 @@ export class ButtonErrorController {
     #state = {
         mapQuestionView:AppModel.mapQuestionView,    // очищенное содержимое карты вопросса из DOM
         mapQuestionModel:AppModel.mapQuestionModel,  // очищенное содержимое карты вопросса из программы
+        hundleErrorReporting: false,                 // флаг установленного обработчика клика
     }
 
     init() {
+
+        // Записать текущее значение карточки с вопроссами в глобальный объект AppModel,
+        // для использования на следующей итерации при необходимости
+        this.syncState();
+
         this.prepareErrorData();
         this.setupErrorReporting();
         this.buttonErrorView.renderErrorEmoji(this.buttonErrorModel.getErrorCount.bind(this.buttonErrorModel));
@@ -41,6 +57,8 @@ export class ButtonErrorController {
             this.buttonErrorModel.separateErrors.bind(this.buttonErrorModel),
             this.buttonErrorModel.getStateButtonErrorModel.bind(this.buttonErrorModel)
         );
+
+
     }
 
     // Дорого переносить данную функцию в модели
@@ -57,32 +75,40 @@ export class ButtonErrorController {
     prepareErrorData() {
         setTimeout (() => {
             // загнать в this.#state.mapQuestionModel данные для работы с ошибками
-            this.#state.mapQuestionModel = Object.fromEntries(
-                Object.entries(this.buttonErrorModel.preloadDataModel()).filter(([, value]) => value != null)
-            );
+
+            this.#state.mapQuestionModel = this.buttonErrorModel.preloadDataModel();
 
             // получить массив с текущим юнитом из LevelDataModel для передачи в preloadDataModel
             const arrayForActualUnit = this.levelDataModel.getArrayDB();
             // console.log(arrayForActualUnit);
             
             // Зафиксировать текущие данные тестового вопросса после полного рендеринга.
-            // очистить от пустых полей и запомнить в #state
-            this.#state.mapQuestionView = Object.fromEntries(
-                Object.entries(this.buttonErrorModel.preloadDataView(arrayForActualUnit[this.#state.mapQuestionModel.randomEl])).filter(([, value]) => value !== undefined)
-            );
+            this.#state.mapQuestionView = this.buttonErrorModel.preloadDataView(arrayForActualUnit[this.#state.mapQuestionModel.randomEl]);
+
+                // Протолкнуть данные ...
+
 
         },0);
     }
 
 setupErrorReporting() {
+
+
+    if (this.#state.hundleErrorReporting) return;
+    this.#state.hundleErrorReporting = true;
+
+    // Накинуть новое событие
     // Клик по кнопке Сообщить об ошибке
-    this.#elements.button.addEventListener('click', (event) => {
+    this.#elements.button.addEventListener('click', this.handleErrorBind, {once: true});
+}
+
+// функция события на кнопке добавления ошибок.
+hundleErrorReporting(event) {
+        // сбросить флаг наличия обработчика события клика по кнопке добавления ошибок
+        this.#state.hundleErrorReporting = false;
+
         const errorMessage = JSON.stringify({...AppModel.mapQuestionModel, ...AppModel.mapQuestionView});
         // создать строку из предыдущего вопросса, информация в глобальном AppModel
-
-        // Записать текущее значение карточки с вопроссами в глобальный объект AppModel,
-        // для использования на следующей итерации при необходимости
-        this.syncState();
 
         // Если падает ящик заблокировать отправку ошибки
         const selectBoobleUp = document.getElementById('boobleUp');
@@ -100,12 +126,7 @@ setupErrorReporting() {
         // продублировать запись ошибки в локальное хранилище, для разделения своя-чужая ошибка
         this.buttonErrorModel.becapError(errorMessage);
 
-    }, {once: true});
-}
-
-
-
-
+    }
 
 }
 

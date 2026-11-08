@@ -137,6 +137,9 @@ export function handleOkErr(str, event) {
     // Функция подготавливает информацию о том, с каким словом работаем
     const buttonErrorController = new ButtonErrorController({levelDataModel});
     buttonErrorController.init();
+    // здесь нужен костыль. функция работает как функция и как обработчик событий.
+    // в случае обработчика событий объект buttonErrorController должен быть создан за пределами
+    // функции.
     
 
 

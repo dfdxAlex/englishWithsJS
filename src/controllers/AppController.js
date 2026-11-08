@@ -40,7 +40,6 @@ export class AppController {
 
             // объект работает с фиксированием ошибок
             const buttonErrorController = new ButtonErrorController({levelDataModel});
-            
 
             const languageController = new LanguageController();
 
