@@ -42,12 +42,14 @@ export class ButtonErrorController {
     }
 
     init() {
+         // запоминает сообщение для ошибки
+        this.prepareErrorData();
 
-        // Записать текущее значение карточки с вопроссами в глобальный объект AppModel,
+                    // Записать текущее значение карточки с вопроссами в глобальный объект AppModel,
         // для использования на следующей итерации при необходимости
         this.syncState();
 
-        this.prepareErrorData();
+        // накинуть событие на кнопку
         this.setupErrorReporting();
         this.buttonErrorView.renderErrorEmoji(this.buttonErrorModel.getErrorCount.bind(this.buttonErrorModel));
         
@@ -57,6 +59,7 @@ export class ButtonErrorController {
             this.buttonErrorModel.separateErrors.bind(this.buttonErrorModel),
             this.buttonErrorModel.getStateButtonErrorModel.bind(this.buttonErrorModel)
         );
+
 
 
     }
@@ -73,7 +76,7 @@ export class ButtonErrorController {
 
     // запоминает сообщение для ошибки
     prepareErrorData() {
-        setTimeout (() => {
+        // setTimeout (() => {
             // загнать в this.#state.mapQuestionModel данные для работы с ошибками
 
             this.#state.mapQuestionModel = this.buttonErrorModel.preloadDataModel();
@@ -88,10 +91,11 @@ export class ButtonErrorController {
                 // Протолкнуть данные ...
 
 
-        },0);
+        // },0);
     }
 
 setupErrorReporting() {
+
 
 
     if (this.#state.hundleErrorReporting) return;
@@ -109,6 +113,8 @@ hundleErrorReporting(event) {
 
         const errorMessage = JSON.stringify({...AppModel.mapQuestionModel, ...AppModel.mapQuestionView});
         // создать строку из предыдущего вопросса, информация в глобальном AppModel
+
+
 
         // Если падает ящик заблокировать отправку ошибки
         const selectBoobleUp = document.getElementById('boobleUp');

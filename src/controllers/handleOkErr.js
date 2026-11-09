@@ -137,6 +137,11 @@ export function handleOkErr(str, event) {
     // Функция подготавливает информацию о том, с каким словом работаем
     const buttonErrorController = new ButtonErrorController({levelDataModel});
     buttonErrorController.init();
+    // Записать текущее значение карточки с вопроссами в глобальный объект AppModel,
+    // для использования на следующей итерации при необходимости
+    // buttonErrorController.syncState();
+
+
     // здесь нужен костыль. функция работает как функция и как обработчик событий.
     // в случае обработчика событий объект buttonErrorController должен быть создан за пределами
     // функции.
