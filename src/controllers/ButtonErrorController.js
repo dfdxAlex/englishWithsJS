@@ -76,9 +76,6 @@ export class ButtonErrorController {
 
     // запоминает сообщение для ошибки
     prepareErrorData() {
-        // setTimeout (() => {
-            // загнать в this.#state.mapQuestionModel данные для работы с ошибками
-
             this.#state.mapQuestionModel = this.buttonErrorModel.preloadDataModel();
 
             // получить массив с текущим юнитом из LevelDataModel для передачи в preloadDataModel
@@ -87,17 +84,9 @@ export class ButtonErrorController {
             
             // Зафиксировать текущие данные тестового вопросса после полного рендеринга.
             this.#state.mapQuestionView = this.buttonErrorModel.preloadDataView(arrayForActualUnit[this.#state.mapQuestionModel.randomEl]);
-
-                // Протолкнуть данные ...
-
-
-        // },0);
     }
 
 setupErrorReporting() {
-
-
-
     if (this.#state.hundleErrorReporting) return;
     this.#state.hundleErrorReporting = true;
 
@@ -111,10 +100,8 @@ hundleErrorReporting(event) {
         // сбросить флаг наличия обработчика события клика по кнопке добавления ошибок
         this.#state.hundleErrorReporting = false;
 
-        const errorMessage = JSON.stringify({...AppModel.mapQuestionModel, ...AppModel.mapQuestionView});
         // создать строку из предыдущего вопросса, информация в глобальном AppModel
-
-
+        const errorMessage = JSON.stringify({...AppModel.mapQuestionModel, ...AppModel.mapQuestionView});
 
         // Если падает ящик заблокировать отправку ошибки
         const selectBoobleUp = document.getElementById('boobleUp');
@@ -131,7 +118,6 @@ hundleErrorReporting(event) {
 
         // продублировать запись ошибки в локальное хранилище, для разделения своя-чужая ошибка
         this.buttonErrorModel.becapError(errorMessage);
-
     }
 
 }
