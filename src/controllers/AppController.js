@@ -163,6 +163,9 @@ export class AppController {
                 // первый запуск, сразу карта улетает в старое состояние, для первого 
                 // использования, если это будет нужно уже другим объектом
                 buttonErrorController.syncState();
+                // проверить есть ли ошибки
+                buttonErrorController.renderButtonErrorForDinamicMenu();
+                // console.log();
             }
             
         });

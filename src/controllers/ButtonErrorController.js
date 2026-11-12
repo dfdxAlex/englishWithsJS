@@ -28,6 +28,7 @@ export class ButtonErrorController {
         // добавление ошибок
         this.handleErrorBind = this.hundleErrorReporting.bind(this);
 
+
         ButtonErrorController.instance = this;
     }
 
@@ -45,12 +46,13 @@ export class ButtonErrorController {
          // запоминает сообщение для ошибки
         this.prepareErrorData();
 
-                    // Записать текущее значение карточки с вопроссами в глобальный объект AppModel,
+        // Записать текущее значение карточки с вопроссами в глобальный объект AppModel,
         // для использования на следующей итерации при необходимости
         this.syncState();
 
-        // накинуть событие на кнопку
+        // накинуть событие на кнопку "Сообщить об ошибке"
         this.setupErrorReporting();
+        // рендер пиктограмки о наличии ошибок в динамическое меню
         this.buttonErrorView.renderErrorEmoji(this.buttonErrorModel.getErrorCount.bind(this.buttonErrorModel));
         
         // переделать на короткие участки, максимум работы через контроллер
@@ -59,35 +61,37 @@ export class ButtonErrorController {
             this.buttonErrorModel.separateErrors.bind(this.buttonErrorModel),
             this.buttonErrorModel.getStateButtonErrorModel.bind(this.buttonErrorModel)
         );
-
-
-
     }
 
     // Дорого переносить данную функцию в модели
+    // Метод берет данные текущего теста и записывает в глобальный объект состояния AppModel
+    // Используется эта информация при клике на кнопку Сообщении об ошибке.
     syncState() {
         // Записать текущее значение карточки с вопроссами в глобальный объект AppModel
         // для использования на следующей итерации при необходимости
-        setTimeout (() => {
+        // setTimeout (() => {
             AppModel.mapQuestionModel = this.#state.mapQuestionModel;
             AppModel.mapQuestionView = this.#state.mapQuestionView;
-        }, 0);
+        // }, 0);
     }
 
     // запоминает сообщение для ошибки
     prepareErrorData() {
+            // вытянуть из рабочего массива текущий вопрос с вариантами ответов
             this.#state.mapQuestionModel = this.buttonErrorModel.preloadDataModel();
 
             // получить массив с текущим юнитом из LevelDataModel для передачи в preloadDataModel
             const arrayForActualUnit = this.levelDataModel.getArrayDB();
-            // console.log(arrayForActualUnit);
             
             // Зафиксировать текущие данные тестового вопросса после полного рендеринга.
             this.#state.mapQuestionView = this.buttonErrorModel.preloadDataView(arrayForActualUnit[this.#state.mapQuestionModel.randomEl]);
     }
 
+// зарегить событие на кнопку "Сообщить об ошибке"
 setupErrorReporting() {
+    // если событие на кнопку "Сообщить об ошибке" в динамическом меню уже накидывалось, то выйти
     if (this.#state.hundleErrorReporting) return;
+    // установить true флаг для события
     this.#state.hundleErrorReporting = true;
 
     // Накинуть новое событие
@@ -118,6 +122,12 @@ hundleErrorReporting(event) {
 
         // продублировать запись ошибки в локальное хранилище, для разделения своя-чужая ошибка
         this.buttonErrorModel.becapError(errorMessage);
+    }
+
+    // обертка для рендеринга кнопки - имодзи в динамическое меню, кнопка ошибок
+    renderButtonErrorForDinamicMenu() {
+        console.log('сработала обёртка');
+        this.buttonErrorView.renderErrorEmoji(this.buttonErrorModel.getErrorCount.bind(this.buttonErrorModel));
     }
 
 }
