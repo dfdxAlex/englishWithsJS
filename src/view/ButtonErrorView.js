@@ -343,5 +343,4 @@ getDataAtributeMyErrorOrNo(withRemoveButton = false) {
         return this.#elements.button;
     }
 
-
 }

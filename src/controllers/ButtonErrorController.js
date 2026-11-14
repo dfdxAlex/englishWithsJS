@@ -102,8 +102,7 @@ setupErrorReporting() {
 
 // функция события на кнопке добавления ошибок.
 hundleErrorReporting(event) {
-
-        // Если падает ящик заблокировать отправку ошибки
+        // Если падает ящик заблокировать отправку ошибки и выйти
         const selectBoobleUp = document.getElementById('boobleUp');
         if (selectBoobleUp !== null) {
                 console.log('Ящик ещё падает');
@@ -129,14 +128,17 @@ hundleErrorReporting(event) {
 
         // продублировать запись ошибки в локальное хранилище, для разделения своя-чужая ошибка
         this.buttonErrorModel.becapError(errorMessage);
-
-
     }
 
     // обертка для рендеринга кнопки - имодзи в динамическое меню, кнопка ошибок
-    renderButtonErrorForDinamicMenu() {
+    async renderButtonErrorForDinamicMenu() {
         // console.log('сработала обёртка');
-        this.buttonErrorView.renderErrorEmoji(this.buttonErrorModel.getErrorCount.bind(this.buttonErrorModel));
+        await this.buttonErrorView.renderErrorEmoji(this.buttonErrorModel.getErrorCount.bind(this.buttonErrorModel));
+            // событие на динамическую кнопку ошибок в динамическом меню
+        this.buttonErrorView.handleButtonErrorDinamic(
+            this.buttonErrorModel.separateErrors.bind(this.buttonErrorModel),
+            this.buttonErrorModel.getStateButtonErrorModel.bind(this.buttonErrorModel)
+        );
     }
 
 }
