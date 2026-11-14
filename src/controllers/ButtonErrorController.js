@@ -96,16 +96,12 @@ setupErrorReporting() {
 
     // Накинуть новое событие
     // Клик по кнопке Сообщить об ошибке
-    this.#elements.button.addEventListener('click', this.handleErrorBind, {once: true});
+    // this.#elements.button.addEventListener('click', this.handleErrorBind, {once: true});
+    this.#elements.button.addEventListener('click', this.handleErrorBind);
 }
 
 // функция события на кнопке добавления ошибок.
 hundleErrorReporting(event) {
-        // сбросить флаг наличия обработчика события клика по кнопке добавления ошибок
-        this.#state.hundleErrorReporting = false;
-
-        // создать строку из предыдущего вопросса, информация в глобальном AppModel
-        const errorMessage = JSON.stringify({...AppModel.mapQuestionModel, ...AppModel.mapQuestionView});
 
         // Если падает ящик заблокировать отправку ошибки
         const selectBoobleUp = document.getElementById('boobleUp');
@@ -114,19 +110,32 @@ hundleErrorReporting(event) {
                 event.preventDefault(); // Не выполнять стандартное действие
                 return;
             }
+
+        // сбросить флаг наличия обработчика события клика по кнопке добавления ошибок
+        this.#state.hundleErrorReporting = false;
+
+        // создать строку из предыдущего вопросса, информация в глобальном AppModel
+        const errorMessage = JSON.stringify({...AppModel.mapQuestionModel, ...AppModel.mapQuestionView});
+
+
         //Создать сам запрос к серверу
         const dataRequest = 'name=' + encodeURIComponent(errorMessage);
         //Запрос отправляется когда сеттеру fetchData придать значение
         //Ответ будет в геттере fetchData
         httpAsk.fetchData = dataRequest;
 
+        // снимаем обработчик клика только после успешной отправки
+        this.#elements.button.removeEventListener('click', this.handleErrorBind);
+
         // продублировать запись ошибки в локальное хранилище, для разделения своя-чужая ошибка
         this.buttonErrorModel.becapError(errorMessage);
+
+
     }
 
     // обертка для рендеринга кнопки - имодзи в динамическое меню, кнопка ошибок
     renderButtonErrorForDinamicMenu() {
-        console.log('сработала обёртка');
+        // console.log('сработала обёртка');
         this.buttonErrorView.renderErrorEmoji(this.buttonErrorModel.getErrorCount.bind(this.buttonErrorModel));
     }
 
