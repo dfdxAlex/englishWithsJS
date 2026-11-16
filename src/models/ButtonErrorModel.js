@@ -95,6 +95,7 @@ export class ButtonErrorModel {
             body: 'name=getErrorCount'
         });
         const data = await response.json();
+        console.log('число ошибок:',data);
         return data;
     }
 

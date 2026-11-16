@@ -17,6 +17,8 @@ export class ButtonErrorView {
         errorsModaXClose: false,                        // наличие одного крестика закрытия списка ошибок
         idForCopyButton: 0,                             // идентификатор для ошибок
         url: 'https://amatordd.webd.pro/amatorDed/DFDX/test.php', // ссылка для запроса на сервер, список ошибок
+        handleButtonErrorDinamic: false,                // флаг что событие на динамическую кнопку зарегили = true
+        count: 0,                                          // число ошибок в прошлом цикле
     }
 
     // накинуть событие на кнопку ошибки в динамическом меню
@@ -25,7 +27,14 @@ export class ButtonErrorView {
             // выбрать кнопку ошибок в динамическом меню
             const dinamicMenuError = document.getElementById('dinamic_menu_error');
             // если нет, то выйти
-            if (!dinamicMenuError) return;
+            if (!dinamicMenuError) {
+                this.#state.handleButtonErrorDinamic = false;
+                return;}
+
+            // если событие уже наложено то выйти
+            if (this.#state.handleButtonErrorDinamic === true) {
+                return;
+            }
 
             dinamicMenuError.addEventListener('click', async () => {
                 // метод помещает разделенные массивы в state Модели
@@ -330,9 +339,21 @@ getDataAtributeMyErrorOrNo(withRemoveButton = false) {
 ////////////////////////////////////////////////////////////////////////////////////////
     async renderErrorEmoji(getErrorCount) {
         // вернуть число ошибок
-        const { count } = await getErrorCount();
+        let { count } = await getErrorCount();
+        count = Number(count);
+
+        const dinamicMenuError = document.getElementById('dinamic_menu_error');
+
+        // сравнить текущее число ошибок с предыдущим
+        if (this.#state.count !== count) {
+            dinamicMenuError?.remove();
+        }
+        this.#state.count = count;
         
-        if (Number(count<1)) return;
+        if (count<1) {
+            dinamicMenuError?.remove();
+            return;
+        }
 
         const emoji = '⚠️<span>'+count+'</span>';
         addElToDinamicMenu(emoji, 'dinamic_menu_error', 'dinamic_menu_error');

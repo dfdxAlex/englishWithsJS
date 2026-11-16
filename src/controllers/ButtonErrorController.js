@@ -28,8 +28,35 @@ export class ButtonErrorController {
         // добавление ошибок
         this.handleErrorBind = this.hundleErrorReporting.bind(this);
 
-
         ButtonErrorController.instance = this;
+
+        // интервал для проверки есть ли ошибки
+        this.startErrorPolling();
+    }
+
+    startErrorPolling() {
+        // интервал для проверки есть ли ошибки
+        // идея, сделать импульс в зависимости от числа пользователей.
+        // создать число подключённых терминалов и высчитывать паузу в зависимости от их числа
+        setInterval(async () => {
+            const errorCount = await this.buttonErrorModel.getErrorCount();
+            console.log('вечный цикл контроля ошибок', errorCount);
+            // this.buttonErrorModel.getErrorCount();
+            // this.renderButtonErrorForDinamicMenu();
+            this.buttonErrorView.renderErrorEmoji(this.buttonErrorModel.getErrorCount.bind(this.buttonErrorModel));
+
+        }, this.#state.errorPollingInterval);
+
+        // регить событие на кнопку ошибок в динамическом меню
+        setInterval(async () => {
+            
+        // событие на динамическую кнопку ошибок в динамическом меню
+        this.buttonErrorView.handleButtonErrorDinamic(
+            this.buttonErrorModel.separateErrors.bind(this.buttonErrorModel),
+            this.buttonErrorModel.getStateButtonErrorModel.bind(this.buttonErrorModel)
+        );
+
+        }, 1000);
     }
 
     #elements = {
@@ -40,6 +67,7 @@ export class ButtonErrorController {
         mapQuestionView:AppModel.mapQuestionView,    // очищенное содержимое карты вопросса из DOM
         mapQuestionModel:AppModel.mapQuestionModel,  // очищенное содержимое карты вопросса из программы
         hundleErrorReporting: false,                 // флаг установленного обработчика клика
+        errorPollingInterval: 15000,                 // пауза для вечного цикла, контролирующего число ошибок
     }
 
     init() {
@@ -57,10 +85,10 @@ export class ButtonErrorController {
         
         // переделать на короткие участки, максимум работы через контроллер
         // событие на динамическую кнопку ошибок в динамическом меню
-        this.buttonErrorView.handleButtonErrorDinamic(
-            this.buttonErrorModel.separateErrors.bind(this.buttonErrorModel),
-            this.buttonErrorModel.getStateButtonErrorModel.bind(this.buttonErrorModel)
-        );
+        // this.buttonErrorView.handleButtonErrorDinamic(
+        //     this.buttonErrorModel.separateErrors.bind(this.buttonErrorModel),
+        //     this.buttonErrorModel.getStateButtonErrorModel.bind(this.buttonErrorModel)
+        // );
     }
 
     // Дорого переносить данную функцию в модели
@@ -69,10 +97,8 @@ export class ButtonErrorController {
     syncState() {
         // Записать текущее значение карточки с вопроссами в глобальный объект AppModel
         // для использования на следующей итерации при необходимости
-        // setTimeout (() => {
             AppModel.mapQuestionModel = this.#state.mapQuestionModel;
             AppModel.mapQuestionView = this.#state.mapQuestionView;
-        // }, 0);
     }
 
     // запоминает сообщение для ошибки
@@ -97,7 +123,14 @@ setupErrorReporting() {
     // Накинуть новое событие
     // Клик по кнопке Сообщить об ошибке
     // this.#elements.button.addEventListener('click', this.handleErrorBind, {once: true});
+    // this.handleErrorBind забинденая функция hundleErrorReporting(event)
     this.#elements.button.addEventListener('click', this.handleErrorBind);
+
+
+    // this.renderButtonErrorForDinamicMenu.bind(this)();
+
+
+    // this.renderButtonErrorForDinamicMenu.bind(this);
 }
 
 // функция события на кнопке добавления ошибок.
@@ -123,26 +156,31 @@ hundleErrorReporting(event) {
         //Ответ будет в геттере fetchData
         httpAsk.fetchData = dataRequest;
 
-        // снимаем обработчик клика только после успешной отправки
-        this.#elements.button.removeEventListener('click', this.handleErrorBind);
-
         // продублировать запись ошибки в локальное хранилище, для разделения своя-чужая ошибка
         this.buttonErrorModel.becapError(errorMessage);
+
+
+        // this.buttonErrorView.renderErrorEmoji(this.buttonErrorModel.getErrorCount.bind(this.buttonErrorModel));
+
+        // снимаем обработчик клика только после успешной отправки
+        this.#elements.button.removeEventListener('click', this.handleErrorBind);
     }
 
     // обертка для рендеринга кнопки - имодзи в динамическое меню, кнопка ошибок
     async renderButtonErrorForDinamicMenu() {
-        // console.log('сработала обёртка');
+        // console.log('сработала обёртка', this.buttonErrorModel.getErrorCount.bind(this.buttonErrorModel));
         await this.buttonErrorView.renderErrorEmoji(this.buttonErrorModel.getErrorCount.bind(this.buttonErrorModel));
             // событие на динамическую кнопку ошибок в динамическом меню
-        this.buttonErrorView.handleButtonErrorDinamic(
-            this.buttonErrorModel.separateErrors.bind(this.buttonErrorModel),
-            this.buttonErrorModel.getStateButtonErrorModel.bind(this.buttonErrorModel)
-        );
+        // this.buttonErrorView.handleButtonErrorDinamic(
+        //     this.buttonErrorModel.separateErrors.bind(this.buttonErrorModel),
+        //     this.buttonErrorModel.getStateButtonErrorModel.bind(this.buttonErrorModel)
+        // );
     }
 
 }
 
+// ошибки.
+// при добавлении первой ошибки нет мгновенного рендеринга
 
 // Функция подготавливает информацию о том, с каким словом работаем
 // Информация сохраняется в кнопке "Сообщить об ошибке", в атрибуте name
