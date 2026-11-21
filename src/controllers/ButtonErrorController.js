@@ -39,7 +39,7 @@ export class ButtonErrorController {
         // идея, сделать импульс в зависимости от числа пользователей.
         // создать число подключённых терминалов и высчитывать паузу в зависимости от их числа
         setInterval(async () => {
-            const errorCount = await this.buttonErrorModel.getErrorCount();
+            const errorCount = await this.buttonErrorModel.getErrorCount.bind(this.buttonErrorModel)();
             console.log('вечный цикл контроля ошибок', errorCount);
             // this.buttonErrorModel.getErrorCount();
             // this.renderButtonErrorForDinamicMenu();
