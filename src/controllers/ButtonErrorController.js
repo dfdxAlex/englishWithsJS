@@ -1,4 +1,3 @@
-// import { ButtonErrorModel } from '../models/ButtonErrorModel.js';
 import { ButtonErrorView } from '../view/ButtonErrorView.js';
 import { httpAsk } from '../models/HttpClient.js';
 import { AppModel } from '../models/AppModel.js';
@@ -8,6 +7,8 @@ import { LanguageController } from './LanguageController.js';
 // и кнопку-треугольник в динамическом меню списка ошибок
 import { ErrorReporterModel } from '../models/ButtonErrorModel/ErrorReporterModel.js';
 import { ErrorResolverModel } from '../models/ButtonErrorModel/ErrorResolverModel.js';
+import { ErrorReporterView } from '../view/ButtonErrorView/ErrorReporterView.js';
+import { ErrorResolverView } from '../view/ButtonErrorView/ErrorResolverView.js';
 
 export class ButtonErrorController {
     // пришлось сделать синглтон
@@ -21,15 +22,11 @@ export class ButtonErrorController {
         this.levelDataModel = levelDataModel;
         this.languageController = new LanguageController();
         this.buttonErrorView = new ButtonErrorView({translate:this.languageController});
-        // this.buttonErrorModel = new ButtonErrorModel();
         this.errorReporterModel = new ErrorReporterModel();
         this.errorResolverModel = new ErrorResolverModel();
         
         // вернуть ссылку на кнопку search_error
         this.#elements.button = this.buttonErrorView.getButtonSearchError(); 
-
-        // вернуть список ошибок
-        // this.buttonErrorModel.getErrorList();
 
         // создать независимую функцию с текущим контекстом для события нажатия на кнопку
         // добавление ошибок
@@ -126,7 +123,6 @@ setupErrorReporting() {
     // Накинуть новое событие
     // Клик по кнопке Сообщить об ошибке
     this.#elements.button.addEventListener('click', this.handleErrorBind);
-
 }
 
 // функция события на кнопке добавления ошибок.
@@ -139,12 +135,10 @@ hundleErrorReporting(event) {
                 return;
             }
 
-        // сбросить флаг наличия обработчика события клика по кнопке добавления ошибок
-        this.#state.hundleErrorReporting = false;
+ 
 
         // создать строку из предыдущего вопросса, информация в глобальном AppModel
         const errorMessage = JSON.stringify({...AppModel.mapQuestionModel, ...AppModel.mapQuestionView});
-
 
         //Создать сам запрос к серверу
         const dataRequest = 'name=' + encodeURIComponent(errorMessage);
@@ -155,16 +149,14 @@ hundleErrorReporting(event) {
         // продублировать запись ошибки в локальное хранилище, для разделения своя-чужая ошибка
         this.errorReporterModel.becapError(errorMessage);
 
-
-        // this.buttonErrorView.renderErrorEmoji(this.buttonErrorModel.getErrorCount.bind(this.buttonErrorModel));
-
         // снимаем обработчик клика только после успешной отправки
         this.#elements.button.removeEventListener('click', this.handleErrorBind);
+        // сбросить флаг наличия обработчика события клика по кнопке добавления ошибок
+        this.#state.hundleErrorReporting = false;
     }
 
     // обертка для рендеринга кнопки - имодзи в динамическое меню, кнопка ошибок
     async renderButtonErrorForDinamicMenu() {
-        // console.log('сработала обёртка', this.buttonErrorModel.getErrorCount.bind(this.buttonErrorModel));
         await this.buttonErrorView.renderErrorEmoji(this.errorResolverModel.getErrorCount.bind(this.errorResolverModel));
     }
 

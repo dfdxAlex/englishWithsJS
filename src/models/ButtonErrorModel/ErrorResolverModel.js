@@ -6,15 +6,15 @@ export class ErrorResolverModel {
         url: 'https://amatordd.webd.pro/amatorDed/DFDX/test.php', // ссылка для запроса на сервер, список ошибок
     }
 
+    #state = {
+        getErrorList: '',                           // массив с ошибками из БД
+        errorMy: '',                                // массив с Моими ошибками
+        errorCommon: '',                            // массив с Остальными ошибками
+    }
+
     // возвращает ссылку на состояние этого класса
     getStateErrorResolverModel() {
         return this.#state;
-    }
-
-    #state = {
-        getErrorList: '',                                         // массив с ошибками из БД
-        errorMy: '',
-        errorCommon: '',
     }
 
     // метод возвращает обьект, в котором массив ошибок JSON.
@@ -49,7 +49,6 @@ export class ErrorResolverModel {
 
         this.#state.errorMy = errorMy;
         this.#state.errorCommon = errorCommon;
-
     }
 
     // посчитать ошибки в базе данных
@@ -62,7 +61,6 @@ export class ErrorResolverModel {
             body: 'name=getErrorCount'
         });
         const data = await response.json();
-        // console.log('число ошибок:',data);
         return data;
     }
 
