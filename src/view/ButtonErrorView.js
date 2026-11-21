@@ -32,12 +32,16 @@ export class ButtonErrorView {
             // если нет, то выйти
             if (!dinamicMenuError) {
                 this.#state.handleButtonErrorDinamic = false;
+                console.log('нет кнопки');
                 return;}
 
             // если событие уже наложено то выйти
             if (this.#state.handleButtonErrorDinamic === true) {
+                console.log('событие уже есть');
                 return;
             }
+
+            console.log('накинуть событие');
 
             dinamicMenuError.addEventListener('click', async () => {
                 // метод помещает разделенные массивы в state Модели
@@ -47,9 +51,10 @@ export class ButtonErrorView {
                 this.handleButtonErrorDinamicEven();
   
                 });
-            
+
+            this.#state.handleButtonErrorDinamic = true;
             if (dinamicMenuError) clearInterval(id);
-        }, 200, separateErrors, stateOfModel);
+        }, 1000, separateErrors, stateOfModel);
     }
 
 // Навесить делегированное событие закрытия модального окна ошибок.
