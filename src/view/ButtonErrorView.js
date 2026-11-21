@@ -2,6 +2,9 @@ import './styles/emojeError.scss';
 import './styles/renderErrorList.scss';
 import { addElToDinamicMenu } from '../view/addElToDinamicMenu.js';
 
+// инкапсулированные классы для разбивки большого класса контролирующего кнопки: Добавить ошибку
+// и кнопку-треугольник в динамическом меню списка ошибок
+
 export class ButtonErrorView {
     constructor({translate}) {
         this.translate = translate;
@@ -138,8 +141,8 @@ handleButtonErrorDinamicEven() {
 //////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////
     renderErrorList(stateOfModel) {
-        const errorMy = stateOfModel().errorMy;
-        const errorCommon = stateOfModel().errorCommon;
+        const errorMy = stateOfModel.errorMy;
+        const errorCommon = stateOfModel.errorCommon;
 
         //обнулить флаг наличие одного общего крестика закрытия
         this.#state.errorsModaXClose = false;

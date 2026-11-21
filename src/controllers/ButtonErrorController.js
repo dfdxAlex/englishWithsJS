@@ -1,8 +1,13 @@
-import { ButtonErrorModel } from '../models/ButtonErrorModel.js';
+// import { ButtonErrorModel } from '../models/ButtonErrorModel.js';
 import { ButtonErrorView } from '../view/ButtonErrorView.js';
 import { httpAsk } from '../models/HttpClient.js';
 import { AppModel } from '../models/AppModel.js';
 import { LanguageController } from './LanguageController.js';
+
+// инкапсулированные классы для разбивки большого класса контролирующего кнопки: Добавить ошибку
+// и кнопку-треугольник в динамическом меню списка ошибок
+import { ErrorReporterModel } from '../models/ButtonErrorModel/ErrorReporterModel.js';
+import { ErrorResolverModel } from '../models/ButtonErrorModel/ErrorResolverModel.js';
 
 export class ButtonErrorController {
     // пришлось сделать синглтон
@@ -16,13 +21,15 @@ export class ButtonErrorController {
         this.levelDataModel = levelDataModel;
         this.languageController = new LanguageController();
         this.buttonErrorView = new ButtonErrorView({translate:this.languageController});
-        this.buttonErrorModel = new ButtonErrorModel();
+        // this.buttonErrorModel = new ButtonErrorModel();
+        this.errorReporterModel = new ErrorReporterModel();
+        this.errorResolverModel = new ErrorResolverModel();
         
         // вернуть ссылку на кнопку search_error
         this.#elements.button = this.buttonErrorView.getButtonSearchError(); 
 
         // вернуть список ошибок
-        this.buttonErrorModel.getErrorList();
+        // this.buttonErrorModel.getErrorList();
 
         // создать независимую функцию с текущим контекстом для события нажатия на кнопку
         // добавление ошибок
@@ -32,6 +39,9 @@ export class ButtonErrorController {
 
         // интервал для проверки есть ли ошибки
         this.startErrorPolling();
+
+        // инициализация this#state Модели
+        this.#state.stateOfModel = this.errorResolverModel.getStateErrorResolverModel();
     }
 
     startErrorPolling() {
@@ -39,35 +49,34 @@ export class ButtonErrorController {
         // идея, сделать импульс в зависимости от числа пользователей.
         // создать число подключённых терминалов и высчитывать паузу в зависимости от их числа
         setInterval(async () => {
-            const errorCount = await this.buttonErrorModel.getErrorCount.bind(this.buttonErrorModel)();
+            const errorCount = await this.errorResolverModel.getErrorCount.bind(this.errorResolverModel)();
             console.log('вечный цикл контроля ошибок', errorCount);
-            // this.buttonErrorModel.getErrorCount();
-            // this.renderButtonErrorForDinamicMenu();
-            this.buttonErrorView.renderErrorEmoji(this.buttonErrorModel.getErrorCount.bind(this.buttonErrorModel));
+            this.buttonErrorView.renderErrorEmoji(this.errorResolverModel.getErrorCount.bind(this.errorResolverModel));
 
         }, this.#state.errorPollingInterval);
 
         // регить событие на кнопку ошибок в динамическом меню
         setInterval(async () => {
             
-        // событие на динамическую кнопку ошибок в динамическом меню
-        this.buttonErrorView.handleButtonErrorDinamic(
-            this.buttonErrorModel.separateErrors.bind(this.buttonErrorModel),
-            this.buttonErrorModel.getStateButtonErrorModel.bind(this.buttonErrorModel)
-        );
+            // событие на динамическую кнопку ошибок в динамическом меню
+            this.buttonErrorView.handleButtonErrorDinamic(
+                this.errorResolverModel.separateErrors.bind(this.errorResolverModel),
+                this.#state.stateOfModel
+            );
 
         }, 1000);
     }
 
     #elements = {
-        button: '',                                 // ссылка на кнопку
+        button: '',                                   // ссылка на кнопку
     }   
 
     #state = {
-        mapQuestionView:AppModel.mapQuestionView,    // очищенное содержимое карты вопросса из DOM
-        mapQuestionModel:AppModel.mapQuestionModel,  // очищенное содержимое карты вопросса из программы
-        hundleErrorReporting: false,                 // флаг установленного обработчика клика
-        errorPollingInterval: 15000,                 // пауза для вечного цикла, контролирующего число ошибок
+        stateOfModel: null,                           // state объекта Модели
+        mapQuestionView: AppModel.mapQuestionView,    // очищенное содержимое карты вопросса из DOM
+        mapQuestionModel: AppModel.mapQuestionModel,  // очищенное содержимое карты вопросса из программы
+        hundleErrorReporting: false,                  // флаг установленного обработчика клика
+        errorPollingInterval: 15000,                  // пауза для вечного цикла, контролирующего число ошибок
     }
 
     init() {
@@ -81,14 +90,8 @@ export class ButtonErrorController {
         // накинуть событие на кнопку "Сообщить об ошибке"
         this.setupErrorReporting();
         // рендер пиктограмки о наличии ошибок в динамическое меню
-        this.buttonErrorView.renderErrorEmoji(this.buttonErrorModel.getErrorCount.bind(this.buttonErrorModel));
+        this.buttonErrorView.renderErrorEmoji(this.errorResolverModel.getErrorCount.bind(this.errorResolverModel));
         
-        // переделать на короткие участки, максимум работы через контроллер
-        // событие на динамическую кнопку ошибок в динамическом меню
-        // this.buttonErrorView.handleButtonErrorDinamic(
-        //     this.buttonErrorModel.separateErrors.bind(this.buttonErrorModel),
-        //     this.buttonErrorModel.getStateButtonErrorModel.bind(this.buttonErrorModel)
-        // );
     }
 
     // Дорого переносить данную функцию в модели
@@ -104,13 +107,13 @@ export class ButtonErrorController {
     // запоминает сообщение для ошибки
     prepareErrorData() {
             // вытянуть из рабочего массива текущий вопрос с вариантами ответов
-            this.#state.mapQuestionModel = this.buttonErrorModel.preloadDataModel();
+            this.#state.mapQuestionModel = this.errorReporterModel.preloadDataModel();
 
             // получить массив с текущим юнитом из LevelDataModel для передачи в preloadDataModel
             const arrayForActualUnit = this.levelDataModel.getArrayDB();
             
             // Зафиксировать текущие данные тестового вопросса после полного рендеринга.
-            this.#state.mapQuestionView = this.buttonErrorModel.preloadDataView(arrayForActualUnit[this.#state.mapQuestionModel.randomEl]);
+            this.#state.mapQuestionView = this.errorReporterModel.preloadDataView(arrayForActualUnit[this.#state.mapQuestionModel.randomEl]);
     }
 
 // зарегить событие на кнопку "Сообщить об ошибке"
@@ -122,15 +125,8 @@ setupErrorReporting() {
 
     // Накинуть новое событие
     // Клик по кнопке Сообщить об ошибке
-    // this.#elements.button.addEventListener('click', this.handleErrorBind, {once: true});
-    // this.handleErrorBind забинденая функция hundleErrorReporting(event)
     this.#elements.button.addEventListener('click', this.handleErrorBind);
 
-
-    // this.renderButtonErrorForDinamicMenu.bind(this)();
-
-
-    // this.renderButtonErrorForDinamicMenu.bind(this);
 }
 
 // функция события на кнопке добавления ошибок.
@@ -157,7 +153,7 @@ hundleErrorReporting(event) {
         httpAsk.fetchData = dataRequest;
 
         // продублировать запись ошибки в локальное хранилище, для разделения своя-чужая ошибка
-        this.buttonErrorModel.becapError(errorMessage);
+        this.errorReporterModel.becapError(errorMessage);
 
 
         // this.buttonErrorView.renderErrorEmoji(this.buttonErrorModel.getErrorCount.bind(this.buttonErrorModel));
@@ -169,12 +165,7 @@ hundleErrorReporting(event) {
     // обертка для рендеринга кнопки - имодзи в динамическое меню, кнопка ошибок
     async renderButtonErrorForDinamicMenu() {
         // console.log('сработала обёртка', this.buttonErrorModel.getErrorCount.bind(this.buttonErrorModel));
-        await this.buttonErrorView.renderErrorEmoji(this.buttonErrorModel.getErrorCount.bind(this.buttonErrorModel));
-            // событие на динамическую кнопку ошибок в динамическом меню
-        // this.buttonErrorView.handleButtonErrorDinamic(
-        //     this.buttonErrorModel.separateErrors.bind(this.buttonErrorModel),
-        //     this.buttonErrorModel.getStateButtonErrorModel.bind(this.buttonErrorModel)
-        // );
+        await this.buttonErrorView.renderErrorEmoji(this.errorResolverModel.getErrorCount.bind(this.errorResolverModel));
     }
 
 }
