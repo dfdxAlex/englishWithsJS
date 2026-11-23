@@ -24,21 +24,21 @@ This approach is ideal for applications where reliability, speed, and minimal se
 
 ## Структура проекта
 
-/project-root
-├── index.html
-├── css
-│   └── styles.css
-├── js
-│   ├── app.js
-│   ├── controllers
-│   │   └── homeController.js
-│   ├── models
-│   │   └── homeModel.js
-│   └── views
-│       └── homeView.js
-├── assets
-│   └── logo.png
-└── tests
+-/project-root
+-├── index.html
+-├── css
+-│   └── styles.css
+-├── js
+-│   ├── app.js
+-│   ├── controllers
+-│   │   └── homeController.js
+-│   ├── models
+-│   │   └── homeModel.js
+-│   └── views
+-│       └── homeView.js
+-├── assets
+-│   └── logo.png
+-└── tests
     ├── controllers
     │   └── homeController.test.js
     ├── models
