@@ -24,9 +24,10 @@ This approach is ideal for applications where reliability, speed, and minimal se
 
 ## Структура проекта
 
-### /project-root
-### ├── index.html
-### ├── css
+```
+/project-root
+├── index.html
+├── css
 │   └── styles.css
 ├── js
 │   ├── app.js
@@ -45,6 +46,7 @@ This approach is ideal for applications where reliability, speed, and minimal se
     │   └── homeModel.test.js
     └── views
         └── homeView.test.js
+```
 
 ## Структура проекта
 
