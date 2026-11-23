@@ -731,7 +731,7 @@ export const textA1Begginer = [
         "The text is about the author's passion for visiting museums and their interest in history.",
         "The text is about someone who finds museums boring and prefers outdoor activities.",
         "", "",
-        "Мне нравится исследовать музеи и узнавать о истории. Меня fascinирует видеть артефакты из прошлого.",
+        "Мне нравится исследовать музеи и узнавать новое об истории. Меня восхищает возможность видеть артефакты из прошлого.",
         "Мені подобається досліджувати музеї та дізнаватися про історію. Мене захоплює бачити артефакти з минулого.",
         "Uwielbiam odkrywać muzea i uczyć się o historii. Fascynuje mnie oglądanie artefaktów z przeszłości."
       ],

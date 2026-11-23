@@ -32,13 +32,20 @@ export class ButtonErrorController {
         // добавление ошибок
         this.handleErrorBind = this.hundleErrorReporting.bind(this);
 
-        ButtonErrorController.instance = this;
-
         // интервал для проверки есть ли ошибки
         this.startErrorPolling();
 
         // инициализация this#state Модели
         this.#state.stateOfModel = this.errorResolverModel.getStateErrorResolverModel();
+
+
+            // событие на динамическую кнопку ошибок в динамическом меню
+            this.buttonErrorView.handleButtonErrorDinamic(
+                this.errorResolverModel.separateErrors.bind(this.errorResolverModel),
+                this.#state.stateOfModel
+            );
+
+        ButtonErrorController.instance = this;
     }
 
     startErrorPolling() {
@@ -53,15 +60,15 @@ export class ButtonErrorController {
         }, this.#state.errorPollingInterval);
 
         // регить событие на кнопку ошибок в динамическом меню
-        setInterval(async () => {
+        // setInterval(async () => {
             
-            // событие на динамическую кнопку ошибок в динамическом меню
-            this.buttonErrorView.handleButtonErrorDinamic(
-                this.errorResolverModel.separateErrors.bind(this.errorResolverModel),
-                this.#state.stateOfModel
-            );
+        //     // событие на динамическую кнопку ошибок в динамическом меню
+        //     // this.buttonErrorView.handleButtonErrorDinamic(
+        //     //     this.errorResolverModel.separateErrors.bind(this.errorResolverModel),
+        //     //     this.#state.stateOfModel
+        //     // );
 
-        }, 1000);
+        // }, 1000);
     }
 
     #elements = {
