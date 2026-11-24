@@ -75,7 +75,7 @@ export class LevelDataModel
         this.propertyArrayNameButton.push('');//Задание теста:'));// пункт 3
         this.propertyArrayNameButton.push('');/// пункт 3
 
-        for (let i=31; i<68; i++) {
+        for (let i=31; i<69; i++) {
 
             this.propertyArrayNameButton.push(setStatisticForButton(i));
         }
@@ -95,7 +95,7 @@ export class LevelDataModel
                                 1,1,2,1,1,2,1,1,1,1,
                                 2,1,1,1,6,6,6,6,6,6,
                                 6,6,6,6,6,6,6,6,6,6,
-                                6,8,8,8,8,8,8];
+                                6,8,8,8,8,8,8,7];
 
         return arrayForButton[test];
     }
@@ -185,6 +185,7 @@ export class LevelDataModel
         this.selectLevel('Выбрать правильную пару.','textC1',65);
         this.selectLevel('Выбрать правильную пару.','textC2',66);
         this.selectLevel('Выбрать правильную пару.','textC2Plus',67);
+        this.selectLevel('Выбрать правильную пару.','unit41',68);
 
         // console.log(this.rez);
         return this.rez;
