@@ -9,7 +9,7 @@ export class ButtonErrorView {
     constructor({translate}) {
         this.translate = translate;
         this.handleButtonErrorDinamicEven();
-        console.log('конструктор вьюхи');
+        // console.log('конструктор вьюхи');
     }
 
     #elements = {
@@ -28,61 +28,18 @@ export class ButtonErrorView {
 
     // накинуть событие на кнопку ошибки в динамическом меню
     handleButtonErrorDinamic(separateErrors, stateOfModel) {
-        // const id = setInterval (async () => {
-            // выбрать кнопку ошибок в динамическом меню
-            // const dinamicMenuError = document.getElementById('dinamic_menu_error');
-            // const dinamicMenuError = document.getElementById('dinamic_menu');
-            // если нет, то выйти
-            // if (!dinamicMenuError) {
-            //     this.#state.handleButtonErrorDinamic = false;
-            //     console.log('нет кнопки');
-            //     return;}
-
-            // // если событие уже наложено то выйти
-            // if (this.#state.handleButtonErrorDinamic === true) {
-            //     console.log('событие уже есть');
-            //     return;
-            // }
-
-            // console.log('накинуть событие');
-
-            // dinamicMenuError.addEventListener('click', async () => {
-            //     // метод помещает разделенные массивы в state Модели
-            //     await separateErrors();
-
-            //     this.renderErrorList(stateOfModel);
-            //     this.handleButtonErrorDinamicEven();
-  
-            //     });
-
-            // if (!this.#state.handleButtonErrorDinamic) {
             document.addEventListener('click', async e => {
                 const button = e.target.closest('#dinamic_menu_error');
-
                 if (!button) return;
-
                 await separateErrors();
-
                 this.renderErrorList(stateOfModel);
-                // this.handleButtonErrorDinamicEven();
-                console.log('накинуть событие');
-                
             });
-            // this.#state.handleButtonErrorDinamic = true;
-        // }
-
-            
-        //     if (dinamicMenuError) clearInterval(id);
-        // }, 1000, separateErrors, stateOfModel);
     }
 
 // Навесить делегированное событие закрытия модального окна ошибок.
 handleButtonErrorDinamicEven() {
 
     // Удалить модальное окно ошибок со страницы.
-    // const closeModal = () =>
-    //     document.querySelector('.errors-modal')?.remove();
-
     document.addEventListener('click', event => {
 
         // Закрыть модальное окно:
@@ -94,7 +51,6 @@ handleButtonErrorDinamicEven() {
             event.target.closest('.errors-modal__button') ||
             event.target.classList.contains('errors-modal')
         ) {
-            // closeModal();
             document.querySelector('.errors-modal')?.remove();
         }
 
@@ -223,7 +179,6 @@ buttonCloseError(errorMy) {
 
         // удалить эту же строку из массива
         const newArr = errorMy.filter(item => item !== errorMy[idError-1]);
-        // console.log();
 
         // перезаписать локальный массив с своими и чужими ошибками
         localStorage.setItem('errorMessage', JSON.stringify(newArr));

@@ -43,6 +43,7 @@ import { thouryUnit37 } from './thouryUnit37.js';
 import { thouryUnit38 } from './thouryUnit38.js';
 import { thouryUnit39 } from './thouryUnit39.js';
 import { thouryUnit40 } from './thouryUnit40.js';
+import { thouryUnit41 } from './thouryUnit41.js';
 
 export const arrayDataThoury = [];
 
@@ -89,6 +90,7 @@ arrayDataThoury.push(thouryUnit37());
 arrayDataThoury.push(thouryUnit38());
 arrayDataThoury.push(thouryUnit39());
 arrayDataThoury.push(thouryUnit40());
+arrayDataThoury.push(thouryUnit41());
 
 
 

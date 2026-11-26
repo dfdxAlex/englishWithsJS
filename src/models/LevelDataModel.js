@@ -188,6 +188,7 @@ export class LevelDataModel
         this.selectLevel('Выбрать правильную пару.','unit41',68);
 
         // console.log(this.rez);
+
         return this.rez;
     }
 
