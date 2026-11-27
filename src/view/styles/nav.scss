@@ -15,14 +15,12 @@ nav {
 
 .nav-item {
   position: relative; /* создаёт контекст для абсолютных потомков */
-  z-index: 1; /* чтобы каждый nav-item был над nav */
 }
 
 .nav-item .modal {
   position: absolute;
   top: 100%;
   left: 0;
-  z-index: 1000; /* выше других элементов меню */
   background: rgba(255, 255, 255, 0.95); /* или твоя прозрачность */
   backdrop-filter: blur(4px);
   border-radius: 12px;
@@ -47,4 +45,33 @@ nav {
   background: rgba(255, 255, 255, 0.4);
   border-radius: 5px;
   padding: 5px;
+}
+
+
+///////////////////////////////////////////////\новые стили!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+обводку вокруг текста менюшки
+.selectLang {
+  background: rgb(81, 80, 87);
+}
+
+.nav-link,
+.button-help-nav,
+#gamburger-menu-open {
+    color: white;
+    text-shadow:
+        -1px -1px 0 rgba(0,0,0,.5),
+         1px -1px 0 rgba(0,0,0,.5),
+        -1px  1px 0 rgba(0,0,0,.5),
+         1px  1px 0 rgba(0,0,0,.5);
+}
+
+// добавление темного фона под меню.
+.nav-collaps-my-style {
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
 }

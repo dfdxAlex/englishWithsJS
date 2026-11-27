@@ -43,10 +43,9 @@ await new Promise((resolve) => {
 });
 
   // Когда загрузка завершена — применить фон к body
-// tegBody.style.backgroundImage = `url('${imageUrl}')`;
-tegBody.style.backgroundSize = "cover";
-tegBody.style.backgroundRepeat = "no-repeat";
-tegBody.style.backgroundPosition = "center center";
+  tegBody.style.backgroundSize = "cover";
+  tegBody.style.backgroundRepeat = "no-repeat";
+  tegBody.style.backgroundPosition = "center center";
 
     scrollingBackground();
 

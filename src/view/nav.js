@@ -13,6 +13,9 @@ export function nav()
       
     }, 0);
 
+
+    console.log(langView());
+    
     document.getElementById('nav').innerHTML = `
      <nav class="navbar navbar-expand-sm">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

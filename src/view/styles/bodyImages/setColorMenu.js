@@ -1,17 +1,8 @@
-// Функция меняет цвет текста в зависимости от картинки.
-// Данные о картинке берутся из объекта DataSet
-
-// Цель функции в зависимости от фоновой картинки подобрать цвет шрифта главного меню.
-// Цвет зашит жёстко и учитывает преобладающую палитру на фоновом изображении.
-// На данный момент 49 разных картинок для фона, если добавлять новые то к их палитре
-// нужно будет подобрать контрастный цвет для шрифта и записать в условие в этой функции.
-
-import { DataSet } from '../../../services/data/DataSet.js';
+// функция раньше меняла цвет текста в меню.
+// теперь это перескочило в стили а здесь осталась работа с границй, размером ..
 import { setBorderRadiusForWorkingField } from '../../../services/setColorMenu/setBorderRadiusForWorkingField.js';
 import { randomeFontSize } from './setColorMenu/randomeFontSize.js';
 import { randomeLeftRightButton } from './setColorMenu/randomeLeftRightButton.js';
-import { setColorBlackOrWhite } from './setColorMenu/setColorBlackOrWhite.js';
-import { backgraundForLanguageSeect } from './setColorMenu/backgraundForLanguageSeect.js';
 import { setPaddingForSimple } from './setColorMenu/setPaddingForSimple.js';
 
 export function setColorMenu()
@@ -38,45 +29,4 @@ export function setColorMenu()
 
     // смещение картинок логирования и динамика
     randomeLeftRightButton(['log', 'sound']);
-
-    let setColorBlackOrWhiteProp = 'white';
-    let backgraundForLanguageSeectProp = 'white';
-
-    if (searchMenu) {
-        if (DataSet.numberBackground>16 && DataSet.numberBackground < 21
-            || (DataSet.numberBackground>24 && DataSet.numberBackground < 49)
-        ) {
-            setColorBlackOrWhiteProp = 'black';
-            backgraundForLanguageSeectProp = 'black';
-        }
-
-        setColorBlackOrWhite(['dropdownMenuburger', 'dropdownMenuburger2', 'dropdownMenuburger3', 
-                              'dropdownMenutext', 'dropdownMenuword',
-                              'dropdownMenuhelp', 'dropdownMenustatistic', 'setting', 'languageSelect',
-                              'fieldset-legend-old', 'question_old', 'fieldset-legend',
-                              'gamburger-menu-open', 'clicked_element'
-                            ], setColorBlackOrWhiteProp);
-                            
-        backgraundForLanguageSeect(['selectUa', 'selectRu', 'selectPl', 'selectEn'], backgraundForLanguageSeectProp);
-        
-        if (setColorBlackOrWhiteProp === 'white') 
-            setColorBlackOrWhiteProp = 'black';
-        else 
-            setColorBlackOrWhiteProp = 'white'
-        setColorBlackOrWhite(['selectUa', 'selectRu', 'selectPl', 'selectEn'], setColorBlackOrWhiteProp);
-    }
 }
-
-setColorMenu.help = `
-Цель функции в зависимости от фоновой картинки подобрать цвет шрифта главного меню.
-Цвет зашит жёстко и учитывает преобладающую палитру на фоновом изображении.
-На данный момент 49 разных картинок для фона, если добавлять новые то к их палитре
-нужно будет подобрать контрастный цвет для шрифта и записать в условие в этой функции.
-Дополнительно:
-setBorderRadiusForWorkingField() - меняет бордер-радиус, цвет фона и шрифта
-randomeFontSize() - ставит случайный размер шрифта
-randomeLeftRightButton() - небольшое смещение картинок логирования и динамика
-setPaddingForSimple() - устанавливает дополнительный Padding на первом тесте, уначе текст выходит за пределы контейнера
-`;
-
-
