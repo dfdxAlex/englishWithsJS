@@ -9,7 +9,7 @@ import { scrollingBackground } from './setBackground/scrollingBackground.js';
 export async function setBackground() {
 
   // Сформировать полный путь к изображению
-  const numberImg = Math.floor(Math.random() * 48) + 1;
+  const numberImg = Math.floor(Math.random() * 88) + 1;
   const imageUrl = `css/images/background${numberImg}.jpg`;
 
   // Запомнить номер последнего выбранного фона, используется в других функциях
@@ -55,14 +55,3 @@ await new Promise((resolve) => {
     closeNavbar();
 
 };
-
-// Описание функции (документационное свойство)
-setBackground.help = `
-Функция setBackground(path):
-  • Выбирает случайную картинку из 48 возможных;
-  • Асинхронно загружает её в память (предзагрузка через Image);
-  • После загрузки плавно меняет фон <body>;
-  • Используется для динамичного оформления без визуальных задержек.
-`;
-
-
